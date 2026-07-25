@@ -11,6 +11,7 @@ import {
 } from '../src/insights.js';
 import { buildSite, publicArchive, paths, renderSitemap, renderRobots, linker, PAGE_SIZE } from '../src/site.js';
 import * as subs from '../src/subscribers.js';
+import { archiveOf } from '../src/store.js';
 
 const NOW = new Date('2026-07-25T09:00:00Z');
 const niche = await loadNiche('gebaeudereinigung');
@@ -339,4 +340,22 @@ test('die Sitemap nutzt denselben Praefix wie die Links', () => {
   );
   const locs = [...gebaut.files.find((file) => file.path === 'sitemap.xml').content.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
   for (const loc of locs) assert.ok(loc.startsWith('https://phifa96.github.io/Business-Idee/'), loc);
+});
+
+test('ohne Veroeffentlichungsdatum greift die Erstsichtung als Rueckfall', () => {
+  // Beim ersten Live-Lauf lieferte TED kein publishedAt. Ohne Rueckfall waere
+  // jede Ausschreibung sofort im Gratis-Archiv gelandet und das Bezahlprodukt
+  // damit verschenkt gewesen.
+  const alt = { id: 'a', publishedAt: null, firstSeenAt: new Date(NOW.getTime() - 5 * 86400000).toISOString(), cpv: [], nuts: [] };
+  const frisch = { id: 'b', publishedAt: null, firstSeenAt: new Date(NOW.getTime() - 3600000).toISOString(), cpv: [], nuts: [] };
+  const blind = { id: 'c', publishedAt: null, firstSeenAt: null, cpv: [], nuts: [] };
+
+  const shown = publicArchive([alt, frisch, blind], { publicDelayHours: 48 }, NOW);
+  assert.deepEqual(shown.map((n) => n.id), ['a'], 'nur der alte Eintrag ist oeffentlich');
+  assert.ok(!shown.some((n) => n.id === 'c'), 'ohne jede Zeitangabe wird zurueckgehalten, nicht gezeigt');
+});
+
+test('archiveOf reicht die Erstsichtung an jeden Eintrag durch', () => {
+  const store = { slug: 'x', firstSeen: { a: '2026-07-01T00:00:00Z' }, notices: { a: { id: 'a', publishedAt: null } }, lastRun: null };
+  assert.equal(archiveOf(store)[0].firstSeenAt, '2026-07-01T00:00:00Z');
 });

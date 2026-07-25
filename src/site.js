@@ -54,7 +54,18 @@ export function linker(baseUrlOrSite) {
 export function publicArchive(archive, niche, now = new Date()) {
   const delayMs = (niche.publicDelayHours ?? 48) * 3600000;
   const cutoff = now.getTime() - delayMs;
-  return archive.filter((notice) => !notice.publishedAt || new Date(notice.publishedAt).getTime() <= cutoff);
+  return archive.filter((notice) => {
+    // Rueckfall auf die eigene Erstsichtung: TED liefert nicht bei jeder
+    // Bekanntmachung ein Veroeffentlichungsdatum. Wuerde man die dann
+    // durchlassen, faellt die Freemium-Grenze still aus - genau das ist beim
+    // ersten Live-Lauf passiert, weil ein Feldname nicht stimmte. Ohne jede
+    // Zeitangabe wird zurueckgehalten statt gezeigt: lieber ein Eintrag zu
+    // spaet im Gratis-Archiv als das Bezahlprodukt verschenkt.
+    const stamp = notice.publishedAt ?? notice.firstSeenAt;
+    if (!stamp) return false;
+    const time = new Date(stamp).getTime();
+    return Number.isNaN(time) ? false : time <= cutoff;
+  });
 }
 
 const isOpen = (notice, now) => !notice.deadline || new Date(notice.deadline).getTime() >= now.getTime();

@@ -58,11 +58,20 @@ export function diffAndRecord(store, notices, now = new Date()) {
   return fresh;
 }
 
-/** Alle je gesehenen Bekanntmachungen, neueste zuerst - Grundlage der Archivseite. */
+/**
+ * Alle je gesehenen Bekanntmachungen, neueste zuerst.
+ *
+ * Jeder Eintrag bekommt firstSeenAt mitgegeben - den Zeitpunkt der ersten
+ * eigenen Sichtung. Der ist immer vorhanden, auch wenn TED kein
+ * Veroeffentlichungsdatum liefert, und dient ueberall dort als Rueckfallwert,
+ * wo sonst still etwas ausfaellt (Sortierung, Freemium-Verzoegerung).
+ */
 export function archiveOf(store) {
-  return Object.values(store.notices).sort((a, b) =>
-    String(b.publishedAt ?? '').localeCompare(String(a.publishedAt ?? '')),
-  );
+  return Object.values(store.notices)
+    .map((notice) => ({ ...notice, firstSeenAt: store.firstSeen[notice.id] ?? null }))
+    .sort((a, b) =>
+      String(b.publishedAt ?? b.firstSeenAt ?? '').localeCompare(String(a.publishedAt ?? a.firstSeenAt ?? '')),
+    );
 }
 
 /**

@@ -55,6 +55,16 @@ jobs:
           SUBSCRIBE_EXPORT_URL: ${{ vars.SUBSCRIBE_EXPORT_URL }}
           EXPORT_KEY: ${{ secrets.EXPORT_KEY }}
 
+      # Vergleicht die konfigurierten TED-Feldnamen mit dem, was tatsaechlich
+      # zurueckkommt. Beim ersten Live-Lauf war so ein Feld falsch und
+      # publishedAt blieb bei allen 467 Bekanntmachungen leer - das faellt
+      # hier ab jetzt sofort auf, statt still Folgefehler zu erzeugen.
+      - name: TED-Feldnamen pruefen
+        continue-on-error: true
+        run: node bin/radar.js doctor
+        env:
+          TED_API_KEY: ${{ secrets.TED_API_KEY }}
+
       - name: Ausschreibungen abrufen und Seiten bauen
         run: node bin/radar.js run --niche "$NICHE" --days 30
         env:
