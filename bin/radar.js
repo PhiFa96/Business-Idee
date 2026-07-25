@@ -22,7 +22,7 @@ import { filterNotices, alertable, summarize } from '../src/filter.js';
 import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, listNicheSlugs } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
 import { renderMail, renderDigest, renderCsv, formatMoney } from '../src/render.js';
-import { buildSite, publicArchive, paths } from '../src/site.js';
+import { buildSite, publicArchive, publicGap, paths } from '../src/site.js';
 import { pickTransport, OUT_DIR } from '../src/mail.js';
 import * as subs from '../src/subscribers.js';
 
@@ -306,9 +306,20 @@ async function writeSite(site, now, { days = 90 } = {}) {
 async function cmdBuildSite(args) {
   const site = await loadSiteForPreview(args);
   const now = new Date();
-  const { files, sitemap } = await writeSite(site, now);
+  const { files, sitemap, data } = await writeSite(site, now);
 
   ok(`${files.length} Dateien nach ${SITE_DIR}/ geschrieben, ${sitemap.length} davon in der Sitemap.`);
+
+  // Ohne Veroeffentlichungsdatum greift die Freemium-Sperre nicht. Das darf
+  // nicht still passieren - sonst ist das Bezahlprodukt verschenkt.
+  for (const { niche, archive } of data) {
+    const luecke = publicGap(archive);
+    if (luecke.kritisch) {
+      warn(`${niche.name}: ${luecke.ohneDatum} von ${luecke.total} Ausschreibungen ohne Veroeffentlichungsdatum `
+        + `(${Math.round(luecke.anteil * 100)} %) - die ${niche.publicDelayHours ?? 48}-Stunden-Sperre greift dort nicht.`);
+      info('    Ursache ist meist ein falscher Feldname. "node bin/radar.js doctor" nennt ihn.');
+    }
+  }
   if (!site.baseUrl) warn('Ohne baseUrl in config/site.json wurde keine sitemap.xml erzeugt.');
   info(`  Ansehen mit:  node bin/radar.js serve${args.demo ? ' --demo' : ''}`);
   if (args.verbose) files.slice(0, 20).forEach((file) => info(`    ${file.path}`));
