@@ -28,7 +28,22 @@ export const paths = {
   region: (slug, code) => `${slug}/region/${code.toLowerCase()}.html`,
 };
 
-const url = (path) => `/${path}`.replace(/\/index\.html$/, '/');
+/**
+ * Erzeugt die internen Links. Der Praefix kommt aus dem Pfad der baseUrl:
+ * Bei GitHub Pages unter einem Projektnamen liegt die Seite nicht im
+ * Wurzelverzeichnis (…github.io/Business-Idee/), und ein Link auf /gewerk/
+ * wuerde dort ins Leere zeigen. Mit eigener Domain ist der Praefix leer.
+ */
+export function linker(baseUrlOrSite) {
+  const baseUrl = typeof baseUrlOrSite === 'string' ? baseUrlOrSite : baseUrlOrSite?.baseUrl;
+  let prefix = '';
+  try {
+    if (baseUrl) prefix = new URL(baseUrl).pathname.replace(/\/+$/, '');
+  } catch {
+    prefix = '';
+  }
+  return (path) => `${prefix}/${path}`.replace(/\/index\.html$/, '/');
+}
 
 /**
  * Freemium-Grenze: Das oeffentliche Archiv zeigt eine Ausschreibung erst nach
@@ -54,6 +69,7 @@ function kpiBlock(entries) {
 // ------------------------------------------------------------------ Startseite
 
 export function renderHome(entries, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const body = `
 <h1>Öffentliche Ausschreibungen nach Gewerk</h1>
 <p class="sub">Täglich aus der EU-Datenbank TED zusammengestellt und nach Handwerk gefiltert &middot; Stand ${escapeHtml(formatDate(now))}</p>
@@ -82,6 +98,7 @@ einer Einordnung, wie der Auftrag im Vergleich zu früheren Vergaben desselben A
 // ------------------------------------------------------- Übersicht je Gewerk
 
 export function renderNicheIndex(niche, archive, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const open = archive.filter((notice) => isOpen(notice, now));
   const regions = [...groupByRegion(archive).values()].sort((a, b) => b.notices.length - a.notices.length);
   const buyers = [...groupByBuyer(archive).values()].sort((a, b) => b.notices.length - a.notices.length).slice(0, 12);
@@ -134,6 +151,7 @@ ${buyers.length ? `<h2>Auftraggeber, die regelmäßig ausschreiben</h2><div clas
 // ------------------------------------------------------------ Detailseiten
 
 export function renderNoticePage(niche, notice, archive, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const profile = notice.buyer ? buyerProfile(archive, notice.buyer) : null;
   const band = priceBand(archive, notice);
   const similar = similarNotices(archive, notice, { limit: 5 });
@@ -191,6 +209,7 @@ ${similar.length ? `<h2>Ähnliche Vergaben</h2><div id="list">${similar.map((ent
 // ------------------------------------------------------- Auftraggeber-Profil
 
 export function renderBuyerPage(niche, profile, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const narrative = buyerNarrative(profile);
   const sorted = [...profile.notices].sort((a, b) => String(b.publishedAt ?? '').localeCompare(String(a.publishedAt ?? '')));
 
@@ -233,6 +252,7 @@ ${sorted.map((notice) => noticeCard(notice, { now, href: url(paths.notice(niche.
 // ------------------------------------------------------------ Bundeslandseite
 
 export function renderRegionPage(niche, stats, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const narrative = regionNarrative(stats);
   const sorted = [...stats.notices].sort((a, b) => String(b.publishedAt ?? '').localeCompare(String(a.publishedAt ?? '')));
 
@@ -275,6 +295,7 @@ ${sorted.map((notice) => noticeCard(notice, { now, href: url(paths.notice(niche.
 // ------------------------------------------------------------- Archiv, paginiert
 
 export function renderArchivePage(niche, pageNotices, site, { page, pageCount, now = new Date() } = {}) {
+  const url = linker(site);
   const pager = pageCount > 1
     ? `<nav class="pager">${Array.from({ length: pageCount }, (_, index) => {
       const number = index + 1;
@@ -328,6 +349,7 @@ ${pager}`;
 // ---------------------------------------------------------------- Landingpage
 
 export function renderOffer(niche, summary, site, { now = new Date(), sample = [] } = {}) {
+  const url = linker(site);
   const stripe = site.stripeLinks?.[niche.slug] ?? null;
   const price = niche.price?.monthly ?? 79;
 
@@ -380,10 +402,11 @@ eine Ausschreibung erscheint.</p>`;
 }
 
 export function render404(site) {
+  const url = linker(site);
   return layout({
     title: 'Seite nicht gefunden – Vergabe-Radar',
     description: 'Diese Seite existiert nicht. Zurück zur Übersicht der Gewerke.',
-    body: '<h1>Seite nicht gefunden</h1><p>Diese Adresse gibt es nicht (mehr). <a href="/">Zurück zur Übersicht</a>.</p>',
+    body: `<h1>Seite nicht gefunden</h1><p>Diese Adresse gibt es nicht (mehr). <a href="${escapeHtml(url(paths.home()))}">Zurück zur Übersicht</a>.</p>`,
     baseUrl: site.baseUrl,
     impressum: site.impressum,
     noindex: true,
@@ -393,6 +416,7 @@ export function render404(site) {
 // ------------------------------------------------------------ Sitemap, robots
 
 export function renderSitemap(entries, baseUrl) {
+  const url = linker(baseUrl);
   if (!baseUrl) throw new Error('renderSitemap braucht eine baseUrl - relative Adressen sind in einer Sitemap unzulaessig.');
   const items = entries.map(({ path, lastmod }) => {
     const absolute = new URL(url(path), baseUrl).href;
@@ -418,6 +442,7 @@ ${baseUrl ? `\nSitemap: ${new URL('/sitemap.xml', baseUrl).href}\n` : ''}`;
  * Aufrufer - so bleibt der gesamte Seitenaufbau ohne Dateisystem testbar.
  */
 export function buildSite(nicheData, site, { now = new Date() } = {}) {
+  const url = linker(site);
   const files = [];
   const sitemap = [];
   const homeEntries = [];

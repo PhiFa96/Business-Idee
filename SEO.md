@@ -27,6 +27,12 @@ wird, dass es nicht funktioniert.
    - GitHub → Settings → Pages → Custom domain eintragen, „Enforce HTTPS" aktivieren
 2. **`config/site.json` füllen.** `baseUrl` und `impressum` sind Pflicht. Ohne `baseUrl` entsteht
    keine Sitemap, ohne `impressum` verweigert der Mailversand den Dienst.
+
+   `baseUrl` steuert zugleich den Pfadpräfix aller internen Links: Auf GitHub Pages liegt das
+   Projekt unter `…github.io/Business-Idee/`, mit eigener Domain im Wurzelverzeichnis. Der
+   Wechsel ist deshalb genau eine Zeile — `baseUrl` ändern, `build-site` laufen lassen, fertig.
+   Danach die alte Adresse in der Search Console über „Adressänderung" auf die neue umziehen,
+   sonst konkurrieren beide um dieselben Inhalte.
 3. **Bestand aufbauen.** Eine leere Seite wird nicht indexiert:
    ```
    node bin/radar.js backfill --niche <slug> --days 365

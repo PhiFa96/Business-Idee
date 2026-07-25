@@ -88,6 +88,25 @@ async function pipeline(niche, options) {
   return { notices, stats: { ...stats, skipped, apiTotal: total }, query };
 }
 
+/**
+ * Fuer die Vorschau: Fuellt fehlende Pflichtangaben mit erkennbaren Platzhaltern,
+ * damit man die Seite ansehen kann, bevor Gewerbeanmeldung und Impressum stehen.
+ * Nur mit --demo, nie im Versandpfad - dort muessen die echten Angaben her.
+ */
+async function loadSiteForPreview(args) {
+  const site = await loadSite();
+  if (!args.demo) return site;
+
+  const demo = {
+    ...site,
+    betreiber: site.betreiber || 'VORSCHAU',
+    impressum: site.impressum || 'VORSCHAU – Platzhalter, vor dem Livegang in config/site.json ersetzen',
+    kontaktEmail: site.kontaktEmail || 'vorschau@example.invalid',
+  };
+  warn('Vorschaumodus: fehlende Angaben aus config/site.json sind durch Platzhalter ersetzt.');
+  return demo;
+}
+
 // ---------------------------------------------------------------- Mail-Helfer
 
 /** Jeder Empfaenger braucht seinen eigenen Abmeldeweg - deshalb pro Token. */
@@ -274,12 +293,13 @@ async function writeSite(site, now, { days = 90 } = {}) {
 }
 
 async function cmdBuildSite(args) {
-  const site = await loadSite();
+  const site = await loadSiteForPreview(args);
   const now = new Date();
   const { files, sitemap } = await writeSite(site, now);
 
   ok(`${files.length} Dateien nach ${SITE_DIR}/ geschrieben, ${sitemap.length} davon in der Sitemap.`);
   if (!site.baseUrl) warn('Ohne baseUrl in config/site.json wurde keine sitemap.xml erzeugt.');
+  info(`  Ansehen mit:  node bin/radar.js serve${args.demo ? ' --demo' : ''}`);
   if (args.verbose) files.slice(0, 20).forEach((file) => info(`    ${file.path}`));
   return 0;
 }
@@ -464,6 +484,68 @@ async function cmdSubscribers(args) {
   return usage(`Unbekannter Unterbefehl "${action}". Erlaubt: add, confirm, remove, list, sync.`);
 }
 
+// ---------------------------------------------------------------------- serve
+
+/**
+ * Vorschau-Server. Noetig, weil die Seiten absolute Links verwenden - per
+ * Doppelklick aus dem Dateimanager (file://) wuerde die Navigation ins Leere
+ * laufen. Haengt die Seite unter denselben Basispfad wie spaeter im Betrieb,
+ * damit die Vorschau ehrlich ist.
+ */
+async function cmdServe(args) {
+  const { createServer } = await import('node:http');
+  const { readFile: read, stat } = await import('node:fs/promises');
+  const { extname, normalize, resolve } = await import('node:path');
+
+  const site = await loadSiteForPreview(args);
+  const port = num(args.port, 8080);
+  let basePath = '';
+  try {
+    if (site.baseUrl) basePath = new URL(site.baseUrl).pathname.replace(/\/+$/, '');
+  } catch { basePath = ''; }
+
+  const TYPES = {
+    '.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8',
+    '.js': 'text/javascript; charset=utf-8', '.json': 'application/json; charset=utf-8',
+    '.xml': 'application/xml; charset=utf-8', '.txt': 'text/plain; charset=utf-8',
+    '.csv': 'text/csv; charset=utf-8',
+  };
+  const root = resolve(SITE_DIR);
+
+  try {
+    await stat(join(SITE_DIR, 'index.html'));
+  } catch {
+    fail(`${SITE_DIR}/index.html fehlt. Erst "node bin/radar.js build-site" laufen lassen.`);
+    return 1;
+  }
+
+  const server = createServer(async (request, response) => {
+    let path = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
+    if (basePath && path.startsWith(basePath)) path = path.slice(basePath.length);
+    if (path.endsWith('/')) path += 'index.html';
+
+    // Kein Ausbruch aus site/ ueber ".." - auch eine Vorschau liest nur, was sie soll.
+    const target = resolve(root, `.${normalize(path)}`);
+    if (!target.startsWith(root)) {
+      response.writeHead(403).end('Verboten');
+      return;
+    }
+
+    try {
+      const body = await read(target);
+      response.writeHead(200, { 'content-type': TYPES[extname(target)] ?? 'application/octet-stream' }).end(body);
+    } catch {
+      const notFound = await read(join(root, '404.html')).catch(() => 'Nicht gefunden');
+      response.writeHead(404, { 'content-type': 'text/html; charset=utf-8' }).end(notFound);
+    }
+  });
+
+  await new Promise((done) => server.listen(port, done));
+  ok(`Vorschau laeuft: ${paint(`http://localhost:${port}${basePath}/`, 'bold')}`);
+  info('  Beenden mit Strg+C.');
+  return new Promise(() => {}); // laeuft, bis der Benutzer abbricht
+}
+
 // ----------------------------------------------------------------- seo-report
 
 async function cmdSeoReport() {
@@ -512,12 +594,13 @@ ${paint('Vergabe-Radar', 'bold')} - oeffentliche Ausschreibungen als Abo
   node bin/radar.js backfill --niche <slug>    Bestand rueckwirkend aufbauen (keine Alerts)
   node bin/radar.js run    --niche <slug>      Taeglicher Lauf + Seitenbau
   node bin/radar.js build-site                 Nur die Website neu erzeugen
+  node bin/radar.js serve  [--port 8080]       Vorschau im Browser ansehen
   node bin/radar.js send   --niche <slug>      Taeglicher Alert an Zahlende
   node bin/radar.js digest --niche <slug>      Woechentlicher Gratis-Ueberblick
   node bin/radar.js subscribers list|add|confirm|remove|sync
   node bin/radar.js seo-report                 Qualitaet der erzeugten Seiten
 
-  Flags: --days N --limit N --max-pages N --fixture --dry-run --since N
+  Flags: --days N --limit N --max-pages N --fixture --demo --dry-run --since N --port N
          --email … --token … --plan alert|digest --kanal web|telefon --notiz …
 `);
   return message ? 1 : 0;
@@ -525,7 +608,7 @@ ${paint('Vergabe-Radar', 'bold')} - oeffentliche Ausschreibungen als Abo
 
 const COMMANDS = {
   doctor: cmdDoctor, scan: cmdScan, backfill: cmdBackfill, run: cmdRun,
-  'build-site': cmdBuildSite, send: cmdSend, digest: cmdDigest,
+  'build-site': cmdBuildSite, serve: cmdServe, send: cmdSend, digest: cmdDigest,
   subscribers: cmdSubscribers, 'seo-report': cmdSeoReport,
 };
 

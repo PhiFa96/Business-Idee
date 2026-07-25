@@ -29,11 +29,22 @@ node bin/radar.js backfill --niche <slug> --days 365  # Bestand aufbauen
 node bin/radar.js build-site                          # Website erzeugen
 ```
 
-Ohne Zugang zu TED lässt sich alles gegen Testdaten ansehen:
+### Seite ansehen
 
 ```bash
-npm test       # 95 Tests, komplett offline
-npm run demo   # erzeugt site/ und out/ aus fixtures/
+npm run demo                      # baut site/ aus Testdaten
+node bin/radar.js serve --demo    # http://localhost:8080/Business-Idee/
+```
+
+Ein Vorschau-Server ist nötig, weil die Seiten absolute Links verwenden — per Doppelklick aus dem
+Dateimanager (`file://`) würde die Navigation ins Leere laufen. Der Server hängt die Seite unter
+denselben Basispfad wie später im Betrieb, damit die Vorschau nicht lügt.
+
+`--demo` ersetzt fehlende Pflichtangaben aus `config/site.json` durch erkennbare Platzhalter. Im
+Versandpfad wirkt das Flag nicht — dort müssen die echten Angaben stehen.
+
+```bash
+npm test   # 98 Tests, komplett offline
 ```
 
 ### Befehle
@@ -45,12 +56,13 @@ npm run demo   # erzeugt site/ und out/ aus fixtures/
 | `backfill --niche <slug>` | Bestand rückwirkend aufbauen, **ohne** Alerts auszulösen |
 | `run --niche <slug>` | Täglicher Lauf: abrufen, filtern, entdoppeln, Website bauen |
 | `build-site` | Nur die Website neu erzeugen, offline |
+| `serve [--port 8080]` | Vorschau im Browser ansehen |
 | `send --niche <slug>` | Täglicher Alert an Zahlende |
 | `digest --niche <slug>` | Wöchentlicher Gratisüberblick an Bestätigte |
 | `subscribers list\|add\|confirm\|remove\|sync` | Abonnenten mit Einwilligungsnachweis pflegen |
 | `seo-report` | Qualität der erzeugten Seiten prüfen |
 
-Flags: `--days N` `--limit N` `--max-pages N` `--fixture` `--dry-run` `--since N` `--email …`
+Flags: `--days N` `--limit N` `--max-pages N` `--fixture` `--demo` `--port N` `--dry-run` `--since N` `--email …`
 `--token …` `--plan alert|digest` `--kanal web|telefon` `--notiz …`
 
 ### Was erzeugt wird
@@ -112,11 +124,18 @@ config/site.json    Domain, Impressum, Zahlungslinks
 
 ### Einrichtung für den Echtbetrieb
 
-1. `config/site.json` füllen. `baseUrl` und `impressum` sind Pflicht – ohne `baseUrl` keine
-   Sitemap, ohne `impressum` verweigert der Mailversand den Dienst.
-2. GitHub Pages aktivieren: Settings → Pages → Source „GitHub Actions".
-3. Versand (erst wenn es Kunden gibt): Secret `RESEND_API_KEY`, Variable `MAIL_FROM`.
-4. Details in [`VERTRIEB.md`](VERTRIEB.md) und [`SEO.md`](SEO.md).
+1. **GitHub Pages aktivieren:** Settings → Pages → Source „GitHub Actions". Ohne diesen Schritt
+   schlägt der Deploy-Job fehl und die Seite bleibt unerreichbar.
+2. **Workflow auslösen:** Actions → „Vergabe-Radar taeglich" → „Run workflow". Das ist zugleich
+   der erste echte TED-Abruf — und der Moment, in dem sich zeigt, ob die API-Feldnamen stimmen.
+3. **`config/site.json` füllen.** `baseUrl` ist auf die GitHub-Pages-Adresse vorbelegt und
+   bestimmt zugleich den Pfadpräfix aller internen Links; bei eigener Domain hier die Domain
+   eintragen, dann wird der Präfix automatisch leer. `impressum` muss vor dem ersten Versand
+   stehen — sonst verweigert `renderMail` den Dienst.
+4. **Versand** (erst wenn es Kunden gibt): Secret `RESEND_API_KEY`, Variable `MAIL_FROM`.
+5. Details in [`VERTRIEB.md`](VERTRIEB.md) und [`SEO.md`](SEO.md).
+
+Danach steht die Seite unter `https://phifa96.github.io/Business-Idee/`.
 
 ### Wenn `doctor` über Feldnamen klagt
 

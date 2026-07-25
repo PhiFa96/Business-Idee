@@ -9,7 +9,7 @@ import {
   slugify, bundeslandOf, buyerProfile, regionStats, priceBand, similarNotices,
   buyerNarrative, priceNarrative, groupByBuyer, groupByRegion,
 } from '../src/insights.js';
-import { buildSite, publicArchive, paths, renderSitemap, renderRobots, PAGE_SIZE } from '../src/site.js';
+import { buildSite, publicArchive, paths, renderSitemap, renderRobots, linker, PAGE_SIZE } from '../src/site.js';
 import * as subs from '../src/subscribers.js';
 
 const NOW = new Date('2026-07-25T09:00:00Z');
@@ -301,4 +301,42 @@ test('findByToken findet den Eintrag ueber alle Nischen hinweg', () => {
 
 test('ungueltige Adressen werden abgewiesen', () => {
   assert.throws(() => subs.addPending({}, 'x', { email: 'kein-at-zeichen' }), /gueltige E-Mail/);
+});
+
+// ------------------------------------------------------- Basispfad der Links
+
+test('interne Links tragen den Projektpfad, wenn die Seite nicht im Wurzelverzeichnis liegt', () => {
+  // GitHub Pages serviert Projekt-Repos unter …github.io/<Repo>/. Ein Link auf
+  // /gebaeudereinigung/ ginge dort ins Leere - genau das darf nicht passieren.
+  const projekt = { ...SITE, baseUrl: 'https://phifa96.github.io/Business-Idee/' };
+  const link = linker(projekt);
+  assert.equal(link(paths.home()), '/Business-Idee/');
+  assert.equal(link(paths.niche('gebaeudereinigung')), '/Business-Idee/gebaeudereinigung/');
+  assert.equal(link(paths.archive('gebaeudereinigung')), '/Business-Idee/gebaeudereinigung/archiv.html');
+
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    projekt, { now: NOW },
+  );
+  const start = gebaut.files.find((file) => file.path === 'index.html').content;
+  assert.ok(start.includes('href="/Business-Idee/gebaeudereinigung/"'), 'Startseite verlinkt ohne Projektpfad');
+  assert.ok(!/href="\/gebaeudereinigung\//.test(start), 'noch ein Link ohne Projektpfad vorhanden');
+});
+
+test('mit eigener Domain bleibt der Praefix leer', () => {
+  const link = linker(SITE);
+  assert.equal(link(paths.home()), '/');
+  assert.equal(link(paths.niche('galabau')), '/galabau/');
+  assert.equal(linker(null)(paths.home()), '/', 'ohne Konfiguration keine kaputten Links');
+  assert.equal(linker({ baseUrl: 'kaputt' })(paths.home()), '/', 'unbrauchbare baseUrl faellt sauber zurueck');
+});
+
+test('die Sitemap nutzt denselben Praefix wie die Links', () => {
+  const projekt = { ...SITE, baseUrl: 'https://phifa96.github.io/Business-Idee/' };
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    projekt, { now: NOW },
+  );
+  const locs = [...gebaut.files.find((file) => file.path === 'sitemap.xml').content.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
+  for (const loc of locs) assert.ok(loc.startsWith('https://phifa96.github.io/Business-Idee/'), loc);
 });
