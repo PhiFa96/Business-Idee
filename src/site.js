@@ -55,17 +55,35 @@ export function publicArchive(archive, niche, now = new Date()) {
   const delayMs = (niche.publicDelayHours ?? 48) * 3600000;
   const cutoff = now.getTime() - delayMs;
   return archive.filter((notice) => {
-    // Rueckfall auf die eigene Erstsichtung: TED liefert nicht bei jeder
-    // Bekanntmachung ein Veroeffentlichungsdatum. Wuerde man die dann
-    // durchlassen, faellt die Freemium-Grenze still aus - genau das ist beim
-    // ersten Live-Lauf passiert, weil ein Feldname nicht stimmte. Ohne jede
-    // Zeitangabe wird zurueckgehalten statt gezeigt: lieber ein Eintrag zu
-    // spaet im Gratis-Archiv als das Bezahlprodukt verschenkt.
-    const stamp = notice.publishedAt ?? notice.firstSeenAt;
-    if (!stamp) return false;
-    const time = new Date(stamp).getTime();
-    return Number.isNaN(time) ? false : time <= cutoff;
+    // Die Sperre bemisst sich an der VEROEFFENTLICHUNG, nicht an der eigenen
+    // Erstsichtung. Der Unterschied ist beim ersten Live-Lauf teuer geworden:
+    // Ein rueckwirkend aufgebauter Bestand ist Wochen alt, wurde aber gerade
+    // erst gesehen - auf die Erstsichtung angewandt hielt die Sperre das
+    // komplette Archiv zurueck und loeschte 823 fertige Seiten.
+    //
+    // Fehlt das Veroeffentlichungsdatum, wird deshalb gezeigt statt gesperrt.
+    // Dass die Sperre dann nicht greift, ist kein stiller Ausfall: publicGap()
+    // meldet es, und build-site sowie seo-report geben es aus.
+    if (!notice.publishedAt) return true;
+    const time = new Date(notice.publishedAt).getTime();
+    return Number.isNaN(time) ? true : time <= cutoff;
   });
+}
+
+/**
+ * Wie viel des Archivs kein Veroeffentlichungsdatum hat - und damit an der
+ * Freemium-Sperre vorbeilaeuft. Ab einem Fuenftel ist die Sperre praktisch
+ * wirkungslos und das Bezahlprodukt verschenkt; das muss sichtbar sein.
+ */
+export function publicGap(archive) {
+  const total = archive.length;
+  const ohneDatum = archive.filter((notice) => !notice.publishedAt).length;
+  return {
+    total,
+    ohneDatum,
+    anteil: total ? ohneDatum / total : 0,
+    kritisch: total > 0 && ohneDatum / total > 0.2,
+  };
 }
 
 const isOpen = (notice, now) => !notice.deadline || new Date(notice.deadline).getTime() >= now.getTime();
