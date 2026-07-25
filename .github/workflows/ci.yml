@@ -17,11 +17,27 @@ jobs:
       - name: Tests
         run: node --test
 
-      # Laeuft ohne Netz gegen die Fixtures - faengt Fehler in Filterung und
-      # Darstellung ab, bevor sie in einem Kundenversand landen.
+      # Laeuft ohne Netz gegen die Fixtures und faengt Fehler in Filterung,
+      # Seitenbau und Darstellung ab, bevor sie in einem Kundenversand landen.
       - name: Rauchtest der gesamten Kette
         run: |
           node bin/radar.js scan --fixture --days 90
-          node bin/radar.js run --niche gebaeudereinigung --fixture --days 90
-          node bin/radar.js send --niche gebaeudereinigung --dry-run
+          node bin/radar.js backfill --niche gebaeudereinigung --fixture --days 365
+          node bin/radar.js build-site
+          node bin/radar.js seo-report
           test -s site/gebaeudereinigung/index.html
+          test -s site/gebaeudereinigung/archiv.html
+          test -s site/index.html
+
+      # Der Hauptinhalt muss ohne JavaScript im HTML stehen - sonst ist die
+      # ganze Auffindbarkeit hinfaellig.
+      - name: Inhalt auch ohne JavaScript vorhanden
+        run: |
+          node -e '
+            const fs = require("node:fs");
+            const html = fs.readFileSync("site/gebaeudereinigung/archiv.html", "utf8");
+            const ohneSkript = html.replace(/<script[\s\S]*?<\/script>/g, "");
+            const treffer = (ohneSkript.match(/<article class="item/g) || []).length;
+            if (treffer === 0) { console.error("Kein Inhalt ohne JavaScript vorhanden."); process.exit(1); }
+            console.log(`${treffer} Ausschreibungen stehen ohne jedes Skript im HTML.`);
+          '

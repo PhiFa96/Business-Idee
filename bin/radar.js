@@ -3,22 +3,28 @@
 //
 //   doctor                       Netz, API und Konfiguration pruefen
 //   scan   [--days 90]           Alle Gewerke vergleichen -> Nischenauswahl und Abbruchtest
-//   run    --niche <slug>        Abrufen, filtern, dedupen, speichern, rendern
-//   render --niche <slug>        Nur neu rendern (offline, aus gespeichertem Zustand)
-//   send   --niche <slug>        Alert an die Abonnenten (ohne Key automatisch Dry-Run)
+//   backfill --niche <slug>      Bestand rueckwirkend aufbauen, ohne Alerts
+//   run    --niche <slug>        Abrufen, filtern, dedupen, speichern, Seite bauen
+//   build-site                   Nur die Website neu erzeugen (offline)
+//   send   --niche <slug>        Taeglicher Alert an Zahlende
+//   digest --niche <slug>        Woechentlicher Gratis-Ueberblick an Bestaetigte
+//   subscribers <unterbefehl>    Liste pflegen (add/confirm/remove/list/sync)
+//   seo-report                   Qualitaet der erzeugten Seiten pruefen
 
-import { mkdir, writeFile } from 'node:fs/promises';
-import { join } from 'node:path';
+import { mkdir, writeFile, rm } from 'node:fs/promises';
+import { dirname, join } from 'node:path';
 import { styleText } from 'node:util';
 
 import { fetchAll, fetchPage, buildQuery, TedError } from '../src/ted.js';
 import { loadFixture } from '../src/fixtures.js';
 import { normalizeAll } from '../src/normalize.js';
 import { filterNotices, alertable, summarize } from '../src/filter.js';
-import { loadNiche, loadAllNiches, loadSchema, loadSubscribers, listNicheSlugs } from '../src/config.js';
+import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, listNicheSlugs } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
-import { renderMail, renderArchive, renderCsv, formatMoney } from '../src/render.js';
+import { renderMail, renderDigest, renderCsv, formatMoney } from '../src/render.js';
+import { buildSite, publicArchive, paths } from '../src/site.js';
 import { pickTransport, OUT_DIR } from '../src/mail.js';
+import * as subs from '../src/subscribers.js';
 
 const SITE_DIR = 'site';
 const isTTY = process.stdout.isTTY;
@@ -47,15 +53,11 @@ function parseArgs(argv) {
   return args;
 }
 
-function num(value, fallback) {
-  const parsed = Number(value);
-  return Number.isFinite(parsed) ? parsed : fallback;
-}
+const num = (value, fallback) => (Number.isFinite(Number(value)) ? Number(value) : fallback);
 
-/** Uebersetzt TedError in eine Anweisung, was zu tun ist - nicht in einen Stacktrace. */
 function explain(err) {
   if (!(err instanceof TedError)) return null;
-  const hints = {
+  return {
     blocked: 'Ein Proxy oder eine Firewall blockiert ted.europa.eu. In einem Netz ohne Filter erneut versuchen, z. B. im GitHub-Actions-Workflow.',
     network: 'Keine Verbindung zu TED. Internetverbindung pruefen und erneut versuchen.',
     auth: 'TED weist die Anfrage ab. Falls ein TED_API_KEY gesetzt ist, diesen pruefen oder ganz weglassen - die Suche ist oeffentlich.',
@@ -63,11 +65,9 @@ function explain(err) {
     rate: 'TED drosselt. Spaeter erneut versuchen oder --limit senken.',
     server: 'TED hat ein Problem auf der eigenen Seite. Spaeter erneut versuchen.',
     parse: 'Die Antwort war kein gueltiges JSON - meist eine Wartungs- oder Fehlerseite.',
-  };
-  return hints[err.kind] ?? null;
+  }[err.kind] ?? null;
 }
 
-/** Holt Bekanntmachungen - je nach Modus live von TED oder aus den Fixtures. */
 async function collect(niche, { days, fixture, schema, limit, maxPages, now }) {
   if (fixture) {
     const raw = await loadFixture(niche.slug, { now });
@@ -75,10 +75,7 @@ async function collect(niche, { days, fixture, schema, limit, maxPages, now }) {
   }
   const query = buildQuery(niche, { days, schema });
   const { notices, total } = await fetchAll({
-    query,
-    schema,
-    limit,
-    maxPages,
+    query, schema, limit, maxPages,
     onPage: ({ page, collected, total: t }) => info(`  Seite ${page}: ${collected}${t ? ` von ${t}` : ''} geladen`),
   });
   return { raw: notices, total, query };
@@ -91,31 +88,51 @@ async function pipeline(niche, options) {
   return { notices, stats: { ...stats, skipped, apiTotal: total }, query };
 }
 
+// ---------------------------------------------------------------- Mail-Helfer
+
+/** Jeder Empfaenger braucht seinen eigenen Abmeldeweg - deshalb pro Token. */
+function unsubscribeUrl(site, token) {
+  if (site.subscribeEndpoint) return `${site.subscribeEndpoint}?abmelden=${encodeURIComponent(token)}`;
+  if (site.kontaktEmail) return `mailto:${site.kontaktEmail}?subject=${encodeURIComponent(`Abmeldung ${token}`)}`;
+  return null;
+}
+
+function mailContext(site, niche, token) {
+  const problems = siteProblems(site);
+  if (problems.length) {
+    throw new Error(`config/site.json ist unvollstaendig:\n  - ${problems.join('\n  - ')}`);
+  }
+  return {
+    impressum: site.impressum,
+    unsubscribeUrl: unsubscribeUrl(site, token),
+    archiveUrl: site.baseUrl ? new URL(paths.archive(niche.slug), site.baseUrl).href : null,
+    offerUrl: site.baseUrl ? new URL(paths.offer(niche.slug), site.baseUrl).href : null,
+  };
+}
+
 // -------------------------------------------------------------------- doctor
 
-async function cmdDoctor(args) {
+async function cmdDoctor() {
   const schema = await loadSchema();
+  const site = await loadSite();
   const slugs = await listNicheSlugs();
 
   info(paint('\nKonfiguration', 'bold'));
-  if (slugs.length === 0) {
-    fail('Keine Nischen in config/niches/ gefunden.');
-    return 1;
-  }
+  if (slugs.length === 0) return fail('Keine Nischen in config/niches/ gefunden.'), 1;
   for (const slug of slugs) {
-    try {
-      const niche = await loadNiche(slug);
-      ok(`${slug}: ${niche.cpv.length} CPV-Codes, ${niche.cpvPrefixes?.length ?? 0} Praefixe`);
-    } catch (err) {
-      fail(err.message);
-      return 1;
-    }
+    const niche = await loadNiche(slug);
+    ok(`${slug}: ${niche.cpv.length} CPV-Codes, ${niche.cpvPrefixes?.length ?? 0} Praefixe, ${niche.publicDelayHours ?? 48} h Verzoegerung`);
   }
+
+  const problems = siteProblems(site);
+  if (problems.length) {
+    warn('config/site.json ist noch unvollstaendig:');
+    problems.forEach((problem) => info(`    ${problem}`));
+  } else ok('config/site.json vollstaendig.');
 
   info(paint('\nTED-Schema', 'bold'));
   info(`  Endpunkt   ${schema.endpoint}`);
   info(`  Felder     ${Object.values(schema.fields).join(', ')}`);
-  info(`  Query      ${schema.query.cpv} / ${schema.query.country} / ${schema.query.date}`);
 
   info(paint('\nVerbindung zu TED', 'bold'));
   const niche = await loadNiche(slugs[0]);
@@ -124,16 +141,15 @@ async function cmdDoctor(args) {
 
   try {
     const payload = await fetchPage({ query, schema, limit: 1, maxRetries: 1 });
-    const count = payload?.totalNoticeCount ?? payload?.total ?? '?';
-    ok(`TED antwortet. Treffer fuer die Testabfrage: ${count}`);
+    ok(`TED antwortet. Treffer: ${payload?.totalNoticeCount ?? payload?.total ?? '?'}`);
     const first = (payload?.notices ?? [])[0];
     if (first) {
-      const missing = Object.entries(schema.fields).filter(([, apiName]) => !(apiName in first)).map(([key, apiName]) => `${key} -> "${apiName}"`);
+      const missing = Object.entries(schema.fields).filter(([, api]) => !(api in first)).map(([key, api]) => `${key} -> "${api}"`);
       if (missing.length === 0) ok('Alle konfigurierten Felder sind in der Antwort enthalten.');
       else {
-        warn(`Diese Felder fehlen in der Antwort und muessen in config/ted-schema.json korrigiert werden:`);
+        warn('Diese Felder fehlen und muessen in config/ted-schema.json korrigiert werden:');
         missing.forEach((entry) => info(`    ${entry}`));
-        info(`  Tatsaechlich gelieferte Felder: ${Object.keys(first).join(', ')}`);
+        info(`  Tatsaechlich geliefert: ${Object.keys(first).join(', ')}`);
       }
     }
     return 0;
@@ -160,64 +176,112 @@ async function cmdScan(args) {
   const rows = [];
   for (const niche of niches) {
     process.stdout.write(`  ${niche.name} … `);
-    try {
-      const { notices, stats } = await pipeline(niche, { days, fixture, schema, now, limit: num(args.limit, 100), maxPages: num(args['max-pages'], 10) });
-      const summary = summarize(notices, niche, { days, now });
-      rows.push({ ...summary, stats });
-      process.stdout.write(`${summary.usable} brauchbar von ${stats.apiTotal ?? stats.input} \n`);
-    } catch (err) {
-      process.stdout.write(`${paint('Fehler', 'red')}\n`);
-      fail(`  ${err.message}`);
-      const hint = explain(err);
-      if (hint) info(`    ${hint}`);
-      return 1;
-    }
+    const { notices, stats } = await pipeline(niche, {
+      days, fixture, schema, now, limit: num(args.limit, 100), maxPages: num(args['max-pages'], 10),
+    });
+    const summary = summarize(notices, niche, { days, now });
+    rows.push(summary);
+    process.stdout.write(`${summary.usable} brauchbar von ${stats.apiTotal ?? stats.input}\n`);
   }
 
   rows.sort((a, b) => b.usable - a.usable);
-
-  const pad = (text, width) => String(text).padEnd(width);
-  const padStart = (text, width) => String(text).padStart(width);
-  info(`\n  ${pad('Gewerk', 24)}${padStart('brauchbar', 10)}${padStart('pro Monat', 11)}${padStart('Median-Wert', 14)}${padStart('mit Frist', 11)}`);
+  const pad = (t, w) => String(t).padEnd(w);
+  const padS = (t, w) => String(t).padStart(w);
+  info(`\n  ${pad('Gewerk', 24)}${padS('brauchbar', 10)}${padS('pro Monat', 11)}${padS('Median-Wert', 14)}${padS('mit Frist', 11)}`);
   info(`  ${'─'.repeat(70)}`);
   for (const row of rows) {
-    info(`  ${pad(row.name, 24)}${padStart(row.usable, 10)}${padStart(row.perMonth ?? '–', 11)}${padStart(formatMoney(row.medianValueEur), 14)}${padStart(row.withDeadline, 11)}`);
+    info(`  ${pad(row.name, 24)}${padS(row.usable, 10)}${padS(row.perMonth ?? '–', 11)}${padS(formatMoney(row.medianValueEur), 14)}${padS(row.withDeadline, 11)}`);
   }
 
   const best = rows[0];
   const THRESHOLD = 30;
   info('');
   if (!best || best.usable < THRESHOLD) {
-    warn(paint(`Abbruchkriterium erreicht.`, 'bold'));
-    info(`  Bestes Gewerk: ${best?.name ?? '–'} mit ${best?.usable ?? 0} brauchbaren Ausschreibungen in ${days} Tagen.`);
-    info(`  Schwelle war ${THRESHOLD}. Das Produkt traegt in dieser Form nicht - und das steht fest,`);
-    info(`  bevor ein Cent fuer Briefe ausgegeben wurde. Naechster Schritt waere ein anderes Gewerk`);
-    info(`  (neue Datei in config/niches/) oder die Zuschlags-Variante aus geschaeftsmodelle.md.`);
+    warn(paint('Abbruchkriterium erreicht.', 'bold'));
+    info(`  Bestes Gewerk: ${best?.name ?? '–'} mit ${best?.usable ?? 0} brauchbaren Ausschreibungen in ${days} Tagen (Schwelle ${THRESHOLD}).`);
+    info('  Naechster Schritt waere ein anderes Gewerk (neue Datei in config/niches/)');
+    info('  oder die Zuschlags-Variante aus geschaeftsmodelle.md.');
   } else {
     ok(paint(`${best.name} traegt: ${best.usable} brauchbare Ausschreibungen in ${days} Tagen (${best.perMonth}/Monat).`, 'bold'));
-    info(`  Das ist die Nische fuer die Briefkampagne. Naechster Schritt:`);
-    info(`    node bin/radar.js run --niche ${best.slug}`);
-    info(`  Dann VERTRIEB.md, Abschnitt "60 Briefe".`);
+    info(`  Naechster Schritt:  node bin/radar.js backfill --niche ${best.slug} --days 365`);
   }
   if (fixture) info(paint('\n  Hinweis: Diese Zahlen stammen aus Testdaten, nicht aus TED.', 'yellow'));
   return 0;
 }
 
-// ----------------------------------------------------------------- run/render
+// ------------------------------------------------------------------ backfill
 
-async function writeOutputs(niche, store, freshAlerts, now) {
-  const archive = archiveOf(store);
-  const siteDir = join(SITE_DIR, niche.slug);
-  await mkdir(siteDir, { recursive: true });
-  await mkdir(OUT_DIR, { recursive: true });
+async function cmdBackfill(args) {
+  const slug = args.niche;
+  if (!slug) return usage('backfill braucht --niche <slug>');
+  const niche = await loadNiche(slug);
+  const schema = await loadSchema();
+  const now = new Date();
+  const days = num(args.days, 365);
 
-  await writeFile(join(siteDir, 'index.html'), renderArchive(archive, niche, { now }), 'utf8');
-  await writeFile(join(siteDir, 'ausschreibungen.csv'), renderCsv(archive), 'utf8');
-  await writeFile(join(siteDir, 'ausschreibungen.json'), `${JSON.stringify(archive, null, 2)}\n`, 'utf8');
+  info(paint(`\n${niche.name} - Bestand der letzten ${days} Tage aufbauen\n`, 'bold'));
+  info('  Ohne Bestand gibt es nichts zu indexieren und keine Auftraggeber-Historie.');
+  info('  Dieser Lauf loest bewusst KEINE Alerts aus.\n');
 
-  const mail = renderMail(freshAlerts, niche, { now });
-  await writeFile(join(OUT_DIR, `mail-${niche.slug}-${now.toISOString().slice(0, 10)}.html`), mail.html, 'utf8');
-  return { siteDir, archive, mail };
+  const { notices, stats } = await pipeline(niche, {
+    days, fixture: Boolean(args.fixture), schema, now,
+    limit: num(args.limit, 100), maxPages: num(args['max-pages'], 40),
+  });
+
+  const store = await loadStore(slug);
+  const fresh = diffAndRecord(store, notices, now);
+  prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
+  await saveStore(store);
+
+  info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen`);
+  ok(`${fresh.length} neu aufgenommen · Archiv jetzt ${Object.keys(store.notices).length}`);
+  info(`  Weiter mit:  node bin/radar.js build-site`);
+  return 0;
+}
+
+// ----------------------------------------------------------------- run/site
+
+async function loadAllArchives({ now, days = 90 }) {
+  const niches = await loadAllNiches();
+  const data = [];
+  for (const niche of niches) {
+    const store = await loadStore(niche.slug);
+    const archive = archiveOf(store);
+    data.push({ niche, archive, summary: summarize(archive, niche, { days, now }) });
+  }
+  return data;
+}
+
+async function writeSite(site, now, { days = 90 } = {}) {
+  const data = await loadAllArchives({ now, days });
+  const { files, sitemap } = buildSite(data, site, { now });
+
+  await rm(SITE_DIR, { recursive: true, force: true });
+  for (const file of files) {
+    const target = join(SITE_DIR, file.path);
+    await mkdir(dirname(target), { recursive: true });
+    await writeFile(target, file.content, 'utf8');
+  }
+
+  // Exporte je Nische bleiben erhalten - sie sind Teil des Nutzens.
+  for (const { niche, archive } of data) {
+    const shown = publicArchive(archive, niche, now);
+    await writeFile(join(SITE_DIR, niche.slug, 'ausschreibungen.csv'), renderCsv(shown), 'utf8');
+    await writeFile(join(SITE_DIR, niche.slug, 'ausschreibungen.json'), `${JSON.stringify(shown, null, 2)}\n`, 'utf8');
+  }
+
+  return { files, sitemap, data };
+}
+
+async function cmdBuildSite(args) {
+  const site = await loadSite();
+  const now = new Date();
+  const { files, sitemap } = await writeSite(site, now);
+
+  ok(`${files.length} Dateien nach ${SITE_DIR}/ geschrieben, ${sitemap.length} davon in der Sitemap.`);
+  if (!site.baseUrl) warn('Ohne baseUrl in config/site.json wurde keine sitemap.xml erzeugt.');
+  if (args.verbose) files.slice(0, 20).forEach((file) => info(`    ${file.path}`));
+  return 0;
 }
 
 async function cmdRun(args) {
@@ -225,6 +289,7 @@ async function cmdRun(args) {
   if (!slug) return usage('run braucht --niche <slug>');
   const niche = await loadNiche(slug);
   const schema = await loadSchema();
+  const site = await loadSite();
   const now = new Date();
   const days = num(args.days, 30);
 
@@ -235,71 +300,203 @@ async function cmdRun(args) {
     limit: num(args.limit, 100), maxPages: num(args['max-pages'], 10),
   });
   info(`  Abfrage: ${query}`);
-  info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} per Stichwort ausgeschlossen · ${stats.kept} passend`);
+  info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen · ${stats.kept} passend`);
   if (stats.skipped) warn(`${stats.skipped} Datensaetze waren unbrauchbar und wurden verworfen.`);
 
   const store = await loadStore(slug);
   const fresh = diffAndRecord(store, notices, now);
-  const removed = prune(store, { now });
+  const removed = prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
   await saveStore(store);
 
-  const freshAlerts = alertable(fresh, niche, now);
-  const { siteDir, archive } = await writeOutputs(niche, store, freshAlerts, now);
-
-  ok(`${fresh.length} neu, davon ${freshAlerts.length} im Alert · Archiv: ${archive.length}${removed ? ` · ${removed} alte entfernt` : ''}`);
-  info(`  Archivseite: ${join(siteDir, 'index.html')}`);
-  info(`  Alert-Mail:  ${OUT_DIR}/mail-${slug}-${now.toISOString().slice(0, 10)}.html`);
+  const { files } = await writeSite(site, now);
+  ok(`${fresh.length} neu · Archiv ${Object.keys(store.notices).length}${removed ? ` · ${removed} entfernt` : ''} · ${files.length} Seiten erzeugt`);
   return 0;
 }
 
-async function cmdRender(args) {
-  const slug = args.niche;
-  if (!slug) return usage('render braucht --niche <slug>');
+// ------------------------------------------------------------- send / digest
+
+async function deliver({ slug, plan, build, since, dryRun, label }) {
   const niche = await loadNiche(slug);
-  const now = new Date();
-
-  let store = await loadStore(slug);
-  // Ohne gespeicherten Zustand aus den Fixtures rendern, damit man das Ergebnis
-  // ansehen kann, bevor ueberhaupt eine Verbindung zu TED bestand.
-  if (Object.keys(store.notices).length === 0 || args.fixture) {
-    const schema = await loadSchema();
-    const { notices } = await pipeline(niche, { days: 3650, fixture: true, schema, now });
-    store = { slug, firstSeen: {}, notices: {}, lastRun: null };
-    diffAndRecord(store, notices, now);
-    warn('Kein gespeicherter Zustand - es wird aus fixtures/ gerendert.');
-  }
-
-  const archive = archiveOf(store);
-  const { siteDir } = await writeOutputs(niche, store, alertable(archive, niche, now).slice(0, 15), now);
-  ok(`${archive.length} Ausschreibungen gerendert nach ${siteDir}/`);
-  return 0;
-}
-
-// ---------------------------------------------------------------------- send
-
-async function cmdSend(args) {
-  const slug = args.niche;
-  if (!slug) return usage('send braucht --niche <slug>');
-  const niche = await loadNiche(slug);
+  const site = await loadSite();
   const now = new Date();
   const store = await loadStore(slug);
 
-  const since = new Date(now.getTime() - num(args.since, 1) * 86400000).toISOString();
-  const fresh = archiveOf(store).filter((notice) => (store.firstSeen[notice.id] ?? '') >= since);
-  const selection = alertable(fresh, niche, now);
+  const all = await subs.loadAll();
+  const recipients = subs.activeOf(all, slug, plan);
+  const transport = pickTransport({ dryRun });
 
-  const recipients = await loadSubscribers(slug);
-  const transport = pickTransport({ dryRun: Boolean(args['dry-run']) });
-  const mail = renderMail(selection, niche, { now, archiveUrl: args['archive-url'] ?? null });
+  const cutoff = new Date(now.getTime() - since * 86400000).toISOString();
+  const archive = archiveOf(store);
+  const pool = plan === subs.PLAN.FREE ? publicArchive(archive, niche, now) : archive;
+  const fresh = pool.filter((notice) => (store.firstSeen[notice.id] ?? '') >= cutoff);
+  const selection = alertable(fresh, niche, now);
 
   if (transport.name === 'file') {
     warn(`Dry-Run (Transport "file"): es wird nichts verschickt.${process.env.RESEND_API_KEY ? '' : ' RESEND_API_KEY ist nicht gesetzt.'}`);
+    const context = mailContext(site, niche, 'VORSCHAU-TOKEN');
+    const mail = build(selection, niche, { now, ...context });
+    const result = await transport.send({ to: [], subject: mail.subject, html: mail.html, slug, now });
+    ok(`${label} als Vorschau nach ${result.path} (${selection.length} Ausschreibungen, ${recipients.length} Empfaenger vorgemerkt)`);
+    return 0;
   }
-  if (recipients.length === 0) warn('Keine Abonnenten in config/subscribers.json fuer diese Nische.');
 
-  const result = await transport.send({ to: recipients, subject: mail.subject, html: mail.html, slug, now });
-  if (result.delivered) ok(`Versendet an ${recipients.length} Empfaenger: "${mail.subject}"`);
-  else ok(`Geschrieben nach ${result.path} - "${mail.subject}" (${selection.length} Ausschreibungen)`);
+  if (recipients.length === 0) {
+    warn(`Keine bestaetigten Empfaenger fuer "${slug}" (${plan}). Es wird nichts verschickt.`);
+    return 0;
+  }
+
+  // Einzelversand statt bcc: Jeder Empfaenger braucht seinen eigenen
+  // Abmeldelink, sonst meldet ein Klick alle anderen mit ab.
+  let sent = 0;
+  for (const entry of recipients) {
+    const context = mailContext(site, niche, entry.token);
+    const mail = build(selection, niche, { now, ...context });
+    await transport.send({ to: [entry.email], subject: mail.subject, html: mail.html, slug, now });
+    sent += 1;
+  }
+  ok(`${label} an ${sent} Empfaenger verschickt (${selection.length} Ausschreibungen)`);
+  return 0;
+}
+
+const cmdSend = (args) => {
+  if (!args.niche) return usage('send braucht --niche <slug>');
+  return deliver({
+    slug: args.niche, plan: subs.PLAN.PAID, build: renderMail,
+    since: num(args.since, 1), dryRun: Boolean(args['dry-run']), label: 'Alert',
+  });
+};
+
+const cmdDigest = (args) => {
+  if (!args.niche) return usage('digest braucht --niche <slug>');
+  return deliver({
+    slug: args.niche, plan: subs.PLAN.FREE, build: renderDigest,
+    since: num(args.since, 7), dryRun: Boolean(args['dry-run']), label: 'Wochenueberblick',
+  });
+};
+
+// ----------------------------------------------------------- subscribers
+
+async function cmdSubscribers(args) {
+  const action = args._[1];
+  const all = await subs.loadAll();
+  const slug = args.niche;
+
+  if (action === 'list' || !action) {
+    info(paint('\nAbonnenten\n', 'bold'));
+    const rows = subs.stats(all);
+    if (rows.length === 0) return info('  (keine Eintraege)'), 0;
+    info(`  ${'Nische'.padEnd(22)}${'aktiv'.padStart(8)}${'davon zahlend'.padStart(15)}${'wartend'.padStart(9)}${'abgemeldet'.padStart(12)}`);
+    info(`  ${'─'.repeat(66)}`);
+    for (const row of rows) {
+      info(`  ${row.slug.padEnd(22)}${String(row.aktiv).padStart(8)}${String(row.zahlend).padStart(15)}${String(row.wartend).padStart(9)}${String(row.abgemeldet).padStart(12)}`);
+    }
+    if (args.detail && slug) {
+      info('');
+      for (const entry of all[slug] ?? []) {
+        info(`  ${entry.email.padEnd(34)} ${entry.status.padEnd(24)} ${entry.plan}  ${entry.bestaetigt ?? '–'}`);
+      }
+    }
+    return 0;
+  }
+
+  if (action === 'sync') {
+    // Holt den Stand aus dem Worker ins Repo. Der Einwilligungsnachweis gehoert
+    // versioniert ins Git und nicht allein in einen Key-Value-Speicher.
+    const from = args.from ?? process.env.SUBSCRIBE_EXPORT_URL;
+    const key = args.key ?? process.env.EXPORT_KEY;
+    if (!from || !key) return usage('subscribers sync braucht --from <url> und --key <schluessel> (oder SUBSCRIBE_EXPORT_URL / EXPORT_KEY)');
+
+    const response = await fetch(`${from}?key=${encodeURIComponent(key)}`);
+    if (!response.ok) throw new Error(`Export nicht abrufbar (HTTP ${response.status}).`);
+    const remote = await response.json();
+
+    let added = 0;
+    let updated = 0;
+    for (const [remoteSlug, list] of Object.entries(remote)) {
+      all[remoteSlug] ??= [];
+      for (const raw of list) {
+        const entry = subs.migrateEntry(raw, remoteSlug);
+        if (!entry) continue;
+        const local = subs.findEntry(all, remoteSlug, entry.email);
+        if (!local) {
+          all[remoteSlug].push(entry);
+          added += 1;
+        } else if (JSON.stringify(local) !== JSON.stringify({ ...local, ...entry })) {
+          Object.assign(local, entry);
+          updated += 1;
+        }
+      }
+    }
+    await subs.saveAll(all);
+    ok(`${added} neu, ${updated} aktualisiert. Nicht vergessen: config/subscribers.json committen.`);
+    return 0;
+  }
+
+  if (!slug) return usage(`subscribers ${action} braucht --niche <slug>`);
+
+  if (action === 'add') {
+    if (!args.email) return usage('subscribers add braucht --email');
+    const plan = args.plan === 'digest' ? subs.PLAN.FREE : subs.PLAN.PAID;
+    const { entry } = subs.addPending(all, slug, { email: args.email, quelle: args.quelle ?? 'manuell über CLI', plan });
+    await subs.saveAll(all);
+    ok(`${entry.email} vorgemerkt (${entry.status}).`);
+    info(`  Token: ${entry.token}`);
+    info('  Erst nach "subscribers confirm" geht Post an diese Adresse.');
+    return 0;
+  }
+
+  if (action === 'confirm') {
+    if (!args.email) return usage('subscribers confirm braucht --email');
+    const kanal = args.kanal ?? 'web';
+    const entry = subs.confirm(all, slug, { email: args.email, token: args.token, kanal, notiz: args.notiz });
+    await subs.saveAll(all);
+    ok(`${entry.email} bestaetigt am ${entry.bestaetigt} (Kanal: ${entry.kanal}).`);
+    return 0;
+  }
+
+  if (action === 'remove') {
+    if (!args.email) return usage('subscribers remove braucht --email');
+    const entry = subs.remove(all, slug, args.email);
+    await subs.saveAll(all);
+    return entry ? (ok(`${entry.email} abgemeldet.`), 0) : (warn('Adresse war nicht in der Liste.'), 0);
+  }
+
+  return usage(`Unbekannter Unterbefehl "${action}". Erlaubt: add, confirm, remove, list, sync.`);
+}
+
+// ----------------------------------------------------------------- seo-report
+
+async function cmdSeoReport() {
+  const site = await loadSite();
+  const now = new Date();
+  const { files, sitemap } = buildSite(await loadAllArchives({ now }), site, { now });
+
+  const html = files.filter((file) => file.path.endsWith('.html'));
+  const withNote = html.filter((file) => file.content.includes('class="note"'));
+  const thin = html.filter((file) => file.content.length < 2500);
+  const links = html.map((file) => (file.content.match(/href="\//g) ?? []).length);
+  const noDescription = html.filter((file) => !/name="description" content="[^"]{20,}"/.test(file.content));
+
+  info(paint('\nSEO-Bericht\n', 'bold'));
+  info(`  Seiten insgesamt          ${html.length}`);
+  // Ohne baseUrl wird gar keine sitemap.xml geschrieben - dann waere jede Zahl
+  // hier eine Behauptung ueber eine Datei, die es nicht gibt.
+  info(`  davon in der Sitemap      ${site.baseUrl ? sitemap.length : '– (keine Sitemap ohne baseUrl)'}`);
+  info(`  mit Anreicherungsabsatz   ${withNote.length}  (${Math.round((withNote.length / Math.max(1, html.length)) * 100)} %)`);
+  info(`  duenn (< 2.500 Zeichen)   ${thin.length}`);
+  info(`  ohne brauchbare Beschreibung  ${noDescription.length}`);
+  info(`  interne Links je Seite    ${links.length ? (links.reduce((a, b) => a + b, 0) / links.length).toFixed(1) : 0} im Schnitt`);
+
+  info('');
+  if (!site.baseUrl) warn('Ohne baseUrl gibt es keine Sitemap - und ohne Sitemap keine Indexierung.');
+  if (noDescription.length) warn(`${noDescription.length} Seiten haben keine brauchbare Beschreibung.`);
+  if (thin.length > html.length * 0.5) {
+    warn('Mehr als die Haelfte der Seiten ist duenn. Ein Archiv mit wenig Bestand liefert wenig');
+    info('  Anreicherung - erst backfill laufen lassen, dann erneut pruefen.');
+  }
+  info(paint('  Abbruchkriterium:', 'bold'));
+  info('  Sind nach 90 Tagen laut Search Console weniger als 20 % der eingereichten Seiten');
+  info('  indexiert, rankt diese Seite nicht. Dann ist der Kanal tot, unabhaengig vom Aufwand.');
   return 0;
 }
 
@@ -308,20 +505,29 @@ async function cmdSend(args) {
 function usage(message) {
   if (message) fail(message);
   console.log(`
-${paint('Vergabe-Radar', 'bold')} - taegliche Alerts zu oeffentlichen Ausschreibungen
+${paint('Vergabe-Radar', 'bold')} - oeffentliche Ausschreibungen als Abo
 
-  node bin/radar.js doctor                    Konfiguration und TED-Verbindung pruefen
-  node bin/radar.js scan   [--days 90]        Alle Gewerke vergleichen (Nischenwahl + Abbruchtest)
-  node bin/radar.js run    --niche <slug>     Abrufen, filtern, speichern, rendern
-  node bin/radar.js render --niche <slug>     Nur neu rendern, ohne Netz
-  node bin/radar.js send   --niche <slug>     Alert verschicken (ohne Key: Dry-Run in out/)
+  node bin/radar.js doctor                     Konfiguration und TED-Verbindung pruefen
+  node bin/radar.js scan   [--days 90]         Alle Gewerke vergleichen
+  node bin/radar.js backfill --niche <slug>    Bestand rueckwirkend aufbauen (keine Alerts)
+  node bin/radar.js run    --niche <slug>      Taeglicher Lauf + Seitenbau
+  node bin/radar.js build-site                 Nur die Website neu erzeugen
+  node bin/radar.js send   --niche <slug>      Taeglicher Alert an Zahlende
+  node bin/radar.js digest --niche <slug>      Woechentlicher Gratis-Ueberblick
+  node bin/radar.js subscribers list|add|confirm|remove|sync
+  node bin/radar.js seo-report                 Qualitaet der erzeugten Seiten
 
-  Flags: --days N  --limit N  --max-pages N  --fixture  --dry-run  --since N  --archive-url URL
+  Flags: --days N --limit N --max-pages N --fixture --dry-run --since N
+         --email … --token … --plan alert|digest --kanal web|telefon --notiz …
 `);
   return message ? 1 : 0;
 }
 
-const COMMANDS = { doctor: cmdDoctor, scan: cmdScan, run: cmdRun, render: cmdRender, send: cmdSend };
+const COMMANDS = {
+  doctor: cmdDoctor, scan: cmdScan, backfill: cmdBackfill, run: cmdRun,
+  'build-site': cmdBuildSite, send: cmdSend, digest: cmdDigest,
+  subscribers: cmdSubscribers, 'seo-report': cmdSeoReport,
+};
 
 async function main() {
   const args = parseArgs(process.argv.slice(2));

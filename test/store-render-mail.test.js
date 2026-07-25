@@ -7,14 +7,16 @@ import { join } from 'node:path';
 import { normalizeAll } from '../src/normalize.js';
 import { filterNotices } from '../src/filter.js';
 import { loadFixture } from '../src/fixtures.js';
-import { loadNiche, loadSubscribers, validateNiche } from '../src/config.js';
+import { loadNiche, validateNiche, loadSite, siteProblems } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
-import { renderMail, renderArchive, renderCsv, escapeHtml, formatMoney, formatDate } from '../src/render.js';
+import { renderMail, renderDigest, renderArchive, renderCsv, escapeHtml, formatMoney, formatDate } from '../src/render.js';
 import { fileTransport, resendTransport, pickTransport } from '../src/mail.js';
 import { materialize } from '../src/fixtures.js';
 
 const NOW = new Date('2026-07-25T09:00:00Z');
 const niche = await loadNiche('gebaeudereinigung');
+// Pflichtangaben jeder Werbemail - ohne sie verweigert renderMail den Dienst.
+const MAIL = { unsubscribeUrl: 'https://example.test/abmelden?t=abc', impressum: 'Max Muster · Musterweg 1 · 12345 Musterstadt' };
 const notices = filterNotices(
   normalizeAll(await loadFixture('gebaeudereinigung', { now: NOW })).notices,
   niche,
@@ -107,7 +109,7 @@ test('formatMoney und formatDate zeigen Luecken als Gedankenstrich', () => {
 });
 
 test('renderMail nennt die Zahl der Ausschreibungen im Betreff', () => {
-  const { subject, html } = renderMail(notices.slice(0, 3), niche, { now: NOW });
+  const { subject, html } = renderMail(notices.slice(0, 3), niche, { now: NOW, ...MAIL });
   assert.match(subject, /3 neue Ausschreibungen/);
   assert.match(html, /<!doctype html>/i);
   assert.match(html, /Vergabe-Radar/);
@@ -116,31 +118,63 @@ test('renderMail nennt die Zahl der Ausschreibungen im Betreff', () => {
 test('renderMail erzeugt auch ohne Treffer eine Mail', () => {
   // Eine Mail an einem leeren Tag ist kein Fehler, sondern der Beweis, dass der
   // Dienst laeuft. Schweigen waere von einem Ausfall nicht zu unterscheiden.
-  const { subject, html } = renderMail([], niche, { now: NOW });
+  const { subject, html } = renderMail([], niche, { now: NOW, ...MAIL });
   assert.match(subject, /keine neuen Ausschreibungen/);
   assert.match(html, /dass der Dienst läuft/);
 });
 
 test('renderMail maskiert Markup aus den Quelldaten', () => {
   const evil = { id: 'x', title: '<script>alert(1)</script>', buyer: '<b>B</b>', cpv: [], matchedCpv: [], url: 'https://e.test' };
-  const { html } = renderMail([evil], niche, { now: NOW });
+  const { html } = renderMail([evil], niche, { now: NOW, ...MAIL });
   assert.ok(!html.includes('<script>alert(1)</script>'));
   assert.match(html, /&lt;script&gt;/);
 });
 
-test('renderArchive bettet die Daten ein und laesst kein rohes < im JSON stehen', () => {
-  const evil = { id: 'x', title: '</script><img src=x onerror=alert(1)>', cpv: [], publishedAt: NOW.toISOString() };
-  const html = renderArchive([...notices, evil], niche, { now: NOW });
-  assert.match(html, /id="data"/);
-  const payload = html.split('type="application/json">')[1].split('</script>')[0];
-  assert.ok(!payload.includes('<'), 'im eingebetteten JSON darf kein < stehen');
+test('renderArchive schreibt den Inhalt als echtes HTML, nicht in einen JSON-Block', () => {
+  // Der entscheidende Punkt der SEO-Umstellung: Ohne JavaScript muss die Liste
+  // vollstaendig im Dokument stehen. Frueher wurde sie per Skript erzeugt.
+  const html = renderArchive(notices, niche, { now: NOW });
+  assert.ok(!html.includes('id="data"'), 'kein JSON-Datenblock mehr');
+  for (const notice of notices.slice(0, 5)) {
+    assert.ok(html.includes(escapeHtml(notice.title)), `Titel fehlt im HTML: ${notice.title}`);
+  }
+  assert.equal((html.match(/<article class="item/g) ?? []).length, notices.length);
   assert.match(html, /prefers-color-scheme:dark/);
+});
+
+test('renderArchive maskiert Markup aus den Quelldaten', () => {
+  const evil = { id: 'x', title: '</script><img src=x onerror=alert(1)>', buyer: null, cpv: [], nuts: [], publishedAt: NOW.toISOString() };
+  const html = renderArchive([evil], niche, { now: NOW });
+  assert.ok(!html.includes('<img src=x'), 'kein ausfuehrbares Markup aus Fremddaten');
+  assert.match(html, /&lt;img src=x/);
 });
 
 test('renderArchive kommt mit einer leeren Liste klar', () => {
   const html = renderArchive([], niche, { now: NOW });
   assert.match(html, /<!doctype html>/i);
-  assert.match(html, /\[\]/);
+  assert.match(html, /Keine Ausschreibungen erfasst/);
+});
+
+test('renderMail verweigert den Dienst ohne Abmeldelink und ohne Absenderangabe', () => {
+  // Eine Werbemail ohne beides ist rechtswidrig. Lieber ein roter Workflow als
+  // eine Abmahnung - deshalb ist das ein Fehler und keine Warnung.
+  assert.throws(() => renderMail([], niche, { now: NOW }), /unsubscribeUrl/);
+  assert.throws(() => renderMail([], niche, { now: NOW, unsubscribeUrl: 'https://x.test' }), /impressum/);
+});
+
+test('jede erzeugte Mail enthaelt Abmeldelink und Absenderangabe', () => {
+  for (const build of [renderMail, renderDigest]) {
+    const { html } = build(notices.slice(0, 2), niche, { now: NOW, ...MAIL });
+    assert.ok(html.includes(MAIL.unsubscribeUrl), `${build.name}: Abmeldelink fehlt`);
+    assert.ok(html.includes(escapeHtml(MAIL.impressum)), `${build.name}: Absenderangabe fehlt`);
+  }
+});
+
+test('renderDigest bewirbt den bezahlten Alert, wenn eine Angebotsseite bekannt ist', () => {
+  const { subject, html } = renderDigest(notices.slice(0, 2), niche, { now: NOW, ...MAIL, offerUrl: 'https://x.test/angebot' });
+  assert.match(subject, /dieser Woche/);
+  assert.match(html, /79 € im Monat/);
+  assert.ok(html.includes('https://x.test/angebot'));
 });
 
 test('renderCsv nutzt Semikolon, BOM und maskiert Anfuehrungszeichen', () => {
@@ -224,7 +258,9 @@ test('loadNiche nennt bei einem Tippfehler die verfuegbaren Nischen', async () =
   await assert.rejects(loadNiche('gebauedereinigung'), /Verfuegbar: elektro-shk, galabau/);
 });
 
-test('loadSubscribers ignoriert Eintraege ohne @ und unbekannte Nischen', async () => {
-  assert.deepEqual(await loadSubscribers('gibtsnicht'), []);
-  assert.ok(Array.isArray(await loadSubscribers('gebaeudereinigung')));
+test('loadSite meldet fehlende Pflichtangaben, statt Platzhalter zu erfinden', async () => {
+  const site = await loadSite();
+  assert.ok(Array.isArray(siteProblems(site)));
+  assert.deepEqual(siteProblems({ baseUrl: 'https://x.test', impressum: 'A', kontaktEmail: 'a@b.de' }), []);
+  assert.equal(siteProblems({ baseUrl: null, impressum: null, kontaktEmail: null }).length, 3);
 });

@@ -46,22 +46,45 @@ jobs:
       - name: Tests
         run: node --test
 
-      - name: Ausschreibungen abrufen
+      # Holt Anmeldungen aus dem Worker, damit der Einwilligungsnachweis
+      # versioniert im Repo landet und nicht nur im Key-Value-Speicher.
+      - name: Anmeldungen abholen
+        if: vars.SUBSCRIBE_EXPORT_URL != ''
+        run: node bin/radar.js subscribers sync
+        env:
+          SUBSCRIBE_EXPORT_URL: ${{ vars.SUBSCRIBE_EXPORT_URL }}
+          EXPORT_KEY: ${{ secrets.EXPORT_KEY }}
+
+      - name: Ausschreibungen abrufen und Seiten bauen
         run: node bin/radar.js run --niche "$NICHE" --days 30
         env:
           TED_API_KEY: ${{ secrets.TED_API_KEY }}
 
-      - name: Alert verschicken
+      - name: Alert an Zahlende
         run: node bin/radar.js send --niche "$NICHE" --since 1 ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MAIL_FROM: ${{ vars.MAIL_FROM }}
 
-      - name: Zustand und Archiv zurueckschreiben
+      # Montags zusaetzlich der kostenlose Wochenueberblick - die Bruecke vom
+      # Interessenten zum Abo.
+      - name: Wochenueberblick (montags)
+        if: github.event_name == 'schedule'
+        run: |
+          if [ "$(date -u +%u)" = "1" ]; then
+            node bin/radar.js digest --niche "$NICHE" --since 7
+          else
+            echo "Kein Montag - kein Wochenueberblick."
+          fi
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_FROM: ${{ vars.MAIL_FROM }}
+
+      - name: Zustand, Archiv und Abonnenten zurueckschreiben
         run: |
           git config user.name  "vergabe-radar[bot]"
           git config user.email "vergabe-radar@users.noreply.github.com"
-          git add data site
+          git add data site config/subscribers.json
           if git diff --staged --quiet; then
             echo "Keine Aenderungen - nichts zu committen."
           else

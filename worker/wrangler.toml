@@ -1,0 +1,16 @@
+name = "vergabe-radar-anmeldung"
+main = "subscribe.js"
+compatibility_date = "2026-01-01"
+
+# Vor dem ersten Deploy:
+#   npx wrangler kv namespace create SUBS      -> id hier eintragen
+#   npx wrangler secret put RESEND_API_KEY
+#   npx wrangler secret put EXPORT_KEY         -> lange Zufallszeichenkette
+[[kv_namespaces]]
+binding = "SUBS"
+id = "HIER_DIE_KV_ID_EINTRAGEN"
+
+[vars]
+MAIL_FROM = "radar@example.de"
+SITE_URL = "https://vergabe-radar.de"
+IMPRESSUM = "Vorname Nachname · Musterweg 1 · 12345 Musterstadt"

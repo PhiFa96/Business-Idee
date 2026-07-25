@@ -65,8 +65,13 @@ export function archiveOf(store) {
   );
 }
 
-/** Haelt die Zustandsdatei klein: Eintraege, deren Frist lange vorbei ist, fliegen raus. */
-export function prune(store, { keepDays = 400, now = new Date() } = {}) {
+/**
+ * Haelt die Zustandsdatei in Grenzen. Der Default liegt bei drei Jahren, nicht
+ * bei einem: Abgelaufene Ausschreibungen sind fuer den Abonnenten wertlos,
+ * stellen aber die Masse der indexierbaren Seiten und die Datengrundlage der
+ * Auftraggeber-Profile. Wer sie wegraeumt, loescht den Mehrwert.
+ */
+export function prune(store, { keepDays = 1100, now = new Date() } = {}) {
   const cutoff = now.getTime() - keepDays * 86400000;
   let removed = 0;
   for (const [id, notice] of Object.entries(store.notices)) {

@@ -1,0 +1,14 @@
+{
+  "_kommentar": "Zentrale Angaben fuer alle erzeugten Seiten und Mails. baseUrl und impressum MUESSEN vor dem ersten Echtbetrieb gefuellt werden: ohne baseUrl gibt es keine Sitemap, ohne impressum verweigert renderMail den Versand.",
+  "baseUrl": "",
+  "betreiber": "",
+  "impressum": "",
+  "kontaktEmail": "",
+  "subscribeEndpoint": null,
+  "stripeLinks": {
+    "gebaeudereinigung": null,
+    "galabau": null,
+    "elektro-shk": null,
+    "metallbau": null
+  }
+}

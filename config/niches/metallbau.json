@@ -30,6 +30,8 @@
   ],
   "minDaysToDeadline": 10,
   "minScore": 50,
+  "publicDelayHours": 48,
+  "archiveKeepDays": 1100,
   "price": {
     "monthly": 79,
     "yearly": 790,

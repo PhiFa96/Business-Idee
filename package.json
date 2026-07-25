@@ -14,7 +14,7 @@
     "test": "node --test",
     "doctor": "node bin/radar.js doctor",
     "scan": "node bin/radar.js scan",
-    "demo": "node bin/radar.js scan --fixture && node bin/radar.js render --niche gebaeudereinigung --fixture"
+    "demo": "node bin/radar.js scan --fixture --days 90 && node bin/radar.js backfill --niche gebaeudereinigung --fixture --days 365 && node bin/radar.js build-site && node bin/radar.js seo-report"
   },
   "license": "UNLICENSED"
 }

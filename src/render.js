@@ -1,43 +1,32 @@
-// Erzeugt die Alert-Mail, die statische Archivseite und die Exporte.
+// Alert-Mail, Archivseite und Exporte.
 //
 // Die Mail nutzt Inline-CSS und Tabellen-Layout, weil Outlook nichts anderes
-// zuverlaessig darstellt. Die Archivseite ist eine einzelne HTML-Datei mit
-// eingebettetem Filter - kein Server, kein Build, keine externen Ressourcen.
+// zuverlaessig darstellt. Die Darstellungsprimitive liegen in html.js, damit
+// site.js dieselben verwenden kann.
 
-const MONEY = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
+import {
+  escapeHtml, formatMoney, formatDate, deadlineLabel, truncate,
+  layout, noticeCard, LIST_SCRIPT,
+} from './html.js';
+
+// Weiterreichen, damit bestehende Aufrufer nicht wissen muessen, dass die
+// Primitive umgezogen sind.
+export { escapeHtml, formatMoney, formatDate, truncate };
+
 const DATE = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
-
-export function escapeHtml(value) {
-  return String(value ?? '')
-    .replaceAll('&', '&amp;')
-    .replaceAll('<', '&lt;')
-    .replaceAll('>', '&gt;')
-    .replaceAll('"', '&quot;')
-    .replaceAll("'", '&#39;');
-}
-
-export function formatMoney(value) {
-  return value == null ? '–' : MONEY.format(value);
-}
-
-export function formatDate(value) {
-  if (!value) return '–';
-  const date = new Date(value);
-  return Number.isNaN(date.getTime()) ? '–' : DATE.format(date);
-}
-
-function deadlineLabel(notice, now = new Date()) {
-  if (!notice.deadline) return 'ohne Frist';
-  const days = Math.floor((new Date(notice.deadline).getTime() - now.getTime()) / 86400000);
-  if (Number.isNaN(days)) return 'ohne Frist';
-  if (days < 0) return `abgelaufen (${formatDate(notice.deadline)})`;
-  if (days === 0) return 'Frist heute';
-  return `noch ${days} Tag${days === 1 ? '' : 'e'} (${formatDate(notice.deadline)})`;
-}
 
 // ---------------------------------------------------------------- Alert-Mail
 
-export function renderMail(notices, niche, { now = new Date(), archiveUrl = null } = {}) {
+/**
+ * Abmeldelink und Absenderangabe sind keine Option, sondern Pflicht: Eine
+ * Werbemail ohne beides ist rechtswidrig, auch an Einwilligende. Deshalb wirft
+ * renderMail lieber, als eine unvollstaendige Mail zu erzeugen - ein roter
+ * Workflow ist billiger als eine Abmahnung.
+ */
+export function renderMail(notices, niche, { now = new Date(), archiveUrl = null, unsubscribeUrl = null, impressum = null } = {}) {
+  if (!unsubscribeUrl) throw new Error('renderMail braucht eine unsubscribeUrl - eine Mail ohne Abmeldemöglichkeit darf nicht rausgehen.');
+  if (!impressum) throw new Error('renderMail braucht eine Absenderangabe (impressum) - Pflichtangabe in jeder Werbemail.');
+
   const dateLabel = DATE.format(now);
   const rows = notices
     .map((notice) => {
@@ -86,7 +75,9 @@ export function renderMail(notices, niche, { now = new Date(), archiveUrl = null
   <tr><td style="padding:16px 28px 24px;background:#fafaf8;font-size:12px;color:#777;line-height:1.6;">
     ${archiveUrl ? `Vollständiges Archiv: <a href="${escapeHtml(archiveUrl)}" style="color:#1a4b8c;">${escapeHtml(archiveUrl)}</a><br>` : ''}
     Quelle: Tenders Electronic Daily (TED) der Europäischen Union.
-    Angaben ohne Gewähr &ndash; verbindlich sind allein die Vergabeunterlagen des Auftraggebers.
+    Angaben ohne Gewähr &ndash; verbindlich sind allein die Vergabeunterlagen des Auftraggebers.<br><br>
+    ${escapeHtml(impressum)}<br>
+    <a href="${escapeHtml(unsubscribeUrl)}" style="color:#777;">Diesen Alert abbestellen</a>
   </td></tr>
 </table>
 </td></tr></table>
@@ -95,98 +86,63 @@ export function renderMail(notices, niche, { now = new Date(), archiveUrl = null
   return { subject, html };
 }
 
-// ------------------------------------------------------------- Archivseite
+/** Wöchentlicher Gratis-Überblick - die Brücke vom Interessenten zum Abo. */
+export function renderDigest(notices, niche, { now = new Date(), archiveUrl = null, unsubscribeUrl = null, impressum = null, offerUrl = null } = {}) {
+  const base = renderMail(notices, niche, { now, archiveUrl, unsubscribeUrl, impressum });
+  const subject = `${niche.name}: ${notices.length} Ausschreibung${notices.length === 1 ? '' : 'en'} dieser Woche`;
 
-export function renderArchive(notices, niche, { now = new Date(), title = null } = {}) {
+  const upsell = offerUrl
+    ? `<tr><td style="padding:0 28px 20px;">
+      <div style="background:#f0f4fa;border:1px solid #d7e0ee;border-radius:6px;padding:14px 16px;font-size:13px;color:#333;line-height:1.55;">
+        Dieser Überblick kommt einmal pro Woche und zeigt Ausschreibungen mit 48 Stunden Verzögerung.
+        Wer keine Frist verlieren will, bekommt sie werktäglich um 6 Uhr, sobald sie erscheinen:
+        <a href="${escapeHtml(offerUrl)}" style="color:#1a4b8c;font-weight:600;">täglicher Alert für 79 € im Monat</a>.
+      </div>
+    </td></tr>`
+    : '';
+
+  return {
+    subject,
+    html: base.html.replace('</table>\n</td></tr></table>', `${upsell}</table>\n</td></tr></table>`),
+  };
+}
+
+// -------------------------------------------------------------- Archivseite
+
+/**
+ * Vollstaendiges Archiv als echtes HTML. Das Skript filtert nur noch bereits
+ * vorhandene Knoten - ohne JavaScript bleibt die Liste sichtbar.
+ */
+export function renderArchive(notices, niche, { now = new Date(), title = null, description = null, canonical = null, baseUrl = null, breadcrumbs = [], impressum = null, extra = '' } = {}) {
   const pageTitle = title ?? `${niche.name} – Vergabe-Radar`;
-  const payload = notices.map((notice) => ({
-    id: notice.id,
-    t: notice.title,
-    b: notice.buyer,
-    c: notice.buyerCity,
-    v: notice.valueEur,
-    d: notice.deadline,
-    p: notice.publishedAt,
-    u: notice.url,
-    s: notice.score ?? null,
-  }));
 
-  return `<!doctype html>
-<html lang="de"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>${escapeHtml(pageTitle)}</title>
-<style>
-:root{color-scheme:light dark;--bg:#f4f4f2;--card:#fff;--fg:#1a1a1a;--muted:#666;--line:#e0e0dc;--accent:#1a4b8c}
-@media (prefers-color-scheme:dark){:root{--bg:#16171a;--card:#1e2024;--fg:#ececec;--muted:#9a9a9a;--line:#32353b;--accent:#7fb0ee}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--fg);font:15px/1.55 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
-.wrap{max-width:900px;margin:0 auto;padding:28px 16px 64px}
-h1{font-size:24px;margin:0 0 4px}
-.sub{color:var(--muted);font-size:14px;margin-bottom:22px}
-.controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-input,select{padding:9px 11px;border:1px solid var(--line);border-radius:6px;background:var(--card);color:var(--fg);font-size:14px}
-input{flex:1;min-width:200px}
-.item{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 16px;margin-bottom:10px}
-.item h2{font-size:16px;margin:0 0 6px;line-height:1.35}
-.item a{color:var(--accent)}
-.meta{color:var(--muted);font-size:13px}
-.meta strong{color:var(--fg);font-weight:600}
-.count{color:var(--muted);font-size:13px;margin-bottom:12px}
-footer{margin-top:32px;color:var(--muted);font-size:12px;line-height:1.6;border-top:1px solid var(--line);padding-top:16px}
-.empty{padding:28px;text-align:center;color:var(--muted)}
-</style></head>
-<body><div class="wrap">
+  const body = `
 <h1>${escapeHtml(pageTitle)}</h1>
-<div class="sub">Öffentliche Ausschreibungen aus TED &middot; Stand ${escapeHtml(DATE.format(now))}</div>
+<p class="sub">Öffentliche Ausschreibungen aus TED &middot; Stand ${escapeHtml(DATE.format(now))}</p>
+${extra}
 <div class="controls">
-  <input id="q" type="search" placeholder="Suchen nach Titel, Auftraggeber, Ort …" autocomplete="off">
-  <select id="sort">
+  <input id="q" type="search" placeholder="Suchen nach Titel, Auftraggeber, Ort …" autocomplete="off" aria-label="Suchen">
+  <select id="sort" aria-label="Sortierung">
     <option value="p">Neueste zuerst</option>
     <option value="d">Frist zuerst</option>
     <option value="v">Höchster Auftragswert</option>
   </select>
 </div>
-<div class="count" id="count"></div>
-<div id="list"></div>
-<footer>
-  Quelle: Tenders Electronic Daily (TED) der Europäischen Union. TED enthält Vergaben oberhalb
-  der EU-Schwellenwerte. Angaben ohne Gewähr &ndash; verbindlich sind allein die Vergabeunterlagen
-  des Auftraggebers.
-</footer>
-</div>
-<script id="data" type="application/json">${JSON.stringify(payload).replaceAll('<', '\\u003c')}</script>
-<script>
-const items = JSON.parse(document.getElementById('data').textContent);
-const money = new Intl.NumberFormat('de-DE',{style:'currency',currency:'EUR',maximumFractionDigits:0});
-const date = new Intl.DateTimeFormat('de-DE',{day:'2-digit',month:'2-digit',year:'numeric'});
-const fmtDate = v => v ? date.format(new Date(v)) : '–';
-const esc = s => String(s ?? '').replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const list = document.getElementById('list'), count = document.getElementById('count');
-const q = document.getElementById('q'), sort = document.getElementById('sort');
+<p class="count" id="count">${notices.length} Ausschreibungen</p>
+<div id="list">
+${notices.length ? notices.map((notice) => noticeCard(notice, { now })).join('\n') : '<p class="empty">Keine Ausschreibungen erfasst.</p>'}
+</div>`;
 
-function render(){
-  const term = q.value.trim().toLowerCase();
-  let rows = items.filter(i => !term || (i.t+' '+(i.b||'')+' '+(i.c||'')).toLowerCase().includes(term));
-  const key = sort.value;
-  rows.sort((a,b) => {
-    if(key==='v') return (b.v??-1)-(a.v??-1);
-    if(key==='d') return String(a.d??'9999').localeCompare(String(b.d??'9999'));
-    return String(b.p??'').localeCompare(String(a.p??''));
+  return layout({
+    title: pageTitle,
+    description: description ?? `Alle erfassten öffentlichen Ausschreibungen für ${niche.name} in Deutschland, durchsuchbar und nach Frist sortierbar.`,
+    body,
+    canonical,
+    baseUrl,
+    breadcrumbs,
+    impressum,
+    scripts: [LIST_SCRIPT],
   });
-  count.textContent = rows.length + ' von ' + items.length + ' Ausschreibungen';
-  list.innerHTML = rows.length ? rows.map(i => \`
-    <div class="item">
-      <h2>\${i.u ? \`<a href="\${esc(i.u)}" rel="noopener">\${esc(i.t)}</a>\` : esc(i.t)}</h2>
-      <div class="meta">\${esc(i.b||'Auftraggeber unbekannt')}\${i.c?', '+esc(i.c):''}<br>
-      Auftragswert <strong>\${i.v==null?'–':money.format(i.v)}</strong> &middot;
-      Frist <strong>\${fmtDate(i.d)}</strong> &middot; veröffentlicht \${fmtDate(i.p)}</div>
-    </div>\`).join('') : '<div class="empty">Keine Treffer.</div>';
-}
-q.addEventListener('input', render);
-sort.addEventListener('change', render);
-render();
-</script>
-</body></html>`;
 }
 
 // ----------------------------------------------------------------- Exporte
@@ -202,5 +158,5 @@ export function renderCsv(notices) {
       n.deadline ?? '', (n.matchedCpv ?? n.cpv ?? []).join(' '), n.score ?? '', n.url ?? ''].map(cell).join(';'),
   );
   // Semikolon + BOM, damit Excel unter Windows die Datei ohne Importdialog richtig oeffnet.
-  return `\uFEFF${[header.join(';'), ...lines].join('\r\n')}\r\n`;
+  return `﻿${[header.join(';'), ...lines].join('\r\n')}\r\n`;
 }

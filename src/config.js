@@ -60,9 +60,28 @@ export async function loadSchema(dir = CONFIG_DIR) {
   return mergeSchema(await readJson(join(dir, 'ted-schema.json')));
 }
 
-export async function loadSubscribers(slug, dir = CONFIG_DIR) {
-  const all = (await readJson(join(dir, 'subscribers.json'))) ?? {};
-  const list = all[slug];
-  if (!Array.isArray(list)) return [];
-  return list.filter((entry) => typeof entry === 'string' && entry.includes('@'));
+/**
+ * Zentrale Seitenangaben. Fehlende Pflichtfelder werden hier NICHT still
+ * ergaenzt - sie sollen dort auffallen, wo sie gebraucht werden (Sitemap,
+ * Mailversand), damit niemand versehentlich mit Platzhaltern live geht.
+ */
+export async function loadSite(dir = CONFIG_DIR) {
+  const site = (await readJson(join(dir, 'site.json'))) ?? {};
+  return {
+    baseUrl: site.baseUrl || null,
+    betreiber: site.betreiber || null,
+    impressum: site.impressum || null,
+    kontaktEmail: site.kontaktEmail || null,
+    subscribeEndpoint: site.subscribeEndpoint || null,
+    stripeLinks: site.stripeLinks ?? {},
+  };
+}
+
+/** Was vor dem Echtbetrieb gefuellt sein muss. */
+export function siteProblems(site) {
+  const problems = [];
+  if (!site.baseUrl) problems.push('baseUrl fehlt – ohne sie gibt es keine Sitemap und keine absoluten Links.');
+  if (!site.impressum) problems.push('impressum fehlt – ohne Absenderangabe darf keine Mail rausgehen (§5 DDG).');
+  if (!site.kontaktEmail && !site.subscribeEndpoint) problems.push('kontaktEmail oder subscribeEndpoint fehlt – sonst gibt es keinen Anmeldeweg.');
+  return problems;
 }
