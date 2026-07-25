@@ -116,14 +116,25 @@ function unsubscribeUrl(site, token) {
   return null;
 }
 
-function mailContext(site, niche, token) {
+/**
+ * Baut die Pflichtangaben fuer eine Mail.
+ *
+ * Die Strenge haengt daran, ob wirklich etwas rausgeht: Beim echten Versand
+ * fehlt ohne Impressum und Abmeldeweg die Rechtsgrundlage, also wird
+ * abgebrochen. Beim Dry-Run in eine Datei entsteht kein Empfaenger und kein
+ * Risiko - dort wuerde ein harter Abbruch nur den taeglichen Lauf killen,
+ * bevor er Daten geholt und die Seite gebaut hat.
+ */
+function mailContext(site, niche, token, { delivering = true } = {}) {
   const problems = siteProblems(site);
-  if (problems.length) {
+  if (problems.length && delivering) {
     throw new Error(`config/site.json ist unvollstaendig:\n  - ${problems.join('\n  - ')}`);
   }
+
+  const PLATZHALTER = 'PLATZHALTER – vor dem ersten Versand impressum in config/site.json füllen';
   return {
-    impressum: site.impressum,
-    unsubscribeUrl: unsubscribeUrl(site, token),
+    impressum: site.impressum || PLATZHALTER,
+    unsubscribeUrl: unsubscribeUrl(site, token) ?? `mailto:abmeldung@example.invalid?subject=${encodeURIComponent(`Abmeldung ${token}`)}`,
     archiveUrl: site.baseUrl ? new URL(paths.archive(niche.slug), site.baseUrl).href : null,
     offerUrl: site.baseUrl ? new URL(paths.offer(niche.slug), site.baseUrl).href : null,
   };
@@ -353,7 +364,12 @@ async function deliver({ slug, plan, build, since, dryRun, label }) {
 
   if (transport.name === 'file') {
     warn(`Dry-Run (Transport "file"): es wird nichts verschickt.${process.env.RESEND_API_KEY ? '' : ' RESEND_API_KEY ist nicht gesetzt.'}`);
-    const context = mailContext(site, niche, 'VORSCHAU-TOKEN');
+    const offen = siteProblems(site);
+    if (offen.length) {
+      warn('Vor dem ersten echten Versand noch zu erledigen:');
+      offen.forEach((problem) => info(`    ${problem}`));
+    }
+    const context = mailContext(site, niche, 'VORSCHAU-TOKEN', { delivering: false });
     const mail = build(selection, niche, { now, ...context });
     const result = await transport.send({ to: [], subject: mail.subject, html: mail.html, slug, now });
     ok(`${label} als Vorschau nach ${result.path} (${selection.length} Ausschreibungen, ${recipients.length} Empfaenger vorgemerkt)`);
