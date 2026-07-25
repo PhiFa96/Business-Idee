@@ -1,0 +1,35 @@
+{
+  "_kommentar": "CPV-Codes sind nach bestem Wissen vorbelegt, aber NICHT gegen die offizielle CPV-Liste geprueft (der Build-Rechner hatte keinen Zugang zu TED). Einmalig pruefen: https://simap.ted.europa.eu/de/web/simap/cpv - 'node bin/radar.js doctor' meldet Codes, die TED nicht kennt.",
+  "name": "Gebäudereinigung",
+  "slug": "gebaeudereinigung",
+  "country": "DEU",
+  "cpv": [
+    "90910000",
+    "90911000",
+    "90911100",
+    "90911200",
+    "90911300",
+    "90919000",
+    "90919100",
+    "90919200"
+  ],
+  "cpvPrefixes": [
+    "9091"
+  ],
+  "nuts": [],
+  "minValueEur": 100000,
+  "maxValueEur": 20000000,
+  "excludeKeywords": [
+    "Winterdienst",
+    "Straßenreinigung",
+    "Kanalreinigung",
+    "Wäscherei"
+  ],
+  "minDaysToDeadline": 10,
+  "minScore": 50,
+  "price": {
+    "monthly": 79,
+    "yearly": 790,
+    "currency": "EUR"
+  }
+}

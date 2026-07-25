@@ -1,0 +1,27 @@
+name: Tests
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Tests
+        run: node --test
+
+      # Laeuft ohne Netz gegen die Fixtures - faengt Fehler in Filterung und
+      # Darstellung ab, bevor sie in einem Kundenversand landen.
+      - name: Rauchtest der gesamten Kette
+        run: |
+          node bin/radar.js scan --fixture --days 90
+          node bin/radar.js run --niche gebaeudereinigung --fixture --days 90
+          node bin/radar.js send --niche gebaeudereinigung --dry-run
+          test -s site/gebaeudereinigung/index.html

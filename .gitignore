@@ -1,0 +1,5 @@
+node_modules/
+
+# Erzeugte Alert-Mails der Dry-Runs. Das Archiv unter site/ und der Zustand
+# unter data/ gehoeren dagegen ins Repo - sie sind die Datenbank.
+out/

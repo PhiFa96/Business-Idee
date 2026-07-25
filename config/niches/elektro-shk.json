@@ -1,0 +1,39 @@
+{
+  "_kommentar": "CPV-Codes nach bestem Wissen vorbelegt, nicht gegen die offizielle CPV-Liste geprueft. Einmalig pruefen, siehe doctor-Befehl.",
+  "name": "Elektro und SHK",
+  "slug": "elektro-shk",
+  "country": "DEU",
+  "cpv": [
+    "45310000",
+    "45311000",
+    "45311100",
+    "45311200",
+    "45315000",
+    "45316000",
+    "45317000",
+    "45330000",
+    "45331000",
+    "45332000",
+    "50710000"
+  ],
+  "cpvPrefixes": [
+    "4531",
+    "4533",
+    "50710"
+  ],
+  "nuts": [],
+  "minValueEur": 150000,
+  "maxValueEur": 30000000,
+  "excludeKeywords": [
+    "Freileitung",
+    "Umspannwerk",
+    "Bahnstrom"
+  ],
+  "minDaysToDeadline": 10,
+  "minScore": 50,
+  "price": {
+    "monthly": 79,
+    "yearly": 790,
+    "currency": "EUR"
+  }
+}

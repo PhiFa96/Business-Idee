@@ -1,0 +1,84 @@
+name: Vergabe-Radar taeglich
+
+# Werktags um 04:30 UTC (06:30 MESZ / 05:30 MEZ) - frueh genug, dass die Mail
+# vor Arbeitsbeginn im Postfach liegt.
+on:
+  schedule:
+    - cron: '30 4 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      niche:
+        description: 'Gewerk (Slug aus config/niches/)'
+        required: true
+        default: 'gebaeudereinigung'
+        type: choice
+        options: [gebaeudereinigung, galabau, elektro-shk, metallbau]
+      dry_run:
+        description: 'Nur schreiben, nicht verschicken'
+        required: false
+        default: false
+        type: boolean
+
+# Der Zustand liegt als Datei im Repo. Zwei gleichzeitige Laeufe wuerden sich
+# gegenseitig ueberschreiben, deshalb strikt nacheinander.
+concurrency:
+  group: radar-${{ inputs.niche || 'gebaeudereinigung' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  radar:
+    runs-on: ubuntu-latest
+    env:
+      NICHE: ${{ inputs.niche || 'gebaeudereinigung' }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      # Kein npm ci - das Projekt hat bewusst keine Abhaengigkeiten.
+
+      - name: Tests
+        run: node --test
+
+      - name: Ausschreibungen abrufen
+        run: node bin/radar.js run --niche "$NICHE" --days 30
+        env:
+          TED_API_KEY: ${{ secrets.TED_API_KEY }}
+
+      - name: Alert verschicken
+        run: node bin/radar.js send --niche "$NICHE" --since 1 ${{ inputs.dry_run && '--dry-run' || '' }}
+        env:
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          MAIL_FROM: ${{ vars.MAIL_FROM }}
+
+      - name: Zustand und Archiv zurueckschreiben
+        run: |
+          git config user.name  "vergabe-radar[bot]"
+          git config user.email "vergabe-radar@users.noreply.github.com"
+          git add data site
+          if git diff --staged --quiet; then
+            echo "Keine Aenderungen - nichts zu committen."
+          else
+            git commit -m "Vergabe-Radar $NICHE: Lauf vom $(date -u +%Y-%m-%d)"
+            git push
+          fi
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: radar
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

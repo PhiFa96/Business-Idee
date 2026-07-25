@@ -1,0 +1,20 @@
+{
+  "name": "vergabe-radar",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Taegliche Alerts zu oeffentlichen Ausschreibungen, gefiltert auf ein Gewerk. Ohne Server, ohne Datenbank, ohne Abhaengigkeiten.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "bin": {
+    "radar": "./bin/radar.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "doctor": "node bin/radar.js doctor",
+    "scan": "node bin/radar.js scan",
+    "demo": "node bin/radar.js scan --fixture && node bin/radar.js render --niche gebaeudereinigung --fixture"
+  },
+  "license": "UNLICENSED"
+}

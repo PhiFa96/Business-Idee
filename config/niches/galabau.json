@@ -1,0 +1,37 @@
+{
+  "_kommentar": "CPV-Codes nach bestem Wissen vorbelegt, nicht gegen die offizielle CPV-Liste geprueft. Einmalig pruefen, siehe doctor-Befehl.",
+  "name": "GaLaBau und Grünpflege",
+  "slug": "galabau",
+  "country": "DEU",
+  "cpv": [
+    "77300000",
+    "77310000",
+    "77311000",
+    "77312000",
+    "77313000",
+    "77314000",
+    "77340000",
+    "77211500",
+    "45112710"
+  ],
+  "cpvPrefixes": [
+    "773",
+    "7721",
+    "451127"
+  ],
+  "nuts": [],
+  "minValueEur": 80000,
+  "maxValueEur": 10000000,
+  "excludeKeywords": [
+    "Forstwirtschaft",
+    "Holzernte",
+    "Landwirtschaftliche"
+  ],
+  "minDaysToDeadline": 10,
+  "minScore": 50,
+  "price": {
+    "monthly": 79,
+    "yearly": 790,
+    "currency": "EUR"
+  }
+}

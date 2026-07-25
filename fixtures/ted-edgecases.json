@@ -1,0 +1,234 @@
+[
+  {
+    "_warum": "Normalfall - dient als Referenz fuer die Vergleiche in den Tests.",
+    "publication-number": "00900001-2026",
+    "publication-date": "{{today-2}}",
+    "notice-title": {
+      "deu": [
+        "Unterhaltsreinigung Rathaus"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Musterstadt"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Musterstadt"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+30}}",
+    "total-value": {
+      "amount": 500000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEA51"
+      ]
+    }
+  },
+  {
+    "_warum": "Keine Publication-Number - muss verworfen werden, sonst bricht die Deduplizierung.",
+    "publication-date": "{{today-2}}",
+    "notice-title": {
+      "deu": [
+        "Ohne Kennung"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ]
+  },
+  {
+    "_warum": "Titel nur auf Englisch - der Sprach-Fallback muss greifen.",
+    "publication-number": "00900003-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "eng": [
+        "Cleaning services for public buildings"
+      ]
+    },
+    "buyer-name": {
+      "eng": [
+        "City of Example"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 300000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "Betrag als deutscher String mit Tausenderpunkten und Dezimalkomma.",
+    "publication-number": "00900004-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Reinigung mit Betrag als Text"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": "1.234.567,89 EUR"
+  },
+  {
+    "_warum": "Fremdwaehrung - darf NICHT umgerechnet werden, valueEur muss null bleiben.",
+    "publication-number": "00900005-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Reinigung in Fremdwährung"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 900000,
+      "currency": "PLN"
+    }
+  },
+  {
+    "_warum": "Weder Frist noch Wert - darf nicht wegfliegen, nur schlechter bewertet werden.",
+    "publication-number": "00900006-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": "Reinigung ohne Frist und ohne Wert",
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200"
+    ],
+    "deadline-receipt-request": null,
+    "total-value": null
+  },
+  {
+    "_warum": "Frist schon abgelaufen - bleibt im Archiv, gehoert aber nicht in den Alert.",
+    "publication-number": "00900007-2026",
+    "publication-date": "{{today-40}}",
+    "notice-title": {
+      "deu": [
+        "Reinigung mit abgelaufener Frist"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today-3}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "Falsches Land - Hartfilter.",
+    "publication-number": "00900008-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Reinigung Salzburg"
+      ]
+    },
+    "buyer-country": "AUT",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "Ausschluss-Stichwort im Titel - Hartfilter.",
+    "publication-number": "00900009-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Winterdienst auf Betriebsflächen"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90910000-9"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "CPV passt nicht zur Nische - Hartfilter.",
+    "publication-number": "00900010-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Lieferung von Bürostühlen"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "39130000-2"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "CPV nur als Praefix-Treffer - niedriger bewertet, aber behalten.",
+    "publication-number": "00900011-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "Spezialreinigung Lüftungskanäle"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90912100-4"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  },
+  {
+    "_warum": "Titel enthaelt HTML - darf beim Rendern nicht als Markup interpretiert werden.",
+    "publication-number": "00900012-2026",
+    "publication-date": "{{today-5}}",
+    "notice-title": {
+      "deu": [
+        "<script>alert('x')</script> Reinigung & Pflege"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 400000,
+      "currency": "EUR"
+    }
+  }
+]

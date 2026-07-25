@@ -1,0 +1,474 @@
+[
+  {
+    "publication-number": "00412345-2026",
+    "publication-date": "{{today-3}}",
+    "notice-title": {
+      "deu": [
+        "Rahmenvereinbarung Unterhaltsreinigung der städtischen Liegenschaften"
+      ],
+      "eng": [
+        "Framework agreement building cleaning"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Bochum, Zentrale Vergabestelle"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Bochum"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8",
+      "90919200-4"
+    ],
+    "deadline-receipt-request": "{{today+26}}",
+    "total-value": {
+      "amount": 2400000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEA51"
+      ]
+    },
+    "links": {
+      "html": {
+        "deu": "https://ted.europa.eu/de/notice/-/detail/00412345-2026"
+      }
+    }
+  },
+  {
+    "publication-number": "00412911-2026",
+    "publication-date": "{{today-6}}",
+    "notice-title": {
+      "deu": [
+        "Glas- und Rahmenreinigung an 14 Schulstandorten"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Landeshauptstadt Hannover"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Hannover"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911300-9"
+    ],
+    "deadline-receipt-request": "{{today+19}}",
+    "total-value": {
+      "amount": 480000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE929"
+      ]
+    }
+  },
+  {
+    "publication-number": "00413002-2026",
+    "publication-date": "{{today-9}}",
+    "notice-title": {
+      "deu": [
+        "Unterhaltsreinigung Klinikum - Los 2 Funktionsbereiche"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Klinikum Nürnberg"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Nürnberg"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+31}}",
+    "total-value": "3.850.000,00 EUR",
+    "place-of-performance": {
+      "nuts": [
+        "DE254"
+      ]
+    }
+  },
+  {
+    "publication-number": "00413188-2026",
+    "publication-date": "{{today-12}}",
+    "notice-title": {
+      "deu": [
+        "Gebäudereinigung Verwaltungsgebäude, Rahmenvertrag 4 Jahre"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Bezirksregierung Düsseldorf"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Düsseldorf"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8",
+      "90910000-9"
+    ],
+    "deadline-receipt-request": "{{today+15}}",
+    "total-value": null,
+    "place-of-performance": {
+      "nuts": [
+        "DEA11"
+      ]
+    }
+  },
+  {
+    "publication-number": "00413401-2026",
+    "publication-date": "{{today-15}}",
+    "notice-title": {
+      "deu": [
+        "Reinigungsdienstleistungen für Sporthallen und Bäder"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Kassel"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Kassel"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90910000-9"
+    ],
+    "deadline-receipt-request": "{{today+8}}",
+    "total-value": {
+      "amount": 690000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE731"
+      ]
+    }
+  },
+  {
+    "publication-number": "00413655-2026",
+    "publication-date": "{{today-21}}",
+    "notice-title": {
+      "deu": [
+        "Büro- und Unterhaltsreinigung Hochschulstandorte"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Universität Leipzig"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Leipzig"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90919200-4",
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+22}}",
+    "total-value": {
+      "amount": 1750000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DED51"
+      ]
+    }
+  },
+  {
+    "publication-number": "00413870-2026",
+    "publication-date": "{{today-27}}",
+    "notice-title": {
+      "deu": [
+        "Winterdienst und Außenreinigung der Betriebshöfe"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadtwerke Münster"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Münster"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90910000-9"
+    ],
+    "deadline-receipt-request": "{{today+18}}",
+    "total-value": {
+      "amount": 320000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEA33"
+      ]
+    }
+  },
+  {
+    "publication-number": "00414120-2026",
+    "publication-date": "{{today-33}}",
+    "notice-title": {
+      "deu": [
+        "Unterhaltsreinigung Kindertagesstätten, 6 Lose"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Freiburg im Breisgau"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Freiburg"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+12}}",
+    "total-value": {
+      "amount": 940000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE131"
+      ]
+    }
+  },
+  {
+    "publication-number": "00414388-2026",
+    "publication-date": "{{today-38}}",
+    "notice-title": {
+      "deu": [
+        "Sonderreinigung nach Bauabschluss Neubau Rathaus"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Gemeinde Weyhe"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Weyhe"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90919000-2"
+    ],
+    "deadline-receipt-request": "{{today+4}}",
+    "total-value": {
+      "amount": 85000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE94D"
+      ]
+    }
+  },
+  {
+    "publication-number": "00414600-2026",
+    "publication-date": "{{today-44}}",
+    "notice-title": {
+      "deu": [
+        "Reinigung von Verwaltungsgebäuden Wien"
+      ],
+      "eng": [
+        "Cleaning of administrative buildings"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Wien"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Wien"
+      ]
+    },
+    "buyer-country": "AUT",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+20}}",
+    "total-value": {
+      "amount": 1200000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "AT130"
+      ]
+    }
+  },
+  {
+    "publication-number": "00414855-2026",
+    "publication-date": "{{today-51}}",
+    "notice-title": {
+      "deu": [
+        "Unterhaltsreinigung Justizzentrum"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Land Rheinland-Pfalz, Landesbetrieb LBB"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Mainz"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8"
+    ],
+    "deadline-receipt-request": null,
+    "total-value": {
+      "amount": 1450000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEB35"
+      ]
+    }
+  },
+  {
+    "publication-number": "00415090-2026",
+    "publication-date": "{{today-58}}",
+    "notice-title": {
+      "deu": [
+        "Hygiene- und Reinigungsleistungen Pflegeeinrichtungen"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Landkreis Osnabrück"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Osnabrück"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911100-7",
+      "90911200-8"
+    ],
+    "deadline-receipt-request": "{{today+29}}",
+    "total-value": {
+      "amount": 2100000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE949"
+      ]
+    }
+  },
+  {
+    "publication-number": "00415344-2026",
+    "publication-date": "{{today-66}}",
+    "notice-title": {
+      "deu": [
+        "Glasreinigung Messegelände"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Messe Stuttgart GmbH"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Stuttgart"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911300-9"
+    ],
+    "deadline-receipt-request": "{{today+35}}",
+    "total-value": {
+      "amount": 560000,
+      "currency": "CHF"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE111"
+      ]
+    }
+  },
+  {
+    "publication-number": "00415702-2026",
+    "publication-date": "{{today-79}}",
+    "notice-title": {
+      "deu": [
+        "Rahmenvertrag Unterhaltsreinigung Bundesbehörde"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Bundesanstalt für Immobilienaufgaben"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Bonn"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "90911200-8",
+      "90919200-4"
+    ],
+    "deadline-receipt-request": "{{today+41}}",
+    "total-value": {
+      "amount": 5300000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEA22"
+      ]
+    }
+  }
+]

@@ -1,0 +1,199 @@
+[
+  {
+    "publication-number": "00431220-2026",
+    "publication-date": "{{today-7}}",
+    "notice-title": {
+      "deu": [
+        "Elektroinstallation Neubau Feuerwache, Los 4"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Regensburg"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Regensburg"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45311200-2",
+      "45310000-3"
+    ],
+    "deadline-receipt-request": "{{today+23}}",
+    "total-value": {
+      "amount": 1850000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE232"
+      ]
+    }
+  },
+  {
+    "publication-number": "00431688-2026",
+    "publication-date": "{{today-16}}",
+    "notice-title": {
+      "deu": [
+        "Heizungs-, Lüftungs- und Sanitärtechnik Sanierung Gymnasium"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Landkreis Konstanz"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Konstanz"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45331000-6",
+      "45330000-9"
+    ],
+    "deadline-receipt-request": "{{today+18}}",
+    "total-value": {
+      "amount": 2400000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE138"
+      ]
+    }
+  },
+  {
+    "publication-number": "00432045-2026",
+    "publication-date": "{{today-29}}",
+    "notice-title": {
+      "deu": [
+        "Wartung elektrischer und mechanischer Gebäudeanlagen, 4 Jahre"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Bundesanstalt für Immobilienaufgaben"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Berlin"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "50710000-5"
+    ],
+    "deadline-receipt-request": "{{today+33}}",
+    "total-value": {
+      "amount": 3600000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE300"
+      ]
+    }
+  },
+  {
+    "publication-number": "00432511-2026",
+    "publication-date": "{{today-41}}",
+    "notice-title": {
+      "deu": [
+        "Erneuerung Umspannwerk Nord, Primärtechnik"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Netzgesellschaft Chemnitz mbH"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Chemnitz"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45310000-3"
+    ],
+    "deadline-receipt-request": "{{today+25}}",
+    "total-value": {
+      "amount": 7200000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DED41"
+      ]
+    }
+  },
+  {
+    "publication-number": "00432977-2026",
+    "publication-date": "{{today-55}}",
+    "notice-title": {
+      "deu": [
+        "Sanitärinstallation Sporthalle, Los 7"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Gemeinde Wentorf"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Wentorf"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45332000-3"
+    ],
+    "deadline-receipt-request": "{{today+6}}",
+    "total-value": {
+      "amount": 410000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEF07"
+      ]
+    }
+  },
+  {
+    "publication-number": "00433402-2026",
+    "publication-date": "{{today-70}}",
+    "notice-title": {
+      "deu": [
+        "Sonstige Elektroinstallationsarbeiten Rechenzentrum"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Land Hessen, HZD"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Wiesbaden"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45317000-2"
+    ],
+    "deadline-receipt-request": "{{today+28}}",
+    "total-value": null,
+    "place-of-performance": {
+      "nuts": [
+        "DE714"
+      ]
+    }
+  }
+]

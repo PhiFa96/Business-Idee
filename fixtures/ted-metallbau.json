@@ -1,0 +1,104 @@
+[
+  {
+    "publication-number": "00441088-2026",
+    "publication-date": "{{today-14}}",
+    "notice-title": {
+      "deu": [
+        "Stahlbauarbeiten Erweiterung Betriebshalle, Los 3"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadtentwässerung Dresden GmbH"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Dresden"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "45223210-1",
+      "45262410-8"
+    ],
+    "deadline-receipt-request": "{{today+21}}",
+    "total-value": {
+      "amount": 1240000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DED21"
+      ]
+    }
+  },
+  {
+    "publication-number": "00441730-2026",
+    "publication-date": "{{today-37}}",
+    "notice-title": {
+      "deu": [
+        "Lieferung und Montage von Schutzgeländern an Radwegbrücken"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Landesbetrieb Mobilität Rheinland-Pfalz"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Koblenz"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "34928310-4",
+      "45340000-2"
+    ],
+    "deadline-receipt-request": "{{today+11}}",
+    "total-value": {
+      "amount": 380000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEB11"
+      ]
+    }
+  },
+  {
+    "publication-number": "00442365-2026",
+    "publication-date": "{{today-63}}",
+    "notice-title": {
+      "deu": [
+        "Fenster- und Türelemente Sanierung Verwaltungsgebäude"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Stadt Halle (Saale)"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Halle"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "44221000-5",
+      "45421100-5"
+    ],
+    "deadline-receipt-request": "{{today+5}}",
+    "total-value": {
+      "amount": 720000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DEE02"
+      ]
+    }
+  }
+]

@@ -1,0 +1,38 @@
+{
+  "_kommentar": "CPV-Codes nach bestem Wissen vorbelegt, nicht gegen die offizielle CPV-Liste geprueft. Einmalig pruefen, siehe doctor-Befehl. Hinweis aus der Analyse: Metallbau-Auftraege liegen haeufig UNTER den EU-Schwellenwerten und stehen dann gar nicht in TED - erwarte hier die duennste Trefferlage der vier Gewerke.",
+  "name": "Metallbau und Schlosser",
+  "slug": "metallbau",
+  "country": "DEU",
+  "cpv": [
+    "44316500",
+    "45421160",
+    "45223210",
+    "45262410",
+    "44212000",
+    "44221000",
+    "45421100",
+    "45340000",
+    "45342000",
+    "34928310"
+  ],
+  "cpvPrefixes": [
+    "44316",
+    "45421",
+    "4534",
+    "4422"
+  ],
+  "nuts": [],
+  "minValueEur": 60000,
+  "maxValueEur": 10000000,
+  "excludeKeywords": [
+    "Schiffbau",
+    "Fernwärme"
+  ],
+  "minDaysToDeadline": 10,
+  "minScore": 50,
+  "price": {
+    "monthly": 79,
+    "yearly": 790,
+    "currency": "EUR"
+  }
+}

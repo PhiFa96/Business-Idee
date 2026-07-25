@@ -1,0 +1,36 @@
+[
+  {
+    "_warum": "Rueckfall-Fixture fuer Nischen ohne eigene Datei - damit --fixture immer etwas rendert.",
+    "publication-number": "00990001-2026",
+    "publication-date": "{{today-3}}",
+    "notice-title": {
+      "deu": [
+        "Beispielausschreibung für eine neue Nische"
+      ]
+    },
+    "buyer-name": {
+      "deu": [
+        "Musterlandkreis"
+      ]
+    },
+    "buyer-city": {
+      "deu": [
+        "Musterstadt"
+      ]
+    },
+    "buyer-country": "DEU",
+    "classification-cpv": [
+      "00000000-0"
+    ],
+    "deadline-receipt-request": "{{today+25}}",
+    "total-value": {
+      "amount": 250000,
+      "currency": "EUR"
+    },
+    "place-of-performance": {
+      "nuts": [
+        "DE300"
+      ]
+    }
+  }
+]
