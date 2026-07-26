@@ -62,6 +62,23 @@ Anmeldung bleibt der Kontakt bestehen — und zwar rechtmäßig, weil die Person
    `RESEND_API_KEY` und Variable `MAIL_FROM` setzen. Ohne beides schreibt der Workflow die Mail
    nur nach `out/` und verschickt nichts.
 
+### Wo die Abonnentendaten liegen — und warum nicht im Repo
+
+Das Repository ist öffentlich (nur so ist GitHub Pages kostenlos). E-Mail-Adressen und
+Einwilligungsnachweise dürfen dort nicht liegen — das wäre ein Datenschutzverstoß, kein
+Schönheitsfehler. Deshalb:
+
+- `config/subscribers.json` steht in `.gitignore` und existiert nur auf deinem Rechner.
+- Im Betrieb liest der Workflow die Liste aus dem **Repository-Secret `SUBSCRIBERS_JSON`**.
+  Secrets sind auch in öffentlichen Repositories privat.
+- Nach jeder Änderung an der lokalen Datei den Inhalt in das Secret übertragen:
+  Settings → Secrets and variables → Actions → `SUBSCRIBERS_JSON`. Das Werkzeug erinnert dich
+  daran, wenn du aus dem Secret gelesen und lokal geschrieben hast.
+
+Bei einer Handvoll Kunden ist das Kopieren einmal pro Woche zumutbar. Wird es lästig, ist der
+Cloudflare Worker aus `worker/subscribe.js` der nächste Schritt — dann liegt die Liste dort und
+`subscribers sync` holt sie.
+
 Nach einer Zahlung den Kunden eintragen:
 
 ```

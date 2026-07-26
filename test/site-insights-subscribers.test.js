@@ -367,3 +367,29 @@ test('publicGap meldet, wenn die Sperre wirkungslos ist', () => {
   assert.equal(publicGap([]).kritisch, false);
   assert.equal(publicGap([ohne, ohne]).anteil, 1);
 });
+
+// ------------------------------- Abonnenten im oeffentlichen Repository
+
+test('die Liste kommt bevorzugt aus dem Secret, nicht aus der Datei', async () => {
+  // Das Repository ist oeffentlich, damit Pages kostenlos bleibt. Adressen und
+  // Einwilligungsnachweise duerfen dort nicht liegen - im Betrieb kommen sie
+  // aus dem GitHub-Secret, das auch in oeffentlichen Repos privat ist.
+  const ausSecret = await subs.loadAll('config', {
+    env: { SUBSCRIBERS_JSON: JSON.stringify({ galabau: [{ email: 'a@b.de', status: 'aktiv', bestaetigt: '2026-07-01T00:00:00Z', plan: 'alert' }] }) },
+  });
+  assert.equal(subs.activeOf(ausSecret, 'galabau').length, 1);
+  assert.equal(subs.activeOf(ausSecret, 'galabau')[0].email, 'a@b.de');
+});
+
+test('ein kaputtes Secret bricht den Lauf nicht ab, verschickt aber auch nichts', async () => {
+  // Wichtiger als es scheint: Ein Abbruch hier wuerde auch Abruf und Seitenbau
+  // mitreissen, die im selben Lauf davor stattfinden.
+  const kaputt = await subs.loadAll('config', { env: { SUBSCRIBERS_JSON: '{kein json' } });
+  assert.deepEqual(kaputt, {});
+  assert.equal(subs.activeOf(kaputt, 'galabau').length, 0);
+});
+
+test('ohne Secret wird weiterhin die lokale Datei gelesen', async () => {
+  const ausDatei = await subs.loadAll('config', { env: {} });
+  assert.ok(typeof ausDatei === 'object' && ausDatei !== null);
+});
