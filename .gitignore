@@ -3,3 +3,7 @@ node_modules/
 # Erzeugte Alert-Mails der Dry-Runs. Das Archiv unter site/ und der Zustand
 # unter data/ gehoeren dagegen ins Repo - sie sind die Datenbank.
 out/
+
+# Abonnentendaten gehoeren NICHT ins oeffentliche Repository.
+# Im Betrieb kommt die Liste aus dem GitHub-Secret SUBSCRIBERS_JSON.
+config/subscribers.json

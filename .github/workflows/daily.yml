@@ -75,6 +75,7 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MAIL_FROM: ${{ vars.MAIL_FROM }}
+          SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
 
       # Montags zusaetzlich der kostenlose Wochenueberblick - die Bruecke vom
       # Interessenten zum Abo.
@@ -89,12 +90,14 @@ jobs:
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
           MAIL_FROM: ${{ vars.MAIL_FROM }}
+          SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
 
       - name: Zustand, Archiv und Abonnenten zurueckschreiben
         run: |
           git config user.name  "vergabe-radar[bot]"
           git config user.email "vergabe-radar@users.noreply.github.com"
-          git add data site config/subscribers.json
+          # config/subscribers.json bewusst NICHT: oeffentliches Repo, Kundendaten
+          git add data site
           if git diff --staged --quiet; then
             echo "Keine Aenderungen - nichts zu committen."
           else

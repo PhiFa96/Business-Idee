@@ -20,6 +20,12 @@ jeden Morgen Vergabeportale durchsehen – macht die Maschine; das Ergebnis ist 
 **Kein Server, keine Datenbank, keine Abhängigkeiten.** Node 22 genügt. Der Zustand liegt als JSON
 im Repo, der Zeitplan in GitHub Actions, die Website auf GitHub Pages. Laufende Kosten: 0 €.
 
+> **Dieses Repository ist öffentlich.** Nur so ist GitHub Pages kostenlos — bei privaten
+> Repositories verlangt GitHub dafür ein kostenpflichtiges Konto. Folge: Alles hier ist von jedem
+> lesbar, auch der gesamte Verlauf. **Abonnentendaten gehören deshalb nicht ins Repo**, sondern
+> ins Secret `SUBSCRIBERS_JSON` (siehe [`VERTRIEB.md`](VERTRIEB.md)). `config/subscribers.json`
+> steht in `.gitignore` und wird vom täglichen Lauf nicht mehr zurückgeschrieben.
+
 ### Schnellstart
 
 ```bash

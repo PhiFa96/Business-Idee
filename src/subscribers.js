@@ -64,12 +64,33 @@ export function migrateEntry(entry, slug) {
   };
 }
 
-export async function loadAll(dir = CONFIG_DIR) {
+/**
+ * Laedt die Liste - bevorzugt aus der Umgebungsvariablen SUBSCRIBERS_JSON.
+ *
+ * Grund: Das Repository ist oeffentlich, damit GitHub Pages kostenlos bleibt.
+ * E-Mail-Adressen und Einwilligungsnachweise duerfen dort nicht liegen.
+ * GitHub-Secrets sind auch in oeffentlichen Repositories privat, also kommt
+ * die Liste im Betrieb von dort und nur lokal aus der Datei.
+ */
+export async function loadAll(dir = CONFIG_DIR, { env = process.env } = {}) {
   let raw = {};
-  try {
-    raw = JSON.parse(await readFile(join(dir, SUBSCRIBERS_FILE), 'utf8'));
-  } catch (err) {
-    if (err.code !== 'ENOENT') throw new Error(`${SUBSCRIBERS_FILE} ist unlesbar: ${err.message}`);
+
+  if (env.SUBSCRIBERS_JSON) {
+    try {
+      raw = JSON.parse(env.SUBSCRIBERS_JSON);
+    } catch (err) {
+      // Ein kaputtes Secret darf den taeglichen Lauf nicht abbrechen - sonst
+      // faellt auch der Abruf und der Seitenbau aus. Lieber ohne Empfaenger
+      // weiterlaufen und laut meckern.
+      console.error(`! SUBSCRIBERS_JSON ist kein gueltiges JSON (${err.message}) - es wird niemand angeschrieben.`);
+      return {};
+    }
+  } else {
+    try {
+      raw = JSON.parse(await readFile(join(dir, SUBSCRIBERS_FILE), 'utf8'));
+    } catch (err) {
+      if (err.code !== 'ENOENT') throw new Error(`${SUBSCRIBERS_FILE} ist unlesbar: ${err.message}`);
+    }
   }
 
   const out = {};
@@ -80,14 +101,24 @@ export async function loadAll(dir = CONFIG_DIR) {
   return out;
 }
 
-export async function saveAll(all, dir = CONFIG_DIR) {
+export async function saveAll(all, dir = CONFIG_DIR, { env = process.env } = {}) {
   const payload = {
     _kommentar:
-      'Abonnenten je Nische mit Einwilligungsnachweis. Eintraege niemals von Hand auf "aktiv" setzen, ' +
-      'ohne dass eine echte Bestaetigung vorliegt - der Nachweis ist der einzige Schutz im Streitfall.',
+      'Abonnenten je Nische mit Einwilligungsnachweis. Diese Datei ist bewusst NICHT im Repository ' +
+      '(.gitignore) - das Repo ist oeffentlich. Im Betrieb kommt die Liste aus dem Secret ' +
+      'SUBSCRIBERS_JSON. Eintraege niemals von Hand auf "aktiv" setzen, ohne dass eine echte ' +
+      'Bestaetigung vorliegt - der Nachweis ist der einzige Schutz im Streitfall.',
     ...all,
   };
   await writeFile(join(dir, SUBSCRIBERS_FILE), `${JSON.stringify(payload, null, 2)}\n`, 'utf8');
+
+  // Wer aus dem Secret gelesen hat, aendert mit saveAll nur die lokale Kopie.
+  // Ohne diesen Hinweis glaubt man, der Kunde sei eingetragen - und wundert
+  // sich, warum der naechste Lauf ihn nicht kennt.
+  if (env.SUBSCRIBERS_JSON) {
+    console.error('! Gelesen wurde aus SUBSCRIBERS_JSON, geschrieben nur in die lokale Datei.');
+    console.error('  Damit die Aenderung wirkt, den Inhalt in das Secret SUBSCRIBERS_JSON uebertragen.');
+  }
 }
 
 /** Nur wer bestaetigt hat, bekommt Post. */
