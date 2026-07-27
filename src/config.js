@@ -77,6 +77,36 @@ export async function loadSite(dir = CONFIG_DIR) {
   };
 }
 
+/**
+ * Prueft das Impressum auf die Pflichtbestandteile nach Paragraf 5 DDG.
+ *
+ * Bewusst getrennt von siteProblems(): Dort geht es um "vorhanden oder nicht"
+ * und der Versand wird blockiert. Hier geht es um "vollstaendig oder nicht",
+ * und das Ergebnis ist eine Warnung. Ein harter Abbruch wuerde eine bewusst
+ * getroffene Entscheidung uebergehen; stilles Durchwinken wuerde die Luecke
+ * verschwinden lassen, und genau die wird spaeter teuer.
+ */
+export function impressumProblems(impressum) {
+  const text = String(impressum ?? '').trim();
+  if (!text) return ['Impressum fehlt vollständig.'];
+
+  const problems = [];
+  const hatStrasse = /\b\S+(?:straße|strasse|str\.|weg|allee|platz|gasse|ring|damm)\b[^,\n]*\d/i.test(text);
+  const hatPlzOrt = /\b\d{5}\s+\p{Lu}/u.test(text);
+  if (!hatStrasse || !hatPlzOrt) problems.push('ladungsfähige Anschrift (Straße mit Hausnummer, PLZ, Ort)');
+
+  const hatKontakt = /[^\s@]+@[^\s@]+\.[^\s@]+/.test(text) || /\bTel\.?|\bTelefon|\+\d{2,}/i.test(text);
+  if (!hatKontakt) problems.push('Kontaktmöglichkeit (E-Mail oder Telefon)');
+
+  // Handelsregisterpflichtige Rechtsformen brauchen zusaetzliche Angaben.
+  if (/\b(GmbH|UG|AG|KG|OHG|e\.?K\.?)\b/i.test(text)) {
+    if (!/\bHR[AB]\s*\d/i.test(text)) problems.push('Registergericht und Handelsregisternummer (z. B. „Amtsgericht Musterstadt, HRB 12345")');
+    if (!/Geschäftsführ|Vorstand|Inhaber/i.test(text)) problems.push('vertretungsberechtigte Person (Geschäftsführer/Vorstand)');
+  }
+
+  return problems;
+}
+
 /** Was vor dem Echtbetrieb gefuellt sein muss. */
 export function siteProblems(site) {
   const problems = [];

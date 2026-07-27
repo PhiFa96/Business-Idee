@@ -1,8 +1,8 @@
 {
   "_kommentar": "Zentrale Angaben fuer alle erzeugten Seiten und Mails. baseUrl ist mit der GitHub-Pages-Adresse vorbelegt - sie bestimmt auch den Pfadpraefix aller internen Links. Bei eigener Domain hier die Domain eintragen, dann wird der Praefix automatisch leer. impressum MUSS vor dem ersten Versand gefuellt werden: buergerlicher Name und ladungsfaehige Anschrift (Paragraf 5 DDG). Ohne impressum verweigert renderMail den Dienst.",
   "baseUrl": "https://phifa96.github.io/Business-Idee/",
-  "betreiber": "",
-  "impressum": "",
+  "betreiber": "Fade Digital GmbH",
+  "impressum": "Fade Digital GmbH",
   "kontaktEmail": "",
   "subscribeEndpoint": null,
   "stripeLinks": {

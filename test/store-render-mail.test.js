@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { normalizeAll } from '../src/normalize.js';
 import { filterNotices } from '../src/filter.js';
 import { loadFixture } from '../src/fixtures.js';
-import { loadNiche, validateNiche, loadSite, siteProblems } from '../src/config.js';
+import { loadNiche, validateNiche, loadSite, siteProblems, impressumProblems } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
 import { renderMail, renderDigest, renderArchive, renderCsv, escapeHtml, formatMoney, formatDate } from '../src/render.js';
 import { fileTransport, resendTransport, pickTransport } from '../src/mail.js';
@@ -263,4 +263,31 @@ test('loadSite meldet fehlende Pflichtangaben, statt Platzhalter zu erfinden', a
   assert.ok(Array.isArray(siteProblems(site)));
   assert.deepEqual(siteProblems({ baseUrl: 'https://x.test', impressum: 'A', kontaktEmail: 'a@b.de' }), []);
   assert.equal(siteProblems({ baseUrl: null, impressum: null, kontaktEmail: null }).length, 3);
+});
+
+// ------------------------------------------------------------- Impressum
+
+test('impressumProblems erkennt die Pflichtangaben nach §5 DDG', () => {
+  const vollstaendig = 'Fade Digital GmbH, Musterweg 1, 12345 Musterstadt, kontakt@fade.de, '
+    + 'Amtsgericht Musterstadt HRB 12345, Geschäftsführer: Phillip Fade';
+  assert.deepEqual(impressumProblems(vollstaendig), []);
+});
+
+test('impressumProblems nennt bei einer GmbH auch die Registerangaben', () => {
+  const problems = impressumProblems('Fade Digital GmbH');
+  assert.equal(problems.length, 4);
+  assert.ok(problems.some((p) => p.includes('Anschrift')));
+  assert.ok(problems.some((p) => p.includes('Kontakt')));
+  assert.ok(problems.some((p) => p.includes('Handelsregisternummer')));
+  assert.ok(problems.some((p) => p.includes('vertretungsberechtigte')));
+});
+
+test('impressumProblems verlangt von einer Einzelperson keine Registerangaben', () => {
+  const person = 'Phillip Fade, Musterweg 1, 12345 Musterstadt, kontakt@example.de';
+  assert.deepEqual(impressumProblems(person), []);
+});
+
+test('impressumProblems meldet ein leeres Impressum als komplett fehlend', () => {
+  assert.equal(impressumProblems('').length, 1);
+  assert.equal(impressumProblems(null).length, 1);
 });

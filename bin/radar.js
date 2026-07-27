@@ -19,7 +19,7 @@ import { fetchAll, fetchPage, buildQuery, TedError } from '../src/ted.js';
 import { loadFixture } from '../src/fixtures.js';
 import { normalizeAll } from '../src/normalize.js';
 import { filterNotices, alertable, summarize } from '../src/filter.js';
-import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, listNicheSlugs } from '../src/config.js';
+import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, impressumProblems, listNicheSlugs } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
 import { renderMail, renderDigest, renderCsv, formatMoney } from '../src/render.js';
 import { buildSite, publicArchive, publicGap, paths } from '../src/site.js';
@@ -159,6 +159,13 @@ async function cmdDoctor() {
     warn('config/site.json ist noch unvollstaendig:');
     problems.forEach((problem) => info(`    ${problem}`));
   } else ok('config/site.json vollstaendig.');
+
+  const impressum = impressumProblems(site.impressum);
+  if (impressum.length) {
+    warn(`Impressum unvollstaendig ("${site.impressum ?? ''}"). Es fehlt:`);
+    impressum.forEach((problem) => info(`    ${problem}`));
+    info('    Ein unvollstaendiges Impressum ist ebenso abmahnfaehig wie ein fehlendes (Paragraf 5 DDG).');
+  } else ok('Impressum enthaelt alle Pflichtangaben.');
 
   info(paint('\nTED-Schema', 'bold'));
   info(`  Endpunkt   ${schema.endpoint}`);
@@ -322,6 +329,11 @@ async function cmdBuildSite(args) {
   }
   if (!site.baseUrl) warn('Ohne baseUrl in config/site.json wurde keine sitemap.xml erzeugt.');
   info(`  Ansehen mit:  node bin/radar.js serve${args.demo ? ' --demo' : ''}`);
+
+  const impressum = impressumProblems(site.impressum);
+  if (impressum.length) {
+    warn(`Impressum unvollstaendig - es fehlt: ${impressum.join('; ')}`);
+  }
   if (args.verbose) files.slice(0, 20).forEach((file) => info(`    ${file.path}`));
   return 0;
 }
