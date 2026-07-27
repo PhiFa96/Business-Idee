@@ -18,6 +18,11 @@ on:
         required: false
         default: false
         type: boolean
+      backfill_days:
+        description: 'Bestand ueber so viele Tage neu einlesen (leer = aus). Repariert alte Datensaetze nach einer Schema- oder Formatkorrektur.'
+        required: false
+        default: ''
+        type: string
 
 # Der Zustand liegt als Datei im Repo. Zwei gleichzeitige Laeufe wuerden sich
 # gegenseitig ueberschreiben, deshalb strikt nacheinander.
@@ -63,6 +68,23 @@ jobs:
         continue-on-error: true
         run: node bin/radar.js doctor
         env:
+          TED_API_KEY: ${{ secrets.TED_API_KEY }}
+
+      # Nur auf ausdrueckliche Anforderung. Notwendig, wenn ein Feld falsch
+      # gelesen wurde: der taegliche Lauf holt nur 30 Tage, aeltere Datensaetze
+      # behalten den Fehler sonst fuer immer. Loest keine Alerts aus, weil
+      # bereits bekannte Bekanntmachungen nicht als neu zaehlen.
+      - name: Bestand neu einlesen
+        if: inputs.backfill_days != ''
+        # Der Wert geht ueber die Umgebung, nicht in die Kommandozeile: sonst
+        # waere die Eingabe direkt ausfuehrbarer Shell-Code.
+        run: |
+          case "$BACKFILL_DAYS" in
+            ''|*[!0-9]*) echo "backfill_days muss eine Zahl sein, war: $BACKFILL_DAYS"; exit 1 ;;
+          esac
+          node bin/radar.js backfill --niche "$NICHE" --days "$BACKFILL_DAYS"
+        env:
+          BACKFILL_DAYS: ${{ inputs.backfill_days }}
           TED_API_KEY: ${{ secrets.TED_API_KEY }}
 
       - name: Ausschreibungen abrufen und Seiten bauen

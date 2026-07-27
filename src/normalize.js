@@ -56,11 +56,36 @@ export function asCpvList(value) {
   return [...new Set(out)];
 }
 
+/**
+ * Datum aus TED. Nicht jedes Feld kommt im gleichen Format:
+ * Fristen liefert TED mit Uhrzeit ("2026-08-11T07:30:00Z"), das
+ * Veroeffentlichungsdatum dagegen als reines Datum - je nach Formular als
+ * "20260720" oder als xs:date mit Zeitzone ("2026-07-20+02:00"). Beide
+ * verwirft new Date(), und genau daran blieb publishedAt bei allen 475
+ * Bekanntmachungen leer, obwohl das Feld sehr wohl geliefert wurde.
+ *
+ * Ein Datum ohne Uhrzeit wird bewusst auf Mitternacht in seiner eigenen
+ * Zeitzone gelegt und nicht auf UTC gezwungen - sonst verschoebe sich der
+ * Veroeffentlichungstag um einen Tag.
+ */
 export function asDate(value) {
   const text = pickLang(value);
   if (!text) return null;
-  const parsed = new Date(text);
+
+  const parsed = new Date(normalizeDateText(text));
   return Number.isNaN(parsed.getTime()) ? null : parsed.toISOString();
+}
+
+function normalizeDateText(text) {
+  const kompakt = /^(\d{4})(\d{2})(\d{2})$/.exec(text);
+  if (kompakt) return `${kompakt[1]}-${kompakt[2]}-${kompakt[3]}`;
+
+  // Reines Datum mit Zeitzonenangabe: die Laenge des Datumsteils ist fest,
+  // deshalb ist das fuehrende Minus des Offsets eindeutig vom Datum trennbar.
+  const mitZone = /^(\d{4}-\d{2}-\d{2})([+-]\d{2}:\d{2}|Z)$/.exec(text);
+  if (mitZone) return `${mitZone[1]}T00:00:00${mitZone[2]}`;
+
+  return text;
 }
 
 /**
@@ -144,6 +169,56 @@ export function normalizeNotice(raw, schema = DEFAULT_TED_SCHEMA) {
     nuts: asNuts(get('nuts')),
     url: buildUrl(id, get('links'), schema),
   };
+}
+
+/**
+ * Prueft je konfiguriertem Feld, ob es geliefert wird UND ob wir es verstehen.
+ *
+ * Die Unterscheidung ist der ganze Zweck: publishedAt kam von TED bei jeder
+ * Bekanntmachung an und war trotzdem bei allen 475 leer, weil das Datumsformat
+ * nicht geparst wurde. Eine reine Vorhandenseinspruefung haette das nie
+ * gezeigt - und eine Stichprobe von einer Bekanntmachung meldet umgekehrt
+ * jedes optionale Feld faelschlich als fehlend.
+ */
+const IST_BRAUCHBAR = {
+  id: (n) => Boolean(n.id),
+  publishedAt: (n) => Boolean(n.publishedAt),
+  title: (n) => n.title !== '(ohne Titel)',
+  buyer: (n) => Boolean(n.buyer),
+  buyerCity: (n) => Boolean(n.buyerCity),
+  country: (n) => Boolean(n.country),
+  cpv: (n) => n.cpv.length > 0,
+  deadline: (n) => Boolean(n.deadline),
+  value: (n) => n.valueEur != null,
+  nuts: (n) => n.nuts.length > 0,
+  // Die URL faellt notfalls auf eine aus der Kennung gebaute Adresse zurueck.
+  // Genau die zaehlt hier nicht als brauchbar, sonst blieben kaputte Links
+  // unsichtbar.
+  links: (n, schema) => Boolean(n.url) && n.url !== `${schema.noticeUrl}${encodeURIComponent(n.id)}`,
+};
+
+export function fieldReport(rawList, schema = DEFAULT_TED_SCHEMA) {
+  const raws = (rawList ?? []).filter((raw) => raw && typeof raw === 'object');
+  const rows = [];
+
+  for (const [key, api] of Object.entries(schema.fields)) {
+    let delivered = 0;
+    let usable = 0;
+    let sample = null;
+
+    for (const raw of raws) {
+      const value = raw[api] ?? raw[key] ?? null;
+      if (value == null) continue;
+      delivered += 1;
+      if (sample == null) sample = value;
+
+      const notice = normalizeNotice(raw, schema);
+      if (notice && (IST_BRAUCHBAR[key] ?? (() => true))(notice, schema)) usable += 1;
+    }
+
+    rows.push({ key, api, delivered, usable, total: raws.length, sample });
+  }
+  return rows;
 }
 
 /** Liste normalisieren, unbrauchbare Datensaetze still verwerfen und zaehlen. */

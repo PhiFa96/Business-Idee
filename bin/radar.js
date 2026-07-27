@@ -17,7 +17,7 @@ import { styleText } from 'node:util';
 
 import { fetchAll, fetchPage, buildQuery, TedError } from '../src/ted.js';
 import { loadFixture } from '../src/fixtures.js';
-import { normalizeAll } from '../src/normalize.js';
+import { normalizeAll, fieldReport } from '../src/normalize.js';
 import { filterNotices, alertable, summarize } from '../src/filter.js';
 import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, impressumProblems, listNicheSlugs } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
@@ -142,6 +142,13 @@ function mailContext(site, niche, token, { delivering = true } = {}) {
 
 // -------------------------------------------------------------------- doctor
 
+/** Rohwert einer Bekanntmachung kurz und einzeilig, damit Formatfehler auffallen. */
+function probe(value) {
+  const text = typeof value === 'string' ? value : JSON.stringify(value);
+  const einzeilig = String(text ?? '').replace(/\s+/g, ' ').trim();
+  return einzeilig.length > 60 ? `${einzeilig.slice(0, 57)}…` : einzeilig;
+}
+
 async function cmdDoctor() {
   const schema = await loadSchema();
   const site = await loadSite();
@@ -177,17 +184,32 @@ async function cmdDoctor() {
   info(`  Testabfrage: ${query}`);
 
   try {
-    const payload = await fetchPage({ query, schema, limit: 1, maxRetries: 1 });
+    // Stichprobe, nicht Einzelfall: bei einer Bekanntmachung sieht jedes
+    // optionale Feld wie ein Konfigurationsfehler aus.
+    const payload = await fetchPage({ query, schema, limit: 25, maxRetries: 1 });
     ok(`TED antwortet. Treffer: ${payload?.totalNoticeCount ?? payload?.total ?? '?'}`);
-    const first = (payload?.notices ?? [])[0];
-    if (first) {
-      const missing = Object.entries(schema.fields).filter(([, api]) => !(api in first)).map(([key, api]) => `${key} -> "${api}"`);
-      if (missing.length === 0) ok('Alle konfigurierten Felder sind in der Antwort enthalten.');
-      else {
-        warn('Diese Felder fehlen und muessen in config/ted-schema.json korrigiert werden:');
-        missing.forEach((entry) => info(`    ${entry}`));
-        info(`  Tatsaechlich geliefert: ${Object.keys(first).join(', ')}`);
-      }
+
+    const rows = fieldReport(payload?.notices ?? [], schema);
+    const gepruefte = rows[0]?.total ?? 0;
+    if (gepruefte === 0) {
+      warn('Keine Bekanntmachungen in der Stichprobe - Felder nicht pruefbar.');
+      return 0;
+    }
+
+    info(paint(`\nFelder (Stichprobe: ${gepruefte} Bekanntmachungen)`, 'bold'));
+    for (const row of rows) {
+      const label = `${row.key} -> "${row.api}"`.padEnd(34);
+      if (row.delivered === 0) fail(`${label} kommt nie an`);
+      else if (row.usable === 0) fail(`${label} kommt an, wird aber nicht verstanden  Beispiel: ${probe(row.sample)}`);
+      else if (row.usable < row.delivered) warn(`${label} ${row.usable}/${row.delivered} verwertbar  Beispiel: ${probe(row.sample)}`);
+      else ok(`${label} ${row.delivered}/${gepruefte}`);
+    }
+
+    const kaputt = rows.filter((row) => row.delivered === 0 || row.usable === 0);
+    if (kaputt.length) {
+      info('');
+      warn('"kommt nie an" heisst falscher Feldname - in config/ted-schema.json korrigieren.');
+      warn('"nicht verstanden" heisst richtiger Name, aber unerwartetes Format - das gehoert in src/normalize.js.');
     }
     return 0;
   } catch (err) {

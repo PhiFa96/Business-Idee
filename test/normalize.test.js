@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { pickLang, asCpvList, asMoneyEur, asNuts, normalizeNotice, normalizeAll } from '../src/normalize.js';
+import { pickLang, asCpvList, asMoneyEur, asNuts, asDate, fieldReport, normalizeNotice, normalizeAll } from '../src/normalize.js';
 import { loadFixture } from '../src/fixtures.js';
 
 const NOW = new Date('2026-07-25T09:00:00Z');
@@ -72,4 +72,70 @@ test('normalizeAll wirft nicht bei kaputter oder leerer Eingabe', () => {
   assert.deepEqual(normalizeAll(null).notices, []);
   assert.deepEqual(normalizeAll([]).notices, []);
   assert.equal(normalizeAll([null, undefined, 42]).skipped, 3);
+});
+
+test('asDate versteht die Datumsformate, die TED tatsaechlich liefert', () => {
+  // Fristen kommen mit Uhrzeit - das ging immer schon.
+  assert.equal(asDate('2026-08-11T07:30:00Z'), '2026-08-11T07:30:00.000Z');
+
+  // Das Veroeffentlichungsdatum nicht. An diesen beiden Formaten blieb
+  // publishedAt bei allen 475 Bekanntmachungen leer.
+  assert.equal(asDate('20260720'), '2026-07-20T00:00:00.000Z', 'kompaktes Datum');
+  assert.equal(asDate('2026-07-20+02:00'), '2026-07-19T22:00:00.000Z', 'Datum mit Zeitzone');
+  assert.equal(asDate('2026-07-20-03:00'), '2026-07-20T03:00:00.000Z', 'negativer Offset ist kein Teil des Datums');
+  assert.equal(asDate('2026-07-20Z'), '2026-07-20T00:00:00.000Z');
+
+  assert.equal(asDate({ deu: ['20260720'] }), '2026-07-20T00:00:00.000Z', 'auch mehrsprachig verpackt');
+  assert.equal(asDate('kein Datum'), null);
+  assert.equal(asDate('2026-13-45'), null, 'plausibel geformt, aber unmoeglich');
+  assert.equal(asDate(null), null);
+});
+
+test('fieldReport trennt "kommt nicht an" von "wird nicht verstanden"', () => {
+  const raw = [
+    {
+      'publication-number': '1-2026',
+      'publication-date': '20260720',
+      'notice-title': { deu: ['Reinigung A'] },
+      'buyer-name': { deu: ['Stadt A'] },
+      'classification-cpv': ['90911200'],
+      'total-value': 100000,
+    },
+    {
+      'publication-number': '2-2026',
+      'publication-date': '20260721',
+      'notice-title': { deu: ['Reinigung B'] },
+      'buyer-name': { deu: ['Stadt B'] },
+      'classification-cpv': ['90911200'],
+      // kein total-value: optionales Feld, das bei einer Stichprobe von einer
+      // Bekanntmachung faelschlich als Konfigurationsfehler erschienen waere.
+    },
+  ];
+  const rows = fieldReport(raw);
+  const von = (key) => rows.find((row) => row.key === key);
+
+  assert.equal(von('publishedAt').delivered, 2);
+  assert.equal(von('publishedAt').usable, 2, 'kompaktes Datum wird jetzt verstanden');
+
+  assert.equal(von('value').delivered, 1, 'nur eine der beiden traegt einen Wert');
+  assert.equal(von('value').usable, 1);
+  assert.equal(von('value').total, 2);
+
+  assert.equal(von('deadline').delivered, 0, 'gar nicht geliefert - das waere ein falscher Feldname');
+  assert.equal(von('links').usable, 0, 'die aus der Kennung gebaute URL zaehlt nicht als echter Link');
+});
+
+test('fieldReport meldet ein ankommendes, aber unlesbares Feld als unbrauchbar', () => {
+  const rows = fieldReport([
+    { 'publication-number': '1-2026', 'publication-date': 'letzten Dienstag' },
+  ]);
+  const datum = rows.find((row) => row.key === 'publishedAt');
+  assert.equal(datum.delivered, 1);
+  assert.equal(datum.usable, 0);
+  assert.equal(datum.sample, 'letzten Dienstag', 'der Rohwert wird zur Diagnose mitgeliefert');
+});
+
+test('fieldReport wirft nicht bei kaputter Eingabe', () => {
+  assert.equal(fieldReport(null).every((row) => row.total === 0), true);
+  assert.equal(fieldReport([null, 42, 'x']).every((row) => row.delivered === 0), true);
 });
