@@ -9,7 +9,17 @@
 // Kalkulator, der sie im Firmennetz mit abgeschaltetem Skript oeffnet.
 
 const MONEY = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
-const DATE = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+/**
+ * Zeitzone fest auf Deutschland, nicht auf die des Rechners.
+ *
+ * Ohne diese Angabe nimmt Intl die Zeitzone der Laufzeitumgebung - und die ist
+ * auf dem GitHub-Runner UTC. Ein am 17.07. deutscher Zeit veroeffentlichter
+ * Auftrag steht dann auf jeder erzeugten Seite als 16.07. Fuer ein Produkt,
+ * dessen einziger Zweck Fristen und Termine sind, ist das kein Schoenheits-
+ * fehler.
+ */
+export const ZEITZONE = 'Europe/Berlin';
+const DATE = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: ZEITZONE });
 
 export function escapeHtml(value) {
   return String(value ?? '')

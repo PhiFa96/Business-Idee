@@ -172,7 +172,9 @@ export function similarNotices(archive, notice, { limit = 5 } = {}) {
 // --------------------------------------------------------------- Formulierung
 
 const EUR = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 });
-const JAHR = new Intl.DateTimeFormat('de-DE', { year: 'numeric' });
+// Deutsche Zeitzone, siehe ZEITZONE in html.js: Am Jahreswechsel kippt sonst
+// die Jahreszahl in "schreibt seit 2024 aus" um ein Jahr.
+const JAHR = new Intl.DateTimeFormat('de-DE', { year: 'numeric', timeZone: 'Europe/Berlin' });
 
 function intervalPhrase(days) {
   if (days == null) return null;

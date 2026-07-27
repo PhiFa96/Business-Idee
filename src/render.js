@@ -6,14 +6,16 @@
 
 import {
   escapeHtml, formatMoney, formatDate, deadlineLabel, truncate,
-  layout, noticeCard, LIST_SCRIPT,
+  layout, noticeCard, LIST_SCRIPT, ZEITZONE,
 } from './html.js';
 
 // Weiterreichen, damit bestehende Aufrufer nicht wissen muessen, dass die
 // Primitive umgezogen sind.
 export { escapeHtml, formatMoney, formatDate, truncate };
 
-const DATE = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric' });
+// Deutsche Zeitzone, siehe ZEITZONE in html.js. Das "Stand"-Datum der Mail
+// muss dasselbe sein, das der Empfaenger auf seinem Kalender sieht.
+const DATE = new Intl.DateTimeFormat('de-DE', { day: '2-digit', month: '2-digit', year: 'numeric', timeZone: ZEITZONE });
 
 // ---------------------------------------------------------------- Alert-Mail
 

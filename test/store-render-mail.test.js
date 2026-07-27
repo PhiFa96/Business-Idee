@@ -108,6 +108,20 @@ test('formatMoney und formatDate zeigen Luecken als Gedankenstrich', () => {
   assert.match(formatMoney(2400000), /2\.400\.000/);
 });
 
+test('formatDate zeigt den deutschen Kalendertag, nicht den der Laufzeitumgebung', () => {
+  // TED liefert das Veroeffentlichungsdatum als reines Datum mit Zeitzone.
+  // Mitternacht des 17.07. deutscher Zeit ist der 16.07. um 22 Uhr UTC. Auf
+  // dem GitHub-Runner (TZ=UTC) stand deshalb auf jeder Seite der Vortag.
+  assert.equal(formatDate('2026-07-16T22:00:00.000Z'), '17.07.2026');
+
+  // Winterzeit, ein Stunde Versatz statt zwei.
+  assert.equal(formatDate('2026-01-14T23:00:00.000Z'), '15.01.2026');
+
+  // Ein Zeitpunkt, der in beiden Zeitzonen auf denselben Tag faellt, bleibt
+  // unveraendert - der Test darf nicht nur die Verschiebung pruefen.
+  assert.equal(formatDate('2026-07-17T12:00:00.000Z'), '17.07.2026');
+});
+
 test('renderMail nennt die Zahl der Ausschreibungen im Betreff', () => {
   const { subject, html } = renderMail(notices.slice(0, 3), niche, { now: NOW, ...MAIL });
   assert.match(subject, /3 neue Ausschreibungen/);
