@@ -228,9 +228,41 @@ export function noticeCard(notice, { href = null, now = new Date(), showDeadline
   data-published="${escapeHtml(notice.publishedAt ?? '')}">
   <h3>${heading}</h3>
   <p class="meta">${escapeHtml(notice.buyer ?? 'Auftraggeber unbekannt')}${notice.buyerCity ? `, ${escapeHtml(notice.buyerCity)}` : ''}<br>
-  Auftragswert <strong>${formatMoney(notice.valueEur)}</strong>${showDeadline ? ` &middot; Frist <strong>${escapeHtml(deadlineLabel(notice, now))}</strong>` : ''} &middot; veröffentlicht ${formatDate(notice.publishedAt)}</p>
+  Auftragswert <strong>${formatMoney(notice.valueEur)}</strong>${showDeadline ? ` &middot; Frist <strong>${escapeHtml(fristText(notice))}</strong><span class="rest"></span>` : ''} &middot; veröffentlicht ${formatDate(notice.publishedAt)}</p>
 </article>`;
 }
+
+/**
+ * Die Frist als festes Datum, ohne "noch N Tage".
+ *
+ * Der Countdown gehoert nicht ins erzeugte HTML: Er aendert sich jeden Tag,
+ * also aenderte sich jede erzeugte Seite jeden Tag - auch an Tagen ohne eine
+ * einzige neue Ausschreibung. Bei vier Gewerken waeren das rund 20 000
+ * Dateien pro Werktag, dauerhaft ins Repository geschrieben.
+ *
+ * Der inhaltliche Wert bleibt: Das Datum steht als echtes HTML in der Seite,
+ * fuer Suchmaschinen wie fuer Leser ohne JavaScript. DEADLINE_SCRIPT ergaenzt
+ * den Countdown im Browser, wo er ohnehin hingehoert - dort ist er immer
+ * aktuell, statt vom letzten Bau zu stammen.
+ */
+export function fristText(notice) {
+  return notice.deadline ? formatDate(notice.deadline) : 'ohne Frist';
+}
+
+/** Ergaenzt " · noch N Tage" aus data-deadline. Rein additiv. */
+export const DEADLINE_SCRIPT = `
+(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();
+`.trim();
 
 /**
  * Anmeldeblock. Ohne konfigurierten Endpunkt faellt er auf mailto zurueck -

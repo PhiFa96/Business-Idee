@@ -393,3 +393,79 @@ test('ohne Secret wird weiterhin die lokale Datei gelesen', async () => {
   const ausDatei = await subs.loadAll('config', { env: {} });
   assert.ok(typeof ausDatei === 'object' && ausDatei !== null);
 });
+
+// --------------------------------------------------------------- Churn-Freiheit
+
+test('erzeugte Seiten aendern sich nicht allein durch Zeitablauf', () => {
+  // Der eigentliche Punkt der Aenderung: Frueher stand "noch 14 Tage" fest im
+  // HTML, also war jede Seite an jedem Tag eine andere Datei - bei vier
+  // Gewerken rund 20 000 geaenderte Dateien pro Werktag, dauerhaft ins
+  // Repository geschrieben, ohne dass sich an den Daten etwas getan haette.
+  const spaeter = new Date(NOW.getTime() + 3 * 86400000);
+  const zweiterBau = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: spaeter }) }],
+    SITE,
+    { now: spaeter },
+  );
+
+  const seitenMitKarten = built.files.filter((file) =>
+    file.content.includes('class="item') && !file.path.endsWith('.xml') && !file.path.endsWith('.csv'));
+  assert.ok(seitenMitKarten.length > 0, 'ohne Karten prueft der Test nichts');
+
+  // Ausschreibungen, deren Frist zwischen beiden Zeitpunkten ablaeuft, duerfen
+  // sich aendern - das ist eine echte inhaltliche Aenderung, kein Rauschen.
+  const fristLaeuftAb = archive.some((n) => n.deadline
+    && new Date(n.deadline) > NOW && new Date(n.deadline) <= spaeter);
+
+  const geaendert = [];
+  let verglichen = 0;
+  for (const vorher of seitenMitKarten) {
+    const nachher = zweiterBau.files.find((file) => file.path === vorher.path);
+    if (!nachher) continue;
+    verglichen += 1;
+    if (nachher.content !== vorher.content) geaendert.push(vorher.path);
+  }
+  assert.ok(verglichen > 0, 'es wurde keine einzige Seite tatsaechlich verglichen');
+
+  if (fristLaeuftAb) return; // dann ist jede Abweichung erklaerbar
+
+  // Uebersichtsseiten duerfen sich mit der Zeit aendern: Sie zeigen ein
+  // Stand-Datum und rollierende Zahlen ("in den letzten 90 Tagen"), und das
+  // ist echter Inhalt. Es sind wenige Seiten je Gewerk.
+  //
+  // Die Masse - Detail-, Auftraggeber-, Regions- und Archivseiten - darf sich
+  // nicht ruehren. Genau daran haengt, ob das Repository taeglich um
+  // Zehntausende Dateien waechst oder nicht.
+  const istMassenseite = (pfad) => /\/(a|auftraggeber|region)\//.test(pfad) || /archiv/.test(pfad);
+  const masse = geaendert.filter(istMassenseite);
+  assert.deepEqual(masse, [],
+    'Detail-, Auftraggeber-, Regions- und Archivseiten muessen ohne Datenaenderung Byte-gleich bleiben');
+
+  assert.ok(geaendert.length <= 3,
+    `${geaendert.length} Seiten aendern sich durch blossen Zeitablauf - das waren einmal alle`);
+});
+
+test('Karten tragen das Fristdatum als echtes HTML, nicht nur im Skript', () => {
+  const mitKarten = built.files.find((file) => file.content.includes('class="item'));
+  assert.ok(mitKarten, 'keine Seite mit Karten gefunden');
+
+  const mitFrist = archive.find((n) => n.deadline);
+  assert.ok(mitFrist, 'Testdaten ohne Frist - der Test pruefte sonst nichts');
+
+  const tag = String(new Date(mitFrist.deadline).getDate()).padStart(2, '0');
+  const seite = built.files.find((file) => file.content.includes(`data-deadline="${mitFrist.deadline}"`));
+  assert.ok(seite, 'Frist fehlt als data-Attribut');
+  assert.match(seite.content, new RegExp(`Frist <strong>${tag}\\.`),
+    'das Fristdatum muss im HTML stehen - sonst ist es fuer Suchmaschinen weg');
+  assert.doesNotMatch(seite.content, /noch \d+ Tage?</,
+    'der Countdown gehoert in den Browser, nicht in die Datei');
+});
+
+test('Seiten mit Karten binden das Countdown-Skript ein', () => {
+  for (const file of built.files) {
+    if (!file.content.includes('class="item')) continue;
+    if (file.path.endsWith('.xml') || file.path.endsWith('.csv')) continue;
+    assert.match(file.content, /querySelectorAll\('\.item\[data-deadline\] \.rest'\)/,
+      `${file.path} zeigt Karten, ergaenzt aber keinen Countdown`);
+  }
+});

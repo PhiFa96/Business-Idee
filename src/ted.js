@@ -185,6 +185,20 @@ export function extractTotal(payload, fallback) {
   return fallback;
 }
 
+/**
+ * Hat der Seitendeckel zugeschlagen?
+ *
+ * fetchAll hoert bei maxPages auf und sagt nichts darueber. Wer das nicht
+ * prueft, bekommt ein Archiv mit Loechern, das aussieht wie ein
+ * vollstaendiges - beim Backfill der Gebaeudereinigung fehlte so der halbe
+ * Juni, ohne eine einzige Fehlermeldung. Das ist schlimmer als ein Abbruch:
+ * ein leeres Archiv faellt auf, ein lueckenhaftes nicht.
+ */
+export function istAbgeschnitten(geholt, apiTotal) {
+  if (typeof apiTotal !== 'number' || !Number.isFinite(apiTotal)) return false;
+  return geholt < apiTotal;
+}
+
 /** Alle Seiten einer Abfrage holen, bis maxPages oder keine Treffer mehr kommen. */
 export async function fetchAll(options) {
   const { limit = 100, maxPages = 10, onPage = () => {} } = options;

@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
-import { buildQuery, tedDate, fetchPage, fetchAll, mergeSchema, extractNotices, extractTotal, TedError, DEFAULT_TED_SCHEMA } from '../src/ted.js';
+import { buildQuery, tedDate, fetchPage, fetchAll, istAbgeschnitten, mergeSchema, extractNotices, extractTotal, TedError, DEFAULT_TED_SCHEMA } from '../src/ted.js';
 
 const NOW = new Date('2026-07-25T09:00:00Z');
 const niche = { slug: 'test', country: 'DEU', cpv: ['90911200', '90919200'] };
@@ -158,4 +158,38 @@ test('fetchAll haelt sich an maxPages', async () => {
     fetchImpl: async () => jsonResponse({ notices: [{ id: 1 }, { id: 2 }] }),
   });
   assert.equal(notices.length, 4);
+});
+
+test('istAbgeschnitten erkennt den Seitendeckel', () => {
+  // Der Fall, der das Archiv der Gebaeudereinigung im Juni durchloechert hat:
+  // TED meldete mehr Treffer, als der Deckel durchliess - ohne Fehlermeldung.
+  assert.equal(istAbgeschnitten(4000, 6200), true);
+  assert.equal(istAbgeschnitten(4000, 4000), false, 'genau aufgegangen ist kein Abschnitt');
+  assert.equal(istAbgeschnitten(120, 87), false, 'mehr geholt als gemeldet ist kein Abschnitt');
+
+  // Ohne verlaessliche Gesamtzahl darf nicht gewarnt werden - eine falsche
+  // Warnung bei jedem Lauf waere so nutzlos wie gar keine.
+  assert.equal(istAbgeschnitten(4000, null), false);
+  assert.equal(istAbgeschnitten(4000, undefined), false);
+  assert.equal(istAbgeschnitten(4000, NaN), false);
+  assert.equal(istAbgeschnitten(0, 0), false);
+});
+
+test('fetchAll haelt am Deckel an, und das bleibt erkennbar', async () => {
+  // Jede Seite ist voll, es gaebe also immer noch mehr zu holen.
+  const seiten = [];
+  globalThis.fetch = async () => {
+    seiten.push(1);
+    return new Response(JSON.stringify({
+      notices: Array.from({ length: 2 }, (_, i) => ({ 'publication-number': `${seiten.length}-${i}` })),
+      totalNoticeCount: 500,
+    }), { status: 200, headers: { 'content-type': 'application/json' } });
+  };
+
+  const { notices, total } = await fetchAll({ query: 'x', limit: 2, maxPages: 3 });
+  assert.equal(seiten.length, 3, 'der Deckel greift');
+  assert.equal(notices.length, 6);
+  assert.equal(total, 500);
+  assert.equal(istAbgeschnitten(notices.length, total), true,
+    'genau hier muss der Aufrufer merken, dass ihm 494 Treffer fehlen');
 });

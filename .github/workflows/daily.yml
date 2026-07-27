@@ -8,11 +8,11 @@ on:
   workflow_dispatch:
     inputs:
       niche:
-        description: 'Gewerk (Slug aus config/niches/)'
+        description: 'Gewerk (oder "alle")'
         required: true
-        default: 'gebaeudereinigung'
+        default: 'alle'
         type: choice
-        options: [gebaeudereinigung, galabau, elektro-shk, metallbau]
+        options: [alle, gebaeudereinigung, galabau, elektro-shk, metallbau]
       dry_run:
         description: 'Nur schreiben, nicht verschicken'
         required: false
@@ -23,11 +23,21 @@ on:
         required: false
         default: ''
         type: string
+      scan_days:
+        description: 'Nur messen: fragt TED nach der Trefferzahl je Gewerk und schreibt nichts. Setzt den restlichen Lauf aus.'
+        required: false
+        default: ''
+        type: string
 
 # Der Zustand liegt als Datei im Repo. Zwei gleichzeitige Laeufe wuerden sich
 # gegenseitig ueberschreiben, deshalb strikt nacheinander.
+#
+# Eine feste Gruppe, nicht eine je Gewerk: Der Seitenbau erzeugt immer die
+# gesamte Website aus allen Zustandsdateien, und committet wird ins selbe
+# Repository. Zwei Laeufe fuer verschiedene Gewerke waeren also genauso wenig
+# unabhaengig wie zwei fuer dasselbe - sie wuerden sich beim Push ueberholen.
 concurrency:
-  group: radar-${{ inputs.niche || 'gebaeudereinigung' }}
+  group: radar
   cancel-in-progress: false
 
 permissions:
@@ -38,8 +48,9 @@ permissions:
 jobs:
   radar:
     runs-on: ubuntu-latest
+    # Der Zeitplan uebergibt keine Eingaben - dort laufen alle Gewerke.
     env:
-      NICHE: ${{ inputs.niche || 'gebaeudereinigung' }}
+      NICHE: ${{ inputs.niche || 'alle' }}
     steps:
       - uses: actions/checkout@v4
 
@@ -70,12 +81,27 @@ jobs:
         env:
           TED_API_KEY: ${{ secrets.TED_API_KEY }}
 
+      # Messlauf vor einem Backfill: Wie viele Ausschreibungen hat ein Gewerk
+      # ueberhaupt? Ohne diese Zahl ist jeder Seitendeckel geraten, und ein zu
+      # niedriger schneidet stillschweigend ab. Speichert nichts; alle
+      # folgenden Schritte setzen deshalb aus.
+      - name: Nur messen
+        if: inputs.scan_days != ''
+        run: |
+          case "$SCAN_DAYS" in
+            ''|*[!0-9]*) echo "scan_days muss eine Zahl sein, war: $SCAN_DAYS"; exit 1 ;;
+          esac
+          node bin/radar.js scan --days "$SCAN_DAYS" --max-pages 20
+        env:
+          SCAN_DAYS: ${{ inputs.scan_days }}
+          TED_API_KEY: ${{ secrets.TED_API_KEY }}
+
       # Nur auf ausdrueckliche Anforderung. Notwendig, wenn ein Feld falsch
       # gelesen wurde: der taegliche Lauf holt nur 30 Tage, aeltere Datensaetze
       # behalten den Fehler sonst fuer immer. Loest keine Alerts aus, weil
       # bereits bekannte Bekanntmachungen nicht als neu zaehlen.
       - name: Bestand neu einlesen
-        if: inputs.backfill_days != ''
+        if: inputs.backfill_days != '' && inputs.scan_days == ''
         # Der Wert geht ueber die Umgebung, nicht in die Kommandozeile: sonst
         # waere die Eingabe direkt ausfuehrbarer Shell-Code.
         run: |
@@ -88,11 +114,13 @@ jobs:
           TED_API_KEY: ${{ secrets.TED_API_KEY }}
 
       - name: Ausschreibungen abrufen und Seiten bauen
+        if: inputs.scan_days == ''
         run: node bin/radar.js run --niche "$NICHE" --days 30
         env:
           TED_API_KEY: ${{ secrets.TED_API_KEY }}
 
       - name: Alert an Zahlende
+        if: inputs.scan_days == ''
         run: node bin/radar.js send --niche "$NICHE" --since 1 ${{ inputs.dry_run && '--dry-run' || '' }}
         env:
           RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
@@ -102,7 +130,7 @@ jobs:
       # Montags zusaetzlich der kostenlose Wochenueberblick - die Bruecke vom
       # Interessenten zum Abo.
       - name: Wochenueberblick (montags)
-        if: github.event_name == 'schedule'
+        if: github.event_name == 'schedule' && inputs.scan_days == ''
         run: |
           if [ "$(date -u +%u)" = "1" ]; then
             node bin/radar.js digest --niche "$NICHE" --since 7
@@ -115,6 +143,7 @@ jobs:
           SUBSCRIBERS_JSON: ${{ secrets.SUBSCRIBERS_JSON }}
 
       - name: Zustand, Archiv und Abonnenten zurueckschreiben
+        if: inputs.scan_days == ''
         run: |
           git config user.name  "vergabe-radar[bot]"
           git config user.email "vergabe-radar@users.noreply.github.com"
@@ -128,11 +157,15 @@ jobs:
           fi
 
       - uses: actions/upload-pages-artifact@v3
+        if: inputs.scan_days == ''
         with:
           path: site
 
   deploy:
     needs: radar
+    # Beim Messlauf entsteht kein Artefakt, also gaebe es hier nur einen
+    # Fehlschlag zu sehen, der keiner ist.
+    if: inputs.scan_days == ''
     runs-on: ubuntu-latest
     environment:
       name: github-pages

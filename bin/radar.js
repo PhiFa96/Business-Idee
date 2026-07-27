@@ -15,7 +15,7 @@ import { mkdir, writeFile, rm } from 'node:fs/promises';
 import { dirname, join } from 'node:path';
 import { styleText } from 'node:util';
 
-import { fetchAll, fetchPage, buildQuery, TedError } from '../src/ted.js';
+import { fetchAll, fetchPage, buildQuery, istAbgeschnitten, TedError } from '../src/ted.js';
 import { loadFixture } from '../src/fixtures.js';
 import { normalizeAll, fieldReport } from '../src/normalize.js';
 import { filterNotices, alertable, summarize } from '../src/filter.js';
@@ -85,7 +85,19 @@ async function pipeline(niche, options) {
   const { raw, total, query } = await collect(niche, options);
   const { notices: normalized, skipped } = normalizeAll(raw, options.schema);
   const { notices, stats } = filterNotices(normalized, niche, { now: options.now, maxAgeDays: options.days });
-  return { notices, stats: { ...stats, skipped, apiTotal: total }, query };
+  return {
+    notices,
+    stats: { ...stats, skipped, apiTotal: total, geholt: raw.length, abgeschnitten: istAbgeschnitten(raw.length, total) },
+    query,
+  };
+}
+
+/** Meldet einen abgeschnittenen Abruf, sobald einer vorliegt. */
+function warnAbgeschnitten(niche, stats) {
+  if (!stats.abgeschnitten) return;
+  warn(`${niche.name}: TED meldet ${stats.apiTotal} Treffer, geholt wurden ${stats.geholt}.`);
+  info('    Der Seitendeckel hat zugeschlagen - das Archiv bekommt Loecher, die spaeter wie');
+  info('    echte Datenlage aussehen. Mit hoeherem --max-pages erneut laufen lassen.');
 }
 
 /**
@@ -239,8 +251,16 @@ async function cmdScan(args) {
       days, fixture, schema, now, limit: num(args.limit, 100), maxPages: num(args['max-pages'], 10),
     });
     const summary = summarize(notices, niche, { days, now });
-    rows.push(summary);
-    process.stdout.write(`${summary.usable} brauchbar von ${stats.apiTotal ?? stats.input}\n`);
+    rows.push({ ...summary, stats });
+    process.stdout.write(`${summary.usable} brauchbar von ${stats.geholt ?? stats.input} geholt`
+      + `${stats.apiTotal != null ? ` (TED meldet ${stats.apiTotal})` : ''}\n`);
+
+    // Die "brauchbar"-Zahl ist dann eine Stichprobe, keine Gesamtzahl. Wer das
+    // uebersieht, plant den Backfill nach einer Zahl, die um ein Vielfaches
+    // danebenliegt.
+    if (stats.abgeschnitten) {
+      warn(`    Stichprobe: hochgerechnet etwa ${Math.round(summary.usable * (stats.apiTotal / stats.geholt))} brauchbare bei vollem Abruf.`);
+    }
   }
 
   rows.sort((a, b) => b.usable - a.usable);
@@ -270,30 +290,46 @@ async function cmdScan(args) {
 
 // ------------------------------------------------------------------ backfill
 
-async function cmdBackfill(args) {
+/**
+ * Welche Gewerke ein Befehl bearbeitet.
+ *
+ * Ohne --niche (oder mit "alle") sind es alle. Das ist der Normalfall im
+ * taeglichen Lauf: Ein einzelnes Gewerk zu holen hiesse, die uebrigen drei
+ * veralten zu lassen, waehrend ihre Seiten weiter ausgeliefert werden.
+ */
+async function nichesFromArgs(args) {
   const slug = args.niche;
-  if (!slug) return usage('backfill braucht --niche <slug>');
-  const niche = await loadNiche(slug);
+  if (!slug || slug === 'alle') return loadAllNiches();
+  return [await loadNiche(slug)];
+}
+
+async function cmdBackfill(args) {
+  const niches = await nichesFromArgs(args);
   const schema = await loadSchema();
   const now = new Date();
   const days = num(args.days, 365);
 
-  info(paint(`\n${niche.name} - Bestand der letzten ${days} Tage aufbauen\n`, 'bold'));
+  info(paint(`\nBestand der letzten ${days} Tage aufbauen (${niches.map((n) => n.name).join(', ')})\n`, 'bold'));
   info('  Ohne Bestand gibt es nichts zu indexieren und keine Auftraggeber-Historie.');
   info('  Dieser Lauf loest bewusst KEINE Alerts aus.\n');
 
-  const { notices, stats } = await pipeline(niche, {
-    days, fixture: Boolean(args.fixture), schema, now,
-    limit: num(args.limit, 100), maxPages: num(args['max-pages'], 40),
-  });
+  for (const niche of niches) {
+    info(paint(`  ${niche.name}`, 'bold'));
+    const { notices, stats } = await pipeline(niche, {
+      days, fixture: Boolean(args.fixture), schema, now,
+      limit: num(args.limit, 100), maxPages: num(args['max-pages'], 200),
+    });
 
-  const store = await loadStore(slug);
-  const fresh = diffAndRecord(store, notices, now);
-  prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
-  await saveStore(store);
+    const store = await loadStore(niche.slug);
+    const fresh = diffAndRecord(store, notices, now);
+    prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
+    await saveStore(store);
 
-  info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen`);
-  ok(`${fresh.length} neu aufgenommen · Archiv jetzt ${Object.keys(store.notices).length}`);
+    info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen`);
+    warnAbgeschnitten(niche, stats);
+    ok(`${fresh.length} neu aufgenommen · Archiv jetzt ${Object.keys(store.notices).length}\n`);
+  }
+
   info(`  Weiter mit:  node bin/radar.js build-site`);
   return 0;
 }
@@ -361,31 +397,37 @@ async function cmdBuildSite(args) {
 }
 
 async function cmdRun(args) {
-  const slug = args.niche;
-  if (!slug) return usage('run braucht --niche <slug>');
-  const niche = await loadNiche(slug);
+  const niches = await nichesFromArgs(args);
   const schema = await loadSchema();
   const site = await loadSite();
   const now = new Date();
   const days = num(args.days, 30);
 
-  info(paint(`\n${niche.name} - Lauf vom ${now.toISOString().slice(0, 10)}\n`, 'bold'));
+  info(paint(`\nLauf vom ${now.toISOString().slice(0, 10)}\n`, 'bold'));
 
-  const { notices, stats, query } = await pipeline(niche, {
-    days, fixture: Boolean(args.fixture), schema, now,
-    limit: num(args.limit, 100), maxPages: num(args['max-pages'], 10),
-  });
-  info(`  Abfrage: ${query}`);
-  info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen · ${stats.kept} passend`);
-  if (stats.skipped) warn(`${stats.skipped} Datensaetze waren unbrauchbar und wurden verworfen.`);
+  for (const niche of niches) {
+    info(paint(`  ${niche.name}`, 'bold'));
+    const { notices, stats, query } = await pipeline(niche, {
+      days, fixture: Boolean(args.fixture), schema, now,
+      limit: num(args.limit, 100), maxPages: num(args['max-pages'], 20),
+    });
+    info(`  Abfrage: ${query}`);
+    info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen · ${stats.kept} passend`);
+    if (stats.skipped) warn(`${stats.skipped} Datensaetze waren unbrauchbar und wurden verworfen.`);
+    warnAbgeschnitten(niche, stats);
 
-  const store = await loadStore(slug);
-  const fresh = diffAndRecord(store, notices, now);
-  const removed = prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
-  await saveStore(store);
+    const store = await loadStore(niche.slug);
+    const fresh = diffAndRecord(store, notices, now);
+    const removed = prune(store, { keepDays: niche.archiveKeepDays ?? 1100, now });
+    await saveStore(store);
+    ok(`${fresh.length} neu · Archiv ${Object.keys(store.notices).length}${removed ? ` · ${removed} entfernt` : ''}\n`);
+  }
 
+  // Genau einmal, nicht je Gewerk: writeSite baut ohnehin alle Gewerke aus
+  // ihren Zustandsdateien. Innerhalb der Schleife waere es derselbe Bau von
+  // zigtausend Seiten, viermal hintereinander.
   const { files } = await writeSite(site, now);
-  ok(`${fresh.length} neu · Archiv ${Object.keys(store.notices).length}${removed ? ` · ${removed} entfernt` : ''} · ${files.length} Seiten erzeugt`);
+  ok(`${files.length} Seiten erzeugt`);
   return 0;
 }
 
@@ -439,21 +481,29 @@ async function deliver({ slug, plan, build, since, dryRun, label }) {
   return 0;
 }
 
-const cmdSend = (args) => {
-  if (!args.niche) return usage('send braucht --niche <slug>');
-  return deliver({
-    slug: args.niche, plan: subs.PLAN.PAID, build: renderMail,
-    since: num(args.since, 1), dryRun: Boolean(args['dry-run']), label: 'Alert',
-  });
-};
+/**
+ * Versand ueber alle betroffenen Gewerke. Ein Fehlschlag bei einem Gewerk darf
+ * die uebrigen nicht verschlucken - sonst haengt der Versand an drei
+ * Empfaengern, weil beim vierten etwas klemmte.
+ */
+async function deliverAll(args, { plan, build, since, label }) {
+  const niches = await nichesFromArgs(args);
+  let code = 0;
+  for (const niche of niches) {
+    const result = await deliver({
+      slug: niche.slug, plan, build,
+      since: num(args.since, since), dryRun: Boolean(args['dry-run']), label,
+    });
+    if (result !== 0) code = result;
+  }
+  return code;
+}
 
-const cmdDigest = (args) => {
-  if (!args.niche) return usage('digest braucht --niche <slug>');
-  return deliver({
-    slug: args.niche, plan: subs.PLAN.FREE, build: renderDigest,
-    since: num(args.since, 7), dryRun: Boolean(args['dry-run']), label: 'Wochenueberblick',
-  });
-};
+const cmdSend = (args) =>
+  deliverAll(args, { plan: subs.PLAN.PAID, build: renderMail, since: 1, label: 'Alert' });
+
+const cmdDigest = (args) =>
+  deliverAll(args, { plan: subs.PLAN.FREE, build: renderDigest, since: 7, label: 'Wochenueberblick' });
 
 // ----------------------------------------------------------- subscribers
 
@@ -652,12 +702,14 @@ ${paint('Vergabe-Radar', 'bold')} - oeffentliche Ausschreibungen als Abo
 
   node bin/radar.js doctor                     Konfiguration und TED-Verbindung pruefen
   node bin/radar.js scan   [--days 90]         Alle Gewerke vergleichen
-  node bin/radar.js backfill --niche <slug>    Bestand rueckwirkend aufbauen (keine Alerts)
-  node bin/radar.js run    --niche <slug>      Taeglicher Lauf + Seitenbau
+  node bin/radar.js backfill [--niche <slug>]  Bestand rueckwirkend aufbauen (keine Alerts)
+  node bin/radar.js run    [--niche <slug>]    Taeglicher Lauf + Seitenbau
   node bin/radar.js build-site                 Nur die Website neu erzeugen
   node bin/radar.js serve  [--port 8080]       Vorschau im Browser ansehen
-  node bin/radar.js send   --niche <slug>      Taeglicher Alert an Zahlende
-  node bin/radar.js digest --niche <slug>      Woechentlicher Gratis-Ueberblick
+  node bin/radar.js send   [--niche <slug>]    Taeglicher Alert an Zahlende
+  node bin/radar.js digest [--niche <slug>]    Woechentlicher Gratis-Ueberblick
+
+  Ohne --niche laufen backfill, run, send und digest ueber alle Gewerke.
   node bin/radar.js subscribers list|add|confirm|remove|sync
   node bin/radar.js seo-report                 Qualitaet der erzeugten Seiten
 

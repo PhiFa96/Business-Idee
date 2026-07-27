@@ -8,7 +8,7 @@
 // Preiseinordnung, regionale Verteilung. Ein reiner Spiegel oeffentlicher Daten
 // hat keine Aussicht auf Sichtbarkeit.
 
-import { escapeHtml, formatMoney, formatDate, layout, noticeCard, subscribeBlock, LIST_SCRIPT, UTM_SCRIPT, truncate } from './html.js';
+import { escapeHtml, formatMoney, formatDate, layout, noticeCard, subscribeBlock, LIST_SCRIPT, DEADLINE_SCRIPT, UTM_SCRIPT, truncate } from './html.js';
 import {
   groupByBuyer, groupByRegion, buyerProfile, regionStats, priceBand, similarNotices,
   buyerNarrative, priceNarrative, regionNarrative, bundeslandOf, slugify, BUNDESLAENDER,
@@ -120,6 +120,7 @@ einer Einordnung, wie der Auftrag im Vergleich zu früheren Vergaben desselben A
     body,
     canonical: url(paths.home()),
     baseUrl: site.baseUrl,
+    scripts: [DEADLINE_SCRIPT],
     impressum: site.impressum,
   });
 }
@@ -173,7 +174,7 @@ ${buyers.length ? `<h2>Auftraggeber, die regelmäßig ausschreiben</h2><div clas
     baseUrl: site.baseUrl,
     breadcrumbs: [{ name: 'Start', href: url(paths.home()) }, { name: niche.name }],
     impressum: site.impressum,
-    scripts: [LIST_SCRIPT],
+    scripts: [LIST_SCRIPT, DEADLINE_SCRIPT],
   });
 }
 
@@ -226,6 +227,8 @@ ${similar.length ? `<h2>Ähnliche Vergaben</h2><div id="list">${similar.map((ent
     body,
     canonical: url(paths.notice(niche.slug, notice.id)),
     baseUrl: site.baseUrl,
+    // Wegen der Karten unter "Aehnliche Vergaben".
+    scripts: [DEADLINE_SCRIPT],
     breadcrumbs: [
       { name: 'Start', href: url(paths.home()) },
       { name: niche.name, href: url(paths.niche(niche.slug)) },
@@ -269,6 +272,7 @@ ${sorted.map((notice) => noticeCard(notice, { now, href: url(paths.notice(niche.
     body,
     canonical: url(paths.buyer(niche.slug, profile.slug)),
     baseUrl: site.baseUrl,
+    scripts: [DEADLINE_SCRIPT],
     breadcrumbs: [
       { name: 'Start', href: url(paths.home()) },
       { name: niche.name, href: url(paths.niche(niche.slug)) },
@@ -287,7 +291,11 @@ export function renderRegionPage(niche, stats, site, { now = new Date() } = {}) 
 
   const body = `
 <h1>Ausschreibungen ${escapeHtml(niche.name)} in ${escapeHtml(stats.name)}</h1>
-<p class="sub">${stats.count} erfasste Vergaben &middot; Stand ${escapeHtml(formatDate(now))}</p>
+<!-- Bewusst ohne "Stand"-Datum: Es gibt 16 Bundeslaender mal vier Gewerke, und
+     ein Baudatum wuerde all diese Seiten jeden Tag neu schreiben, ohne dass
+     sich etwas geaendert hat. Auf Start- und Gewerkseite steht es weiterhin -
+     dort sucht der Besucher nach Aktualitaet, hier nach seiner Region. -->
+<p class="sub">${stats.count} erfasste Vergaben</p>
 
 ${kpiBlock([
     ['Ausschreibungen', stats.count],
@@ -312,6 +320,7 @@ ${sorted.map((notice) => noticeCard(notice, { now, href: url(paths.notice(niche.
     body,
     canonical: url(paths.region(niche.slug, stats.code)),
     baseUrl: site.baseUrl,
+    scripts: [DEADLINE_SCRIPT],
     breadcrumbs: [
       { name: 'Start', href: url(paths.home()) },
       { name: niche.name, href: url(paths.niche(niche.slug)) },
@@ -363,7 +372,7 @@ ${pager}`;
       { name: 'Archiv' },
     ],
     impressum: site.impressum,
-    scripts: [LIST_SCRIPT],
+    scripts: [LIST_SCRIPT, DEADLINE_SCRIPT],
     jsonLd: [{
       '@context': 'https://schema.org',
       '@type': 'Dataset',
@@ -426,7 +435,7 @@ eine Ausschreibung erscheint.</p>`;
       { name: 'Alert abonnieren' },
     ],
     impressum: site.impressum,
-    scripts: [UTM_SCRIPT],
+    scripts: [UTM_SCRIPT, DEADLINE_SCRIPT],
   });
 }
 
