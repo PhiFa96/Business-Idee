@@ -467,7 +467,15 @@
     "480569-2026": "2026-07-25T20:15:53.650Z",
     "488945-2026": "2026-07-25T20:15:53.650Z",
     "490080-2026": "2026-07-25T20:15:53.650Z",
-    "492451-2026": "2026-07-25T20:15:53.650Z"
+    "492451-2026": "2026-07-25T20:15:53.650Z",
+    "516739-2026": "2026-07-27T08:01:15.355Z",
+    "517541-2026": "2026-07-27T08:01:15.355Z",
+    "515691-2026": "2026-07-27T08:01:15.355Z",
+    "518102-2026": "2026-07-27T08:01:15.355Z",
+    "518822-2026": "2026-07-27T08:01:15.355Z",
+    "518902-2026": "2026-07-27T08:01:15.355Z",
+    "516274-2026": "2026-07-27T08:01:15.355Z",
+    "516543-2026": "2026-07-27T08:01:15.355Z"
   },
   "notices": {
     "447978-2026": {
@@ -547,7 +555,7 @@
       "matchedCpv": [
         "90911000"
       ],
-      "score": 95
+      "score": 80
     },
     "469202-2026": {
       "id": "469202-2026",
@@ -1032,7 +1040,7 @@
         "90911000",
         "90911200"
       ],
-      "score": 83
+      "score": 68
     },
     "457898-2026": {
       "id": "457898-2026",
@@ -1055,7 +1063,7 @@
       "matchedCpv": [
         "90911200"
       ],
-      "score": 83
+      "score": 68
     },
     "458002-2026": {
       "id": "458002-2026",
@@ -1445,7 +1453,7 @@
       "matchedCpv": [
         "90911200"
       ],
-      "score": 83
+      "score": 68
     },
     "467957-2026": {
       "id": "467957-2026",
@@ -1516,7 +1524,7 @@
       "matchedCpv": [
         "90910000"
       ],
-      "score": 83
+      "score": 68
     },
     "470011-2026": {
       "id": "470011-2026",
@@ -7765,7 +7773,7 @@
       "matchedCpv": [
         "90911200"
       ],
-      "score": 68
+      "score": 63
     },
     "445903-2026": {
       "id": "445903-2026",
@@ -8005,7 +8013,7 @@
       "matchedCpv": [
         "90911200"
       ],
-      "score": 68
+      "score": 63
     },
     "454565-2026": {
       "id": "454565-2026",
@@ -8532,7 +8540,7 @@
         "90911200",
         "90911300"
       ],
-      "score": 68
+      "score": 63
     },
     "476430-2026": {
       "id": "476430-2026",
@@ -12153,7 +12161,206 @@
         "90917000"
       ],
       "score": 40
+    },
+    "516739-2026": {
+      "id": "516739-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Gebäudereinigung – Gebäudereinigungsarbeiten in öffentlichen Gebäuden der Gemeinde Gingen a.d.Fils",
+      "buyer": "Gemeinde Gingen a.d.F.",
+      "buyerCity": "Gingen a.d.F.",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": 445420,
+      "deadline": "2026-08-25T10:00:00.000Z",
+      "nuts": [
+        "DE114",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/516739-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 95
+    },
+    "517541-2026": {
+      "id": "517541-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Reinigungsdienste – Reinigungsleistungen für 20 Objekte der Stadt Görlitz (Schulen, Sportanlagen, Kitas, Feuerwehr, Bibliothek)",
+      "buyer": "Stadtverwaltung Görlitz",
+      "buyerCity": "Görlitz",
+      "country": "DEU",
+      "cpv": [
+        "90910000",
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": 2195267,
+      "deadline": "2026-08-25T08:00:00.000Z",
+      "nuts": [
+        "DED2D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/517541-2026",
+      "matchedCpv": [
+        "90910000",
+        "90911200",
+        "90911300"
+      ],
+      "score": 95
+    },
+    "515691-2026": {
+      "id": "515691-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Vergabe von Reinigungsleistungen",
+      "buyer": "Gemeindevorstand der Gemeinde Echzell",
+      "buyerCity": "Echzell",
+      "country": "DEU",
+      "cpv": [
+        "90911000"
+      ],
+      "cpvMain": "90911000",
+      "valueEur": null,
+      "deadline": "2026-08-24T21:59:00.000Z",
+      "nuts": [
+        "DE71E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/515691-2026",
+      "matchedCpv": [
+        "90911000"
+      ],
+      "score": 83
+    },
+    "518102-2026": {
+      "id": "518102-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Bau von Feuerwachen – Errichtung eines Feuerwehrhauses in innovativer Holzbauweise",
+      "buyer": "Gemeinde Wentorf bei Hamburg, Die Bürgermeisterin (Kreis Herzogtum Lauenburg)",
+      "buyerCity": "Wentorf bei Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45216121",
+        "90911200"
+      ],
+      "cpvMain": "45216121",
+      "valueEur": null,
+      "deadline": "2026-09-10T08:00:00.000Z",
+      "nuts": [
+        "DEF06",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/518102-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 83
+    },
+    "518822-2026": {
+      "id": "518822-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Gebäudereinigung – Reinigungsleistungen des Hallenfreibades in Burgdorf",
+      "buyer": "Stadt Burgdorf",
+      "buyerCity": "Burgdorf",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-08-25T06:45:00.000Z",
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/518822-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 83
+    },
+    "518902-2026": {
+      "id": "518902-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Reinigungs- und Hygienedienste – Gebäudereinigung Rechtsrheinisch",
+      "buyer": "Stadt Konstanz, Personal- und Organisationsamt-Zentrale Vergabestelle",
+      "buyerCity": "Konstanz",
+      "country": "DEU",
+      "cpv": [
+        "90900000",
+        "90910000"
+      ],
+      "cpvMain": "90900000",
+      "valueEur": null,
+      "deadline": "2026-08-20T09:00:00.000Z",
+      "nuts": [
+        "DE138",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/518902-2026",
+      "matchedCpv": [
+        "90910000"
+      ],
+      "score": 83
+    },
+    "516274-2026": {
+      "id": "516274-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung Gebäude, Fensterreinigung, Unterhaltsreinigung Großgaragen",
+      "buyer": "Gewobag Wohnungsbau-Aktiengesellschaft Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300",
+        "90914000"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-07-31T10:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/516274-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300",
+        "90914000"
+      ],
+      "score": 68
+    },
+    "516543-2026": {
+      "id": "516543-2026",
+      "publishedAt": null,
+      "title": "Deutschland – Reinigungsdienste – Reinigungsdienstleistungen DG Stralsund",
+      "buyer": "DRV Bund Einkaufsmanagement",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "90910000"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU",
+        "DE80L"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/516543-2026",
+      "matchedCpv": [
+        "90910000"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-07-25T20:23:54.951Z"
+  "lastRun": "2026-07-27T08:01:15.355Z"
 }
