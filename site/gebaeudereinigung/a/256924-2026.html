@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/746742-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreingung für die Liegenschaften in München</a></h3>
   <p class="meta">Deutsche Rentenversicherung Knappschaft-Bahn-See, Bochum<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (11.12.2025)</strong> &middot; veröffentlicht 11.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die liegenschaften in bochum deutsche rentenversicherung knappschaft-bahn-see bochum"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/275277-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Liegenschaften in Bochum</a></h3>
   <p class="meta">Deutsche Rentenversicherung Knappschaft-Bahn-See, Bochum<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.04.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die liegenschaften in castrop-rauxel deutsche rentenversicherung knappschaft-bahn-see bochum"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/275393-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Liegenschaften in Castrop-Rauxel</a></h3>
   <p class="meta">Deutsche Rentenversicherung Knappschaft-Bahn-See, Bochum<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.04.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die liegenschaften in saarbrücken deutsche rentenversicherung knappschaft-bahn-see bochum"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/47070-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Liegenschaften in Saarbrücken</a></h3>
   <p class="meta">Deutsche Rentenversicherung Knappschaft-Bahn-See, Bochum<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.01.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die liegenschaften in castrop-rauxel deutsche rentenversicherung knappschaft-bahn-see bochum"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/845066-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Liegenschaften in Castrop-Rauxel</a></h3>
   <p class="meta">Deutsche Rentenversicherung Knappschaft-Bahn-See, Bochum<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.01.2026)</strong> &middot; veröffentlicht 18.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.12.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

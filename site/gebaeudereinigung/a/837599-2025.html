@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/686156-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung für das Rehazentrum Bad Eilsen</a></h3>
   <p class="meta">Deutsche Rentenversicherung Braunschweig-Hannover, Laatzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.10.2025)</strong> &middot; veröffentlicht 17.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 17.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung für das rehazentrum bad eilsen deutsche rentenversicherung braunschweig-hannover laatzen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/672278-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung für das Rehazentrum Bad Eilsen</a></h3>
   <p class="meta">Deutsche Rentenversicherung Braunschweig-Hannover, Laatzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.10.2025)</strong> &middot; veröffentlicht 13.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 13.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung für das rehazentrum bad eilsen deutsche rentenversicherung braunschweig-hannover laatzen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/639468-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung für das Rehazentrum Bad Eilsen</a></h3>
   <p class="meta">Deutsche Rentenversicherung Braunschweig-Hannover, Laatzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.10.2025)</strong> &middot; veröffentlicht 30.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 30.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung für das rehazentrum bad eilsen deutsche rentenversicherung braunschweig-hannover laatzen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/622129-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung für das Rehazentrum Bad Eilsen</a></h3>
   <p class="meta">Deutsche Rentenversicherung Braunschweig-Hannover, Laatzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.10.2025)</strong> &middot; veröffentlicht 23.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 23.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung für das rehazentrum bad eilsen deutsche rentenversicherung braunschweig-hannover laatzen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-18T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/613079-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung für das Rehazentrum Bad Eilsen</a></h3>
   <p class="meta">Deutsche Rentenversicherung Braunschweig-Hannover, Laatzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.10.2025)</strong> &middot; veröffentlicht 19.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 19.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/829614-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung für das Richard-Wossidlo-Gymnasium in Waren (Müritz)</a></h3>
   <p class="meta">Landkreis Mecklenburgische Seenplatte, Neubrandenburg<br>
-  Auftragswert <strong>144.819 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.12.2025</p>
+  Auftragswert <strong>144.819 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung an den schulen in malchin landkreis mecklenburgische seenplatte neubrandenburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/732420-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung an den Schulen in Malchin</a></h3>
   <p class="meta">Landkreis Mecklenburgische Seenplatte, Neubrandenburg<br>
-  Auftragswert <strong>110.693 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.11.2025</p>
+  Auftragswert <strong>110.693 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung der schulen in friedland, los 2 schule mit dem förderschwerpunkt lernen landkreis mecklenburgische seenplatte neubrandenburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/690458-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung der Schulen in Friedland, Los 2 Schule mit dem Förderschwerpunkt Lernen</a></h3>
   <p class="meta">Landkreis Mecklenburgische Seenplatte, Neubrandenburg<br>
-  Auftragswert <strong>26.290 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.10.2025</p>
+  Auftragswert <strong>26.290 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung für das richard-wossidlo-gymnasium in waren (müritz) landkreis mecklenburgische seenplatte neubrandenburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/625264-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung für das Richard-Wossidlo-Gymnasium in Waren (Müritz)</a></h3>
   <p class="meta">Landkreis Mecklenburgische Seenplatte, Neubrandenburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.10.2025)</strong> &middot; veröffentlicht 24.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 24.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung der schulen in friedland, los 2 schule mit dem förderschwerpunkt lernen landkreis mecklenburgische seenplatte neubrandenburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/516805-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung der Schulen in Friedland, Los 2 Schule mit dem Förderschwerpunkt Lernen</a></h3>
   <p class="meta">Landkreis Mecklenburgische Seenplatte, Neubrandenburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.09.2025)</strong> &middot; veröffentlicht 07.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 07.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

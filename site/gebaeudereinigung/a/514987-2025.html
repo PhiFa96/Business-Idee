@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512763-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 6 Tage (03.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511077-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 6 Tage (03.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/507356-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 6 Tage (03.08.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/507278-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.08.2025)</strong> &middot; veröffentlicht 04.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.08.2025</strong><span class="rest"></span> &middot; veröffentlicht 04.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-07-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/504066-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.08.2025)</strong> &middot; veröffentlicht 01.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.08.2025</strong><span class="rest"></span> &middot; veröffentlicht 01.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-18T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/339886-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen Polizeiinspektion Halle (Saale)</a></h3>
   <p class="meta">Polizeiinspektion Zentrale Dienste Sachsen-Anhalt, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.06.2026)</strong> &middot; veröffentlicht 19.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen lka sachsen-anhalt polizeiinspektion zentrale dienste sachsen-anhalt magdeburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/248471-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen LKA Sachsen-Anhalt</a></h3>
   <p class="meta">Polizeiinspektion Zentrale Dienste Sachsen-Anhalt, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistung fachhochschule polizei polizeiinspektion zentrale dienste sachsen-anhalt magdeburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/109037-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistung Fachhochschule Polizei</a></h3>
   <p class="meta">Polizeiinspektion Zentrale Dienste Sachsen-Anhalt, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 16.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 16.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistung polizeiinspektion dessau-roßlau polizeiinspektion zentrale dienste sachsen-anhalt magdeburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/815025-2025.html">Deutschland – Gebäudereinigung – Reinigungsleistung Polizeiinspektion Dessau-Roßlau</a></h3>
   <p class="meta">Polizeiinspektion Zentrale Dienste Sachsen-Anhalt, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – reinigungsleistung fachhochschule polizei polizeiinspektion zentrale dienste sachsen-anhalt magdeburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/737160-2025.html">Deutschland – Gebäudereinigung – Reinigungsleistung Fachhochschule Polizei</a></h3>
   <p class="meta">Polizeiinspektion Zentrale Dienste Sachsen-Anhalt, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (11.11.2025)</strong> &middot; veröffentlicht 06.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 06.11.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

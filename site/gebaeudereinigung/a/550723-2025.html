@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-27T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/63836-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Gerichte Greifswald und Stralsund</a></h3>
   <p class="meta">Staatliches Bau- und Liegenschaftsamt Greifswald, Greifswald<br>
-  Auftragswert <strong>223.183 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.01.2026</p>
+  Auftragswert <strong>223.183 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – unterhalts- und glasreinigung greifswald staatliches bau- und liegenschaftsamt greifswald greifswald"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/731031-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Unterhalts- und Glasreinigung Greifswald</a></h3>
   <p class="meta">Staatliches Bau- und Liegenschaftsamt Greifswald, Greifswald<br>
-  Auftragswert <strong>281.020 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.11.2025</p>
+  Auftragswert <strong>281.020 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung gerichte greifswald und stralsund staatliches bau- und liegenschaftsamt greifswald greifswald"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/672690-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Gerichte Greifswald und Stralsund</a></h3>
   <p class="meta">Staatliches Bau- und Liegenschaftsamt Greifswald, Greifswald<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.11.2025)</strong> &middot; veröffentlicht 14.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 14.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – offenes verfahren (eu-weit) zur vergabe von gebäudereinigungsleistungen (treppenhaus- und glasreinigungsleistungen) für diverse wohnliegenschaften in schwerin, sanitz, stralsund, greifswald und auf rügen - voek 175-26 bundesanstalt für immobilienaufgaben bonn"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508130-2026.html">Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Treppenhaus- und Glasreinigungsleistungen) für diverse Wohnliegenschaften in Schwerin, Sanitz, Stralsund, Greifswald und auf Rügen - VOEK 175-26</a></h3>
   <p class="meta">Bundesanstalt für Immobilienaufgaben, Bonn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – rahmenvereinbarung über gebäudereinigung standortbereich hagenow bundeswehr-dienstleistungszentrum rostock rostock"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/491879-2026.html">Deutschland – Gebäudereinigung – Rahmenvereinbarung über Gebäudereinigung Standortbereich Hagenow</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Rostock, Rostock<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

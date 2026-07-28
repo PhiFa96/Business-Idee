@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/265588-2026.html">Deutschland – Dienstleistungen von Kantinen – Wirtschaftsdienste für die NRW.BANK am Standort Münster</a></h3>
   <p class="meta">NRW.BANK AöR, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.04.2026)</strong> &middot; veröffentlicht 17.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen von kantinen – wirtschaftsdienste für die nrw.bank am standort düsseldorf nrw.bank aör düsseldorf"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/260044-2026.html">Deutschland – Dienstleistungen von Kantinen – Wirtschaftsdienste für die NRW.BANK am Standort Düsseldorf</a></h3>
   <p class="meta">NRW.BANK AöR, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 16.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen von kantinen – wirtschaftsdienste für die nrw.bank am standort münster nrw.bank aör düsseldorf"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/260068-2026.html">Deutschland – Dienstleistungen von Kantinen – Wirtschaftsdienste für die NRW.BANK am Standort Münster</a></h3>
   <p class="meta">NRW.BANK AöR, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 16.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen von kantinen – wirtschaftsdienste für die nrw.bank am standort münster nrw.bank aör düsseldorf"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/227825-2026.html">Deutschland – Dienstleistungen von Kantinen – Wirtschaftsdienste für die NRW.BANK am Standort Münster</a></h3>
   <p class="meta">NRW.BANK AöR, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 02.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 02.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen von kantinen – wirtschaftsdienste für die nrw.bank am standort düsseldorf nrw.bank aör düsseldorf"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/228462-2026.html">Deutschland – Dienstleistungen von Kantinen – Wirtschaftsdienste für die NRW.BANK am Standort Düsseldorf</a></h3>
   <p class="meta">NRW.BANK AöR, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 02.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 02.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

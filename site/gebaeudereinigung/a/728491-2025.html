@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-24T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/551550-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung sowie Wirtschaftsleistungen für das Amt Unterspreewald</a></h3>
   <p class="meta">Amt Unterspreewald, Golßen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.09.2025)</strong> &middot; veröffentlicht 25.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 25.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512763-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 6 Tage (03.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung kommunale objekte in neuenhagen bei berlin gemeindeverwaltung neuenhagen bei berlin neuenhagen bei berlin"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511077-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung kommunale Objekte in Neuenhagen bei Berlin</a></h3>
   <p class="meta">Gemeindeverwaltung Neuenhagen bei Berlin, Neuenhagen bei Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 6 Tage (03.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – umgestaltung osz elsterwerda zum bildungszentrum elbe-elster, 2. ba, los 13 - baureinigungsarbeiten landkreis elbe-elster herzberg/elster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511460-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Umgestaltung OSZ Elsterwerda zum Bildungszentrum Elbe-Elster, 2. BA, Los 13 - Baureinigungsarbeiten</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung für die grundschule im ortsteil hangelsberg der gemeinde grünheide gemeinde grünheide (mark) grünheide (mark)"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/506448-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung für die Grundschule im Ortsteil Hangelsberg der Gemeinde Grünheide</a></h3>
   <p class="meta">Gemeinde Grünheide (Mark), Grünheide (Mark)<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 24 Tage (21.08.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>21.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

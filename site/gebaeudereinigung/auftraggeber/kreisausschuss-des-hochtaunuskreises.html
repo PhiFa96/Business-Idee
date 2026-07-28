@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/495597-2026.html">Deutschland – Büroreinigung – Unterhaltsreinigung LRA und Nebenstellen</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – büroreinigung – unterhaltsreinigung lra und nebenstellen kreisausschuss des hochtaunuskreises bad homburg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/191669-2026.html">Deutschland – Büroreinigung – Unterhaltsreinigung LRA und Nebenstellen</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 19.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – 37/2025 - unterhaltsreinigung und grundreinigung an 24 schulen - 3 lose (diese tragen die bezeichnungen &quot;los 1, los 7 und los 9&quot;. kreisausschuss des hochtaunuskreises bad homburg"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/659156-2025.html">Deutschland – Reinigung von Schulen – 37/2025 - Unterhaltsreinigung und Grundreinigung an 24 Schulen - 3 Lose (diese tragen die Bezeichnungen &quot;Los 1, Los 7 und Los 9&quot;.</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>6.153.567 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.10.2025</p>
+  Auftragswert <strong>6.153.567 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – baufertigstellung – 024/2025 - reinigungsarbeiten im zuge der sanierung der sporthallen eks/gag/igs kreisausschuss des hochtaunuskreises bad homburg"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-07-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/502968-2025.html">Deutschland – Baufertigstellung – 024/2025 - Reinigungsarbeiten im Zuge der Sanierung der Sporthallen EKS/GAG/IGS</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>54.593 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 31.07.2025</p>
+  Auftragswert <strong>54.593 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 31.07.2025</p>
 </article>
 </div>
 <footer>
@@ -105,5 +105,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

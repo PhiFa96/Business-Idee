@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/749681-2025.html">Deutschland – Reinigungsdienste – Städtische Objekte_Glas- und Gebäudereinigung</a></h3>
   <p class="meta">Stadt Koblenz, Koblenz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.11.2025)</strong> &middot; veröffentlicht 12.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 12.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – städtische objekte_glas- und gebäudereinigung stadt koblenz koblenz"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/662994-2025.html">Deutschland – Reinigungsdienste – Städtische Objekte_Glas- und Gebäudereinigung</a></h3>
   <p class="meta">Stadt Koblenz, Koblenz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.11.2025)</strong> &middot; veröffentlicht 09.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 09.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – industriereinigung mhkw technische werke ludwigshafen am rhein ag ludwigshafen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/498680-2026.html">Deutschland – Reinigungsdienste – Industriereinigung MHKW</a></h3>
   <p class="meta">Technische Werke Ludwigshafen am Rhein AG, Ludwigshafen<br>
-  Auftragswert <strong>2.400.000 €</strong> &middot; Frist <strong>noch 20 Tage (16.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>2.400.000 €</strong> &middot; Frist <strong>16.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – 25eu/26 unterhaltsreinigung berufsbildende schule trier - werk-/dienstvertrag stadt trier trier"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/482735-2026.html">Deutschland – Reinigungsdienste – 25EU/26 Unterhaltsreinigung Berufsbildende Schule Trier - Werk-/Dienstvertrag</a></h3>
   <p class="meta">Stadt Trier, Trier<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 21 Tage (18.08.2026)</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – unterhaltsreinigung und durchführung von sonderreinigungsarbeiten in den gebäuden und räumen des zdf zweites deutsches fernsehen mainz"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/376056-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung und Durchführung von Sonderreinigungsarbeiten in den Gebäuden und Räumen des ZDF</a></h3>
   <p class="meta">Zweites Deutsches Fernsehen, Mainz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 02.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 02.06.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

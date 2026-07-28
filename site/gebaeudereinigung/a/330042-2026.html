@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511821-2026.html">Deutschland – Fensterreinigung – Glas- und Fassadenreinigung an den NDR Standorten Lokstedt ( Los 1) und Rothenbaum (Los 2)</a></h3>
   <p class="meta">Norddeutscher Rundfunk, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung im emilie-wüstenfeld-gymnasium, bundesstraße 78, gustav-falke-straße 21, 20144 hamburg ab dem 15.09.2026 unbefristet bvc behörde für finanzen und bezirke hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/502199-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung im Emilie-Wüstenfeld-Gymnasium, Bundesstraße 78, Gustav-Falke-Straße 21, 20144 Hamburg ab dem 15.09.2026 unbefristet</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>163.857 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>163.857 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der schule max-eichholz-ring, max-eichholz-ring 25, 21031 hamburg bvc behörde für finanzen und bezirke hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490080-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Schule Max-Eichholz-Ring, Max-Eichholz-Ring 25, 21031 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – rahmenvereinbarung: technische reinigungsleistungen in gebäudetechnischen betriebsräumen norddeutscher rundfunk hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/472436-2026.html">Deutschland – Gebäudereinigung – Rahmenvereinbarung: Technische Reinigungsleistungen in gebäudetechnischen Betriebsräumen</a></h3>
   <p class="meta">Norddeutscher Rundfunk, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 13 Tage (10.08.2026)</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule appelhoff, appelhoff 2, 22309 hamburg bvc behörde für finanzen und bezirke hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/468616-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Appelhoff, Appelhoff 2, 22309 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

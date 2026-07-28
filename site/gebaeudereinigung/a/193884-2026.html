@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/393799-2026.html">Deutschland – Fassadenreinigungsarbeiten – Neubau GS Sarstedt - Baureinigung</a></h3>
   <p class="meta">Landkreis Hildesheim, Hildesheim<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.06.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – fassadenreinigungsarbeiten – neubau gs sarstedt - baureinigung landkreis hildesheim hildesheim"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/256499-2026.html">Deutschland – Fassadenreinigungsarbeiten – Neubau GS Sarstedt - Baureinigung</a></h3>
   <p class="meta">Landkreis Hildesheim, Hildesheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.05.2026)</strong> &middot; veröffentlicht 15.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – vergabe von reinigungsdienstleistungen gymnasium sarstedt landkreis hildesheim hildesheim"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/434620-2026.html">Deutschland – Reinigungsdienste – Vergabe von Reinigungsdienstleistungen Gymnasium Sarstedt</a></h3>
   <p class="meta">Landkreis Hildesheim, Hildesheim<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – unterhaltsreinigung für die achimer bäder stadt achim c/o landkreis verden - zentrale vergabestelle verden"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510681-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung für die Achimer Bäder</a></h3>
   <p class="meta">Stadt Achim c/o Landkreis Verden - Zentrale Vergabestelle, Verden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 27 Tage (24.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – offenes verfahren (eu-weit) zur vergabe von dachrinnenreinigung in diversen liegenschaften in bremen und niedersachsen bundesanstalt für immobilienaufgaben wohnen, kundencenter hannover voek 545-24 bundesanstalt für immobilienaufgaben bonn"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/501810-2026.html">Deutschland – Reinigungsdienste – Offenes Verfahren (EU-weit) zur Vergabe von Dachrinnenreinigung in diversen Liegenschaften in Bremen und Niedersachsen Bundesanstalt für Immobilienaufgaben Wohnen, Kundencenter Hannover VOEK 545-24</a></h3>
   <p class="meta">Bundesanstalt für Immobilienaufgaben, Bonn<br>
-  Auftragswert <strong>392.058 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>392.058 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

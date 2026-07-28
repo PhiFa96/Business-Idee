@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/855702-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Notunterkunft</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.01.2026)</strong> &middot; veröffentlicht 23.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – fensterreinigung – glasreinigung in verwaltungsgebäuden und schulen der stadt solingen, der technischen betriebe solingen, der entsorgung solingen gmbh, der solinger bädergesellschaft mbh sowie der städtischen musikschule gmbh stadt solingen solingen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/560438-2025.html">Deutschland – Fensterreinigung – Glasreinigung in Verwaltungsgebäuden und Schulen der Stadt Solingen, der Technischen Betriebe Solingen, der Entsorgung Solingen GmbH, der Solinger Bädergesellschaft mbH sowie der Städtischen Musikschule GmbH</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>217.474 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.08.2025</p>
+  Auftragswert <strong>217.474 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der gesamtschule höhscheid, kanalstraße 20 und zweigstraße 15-17, 42657 solingen stadt solingen solingen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512302-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Gesamtschule Höhscheid, Kanalstraße 20 und Zweigstraße 15-17, 42657 Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der gesamtschule höhscheid, kanalstraße 20 und zweigstraße 15-17, 42657 solingen stadt solingen solingen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/496932-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Gesamtschule Höhscheid, Kanalstraße 20 und Zweigstraße 15-17, 42657 Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung von grundschulen im stadtgebiet solingen stadt solingen solingen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/331459-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung von Grundschulen im Stadtgebiet Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.06.2026)</strong> &middot; veröffentlicht 15.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

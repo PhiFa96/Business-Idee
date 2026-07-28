@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/314645-2026.html">Deutschland – Gebäudereinigung – Neubau Kinderklinikum (EKiZ) und Wirtschaftshof – Klinikum Nürnberg Süd - Grundreinigung</a></h3>
   <p class="meta">Klinikum Nürnberg, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (08.06.2026)</strong> &middot; veröffentlicht 07.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>08.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – dienstleistung glas- und rahmenreinigung, reinigung von sonnenschutzelementen für das klinikum nbg. klinikum nürnberg nürnberg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/157188-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Dienstleistung Glas- und Rahmenreinigung, Reinigung von Sonnenschutzelementen für das Klinikum Nbg.</a></h3>
   <p class="meta">Klinikum Nürnberg, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.04.2026)</strong> &middot; veröffentlicht 06.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – dienstleistung glas- und rahmenreinigung, reinigung von sonnenschutzelementen für das klinikum nbg. klinikum nürnberg nürnberg"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/154374-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Dienstleistung Glas- und Rahmenreinigung, Reinigung von Sonnenschutzelementen für das Klinikum Nbg.</a></h3>
   <p class="meta">Klinikum Nürnberg, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.04.2026)</strong> &middot; veröffentlicht 05.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.03.2026</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/610390-2025.html">Deutschland – Reinigungs- und Hygienedienste – Unterhalts- und Glasreinigungsleistungen für verschiedene Liegenschaften der Stadt MG - Unterhaltsreinigung Los 16u</a></h3>
   <p class="meta">Stadt Mönchengladbach, Mönchengladbach<br>
-  Auftragswert <strong>353.754 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.09.2025</p>
+  Auftragswert <strong>353.754 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – ausschreibung gebäudereinigung - fraunhofer institut (ims) fraunhofer gesellschaft zur förderung der angewandten forschung e.v. münchen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490393-2026.html">Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung - Fraunhofer Institut (IMS)</a></h3>
   <p class="meta">Fraunhofer Gesellschaft zur Förderung der angewandten Forschung e.V., München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 22 Tage (19.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – rahmenvereinbarung über die reinigung von dienst- und schutzkleidung sowie sonstiger textilien für die feuerwehr der stadt hamm stadt hamm, bauverwaltungsamt, zentrales beschaffungsmanagement hamm"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/484927-2026.html">Deutschland – Reinigungsdienste – Rahmenvereinbarung über die Reinigung von Dienst- und Schutzkleidung sowie sonstiger Textilien für die Feuerwehr der Stadt Hamm</a></h3>
   <p class="meta">Stadt Hamm, Bauverwaltungsamt, Zentrales Beschaffungsmanagement, Hamm<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 14.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 14.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsdienstleistungen in städtischen gebäuden stadt jülich vergabestelle jülich"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/345117-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsdienstleistungen in städtischen Gebäuden</a></h3>
   <p class="meta">Stadt Jülich Vergabestelle, Jülich<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (19.06.2026)</strong> &middot; veröffentlicht 20.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsarbeiten in drei gebäudekomplexen der stadt ibbenbüren zum 01.01.2027 bzw. 01.03.2027 stadt ibbenbüren ibbenbüren"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/338890-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsarbeiten in drei Gebäudekomplexen der Stadt Ibbenbüren zum 01.01.2027 bzw. 01.03.2027</a></h3>
   <p class="meta">Stadt Ibbenbüren, Ibbenbüren<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.06.2026)</strong> &middot; veröffentlicht 18.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

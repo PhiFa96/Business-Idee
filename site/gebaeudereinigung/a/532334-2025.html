@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/313206-2026.html">Deutschland – Bauarbeiten – Harksheider Straße 70 - Baureinigung</a></h3>
   <p class="meta">SBH | Schulbau Hamburg, Hamburg<br>
-  Auftragswert <strong>8.740.000 €</strong> &middot; Frist <strong>abgelaufen (09.06.2026)</strong> &middot; veröffentlicht 07.05.2026</p>
+  Auftragswert <strong>8.740.000 €</strong> &middot; Frist <strong>09.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – struckholt 27-29 - baureinigung sbh | schulbau hamburg hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/288877-2026.html">Deutschland – Bauarbeiten – Struckholt 27-29 - Baureinigung</a></h3>
   <p class="meta">SBH | Schulbau Hamburg, Hamburg<br>
-  Auftragswert <strong>38.045 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.04.2026</p>
+  Auftragswert <strong>38.045 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – hebebrandstraße 1 - baureinigung sbh | schulbau hamburg hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/188268-2026.html">Deutschland – Bauarbeiten – Hebebrandstraße 1 - Baureinigung</a></h3>
   <p class="meta">SBH | Schulbau Hamburg, Hamburg<br>
-  Auftragswert <strong>44.934.000 €</strong> &middot; Frist <strong>abgelaufen (21.04.2026)</strong> &middot; veröffentlicht 18.03.2026</p>
+  Auftragswert <strong>44.934.000 €</strong> &middot; Frist <strong>21.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – isestraße 144-146 - baureinigung sbh | schulbau hamburg hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/28756-2026.html">Deutschland – Bauarbeiten – Isestraße 144-146 - Baureinigung</a></h3>
   <p class="meta">SBH | Schulbau Hamburg, Hamburg<br>
-  Auftragswert <strong>26.764 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.01.2026</p>
+  Auftragswert <strong>26.764 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – bahrenfelder straße 260 - baureinigung sbh | schulbau hamburg hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/624089-2025.html">Deutschland – Bauarbeiten – Bahrenfelder Straße 260 - Baureinigung</a></h3>
   <p class="meta">SBH | Schulbau Hamburg, Hamburg<br>
-  Auftragswert <strong>281.987 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.09.2025</p>
+  Auftragswert <strong>281.987 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

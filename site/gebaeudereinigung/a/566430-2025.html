@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-07T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/811464-2025.html">Deutschland – Gebäudereinigung – TUM Garching: Gebäudereinigung COS &amp; COS-IN</a></h3>
   <p class="meta">Technische Universität München, Garching<br>
-  Auftragswert <strong>62.609 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.12.2025</p>
+  Auftragswert <strong>62.609 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäude- und glasreinigung für das amtsgericht straubing freistaat bayern - vertreten durch den direktor des amtsgerichts straubing straubing"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512943-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäude- und Glasreinigung für das Amtsgericht Straubing</a></h3>
   <p class="meta">Freistaat Bayern - vertreten durch den Direktor des Amtsgerichts Straubing, Straubing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsdienstleistungen für den klinikneubau, bauteil 6.1 des klinikum fürths klinikum fürth fürth"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/513923-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsdienstleistungen für den Klinikneubau, Bauteil 6.1 des Klinikum Fürths</a></h3>
   <p class="meta">Klinikum Fürth, Fürth<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (01.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – reinigungsdienstleistungen am blka standort münchen bayerisches landeskriminalamt münchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/514707-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Reinigungsdienstleistungen am BLKA Standort München</a></h3>
   <p class="meta">Bayerisches Landeskriminalamt, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (02.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>02.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – vergabe unterhaltsreinigung staatstheater am gärtnerplatz münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/514638-2026.html">Deutschland – Gebäudereinigung – Vergabe Unterhaltsreinigung</a></h3>
   <p class="meta">Staatstheater am Gärtnerplatz, München<br>
-  Auftragswert <strong>2.227.320 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>2.227.320 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

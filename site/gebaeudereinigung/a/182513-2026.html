@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/496929-2026.html">Deutschland – Baustelleneinrichtung – Baustelleneinrichtung, Wertstoffhof</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.07.2026)</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für schulgebäude – 3220 baureinigung zweckverband staatliche weiterführende schulen im südosten des landkreises münchen (schulzweckverband südost) neubiberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/463329-2026.html">Deutschland – Bauarbeiten für Schulgebäude – 3220 Baureinigung</a></h3>
   <p class="meta">Zweckverband Staatliche weiterführende Schulen im Südosten des Landkreises München (Schulzweckverband Südost), Neubiberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 14 Tage (11.08.2026)</strong> &middot; veröffentlicht 06.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bau von grundschulen – 24-01 gsa - erweiterung und sanierung der aventinus-grundschule abensberg ba2 stadt abensberg abensberg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/365408-2026.html">Deutschland – Bau von Grundschulen – 24-01 GSA - Erweiterung und Sanierung der Aventinus-Grundschule Abensberg BA2</a></h3>
   <p class="meta">Stadt Abensberg, Abensberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bau von weiterführenden schulen – pommernstr. 10 - neubau schulzentrum südwest / 2.ba - b3.3301 baufeinreinigung stadt nürnberg hochbauamt nürnberg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/345277-2026.html">Deutschland – Bau von weiterführenden Schulen – Pommernstr. 10 - Neubau Schulzentrum Südwest / 2.BA - B3.3301 Baufeinreinigung</a></h3>
   <p class="meta">Stadt Nürnberg Hochbauamt, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.06.2026)</strong> &middot; veröffentlicht 20.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten für schulgebäude – sanierung hans-stethaimer-schule – baureinigungsarbeiten stadt burghausen burghausen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/163369-2026.html">Deutschland – Bauarbeiten für Schulgebäude – Sanierung Hans-Stethaimer-Schule – Baureinigungsarbeiten</a></h3>
   <p class="meta">Stadt Burghausen, Burghausen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.04.2026)</strong> &middot; veröffentlicht 09.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.03.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

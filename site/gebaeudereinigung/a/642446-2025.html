@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-11T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/324915-2026.html">Deutschland – Reinigungsdienste – Cleaning services, consumables and handyman</a></h3>
   <p class="meta">Authority for Anti-Money Laundering and Countering the Financing of Terrorism, Frankfurt am Main<br>
-  Auftragswert <strong>2.500.000 €</strong> &middot; Frist <strong>abgelaufen (15.07.2026)</strong> &middot; veröffentlicht 12.05.2026</p>
+  Auftragswert <strong>2.500.000 €</strong> &middot; Frist <strong>15.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 12.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – diverse dienstleistungen – 1/biud/w0527 - weiterbetrieb der liegenschaft fürst-wrede-kaserne am standort münchen bundesamt für infrastruktur, umweltschutz und dienstleistungen der bundeswehr bonn"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/309921-2026.html">Deutschland – Diverse Dienstleistungen – 1/BIUD/W0527 - Weiterbetrieb der Liegenschaft Fürst-Wrede-Kaserne am Standort München</a></h3>
   <p class="meta">Bundesamt für Infrastruktur, Umweltschutz und Dienstleistungen der Bundeswehr, Bonn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.06.2026)</strong> &middot; veröffentlicht 06.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – immobiliendienste – facility management - fm-total - allgemeiner bestand und polizei land berlin – sondervermögen immobilien des landes berlin (silb) c/o bim berliner immobilienmanagement gmbh berlin"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-23T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/128135-2026.html">Deutschland – Immobiliendienste – Facility Management - FM-Total - Allgemeiner Bestand und Polizei</a></h3>
   <p class="meta">Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH, Berlin<br>
-  Auftragswert <strong>41.784.903 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.02.2026</p>
+  Auftragswert <strong>41.784.903 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – technische und allgemeine gebäudeservices im oranienquartier (verga) bundesdruckerei gmbh berlin"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/536602-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Technische und allgemeine Gebäudeservices im Oranienquartier (VergA)</a></h3>
   <p class="meta">Bundesdruckerei GmbH, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung museums- und verwaltungsgebäude historisches museum der pfalz - stiftung des öffentlichen rechts speyer"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/502817-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Museums- und Verwaltungsgebäude</a></h3>
   <p class="meta">Historisches Museum der Pfalz - Stiftung des öffentlichen Rechts, Speyer<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-16T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/837434-2025.html">Deutschland – Dienstleistungen des Gesundheits- und Sozialwesens – Betreibung einer Flüchtlingsunterkunft in 4 Losen</a></h3>
   <p class="meta">Kupferstadt Stolberg (Rhld.), Stolberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen des gesundheits- und sozialwesens – betreibung einer flüchtlingsunterkunft in 4 losen kupferstadt stolberg (rhld.) stolberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/617627-2025.html">Deutschland – Dienstleistungen des Gesundheits- und Sozialwesens – Betreibung einer Flüchtlingsunterkunft in 4 Losen</a></h3>
   <p class="meta">Kupferstadt Stolberg (Rhld.), Stolberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (28.10.2025)</strong> &middot; veröffentlicht 22.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 22.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – dienstleistungen des gesundheits- und sozialwesens – betrieb und betreuung der gemeinschaftsunterkunft ernst-abbe-ring 23, 31535 neustadt am rübenberge für asylbewerberinnen, asylbewerber und flüchtlinge stadt neustadt am rübenberge neustadt am rübenberge"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/49340-2026.html">Deutschland – Dienstleistungen des Gesundheits- und Sozialwesens – Betrieb und Betreuung der Gemeinschaftsunterkunft Ernst-Abbe-Ring 23, 31535 Neustadt am Rübenberge für Asylbewerberinnen, Asylbewerber und Flüchtlinge</a></h3>
   <p class="meta">Stadt Neustadt am Rübenberge, Neustadt am Rübenberge<br>
-  Auftragswert <strong>4.062.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.01.2026</p>
+  Auftragswert <strong>4.062.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen - lwl-klinikum gütersloh landschaftsverband westfalen-lippe münster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512903-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen - LWL-Klinikum Gütersloh</a></h3>
   <p class="meta">Landschaftsverband Westfalen-Lippe, Münster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der gesamtschule höhscheid, kanalstraße 20 und zweigstraße 15-17, 42657 solingen stadt solingen solingen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512302-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Gesamtschule Höhscheid, Kanalstraße 20 und Zweigstraße 15-17, 42657 Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-24T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/627705-2025.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung und Glasreinigung am Fraunhofer IIS, Institutsteil EAS, Münchener Straße Dresden</a></h3>
   <p class="meta">Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e. V., Erlangen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.10.2025)</strong> &middot; veröffentlicht 25.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 25.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – unterhaltsreinigung und glasreinigung am fraunhofer iis, institutsteil eas, münchener straße dresden fraunhofer-gesellschaft zur förderung der angewandten forschung e. v. erlangen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/589609-2025.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung und Glasreinigung am Fraunhofer IIS, Institutsteil EAS, Münchener Straße Dresden</a></h3>
   <p class="meta">Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e. V., Erlangen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.10.2025)</strong> &middot; veröffentlicht 10.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 10.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – unterhaltsreinigung und glasreinigung am fraunhofer iis, institutsteil eas, münchener straße dresden fraunhofer-gesellschaft zur förderung der angewandten forschung e. v. erlangen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/564867-2025.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung und Glasreinigung am Fraunhofer IIS, Institutsteil EAS, Münchener Straße Dresden</a></h3>
   <p class="meta">Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e. V., Erlangen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.10.2025)</strong> &middot; veröffentlicht 29.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – ausschreibung gebäudereinigung - fraunhofer institut (ims) fraunhofer gesellschaft zur förderung der angewandten forschung e.v. münchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490393-2026.html">Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung - Fraunhofer Institut (IMS)</a></h3>
   <p class="meta">Fraunhofer Gesellschaft zur Förderung der angewandten Forschung e.V., München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 22 Tage (19.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – ausschreibung gebäudereinigung - fraunhofer-institut (iml) fraunhofer gesellschaft zur förderung der angewandten forschung e.v. münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-25T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/209600-2026.html">Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung - Fraunhofer-Institut (IML)</a></h3>
   <p class="meta">Fraunhofer Gesellschaft zur Förderung der angewandten Forschung e.V., München<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 26.03.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 26.03.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

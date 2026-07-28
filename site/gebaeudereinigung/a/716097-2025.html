@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/28501-2026.html">Deutschland – Bauarbeiten – Modernisierung Stadthalle Magdeburg, Heinrich-Heine-Platz 1, 39114 Magdeburg - Los 327 - Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt Magdeburg, Die Oberbürgermeisterin, Magdeburg<br>
-  Auftragswert <strong>156.267 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.01.2026</p>
+  Auftragswert <strong>156.267 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – modernisierung stadthalle magdeburg, heinrich-heine-platz 1, 39114 magdeburg - los 327 - baureinigung landeshauptstadt magdeburg, die oberbürgermeisterin magdeburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/667484-2025.html">Deutschland – Bauarbeiten – Modernisierung Stadthalle Magdeburg, Heinrich-Heine-Platz 1, 39114 Magdeburg - Los 327 - Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt Magdeburg, Die Oberbürgermeisterin, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.10.2025)</strong> &middot; veröffentlicht 10.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 10.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – modernisierung stadthalle magdeburg, heinrich-heine-platz 1, 39114 magdeburg - los 327 - baureinigung landeshauptstadt magdeburg, die oberbürgermeisterin magdeburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/659291-2025.html">Deutschland – Bauarbeiten – Modernisierung Stadthalle Magdeburg, Heinrich-Heine-Platz 1, 39114 Magdeburg - Los 327 - Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt Magdeburg, Die Oberbürgermeisterin, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.10.2025)</strong> &middot; veröffentlicht 08.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 08.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – modernisierung stadthalle magdeburg, heinrich-heine-platz 1, 39114 magdeburg - los 327 - baureinigung landeshauptstadt magdeburg, die oberbürgermeisterin magdeburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/577848-2025.html">Deutschland – Bauarbeiten – Modernisierung Stadthalle Magdeburg, Heinrich-Heine-Platz 1, 39114 Magdeburg - Los 327 - Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt Magdeburg, Die Oberbürgermeisterin, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (08.10.2025)</strong> &middot; veröffentlicht 04.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>08.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 04.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – salzlandkreis, reinigungsleistungen in 3 schulobjekten und 4 turnhallen in bernburg (saale) salzlandkreis bernburg (saale)"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/655508-2025.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Salzlandkreis, Reinigungsleistungen in 3 Schulobjekten und 4 Turnhallen in Bernburg (Saale)</a></h3>
   <p class="meta">Salzlandkreis, Bernburg (Saale)<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.10.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

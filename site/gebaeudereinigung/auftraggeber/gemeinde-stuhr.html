@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/669377-2025.html">Deutschland – Gebäudereinigung – Unterhalts- &amp; Glasreinigung in div. Objekten in der Gemeinde Stuhr</a></h3>
   <p class="meta">Gemeinde Stuhr, Stuhr<br>
-  Auftragswert <strong>916.604 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.10.2025</p>
+  Auftragswert <strong>916.604 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – gebäudereinigung in diversen objekten der gemeinde stuhr gemeinde stuhr stuhr"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/437446-2026.html">Deutschland – Reinigung von Schulen – Gebäudereinigung in diversen Objekten der Gemeinde Stuhr</a></h3>
   <p class="meta">Gemeinde Stuhr, Stuhr<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 1 Tag (29.07.2026)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.07.2026</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – unterhaltsreinigung in diversen objekten der gemeinde stuhr gemeinde stuhr stuhr"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/432894-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Unterhaltsreinigung in diversen Objekten der Gemeinde Stuhr</a></h3>
   <p class="meta">Gemeinde Stuhr, Stuhr<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

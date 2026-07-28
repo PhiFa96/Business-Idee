@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/489734-2026.html">Deutschland – Reinigung von Schulen – Reinigung Dienstgebäude MBK &amp; Staatl. Förderschule Lebach</a></h3>
   <p class="meta">Ministerium für Bildung und Kultur, Saarbrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – reinigung staatl. förderschulen sulzbach &amp; homburg ministerium für bildung und kultur saarbrücken"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/221710-2026.html">Deutschland – Reinigung von Schulen – Reinigung Staatl. Förderschulen Sulzbach &amp; Homburg</a></h3>
   <p class="meta">Ministerium für Bildung und Kultur, Saarbrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.05.2026)</strong> &middot; veröffentlicht 31.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 31.03.2026</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/850776-2025.html">Deutschland – Gebäudereinigung – 25 Unterhaltsreinigung</a></h3>
   <p class="meta">BundesInnungskrankenkasse Gesundheit, kurz BIG direkt gesund, Berlin<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.12.2025</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – 25 unterhaltsreinigung bundesinnungskrankenkasse gesundheit, kurz big direkt gesund berlin"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/848999-2025.html">Deutschland – Gebäudereinigung – 25 Unterhaltsreinigung</a></h3>
   <p class="meta">BundesInnungskrankenkasse Gesundheit, kurz BIG direkt gesund, Berlin<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.12.2025</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 25 unterhaltsreinigung dortmund bundesinnungskrankenkasse gesundheit, kurz big direkt gesund berlin"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/651465-2025.html">Deutschland – Gebäudereinigung – 25 Unterhaltsreinigung Dortmund</a></h3>
   <p class="meta">BundesInnungskrankenkasse Gesundheit, kurz BIG direkt gesund, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.11.2025)</strong> &middot; veröffentlicht 06.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 06.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 25 unterhaltsreinigung bundesinnungskrankenkasse gesundheit, kurz big direkt gesund berlin"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/571599-2025.html">Deutschland – Gebäudereinigung – 25 Unterhaltsreinigung</a></h3>
   <p class="meta">BundesInnungskrankenkasse Gesundheit, kurz BIG direkt gesund, Berlin<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (01.10.2025)</strong> &middot; veröffentlicht 02.09.2025</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>01.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 02.09.2025</p>
 </article>
 </div>
 <footer>
@@ -105,5 +105,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

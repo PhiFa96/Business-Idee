@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/13828-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0613 - Vetrag Dachrinnen- /Dachflächenreinigung Fliegerhorst Wunstorf</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Wunstorf, Wunstorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 8/2010/s0614 - gebäudereinigungsvertrag wilhelmstein-kaserne bundeswehr-dienstleistungszentrum wunstorf wunstorf"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/821806-2025.html">Deutschland – Gebäudereinigung – 8/2010/S0614 - Gebäudereinigungsvertrag Wilhelmstein-Kaserne</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Wunstorf, Wunstorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.12.2025)</strong> &middot; veröffentlicht 11.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – s0613 - vetrag dachrinnen- /dachflächenreinigung fliegerhorst wunstorf bundeswehr-dienstleistungszentrum wunstorf wunstorf"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-28T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/714349-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0613 - Vetrag Dachrinnen- /Dachflächenreinigung Fliegerhorst Wunstorf</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Wunstorf, Wunstorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.12.2025)</strong> &middot; veröffentlicht 29.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 8/2010/s0614 - gebäudereinigungsvertrag wilhelmstein-kaserne bundeswehr-dienstleistungszentrum wunstorf wunstorf"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/709200-2025.html">Deutschland – Gebäudereinigung – 8/2010/S0614 - Gebäudereinigungsvertrag Wilhelmstein-Kaserne</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Wunstorf, Wunstorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (08.12.2025)</strong> &middot; veröffentlicht 27.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>08.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – 8/2010/s0631 - gebäudereinigung standort bückeburg bundeswehr-dienstleistungszentrum wunstorf wunstorf"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/498167-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – 8/2010/S0631 - Gebäudereinigung Standort Bückeburg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Wunstorf, Wunstorf<br>
-  Auftragswert <strong>3.600.310 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>3.600.310 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/467933-2026.html">Deutschland – Reinigungsdienste – WC-Reinigung A96 AM Wangen A7 AM Sulzber</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Südbayern, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – reinigung pwc-anlagen die autobahn gmbh des bundes - nl südbayern münchen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/365268-2026.html">Deutschland – Reinigungsdienste – Reinigung PWC-Anlagen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Südbayern, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (26.06.2026)</strong> &middot; veröffentlicht 28.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>26.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 28.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – wc-reinigung a96 am wangen a7 am sulzber die autobahn gmbh des bundes - nl südbayern münchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/322764-2026.html">Deutschland – Reinigungsdienste – WC-Reinigung A96 AM Wangen A7 AM Sulzber</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Südbayern, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.06.2026)</strong> &middot; veröffentlicht 11.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 11.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – pwc-reinigung anlagen martinsberg, kreuzlinger forst a96 die autobahn gmbh des bundes - nl südbayern münchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/747194-2025.html">Deutschland – Reinigungsdienste – PWC-Reinigung Anlagen Martinsberg, Kreuzlinger Forst A96</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Südbayern, München<br>
-  Auftragswert <strong>96.001 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 11.11.2025</p>
+  Auftragswert <strong>96.001 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 11.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – pwc anlagen reinigung am pankofen die autobahn gmbh des bundes - nl südbayern münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/625801-2025.html">Deutschland – Reinigungsdienste – PWC Anlagen Reinigung AM Pankofen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Südbayern, München<br>
-  Auftragswert <strong>377.989 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.09.2025</p>
+  Auftragswert <strong>377.989 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

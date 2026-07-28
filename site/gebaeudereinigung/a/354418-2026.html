@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/301272-2026.html">Deutschland – Reinigung von Schulen – Durchführung der Unterhalts-, Grund- und Glasreinigung am Berufskolleg Neheim</a></h3>
   <p class="meta">Hochsauerlandkreis, Arnsberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (02.06.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>02.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – durchführung der unterhalts-, grund- und glasreinigung am berufskolleg neheim hochsauerlandkreis arnsberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/436332-2026.html">Deutschland – Reinigung von Schulen – Durchführung der Unterhalts-, Grund- und Glasreinigung am Berufskolleg Neheim</a></h3>
   <p class="meta">Hochsauerlandkreis, Arnsberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.06.2026)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.06.2026</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der gesamtschule höhscheid, kanalstraße 20 und zweigstraße 15-17, 42657 solingen stadt solingen solingen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512302-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Gesamtschule Höhscheid, Kanalstraße 20 und Zweigstraße 15-17, 42657 Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – objektgruppe 3: unterhaltsreinigung und einpflege stadt bocholt bocholt"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/500007-2026.html">Deutschland – Gebäudereinigung – Objektgruppe 3: Unterhaltsreinigung und Einpflege</a></h3>
   <p class="meta">Stadt Bocholt, Bocholt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – büroreinigung – unterhalts-, grund- und glasreinigung in objekten der städteregion aachen städteregion aachen aachen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/500612-2026.html">Deutschland – Büroreinigung – Unterhalts-, Grund- und Glasreinigung in Objekten der StädteRegion Aachen</a></h3>
   <p class="meta">StädteRegion Aachen, Aachen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 16 Tage (13.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>13.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

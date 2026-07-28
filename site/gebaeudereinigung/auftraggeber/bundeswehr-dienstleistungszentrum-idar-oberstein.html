@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-18T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/538224-2025.html">Deutschland – Gebäudereinigung – Abschluss einer Rahmenvereinbarung über die Unterhaltsreinigung Los 1-Liegenschaft Frankfurt-Hausen und Los 2-Major-Karl-Plagge-Kaserne, Pfungstadt, für 4 Jahre</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Idar-Oberstein, Idar-Oberstein<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – ausschreibung einer rahmenvereinbarung über die unterhaltsreinigung los 1 liegenschaft frankfurt-hausen, los 2 major-karl-plagge-kaserne pfungstadt, für 4 jahre bundeswehr-dienstleistungszentrum idar-oberstein idar-oberstein"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/525032-2025.html">Deutschland – Gebäudereinigung – Ausschreibung einer Rahmenvereinbarung über die Unterhaltsreinigung Los 1 Liegenschaft Frankfurt-Hausen, Los 2 Major-Karl-Plagge-Kaserne Pfungstadt, für 4 Jahre</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Idar-Oberstein, Idar-Oberstein<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.09.2025)</strong> &middot; veröffentlicht 11.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.08.2025</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

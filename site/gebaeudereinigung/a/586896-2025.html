@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/166803-2026.html">Deutschland – Reinigung von Schulen – Reinigung sowie Wäschebearbeitung in Kindertagesstätten und Horte-Verbund Nord 1, Nord 2, Zentrum 1 und Satelliten</a></h3>
   <p class="meta">Stadt Chemnitz, Hauptamt Abt. Zentrale Dienste /Submission, Chemnitz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – gebäudeinnenreinigung grundschulen schlossschule mit dazugehöriger sporthalle und schlossschule außenstelle schulteil sport stadt chemnitz, hauptamt abt. zentrale dienste /submission chemnitz"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/800636-2025.html">Deutschland – Reinigung von Schulen – Gebäudeinnenreinigung Grundschulen Schlossschule mit dazugehöriger Sporthalle und Schlossschule Außenstelle Schulteil Sport</a></h3>
   <p class="meta">Stadt Chemnitz, Hauptamt Abt. Zentrale Dienste /Submission, Chemnitz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – reinigung sowie wäschebearbeitung in kindertagesstätten und horte-verbund nord 1, nord 2, zentrum 1 und satelliten stadt chemnitz, hauptamt abt. zentrale dienste /submission chemnitz"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-27T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/791586-2025.html">Deutschland – Reinigung von Schulen – Reinigung sowie Wäschebearbeitung in Kindertagesstätten und Horte-Verbund Nord 1, Nord 2, Zentrum 1 und Satelliten</a></h3>
   <p class="meta">Stadt Chemnitz, Hauptamt Abt. Zentrale Dienste /Submission, Chemnitz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (06.01.2026)</strong> &middot; veröffentlicht 28.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 28.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – gebäudeinnenreinigung in schulen und der dazugehörigen sporthallen stadt- und randgebiet chemnitz stadt chemnitz, hauptamt abt. zentrale dienste /submission chemnitz"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-16T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/759930-2025.html">Deutschland – Reinigung von Schulen – Gebäudeinnenreinigung in Schulen und der dazugehörigen Sporthallen Stadt- und Randgebiet Chemnitz</a></h3>
   <p class="meta">Stadt Chemnitz, Hauptamt Abt. Zentrale Dienste /Submission, Chemnitz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – gebäudeinnenreinigung in schulen und der dazugehörigen sporthallen stadt- und randgebiet chemnitz stadt chemnitz, hauptamt abt. zentrale dienste /submission chemnitz"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/589534-2025.html">Deutschland – Reinigung von Schulen – Gebäudeinnenreinigung in Schulen und der dazugehörigen Sporthallen Stadt- und Randgebiet Chemnitz</a></h3>
   <p class="meta">Stadt Chemnitz, Hauptamt Abt. Zentrale Dienste /Submission, Chemnitz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.09.2025)</strong> &middot; veröffentlicht 10.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 10.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

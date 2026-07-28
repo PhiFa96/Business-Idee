@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/318453-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0326 Gebäude- und S0326_1 Fensterreinigung Manching</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Ingolstadt, Ingolstadt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.06.2026)</strong> &middot; veröffentlicht 08.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – s0317_s0317/1 gebäude- und fensterreinigung olk roth bundeswehr-dienstleistungszentrum ingolstadt ingolstadt"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/850937-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0317_S0317/1 Gebäude- und Fensterreinigung OLK Roth</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Ingolstadt, Ingolstadt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – s0317_s0317/1 gebäude- und fensterreinigung olk roth bundeswehr-dienstleistungszentrum ingolstadt ingolstadt"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/704704-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0317_S0317/1 Gebäude- und Fensterreinigung OLK Roth</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Ingolstadt, Ingolstadt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.11.2025)</strong> &middot; veröffentlicht 24.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 24.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäude- und glasreinigung für das amtsgericht straubing freistaat bayern - vertreten durch den direktor des amtsgerichts straubing straubing"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512943-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäude- und Glasreinigung für das Amtsgericht Straubing</a></h3>
   <p class="meta">Freistaat Bayern - vertreten durch den Direktor des Amtsgerichts Straubing, Straubing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsdienstleistungen für den klinikneubau, bauteil 6.1 des klinikum fürths klinikum fürth fürth"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/513923-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsdienstleistungen für den Klinikneubau, Bauteil 6.1 des Klinikum Fürths</a></h3>
   <p class="meta">Klinikum Fürth, Fürth<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (01.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

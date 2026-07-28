@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/334987-2026.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in ANKER-Dependancen im Regierungsbezirk Schwaben</a></h3>
   <p class="meta">Regierung von Schwaben, Augsburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.05.2026)</strong> &middot; veröffentlicht 18.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – reinigungsdienstleistungen in anker-dependancen im regierungsbezirk schwaben regierung von schwaben augsburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/254854-2026.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in ANKER-Dependancen im Regierungsbezirk Schwaben</a></h3>
   <p class="meta">Regierung von Schwaben, Augsburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.05.2026)</strong> &middot; veröffentlicht 15.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen für das gymnasium gröbenzell, die realschule unterpfaffenhofen und das schulzentrum fürstenfeldbruck landratsamt fürstenfeldbruck - kreiseigener hochbau fürstenfeldbruck"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/504461-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen für das Gymnasium Gröbenzell, die Realschule Unterpfaffenhofen und das Schulzentrum Fürstenfeldbruck</a></h3>
   <p class="meta">Landratsamt Fürstenfeldbruck - Kreiseigener Hochbau, Fürstenfeldbruck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 31 Tage (28.08.2026)</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung in objekten der gemeinde krailling gemeinde krailling krailling"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/487443-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung in Objekten der Gemeinde Krailling</a></h3>
   <p class="meta">Gemeinde Krailling, Krailling<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – unterhalts-, grund- und glasreinigungsarbeiten in verschiedenen öffentlichen gebäuden verteilt auf zwei gemeinden mit verschiedenen ortsteilen gemeinde kochel am see kochel am see"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490452-2026.html">Deutschland – Reinigungsdienste – Unterhalts-, Grund- und Glasreinigungsarbeiten in verschiedenen öffentlichen Gebäuden verteilt auf zwei Gemeinden mit verschiedenen Ortsteilen</a></h3>
   <p class="meta">Gemeinde Kochel am See, Kochel am See<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/187308-2026.html">Deutschland – Reinigungsdienste – Rahmenvereinbarung Miete Unterkunftstextilien und Waschen bundeswehreigene Textilien Los 1 und Los 2</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Rostock, Rostock<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (08.04.2026)</strong> &middot; veröffentlicht 18.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>08.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – rahmenvereinbarung über gebäudereinigung standortbereich hagenow bundeswehr-dienstleistungszentrum rostock rostock"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/491879-2026.html">Deutschland – Gebäudereinigung – Rahmenvereinbarung über Gebäudereinigung Standortbereich Hagenow</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Rostock, Rostock<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – pro-2880457089 - provision of cleaning services all buildings european central bank frankfurt am main"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512256-2026.html">Deutschland – Reinigungsdienste – PRO-2880457089 - Provision of Cleaning Services all buildings</a></h3>
   <p class="meta">European Central Bank, Frankfurt am Main<br>
-  Auftragswert <strong>16.500.000 €</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>16.500.000 €</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – reinigung von fettabluftanlagen land schleswig-holstein vertreten durch die gebäudemanagement schleswig-holstein aör kiel"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/509373-2026.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Reinigung von Fettabluftanlagen</a></h3>
   <p class="meta">Land Schleswig-Holstein vertreten durch die Gebäudemanagement Schleswig-Holstein AöR, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 31 Tage (28.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung - bibliothek der westsächsischen hochschule zwickau (whz) staatsbetrieb sächsisches immobilien- und baumanagement, zentrale, zentralstelle vergabe- und vertragsmanagement dresden"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510318-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung - Bibliothek der Westsächsischen Hochschule Zwickau (WHZ)</a></h3>
   <p class="meta">Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement, Dresden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

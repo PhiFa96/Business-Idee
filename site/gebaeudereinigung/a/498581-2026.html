@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/303447-2026.html">Deutschland – Gebäudereinigung – Rahmenvertrag Gebäudereinigung Kiel Stadtliegenschaften</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Kiel, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.05.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – rahmenvertrag gebäudereinigung kiel stadtliegenschaften bundeswehr-dienstleistungszentrum kiel kiel"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/223070-2026.html">Deutschland – Gebäudereinigung – Rahmenvertrag Gebäudereinigung Kiel Stadtliegenschaften</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Kiel, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (04.05.2026)</strong> &middot; veröffentlicht 01.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>04.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 01.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – rahmenvertrag unterhaltsreinigung in kiel und kronshagen-pb 419 bundeswehr-dienstleistungszentrum kiel kiel"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/212541-2026.html">Deutschland – Gebäudereinigung – Rahmenvertrag Unterhaltsreinigung in Kiel und Kronshagen-PB 419</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Kiel, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – fensterreinigung – rahmenvereinbarung fensterreinigung in eckernförde und umgebung (4 jahre)-pa 739 bundeswehr-dienstleistungszentrum kiel kiel"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/620822-2025.html">Deutschland – Fensterreinigung – Rahmenvereinbarung Fensterreinigung in Eckernförde und Umgebung (4 Jahre)-PA 739</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Kiel, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung in schulen, sporthallen und öffentlichen gebäuden stadt kaltenkirchen kaltenkirchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508825-2026.html">Deutschland – Reinigung von Schulen – Reinigung in Schulen, Sporthallen und öffentlichen Gebäuden</a></h3>
   <p class="meta">Stadt Kaltenkirchen, Kaltenkirchen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

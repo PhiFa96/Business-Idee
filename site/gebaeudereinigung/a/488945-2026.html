@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490080-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Schule Max-Eichholz-Ring, Max-Eichholz-Ring 25, 21031 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule appelhoff, appelhoff 2, 22309 hamburg bvc behörde für finanzen und bezirke hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/468616-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Appelhoff, Appelhoff 2, 22309 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der stadtteilschule öjendorf bvc behörde für finanzen und bezirke hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/470375-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Stadtteilschule Öjendorf</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung in schulen, sporthallen und öffentlichen gebäuden stadt kaltenkirchen kaltenkirchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508825-2026.html">Deutschland – Reinigung von Schulen – Reinigung in Schulen, Sporthallen und öffentlichen Gebäuden</a></h3>
   <p class="meta">Stadt Kaltenkirchen, Kaltenkirchen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – berufsbildungszentrum ahrensburg; gebäudereinigung kreis stormarn bad oldesloe"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488844-2026.html">Deutschland – Reinigung von Schulen – Berufsbildungszentrum Ahrensburg; Gebäudereinigung</a></h3>
   <p class="meta">Kreis Stormarn, Bad Oldesloe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

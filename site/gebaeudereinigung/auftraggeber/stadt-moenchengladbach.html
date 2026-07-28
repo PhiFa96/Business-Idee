@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/384860-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhalts- und Glasreinigungsleistungen für verschiedene Liegenschaften der Stadt MG</a></h3>
   <p class="meta">Stadt Mönchengladbach, Mönchengladbach<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.07.2026)</strong> &middot; veröffentlicht 04.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – unterhalts- und glasreinigungsleistungen für verschiedene liegenschaften der stadt mg - unterhaltsreinigung los 16u stadt mönchengladbach mönchengladbach"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/610390-2025.html">Deutschland – Reinigungs- und Hygienedienste – Unterhalts- und Glasreinigungsleistungen für verschiedene Liegenschaften der Stadt MG - Unterhaltsreinigung Los 16u</a></h3>
   <p class="meta">Stadt Mönchengladbach, Mönchengladbach<br>
-  Auftragswert <strong>353.754 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.09.2025</p>
+  Auftragswert <strong>353.754 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.09.2025</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

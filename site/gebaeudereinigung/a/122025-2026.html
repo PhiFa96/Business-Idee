@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/326946-2026.html">Deutschland – Gebäudereinigung – 6002977951-Gebäudereinigungsvertrag Standort Zweibrücken</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Zweibrücken, Zweibrücken<br>
-  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.05.2026</p>
+  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – 6003011110-bwdlz zweibrücken gebäudereinigung bad bergzabern bundeswehr-dienstleistungszentrum zweibrücken zweibrücken"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/165478-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – 6003011110-BwDLZ Zweibrücken Gebäudereinigung Bad Bergzabern</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Zweibrücken, Zweibrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.04.2026)</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 6002967963- gebäudereinigungsvertrag elektronikzentrum der bundeswehr bad bergzabern bundeswehr-dienstleistungszentrum zweibrücken zweibrücken"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/52760-2026.html">Deutschland – Gebäudereinigung – 6002967963- Gebäudereinigungsvertrag Elektronikzentrum der Bundeswehr Bad Bergzabern</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Zweibrücken, Zweibrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (26.01.2026)</strong> &middot; veröffentlicht 23.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>26.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 6002977951-gebäudereinigungsvertrag standort zweibrücken bundeswehr-dienstleistungszentrum zweibrücken zweibrücken"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/27961-2026.html">Deutschland – Gebäudereinigung – 6002977951-Gebäudereinigungsvertrag Standort Zweibrücken</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Zweibrücken, Zweibrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.02.2026)</strong> &middot; veröffentlicht 15.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 6002975425-gebäudereinigung (ohne fenster) standorte lebach und saarlouis bundeswehr-dienstleistungszentrum zweibrücken zweibrücken"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/12721-2026.html">Deutschland – Gebäudereinigung – 6002975425-Gebäudereinigung (ohne Fenster) Standorte Lebach und Saarlouis</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Zweibrücken, Zweibrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.02.2026)</strong> &middot; veröffentlicht 09.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.01.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

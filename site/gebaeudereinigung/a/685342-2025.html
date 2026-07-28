@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/563967-2025.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistung zur Ausstellung X-RAY</a></h3>
   <p class="meta">Weltkulturerbe Völklinger Hütte - Europäisches Zentrum für Kunst und Industriekultur GmbH, Völklingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (06.10.2025)</strong> &middot; veröffentlicht 29.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – neubau gems neunkirchen - gebäudereinigung landkreis neunkirchen ottweiler"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/497630-2026.html">Deutschland – Gebäudereinigung – Neubau GemS Neunkirchen - Gebäudereinigung</a></h3>
   <p class="meta">Landkreis Neunkirchen, Ottweiler<br>
-  Auftragswert <strong>442.105 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>442.105 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung dienstgebäude mbk &amp; staatl. förderschule lebach ministerium für bildung und kultur saarbrücken"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/489734-2026.html">Deutschland – Reinigung von Schulen – Reinigung Dienstgebäude MBK &amp; Staatl. Förderschule Lebach</a></h3>
   <p class="meta">Ministerium für Bildung und Kultur, Saarbrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – sporthalle steinrausch unterhaltsreinigung mit 1 x jährl. grundreinigung kreisstadt saarlouis saarlouis"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/471313-2026.html">Deutschland – Gebäudereinigung – Sporthalle Steinrausch Unterhaltsreinigung mit 1 x jährl. Grundreinigung</a></h3>
   <p class="meta">Kreisstadt Saarlouis, Saarlouis<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 13 Tage (10.08.2026)</strong> &middot; veröffentlicht 08.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung verschiedener gebäude der kreisstadt homburg (saar) kreisstadt homburg/saar homburg/saar"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/465718-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung verschiedener Gebäude der Kreisstadt Homburg (Saar)</a></h3>
   <p class="meta">Kreisstadt Homburg/Saar, Homburg/Saar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

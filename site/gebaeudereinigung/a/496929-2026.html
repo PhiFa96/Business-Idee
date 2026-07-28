@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-24T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/205457-2026.html">Deutschland – Abfallcontainer und -körbe – Errichten und Betreiben eines Baustellenwertstoffhofes</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (28.04.2026)</strong> &middot; veröffentlicht 25.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 25.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – baureinigung landeshauptstadt münchen, baureferat münchen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/851538-2025.html">Deutschland – Gebäudereinigung – Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.12.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – baureinigung landeshauptstadt münchen, baureferat münchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/557028-2025.html">Deutschland – Gebäudereinigung – Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (30.09.2025)</strong> &middot; veröffentlicht 26.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>30.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 26.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – baureinigung landeshauptstadt münchen, baureferat münchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/524310-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Baureinigung</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.09.2025)</strong> &middot; veröffentlicht 11.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – baufeinreinigung landeshauptstadt münchen, baureferat münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-04T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510703-2025.html">Deutschland – Gebäudereinigung – Baufeinreinigung</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.08.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

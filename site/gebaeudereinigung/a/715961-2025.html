@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/13435-2026.html">Deutschland – Entleerung von Abfallbehältern – A1/A21 Entleerung der Abfallbehälter - AM Bad Oldesloe</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nord, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – reinigung pwc-anlagen die autobahn gmbh des bundes - nl nord hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/350905-2026.html">Deutschland – Reinigungsdienste – Reinigung PWC-Anlagen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nord, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – reinigung der wc-anlagen von rastanlagen am bad segeberg los 1, am grande los 2, a20, a21 und a24 die autobahn gmbh des bundes - nl nord hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/293871-2026.html">Deutschland – Gebäudereinigung – Reinigung der WC-Anlagen von Rastanlagen AM Bad Segeberg Los 1, AM Grande Los 2, A20, A21 und A24</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nord, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (28.05.2026)</strong> &middot; veröffentlicht 29.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 29.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigung der wc-anlagen von rastanlagen 2026 am scharbeutz und am bad oldesloe a1,a20, a21 die autobahn gmbh des bundes - nl nord hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-24T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/134120-2026.html">Deutschland – Gebäudereinigung – Reinigung der WC-Anlagen von Rastanlagen 2026 AM Scharbeutz und AM Bad Oldesloe A1,A20, A21</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nord, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 25.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 25.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – tägliche reinigung der pwc-anlagen auf rastanlagen die autobahn gmbh des bundes - nl nord hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/115624-2026.html">Deutschland – Gebäudereinigung – Tägliche Reinigung der PWC-Anlagen auf Rastanlagen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nord, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.02.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

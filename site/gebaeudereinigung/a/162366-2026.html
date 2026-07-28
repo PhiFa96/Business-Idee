@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/492526-2026.html">Deutschland – Gebäudereinigung – UHR / GRR AELF Kaufbeuren</a></h3>
   <p class="meta">Freistaat Bayern, vertreten durch das Amt für Ernährung, Landwirtschaft und Forsten Kaufbeuren, Kaufbeuren<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 21 Tage (18.08.2026)</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – uhr / grr aelf ansbach gz und bg freistaat bayern, vertreten durch das amt für ernährung, landwirtschaft und forsten ansbach ansbach"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/155680-2026.html">Deutschland – Gebäudereinigung – UHR / GRR AELF Ansbach GZ und BG</a></h3>
   <p class="meta">Freistaat Bayern, vertreten durch das Amt für Ernährung, Landwirtschaft und Forsten Ansbach, Ansbach<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.04.2026)</strong> &middot; veröffentlicht 05.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäude- und glasreinigung für das amtsgericht straubing freistaat bayern - vertreten durch den direktor des amtsgerichts straubing straubing"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512943-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäude- und Glasreinigung für das Amtsgericht Straubing</a></h3>
   <p class="meta">Freistaat Bayern - vertreten durch den Direktor des Amtsgerichts Straubing, Straubing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsdienstleistungen für den klinikneubau, bauteil 6.1 des klinikum fürths klinikum fürth fürth"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/513923-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsdienstleistungen für den Klinikneubau, Bauteil 6.1 des Klinikum Fürths</a></h3>
   <p class="meta">Klinikum Fürth, Fürth<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (01.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – reinigungsdienstleistungen am blka standort münchen bayerisches landeskriminalamt münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/514707-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Reinigungsdienstleistungen am BLKA Standort München</a></h3>
   <p class="meta">Bayerisches Landeskriminalamt, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (02.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>02.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

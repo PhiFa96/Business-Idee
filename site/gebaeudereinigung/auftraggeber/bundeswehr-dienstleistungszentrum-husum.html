@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/392231-2026.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – 6002970044-BwDLZ Husum-Glas-/Fensterreinigung div. Liegenschaften</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Husum, Husum<br>
-  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.06.2026</p>
+  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – 6003008254-bwdlz husum-abschluss einer rahmenvereinbarung zur gebäudereinigung ohne fensterreinigung in liegenschaften der bundeswehr bundeswehr-dienstleistungszentrum husum husum"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-03T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/150041-2026.html">Deutschland – Reinigungsdienste – 6003008254-BwDLZ Husum-Abschluss einer Rahmenvereinbarung zur Gebäudereinigung OHNE Fensterreinigung in Liegenschaften der Bundeswehr</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Husum, Husum<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (13.04.2026)</strong> &middot; veröffentlicht 04.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>13.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – 6002970044-bwdlz husum-glas-/fensterreinigung div. liegenschaften bundeswehr-dienstleistungszentrum husum husum"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/846845-2025.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – 6002970044-BwDLZ Husum-Glas-/Fensterreinigung div. Liegenschaften</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Husum, Husum<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.01.2026)</strong> &middot; veröffentlicht 19.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.12.2025</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

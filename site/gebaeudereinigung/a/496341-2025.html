@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/371780-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung im Objekt Siegerlandhalle ab 01.06.2026</a></h3>
   <p class="meta">Universitätsstadt Siegen, Siegen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 01.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 01.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung im objekt siegerlandhalle ab 01.06.2026 universitätsstadt siegen siegen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/191022-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung im Objekt Siegerlandhalle ab 01.06.2026</a></h3>
   <p class="meta">Universitätsstadt Siegen, Siegen<br>
-  Auftragswert <strong>540.700 €</strong> &middot; Frist <strong>abgelaufen (17.04.2026)</strong> &middot; veröffentlicht 19.03.2026</p>
+  Auftragswert <strong>540.700 €</strong> &middot; Frist <strong>17.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung im objekt gesamtschule auf dem schießberg ab 01.09.2025 universitätsstadt siegen siegen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/531918-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung im Objekt Gesamtschule Auf dem Schießberg ab 01.09.2025</a></h3>
   <p class="meta">Universitätsstadt Siegen, Siegen<br>
-  Auftragswert <strong>453.063 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.08.2025</p>
+  Auftragswert <strong>453.063 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung gesamtschule eiserfeld inkl. turnhallen ab 01.08.2025 universitätsstadt siegen siegen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/533641-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung Gesamtschule Eiserfeld inkl. Turnhallen ab 01.08.2025</a></h3>
   <p class="meta">Universitätsstadt Siegen, Siegen<br>
-  Auftragswert <strong>400.626 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.08.2025</p>
+  Auftragswert <strong>400.626 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung im objekt f-j-m gymnasium inkl. turnhallen ab 01.08.2025 universitätsstadt siegen siegen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-11T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/528884-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung im Objekt F-J-M Gymnasium inkl. Turnhallen ab 01.08.2025</a></h3>
   <p class="meta">Universitätsstadt Siegen, Siegen<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 12.08.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 12.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

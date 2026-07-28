@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/461449-2026.html">Deutschland – Reinigungsdienste – Stadt Helmstedt - Gebäudereinigung</a></h3>
   <p class="meta">Stadt Helmstedt, Helmstedt<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>noch 15 Tage (12.08.2026)</strong> &middot; veröffentlicht 06.07.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>12.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – unterhalts- und glasreinigung für das bundespolizeirevier am bahnhof hildesheim bundesrepublik deutschland, vertreten durch das bundesministerium des innern, vertreten durch das beschaffungsamt des bmi bonn"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/381077-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhalts- und Glasreinigung für das Bundespolizeirevier am Bahnhof Hildesheim</a></h3>
   <p class="meta">Bundesrepublik Deutschland, vertreten durch das Bundesministerium des Innern, vertreten durch das Beschaffungsamt des BMI, Bonn<br>
-  Auftragswert <strong>134.643 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.06.2026</p>
+  Auftragswert <strong>134.643 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – vertretungsreinigung 2026 - 2030 landeshauptstadt hannover - fachbereich personal und organisation hannover"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/353458-2026.html">Deutschland – Gebäudereinigung – Vertretungsreinigung 2026 - 2030</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>1.239.574 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.05.2026</p>
+  Auftragswert <strong>1.239.574 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung (unterhalts- und grundreinigung) landkreis grafschaft bentheim nordhorn"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/265056-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung (Unterhalts- und Grundreinigung)</a></h3>
   <p class="meta">Landkreis Grafschaft Bentheim, Nordhorn<br>
-  Auftragswert <strong>1.949.357 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.04.2026</p>
+  Auftragswert <strong>1.949.357 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – unterhalts- und glasreinigung hzi helmholtz-zentrum für infektionsforschung gmbh braunschweig"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/234719-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhalts- und Glasreinigung HZI</a></h3>
   <p class="meta">Helmholtz-Zentrum für Infektionsforschung GmbH, Braunschweig<br>
-  Auftragswert <strong>3.080.000 €</strong> &middot; Frist <strong>abgelaufen (13.05.2026)</strong> &middot; veröffentlicht 07.04.2026</p>
+  Auftragswert <strong>3.080.000 €</strong> &middot; Frist <strong>13.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

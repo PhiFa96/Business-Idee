@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/147273-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- u. Sonderreinigung, Tagesdienst u. Schließdienst in Objekten der Stadt Hameln</a></h3>
   <p class="meta">Stadt Hameln &quot;Abt. 45&quot; - Zentrale Gebäudewirtschaft, Hameln<br>
-  Auftragswert <strong>843.018 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.03.2026</p>
+  Auftragswert <strong>843.018 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- u. sonderreinigung, tagesdienst u. schließdienst in objekten der stadt hameln stadt hameln &quot;abt. 45&quot; - zentrale gebäudewirtschaft hameln"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-13T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/24237-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- u. Sonderreinigung, Tagesdienst u. Schließdienst in Objekten der Stadt Hameln</a></h3>
   <p class="meta">Stadt Hameln &quot;Abt. 45&quot; - Zentrale Gebäudewirtschaft, Hameln<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.01.2026)</strong> &middot; veröffentlicht 14.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 14.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – abschluss eines rahmenvertrages über die unterhaltsreinigung in der unteroffizier-friederike-krüger-kaserne, 2026/1488 sch bundeswehr-dienstleistungszentrum munster munster"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512489-2026.html">Deutschland – Gebäudereinigung – Abschluss eines Rahmenvertrages über die Unterhaltsreinigung in der Unteroffizier-Friederike-Krüger-Kaserne, 2026/1488 Sch</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 34 Tage (31.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>31.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – familien- und gesundheitszentrum - unterhaltsreinigung landkreis schaumburg - vergabestelle stadthagen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512493-2026.html">Deutschland – Gebäudereinigung – Familien- und Gesundheitszentrum - Unterhaltsreinigung</a></h3>
   <p class="meta">Landkreis Schaumburg - Vergabestelle, Stadthagen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – unterhaltsreinigung für die achimer bäder stadt achim c/o landkreis verden - zentrale vergabestelle verden"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510681-2026.html">Deutschland – Reinigungs- und Hygienedienste – Unterhaltsreinigung für die Achimer Bäder</a></h3>
   <p class="meta">Stadt Achim c/o Landkreis Verden - Zentrale Vergabestelle, Verden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 27 Tage (24.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

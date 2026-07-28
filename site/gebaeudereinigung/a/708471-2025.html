@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/788557-2025.html">Deutschland – Gebäudereinigung – Unterhaltungsreinigung von öffentlichen WC-Anlagen im Stadtgebiet Mainz</a></h3>
   <p class="meta">Wirtschaftsbetrieb Mainz AöR, Mainz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.12.2025)</strong> &middot; veröffentlicht 27.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung museums- und verwaltungsgebäude historisches museum der pfalz - stiftung des öffentlichen rechts speyer"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/502817-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Museums- und Verwaltungsgebäude</a></h3>
   <p class="meta">Historisches Museum der Pfalz - Stiftung des öffentlichen Rechts, Speyer<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – vg maifeld - energetische sanierung grundschule ochtendung: baureinigungsarbeiten verbandsgemeinde maifeld polch"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/500694-2026.html">Deutschland – Bauarbeiten – VG Maifeld - Energetische Sanierung Grundschule Ochtendung: Baureinigungsarbeiten</a></h3>
   <p class="meta">Verbandsgemeinde Maifeld, Polch<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 21 Tage (18.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung der städtischen gebäude der stadt schifferstadt stadtverwaltung schifferstadt schifferstadt"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/490332-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung der städtischen Gebäude der Stadt Schifferstadt</a></h3>
   <p class="meta">Stadtverwaltung Schifferstadt, Schifferstadt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 34 Tage (31.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>31.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – 26e0301 unterhalts- und glasreinigung im hauptjustizgebäude koblenz land rheinland-pfalz, vertreten durch das ministerium der justiz und für verbraucherschutz rlp, vertreten durch den präsidenten des amts- und landgericht koblenz koblenz"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/474898-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – 26E0301 Unterhalts- und Glasreinigung im Hauptjustizgebäude Koblenz</a></h3>
   <p class="meta">Land Rheinland-Pfalz, vertreten durch das Ministerium der Justiz und für Verbraucherschutz RLP, vertreten durch den Präsidenten des Amts- und Landgericht Koblenz, Koblenz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 35 Tage (01.09.2026)</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

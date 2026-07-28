@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-01T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/798011-2025.html">Deutschland – Behälterreinigung – JV Reinigung RRB/RKB 2025-2028; Los 2 AM DD-Nickern, AM Döbeln</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Ost, Halle (Saale)<br>
-  Auftragswert <strong>1.620.516 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 02.12.2025</p>
+  Auftragswert <strong>1.620.516 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 02.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – behälterreinigung – teillos 2: entschlammung regenrückhaltebecken a38/a71, 2025-2027 die autobahn gmbh des bundes - nl ost halle (saale)"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/570160-2025.html">Deutschland – Behälterreinigung – Teillos 2: Entschlammung Regenrückhaltebecken A38/A71, 2025-2027</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Ost, Halle (Saale)<br>
-  Auftragswert <strong>602.754 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 02.09.2025</p>
+  Auftragswert <strong>602.754 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 02.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – dienstleistungen im zusammenhang mit siedlungs- und anderen abfällen – rv abfallentsorgung gehöft am plauen die autobahn gmbh des bundes - nl nordbayern nürnberg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/76723-2026.html">Deutschland – Dienstleistungen im Zusammenhang mit Siedlungs- und anderen Abfällen – RV Abfallentsorgung Gehöft AM Plauen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nordbayern, Nürnberg<br>
-  Auftragswert <strong>49.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.02.2026</p>
+  Auftragswert <strong>49.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – dienstleistungen im zusammenhang mit siedlungs- und anderen abfällen – rv abfallentsorgung gehöft am plauen die autobahn gmbh des bundes - nl nordbayern nürnberg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-25T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/786038-2025.html">Deutschland – Dienstleistungen im Zusammenhang mit Siedlungs- und anderen Abfällen – RV Abfallentsorgung Gehöft AM Plauen</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Nordbayern, Nürnberg<br>
-  Auftragswert <strong>49.000 €</strong> &middot; Frist <strong>abgelaufen (29.12.2025)</strong> &middot; veröffentlicht 26.11.2025</p>
+  Auftragswert <strong>49.000 €</strong> &middot; Frist <strong>29.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 26.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – tank- und behälterreinigung – rahmenvereinbarung über die reinigungsleistungen an industrie- und abwasseranlagen sowie tv-sondierungen am standort königstein der wismut gmbh wismut gmbh chemnitz"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-18T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/538898-2025.html">Deutschland – Tank- und Behälterreinigung – Rahmenvereinbarung über die Reinigungsleistungen an Industrie- und Abwasseranlagen sowie TV-Sondierungen am Standort Königstein der Wismut GmbH</a></h3>
   <p class="meta">Wismut GmbH, Chemnitz<br>
-  Auftragswert <strong>438.374 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.08.2025</p>
+  Auftragswert <strong>438.374 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

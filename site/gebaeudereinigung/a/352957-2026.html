@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-24T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/203509-2026.html">Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung Dreifeldturnhalle und Schwimmbad</a></h3>
   <p class="meta">Gemeinde Gräfelfing, Gräfelfing<br>
-  Auftragswert <strong>100.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 25.03.2026</p>
+  Auftragswert <strong>100.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 25.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – ausschreibung unterhalt- und grundreinigung grundschule, altes rathaus und hort gemeinde gräfelfing gräfelfing"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/157114-2026.html">Deutschland – Gebäudereinigung – Ausschreibung Unterhalt- und Grundreinigung Grundschule, altes Rathaus und Hort</a></h3>
   <p class="meta">Gemeinde Gräfelfing, Gräfelfing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.04.2026)</strong> &middot; veröffentlicht 06.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – ausschreibung gebäudereinigung dreifeldturnhalle und schwimmbad gemeinde gräfelfing gräfelfing"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/824540-2025.html">Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung Dreifeldturnhalle und Schwimmbad</a></h3>
   <p class="meta">Gemeinde Gräfelfing, Gräfelfing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.01.2026)</strong> &middot; veröffentlicht 11.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 11.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – dfh neubau schwimmhalle und dreifeldsporthalle am schulcampus lochham / feinreinigung gemeinde gräfelfing gräfelfing"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-07-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/500837-2025.html">Deutschland – Gebäudereinigung – DFH Neubau Schwimmhalle und Dreifeldsporthalle am Schulcampus Lochham / Feinreinigung</a></h3>
   <p class="meta">Gemeinde Gräfelfing, Gräfelfing<br>
-  Auftragswert <strong>1.000.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 31.07.2025</p>
+  Auftragswert <strong>1.000.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 31.07.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäude- und glasreinigung für das amtsgericht straubing freistaat bayern - vertreten durch den direktor des amtsgerichts straubing straubing"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512943-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäude- und Glasreinigung für das Amtsgericht Straubing</a></h3>
   <p class="meta">Freistaat Bayern - vertreten durch den Direktor des Amtsgerichts Straubing, Straubing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

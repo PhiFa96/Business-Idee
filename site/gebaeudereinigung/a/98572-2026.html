@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/845259-2025.html">Deutschland – Bauarbeiten – Bauzwischen- und Bauschlussreinigung - Erweiterung des Pascal-Gymnasiums Münster</a></h3>
   <p class="meta">Bauwerke Münster GmbH, Münster<br>
-  Auftragswert <strong>22.716 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.12.2025</p>
+  Auftragswert <strong>22.716 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – bauzwischen- und bauschlussreinigung - erweiterung des pascal-gymnasiums münster bauwerke münster gmbh münster"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-28T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/715931-2025.html">Deutschland – Bauarbeiten – Bauzwischen- und Bauschlussreinigung - Erweiterung des Pascal-Gymnasiums Münster</a></h3>
   <p class="meta">Bauwerke Münster GmbH, Münster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (28.11.2025)</strong> &middot; veröffentlicht 29.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – baustelleneinrichtung – baustelleneinrichtung, wertstoffhof landeshauptstadt münchen, baureferat münchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/496929-2026.html">Deutschland – Baustelleneinrichtung – Baustelleneinrichtung, Wertstoffhof</a></h3>
   <p class="meta">Landeshauptstadt München, Baureferat, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.07.2026)</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für schulgebäude – 3220 baureinigung zweckverband staatliche weiterführende schulen im südosten des landkreises münchen (schulzweckverband südost) neubiberg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/463329-2026.html">Deutschland – Bauarbeiten für Schulgebäude – 3220 Baureinigung</a></h3>
   <p class="meta">Zweckverband Staatliche weiterführende Schulen im Südosten des Landkreises München (Schulzweckverband Südost), Neubiberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 14 Tage (11.08.2026)</strong> &middot; veröffentlicht 06.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bau von grundschulen – 24-01 gsa - erweiterung und sanierung der aventinus-grundschule abensberg ba2 stadt abensberg abensberg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/365408-2026.html">Deutschland – Bau von Grundschulen – 24-01 GSA - Erweiterung und Sanierung der Aventinus-Grundschule Abensberg BA2</a></h3>
   <p class="meta">Stadt Abensberg, Abensberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

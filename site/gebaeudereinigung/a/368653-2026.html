@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/457898-2026.html">Deutschland – Gebäudereinigung – IGM26E580018: PI Verden/Osterholz - Unterhaltsreinigung</a></h3>
   <p class="meta">Staatliches Baumanagement Region Nord-West, Bad Iburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 8 Tage (05.08.2026)</strong> &middot; veröffentlicht 03.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 03.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – igm26e580002: pd oldenburg - pi wilhelmshaven/friesland - unterhalts- und glasreinigung staatliches baumanagement region nord-west bad iburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/301692-2026.html">Deutschland – Gebäudereinigung – IGM26E580002: PD Oldenburg - PI Wilhelmshaven/Friesland - Unterhalts- und Glasreinigung</a></h3>
   <p class="meta">Staatliches Baumanagement Region Nord-West, Bad Iburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.06.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – igm25e580032 pd oldenburg &amp; pi oldenburg / ammerland unterhalts- &amp; glasreinigung staatliches baumanagement region nord-west bad iburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/271630-2026.html">Deutschland – Gebäudereinigung – IGM25E580032 PD Oldenburg &amp; PI Oldenburg / Ammerland Unterhalts- &amp; Glasreinigung</a></h3>
   <p class="meta">Staatliches Baumanagement Region Nord-West, Bad Iburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.06.2026)</strong> &middot; veröffentlicht 21.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – igm26e580004: bündelungsprojekt weser hunte staatliches baumanagement region nord-west bad iburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/244891-2026.html">Deutschland – Gebäudereinigung – IGM26E580004: Bündelungsprojekt Weser Hunte</a></h3>
   <p class="meta">Staatliches Baumanagement Region Nord-West, Bad Iburg<br>
-  Auftragswert <strong>600.000 €</strong> &middot; Frist <strong>abgelaufen (13.05.2026)</strong> &middot; veröffentlicht 10.04.2026</p>
+  Auftragswert <strong>600.000 €</strong> &middot; Frist <strong>13.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – igm25e580026: finanzamt stade - unterhaltsreinigung und glasreinigung staatliches baumanagement region nord-west bad iburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/232893-2026.html">Deutschland – Gebäudereinigung – IGM25E580026: Finanzamt Stade - Unterhaltsreinigung und Glasreinigung</a></h3>
   <p class="meta">Staatliches Baumanagement Region Nord-West, Bad Iburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.05.2026)</strong> &middot; veröffentlicht 03.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 03.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

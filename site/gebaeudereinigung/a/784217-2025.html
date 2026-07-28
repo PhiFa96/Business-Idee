@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/574130-2025.html">Deutschland – Büroreinigung – Gebäudereinigung Hauptverwaltung</a></h3>
   <p class="meta">Wupperverband, Wuppertal<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.10.2025)</strong> &middot; veröffentlicht 03.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 03.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – glas- und unterhaltsreinigung standort buchenhofen wupperverband wuppertal"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/509739-2026.html">Deutschland – Reinigungsdienste – Glas- und Unterhaltsreinigung Standort Buchenhofen</a></h3>
   <p class="meta">Wupperverband, Wuppertal<br>
-  Auftragswert <strong>98.269 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>98.269 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – glas- und unterhaltsreinigung standort buchenhofen wupperverband wuppertal"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/353565-2026.html">Deutschland – Reinigungsdienste – Glas- und Unterhaltsreinigung Standort Buchenhofen</a></h3>
   <p class="meta">Wupperverband, Wuppertal<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.06.2026)</strong> &middot; veröffentlicht 22.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der gesamtschule höhscheid, kanalstraße 20 und zweigstraße 15-17, 42657 solingen stadt solingen solingen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512302-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Gesamtschule Höhscheid, Kanalstraße 20 und Zweigstraße 15-17, 42657 Solingen</a></h3>
   <p class="meta">Stadt Solingen, Solingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – objektgruppe 3: unterhaltsreinigung und einpflege stadt bocholt bocholt"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/500007-2026.html">Deutschland – Gebäudereinigung – Objektgruppe 3: Unterhaltsreinigung und Einpflege</a></h3>
   <p class="meta">Stadt Bocholt, Bocholt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 20 Tage (17.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

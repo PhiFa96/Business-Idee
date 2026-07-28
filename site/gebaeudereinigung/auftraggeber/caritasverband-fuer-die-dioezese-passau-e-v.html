@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/573687-2025.html">Deutschland – Bau von Sonderschulen – 116 CSD - Caritas Förderzentren St. Severin und Don Bosco - Vorinformation Bauleistung</a></h3>
   <p class="meta">Caritasverband für die Diözese Passau e.V., Passau<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – möbel (einschließlich büromöbel), zubehör, haushaltsgeräte (ausgenommen beleuchtung) und reinigungsmittel – 116 csd - caritas förderzentren st. severin und don bosco - ersatzneubau - vorinformation lieferleistung caritasverband für die diözese passau e.v. passau"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/575350-2025.html">Deutschland – Möbel (einschließlich Büromöbel), Zubehör, Haushaltsgeräte (ausgenommen Beleuchtung) und Reinigungsmittel – 116 CSD - Caritas Förderzentren St. Severin und Don Bosco - Ersatzneubau - Vorinformation Lieferleistung</a></h3>
   <p class="meta">Caritasverband für die Diözese Passau e.V., Passau<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.09.2025</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

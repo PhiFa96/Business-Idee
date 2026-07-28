@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488395-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Durchführung der tägl. Unterhaltsreinigung und einer jährl. WC-Grundreinigung (LOS 1), sowie einer jährl. Glasreinigung (LOS 2) an div. Verwaltungsobjekten in FB von 01/2027 - 12/30 + 4x 12 Monate</a></h3>
   <p class="meta">Wetteraukreis, Friedberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 21 Tage (18.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – durchführung der tägl. unterhaltsreinigung, sowie der jährl. grund- u. glasreinigung an 3 schulen des wetteraukreises im zeitraum 17.11.2025 - 16.11.2029 u. verlängerung v. 4x 12 monaten wetteraukreis friedberg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/36221-2026.html">Deutschland – Reinigung von Schulen – Durchführung der tägl. Unterhaltsreinigung, sowie der jährl. Grund- u. Glasreinigung an 3 Schulen des Wetteraukreises im Zeitraum 17.11.2025 - 16.11.2029 u. Verlängerung v. 4x 12 Monaten</a></h3>
   <p class="meta">Wetteraukreis, Friedberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – durchführung der tägl. unterhaltsreinigung, sowie der jährl. grund- u. glasreinigung an 3 schulen des wetteraukreises im zeitraum 17.11.2025 - 16.11.2029 u. verlängerung v. 4x 12 monaten wetteraukreis friedberg"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/547572-2025.html">Deutschland – Reinigung von Schulen – Durchführung der tägl. Unterhaltsreinigung, sowie der jährl. Grund- u. Glasreinigung an 3 Schulen des Wetteraukreises im Zeitraum 17.11.2025 - 16.11.2029 u. Verlängerung v. 4x 12 Monaten</a></h3>
   <p class="meta">Wetteraukreis, Friedberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 21.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 21.08.2025</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

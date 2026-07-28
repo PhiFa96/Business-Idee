@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/465125-2026.html">Deutschland – Fensterreinigung – Glas- und Rahmenreinigung in diversen Gebäuden der Technischen Universität Berlin in drei Losen</a></h3>
   <p class="meta">Technische Universität Berlin, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 9 Tage (06.08.2026)</strong> &middot; veröffentlicht 07.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – fassadenreinigungsarbeiten – neubau gs sarstedt - baureinigung landkreis hildesheim hildesheim"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/393799-2026.html">Deutschland – Fassadenreinigungsarbeiten – Neubau GS Sarstedt - Baureinigung</a></h3>
   <p class="meta">Landkreis Hildesheim, Hildesheim<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.06.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung der aufbauten und wc-anlagen an haltestellen im bahn- und busnetz der braunschweiger verkehrs-gmbh 2026ff. braunschweiger verkehrs-gmbh braunschweig"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/383352-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung der Aufbauten und WC-Anlagen an Haltestellen im Bahn- und Busnetz der Braunschweiger Verkehrs-GmbH 2026ff.</a></h3>
   <p class="meta">Braunschweiger Verkehrs-GmbH, Braunschweig<br>
-  Auftragswert <strong>656.629 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 04.06.2026</p>
+  Auftragswert <strong>656.629 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 04.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – fassadenreinigungsarbeiten – gebäudereinigung - neubau chemie, geb. 4277, konstantin-uhde-str. 18, 38106 braunschweig technische universität braunschweig, geschäftsbereich 3 - gebäudemanagement braunschweig"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/316493-2026.html">Deutschland – Fassadenreinigungsarbeiten – Gebäudereinigung - Neubau Chemie, Geb. 4277, Konstantin-Uhde-Str. 18, 38106 Braunschweig</a></h3>
   <p class="meta">Technische Universität Braunschweig, Geschäftsbereich 3 - Gebäudemanagement, Braunschweig<br>
-  Auftragswert <strong>191.582 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.05.2026</p>
+  Auftragswert <strong>191.582 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – fassadenreinigungsarbeiten – neubau gs sarstedt - baureinigung landkreis hildesheim hildesheim"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/256499-2026.html">Deutschland – Fassadenreinigungsarbeiten – Neubau GS Sarstedt - Baureinigung</a></h3>
   <p class="meta">Landkreis Hildesheim, Hildesheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.05.2026)</strong> &middot; veröffentlicht 15.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

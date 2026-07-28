@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/696583-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung - Kita Poselino, Bücherei, GS+SH Heideschule, Bauhof</a></h3>
   <p class="meta">Gemeinde Schwanewede c/o Landkreis Osterholz - Zentrale Vergabestelle -, Osterholz-Scharmbeck<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.10.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung - kita poselino, bücherei, gs+sh heideschule, bauhof gemeinde schwanewede c/o landkreis osterholz - zentrale vergabestelle - osterholz-scharmbeck"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/607274-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung - Kita Poselino, Bücherei, GS+SH Heideschule, Bauhof</a></h3>
   <p class="meta">Gemeinde Schwanewede c/o Landkreis Osterholz - Zentrale Vergabestelle -, Osterholz-Scharmbeck<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>abgelaufen (23.09.2025)</strong> &middot; veröffentlicht 17.09.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>23.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 17.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung - kita poselino, bücherei, gs+sh heideschule, bauhof gemeinde schwanewede c/o landkreis osterholz - zentrale vergabestelle - osterholz-scharmbeck"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/572744-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung - Kita Poselino, Bücherei, GS+SH Heideschule, Bauhof</a></h3>
   <p class="meta">Gemeinde Schwanewede c/o Landkreis Osterholz - Zentrale Vergabestelle -, Osterholz-Scharmbeck<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>abgelaufen (23.09.2025)</strong> &middot; veröffentlicht 03.09.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>23.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 03.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung - kita poselino, bücherei, gs+sh heideschule, bauhof gemeinde schwanewede c/o landkreis osterholz - zentrale vergabestelle - osterholz-scharmbeck"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-26T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/560314-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung - Kita Poselino, Bücherei, GS+SH Heideschule, Bauhof</a></h3>
   <p class="meta">Gemeinde Schwanewede c/o Landkreis Osterholz - Zentrale Vergabestelle -, Osterholz-Scharmbeck<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>abgelaufen (16.09.2025)</strong> &middot; veröffentlicht 27.08.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>16.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung - kita poselino, bücherei, gs+sh heideschule, bauhof gemeinde schwanewede c/o landkreis osterholz - zentrale vergabestelle - osterholz-scharmbeck"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/536816-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung - Kita Poselino, Bücherei, GS+SH Heideschule, Bauhof</a></h3>
   <p class="meta">Gemeinde Schwanewede c/o Landkreis Osterholz - Zentrale Vergabestelle -, Osterholz-Scharmbeck<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>abgelaufen (16.09.2025)</strong> &middot; veröffentlicht 18.08.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>16.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 18.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

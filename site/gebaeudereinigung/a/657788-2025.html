@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/319312-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung von drei Dienstgebäuden in Regensburg</a></h3>
   <p class="meta">Landesbaudirektion Bayern, Ebern<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (10.06.2026)</strong> &middot; veröffentlicht 08.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – lehrgangsgebäude in münchen - unterhaltsreinigung landesbaudirektion bayern ebern"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/92834-2026.html">Deutschland – Reinigung von Schulen – Lehrgangsgebäude in München - Unterhaltsreinigung</a></h3>
   <p class="meta">Landesbaudirektion Bayern, Ebern<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (10.03.2026)</strong> &middot; veröffentlicht 09.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung straßenmeistereien und stützpunkte landesbaudirektion bayern ebern"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/12440-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Straßenmeistereien und Stützpunkte</a></h3>
   <p class="meta">Landesbaudirektion Bayern, Ebern<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (10.02.2026)</strong> &middot; veröffentlicht 09.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäude- und glasreinigung für das amtsgericht straubing freistaat bayern - vertreten durch den direktor des amtsgerichts straubing straubing"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512943-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäude- und Glasreinigung für das Amtsgericht Straubing</a></h3>
   <p class="meta">Freistaat Bayern - vertreten durch den Direktor des Amtsgerichts Straubing, Straubing<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 44 Tage (10.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – reinigungsdienstleistungen für den klinikneubau, bauteil 6.1 des klinikum fürths klinikum fürth fürth"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/513923-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigungsdienstleistungen für den Klinikneubau, Bauteil 6.1 des Klinikum Fürths</a></h3>
   <p class="meta">Klinikum Fürth, Fürth<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 36 Tage (01.09.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

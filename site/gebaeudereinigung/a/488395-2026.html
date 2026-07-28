@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/36221-2026.html">Deutschland – Reinigung von Schulen – Durchführung der tägl. Unterhaltsreinigung, sowie der jährl. Grund- u. Glasreinigung an 3 Schulen des Wetteraukreises im Zeitraum 17.11.2025 - 16.11.2029 u. Verlängerung v. 4x 12 Monaten</a></h3>
   <p class="meta">Wetteraukreis, Friedberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – durchführung der tägl. unterhaltsreinigung, sowie der jährl. grund- u. glasreinigung an 3 schulen des wetteraukreises im zeitraum 17.11.2025 - 16.11.2029 u. verlängerung v. 4x 12 monaten wetteraukreis friedberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/547572-2025.html">Deutschland – Reinigung von Schulen – Durchführung der tägl. Unterhaltsreinigung, sowie der jährl. Grund- u. Glasreinigung an 3 Schulen des Wetteraukreises im Zeitraum 17.11.2025 - 16.11.2029 u. Verlängerung v. 4x 12 Monaten</a></h3>
   <p class="meta">Wetteraukreis, Friedberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 21.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 21.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – ur, sr regionale kriminalinspektion sulzbach land hessen, vertreten durch das hessische competence center -beschaffungen- wiesbaden"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508872-2026.html">Deutschland – Gebäudereinigung – UR, SR Regionale Kriminalinspektion Sulzbach</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung an den sporthallen liebigschule, theodor-litt-schule und sporthalle gießen-wieseck - jahresvertrag - magistrat der universitätsstadt gießen - haupt- und personalamt - gießen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510553-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung an den Sporthallen Liebigschule, Theodor-Litt-Schule und Sporthalle Gießen-Wieseck - Jahresvertrag -</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Gießen - Haupt- und Personalamt -, Gießen<br>
-  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung behördenhaus fulda land hessen, vertreten durch das hessische competence center -beschaffungen- wiesbaden"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/506833-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Behördenhaus Fulda</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

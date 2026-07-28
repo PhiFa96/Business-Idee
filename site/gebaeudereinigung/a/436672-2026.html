@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-12T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/174734-2026.html">Deutschland – Gebäudereinigung – Reinigung an diversen kommunalen Gebäuden der Stadt Esslingen am Neckar</a></h3>
   <p class="meta">Stadt Esslingen am Neckar, Städtische Gebäude, Baurechtsamt, Vergabestelle, Esslingen am Neckar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (14.04.2026)</strong> &middot; veröffentlicht 13.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigung an diversen kommunalen gebäuden der stadt esslingen am neckar stadt esslingen am neckar, städtische gebäude, baurechtsamt, vergabestelle esslingen am neckar"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/844462-2025.html">Deutschland – Gebäudereinigung – Reinigung an diversen kommunalen Gebäuden der Stadt Esslingen am Neckar</a></h3>
   <p class="meta">Stadt Esslingen am Neckar, Städtische Gebäude, Baurechtsamt, Vergabestelle, Esslingen am Neckar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – reinigung an diversen kommunalen gebäuden der stadt esslingen am neckar stadt esslingen am neckar, städtische gebäude, baurechtsamt, vergabestelle esslingen am neckar"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/637462-2025.html">Deutschland – Gebäudereinigung – Reinigung an diversen kommunalen Gebäuden der Stadt Esslingen am Neckar</a></h3>
   <p class="meta">Stadt Esslingen am Neckar, Städtische Gebäude, Baurechtsamt, Vergabestelle, Esslingen am Neckar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (30.10.2025)</strong> &middot; veröffentlicht 30.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>30.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 30.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigungsarbeiten des bbz (berufliches bildungszentrum) in ettlingen landratsamt karlsruhe, amt für gebäudemanagement, zentrale vergabestelle karlsruhe"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512328-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigungsarbeiten des BBZ (Berufliches Bildungszentrum) in Ettlingen</a></h3>
   <p class="meta">Landratsamt Karlsruhe, Amt für Gebäudemanagement, Zentrale Vergabestelle, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigungsarbeiten, reinhold-schneider-schule stadt freiburg i. br. - vergabemanagement freiburg im breisgau"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/506795-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigungsarbeiten, Reinhold-Schneider-Schule</a></h3>
   <p class="meta">Stadt Freiburg i. Br. - Vergabemanagement, Freiburg im Breisgau<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

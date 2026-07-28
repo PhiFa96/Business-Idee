@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/594876-2025.html">Deutschland – Entleerung von Abfallbehältern – Abschluss RV über die Entsorgung und Vernichtung von Schriftgut 2025/1103Sch</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.09.2025)</strong> &middot; veröffentlicht 11.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – entleerung von abfallbehältern – abschluss rv über die entsorgung und vernichtung von schriftgut 2025/1103sch bundeswehr-dienstleistungszentrum munster munster"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-07-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/498577-2025.html">Deutschland – Entleerung von Abfallbehältern – Abschluss RV über die Entsorgung und Vernichtung von Schriftgut 2025/1103Sch</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.09.2025)</strong> &middot; veröffentlicht 30.07.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 30.07.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – abschluss eines rahmenvertrages über die unterhaltsreinigung in der unteroffizier-friederike-krüger-kaserne, 2026/1488 sch bundeswehr-dienstleistungszentrum munster munster"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512489-2026.html">Deutschland – Gebäudereinigung – Abschluss eines Rahmenvertrages über die Unterhaltsreinigung in der Unteroffizier-Friederike-Krüger-Kaserne, 2026/1488 Sch</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 34 Tage (31.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>31.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – 6002966416-bwdlz munster bundeswehr-dienstleistungszentrum munster munster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/294351-2026.html">Deutschland – Gebäudereinigung – 6002966416-BwDLZ Munster</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – rahmenvertrag für die unterhaltsreinigung für mehrere liegenschaften der bundeswehr am standort munster, 2026/0305 sch bundeswehr-dienstleistungszentrum munster munster"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/244984-2026.html">Deutschland – Gebäudereinigung – Rahmenvertrag für die Unterhaltsreinigung für mehrere Liegenschaften der Bundeswehr am Standort Munster, 2026/0305 Sch</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Munster, Munster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (13.04.2026)</strong> &middot; veröffentlicht 10.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>13.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

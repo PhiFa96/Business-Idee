@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/736113-2025.html">Deutschland – Gebäudereinigung – Grund- und Unterhaltsreinigung</a></h3>
   <p class="meta">Deutsche Film- und Fernsehakademie Berlin GmbH, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.11.2025)</strong> &middot; veröffentlicht 06.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 06.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – grund- und unterhaltsreinigung deutsche film- und fernsehakademie berlin gmbh berlin"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/726157-2025.html">Deutschland – Gebäudereinigung – Grund- und Unterhaltsreinigung</a></h3>
   <p class="meta">Deutsche Film- und Fernsehakademie Berlin GmbH, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (17.11.2025)</strong> &middot; veröffentlicht 03.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 03.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – grund- und unterhaltsreinigung deutsche film- und fernsehakademie berlin gmbh berlin"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/684858-2025.html">Deutschland – Gebäudereinigung – Grund- und Unterhaltsreinigung</a></h3>
   <p class="meta">Deutsche Film- und Fernsehakademie Berlin GmbH, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (17.11.2025)</strong> &middot; veröffentlicht 17.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 17.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – grund- und unterhaltsreinigung deutsche film- und fernsehakademie berlin gmbh berlin"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/600860-2025.html">Deutschland – Gebäudereinigung – Grund- und Unterhaltsreinigung</a></h3>
   <p class="meta">Deutsche Film- und Fernsehakademie Berlin GmbH, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.09.2025</p>
 </article>
 </div>
 <footer>
@@ -105,5 +105,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/255353-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Abschluss einer Rahmenvereinbarung über die Unterhalts- und Fensterreinigung in Klietz</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Burg, Burg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.05.2026)</strong> &middot; veröffentlicht 15.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – abschluss einer rahmenvereinbarung über die unterhaltsreinigung und fensterreinigung in havelberg bundeswehr-dienstleistungszentrum burg burg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/100640-2026.html">Deutschland – Gebäudereinigung – Abschluss einer Rahmenvereinbarung über die Unterhaltsreinigung und Fensterreinigung in Havelberg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Burg, Burg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 12.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 12.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – 6002904241-rahmenvertrag unterhaltsreinigung bundeswehr-dienstleistungszentrum burg burg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-07T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/8334-2026.html">Deutschland – Gebäudereinigung – 6002904241-Rahmenvertrag Unterhaltsreinigung</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Burg, Burg<br>
-  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.01.2026</p>
+  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – 6002901492-abschluss eines rahmenvertrages über die unterhaltsreinigung in havelberg bundeswehr-dienstleistungszentrum burg burg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/858647-2025.html">Deutschland – Gebäudereinigung – 6002901492-Abschluss eines Rahmenvertrages über die Unterhaltsreinigung in Havelberg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Burg, Burg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 6002901492-abschluss eines rahmenvertrages über die unterhaltsreinigung in havelberg bundeswehr-dienstleistungszentrum burg burg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/549119-2025.html">Deutschland – Gebäudereinigung – 6002901492-Abschluss eines Rahmenvertrages über die Unterhaltsreinigung in Havelberg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Burg, Burg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.09.2025)</strong> &middot; veröffentlicht 22.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 22.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

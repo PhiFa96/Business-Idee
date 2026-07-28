@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-11T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/326322-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Bauvorhaben Umstrukturierung, Modernisierung im Bestand und Teilneubau des Bildungszentrums Rostock/ Los 366 - Baureinigung Bestand</a></h3>
   <p class="meta">Handwerkskammer Ostmecklenburg-Vorpommern, Rostock<br>
-  Auftragswert <strong>118.933 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 12.05.2026</p>
+  Auftragswert <strong>118.933 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 12.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – bauvorhaben umstrukturierung, modernisierung im bestand und teilneubau des bildungszentrums rostock/ los 315 - baureinigung neubau handwerkskammer ostmecklenburg-vorpommern rostock"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-25T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/54404-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Bauvorhaben Umstrukturierung, Modernisierung im Bestand und Teilneubau des Bildungszentrums Rostock/ Los 315 - Baureinigung Neubau</a></h3>
   <p class="meta">Handwerkskammer Ostmecklenburg-Vorpommern, Rostock<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.02.2026)</strong> &middot; veröffentlicht 26.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 26.01.2026</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

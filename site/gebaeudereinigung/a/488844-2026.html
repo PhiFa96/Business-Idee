@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/369434-2026.html">Deutschland – Reinigung von Schulen – Unterhalts- und Grundreinigung in Gebäuden des Kreises Stormarn</a></h3>
   <p class="meta">Kreis Stormarn, Bad Oldesloe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.06.2026)</strong> &middot; veröffentlicht 29.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 29.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – unterhalts- und glasreinigung in gebäuden des kreises stormarn kreis stormarn bad oldesloe"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/842259-2025.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Unterhalts- und Glasreinigung in Gebäuden des Kreises Stormarn</a></h3>
   <p class="meta">Kreis Stormarn, Bad Oldesloe<br>
-  Auftragswert <strong>427.714 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.12.2025</p>
+  Auftragswert <strong>427.714 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung in schulen, sporthallen und öffentlichen gebäuden stadt kaltenkirchen kaltenkirchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508825-2026.html">Deutschland – Reinigung von Schulen – Reinigung in Schulen, Sporthallen und öffentlichen Gebäuden</a></h3>
   <p class="meta">Stadt Kaltenkirchen, Kaltenkirchen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule islandstraße, islandstraße 25, 22145 hamburg bvc behörde für finanzen und bezirke hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488945-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Islandstraße, Islandstraße 25, 22145 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund-, ferien-, und sonderreinigungen in schulen der hansestadt lübeck 1.102.3 zentrale verwaltungsdienste, statistik und wahlen - hansestadt lübeck - der bürgermeister lübeck"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/393555-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund-, Ferien-, und Sonderreinigungen in Schulen der Hansestadt Lübeck</a></h3>
   <p class="meta">1.102.3 Zentrale Verwaltungsdienste, Statistik und Wahlen - Hansestadt Lübeck - Der Bürgermeister, Lübeck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.06.2026)</strong> &middot; veröffentlicht 09.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.06.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

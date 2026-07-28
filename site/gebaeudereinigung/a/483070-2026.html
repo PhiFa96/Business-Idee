@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-21T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/48031-2026.html">Deutschland – Reinigung und Sanierung des städtischen und ländlichen Raumes, und zugehörige Dienstleistungen – Reinigung von Freiflächen und Entleerung von Abfallbehältern</a></h3>
   <p class="meta">Die Bremer Stadtreinigung AöR, Bremen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – entleerung von abfallbehältern – entleerung von papierkörben, dog-service-stations und flächenreinigung auf öffentlichen grünflächen bezirksamt marzahn-hellersdorf von berlin berlin"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/849157-2025.html">Deutschland – Entleerung von Abfallbehältern – Entleerung von Papierkörben, DOG-Service-Stations und Flächenreinigung auf öffentlichen Grünflächen</a></h3>
   <p class="meta">Bezirksamt Marzahn-Hellersdorf von Berlin, Berlin<br>
-  Auftragswert <strong>851.840 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.12.2025</p>
+  Auftragswert <strong>851.840 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung und sanierung des städtischen und ländlichen raumes, und zugehörige dienstleistungen – reinigung von freiflächen und entleerung von abfallbehältern die bremer stadtreinigung aör bremen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/747024-2025.html">Deutschland – Reinigung und Sanierung des städtischen und ländlichen Raumes, und zugehörige Dienstleistungen – Reinigung von Freiflächen und Entleerung von Abfallbehältern</a></h3>
   <p class="meta">Die Bremer Stadtreinigung AöR, Bremen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (11.12.2025)</strong> &middot; veröffentlicht 11.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – entleerung von abfallbehältern – entleerung von papierkörben, dog-service-stations und flächenreinigung auf öffentlichen grünflächen bezirksamt marzahn-hellersdorf von berlin berlin"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/650843-2025.html">Deutschland – Entleerung von Abfallbehältern – Entleerung von Papierkörben, DOG-Service-Stations und Flächenreinigung auf öffentlichen Grünflächen</a></h3>
   <p class="meta">Bezirksamt Marzahn-Hellersdorf von Berlin, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.11.2025)</strong> &middot; veröffentlicht 06.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 06.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – hauswartungsdienste – komplexe hauswartdienstleistungen im bestand der wohnungswirtschaft frankfurt (oder) gmbh wohnungswirtschaft frankfurt (oder) gmbh frankfurt (oder)"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/634282-2025.html">Deutschland – Hauswartungsdienste – Komplexe Hauswartdienstleistungen im Bestand der Wohnungswirtschaft Frankfurt (Oder) GmbH</a></h3>
   <p class="meta">Wohnungswirtschaft Frankfurt (Oder) GmbH, Frankfurt (Oder)<br>
-  Auftragswert <strong>2.623.195 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.09.2025</p>
+  Auftragswert <strong>2.623.195 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

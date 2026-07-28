@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/495340-2026.html">Deutschland – Reinigungsdienste – UHR HdBA Schwerin</a></h3>
   <p class="meta">Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 23 Tage (20.08.2026)</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung rim rostock bundesagentur für arbeit (ba), vertreten durch den vorstand, hier vertreten durch die leitung des geschäftsbereiches einkauf im ba-service-haus nürnberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/356624-2026.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung RIM Rostock</a></h3>
   <p class="meta">Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.06.2026)</strong> &middot; veröffentlicht 26.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 26.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung rim rostock bundesagentur für arbeit (ba), vertreten durch den vorstand, hier vertreten durch die leitung des geschäftsbereiches einkauf im ba-service-haus nürnberg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/288489-2026.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung RIM Rostock</a></h3>
   <p class="meta">Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus, Nürnberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (28.05.2026)</strong> &middot; veröffentlicht 28.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 28.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen für das gymnasium gröbenzell, die realschule unterpfaffenhofen und das schulzentrum fürstenfeldbruck landratsamt fürstenfeldbruck - kreiseigener hochbau fürstenfeldbruck"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/504461-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen für das Gymnasium Gröbenzell, die Realschule Unterpfaffenhofen und das Schulzentrum Fürstenfeldbruck</a></h3>
   <p class="meta">Landratsamt Fürstenfeldbruck - Kreiseigener Hochbau, Fürstenfeldbruck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 31 Tage (28.08.2026)</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung in objekten der gemeinde krailling gemeinde krailling krailling"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/487443-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung in Objekten der Gemeinde Krailling</a></h3>
   <p class="meta">Gemeinde Krailling, Krailling<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

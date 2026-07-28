@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/473715-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für fünf Schulen und ein Verwaltungsgebäude in Pritzwalk</a></h3>
   <p class="meta">Landkreis Prignitz, Perleberg<br>
-  Auftragswert <strong>889.087 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>889.087 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für vier schulen und eine mehrzweckhalle in perleberg landkreis prignitz perleberg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/474750-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für vier Schulen und eine Mehrzweckhalle in Perleberg</a></h3>
   <p class="meta">Landkreis Prignitz, Perleberg<br>
-  Auftragswert <strong>842.154 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>842.154 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für fünf schulen und ein verwaltungsgebäude in pritzwalk landkreis prignitz perleberg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/334363-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für fünf Schulen und ein Verwaltungsgebäude in Pritzwalk</a></h3>
   <p class="meta">Landkreis Prignitz, Perleberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (02.06.2026)</strong> &middot; veröffentlicht 15.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>02.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für vier schulen und eine mehrzweckhalle in perleberg landkreis prignitz perleberg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/253441-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für vier Schulen und eine Mehrzweckhalle in Perleberg</a></h3>
   <p class="meta">Landkreis Prignitz, Perleberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (19.05.2026)</strong> &middot; veröffentlicht 14.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 14.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für fünf schulen und ein verwaltungsgebäude in pritzwalk landkreis prignitz perleberg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/235732-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für fünf Schulen und ein Verwaltungsgebäude in Pritzwalk</a></h3>
   <p class="meta">Landkreis Prignitz, Perleberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (19.05.2026)</strong> &middot; veröffentlicht 07.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

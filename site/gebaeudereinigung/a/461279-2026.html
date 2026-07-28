@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/509373-2026.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Reinigung von Fettabluftanlagen</a></h3>
   <p class="meta">Land Schleswig-Holstein vertreten durch die Gebäudemanagement Schleswig-Holstein AöR, Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 31 Tage (28.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – behandlung und beseitigung ungefährlicher siedlungs- und anderer abfälle – abfallentsorgung grünanlagen 2026 - 2027 mit 1 jähriger verlängerungsoption stadt ratingen, der bürgermeister, rechtsamt, zentrale vergabestelle ratingen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/506337-2026.html">Deutschland – Behandlung und Beseitigung ungefährlicher Siedlungs- und anderer Abfälle – Abfallentsorgung Grünanlagen 2026 - 2027 mit 1 jähriger Verlängerungsoption</a></h3>
   <p class="meta">Stadt Ratingen, Der Bürgermeister, Rechtsamt, Zentrale Vergabestelle, Ratingen<br>
-  Auftragswert <strong>888.040 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>888.040 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – wiesbaden congress &amp; marketing gmbh, vergabe reinigungsleistung wiesbaden congress &amp; marketing gmbh wiesbaden"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/474153-2026.html">Deutschland – Reinigungsdienste – Wiesbaden Congress &amp; Marketing GmbH, Vergabe Reinigungsleistung</a></h3>
   <p class="meta">Wiesbaden Congress &amp; Marketing GmbH, Wiesbaden<br>
-  Auftragswert <strong>15.926 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>15.926 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – 6002970044-bwdlz husum-glas-/fensterreinigung div. liegenschaften bundeswehr-dienstleistungszentrum husum husum"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/392231-2026.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – 6002970044-BwDLZ Husum-Glas-/Fensterreinigung div. Liegenschaften</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Husum, Husum<br>
-  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.06.2026</p>
+  Auftragswert <strong>-1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – unterhalts-, grund- und glasreinigung hansestadt stade stade"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-04T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/385774-2026.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Unterhalts-, Grund- und Glasreinigung</a></h3>
   <p class="meta">Hansestadt Stade, Stade<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (06.07.2026)</strong> &middot; veröffentlicht 05.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.06.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

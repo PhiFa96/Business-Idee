@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-06T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/6838-2026.html">Deutschland – Beseitigung und Behandlung von Siedlungsabfällen – vergebener Auftrag: CAU Abfallentsorgung</a></h3>
   <p class="meta">Christian-Albrechts-Universität zu Kiel (CAU), Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – beseitigung und behandlung von siedlungsabfällen – cau abfallentsorgung christian-albrechts-universität zu kiel (cau) kiel"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/675670-2025.html">Deutschland – Beseitigung und Behandlung von Siedlungsabfällen – CAU Abfallentsorgung</a></h3>
   <p class="meta">Christian-Albrechts-Universität zu Kiel (CAU), Kiel<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (14.11.2025)</strong> &middot; veröffentlicht 15.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.11.2025</strong><span class="rest"></span> &middot; veröffentlicht 15.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung in schulen, sporthallen und öffentlichen gebäuden stadt kaltenkirchen kaltenkirchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508825-2026.html">Deutschland – Reinigung von Schulen – Reinigung in Schulen, Sporthallen und öffentlichen Gebäuden</a></h3>
   <p class="meta">Stadt Kaltenkirchen, Kaltenkirchen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – berufsbildungszentrum ahrensburg; gebäudereinigung kreis stormarn bad oldesloe"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488844-2026.html">Deutschland – Reinigung von Schulen – Berufsbildungszentrum Ahrensburg; Gebäudereinigung</a></h3>
   <p class="meta">Kreis Stormarn, Bad Oldesloe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule islandstraße, islandstraße 25, 22145 hamburg bvc behörde für finanzen und bezirke hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488945-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Islandstraße, Islandstraße 25, 22145 Hamburg</a></h3>
   <p class="meta">BVC Behörde für Finanzen und Bezirke, Hamburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

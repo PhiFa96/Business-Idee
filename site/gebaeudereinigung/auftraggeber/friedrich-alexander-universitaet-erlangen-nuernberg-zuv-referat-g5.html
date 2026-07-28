@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/600400-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Lange Gasse 20, 90403</a></h3>
   <p class="meta">Friedrich-Alexander-Universität Erlangen-Nürnberg - ZUV, Referat G5, Erlangen<br>
-  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 15.09.2025</p>
+  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 15.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung lange gasse 20, 90403 friedrich-alexander-universität erlangen-nürnberg - zuv, referat g5 erlangen"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/562230-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Lange Gasse 20, 90403</a></h3>
   <p class="meta">Friedrich-Alexander-Universität Erlangen-Nürnberg - ZUV, Referat G5, Erlangen<br>
-  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 28.08.2025</p>
+  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 28.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung lange gasse 20, 90403 friedrich-alexander-universität erlangen-nürnberg - zuv, referat g5 erlangen"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/547505-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Lange Gasse 20, 90403</a></h3>
   <p class="meta">Friedrich-Alexander-Universität Erlangen-Nürnberg - ZUV, Referat G5, Erlangen<br>
-  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 21.08.2025</p>
+  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 21.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung lange gasse 20, 90403 friedrich-alexander-universität erlangen-nürnberg - zuv, referat g5 erlangen"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-18T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/540553-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Lange Gasse 20, 90403</a></h3>
   <p class="meta">Friedrich-Alexander-Universität Erlangen-Nürnberg - ZUV, Referat G5, Erlangen<br>
-  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 19.08.2025</p>
+  Auftragswert <strong>1.049.730 €</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 19.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung bismarckstraße 1 &amp; kochstraße 4, erlangen friedrich-alexander-universität erlangen-nürnberg - zuv, referat g5 erlangen"
@@ -104,7 +104,7 @@ footer a{color:var(--muted)}
   data-published="2025-07-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/503557-2025.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung Bismarckstraße 1 &amp; Kochstraße 4, Erlangen</a></h3>
   <p class="meta">Friedrich-Alexander-Universität Erlangen-Nürnberg - ZUV, Referat G5, Erlangen<br>
-  Auftragswert <strong>1.112.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 01.08.2025</p>
+  Auftragswert <strong>1.112.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 01.08.2025</p>
 </article>
 </div>
 <footer>
@@ -114,5 +114,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

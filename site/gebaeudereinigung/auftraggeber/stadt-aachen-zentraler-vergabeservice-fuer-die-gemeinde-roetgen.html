@@ -67,7 +67,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/843151-2025.html">Deutschland – Gebäudereinigung – Reinigungsleistungen Grundschule, Lehrschwimmbecken, Rathaus Gemeinde Roetgen</a></h3>
   <p class="meta">Stadt Aachen - Zentraler Vergabeservice für die Gemeinde Roetgen, Aachen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 18.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 18.12.2025</p>
 </article>
 </div>
 <footer>
@@ -77,5 +77,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

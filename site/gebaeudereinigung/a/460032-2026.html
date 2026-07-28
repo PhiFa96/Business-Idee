@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/190692-2026.html">Deutschland – Reinigungsdienste – 2026-38 - Unterhaltsreinigung BV Köln</a></h3>
   <p class="meta">Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW), Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (27.04.2026)</strong> &middot; veröffentlicht 19.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – 2025-73 gebäude- und unterhaltsreinigung im previer, hh berufsgenossenschaft für gesundheitsdienst und wohlfahrtspflege (bgw) hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/199184-2026.html">Deutschland – Reinigungsdienste – 2025-73 Gebäude- und Unterhaltsreinigung im PREVIER, HH</a></h3>
   <p class="meta">Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW), Hamburg<br>
-  Auftragswert <strong>2.180.019 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.03.2026</p>
+  Auftragswert <strong>2.180.019 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – 2025-73 gebäude- und unterhaltsreinigung im previer, hh berufsgenossenschaft für gesundheitsdienst und wohlfahrtspflege (bgw) hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-13T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/22745-2026.html">Deutschland – Reinigungsdienste – 2025-73 Gebäude- und Unterhaltsreinigung im PREVIER, HH</a></h3>
   <p class="meta">Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW), Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.10.2025)</strong> &middot; veröffentlicht 14.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 14.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – 2025-73 gebäude- und unterhaltsreinigung im previer, hh berufsgenossenschaft für gesundheitsdienst und wohlfahrtspflege (bgw) hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/623109-2025.html">Deutschland – Reinigungsdienste – 2025-73 Gebäude- und Unterhaltsreinigung im PREVIER, HH</a></h3>
   <p class="meta">Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW), Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.10.2025)</strong> &middot; veröffentlicht 24.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 24.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – glas- und unterhaltsreinigung standort buchenhofen wupperverband wuppertal"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/509739-2026.html">Deutschland – Reinigungsdienste – Glas- und Unterhaltsreinigung Standort Buchenhofen</a></h3>
   <p class="meta">Wupperverband, Wuppertal<br>
-  Auftragswert <strong>98.269 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>98.269 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

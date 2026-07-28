@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/834209-2025.html">Deutschland – Reinigungsdienste – Vergabeverfahren zur Beauftragung von Reinigungsleistungen</a></h3>
   <p class="meta">Universität Heidelberg, Heidelberg<br>
-  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 16.12.2025</p>
+  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 16.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – vergabeverfahren zur beauftragung von reinigungsleistungen universität heidelberg heidelberg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/634171-2025.html">Deutschland – Reinigungsdienste – Vergabeverfahren zur Beauftragung von Reinigungsleistungen</a></h3>
   <p class="meta">Universität Heidelberg, Heidelberg<br>
-  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>abgelaufen (15.10.2025)</strong> &middot; veröffentlicht 29.09.2025</p>
+  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>15.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – vergabeverfahren zur beauftragung von reinigungsleistungen universität heidelberg heidelberg"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/584079-2025.html">Deutschland – Reinigungsdienste – Vergabeverfahren zur Beauftragung von Reinigungsleistungen</a></h3>
   <p class="meta">Universität Heidelberg, Heidelberg<br>
-  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>abgelaufen (08.10.2025)</strong> &middot; veröffentlicht 08.09.2025</p>
+  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>08.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 08.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – vergabeverfahren zur beauftragung von reinigungsleistungen universität heidelberg heidelberg"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/579231-2025.html">Deutschland – Reinigungsdienste – Vergabeverfahren zur Beauftragung von Reinigungsleistungen</a></h3>
   <p class="meta">Universität Heidelberg, Heidelberg<br>
-  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>abgelaufen (08.10.2025)</strong> &middot; veröffentlicht 04.09.2025</p>
+  Auftragswert <strong>10.753.612 €</strong> &middot; Frist <strong>08.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 04.09.2025</p>
 </article>
 </div>
 <footer>
@@ -105,5 +105,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

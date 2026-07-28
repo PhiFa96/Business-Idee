@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-12T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/177410-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung städtisches Kinderhaus am Freibad Neugablonz, Gewerbestraße 81, 87600 Kaufbeuren</a></h3>
   <p class="meta">Stadt Kaufbeuren, Kaufbeuren<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.05.2026)</strong> &middot; veröffentlicht 13.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – generalsanierung und erweiterung gustav-leutelt-schule, turnerstraße 2, 87600 kaufbeuren stadt kaufbeuren kaufbeuren"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/523910-2025.html">Deutschland – Reinigungsdienste – Generalsanierung und Erweiterung Gustav-Leutelt-Schule, Turnerstraße 2, 87600 Kaufbeuren</a></h3>
   <p class="meta">Stadt Kaufbeuren, Kaufbeuren<br>
-  Auftragswert <strong>27.727 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 11.08.2025</p>
+  Auftragswert <strong>27.727 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 11.08.2025</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

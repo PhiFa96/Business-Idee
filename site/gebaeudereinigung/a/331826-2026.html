@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-03T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/149708-2026.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung Polizeipräsidium Nordhessen, 34117 Kassel</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Delivery Center Beschaffung-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (14.04.2026)</strong> &middot; veröffentlicht 04.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung schulamt hanau land hessen, vertreten durch das hessische competence center -delivery center beschaffungen- wiesbaden"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-23T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/128616-2026.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung Schulamt Hanau</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Delivery Center Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – fensterreinigung – glas- und rahmenreinigung polizeipräsidium frankfurt land hessen, vertreten durch das hessische competence center -delivery center beschaffungen- wiesbaden"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/482245-2026.html">Deutschland – Fensterreinigung – Glas- und Rahmenreinigung Polizeipräsidium Frankfurt</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Delivery Center Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung hessisches landesmuseum wiesbaden land hessen, vertreten durch das hessische competence center - delivery center beschaffungen- wiesbaden"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/369475-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Hessisches Landesmuseum Wiesbaden</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center - Delivery Center Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.06.2026)</strong> &middot; veröffentlicht 29.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 29.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung hessisches landesmuseum wiesbaden land hessen, vertreten durch das hessische competence center - delivery center beschaffungen- wiesbaden"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/308595-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Hessisches Landesmuseum Wiesbaden</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center - Delivery Center Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (13.05.2026)</strong> &middot; veröffentlicht 06.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>13.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

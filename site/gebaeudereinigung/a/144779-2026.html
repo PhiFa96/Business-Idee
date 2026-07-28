@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/140633-2026.html">Deutschland – Bauarbeiten für Schwimmbäder – Sanierung Freibad Dinklage</a></h3>
   <p class="meta">Landkreis Vechta, Vechta<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – münster, umbau und sanierung des ehem. offizierskasinos, gebäude 30 im york-quartier nrw.urban kommunale entwicklung gmbh düsseldorf"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511332-2026.html">Deutschland – Bauarbeiten – Münster, Umbau und Sanierung des ehem. Offizierskasinos, Gebäude 30 im York-Quartier</a></h3>
   <p class="meta">NRW.URBAN Kommunale Entwicklung GmbH, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauleistungen im hochbau – 460 ren - rathaus ensemble neutraubling - vorinformation bauleistung stadt neutraubling neutraubling"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/273804-2026.html">Deutschland – Bauleistungen im Hochbau – 460 REN - Rathaus Ensemble Neutraubling - Vorinformation Bauleistung</a></h3>
   <p class="meta">Stadt Neutraubling, Neutraubling<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für gebäude, die der freizeitgestaltung, dem sport, der kultur, der unterbringung und verpflegung dienen – ngn, baureinigungsarbeiten, neues gymnasium nürnberg wbg kommunal gmbh nürnberg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-24T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/205326-2026.html">Deutschland – Bauarbeiten für Gebäude, die der Freizeitgestaltung, dem Sport, der Kultur, der Unterbringung und Verpflegung dienen – NGN, Baureinigungsarbeiten, Neues Gymnasium Nürnberg</a></h3>
   <p class="meta">WBG KOMMUNAL GmbH, Nürnberg<br>
-  Auftragswert <strong>75 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 25.03.2026</p>
+  Auftragswert <strong>75 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 25.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – neukonzeption oberhessisches museum gießen magistrat der universitätsstadt gießen - hochbauamt - gießen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-27T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/64144-2026.html">Deutschland – Bauarbeiten – Neukonzeption Oberhessisches Museum Gießen</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Gießen - Hochbauamt -, Gießen<br>
-  Auftragswert <strong>11.871 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.01.2026</p>
+  Auftragswert <strong>11.871 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.01.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

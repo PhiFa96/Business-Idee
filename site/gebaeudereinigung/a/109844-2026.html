@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/199309-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in der Integrierten Gesamtschule Rülzheim</a></h3>
   <p class="meta">Kreisverwaltung Germersheim, Germersheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 23.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in der integrierten gesamtschule kandel kreisverwaltung germersheim germersheim"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/109442-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in der Integrierten Gesamtschule Kandel</a></h3>
   <p class="meta">Kreisverwaltung Germersheim, Germersheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 16.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – reinigung in den klassenraumcontainern des gymnasiums rheinzabern kreisverwaltung germersheim germersheim"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/110396-2026.html">Deutschland – Gebäudereinigung – Reinigung in den Klassenraumcontainern des Gymnasiums Rheinzabern</a></h3>
   <p class="meta">Kreisverwaltung Germersheim, Germersheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 16.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in der integrierten gesamtschule rülzheim kreisverwaltung germersheim germersheim"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/110603-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in der Integrierten Gesamtschule Rülzheim</a></h3>
   <p class="meta">Kreisverwaltung Germersheim, Germersheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 16.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung museums- und verwaltungsgebäude historisches museum der pfalz - stiftung des öffentlichen rechts speyer"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/502817-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Museums- und Verwaltungsgebäude</a></h3>
   <p class="meta">Historisches Museum der Pfalz - Stiftung des öffentlichen Rechts, Speyer<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

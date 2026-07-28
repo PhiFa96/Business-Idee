@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/252821-2026.html">Deutschland – Gebäudereinigung – Leistungserbringung zur Unterhaltsreinigung</a></h3>
   <p class="meta">Hamburg Verkehrsanlagen GmbH, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – leistungserbringung zur unterhaltsreinigung hamburg verkehrsanlagen gmbh hamburg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/59389-2026.html">Deutschland – Gebäudereinigung – Leistungserbringung zur Unterhaltsreinigung</a></h3>
   <p class="meta">Hamburg Verkehrsanlagen GmbH, Hamburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.03.2026)</strong> &middot; veröffentlicht 27.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 27.01.2026</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

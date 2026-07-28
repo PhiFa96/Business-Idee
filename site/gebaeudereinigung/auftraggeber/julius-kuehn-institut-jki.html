@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-23T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/200080-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigungen JKI Standorte Braunschweig/Sickte</a></h3>
   <p class="meta">Julius-Kühn-Institut (JKI), Braunschweig<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.05.2026)</strong> &middot; veröffentlicht 24.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudeunterhaltsreinigung jki berlin julius kühn-institut (jki) quedlinburg"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/532239-2025.html">Deutschland – Gebäudereinigung – Gebäudeunterhaltsreinigung JKI Berlin</a></h3>
   <p class="meta">Julius Kühn-Institut (JKI), Quedlinburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäudeunterhaltsreinigung im jki quedlinburg julius kühn-institut (jki) quedlinburg"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/441725-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudeunterhaltsreinigung im JKI Quedlinburg</a></h3>
   <p class="meta">Julius Kühn-Institut (JKI), Quedlinburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (27.07.2026)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.07.2026</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/318158-2026.html">Deutschland – Gebäudereinigung – Glas- und Gebäudereinigung in der Schule am Park, Schwarzenbergstraße 50, 21073 Hamburg ab dem 18.05.2027</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>347.100 €</strong> &middot; Frist <strong>abgelaufen (24.06.2026)</strong> &middot; veröffentlicht 08.05.2026</p>
+  Auftragswert <strong>347.100 €</strong> &middot; Frist <strong>24.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – glas- und gebäudereinigung in der georg- kerschensteiner-grundschule, baererstraße 81, 21073 hamburg ab dem 01.05.2027 unbefristet behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/298359-2026.html">Deutschland – Gebäudereinigung – Glas- und Gebäudereinigung in der Georg- Kerschensteiner-Grundschule, Baererstraße 81, 21073 Hamburg ab dem 01.05.2027 unbefristet</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>351.510 €</strong> &middot; Frist <strong>abgelaufen (16.06.2026)</strong> &middot; veröffentlicht 30.04.2026</p>
+  Auftragswert <strong>351.510 €</strong> &middot; Frist <strong>16.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 30.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – glas- und gebäudereinigung im marion- dönhoff- gymnasium, willhöden 74, 22587 hamburg behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/272810-2026.html">Deutschland – Gebäudereinigung – Glas- und Gebäudereinigung im Marion- Dönhoff- Gymnasium, Willhöden 74, 22587 Hamburg</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>261.453 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.04.2026</p>
+  Auftragswert <strong>261.453 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – glas- und gebäudereinigung in der feuerwehrakademie hamburg (f 05), bredowstraße 4, 22113 hamburg ab dem 01.03.2027 unbefristet behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/233535-2026.html">Deutschland – Gebäudereinigung – Glas- und Gebäudereinigung in der Feuerwehrakademie Hamburg (F 05), Bredowstraße 4, 22113 Hamburg ab dem 01.03.2027 unbefristet</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>1.507.828 €</strong> &middot; Frist <strong>abgelaufen (06.05.2026)</strong> &middot; veröffentlicht 03.04.2026</p>
+  Auftragswert <strong>1.507.828 €</strong> &middot; Frist <strong>06.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 03.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – glas- und gebäudereinigung in schule schwenckestraße 91-93, 20259 hamburg ab dem 01.02.2027 unbefristet behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/226522-2026.html">Deutschland – Gebäudereinigung – Glas- und Gebäudereinigung in Schule Schwenckestraße 91-93, 20259 Hamburg ab dem 01.02.2027 unbefristet</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>294.144 €</strong> &middot; Frist <strong>abgelaufen (22.05.2026)</strong> &middot; veröffentlicht 01.04.2026</p>
+  Auftragswert <strong>294.144 €</strong> &middot; Frist <strong>22.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 01.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

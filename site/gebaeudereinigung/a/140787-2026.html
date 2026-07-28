@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/462151-2026.html">Deutschland – Gebäudereinigung – HD, Maaßstr. 32: Finanzamt Heidelberg_Unterhalts-und Grundreinigung</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Mannheim und Heidelberg Dienstsitz Mannheim, Mannheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 7 Tage (03.08.2026)</strong> &middot; veröffentlicht 06.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – hd, diebsweg 2: lehr - und versuchsanstalt für gartenbau_unterhalts- und grundreinigung vermögen und bau baden-württemberg, amt mannheim und heidelberg dienstsitz mannheim mannheim"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-19T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/194441-2026.html">Deutschland – Gebäudereinigung – HD, Diebsweg 2: Lehr - und Versuchsanstalt für Gartenbau_Unterhalts- und Grundreinigung</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Mannheim und Heidelberg Dienstsitz Mannheim, Mannheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 20.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-grund-sowie glasreinigungsarbeiten, sonderarbeiten vermögen und bau baden-württemberg, amt mannheim und heidelberg dienstsitz mannheim mannheim"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/165099-2026.html">Deutschland – Gebäudereinigung – Unterhalts-Grund-sowie Glasreinigungsarbeiten, Sonderarbeiten</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Mannheim und Heidelberg Dienstsitz Mannheim, Mannheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-grund-sowie glasreinigungsarbeiten, sonderarbeiten vermögen und bau baden-württemberg, amt mannheim und heidelberg dienstsitz mannheim mannheim"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/157178-2026.html">Deutschland – Gebäudereinigung – Unterhalts-Grund-sowie Glasreinigungsarbeiten, Sonderarbeiten</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Mannheim und Heidelberg Dienstsitz Mannheim, Mannheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 06.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts-sowie grundreinigungsarbeiten, veranstaltungsreinigungen , sonderreinigungen vermögen und bau baden-württemberg, amt mannheim und heidelberg dienstsitz mannheim mannheim"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/78209-2026.html">Deutschland – Gebäudereinigung – Unterhalts-sowie Grundreinigungsarbeiten, Veranstaltungsreinigungen , Sonderreinigungen</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Mannheim und Heidelberg Dienstsitz Mannheim, Mannheim<br>
-  Auftragswert <strong>1.286.375 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.02.2026</p>
+  Auftragswert <strong>1.286.375 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.02.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

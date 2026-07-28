@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/374898-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung und Schließdienst in 11 öffentlichen WC-Anlagen</a></h3>
   <p class="meta">Stadt Augsburg, Augsburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.07.2026)</strong> &middot; veröffentlicht 02.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 02.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – vogelvergrämung und reinigung stadt augsburg augsburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/147506-2026.html">Deutschland – Bauarbeiten – Vogelvergrämung und Reinigung</a></h3>
   <p class="meta">Stadt Augsburg, Augsburg<br>
-  Auftragswert <strong>105.807 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.03.2026</p>
+  Auftragswert <strong>105.807 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten – vogelvergrämung und reinigung stadt augsburg augsburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/810271-2025.html">Deutschland – Bauarbeiten – Vogelvergrämung und Reinigung</a></h3>
   <p class="meta">Stadt Augsburg, Augsburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.01.2026)</strong> &middot; veröffentlicht 05.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in städtischen verwaltungsgebäuden stadt augsburg augsburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/521924-2025.html">Deutschland – Gebäudereinigung – Gebäudereinigung in städtischen Verwaltungsgebäuden</a></h3>
   <p class="meta">Stadt Augsburg, Augsburg<br>
-  Auftragswert <strong>163.140 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.08.2025</p>
+  Auftragswert <strong>163.140 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – baugrobreinigung stadt augsburg augsburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/153017-2026.html">Deutschland – Bauarbeiten – Baugrobreinigung</a></h3>
   <p class="meta">Stadt Augsburg, Augsburg<br>
-  Auftragswert <strong>73.180 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.03.2026</p>
+  Auftragswert <strong>73.180 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.03.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

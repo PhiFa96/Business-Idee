@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/172960-2026.html">Deutschland – Reinigung von Schulen – 4 Schulen an 5 Standorten im Bereich des Lahn-Dill-Kreises; Unterhalts- und Grundreinigung</a></h3>
   <p class="meta">Kreisausschuss des Lahn-Dill-Kreises, 12.4 Zentrale Vergabe- und Submissionsstelle, Wetzlar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (14.04.2026)</strong> &middot; veröffentlicht 12.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 12.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – büroreinigung – unterhaltsreinigung lra und nebenstellen kreisausschuss des hochtaunuskreises bad homburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/495597-2026.html">Deutschland – Büroreinigung – Unterhaltsreinigung LRA und Nebenstellen</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – main-kinzig-kreis - losweise vergabe von reinigungsdienstleistungen in schulen im main-kinzig-kreis main-kinzig-kreis, vertreten durch den kreisausschuss gelnhausen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/482729-2026.html">Deutschland – Reinigung von Schulen – Main-Kinzig-Kreis - Losweise Vergabe von Reinigungsdienstleistungen in Schulen im Main-Kinzig-Kreis</a></h3>
   <p class="meta">Main-Kinzig-Kreis, vertreten durch den Kreisausschuss, Gelnhausen<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (15.07.2026)</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>15.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistung kaufmännische schule marburg (ksm) und martin-luther-schule (mls) magistrat der universitätsstadt marburg marburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/442167-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistung Kaufmännische Schule Marburg (KSM) und Martin-Luther-Schule (MLS)</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Marburg, Marburg<br>
-  Auftragswert <strong>869.309 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.06.2026</p>
+  Auftragswert <strong>869.309 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für die dienststelle frankfurt im cityhaus i deutsche rentenversicherung hessen frankfurt am main"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/378029-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für die Dienststelle Frankfurt im Cityhaus I</a></h3>
   <p class="meta">Deutsche Rentenversicherung Hessen, Frankfurt am Main<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.06.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

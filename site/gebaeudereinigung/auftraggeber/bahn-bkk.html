@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/115890-2026.html">Deutschland – Büroreinigung – Unterhaltsreinigung für Büroflächen der Regionalgeschäftsstelle Mitte-Ost in Cottbus</a></h3>
   <p class="meta">BAHN-BKK, Frankfurt/Main<br>
-  Auftragswert <strong>415.320 €</strong> &middot; Frist <strong>abgelaufen (23.03.2026)</strong> &middot; veröffentlicht 18.02.2026</p>
+  Auftragswert <strong>415.320 €</strong> &middot; Frist <strong>23.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – büroreinigung – unterhaltsreinigung für büroflächen der regionalgeschäftsstelle nord-west in münster bahn-bkk frankfurt/main"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-16T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/761682-2025.html">Deutschland – Büroreinigung – Unterhaltsreinigung für Büroflächen der Regionalgeschäftsstelle Nord-West in Münster</a></h3>
   <p class="meta">BAHN-BKK, Frankfurt/Main<br>
-  Auftragswert <strong>296.302 €</strong> &middot; Frist <strong>abgelaufen (18.12.2025)</strong> &middot; veröffentlicht 17.11.2025</p>
+  Auftragswert <strong>296.302 €</strong> &middot; Frist <strong>18.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 17.11.2025</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/86464-2026.html">Deutschland – Reinigungsdienste – Spüldienstleistung</a></h3>
   <p class="meta">Mainova AG, Frankfurt am Main<br>
-  Auftragswert <strong>2.400.000 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 06.02.2026</p>
+  Auftragswert <strong>2.400.000 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 06.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – glas- / unterhaltsreinigung im mainova verbund mainova ag frankfurt am main"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/27949-2026.html">Deutschland – Gebäudereinigung – Glas- / Unterhaltsreinigung im Mainova Verbund</a></h3>
   <p class="meta">Mainova AG, Frankfurt am Main<br>
-  Auftragswert <strong>1.812.766 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.01.2026</p>
+  Auftragswert <strong>1.812.766 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.01.2026</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

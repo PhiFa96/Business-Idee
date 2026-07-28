@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/448622-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistung im Objekt Lingnerallee 3, 01069 Dresden</a></h3>
   <p class="meta">Landeshauptstadt Dresden, GB Umwelt und Klima, Recht und Ordnung, RB Zentrale Technische Dienstleistungen, Dresden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 2 Tage (30.07.2026)</strong> &middot; veröffentlicht 30.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>30.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 30.06.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen im objekt neues rathaus, rathausplatz 1, 01067 dresden landeshauptstadt dresden, gb umwelt und klima, recht und ordnung, rb zentrale technische dienstleistungen dresden"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/253329-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen im Objekt Neues Rathaus, Rathausplatz 1, 01067 Dresden</a></h3>
   <p class="meta">Landeshauptstadt Dresden, GB Umwelt und Klima, Recht und Ordnung, RB Zentrale Technische Dienstleistungen, Dresden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen für 20 bibliotheken der landeshauptstadt dresden landeshauptstadt dresden, gb umwelt und klima, recht und ordnung, rb zentrale technische dienstleistungen dresden"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-02T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/573232-2025.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen für 20 Bibliotheken der Landeshauptstadt Dresden</a></h3>
   <p class="meta">Landeshauptstadt Dresden, GB Umwelt und Klima, Recht und Ordnung, RB Zentrale Technische Dienstleistungen, Dresden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.09.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – reinigungsleistungen ag grimma, staatsanwaltschaft leipzig ast. grimma, sozialer dienst lg leipzig staatsbetrieb sächsisches immobilien- und baumanagement, zentrale, zentralstelle vergabe- und vertragsmanagement dresden"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512514-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Reinigungsleistungen AG Grimma, Staatsanwaltschaft Leipzig Ast. Grimma, Sozialer Dienst LG Leipzig</a></h3>
   <p class="meta">Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement, Dresden<br>
-  Auftragswert <strong>394.407 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>394.407 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung - bibliothek der westsächsischen hochschule zwickau (whz) staatsbetrieb sächsisches immobilien- und baumanagement, zentrale, zentralstelle vergabe- und vertragsmanagement dresden"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510318-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung - Bibliothek der Westsächsischen Hochschule Zwickau (WHZ)</a></h3>
   <p class="meta">Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement, Dresden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

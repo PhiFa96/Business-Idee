@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-19T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/193121-2026.html">Deutschland – Reinigungsdienste – Unterhalts-, Grund- und Glasreinigungsarbeiten in verschiedenen öffentlichen Gebäuden verteilt auf zwei Gemeinden mit verschiedenen Ortsteilen</a></h3>
   <p class="meta">Gemeinde Kochel am See, Kochel am See<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (24.04.2026)</strong> &middot; veröffentlicht 20.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen für das gymnasium gröbenzell, die realschule unterpfaffenhofen und das schulzentrum fürstenfeldbruck landratsamt fürstenfeldbruck - kreiseigener hochbau fürstenfeldbruck"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/504461-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen für das Gymnasium Gröbenzell, die Realschule Unterpfaffenhofen und das Schulzentrum Fürstenfeldbruck</a></h3>
   <p class="meta">Landratsamt Fürstenfeldbruck - Kreiseigener Hochbau, Fürstenfeldbruck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 31 Tage (28.08.2026)</strong> &middot; veröffentlicht 21.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung in objekten der gemeinde krailling gemeinde krailling krailling"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/487443-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung in Objekten der Gemeinde Krailling</a></h3>
   <p class="meta">Gemeinde Krailling, Krailling<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – reinigungsdienstleistungen in anker-dependancen im regierungsbezirk schwaben regierung von schwaben augsburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488398-2026.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in ANKER-Dependancen im Regierungsbezirk Schwaben</a></h3>
   <p class="meta">Regierung von Schwaben, Augsburg<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigungsleistungen in den objekten der medizinischen einrichtungen des bezirks oberpfalz – ku (anstalt des öffentlichen rechts) los 1, los 2, los 3 unterhaltsreinigung und zusatzleistungen an den objekten der medbo in wöllershof, weiden und parsberg medbo - ku regensburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/482650-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigungsleistungen in den Objekten der medizinischen Einrichtungen des Bezirks Oberpfalz – KU (Anstalt des öffentlichen Rechts) Los 1, Los 2, Los 3 Unterhaltsreinigung und Zusatzleistungen an den Objekten der medbo in Wöllershof, Weiden und Parsberg</a></h3>
   <p class="meta">medbo - KU, Regensburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

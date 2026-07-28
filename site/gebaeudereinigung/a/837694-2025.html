@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-19T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/194575-2026.html">Deutschland – Reinigungsdienste – Unterhalts- und Glasreinigung Staatsanwaltschaft Konstanz</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Konstanz, Konstanz<br>
-  Auftragswert <strong>253.141 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 20.03.2026</p>
+  Auftragswert <strong>253.141 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 20.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – unterhalts- und glasreinigung staatsanwaltschaft konstanz vermögen und bau baden-württemberg, amt konstanz konstanz"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/37184-2026.html">Deutschland – Reinigungsdienste – Unterhalts- und Glasreinigung Staatsanwaltschaft Konstanz</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Konstanz, Konstanz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.01.2026)</strong> &middot; veröffentlicht 19.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – wt, justizareal, unterhalts-, vertretungs-, grund- und glasreinigung vermögen und bau baden-württemberg, amt konstanz konstanz"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/486928-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – WT, Justizareal, Unterhalts-, Vertretungs-, Grund- und Glasreinigung</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Konstanz, Konstanz<br>
-  Auftragswert <strong>249.622 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.07.2026</p>
+  Auftragswert <strong>249.622 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – wt, justizareal, unterhalts-, vertretungs-, grund- und glasreinigung vermögen und bau baden-württemberg, amt konstanz konstanz"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/301300-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – WT, Justizareal, Unterhalts-, Vertretungs-, Grund- und Glasreinigung</a></h3>
   <p class="meta">Vermögen und Bau Baden-Württemberg, Amt Konstanz, Konstanz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.06.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – beschaffung einer gebäudereinigungsdienstleistung für die glemstal-gemeinschaftsschule in schwieberdingen gemeindeverwaltung schwieberdingen schwieberdingen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/501329-2026.html">Deutschland – Reinigungsdienste – Beschaffung einer Gebäudereinigungsdienstleistung für die Glemstal-Gemeinschaftsschule in Schwieberdingen</a></h3>
   <p class="meta">Gemeindeverwaltung Schwieberdingen, Schwieberdingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 23 Tage (20.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

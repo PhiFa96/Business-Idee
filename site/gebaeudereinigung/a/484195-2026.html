@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511460-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Umgestaltung OSZ Elsterwerda zum Bildungszentrum Elbe-Elster, 2. BA, Los 13 - Baureinigungsarbeiten</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung landkreises elbe-elster landkreis elbe-elster herzberg/elster"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/489833-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung Landkreises Elbe-Elster</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 10 Tage (06.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung landkreises elbe-elster landkreis elbe-elster herzberg/elster"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/471527-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung Landkreises Elbe-Elster</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 10 Tage (06.08.2026)</strong> &middot; veröffentlicht 08.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung landkreises elbe-elster landkreis elbe-elster herzberg/elster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/465366-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung Landkreises Elbe-Elster</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 10 Tage (06.08.2026)</strong> &middot; veröffentlicht 07.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>06.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – umgestaltung osz elsterwerda zum bildungszentrum elbe-elster, 2. ba, los 13 - baureinigungsarbeiten landkreis elbe-elster herzberg/elster"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/274674-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Umgestaltung OSZ Elsterwerda zum Bildungszentrum Elbe-Elster, 2. BA, Los 13 - Baureinigungsarbeiten</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (27.05.2026)</strong> &middot; veröffentlicht 22.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

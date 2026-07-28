@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-01T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/144779-2026.html">Deutschland – Bauarbeiten für Schwimmbäder – Sanierung Freibad Dinklage</a></h3>
   <p class="meta">Landkreis Vechta, Vechta<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 02.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 02.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für schwimmbäder – sanierung freibad dinklage landkreis vechta vechta"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/140633-2026.html">Deutschland – Bauarbeiten für Schwimmbäder – Sanierung Freibad Dinklage</a></h3>
   <p class="meta">Landkreis Vechta, Vechta<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.02.2026</p>
 </article>
 </div>
 <footer>
@@ -87,5 +87,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

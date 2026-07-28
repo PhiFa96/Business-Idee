@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/191567-2026.html">Deutschland – Gebäudereinigung – Reinigungsausschreibung Standort Münster</a></h3>
   <p class="meta">Unfallkasse Nordrhein-Westfalen, Düsseldorf<br>
-  Auftragswert <strong>177.151 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.03.2026</p>
+  Auftragswert <strong>177.151 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unfallkasse nrw - reinigungsausschreibung standort münster unfallkasse nordrhein-westfalen düsseldorf"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/84101-2026.html">Deutschland – Gebäudereinigung – Unfallkasse NRW - Reinigungsausschreibung Standort Münster</a></h3>
   <p class="meta">Unfallkasse Nordrhein-Westfalen, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (17.02.2026)</strong> &middot; veröffentlicht 05.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unfallkasse nrw - reinigungsausschreibung standort münster unfallkasse nordrhein-westfalen düsseldorf"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-19T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/39455-2026.html">Deutschland – Gebäudereinigung – Unfallkasse NRW - Reinigungsausschreibung Standort Münster</a></h3>
   <p class="meta">Unfallkasse Nordrhein-Westfalen, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (17.02.2026)</strong> &middot; veröffentlicht 20.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>17.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsausschreibung standort düsseldorf unfallkasse nordrhein-westfalen düsseldorf"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-01T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/644881-2025.html">Deutschland – Gebäudereinigung – Reinigungsausschreibung Standort Düsseldorf</a></h3>
   <p class="meta">Unfallkasse Nordrhein-Westfalen, Düsseldorf<br>
-  Auftragswert <strong>1.159.254 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 02.10.2025</p>
+  Auftragswert <strong>1.159.254 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 02.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – münster, umbau und sanierung des ehem. offizierskasinos, gebäude 30 im york-quartier nrw.urban kommunale entwicklung gmbh düsseldorf"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511332-2026.html">Deutschland – Bauarbeiten – Münster, Umbau und Sanierung des ehem. Offizierskasinos, Gebäude 30 im York-Quartier</a></h3>
   <p class="meta">NRW.URBAN Kommunale Entwicklung GmbH, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

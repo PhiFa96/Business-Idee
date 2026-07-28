@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-07T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/812917-2025.html">Deutschland – Reinigungs- und Hygienedienste – studierendenWERK BERLIN Rahmenvereinbarung Unterhalts-, Glas- und Rahmenreinigung in Wohnheimen</a></h3>
   <p class="meta">studierendenWERK BERLIN, Berlin<br>
-  Auftragswert <strong>830.168 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.12.2025</p>
+  Auftragswert <strong>830.168 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für studentenwohnheime – studierendenwerk berlin wh siegmunds hof 17, haus 1, baureinigungsarbeiten studierendenwerk berlin berlin"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-30T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/796338-2025.html">Deutschland – Bauarbeiten für Studentenwohnheime – studierendenWERK BERLIN WH Siegmunds Hof 17, Haus 1, Baureinigungsarbeiten</a></h3>
   <p class="meta">studierendenWERK BERLIN, Berlin<br>
-  Auftragswert <strong>21.003 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 01.12.2025</p>
+  Auftragswert <strong>21.003 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 01.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten für studentenwohnheime – studierendenwerk berlin wh siegmunds hof 17, haus 1, baureinigungsarbeiten studierendenwerk berlin berlin"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/602970-2025.html">Deutschland – Bauarbeiten für Studentenwohnheime – studierendenWERK BERLIN WH Siegmunds Hof 17, Haus 1, Baureinigungsarbeiten</a></h3>
   <p class="meta">studierendenWERK BERLIN, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (14.10.2025)</strong> &middot; veröffentlicht 16.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 16.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – studierendenwerk berlin rahmenvereinbarung unterhalts-, glas- und rahmenreinigung in wohnheimen studierendenwerk berlin berlin"
@@ -95,7 +95,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/533582-2025.html">Deutschland – Reinigungs- und Hygienedienste – studierendenWERK BERLIN Rahmenvereinbarung Unterhalts-, Glas- und Rahmenreinigung in Wohnheimen</a></h3>
   <p class="meta">studierendenWERK BERLIN, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (18.09.2025)</strong> &middot; veröffentlicht 14.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>18.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 14.08.2025</p>
 </article>
 </div>
 <footer>
@@ -105,5 +105,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

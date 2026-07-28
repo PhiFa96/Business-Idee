@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/750501-2025.html">Deutschland – Gebäudereinigung – Erweiterung-Erneuerung Lagunen-Erlebnisbad, 34508 Willingen (Upland) - Unterhaltsreinigung</a></h3>
   <p class="meta">Gemeinde Willingen (Upland), Willingen (Upland)<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 12.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 12.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – ur, sr regionale kriminalinspektion sulzbach land hessen, vertreten durch das hessische competence center -beschaffungen- wiesbaden"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508872-2026.html">Deutschland – Gebäudereinigung – UR, SR Regionale Kriminalinspektion Sulzbach</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung an den sporthallen liebigschule, theodor-litt-schule und sporthalle gießen-wieseck - jahresvertrag - magistrat der universitätsstadt gießen - haupt- und personalamt - gießen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510553-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung an den Sporthallen Liebigschule, Theodor-Litt-Schule und Sporthalle Gießen-Wieseck - Jahresvertrag -</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Gießen - Haupt- und Personalamt -, Gießen<br>
-  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung behördenhaus fulda land hessen, vertreten durch das hessische competence center -beschaffungen- wiesbaden"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/506833-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Behördenhaus Fulda</a></h3>
   <p class="meta">Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-, Wiesbaden<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – gebäudereinigungsausschreibung für den betriebshof bad homburg von der höhe betriebshof bad homburg v. d. höhe bad homburg v. d. höhe"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/507212-2026.html">Deutschland – Reinigungs- und Hygienedienste – Gebäudereinigungsausschreibung für den Betriebshof Bad Homburg von der Höhe</a></h3>
   <p class="meta">Betriebshof Bad Homburg v. d. Höhe, Bad Homburg v. d. Höhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 24 Tage (21.08.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>21.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

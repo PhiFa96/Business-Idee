@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/443583-2026.html">Deutschland – Reinigungsdienste – BAW 04/2025 Reinigungsdienstleistungen sowie Pförtner- und Hausmeisterdienstleistungen für die Standorte Karlsruhe und Hamburg</a></h3>
   <p class="meta">Bundesrepublik Deutschland, vertreten durch das Bundesministerium für Verkehr, dieses wiederum vertreten durch die Bundesanstalt für Wasserbau (BAW), Karlsruhe<br>
-  Auftragswert <strong>2.521.008 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.06.2026</p>
+  Auftragswert <strong>2.521.008 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – baw 04/2025 reinigungsdienstleistungen sowie pförtner- und hausmeisterdienstleistungen für die standorte karlsruhe und hamburg bundesrepublik deutschland, vertreten durch das bundesministerium für verkehr, dieses wiederum vertreten durch die bundesanstalt für wasserbau (baw) karlsruhe"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-01T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/74578-2026.html">Deutschland – Reinigungsdienste – BAW 04/2025 Reinigungsdienstleistungen sowie Pförtner- und Hausmeisterdienstleistungen für die Standorte Karlsruhe und Hamburg</a></h3>
   <p class="meta">Bundesrepublik Deutschland, vertreten durch das Bundesministerium für Verkehr, dieses wiederum vertreten durch die Bundesanstalt für Wasserbau (BAW), Karlsruhe<br>
-  Auftragswert <strong>2.521.008 €</strong> &middot; Frist <strong>abgelaufen (04.02.2026)</strong> &middot; veröffentlicht 02.02.2026</p>
+  Auftragswert <strong>2.521.008 €</strong> &middot; Frist <strong>04.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 02.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – beschaffung einer gebäudereinigungsdienstleistung für die glemstal-gemeinschaftsschule in schwieberdingen gemeindeverwaltung schwieberdingen schwieberdingen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-19T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/501329-2026.html">Deutschland – Reinigungsdienste – Beschaffung einer Gebäudereinigungsdienstleistung für die Glemstal-Gemeinschaftsschule in Schwieberdingen</a></h3>
   <p class="meta">Gemeindeverwaltung Schwieberdingen, Schwieberdingen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 23 Tage (20.08.2026)</strong> &middot; veröffentlicht 20.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 20.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – unterhaltsreinigung, grundreinigung und glasreinigung stadtverwaltung mühlacker mühlacker"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/496855-2026.html">Deutschland – Reinigungsdienste – Unterhaltsreinigung, Grundreinigung und Glasreinigung</a></h3>
   <p class="meta">Stadtverwaltung Mühlacker, Mühlacker<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungs- und hygienedienste – gebäudereinigung rechtsrheinisch stadt konstanz, personal- und organisationsamt-zentrale vergabestelle konstanz"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/494619-2026.html">Deutschland – Reinigungs- und Hygienedienste – Gebäudereinigung Rechtsrheinisch</a></h3>
   <p class="meta">Stadt Konstanz, Personal- und Organisationsamt-Zentrale Vergabestelle, Konstanz<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>Frist heute</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>28.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

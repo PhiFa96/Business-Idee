@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/126629-2026.html">Deutschland – Reinigung von Schulen – Unterhalts- und Grundreinigung in der GS Wietze, Turnhalle und Mensa im Bürgerhaus</a></h3>
   <p class="meta">Gemeinde Wietze, Wietze<br>
-  Auftragswert <strong>258.317 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.02.2026</p>
+  Auftragswert <strong>258.317 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung 2026-2028 gemeinde wietze wietze"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-28T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/713579-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung 2026-2028</a></h3>
   <p class="meta">Gemeinde Wietze, Wietze<br>
-  Auftragswert <strong>187.923 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.10.2025</p>
+  Auftragswert <strong>187.923 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung 2026-2028 gemeinde wietze wietze"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/535563-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung 2026-2028</a></h3>
   <p class="meta">Gemeinde Wietze, Wietze<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.09.2025)</strong> &middot; veröffentlicht 18.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 18.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – gebäudereinigung in den objekten des landkreis wittmund landkreis wittmund wittmund"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/484096-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung in den Objekten des Landkreis Wittmund</a></h3>
   <p class="meta">Landkreis Wittmund, Wittmund<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – eu-weit offenes verfahren unterhalts- und glasreinigung samtgemeinde bersenbrück bersenbrück"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-05T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/463393-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – EU-weit Offenes Verfahren Unterhalts- und Glasreinigung</a></h3>
   <p class="meta">Samtgemeinde Bersenbrück, Bersenbrück<br>
-  Auftragswert <strong>861.009 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 06.07.2026</p>
+  Auftragswert <strong>861.009 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 06.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

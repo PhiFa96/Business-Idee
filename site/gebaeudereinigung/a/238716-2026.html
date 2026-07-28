@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/320687-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen bei Ausfall der städt. Reinigungskräfte Los 1 Bezirk Nord, Los 2 Bezirk Mitte, Los 3 Bezirk Süd</a></h3>
   <p class="meta">Seestadt Immobilien, Stadthaus 4, Bremerhaven<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 11.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 11.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen bei ausfall der städt. reinigungskräfte los 1 bezirk nord, los 2 bezirk mitte, los 3 bezirk süd seestadt immobilien, stadthaus 4 bremerhaven"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/126504-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen bei Ausfall der städt. Reinigungskräfte Los 1 Bezirk Nord, Los 2 Bezirk Mitte, Los 3 Bezirk Süd</a></h3>
   <p class="meta">Seestadt Immobilien, Stadthaus 4, Bremerhaven<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (25.03.2026)</strong> &middot; veröffentlicht 23.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – innenreinigung friedrich-ebert-schule u.a., seestadt immobilien, stadthaus 4 seestadt immobilien, stadthaus 4 bremerhaven"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-06T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/6300-2026.html">Deutschland – Gebäudereinigung – Innenreinigung Friedrich-Ebert-Schule u.a., Seestadt Immobilien, Stadthaus 4</a></h3>
   <p class="meta">Seestadt Immobilien, Stadthaus 4, Bremerhaven<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – innenreinigung friedrich-ebert-schule u.a. seestadt immobilien, stadthaus 4 bremerhaven"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/3312-2026.html">Deutschland – Gebäudereinigung – Innenreinigung Friedrich-Ebert-Schule u.a.</a></h3>
   <p class="meta">Seestadt Immobilien, Stadthaus 4, Bremerhaven<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (04.02.2026)</strong> &middot; veröffentlicht 06.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>04.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – innenreinigung friedrich-ebert-schule u.a., seestadt immobilien, stadthaus 4 seestadt immobilien, stadthaus 4 bremerhaven"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/3926-2026.html">Deutschland – Gebäudereinigung – Innenreinigung Friedrich-Ebert-Schule u.a., Seestadt Immobilien, Stadthaus 4</a></h3>
   <p class="meta">Seestadt Immobilien, Stadthaus 4, Bremerhaven<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (04.02.2026)</strong> &middot; veröffentlicht 06.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>04.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.01.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-01T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/141538-2026.html">Deutschland – Gebäudereinigung – 2025/3644</a></h3>
   <p class="meta">RehaZentren der Deutschen Rentenversicherung Baden-Württemberg gGmbH, Stuttgart<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (27.02.2026)</strong> &middot; veröffentlicht 02.03.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>27.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 02.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 2025/3644 rehazentren der deutschen rentenversicherung baden-württemberg ggmbh stuttgart"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/127294-2026.html">Deutschland – Gebäudereinigung – 2025/3644</a></h3>
   <p class="meta">RehaZentren der Deutschen Rentenversicherung Baden-Württemberg gGmbH, Stuttgart<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (27.02.2026)</strong> &middot; veröffentlicht 23.02.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>27.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 2025/3644 rehazentren der deutschen rentenversicherung baden-württemberg ggmbh stuttgart"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-08T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/92134-2026.html">Deutschland – Gebäudereinigung – 2025/3644</a></h3>
   <p class="meta">RehaZentren der Deutschen Rentenversicherung Baden-Württemberg gGmbH, Stuttgart<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (20.02.2026)</strong> &middot; veröffentlicht 09.02.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>20.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 09.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 2025/3644 rehazentren der deutschen rentenversicherung baden-württemberg ggmbh stuttgart"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-28T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/66714-2026.html">Deutschland – Gebäudereinigung – 2025/3644</a></h3>
   <p class="meta">RehaZentren der Deutschen Rentenversicherung Baden-Württemberg gGmbH, Stuttgart<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (09.02.2026)</strong> &middot; veröffentlicht 29.01.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>09.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 29.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 2025/3644 rehazentren der deutschen rentenversicherung baden-württemberg ggmbh stuttgart"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/827059-2025.html">Deutschland – Gebäudereinigung – 2025/3644</a></h3>
   <p class="meta">RehaZentren der Deutschen Rentenversicherung Baden-Württemberg gGmbH, Stuttgart<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (09.02.2026)</strong> &middot; veröffentlicht 12.12.2025</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>09.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 12.12.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-13T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/251654-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Justizgebäude in der Stadelbergerstr. 5 und Fürstenfelderstr. 40a in 82256 Fürstenfeldbruck</a></h3>
   <p class="meta">Freistaat Bayern, vertreten durch die Direktorin des Amtsgerichts Fürstenfeldbruck, Fürstenfeldbruck<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 14.04.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 14.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die justizgebäude in der stadelbergerstr. 5 und fürstenfelderstr. 40a in 82256 fürstenfeldbruck freistaat bayern, vertreten durch die direktorin des amtsgerichts fürstenfeldbruck fürstenfeldbruck"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/53248-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Justizgebäude in der Stadelbergerstr. 5 und Fürstenfelderstr. 40a in 82256 Fürstenfeldbruck</a></h3>
   <p class="meta">Freistaat Bayern, vertreten durch die Direktorin des Amtsgerichts Fürstenfeldbruck, Fürstenfeldbruck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (11.02.2026)</strong> &middot; veröffentlicht 23.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und glasreinigung für die justizgebäude in der stadelbergerstr. 5 und fürstenfelderstr. 40a in 82256 fürstenfeldbruck freistaat bayern, vertreten durch die direktorin des amtsgerichts fürstenfeldbruck fürstenfeldbruck"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-14T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/831106-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Justizgebäude in der Stadelbergerstr. 5 und Fürstenfelderstr. 40a in 82256 Fürstenfeldbruck</a></h3>
   <p class="meta">Freistaat Bayern, vertreten durch die Direktorin des Amtsgerichts Fürstenfeldbruck, Fürstenfeldbruck<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (11.02.2026)</strong> &middot; veröffentlicht 15.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.12.2025</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

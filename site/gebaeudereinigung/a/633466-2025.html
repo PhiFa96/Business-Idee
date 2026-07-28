@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/481201-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Dortmund Eving</a></h3>
   <p class="meta">Vergabe und Beschaffungszentrum Dortmund, Dortmund<br>
-  Auftragswert <strong>2.130.521 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>2.130.521 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung dortmund mengede vergabe und beschaffungszentrum dortmund dortmund"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-08T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/475846-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Dortmund Mengede</a></h3>
   <p class="meta">Vergabe und Beschaffungszentrum Dortmund, Dortmund<br>
-  Auftragswert <strong>2.501.056 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 09.07.2026</p>
+  Auftragswert <strong>2.501.056 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 09.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung für die stadtbezirke aplerbeck, brackel, hörde, inn- nord, -ost, -west vergabe und beschaffungszentrum dortmund dortmund"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-04T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/307200-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung für die Stadtbezirke Aplerbeck, Brackel, Hörde, Inn- Nord, -Ost, -West</a></h3>
   <p class="meta">Vergabe und Beschaffungszentrum Dortmund, Dortmund<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.06.2026)</strong> &middot; veröffentlicht 05.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung dortmund lütgendortmund vergabe und beschaffungszentrum dortmund dortmund"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/632742-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Dortmund Lütgendortmund</a></h3>
   <p class="meta">Vergabe und Beschaffungszentrum Dortmund, Dortmund<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (27.10.2025)</strong> &middot; veröffentlicht 26.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 26.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung dortmund mengede vergabe und beschaffungszentrum dortmund dortmund"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/569333-2025.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung Dortmund Mengede</a></h3>
   <p class="meta">Vergabe und Beschaffungszentrum Dortmund, Dortmund<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.09.2025)</strong> &middot; veröffentlicht 01.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 01.09.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

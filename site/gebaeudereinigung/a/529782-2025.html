@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/510553-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung an den Sporthallen Liebigschule, Theodor-Litt-Schule und Sporthalle Gießen-Wieseck - Jahresvertrag -</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Gießen - Haupt- und Personalamt -, Gießen<br>
-  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>337.073 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung an den sporthallen liebigschule, theodor-litt-schule und sporthalle gießen-wieseck - jahresvertrag - magistrat der universitätsstadt gießen - haupt- und personalamt - gießen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/300272-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung an den Sporthallen Liebigschule, Theodor-Litt-Schule und Sporthalle Gießen-Wieseck - Jahresvertrag -</a></h3>
   <p class="meta">Magistrat der Universitätsstadt Gießen - Haupt- und Personalamt -, Gießen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.06.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – büroreinigung – unterhaltsreinigung lra und nebenstellen kreisausschuss des hochtaunuskreises bad homburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/495597-2026.html">Deutschland – Büroreinigung – Unterhaltsreinigung LRA und Nebenstellen</a></h3>
   <p class="meta">Kreisausschuss des Hochtaunuskreises, Bad Homburg<br>
-  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>1.194.036 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – 4 schulen an 5 standorten im bereich des lahn-dill-kreises; unterhalts- und grundreinigung kreisausschuss des lahn-dill-kreises, 12.4 zentrale vergabe- und submissionsstelle wetzlar"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/491164-2026.html">Deutschland – Reinigung von Schulen – 4 Schulen an 5 Standorten im Bereich des Lahn-Dill-Kreises; Unterhalts- und Grundreinigung</a></h3>
   <p class="meta">Kreisausschuss des Lahn-Dill-Kreises, 12.4 Zentrale Vergabe- und Submissionsstelle, Wetzlar<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – main-kinzig-kreis - losweise vergabe von reinigungsdienstleistungen in schulen im main-kinzig-kreis main-kinzig-kreis, vertreten durch den kreisausschuss gelnhausen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/482729-2026.html">Deutschland – Reinigung von Schulen – Main-Kinzig-Kreis - Losweise Vergabe von Reinigungsdienstleistungen in Schulen im Main-Kinzig-Kreis</a></h3>
   <p class="meta">Main-Kinzig-Kreis, vertreten durch den Kreisausschuss, Gelnhausen<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>abgelaufen (15.07.2026)</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>15.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

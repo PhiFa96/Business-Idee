@@ -2,12 +2,12 @@
 <html lang="de"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ausschreibungs-Alert Gebäudereinigung – täglich per E-Mail</title>
-<meta name="description" content="Werktägliche E-Mail mit allen neuen öffentlichen Ausschreibungen für Gebäudereinigung. In den letzten 90 Tagen 1791 Ausschreibungen. 79 € im Monat, erster…">
+<meta name="description" content="Werktägliche E-Mail mit allen neuen öffentlichen Ausschreibungen für Gebäudereinigung. In den letzten 90 Tagen 1804 Ausschreibungen. 79 € im Monat, erster…">
 
 <link rel="canonical" href="https://phifa96.github.io/Business-Idee/gebaeudereinigung/angebot.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Ausschreibungs-Alert Gebäudereinigung – täglich per E-Mail">
-<meta property="og:description" content="Werktägliche E-Mail mit allen neuen öffentlichen Ausschreibungen für Gebäudereinigung. In den letzten 90 Tagen 1791 Ausschreibungen. 79 € im Monat, erster…">
+<meta property="og:description" content="Werktägliche E-Mail mit allen neuen öffentlichen Ausschreibungen für Gebäudereinigung. In den letzten 90 Tagen 1804 Ausschreibungen. 79 € im Monat, erster…">
 <meta property="og:url" content="https://phifa96.github.io/Business-Idee/gebaeudereinigung/angebot.html">
 <meta property="og:locale" content="de_DE">
 <style>:root{color-scheme:light dark;--bg:#f4f4f2;--card:#fff;--fg:#1a1a1a;--muted:#666;--line:#e0e0dc;--accent:#1a4b8c;--accent-fg:#fff;--note:#f0f4fa}
@@ -53,7 +53,7 @@ footer a{color:var(--muted)}
 <p class="sub">Gefiltert auf Ihr Gewerk. Keine Portalsuche, keine verpassten Fristen.</p>
 
 <section class="note">
-  <p><strong>In den letzten 90 Tagen waren das 1791 Ausschreibungen mit zusammen 1.926.312.293 € Auftragsvolumen.</strong></p>
+  <p><strong>In den letzten 90 Tagen waren das 1804 Ausschreibungen mit zusammen 1.926.312.293 € Auftragsvolumen.</strong></p>
   <p class="meta">Zahlen aus dem eigenen Bestand, nachprüfbar im
   <a href="/Business-Idee/gebaeudereinigung/archiv.html">offenen Archiv</a>.</p>
 </section>
@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/431960-2026.html">Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Unterhaltsreinigung) für mehrere Liegenschaften in Bayern (Niederbayern) - VOEK 070-26</a></h3>
   <p class="meta">Bundesanstalt für Immobilienaufgaben, Bonn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 14 Tage (11.08.2026)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>11.08.2026</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – uhr günderrodeschule stadt frankfurt am main, amt für bau und immobilien frankfurt am main"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/436703-2026.html">Deutschland – Gebäudereinigung – UHR Günderrodeschule</a></h3>
   <p class="meta">Stadt Frankfurt am Main, Amt für Bau und Immobilien, Frankfurt am Main<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen im ewe konzern ewe ag oldenburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/436808-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen im EWE Konzern</a></h3>
   <p class="meta">EWE AG, Oldenburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 3809 Tage (31.12.2036)</strong> &middot; veröffentlicht –</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>31.12.2036</strong><span class="rest"></span> &middot; veröffentlicht –</p>
 </article></div>
 
 <h2>Preis</h2>
@@ -116,6 +116,17 @@ eine Ausschreibung erscheint.</p>
   if(!pairs.length) return;
   [].slice.call(document.querySelectorAll('a[data-utm]')).forEach(function(a){
     a.href += (a.href.indexOf('?')>-1?'&':'?')+pairs.join('&');
+  });
+})();</script>
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
   });
 })();</script>
 </body></html>

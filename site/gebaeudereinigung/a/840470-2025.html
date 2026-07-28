@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/199743-2026.html">Deutschland – Gebäudereinigung – 148 - 397 TIN Neubau Tiegelschule, Tiegelstr. 29,45141 Essen, hier: Bauendreinigung</a></h3>
   <p class="meta">148 - 397 TIN, Neubau Tiegelschule, hier: Bauendreinigung, Essen<br>
-  Auftragswert <strong>58.035 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.03.2026</p>
+  Auftragswert <strong>58.035 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – 148 - 397 tin neubau tiegelschule, tiegelstr. 29,45141 essen, hier: bauendreinigung 148 - 397 tin, neubau tiegelschule, hier: bauendreinigung essen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-20T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/45895-2026.html">Deutschland – Gebäudereinigung – 148 - 397 TIN Neubau Tiegelschule, Tiegelstr. 29,45141 Essen, hier: Bauendreinigung</a></h3>
   <p class="meta">148 - 397 TIN, Neubau Tiegelschule, hier: Bauendreinigung, Essen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.01.2026)</strong> &middot; veröffentlicht 21.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.01.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen - lwl-klinikum gütersloh landschaftsverband westfalen-lippe münster"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512903-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen - LWL-Klinikum Gütersloh</a></h3>
   <p class="meta">Landschaftsverband Westfalen-Lippe, Münster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – projekt umbau btf. nord 2. ba - ve505 baustellendienstleistung kölner verkehrs-betriebe ag köln"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508745-2026.html">Deutschland – Gebäudereinigung – Projekt Umbau Btf. Nord 2. BA - VE505 Baustellendienstleistung</a></h3>
   <p class="meta">Kölner Verkehrs-Betriebe AG, Köln<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 27 Tage (24.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhaltsreinigung lwk-nrw bildungszentrum gartenbau und landwirtschaft münster - wolbeck landwirtschaftskammer nordrhein-westfalen münster"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508789-2026.html">Deutschland – Gebäudereinigung – Unterhaltsreinigung LWK-NRW Bildungszentrum Gartenbau und Landwirtschaft Münster - Wolbeck</a></h3>
   <p class="meta">Landwirtschaftskammer Nordrhein-Westfalen, Münster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 34 Tage (31.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>31.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

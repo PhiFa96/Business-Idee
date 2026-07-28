@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/163858-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Stadtteilschule Öjendorf</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>666.644 €</strong> &middot; Frist <strong>abgelaufen (16.03.2026)</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>666.644 €</strong> &middot; Frist <strong>16.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule appelhoff, appelhoff 2, 22309 hamburg behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/166454-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Appelhoff, Appelhoff 2, 22309 Hamburg</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>340.280 €</strong> &middot; Frist <strong>abgelaufen (12.03.2026)</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>340.280 €</strong> &middot; Frist <strong>12.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der schule max-eichholz-ring, max-eichholz-ring 25, 21031 hamburg behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/167100-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Schule Max-Eichholz-Ring, Max-Eichholz-Ring 25, 21031 Hamburg</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>538.800 €</strong> &middot; Frist <strong>abgelaufen (18.03.2026)</strong> &middot; veröffentlicht 10.03.2026</p>
+  Auftragswert <strong>538.800 €</strong> &middot; Frist <strong>18.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der schule max-eichholz-ring, max-eichholz-ring 25, 21031 hamburg behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/75792-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Schule Max-Eichholz-Ring, Max-Eichholz-Ring 25, 21031 Hamburg</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>538.800 €</strong> &middot; Frist <strong>abgelaufen (18.03.2026)</strong> &middot; veröffentlicht 03.02.2026</p>
+  Auftragswert <strong>538.800 €</strong> &middot; Frist <strong>18.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 03.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung der grundschule appelhoff, appelhoff 2, 22309 hamburg behörde für finanzen und bezirke (finanzbehörde) hamburg"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/77172-2026.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung der Grundschule Appelhoff, Appelhoff 2, 22309 Hamburg</a></h3>
   <p class="meta">Behörde für Finanzen und Bezirke (Finanzbehörde), Hamburg<br>
-  Auftragswert <strong>340.280 €</strong> &middot; Frist <strong>abgelaufen (12.03.2026)</strong> &middot; veröffentlicht 03.02.2026</p>
+  Auftragswert <strong>340.280 €</strong> &middot; Frist <strong>12.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 03.02.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

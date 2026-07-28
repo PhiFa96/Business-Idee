@@ -67,7 +67,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/492414-2026.html">Deutschland – Gebäudereinigung – EU-weit Offens Verfahren der Stadt Barntrup für die laufende Unterhaltsreinigung, optionale Sonder- und Grundreinigung</a></h3>
   <p class="meta">Stadt Barntrup, Barntrup<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 22 Tage (19.08.2026)</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article>
 </div>
 <footer>
@@ -77,5 +77,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

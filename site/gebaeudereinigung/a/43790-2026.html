@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-04T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/307688-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung für den Landkreis Bautzen</a></h3>
   <p class="meta">Landratsamt Bautzen, Bautzen<br>
-  Auftragswert <strong>5 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.05.2026</p>
+  Auftragswert <strong>5 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung für den landkreis bautzen landratsamt bautzen bautzen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/155851-2026.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung für den Landkreis Bautzen</a></h3>
   <p class="meta">Landratsamt Bautzen, Bautzen<br>
-  Auftragswert <strong>5 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.03.2026</p>
+  Auftragswert <strong>5 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung für den landkreis bautzen - oberschule und sporthalle arnsdorf landratsamt bautzen bautzen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/138335-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung für den Landkreis Bautzen - Oberschule und Sporthalle Arnsdorf</a></h3>
   <p class="meta">Landratsamt Bautzen, Bautzen<br>
-  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.02.2026</p>
+  Auftragswert <strong>1 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- und grundreinigung für den landkreis bautzen - oberschule und sporthalle arnsdorf landratsamt bautzen bautzen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/765957-2025.html">Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigung für den Landkreis Bautzen - Oberschule und Sporthalle Arnsdorf</a></h3>
   <p class="meta">Landratsamt Bautzen, Bautzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (19.12.2025)</strong> &middot; veröffentlicht 19.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>19.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 19.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund- und glasreinigung für den landkreis bautzen landratsamt bautzen bautzen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-27T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/711361-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glasreinigung für den Landkreis Bautzen</a></h3>
   <p class="meta">Landratsamt Bautzen, Bautzen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.12.2025)</strong> &middot; veröffentlicht 28.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 28.10.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

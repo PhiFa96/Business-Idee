@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/262923-2026.html">Deutschland – Reinigungsdienste – Küchen-und Reinigungsleistungen im Kasinobetrieb des Hessischen Rundfunks am Standort Frankfurt am Main</a></h3>
   <p class="meta">Hessischer Rundfunk, Anstalt des Öffentlichen Rechts, Vergabestelle, Frankfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – reinigungsdienstleistungen in den gebäuden des hessischen rundfunks am standort frankfurt am main hessischer rundfunk, anstalt des öffentlichen rechts, vergabestelle frankfurt"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/220594-2026.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in den Gebäuden des Hessischen Rundfunks am Standort Frankfurt am Main</a></h3>
   <p class="meta">Hessischer Rundfunk, Anstalt des Öffentlichen Rechts, Vergabestelle, Frankfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 31.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 31.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – reinigungsdienstleistungen in den gebäuden des hessischen rundfunks am standort frankfurt am main hessischer rundfunk, anstalt des öffentlichen rechts, vergabestelle frankfurt"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/33528-2026.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in den Gebäuden des Hessischen Rundfunks am Standort Frankfurt am Main</a></h3>
   <p class="meta">Hessischer Rundfunk, Anstalt des Öffentlichen Rechts, Vergabestelle, Frankfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.02.2026)</strong> &middot; veröffentlicht 16.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – reinigungsdienstleistungen in den gebäuden des hessischen rundfunks am standort frankfurt am main hessischer rundfunk, anstalt des öffentlichen rechts, vergabestelle frankfurt"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/849523-2025.html">Deutschland – Reinigungsdienste – Reinigungsdienstleistungen in den Gebäuden des Hessischen Rundfunks am Standort Frankfurt am Main</a></h3>
   <p class="meta">Hessischer Rundfunk, Anstalt des Öffentlichen Rechts, Vergabestelle, Frankfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (26.01.2026)</strong> &middot; veröffentlicht 19.12.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>26.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigungsdienste – pro-2880457089 - provision of cleaning services all buildings european central bank frankfurt am main"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512256-2026.html">Deutschland – Reinigungsdienste – PRO-2880457089 - Provision of Cleaning Services all buildings</a></h3>
   <p class="meta">European Central Bank, Frankfurt am Main<br>
-  Auftragswert <strong>16.500.000 €</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>16.500.000 €</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

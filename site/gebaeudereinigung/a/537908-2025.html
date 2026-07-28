@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/655508-2025.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Salzlandkreis, Reinigungsleistungen in 3 Schulobjekten und 4 Turnhallen in Bernburg (Saale)</a></h3>
   <p class="meta">Salzlandkreis, Bernburg (Saale)<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 07.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 07.10.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – abwasser- und abfallbeseitigungs-, reinigungs- und umweltschutzdienste – glas- und rahmenreinigung sowie unterhaltsreinigung in den schwimmhallen, strand- und freibädern der landeshauptstadt magdeburg landeshauptstadt magdeburg, die oberbürgermeisterin magdeburg"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-28T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/716097-2025.html">Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Glas- und Rahmenreinigung sowie Unterhaltsreinigung in den Schwimmhallen, Strand- und Freibädern der Landeshauptstadt Magdeburg</a></h3>
   <p class="meta">Landeshauptstadt Magdeburg, Die Oberbürgermeisterin, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.12.2025)</strong> &middot; veröffentlicht 29.10.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 29.10.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund-, glasreinigung und küchenleistungen los 1 - 11 für gebäude der stadt staßfurt stadt staßfurt staßfurt"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/617746-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund-, Glasreinigung und Küchenleistungen Los 1 - 11 für Gebäude der Stadt Staßfurt</a></h3>
   <p class="meta">Stadt Staßfurt, Staßfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund-, glasreinigung und küchenleistungen los 1 - 11 für gebäude der stadt staßfurt stadt staßfurt staßfurt"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/555596-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund-, Glasreinigung und Küchenleistungen Los 1 - 11 für Gebäude der Stadt Staßfurt</a></h3>
   <p class="meta">Stadt Staßfurt, Staßfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (25.09.2025)</strong> &middot; veröffentlicht 26.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 26.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts-, grund-, glasreinigung und küchenleistungen los 1 - 11 für gebäude der stadt staßfurt stadt staßfurt staßfurt"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-24T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/554011-2025.html">Deutschland – Gebäudereinigung – Unterhalts-, Grund-, Glasreinigung und Küchenleistungen Los 1 - 11 für Gebäude der Stadt Staßfurt</a></h3>
   <p class="meta">Stadt Staßfurt, Staßfurt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (23.09.2025)</strong> &middot; veröffentlicht 25.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>23.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 25.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

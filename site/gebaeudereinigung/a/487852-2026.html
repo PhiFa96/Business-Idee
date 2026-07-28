@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/488825-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigungn in Schuleinrichtungen 2 Lose</a></h3>
   <p class="meta">Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin, Berlin<br>
-  Auftragswert <strong>4.375.806 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>4.375.806 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigungn in schuleinrichtungen 2 lose land berlin, vertreten durch das bezirksamt treptow-köpenick von berlin berlin"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/321956-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigungn in Schuleinrichtungen 2 Lose</a></h3>
   <p class="meta">Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin, Berlin<br>
-  Auftragswert <strong>4.714.790 €</strong> &middot; Frist <strong>abgelaufen (26.05.2026)</strong> &middot; veröffentlicht 11.05.2026</p>
+  Auftragswert <strong>4.714.790 €</strong> &middot; Frist <strong>26.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 11.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in schuleinrichtungen 6 lose land berlin, vertreten durch das bezirksamt treptow-köpenick von berlin berlin"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/312303-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in Schuleinrichtungen 6 Lose</a></h3>
   <p class="meta">Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin, Berlin<br>
-  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>abgelaufen (01.06.2026)</strong> &middot; veröffentlicht 07.05.2026</p>
+  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>01.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in schuleinrichtungen 6 lose land berlin, vertreten durch das bezirksamt treptow-köpenick von berlin berlin"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-04T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/306141-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in Schuleinrichtungen 6 Lose</a></h3>
   <p class="meta">Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin, Berlin<br>
-  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>abgelaufen (01.06.2026)</strong> &middot; veröffentlicht 05.05.2026</p>
+  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>01.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 05.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudereinigung in schuleinrichtungen 6 lose land berlin, vertreten durch das bezirksamt treptow-köpenick von berlin berlin"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-25T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/135331-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung in Schuleinrichtungen 6 Lose</a></h3>
   <p class="meta">Land Berlin, vertreten durch das Bezirksamt Treptow-Köpenick von Berlin, Berlin<br>
-  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>abgelaufen (03.03.2026)</strong> &middot; veröffentlicht 26.02.2026</p>
+  Auftragswert <strong>11.794.820 €</strong> &middot; Frist <strong>03.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 26.02.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

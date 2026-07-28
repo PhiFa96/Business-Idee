@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/93642-2026.html">Deutschland – Gebäudereinigung – Unterhalts- und Sonderreinigung FUB Berlin</a></h3>
   <p class="meta">Freie Universität Berlin, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 10.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 10.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – büroreinigung – reinigungsleistungen für die außenstandorte der banst pt bundesanstalt für post und telekommunikation - deutsche bundespost bonn"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/514228-2026.html">Deutschland – Büroreinigung – Reinigungsleistungen für die Außenstandorte der BAnst PT</a></h3>
   <p class="meta">Bundesanstalt für Post und Telekommunikation - Deutsche Bundespost, Bonn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 30 Tage (27.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – umweltfreundliche glas-, jalousie- und unterhaltsreinigung in liegenschaften des deutschen bundestages deutscher bundestag - vergabereferat berlin"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512113-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Umweltfreundliche Glas-, Jalousie- und Unterhaltsreinigung in Liegenschaften des Deutschen Bundestages</a></h3>
   <p class="meta">Deutscher Bundestag - Vergabereferat, Berlin<br>
-  Auftragswert <strong>4.188.065 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>4.188.065 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – komplett- oder teilbauleistungen im hochbau sowie tiefbauarbeiten – öpp-projekt „postblockareal nord (pbn), berlin-mitte | neubau für ministerielle nutzung&quot; - voek 637-25 bundesanstalt für immobilienaufgaben bonn"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/509311-2026.html">Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – ÖPP-Projekt „Postblockareal Nord (PBN), Berlin-Mitte | Neubau für ministerielle Nutzung&quot; - VOEK 637-25</a></h3>
   <p class="meta">Bundesanstalt für Immobilienaufgaben, Bonn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 49 Tage (15.09.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – technische industriereinigung vam berliner stadtreinigungsbetriebe aör berlin"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/505554-2026.html">Deutschland – Gebäudereinigung – Technische Industriereinigung VAM</a></h3>
   <p class="meta">Berliner Stadtreinigungsbetriebe AöR, Berlin<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 48 Tage (14.09.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.09.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

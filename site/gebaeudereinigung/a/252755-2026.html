@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-07T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/391391-2026.html">Deutschland – Gebäudereinigung – SV-MAL-260430-002 - Reinigung Haltestellen und weitere oberirdische Anlagen Bus und Straßenbahn im nördlichen bzw. südlichen Stadtgebiet (partiell Landkreis München)</a></h3>
   <p class="meta">Stadtwerke München GmbH, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (15.06.2026)</strong> &middot; veröffentlicht 08.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>15.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 08.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – sv-mal-260430-002 - reinigung haltestellen und weitere oberirdische anlagen bus und straßenbahn im nördlichen bzw. südlichen stadtgebiet (partiell landkreis münchen) stadtwerke münchen gmbh münchen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/314742-2026.html">Deutschland – Gebäudereinigung – SV-MAL-260430-002 - Reinigung Haltestellen und weitere oberirdische Anlagen Bus und Straßenbahn im nördlichen bzw. südlichen Stadtgebiet (partiell Landkreis München)</a></h3>
   <p class="meta">Stadtwerke München GmbH, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (08.06.2026)</strong> &middot; veröffentlicht 07.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>08.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 07.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – sv-sba-251024-002 - unterhaltsreinigung swz m-quartier stadtwerke münchen gmbh münchen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/157480-2026.html">Deutschland – Gebäudereinigung – SV-SBA-251024-002 - Unterhaltsreinigung SWZ M-Quartier</a></h3>
   <p class="meta">Stadtwerke München GmbH, München<br>
-  Auftragswert <strong>10 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 06.03.2026</p>
+  Auftragswert <strong>10 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 06.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von transportmitteln – sv-phe-251112-003 - brandschutzreinigung fahrtreppen u-bahnbereich stadtwerke münchen gmbh münchen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-16T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/759308-2025.html">Deutschland – Reinigung von Transportmitteln – SV-PHE-251112-003 - Brandschutzreinigung Fahrtreppen U-Bahnbereich</a></h3>
   <p class="meta">Stadtwerke München GmbH, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.12.2025)</strong> &middot; veröffentlicht 17.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 17.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – sv-sba-251024-002 - unterhaltsreinigung swz m-quartier stadtwerke münchen gmbh münchen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-13T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/757457-2025.html">Deutschland – Gebäudereinigung – SV-SBA-251024-002 - Unterhaltsreinigung SWZ M-Quartier</a></h3>
   <p class="meta">Stadtwerke München GmbH, München<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (02.12.2025)</strong> &middot; veröffentlicht 14.11.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>02.12.2025</strong><span class="rest"></span> &middot; veröffentlicht 14.11.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

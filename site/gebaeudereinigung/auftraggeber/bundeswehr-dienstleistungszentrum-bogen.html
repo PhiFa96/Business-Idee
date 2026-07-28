@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/507235-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudereinigung (Unterhalts- und Glasflächenreinigung) in der Nordgau-Kaserne Cham und Standortsportanlage Cham ab 01.01.2027</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Bogen, Bogen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 1 Tag (29.07.2026)</strong> &middot; veröffentlicht 22.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 22.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäudereinigung (unterhalts- und glasflächenreinigung) in der bajuwarenkaserne in regensburg bundeswehr-dienstleistungszentrum bogen bogen"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/354636-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudereinigung (Unterhalts- und Glasflächenreinigung) in der Bajuwarenkaserne in Regensburg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Bogen, Bogen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 26.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 26.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – wohnungs-, gebäude- und fensterreinigung – gebäudereinigung (unterhalts- und glasflächenreinigung) in der bajuwarenkaserne in regensburg bundeswehr-dienstleistungszentrum bogen bogen"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/158157-2026.html">Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudereinigung (Unterhalts- und Glasflächenreinigung) in der Bajuwarenkaserne in Regensburg</a></h3>
   <p class="meta">Bundeswehr-Dienstleistungszentrum Bogen, Bogen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.04.2026)</strong> &middot; veröffentlicht 06.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.03.2026</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

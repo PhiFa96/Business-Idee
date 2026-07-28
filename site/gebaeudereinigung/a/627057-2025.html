@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-16T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/497630-2026.html">Deutschland – Gebäudereinigung – Neubau GemS Neunkirchen - Gebäudereinigung</a></h3>
   <p class="meta">Landkreis Neunkirchen, Ottweiler<br>
-  Auftragswert <strong>442.105 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 17.07.2026</p>
+  Auftragswert <strong>442.105 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 17.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung dienstgebäude mbk &amp; staatl. förderschule lebach ministerium für bildung und kultur saarbrücken"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-14T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/489734-2026.html">Deutschland – Reinigung von Schulen – Reinigung Dienstgebäude MBK &amp; Staatl. Förderschule Lebach</a></h3>
   <p class="meta">Ministerium für Bildung und Kultur, Saarbrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 17 Tage (14.08.2026)</strong> &middot; veröffentlicht 15.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>14.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 15.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – spiesen-elversberg - reinigungsleistungen inkl. glasreinigung 2026 - 2028 gemeinde spiesen-elversberg spiesen-elversberg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-06-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/382423-2026.html">Deutschland – Reinigungsdienste – Spiesen-Elversberg - Reinigungsleistungen inkl. Glasreinigung 2026 - 2028</a></h3>
   <p class="meta">Gemeinde Spiesen-Elversberg, Spiesen-Elversberg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.07.2026)</strong> &middot; veröffentlicht 04.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.07.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungsdienste – gebäudereinigung in den objekten des landkreises saarlouis landkreis saarlouis saarlouis"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-31T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/373542-2026.html">Deutschland – Reinigungsdienste – Gebäudereinigung in den Objekten des Landkreises Saarlouis</a></h3>
   <p class="meta">Landkreis Saarlouis, Saarlouis<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (30.06.2026)</strong> &middot; veröffentlicht 01.06.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>30.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 01.06.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – unterhalts- glas- und außenbereichsreinigung für das saarländische landesarchiv zentrale vertrags- und vergabestelle im geschäftsbereich der staatskanzlei des saarlandes saarbrücken"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-20T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/349980-2026.html">Deutschland – Gebäudereinigung – Unterhalts- Glas- und Außenbereichsreinigung für das Saarländische Landesarchiv</a></h3>
   <p class="meta">Zentrale Vertrags- und Vergabestelle im Geschäftsbereich der Staatskanzlei des Saarlandes, Saarbrücken<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.06.2026)</strong> &middot; veröffentlicht 21.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 21.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

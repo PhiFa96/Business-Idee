@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/291939-2026.html">Deutschland – Gebäudereinigung – BLB NRW D/ Düsseldorf (WE1721-1)/ 2. Bauabschnitt Polizeipräsidium: Unterhaltsreinigung</a></h3>
   <p class="meta">Bau- und Liegenschaftsbetrieb NRW Düsseldorf, Düsseldorf<br>
-  Auftragswert <strong>227.284 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.04.2026</p>
+  Auftragswert <strong>227.284 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.04.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – blb nrw d/düsseldorf (we3642-1)/ rotationsgebäude polizei: unterhaltsreinigung bau- und liegenschaftsbetrieb nrw düsseldorf düsseldorf"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/294746-2026.html">Deutschland – Gebäudereinigung – BLB NRW D/Düsseldorf (WE3642-1)/ Rotationsgebäude Polizei: Unterhaltsreinigung</a></h3>
   <p class="meta">Bau- und Liegenschaftsbetrieb NRW Düsseldorf, Düsseldorf<br>
-  Auftragswert <strong>211.003 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.04.2026</p>
+  Auftragswert <strong>211.003 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – blb nrw d/düsseldorf (we3642-1)/ rotationsgebäude polizei: unterhaltsreinigung bau- und liegenschaftsbetrieb nrw düsseldorf düsseldorf"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-23T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/130379-2026.html">Deutschland – Gebäudereinigung – BLB NRW D/Düsseldorf (WE3642-1)/ Rotationsgebäude Polizei: Unterhaltsreinigung</a></h3>
   <p class="meta">Bau- und Liegenschaftsbetrieb NRW Düsseldorf, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (25.03.2026)</strong> &middot; veröffentlicht 24.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsleistungen - lwl-klinikum gütersloh landschaftsverband westfalen-lippe münster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-23T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/512903-2026.html">Deutschland – Gebäudereinigung – Reinigungsleistungen - LWL-Klinikum Gütersloh</a></h3>
   <p class="meta">Landschaftsverband Westfalen-Lippe, Münster<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 28 Tage (25.08.2026)</strong> &middot; veröffentlicht 24.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>25.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 24.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – projekt umbau btf. nord 2. ba - ve505 baustellendienstleistung kölner verkehrs-betriebe ag köln"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/508745-2026.html">Deutschland – Gebäudereinigung – Projekt Umbau Btf. Nord 2. BA - VE505 Baustellendienstleistung</a></h3>
   <p class="meta">Kölner Verkehrs-Betriebe AG, Köln<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 27 Tage (24.08.2026)</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>24.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

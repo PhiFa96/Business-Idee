@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-22T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/124795-2026.html">Deutschland – Gebäudereinigung – UR GS Käthe-Paulus-Schule und JZ Kronsberg</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.04.2026)</strong> &middot; veröffentlicht 23.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 23.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – ur gs tegelweg landeshauptstadt hannover - fachbereich personal und organisation hannover"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/118594-2026.html">Deutschland – Gebäudereinigung – UR GS Tegelweg</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (07.04.2026)</strong> &middot; veröffentlicht 19.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>07.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 19.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – ur sz anderten landeshauptstadt hannover - fachbereich personal und organisation hannover"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-10T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/98694-2026.html">Deutschland – Gebäudereinigung – UR SZ Anderten</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (27.03.2026)</strong> &middot; veröffentlicht 11.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>27.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 11.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – unterhaltsreinigung grundschule groß-buchholzer-kirchweg landeshauptstadt hannover - fachbereich personal und organisation hannover"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-27T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/791856-2025.html">Deutschland – Reinigung von Schulen – Unterhaltsreinigung Grundschule Groß-Buchholzer-Kirchweg</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>254.473 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 28.11.2025</p>
+  Auftragswert <strong>254.473 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 28.11.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – ur gs johanna-friesen-schule landeshauptstadt hannover - fachbereich personal und organisation hannover"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-10-26T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/706613-2025.html">Deutschland – Reinigung von Schulen – UR GS Johanna-Friesen-Schule</a></h3>
   <p class="meta">Landeshauptstadt Hannover - Fachbereich Personal und Organisation, Hannover<br>
-  Auftragswert <strong>266.163 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.10.2025</p>
+  Auftragswert <strong>266.163 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.10.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

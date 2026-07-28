@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-07T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/811362-2025.html">Deutschland – Überlassung von Personal einschließlich Zeitarbeitskräfte – Rahmenvertrag über die Arbeitnehmerüberlassung Helfer/Lader zur Durchführung von bestimmten Arbeiten in der SWE Stadtwirtschaft GmbH</a></h3>
   <p class="meta">SWE Stadtwirtschaft GmbH, Erfurt<br>
-  Auftragswert <strong>947.245 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 08.12.2025</p>
+  Auftragswert <strong>947.245 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 08.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – baustelleneinrichtung – baulogistik und baustelleneinrichtung staatliches bauamt erlangen-nürnberg, technische geschäftsleitung, sg bau erlangen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/221393-2026.html">Deutschland – Baustelleneinrichtung – Baulogistik und Baustelleneinrichtung</a></h3>
   <p class="meta">Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau, Erlangen<br>
-  Auftragswert <strong>2.505.670 €</strong> &middot; Frist <strong>abgelaufen (05.05.2026)</strong> &middot; veröffentlicht 31.03.2026</p>
+  Auftragswert <strong>2.505.670 €</strong> &middot; Frist <strong>05.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 31.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – allgemeine personaldienstleistungen für die öffentliche verwaltung – betrieb des parkbades durch einen personaldienstleister in der saison 2026 magistrat der kreisstadt limburg a. d. lahn limburg a. d. lahn"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-15T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/110131-2026.html">Deutschland – Allgemeine Personaldienstleistungen für die öffentliche Verwaltung – Betrieb des Parkbades durch einen Personaldienstleister in der Saison 2026</a></h3>
   <p class="meta">Magistrat der Kreisstadt Limburg a. d. Lahn, Limburg a. d. Lahn<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.03.2026)</strong> &middot; veröffentlicht 16.02.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.03.2026</strong><span class="rest"></span> &middot; veröffentlicht 16.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – reinigungsdienstleistungen (unterhalts- und glasreinigung) für das behördenzentrum ilmenau thüringer landesamt für bau und verkehr erfurt"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-15T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/491463-2026.html">Deutschland – Gebäudereinigung – Reinigungsdienstleistungen (Unterhalts- und Glasreinigung) für das Behördenzentrum Ilmenau</a></h3>
   <p class="meta">Thüringer Landesamt für Bau und Verkehr, Erfurt<br>
-  Auftragswert <strong>578.422 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 16.07.2026</p>
+  Auftragswert <strong>578.422 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 16.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – reinigung von schulen – reinigung grundschule thomas müntzer, sporthalle gehren landratsamt ilm-kreis arnstadt"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/480022-2026.html">Deutschland – Reinigung von Schulen – Reinigung Grundschule Thomas Müntzer, Sporthalle Gehren</a></h3>
   <p class="meta">Landratsamt Ilm-Kreis, Arnstadt<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>noch 23 Tage (20.08.2026)</strong> &middot; veröffentlicht 13.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.08.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.07.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

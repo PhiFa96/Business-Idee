@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-12T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/105723-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Am Pferdemarkt 23-26, Neubau SÖR Betriebszentrale, Baureinigung</a></h3>
   <p class="meta">Stadt Nürnberg Hochbauamt SöR, Nürnberg<br>
-  Auftragswert <strong>149.999 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 13.02.2026</p>
+  Auftragswert <strong>149.999 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 13.02.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – baureinigung stadt weißenburg weißenburg i. bay."
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/364437-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Baureinigung</a></h3>
   <p class="meta">Stadt Weißenburg, Weißenburg i. Bay.<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.06.2026)</strong> &middot; veröffentlicht 28.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 28.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – baufertigstellung – gemeinde rottach-egern - neubau rathaus - bauendreinigung gemeinde rottach-egern rottach-egern"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-26T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/361716-2026.html">Deutschland – Baufertigstellung – Gemeinde Rottach-Egern - Neubau Rathaus - Bauendreinigung</a></h3>
   <p class="meta">Gemeinde Rottach-Egern, Rottach-Egern<br>
-  Auftragswert <strong>6.469 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 27.05.2026</p>
+  Auftragswert <strong>6.469 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 27.05.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – zv - kommunalbetriebe neustadt gmbh - wohnbebauung märchenpark - baureinigung kommunalbetriebe neustadt gmbh neustadt b. coburg"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-28T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/292239-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – ZV - Kommunalbetriebe Neustadt GmbH - Wohnbebauung Märchenpark - Baureinigung</a></h3>
   <p class="meta">Kommunalbetriebe Neustadt GmbH, Neustadt b. Coburg<br>
-  Auftragswert <strong>21.008 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 29.04.2026</p>
+  Auftragswert <strong>21.008 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 29.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – baufertigstellung – gemeinde rottach-egern - neubau rathaus - bauendreinigung gemeinde rottach-egern rottach-egern"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/187982-2026.html">Deutschland – Baufertigstellung – Gemeinde Rottach-Egern - Neubau Rathaus - Bauendreinigung</a></h3>
   <p class="meta">Gemeinde Rottach-Egern, Rottach-Egern<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (20.04.2026)</strong> &middot; veröffentlicht 18.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>20.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.03.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

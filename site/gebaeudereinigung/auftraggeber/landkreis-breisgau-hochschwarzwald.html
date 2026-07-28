@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-04T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/808124-2025.html">Deutschland – Reinigung von Schulen – Unterhalts - und Grundreinigung für Kreisgymnasium Bad Krozingen, Südring 5, 79189 Bad Krozingen</a></h3>
   <p class="meta">Landkreis Breisgau-Hochschwarzwald, Freiburg im Breisgau<br>
-  Auftragswert <strong>137.525 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 05.12.2025</p>
+  Auftragswert <strong>137.525 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 05.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhalts - und grundreinigung für kreisgymnasium bad krozingen, südring 5, 79189 bad krozingen landkreis breisgau-hochschwarzwald freiburg im breisgau"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-09-24T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/627972-2025.html">Deutschland – Reinigung von Schulen – Unterhalts - und Grundreinigung für Kreisgymnasium Bad Krozingen, Südring 5, 79189 Bad Krozingen</a></h3>
   <p class="meta">Landkreis Breisgau-Hochschwarzwald, Freiburg im Breisgau<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.10.2025)</strong> &middot; veröffentlicht 25.09.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 25.09.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigung von schulen – unterhalts - und grundreinigung für kreisgymnasium bad krozingen, südring 5, 79189 bad krozingen landkreis breisgau-hochschwarzwald freiburg im breisgau"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-26T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/558887-2025.html">Deutschland – Reinigung von Schulen – Unterhalts - und Grundreinigung für Kreisgymnasium Bad Krozingen, Südring 5, 79189 Bad Krozingen</a></h3>
   <p class="meta">Landkreis Breisgau-Hochschwarzwald, Freiburg im Breisgau<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (01.10.2025)</strong> &middot; veröffentlicht 27.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>01.10.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.08.2025</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

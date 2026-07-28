@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-03T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/149808-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigung der PWC-Anlagen entlang BAB im UB der AM Dorsten (Los 1), AM Gelsenkirchen + Recklinghausen (Los 2) und AM Kamen (Los 3) in 2026-27</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Westfalen, Hamm<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 04.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 04.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – reinigung der pwc-anlagen entlang bab im ub der am dorsten (los 1), am gelsenkirchen + recklinghausen (los 2) und am kamen (los 3) in 2026-27 die autobahn gmbh des bundes - nl westfalen hamm"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-11T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/17666-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigung der PWC-Anlagen entlang BAB im UB der AM Dorsten (Los 1), AM Gelsenkirchen + Recklinghausen (Los 2) und AM Kamen (Los 3) in 2026-27</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Westfalen, Hamm<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (05.02.2026)</strong> &middot; veröffentlicht 12.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>05.02.2026</strong><span class="rest"></span> &middot; veröffentlicht 12.01.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – reinigungs- und hygienedienste – reinigung der pwc-anlagen entlang bab im ub der am dorsten (los 1), am gelsenkirchen + recklinghausen (los 2) und am kamen (los 3) in 2026-27 die autobahn gmbh des bundes - nl westfalen hamm"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2026-01-05T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/4642-2026.html">Deutschland – Reinigungs- und Hygienedienste – Reinigung der PWC-Anlagen entlang BAB im UB der AM Dorsten (Los 1), AM Gelsenkirchen + Recklinghausen (Los 2) und AM Kamen (Los 3) in 2026-27</a></h3>
   <p class="meta">Die Autobahn GmbH des Bundes - NL Westfalen, Hamm<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (22.01.2026)</strong> &middot; veröffentlicht 06.01.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>22.01.2026</strong><span class="rest"></span> &middot; veröffentlicht 06.01.2026</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

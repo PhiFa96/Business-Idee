@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-30T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/219899-2026.html">Deutschland – Gebäudereinigung – Gebäudeinnenreinigung Los 2 Funktionsgebäude</a></h3>
   <p class="meta">Fachhochschule für Finanzen des Landes Brandenburg, Königs Wusterhausen<br>
-  Auftragswert <strong>670.227 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 31.03.2026</p>
+  Auftragswert <strong>670.227 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 31.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudeinnenreinigung los 1 unterkunftsgebäude fachhochschule für finanzen des landes brandenburg königs wusterhausen"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/217393-2026.html">Deutschland – Gebäudereinigung – Gebäudeinnenreinigung Los 1 Unterkunftsgebäude</a></h3>
   <p class="meta">Fachhochschule für Finanzen des Landes Brandenburg, Königs Wusterhausen<br>
-  Auftragswert <strong>598.813 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 30.03.2026</p>
+  Auftragswert <strong>598.813 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 30.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – gebäudereinigung – gebäudereinigung los 3 glas- und jalousiereinigung fachhochschule für finanzen des landes brandenburg königs wusterhausen"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-29T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/218170-2026.html">Deutschland – Gebäudereinigung – Gebäudereinigung Los 3 Glas- und Jalousiereinigung</a></h3>
   <p class="meta">Fachhochschule für Finanzen des Landes Brandenburg, Königs Wusterhausen<br>
-  Auftragswert <strong>74.215 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 30.03.2026</p>
+  Auftragswert <strong>74.215 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 30.03.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudeinnenreinigung los 2 funktionsgebäude fachhochschule für finanzen des landes brandenburg königs wusterhausen"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-26T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/557947-2025.html">Deutschland – Gebäudereinigung – Gebäudeinnenreinigung Los 2 Funktionsgebäude</a></h3>
   <p class="meta">Fachhochschule für Finanzen des Landes Brandenburg, Königs Wusterhausen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.09.2025)</strong> &middot; veröffentlicht 27.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.08.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – gebäudeinnenreinigung los 1 unterkunftsgebäude fachhochschule für finanzen des landes brandenburg königs wusterhausen"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-26T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/559080-2025.html">Deutschland – Gebäudereinigung – Gebäudeinnenreinigung Los 1 Unterkunftsgebäude</a></h3>
   <p class="meta">Fachhochschule für Finanzen des Landes Brandenburg, Königs Wusterhausen<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (09.09.2025)</strong> &middot; veröffentlicht 27.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>09.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 27.08.2025</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

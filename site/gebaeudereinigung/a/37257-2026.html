@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-18T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/190689-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – TGZ_IH_Baureinigung</a></h3>
   <p class="meta">TGZ Halle Technologie- und Gründerzentrum Halle GmbH, Halle (Saale)<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 19.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 19.03.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauleistungen im hochbau – gaz-umnutzung autohaus zum feuerwehrtechnischen zentrum und neubau leitstelle _ los 16: gebäudereinigungsarbeiten burgenlandkreis naumburg (saale)"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-02-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/95017-2026.html">Deutschland – Bauleistungen im Hochbau – GAZ-Umnutzung Autohaus zum Feuerwehrtechnischen Zentrum und Neubau Leitstelle _ Los 16: Gebäudereinigungsarbeiten</a></h3>
   <p class="meta">Burgenlandkreis, Naumburg (Saale)<br>
-  Auftragswert <strong>24.932 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 10.02.2026</p>
+  Auftragswert <strong>24.932 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 10.02.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – baufertigstellung – lvermgeo sachsen-anhalt - ve23 (baureinigung) immobilien- und projektmanagementgesellschaft sachsen-anhalt mbh magdeburg"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-25T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/554856-2025.html">Deutschland – Baufertigstellung – LVermGeo Sachsen-Anhalt - VE23 (Baureinigung)</a></h3>
   <p class="meta">Immobilien- und Projektmanagementgesellschaft Sachsen-Anhalt mbH, Magdeburg<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 26.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 26.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – umgestaltung osz elsterwerda zum bildungszentrum elbe-elster, 2. ba, los 13 - baureinigungsarbeiten landkreis elbe-elster herzberg/elster"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511460-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Umgestaltung OSZ Elsterwerda zum Bildungszentrum Elbe-Elster, 2. BA, Los 13 - Baureinigungsarbeiten</a></h3>
   <p class="meta">Landkreis Elbe-Elster, Herzberg/Elster<br>
-  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>14.193 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – sonstige baufertigstellungsarbeiten – baureinigung stadt weißenburg weißenburg i. bay."
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-27T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/364437-2026.html">Deutschland – Sonstige Baufertigstellungsarbeiten – Baureinigung</a></h3>
   <p class="meta">Stadt Weißenburg, Weißenburg i. Bay.<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.06.2026)</strong> &middot; veröffentlicht 28.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 28.05.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

@@ -68,7 +68,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-09T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/819371-2025.html">Deutschland – Büroreinigung – Unterhalts- und Grundreinigung im Bürogebäude Leipzig der LMBV 2026, optional 2027</a></h3>
   <p class="meta">Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH, Leipzig<br>
-  Auftragswert <strong>220.940 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 10.12.2025</p>
+  Auftragswert <strong>220.940 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 10.12.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – büroreinigung – unterhalts- und grundreinigung im bürogebäude leipzig der lmbv 2026, optional 2027 lausitzer und mitteldeutsche bergbau-verwaltungsgesellschaft mbh leipzig"
@@ -77,7 +77,7 @@ footer a{color:var(--muted)}
   data-published="2025-12-02T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/802978-2025.html">Deutschland – Büroreinigung – Unterhalts- und Grundreinigung im Bürogebäude Leipzig der LMBV 2026, optional 2027</a></h3>
   <p class="meta">Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH, Leipzig<br>
-  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 03.12.2025</p>
+  Auftragswert <strong>0 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 03.12.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – büroreinigung – unterhalts- und grundreinigung im bürogebäude leipzig der lmbv 2026, optional 2027 lausitzer und mitteldeutsche bergbau-verwaltungsgesellschaft mbh leipzig"
@@ -86,7 +86,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-06T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/517767-2025.html">Deutschland – Büroreinigung – Unterhalts- und Grundreinigung im Bürogebäude Leipzig der LMBV 2026, optional 2027</a></h3>
   <p class="meta">Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH, Leipzig<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.09.2025)</strong> &middot; veröffentlicht 07.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 07.08.2025</p>
 </article>
 </div>
 <footer>
@@ -96,5 +96,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

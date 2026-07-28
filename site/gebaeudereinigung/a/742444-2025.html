@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-17T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/535057-2025.html">Deutschland – Bau von Sporthallen – Neubau Dreifeldsporthalle - Baureinigung</a></h3>
   <p class="meta">Gemeinde Zimmern ob Rottweil, Zimmern o.R.<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (29.09.2025)</strong> &middot; veröffentlicht 18.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>29.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 18.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten für schwimmbäder – neubau kombibad mannheim - herzogenried - baureinigung stadt mannheim - fachbereich baurecht, bauverwaltung und denkmalschutz. mannheim"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2025-11-20T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/774726-2025.html">Deutschland – Bauarbeiten für Schwimmbäder – Neubau Kombibad Mannheim - Herzogenried - Baureinigung</a></h3>
   <p class="meta">Stadt Mannheim - Fachbereich Baurecht, Bauverwaltung und Denkmalschutz., Mannheim<br>
-  Auftragswert <strong>25.210 €</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 21.11.2025</p>
+  Auftragswert <strong>25.210 €</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 21.11.2025</p>
 </article>
 <article class="item expired"
   data-search="deutschland – bauarbeiten für schwimmbäder – neubau kombibad mannheim - herzogenried - baureinigung stadt mannheim - fachbereich baurecht, bauverwaltung und denkmalschutz. mannheim"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2025-08-10T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/523067-2025.html">Deutschland – Bauarbeiten für Schwimmbäder – Neubau Kombibad Mannheim - Herzogenried - Baureinigung</a></h3>
   <p class="meta">Stadt Mannheim - Fachbereich Baurecht, Bauverwaltung und Denkmalschutz., Mannheim<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (10.09.2025)</strong> &middot; veröffentlicht 11.08.2025</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>10.09.2025</strong><span class="rest"></span> &middot; veröffentlicht 11.08.2025</p>
 </article>
 <article class="item"
   data-search="deutschland – bauarbeiten – münster, umbau und sanierung des ehem. offizierskasinos, gebäude 30 im york-quartier nrw.urban kommunale entwicklung gmbh düsseldorf"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-07-22T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/511332-2026.html">Deutschland – Bauarbeiten – Münster, Umbau und Sanierung des ehem. Offizierskasinos, Gebäude 30 im York-Quartier</a></h3>
   <p class="meta">NRW.URBAN Kommunale Entwicklung GmbH, Düsseldorf<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 23.07.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 23.07.2026</p>
 </article>
 <article class="item"
   data-search="deutschland – bauleistungen im hochbau – 460 ren - rathaus ensemble neutraubling - vorinformation bauleistung stadt neutraubling neutraubling"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-21T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/273804-2026.html">Deutschland – Bauleistungen im Hochbau – 460 REN - Rathaus Ensemble Neutraubling - Vorinformation Bauleistung</a></h3>
   <p class="meta">Stadt Neutraubling, Neutraubling<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong> &middot; veröffentlicht 22.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>ohne Frist</strong><span class="rest"></span> &middot; veröffentlicht 22.04.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>

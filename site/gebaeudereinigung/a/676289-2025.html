@@ -73,7 +73,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/327010-2026.html">Deutschland – Gebäudereinigung – HGW26007 Unterhalts- und Grundreinigung in drei Losen bei der Stadt Karlsruhe</a></h3>
   <p class="meta">Stadt Karlsruhe Hauptamt, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.06.2026)</strong> &middot; veröffentlicht 13.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – hgw26005 unterhalts- und grundreinigung in drei losen bei der stadt karlsruhe stadt karlsruhe hauptamt karlsruhe"
@@ -82,7 +82,7 @@ footer a{color:var(--muted)}
   data-published="2026-05-03T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/303583-2026.html">Deutschland – Gebäudereinigung – HGW26005 Unterhalts- und Grundreinigung in drei Losen bei der Stadt Karlsruhe</a></h3>
   <p class="meta">Stadt Karlsruhe Hauptamt, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (03.06.2026)</strong> &middot; veröffentlicht 04.05.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>03.06.2026</strong><span class="rest"></span> &middot; veröffentlicht 04.05.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – hgw26006 unterhalts- und grundreinigung in zwei losen bei der stadt karlsruhe stadt karlsruhe hauptamt karlsruhe"
@@ -91,7 +91,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-12T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/248686-2026.html">Deutschland – Gebäudereinigung – HGW26006 Unterhalts- und Grundreinigung in zwei Losen bei der Stadt Karlsruhe</a></h3>
   <p class="meta">Stadt Karlsruhe Hauptamt, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (13.05.2026)</strong> &middot; veröffentlicht 13.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>13.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 13.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – hgw26001 unterhalts- und grundreinigung in drei losen bei der stadt karlsruhe stadt karlsruhe hauptamt karlsruhe"
@@ -100,7 +100,7 @@ footer a{color:var(--muted)}
   data-published="2026-04-09T22:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/246698-2026.html">Deutschland – Gebäudereinigung – HGW26001 Unterhalts- und Grundreinigung in drei Losen bei der Stadt Karlsruhe</a></h3>
   <p class="meta">Stadt Karlsruhe Hauptamt, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (12.05.2026)</strong> &middot; veröffentlicht 10.04.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>12.05.2026</strong><span class="rest"></span> &middot; veröffentlicht 10.04.2026</p>
 </article>
 <article class="item expired"
   data-search="deutschland – gebäudereinigung – fba26001 unterhalts-, grund- und bedarfsreinigung mehrerer objekte des hauptfriedhofes in karlsruhe stadt karlsruhe hauptamt karlsruhe"
@@ -109,7 +109,7 @@ footer a{color:var(--muted)}
   data-published="2026-03-17T23:00:00.000Z">
   <h3><a href="/Business-Idee/gebaeudereinigung/a/188261-2026.html">Deutschland – Gebäudereinigung – FBA26001 Unterhalts-, Grund- und Bedarfsreinigung mehrerer Objekte des Hauptfriedhofes in Karlsruhe</a></h3>
   <p class="meta">Stadt Karlsruhe Hauptamt, Karlsruhe<br>
-  Auftragswert <strong>–</strong> &middot; Frist <strong>abgelaufen (16.04.2026)</strong> &middot; veröffentlicht 18.03.2026</p>
+  Auftragswert <strong>–</strong> &middot; Frist <strong>16.04.2026</strong><span class="rest"></span> &middot; veröffentlicht 18.03.2026</p>
 </article></div>
 <footer>
   Quelle: Tenders Electronic Daily (TED) der Europäischen Union, weiterverwendet nach Beschluss
@@ -118,5 +118,15 @@ footer a{color:var(--muted)}
   <br>Fade Digital GmbH
 </footer>
 </div>
-
+<script>(function(){
+  var heute=new Date();
+  [].slice.call(document.querySelectorAll('.item[data-deadline] .rest')).forEach(function(span){
+    var raw=span.closest('.item').getAttribute('data-deadline'); if(!raw) return;
+    var ziel=new Date(raw); if(isNaN(ziel.getTime())) return;
+    var tage=Math.floor((ziel.getTime()-heute.getTime())/86400000);
+    if(tage<0) span.textContent=' (abgelaufen)';
+    else if(tage===0) span.textContent=' (heute)';
+    else span.textContent=' (noch '+tage+' Tag'+(tage===1?'':'e')+')';
+  });
+})();</script>
 </body></html>
