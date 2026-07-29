@@ -1,5 +1,95 @@
 [
   {
+    "id": "516883-2026",
+    "publishedAt": "2026-07-26T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Rohrleitungen – Campus IBA-Terrassen - Außenanlagen und technische Anlagen in AA",
+    "buyer": "Stadt Großräschen",
+    "buyerCity": "Großräschen",
+    "country": "DEU",
+    "cpv": [
+      "45231100",
+      "39113300",
+      "45112700",
+      "45112710",
+      "45231112",
+      "45231113",
+      "45231300",
+      "45232000",
+      "45232140",
+      "45233222"
+    ],
+    "cpvMain": "45231100",
+    "valueEur": null,
+    "deadline": "2026-09-01T07:00:00.000Z",
+    "nuts": [
+      "DE40B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/516883-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-07-28T07:12:43.828Z"
+  },
+  {
+    "id": "517398-2026",
+    "publishedAt": "2026-07-26T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Freilandschauen der Landesgartenschau 2027 - Anpflanzungs- und Pflegearbeiten",
+    "buyer": "Landesgartenschau 2027 Wittenberge gGmbH",
+    "buyerCity": "Wittenberge",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-08-25T10:00:00.000Z",
+    "nuts": [
+      "DE40F",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/517398-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-07-28T07:12:43.828Z"
+  },
+  {
+    "id": "517561-2026",
+    "publishedAt": "2026-07-26T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 2026-0394 Planung, Herstellung, Lieferung und Montage von Spielgeräten für das Projekt \"2. & 3. BA Stadtpark Hochheide\"",
+    "buyer": "DEG Duisburger Einkaufsgesellschaft mbH",
+    "buyerCity": "Duisburg",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45112720",
+      "45112723"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-09-01T08:00:00.000Z",
+    "nuts": [
+      "DEA12",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/517561-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112720",
+      "45112723"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-07-28T07:12:43.828Z"
+  },
+  {
     "id": "514193-2026",
     "publishedAt": "2026-07-23T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Natur und Landschaft / Neugestaltung Willy-Brandt-Park Bauabschnitt 03 - Garten- und Landschaftsbauarbeiten",
@@ -407,7 +497,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -1876,7 +1966,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -2175,7 +2265,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {

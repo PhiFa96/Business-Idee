@@ -154,7 +154,12 @@
     "446707-2026": "2026-07-28T07:12:43.828Z",
     "491740-2026": "2026-07-28T07:12:43.828Z",
     "459395-2026": "2026-07-28T07:12:43.828Z",
-    "472576-2026": "2026-07-28T07:12:43.828Z"
+    "472576-2026": "2026-07-28T07:12:43.828Z",
+    "523967-2026": "2026-07-29T07:18:30.696Z",
+    "524566-2026": "2026-07-29T07:18:30.696Z",
+    "524708-2026": "2026-07-29T07:18:30.696Z",
+    "526052-2026": "2026-07-29T07:18:30.696Z",
+    "524022-2026": "2026-07-29T07:18:30.696Z"
   },
   "notices": {
     "519810-2026": {
@@ -1010,7 +1015,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "473955-2026": {
       "id": "473955-2026",
@@ -1083,7 +1088,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "470789-2026": {
       "id": "470789-2026",
@@ -3799,7 +3804,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "497774-2026": {
       "id": "497774-2026",
@@ -4123,7 +4128,134 @@
         "45112712"
       ],
       "score": 40
+    },
+    "523967-2026": {
+      "id": "523967-2026",
+      "publishedAt": "2026-07-28T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – RV - Pflege von Vegetationsflächen an den kommunalen Schulen in der Landeshauptstadt Dresden",
+      "buyer": "Landeshauptstadt Dresden, GB Bildung, Jugend und Sport, Amt für Schulen",
+      "buyerCity": "Dresden",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-03T13:00:00.000Z",
+      "nuts": [
+        "DED21",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/523967-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "524566-2026": {
+      "id": "524566-2026",
+      "publishedAt": "2026-07-28T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – 62-2026-223-EA Landschaftsbauarbeiten DIN 18320 ff. und Verkehrsanlagen DIN 18040",
+      "buyer": "Stadt Regensburg",
+      "buyerCity": "Regensburg",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45233120"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 442204.57,
+      "deadline": null,
+      "nuts": [
+        "DE232",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/524566-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "524708-2026": {
+      "id": "524708-2026",
+      "publishedAt": "2026-07-28T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Gartenschau Bad Urach 2027: Bleiche und Ermswiesen BA 11",
+      "buyer": "Stadt Bad Urach",
+      "buyerCity": "Bad Urach",
+      "country": "DEU",
+      "cpv": [
+        "45112711"
+      ],
+      "cpvMain": "45112711",
+      "valueEur": null,
+      "deadline": "2026-08-27T08:00:00.000Z",
+      "nuts": [
+        "DE141",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/524708-2026",
+      "matchedCpv": [
+        "45112711"
+      ],
+      "score": 63
+    },
+    "526052-2026": {
+      "id": "526052-2026",
+      "publishedAt": "2026-07-28T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege von Außenanlagen der KfW am Standort Bonn",
+      "buyer": "KfW Bankengruppe",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77300000",
+        "77311000",
+        "77313000",
+        "77314000",
+        "77211500"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 1,
+      "deadline": null,
+      "nuts": [
+        "DEA22",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/526052-2026",
+      "matchedCpv": [
+        "77310000",
+        "77300000",
+        "77311000",
+        "77313000",
+        "77314000",
+        "77211500"
+      ],
+      "score": 60
+    },
+    "524022-2026": {
+      "id": "524022-2026",
+      "publishedAt": "2026-07-28T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtung und -begrünung Haus 3",
+      "buyer": "Handwerkskammer Dortmund",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-08-04T07:00:00.000Z",
+      "nuts": [
+        "DEA52",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/524022-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 48
     }
   },
-  "lastRun": "2026-07-28T07:12:43.828Z"
+  "lastRun": "2026-07-29T07:18:30.696Z"
 }
