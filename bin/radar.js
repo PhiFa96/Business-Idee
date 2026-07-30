@@ -407,9 +407,14 @@ async function cmdRun(args) {
 
   for (const niche of niches) {
     info(paint(`  ${niche.name}`, 'bold'));
+    // Der Deckel ist eine Obergrenze, keine Kosten: fetchAll hoert auf, sobald
+    // eine Seite nicht mehr voll ist. Grosszuegig heisst also nur "faellt nicht
+    // in eine Falle", nicht "laedt unnoetig". Elektro/SHK liefert rund 1200
+    // Bekanntmachungen im Monat - bei den vorherigen 2000 waere schon ein
+    // lebhafter Monat abgeschnitten worden.
     const { notices, stats, query } = await pipeline(niche, {
       days, fixture: Boolean(args.fixture), schema, now,
-      limit: num(args.limit, 100), maxPages: num(args['max-pages'], 20),
+      limit: num(args.limit, 100), maxPages: num(args['max-pages'], 60),
     });
     info(`  Abfrage: ${query}`);
     info(`  ${stats.input} geladen · ${stats.noCpvMatch} ohne CPV-Treffer · ${stats.excluded} ausgeschlossen · ${stats.kept} passend`);
