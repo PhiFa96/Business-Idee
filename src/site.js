@@ -112,7 +112,18 @@ ${entries.map((entry) => `<article class="item">
 <p>Öffentliche Auftraggeber müssen ab bestimmten Auftragswerten europaweit ausschreiben. Diese
 Bekanntmachungen sind öffentlich, stehen aber verstreut und in einer Sprache, die nach Gewerken
 zu durchsuchen Arbeit macht. Hier sind sie nach Handwerk sortiert, mit Auftragswert, Frist und
-einer Einordnung, wie der Auftrag im Vergleich zu früheren Vergaben desselben Auftraggebers liegt.</p>`;
+einer Einordnung, wie der Auftrag im Vergleich zu früheren Vergaben desselben Auftraggebers liegt.</p>
+
+${/* Kein Anmeldeformular an dieser Stelle: Die Anmeldung gilt immer fuer ein
+     Gewerk, und die Startseite kennt keins. Ein Formular muesste es raten oder
+     eine Auswahl erzwingen - beides schlechter als ein Satz mit vier Links
+     dorthin, wo die Anmeldung hingehoert. */ ''}
+<h2>Wöchentlicher Überblick, kostenlos</h2>
+<p>Jeden Montag die neuen Ausschreibungen Ihres Gewerks per E-Mail. Abmeldung jederzeit mit
+einem Klick. Gewerk auswählen:</p>
+<p>${entries.map((entry) =>
+    `<a class="cta" data-utm href="${escapeHtml(url(paths.offer(entry.niche.slug)))}">${escapeHtml(entry.niche.name)}</a>`,
+  ).join(' ')}</p>`;
 
   return layout({
     title: 'Öffentliche Ausschreibungen nach Gewerk – Vergabe-Radar',
@@ -358,7 +369,13 @@ export function renderArchivePage(niche, pageNotices, site, { page, pageCount, n
 <div id="list">
 ${pageNotices.map((notice) => noticeCard(notice, { now, href: url(paths.notice(niche.slug, notice.id)) })).join('\n')}
 </div>
-${pager}`;
+${pager}
+
+${/* Das Archiv ist die Flaeche, auf der wirklich geblaettert wird - allein
+     Elektro/SHK hat 244 Seiten davon. Wer hier sucht, hat den Bedarf gerade
+     vor Augen; ihn erst auf einer Detailseite nach dem Anmeldeweg suchen zu
+     lassen, verschenkt genau diesen Moment. */ ''}
+${subscribeBlock(niche, { endpoint: site.subscribeEndpoint, mailto: site.kontaktEmail, quelle: url(paths.archive(niche.slug, page)) })}`;
 
   return layout({
     title: `Archiv Ausschreibungen ${niche.name}${page > 1 ? ` – Seite ${page}` : ''}`,

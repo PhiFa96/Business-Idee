@@ -559,3 +559,35 @@ test('die Bestellmail nennt dieselben Konditionen wie die Seite', () => {
   // Und die Seite selbst nennt nichts anderes.
   assert.match(angebot.content, new RegExp(`${preis} € im Monat`));
 });
+
+test('auch die Archivseiten tragen einen Anmeldeweg', () => {
+  // Das Archiv ist die Flaeche, auf der geblaettert wird - allein Elektro/SHK
+  // hat 244 solcher Seiten. Sie waren die einzige groessere Luecke, nachdem
+  // Detail- und Angebotsseiten den Anmeldeweg hatten.
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    { ...SITE, subscribeEndpoint: null, kontaktEmail: 'admin@postomnia.com' },
+    { now: NOW },
+  );
+  const archivseiten = gebaut.files.filter((file) => /archiv/.test(file.path) && file.path.endsWith('.html'));
+  assert.ok(archivseiten.length > 0, 'ohne Archivseiten prueft der Test nichts');
+  for (const seite of archivseiten) {
+    assert.match(seite.content, /mailto:admin@postomnia\.com/, `${seite.path} ohne Anmeldeweg`);
+  }
+});
+
+test('die Startseite fuehrt zur Anmeldung, ohne ein Gewerk zu erraten', () => {
+  // Eine Anmeldung gilt immer fuer ein Gewerk; die Startseite kennt keins.
+  // Ein Formular muesste es raten - deshalb Links statt Eingabefeld.
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    { ...SITE, subscribeEndpoint: null, kontaktEmail: 'admin@postomnia.com' },
+    { now: NOW },
+  );
+  const start = gebaut.files.find((file) => file.path === 'index.html');
+  assert.match(start.content, /Wöchentlicher Überblick, kostenlos/);
+  assert.match(start.content, new RegExp(`href="[^"]*${paths.offer(niche.slug)}"`),
+    'die Startseite muss zum Angebot des Gewerks fuehren');
+  assert.doesNotMatch(start.content, /<input type="email"/,
+    'ein Formular ohne Gewerk waere geraten');
+});
