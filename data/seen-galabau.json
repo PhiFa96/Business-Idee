@@ -159,7 +159,12 @@
     "524566-2026": "2026-07-29T07:18:30.696Z",
     "524708-2026": "2026-07-29T07:18:30.696Z",
     "526052-2026": "2026-07-29T07:18:30.696Z",
-    "524022-2026": "2026-07-29T07:18:30.696Z"
+    "524022-2026": "2026-07-29T07:18:30.696Z",
+    "526582-2026": "2026-07-30T07:11:47.329Z",
+    "528311-2026": "2026-07-30T07:11:47.329Z",
+    "529338-2026": "2026-07-30T07:11:47.329Z",
+    "528925-2026": "2026-07-30T07:11:47.329Z",
+    "528666-2026": "2026-07-30T07:11:47.329Z"
   },
   "notices": {
     "519810-2026": {
@@ -2308,7 +2313,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 68
+      "score": 63
     },
     "483355-2026": {
       "id": "483355-2026",
@@ -2845,7 +2850,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 68
+      "score": 63
     },
     "456364-2026": {
       "id": "456364-2026",
@@ -4255,7 +4260,152 @@
         "45112713"
       ],
       "score": 48
+    },
+    "526582-2026": {
+      "id": "526582-2026",
+      "publishedAt": "2026-07-29T22:00:00.000Z",
+      "title": "Deutschland – Fällen von Bäumen – Baumkatastererstellung und Baumfällung in 4 Losen",
+      "buyer": "Berliner Verkehrsbetriebe, Bereich Einkauf/ Materialwirtschaft",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77211400",
+        "77211500",
+        "77230000"
+      ],
+      "cpvMain": "77211400",
+      "valueEur": null,
+      "deadline": "2026-08-31T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/526582-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 83
+    },
+    "528311-2026": {
+      "id": "528311-2026",
+      "publishedAt": "2026-07-29T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – VE139_4_Außenanlagen Therapiegarten",
+      "buyer": "Sana Klinikum Offenbach GmbH",
+      "buyerCity": "Offenbach",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45233253",
+        "45112330",
+        "45316100",
+        "43325000",
+        "45112710",
+        "73400000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-09-01T11:00:00.000Z",
+      "nuts": [
+        "DE713",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/528311-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "529338-2026": {
+      "id": "529338-2026",
+      "publishedAt": "2026-07-29T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Zweiter Verwaltungsstandort in Aalen - Verkehrsanlagen, Freianlagen -",
+      "buyer": "Landratsamt Ostalbkreis - Zentrale Vergabestelle",
+      "buyerCity": "Aalen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 2549425.12,
+      "deadline": null,
+      "nuts": [
+        "DE11D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/529338-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "528925-2026": {
+      "id": "528925-2026",
+      "publishedAt": "2026-07-29T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Stadthalle Zeulenroda-VE_307 - Dachabdichtung und Eindeckung",
+      "buyer": "Stadt Zeulenroda-Triebes",
+      "buyerCity": "Zeulenroda-Triebes",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261310"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-08-31T09:00:00.000Z",
+      "nuts": [
+        "DEG0L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/528925-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "528666-2026": {
+      "id": "528666-2026",
+      "publishedAt": "2026-07-29T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 301_2-501 RBB Neugestaltung Tribünenanlage am Baldeneysee in Essen - hier: GaLaBauarbeiten",
+      "buyer": "Sport- und Bäderbetriebe Essen, Verfahrensbegleitung durch die GVE Grundstücksverwaltung Stadt Essen GmbH",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "03451000",
+        "44113100",
+        "44113620",
+        "44163110",
+        "44163112",
+        "45000000",
+        "45112720",
+        "45232000",
+        "45233222",
+        "45233228",
+        "45233250",
+        "45233260",
+        "45262300",
+        "77314100"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-08-06T08:00:00.000Z",
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/528666-2026",
+      "matchedCpv": [
+        "45112700",
+        "45112720",
+        "77314100"
+      ],
+      "score": 48
     }
   },
-  "lastRun": "2026-07-29T07:18:30.696Z"
+  "lastRun": "2026-07-30T07:11:47.329Z"
 }
