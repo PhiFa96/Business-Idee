@@ -49,8 +49,22 @@ async function sendMail(env, { to, subject, html }) {
   if (!response.ok) throw new Error(`Resend ${response.status}: ${await response.text()}`);
 }
 
-function confirmationMail(env, entry) {
-  const link = `${env.SITE_URL.replace(/\/$/, '')}/api/bestaetigen?token=${encodeURIComponent(entry.token)}`;
+/**
+ * Der Bestaetigungslink zeigt auf den Worker selbst, nicht auf die Website.
+ *
+ * Er wurde frueher aus SITE_URL gebaut - und SITE_URL ist die Website. Bedient
+ * wird /api/bestaetigen aber vom Worker. Liegt die Seite auf GitHub Pages,
+ * lief damit jeder Bestaetigungslink in eine 404, und zwar an genau dem
+ * Schritt, der die Anmeldung erst rechtmaessig macht: Ohne Bestaetigung darf
+ * nie etwas rausgehen, also waere jede Anmeldung stillschweigend wertlos
+ * gewesen.
+ *
+ * Die eigene Adresse aus der Anfrage zu nehmen ist in beiden Betriebsarten
+ * richtig - workers.dev wie eigene Domain mit Route - und laesst sich nicht
+ * falsch konfigurieren.
+ */
+function confirmationMail(env, entry, workerOrigin) {
+  const link = `${workerOrigin.replace(/\/$/, '')}/api/bestaetigen?token=${encodeURIComponent(entry.token)}`;
   return {
     subject: 'Bitte bestätigen Sie Ihre Anmeldung',
     html: `<!doctype html><html lang="de"><body style="font:15px/1.6 system-ui,sans-serif;color:#1a1a1a">
@@ -62,7 +76,7 @@ Angemeldet am ${esc(entry.angemeldet)}${entry.quelle ? ` über ${esc(entry.quell
 <p style="color:#666;font-size:13px">Haben Sie sich nicht angemeldet, ignorieren Sie diese Mail einfach &ndash;
 ohne Ihre Bestätigung passiert nichts.</p>
 <hr style="border:none;border-top:1px solid #e0e0dc">
-<p style="color:#777;font-size:12px">${esc(env.IMPRESSUM ?? '')}</p>
+<p style="color:#777;font-size:12px">${esc(env.IMPRESSUM ?? '')}${env.SITE_URL ? `<br><a href="${esc(env.SITE_URL)}" style="color:#777">${esc(env.SITE_URL)}</a>` : ''}</p>
 </body></html>`,
   };
 }
@@ -101,7 +115,7 @@ export default {
       await env.SUBS.put(`token:${entry.token}`, key);
 
       try {
-        await sendMail(env, { to: email, ...confirmationMail(env, entry) });
+        await sendMail(env, { to: email, ...confirmationMail(env, entry, url.origin) });
       } catch (err) {
         return page('Versand fehlgeschlagen', 'Die Bestätigungsmail konnte nicht zugestellt werden. Bitte später erneut versuchen.', 502);
       }

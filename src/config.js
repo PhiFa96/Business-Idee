@@ -107,6 +107,25 @@ export function impressumProblems(impressum) {
   return problems;
 }
 
+/**
+ * Welcher Anmeldeweg auf den Seiten tatsaechlich erscheint.
+ *
+ * subscribeBlock() gibt ohne beides einen leeren String zurueck - dann steht
+ * auf keiner einzigen Seite ein Anmeldefeld. Das ist der Zustand, der monatelang
+ * unbemerkt bleiben kann, weil taeglich gebaut und ausgeliefert wird und alles
+ * gruen aussieht. Deshalb benennt der doctor ihn ausdruecklich, statt ihn nur
+ * unter "unvollstaendig" mitlaufen zu lassen.
+ */
+export function anmeldeweg(site) {
+  if (site?.subscribeEndpoint) {
+    return { aktiv: true, art: 'formular', text: `Formular (${site.subscribeEndpoint})` };
+  }
+  if (site?.kontaktEmail) {
+    return { aktiv: true, art: 'mailto', text: `per E-Mail an ${site.kontaktEmail}` };
+  }
+  return { aktiv: false, art: 'keiner', text: 'keiner - die Seiten haben keine Tuer' };
+}
+
 /** Was vor dem Echtbetrieb gefuellt sein muss. */
 export function siteProblems(site) {
   const problems = [];

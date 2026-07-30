@@ -19,7 +19,7 @@ import { fetchAll, fetchPage, buildQuery, istAbgeschnitten, TedError } from '../
 import { loadFixture } from '../src/fixtures.js';
 import { normalizeAll, fieldReport } from '../src/normalize.js';
 import { filterNotices, alertable, summarize } from '../src/filter.js';
-import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, impressumProblems, listNicheSlugs } from '../src/config.js';
+import { loadNiche, loadAllNiches, loadSchema, loadSite, siteProblems, impressumProblems, anmeldeweg, listNicheSlugs } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
 import { renderMail, renderDigest, renderCsv, formatMoney } from '../src/render.js';
 import { buildSite, publicArchive, publicGap, paths } from '../src/site.js';
@@ -185,6 +185,14 @@ async function cmdDoctor() {
     impressum.forEach((problem) => info(`    ${problem}`));
     info('    Ein unvollstaendiges Impressum ist ebenso abmahnfaehig wie ein fehlendes (Paragraf 5 DDG).');
   } else ok('Impressum enthaelt alle Pflichtangaben.');
+
+  const weg = anmeldeweg(site);
+  if (weg.aktiv) ok(`Anmeldeweg: ${weg.text}`);
+  else {
+    fail(`Anmeldeweg: ${weg.text}`);
+    info('    Die Seiten werden taeglich gebaut und ausgeliefert, aber niemand kann etwas bestellen.');
+    info('    Es genuegt kontaktEmail in config/site.json - subscribeEndpoint kann spaeter folgen.');
+  }
 
   info(paint('\nTED-Schema', 'bold'));
   info(`  Endpunkt   ${schema.endpoint}`);

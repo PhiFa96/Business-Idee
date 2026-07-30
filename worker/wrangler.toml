@@ -11,6 +11,15 @@ binding = "SUBS"
 id = "HIER_DIE_KV_ID_EINTRAGEN"
 
 [vars]
+# MAIL_FROM muss auf einer Domain liegen, die bei Resend verifiziert ist.
+# Ohne diesen Nachweis nimmt Resend nichts an - das ist vor dem ersten Deploy
+# zu erledigen, nicht danach.
 MAIL_FROM = "radar@example.de"
-SITE_URL = "https://vergabe-radar.de"
+
+# Nur der Rueckweg zur Website (Fuss der Bestaetigungsmail). Der
+# Bestaetigungslink selbst wird NICHT hieraus gebaut, sondern aus der eigenen
+# Adresse des Workers - sonst zeigt er auf eine Seite, die /api/bestaetigen
+# gar nicht bedient.
+SITE_URL = "https://phifa96.github.io/Business-Idee/"
+
 IMPRESSUM = "Vorname Nachname · Musterweg 1 · 12345 Musterstadt"

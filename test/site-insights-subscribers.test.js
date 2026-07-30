@@ -10,6 +10,7 @@ import {
   buyerNarrative, priceNarrative, groupByBuyer, groupByRegion,
 } from '../src/insights.js';
 import { buildSite, publicArchive, publicGap, paths, renderSitemap, renderRobots, linker, PAGE_SIZE } from '../src/site.js';
+import { subscribeBlock } from '../src/html.js';
 import * as subs from '../src/subscribers.js';
 import { archiveOf } from '../src/store.js';
 
@@ -468,4 +469,93 @@ test('Seiten mit Karten binden das Countdown-Skript ein', () => {
     assert.match(file.content, /querySelectorAll\('\.item\[data-deadline\] \.rest'\)/,
       `${file.path} zeigt Karten, ergaenzt aber keinen Countdown`);
   }
+});
+
+// ------------------------------------------------------------- Anmeldeweg
+
+test('ohne Anmeldeweg bleibt der Anmeldeblock leer - und das faellt auf', () => {
+  // Kein stiller Platzhalter: subscribeBlock liefert nichts, damit der Zustand
+  // nicht als halbfertiges Formular auf 33 895 Seiten erscheint. Der doctor
+  // benennt ihn stattdessen ausdruecklich.
+  assert.equal(subscribeBlock(niche, { endpoint: null, mailto: null }), '');
+});
+
+test('mit kontaktEmail steht auf jeder Seite ein Anmeldeweg', () => {
+  const ohneEndpunkt = { ...SITE, subscribeEndpoint: null, kontaktEmail: 'admin@postomnia.com' };
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    ohneEndpunkt,
+    { now: NOW },
+  );
+
+  const detail = gebaut.files.find((file) => file.path.startsWith(`${niche.slug}/a/`));
+  const angebot = gebaut.files.find((file) => file.path === paths.offer(niche.slug));
+  for (const [name, datei] of [['Detailseite', detail], ['Angebotsseite', angebot]]) {
+    assert.ok(datei, `${name} fehlt`);
+    assert.match(datei.content, /mailto:admin@postomnia\.com/, `${name} ohne Anmeldeweg`);
+  }
+});
+
+test('ohne Zahlungslink steht ein Bestellweg auf der Seite, keine Entwicklernotiz', () => {
+  // Hier stand fuer jeden Besucher sichtbar "Zahlungslink noch nicht
+  // hinterlegt (config/site.json -> stripeLinks)". Wer kaufen wollte, las eine
+  // Konfigurationsanweisung.
+  const ohneStripe = { ...SITE, stripeLinks: {}, kontaktEmail: 'admin@postomnia.com' };
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    ohneStripe,
+    { now: NOW },
+  );
+
+  const angebot = gebaut.files.find((file) => file.path === paths.offer(niche.slug));
+  assert.doesNotMatch(angebot.content, /stripeLinks|config\/site\.json|noch nicht hinterlegt/,
+    'interne Hinweise gehoeren nicht auf eine oeffentliche Seite');
+  assert.match(angebot.content, /mailto:admin@postomnia\.com\?subject=Bestellung/,
+    'ohne Zahlungsanbieter muss wenigstens der Bestellweg per Mail dastehen');
+
+  // Und wenn ein Zahlungslink da ist, hat er Vorrang.
+  const mitStripe = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    { ...ohneStripe, stripeLinks: { [niche.slug]: 'https://buy.stripe.test/abc' } },
+    { now: NOW },
+  );
+  const bezahlseite = mitStripe.files.find((file) => file.path === paths.offer(niche.slug));
+  assert.match(bezahlseite.content, /buy\.stripe\.test/);
+  assert.doesNotMatch(bezahlseite.content, /subject=Bestellung/);
+});
+
+test('keine der erzeugten Seiten verraet interne Konfigurationspfade', () => {
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    { ...SITE, stripeLinks: {}, subscribeEndpoint: null, kontaktEmail: 'admin@postomnia.com' },
+    { now: NOW },
+  );
+  for (const datei of gebaut.files) {
+    assert.doesNotMatch(datei.content, /config\/site\.json|config\/niches|stripeLinks/,
+      `${datei.path} nennt eine interne Datei`);
+  }
+});
+
+test('die Bestellmail nennt dieselben Konditionen wie die Seite', () => {
+  // Die vorformulierte Mail ist faktisch die Bestellung. Steht dort ein
+  // anderer Preis als auf der Seite, beruft sich der Kunde spaeter zu Recht
+  // auf seinen eigenen Text.
+  const gebaut = buildSite(
+    [{ niche, archive, summary: summarize(archive, niche, { days: 90, now: NOW }) }],
+    { ...SITE, stripeLinks: {}, kontaktEmail: 'admin@postomnia.com' },
+    { now: NOW },
+  );
+  const angebot = gebaut.files.find((file) => file.path === paths.offer(niche.slug));
+
+  const href = /href="(mailto:[^"]*subject=Bestellung[^"]*)"/.exec(angebot.content)?.[1];
+  assert.ok(href, 'kein Bestell-Link gefunden');
+  const body = decodeURIComponent(new URL(href).searchParams.get('body'));
+
+  const preis = niche.price?.monthly ?? 79;
+  assert.match(body, new RegExp(`erster Monat 1 €, danach ${preis} € im Monat`));
+  assert.match(body, /monatlich kündbar/);
+  assert.match(body, new RegExp(niche.name.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')));
+
+  // Und die Seite selbst nennt nichts anderes.
+  assert.match(angebot.content, new RegExp(`${preis} € im Monat`));
 });

@@ -7,7 +7,7 @@ import { join } from 'node:path';
 import { normalizeAll } from '../src/normalize.js';
 import { filterNotices } from '../src/filter.js';
 import { loadFixture } from '../src/fixtures.js';
-import { loadNiche, validateNiche, loadSite, siteProblems, impressumProblems } from '../src/config.js';
+import { loadNiche, validateNiche, loadSite, siteProblems, impressumProblems, anmeldeweg } from '../src/config.js';
 import { loadStore, saveStore, diffAndRecord, archiveOf, prune } from '../src/store.js';
 import { renderMail, renderDigest, renderArchive, renderCsv, escapeHtml, formatMoney, formatDate } from '../src/render.js';
 import { fileTransport, resendTransport, pickTransport } from '../src/mail.js';
@@ -304,4 +304,24 @@ test('impressumProblems verlangt von einer Einzelperson keine Registerangaben', 
 test('impressumProblems meldet ein leeres Impressum als komplett fehlend', () => {
   assert.equal(impressumProblems('').length, 1);
   assert.equal(impressumProblems(null).length, 1);
+});
+
+test('anmeldeweg benennt, ob die Seiten ueberhaupt eine Tuer haben', () => {
+  // Ohne beides gibt subscribeBlock einen leeren String zurueck - dann steht
+  // auf keiner der 33 895 Seiten ein Anmeldefeld, und alles sieht gruen aus.
+  const ohne = anmeldeweg({ kontaktEmail: '', subscribeEndpoint: null });
+  assert.equal(ohne.aktiv, false);
+  assert.match(ohne.text, /keine Tuer/);
+
+  const mail = anmeldeweg({ kontaktEmail: 'admin@postomnia.com', subscribeEndpoint: null });
+  assert.equal(mail.aktiv, true);
+  assert.equal(mail.art, 'mailto');
+
+  // Das Formular hat Vorrang: Sobald der Worker steht, loest er den
+  // mailto-Knopf ohne weitere Aenderung ab.
+  const formular = anmeldeweg({ kontaktEmail: 'admin@postomnia.com', subscribeEndpoint: 'https://w.test' });
+  assert.equal(formular.art, 'formular');
+
+  assert.equal(anmeldeweg(null).aktiv, false, 'darf auch ohne Konfiguration nicht werfen');
+  assert.equal(anmeldeweg({}).aktiv, false);
 });

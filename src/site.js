@@ -386,9 +386,39 @@ ${pager}`;
 
 // ---------------------------------------------------------------- Landingpage
 
+/**
+ * Der Weg zum Kauf. Ohne Zahlungslink per E-Mail - ein Kauf per Mail ist
+ * zulaessig und braucht kein einziges Konto.
+ *
+ * Hier stand frueher der Hinweis "Zahlungslink noch nicht hinterlegt
+ * (config/site.json -> stripeLinks)". Der war fuer den Betreiber gedacht und
+ * fuer jeden Besucher sichtbar: Wer kaufen wollte, las eine
+ * Konfigurationsanweisung. Ein fehlender Zahlungsanbieter darf den Verkauf
+ * nicht anhalten, er darf ihn nur umstaendlicher machen.
+ */
+export function bestellweg(niche, site, price) {
+  const stripe = site.stripeLinks?.[niche.slug] ?? null;
+  if (stripe) {
+    return `<p><a class="cta" data-utm href="${escapeHtml(stripe)}">Ersten Monat für 1 € starten</a></p>`;
+  }
+  if (!site.kontaktEmail) return '';
+
+  // Diese Mail ist faktisch die Bestellung. Sie muss dieselben Konditionen
+  // nennen wie die Seite - "erster Monat 1 €, danach 79 €" ist etwas anderes
+  // als "79 € im Monat", und der Kunde beruft sich spaeter auf seinen Text.
+  const betreff = encodeURIComponent(`Bestellung Alert ${niche.name}`);
+  const text = encodeURIComponent(
+    `Ich möchte den werktäglichen Alert für ${niche.name} bestellen.\n`
+    + `Konditionen: erster Monat 1 €, danach ${price} € im Monat, monatlich kündbar.\n\n`
+    + 'Firma:\nAnsprechpartner:\nRechnungsanschrift:\n',
+  );
+  return `<p><a class="cta" data-utm href="mailto:${escapeHtml(site.kontaktEmail)}?subject=${betreff}&body=${text}">Ersten Monat für 1 € bestellen</a></p>
+<p class="meta">Bestellung per E-Mail. Sie erhalten die Zugangsdaten und die Rechnung von uns;
+die Abrechnung läuft noch nicht über einen Zahlungsanbieter.</p>`;
+}
+
 export function renderOffer(niche, summary, site, { now = new Date(), sample = [] } = {}) {
   const url = linker(site);
-  const stripe = site.stripeLinks?.[niche.slug] ?? null;
   const price = niche.price?.monthly ?? 79;
 
   const body = `
@@ -413,9 +443,7 @@ ${sample.length ? `<h2>So sieht die Liste aus</h2><div id="list">${sample.slice(
 
 <h2>Preis</h2>
 <p><strong>${price} € im Monat</strong>, monatlich kündbar. Der erste Monat kostet 1 €.</p>
-${stripe
-    ? `<p><a class="cta" data-utm href="${escapeHtml(stripe)}">Ersten Monat für 1 € starten</a></p>`
-    : '<p class="meta">Zahlungslink noch nicht hinterlegt (config/site.json → stripeLinks).</p>'}
+${bestellweg(niche, site, price)}
 
 <h2>Lieber erst kostenlos ansehen?</h2>
 ${subscribeBlock(niche, { endpoint: site.subscribeEndpoint, mailto: site.kontaktEmail, quelle: url(paths.offer(niche.slug)) })}
