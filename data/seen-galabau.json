@@ -1945,7 +1945,15 @@
     "573681-2025": "2026-07-30T15:05:30.277Z",
     "546326-2025": "2026-07-30T15:05:30.277Z",
     "799452-2025": "2026-07-30T15:05:30.277Z",
-    "687884-2025": "2026-07-30T15:05:30.277Z"
+    "687884-2025": "2026-07-30T15:05:30.277Z",
+    "529788-2026": "2026-07-31T07:21:56.596Z",
+    "530641-2026": "2026-07-31T07:21:56.596Z",
+    "533267-2026": "2026-07-31T07:21:56.596Z",
+    "533347-2026": "2026-07-31T07:21:56.596Z",
+    "531021-2026": "2026-07-31T07:21:56.596Z",
+    "532353-2026": "2026-07-31T07:21:56.596Z",
+    "532439-2026": "2026-07-31T07:21:56.596Z",
+    "532561-2026": "2026-07-31T07:21:56.596Z"
   },
   "notices": {
     "519810-2026": {
@@ -53521,7 +53529,212 @@
         "45112712"
       ],
       "score": 35
+    },
+    "529788-2026": {
+      "id": "529788-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 13 Wohnliegenschaften in Stuttgart und Umgebung, Bundesanstalt für Immobilienaufgaben, Sparte Wohnen Regionalbereich Süd, VOEK 100-26",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77310000",
+        "77342000",
+        "77300000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-09-15T07:00:00.000Z",
+      "nuts": [
+        "DE112",
+        "DE111",
+        "DE11D",
+        "DE113",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/529788-2026",
+      "matchedCpv": [
+        "77314000",
+        "77310000",
+        "77300000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "530641-2026": {
+      "id": "530641-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Externe Baumkontrolle B-Straßen SM Biesenthal 2026",
+      "buyer": "Landesbetrieb Straßenwesen Brandenburg Dienststätte Eberswalde",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-09-01T08:00:00.000Z",
+      "nuts": [
+        "DE405",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/530641-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "533267-2026": {
+      "id": "533267-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltung Außenanlage De Bütt",
+      "buyer": "Stadt Willich, Der Bürgermeister",
+      "buyerCity": "Willich",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "50000000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-02T07:00:00.000Z",
+      "nuts": [
+        "DEA1E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/533267-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "533347-2026": {
+      "id": "533347-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – HWSB Elbdeich rechts MD-Cracau km 40,4-42,1 Ausgleichs- und Ersatzmaßnahmen",
+      "buyer": "Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-09-03T08:15:00.000Z",
+      "nuts": [
+        "DEE03",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/533347-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "531021-2026": {
+      "id": "531021-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Handelslehranstalten Lohne: Neubau Aula und Verwaltung - Garten- und Landschaftsbauarbeiten",
+      "buyer": "Landkreis Vechta",
+      "buyerCity": "Vechta",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": null,
+      "deadline": "2026-08-18T09:00:00.000Z",
+      "nuts": [
+        "DE94F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/531021-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 63
+    },
+    "532353-2026": {
+      "id": "532353-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvereinbarung für Baumpflegearbeiten",
+      "buyer": "Land Berlin vertreten durch Bezirksamt Lichtenberg von Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 0.01,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/532353-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 60
+    },
+    "532439-2026": {
+      "id": "532439-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – ZBE - Neukonzeptionierung der Zentralbibliothek in Essen (Innenausstattung und Möblierung) hier: VE 31 Bepflanzung 01 - Bepflanzung, Tröpfchenbewässerung",
+      "buyer": "Stadt Essen, Verfahrensbegleitung durch die GVE Grundstücksverwaltung Stadt Essen GmbH",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "45212331",
+        "77330000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 60350,
+      "deadline": null,
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/532439-2026",
+      "matchedCpv": [
+        "77310000",
+        "77330000"
+      ],
+      "score": 60
+    },
+    "532561-2026": {
+      "id": "532561-2026",
+      "publishedAt": "2026-07-30T22:00:00.000Z",
+      "title": "Deutschland – Straßenbauarbeiten – EU-weite Ausschreibung von Straßen-, Kanalbau und Infrastrukturarbeiten für das neue Gefahrenabwehrzentrum (GAZ) des Ennepe-Ruhr-Kreises",
+      "buyer": "Ennepe-Ruhr-Kreis",
+      "buyerCity": "Schwelm",
+      "country": "DEU",
+      "cpv": [
+        "45233120",
+        "45247110",
+        "32571000",
+        "31600000",
+        "45112710"
+      ],
+      "cpvMain": "45233120",
+      "valueEur": 0.01,
+      "deadline": null,
+      "nuts": [
+        "DEA56",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/532561-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-07-30T17:44:28.617Z"
+  "lastRun": "2026-07-31T07:21:56.596Z"
 }
