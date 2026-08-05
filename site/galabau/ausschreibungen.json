@@ -1,5 +1,172 @@
 [
   {
+    "id": "534477-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Landschaftsbauarbeiten",
+    "buyer": "Regens-Wagner-Stiftung Lautrach als Rechtsträger von Regens Wagner Lautrach vertreten durch die Direktion der Regens-Wagner-Stiftungen",
+    "buyerCity": "Dillingen",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112713",
+      "45112711",
+      "45232411",
+      "45232450",
+      "45232452",
+      "45232451",
+      "45233222",
+      "45233253",
+      "45112712",
+      "45112500"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-09-10T12:00:00.000Z",
+    "nuts": [
+      "DE27C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/534477-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112713",
+      "45112711",
+      "45112712"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
+    "id": "535060-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Mahdarbeiten",
+    "buyer": "Staatliches Bauamt Schweinfurt",
+    "buyerCity": "Schweinfurt",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-02T07:00:00.000Z",
+    "nuts": [
+      "DE267",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/535060-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
+    "id": "536347-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Pflege von Parkanlagen – Pflege und Unterhaltungsarbeiten auf Friedhöfen",
+    "buyer": "Stadt Remscheid, Fachdienst Recht und Vergabe, Abteilung Zentrale Vergabestelle",
+    "buyerCity": "Remscheid",
+    "country": "DEU",
+    "cpv": [
+      "77313000",
+      "77311000",
+      "77342000"
+    ],
+    "cpvMain": "77313000",
+    "valueEur": null,
+    "deadline": "2026-09-01T07:00:00.000Z",
+    "nuts": [
+      "DEA18",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/536347-2026",
+    "matchedCpv": [
+      "77313000",
+      "77311000",
+      "77342000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
+    "id": "536993-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege Mücheln + Roßbach + Lochau 2027 (opt. 2028/2029)",
+    "buyer": "LMBV Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH",
+    "buyerCity": "Leipzig",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77231600"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-01T08:30:00.000Z",
+    "nuts": [
+      "DEE0B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/536993-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
+    "id": "533847-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Tiefbauarbeiten, außer Tunneln, Schächten und Unterführungen – Errichtung der Außenanlagen und evRL für den Neubau der Filterhalle im Wasserwerk Rentrisch",
+    "buyer": "Stadtwerke Saarbrücken Netz AG",
+    "buyerCity": "Saarbrücken",
+    "country": "DEU",
+    "cpv": [
+      "45221250",
+      "45231100",
+      "45112710"
+    ],
+    "cpvMain": "45221250",
+    "valueEur": 1945182.56,
+    "deadline": null,
+    "nuts": [
+      "DEC01",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/533847-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
+    "id": "536801-2026",
+    "publishedAt": "2026-08-02T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – SEP GS Schützenstraße - Sanierung und Erweiterung - Freianlagen",
+    "buyer": "Stadt Solingen",
+    "buyerCity": "Solingen",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45200000",
+      "45233222",
+      "77310000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": 821759.33,
+    "deadline": null,
+    "nuts": [
+      "DEA19",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/536801-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-03T07:57:14.744Z"
+  },
+  {
     "id": "529788-2026",
     "publishedAt": "2026-07-30T22:00:00.000Z",
     "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 13 Wohnliegenschaften in Stuttgart und Umgebung, Bundesanstalt für Immobilienaufgaben, Sparte Wohnen Regionalbereich Süd, VOEK 100-26",
@@ -1271,7 +1438,7 @@
       "45112700",
       "45112712"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -1723,7 +1890,7 @@
       "77340000",
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -3330,7 +3497,7 @@
       "77300000",
       "77340000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -3356,7 +3523,7 @@
       "77310000",
       "77300000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
