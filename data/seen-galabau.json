@@ -1966,7 +1966,11 @@
     "541940-2026": "2026-08-05T07:14:08.019Z",
     "543094-2026": "2026-08-05T07:14:08.019Z",
     "541970-2026": "2026-08-05T07:14:08.019Z",
-    "543390-2026": "2026-08-05T07:14:08.019Z"
+    "543390-2026": "2026-08-05T07:14:08.019Z",
+    "546346-2026": "2026-08-06T07:15:49.752Z",
+    "543810-2026": "2026-08-06T07:15:49.752Z",
+    "546124-2026": "2026-08-06T07:15:49.752Z",
+    "546508-2026": "2026-08-06T07:15:49.752Z"
   },
   "notices": {
     "519810-2026": {
@@ -4285,7 +4289,7 @@
         "77211500",
         "77211400"
       ],
-      "score": 68
+      "score": 63
     },
     "465079-2026": {
       "id": "465079-2026",
@@ -54105,7 +54109,106 @@
         "77310000"
       ],
       "score": 60
+    },
+    "546346-2026": {
+      "id": "546346-2026",
+      "publishedAt": "2026-08-05T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Erweiterung und Modernisierung des Industriegebietes Süd II in Guben Los 6.1 und 6.2 - Ausgleichs- und Ersatzmaßnahmen",
+      "buyer": "Stadt Guben",
+      "buyerCity": "Guben",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "77310000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-09-07T07:00:00.000Z",
+      "nuts": [
+        "DE40G",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/546346-2026",
+      "matchedCpv": [
+        "45112710",
+        "77310000"
+      ],
+      "score": 83
+    },
+    "543810-2026": {
+      "id": "543810-2026",
+      "publishedAt": "2026-08-05T22:00:00.000Z",
+      "title": "Deutschland – Kommunale Dienstleistungen – Mittelstreifenmahd 2026",
+      "buyer": "Land Berlin vertr. durch BA Mitte v. Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "75200000",
+        "77313000"
+      ],
+      "cpvMain": "75200000",
+      "valueEur": 249764.4,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/543810-2026",
+      "matchedCpv": [
+        "77313000"
+      ],
+      "score": 80
+    },
+    "546124-2026": {
+      "id": "546124-2026",
+      "publishedAt": "2026-08-05T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflegeleistungen für Aus- und Fortbildungszentrum der Bundespolizei in Bamberg, Bundesanstalt für Immobilienaufgaben, Direktion München (Vergabenummer VOEK 513-25)",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77342000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 888240,
+      "deadline": null,
+      "nuts": [
+        "DE241",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/546124-2026",
+      "matchedCpv": [
+        "77314000",
+        "77342000"
+      ],
+      "score": 80
+    },
+    "546508-2026": {
+      "id": "546508-2026",
+      "publishedAt": "2026-08-05T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungsarbeiten - Biochemie",
+      "buyer": "Johannes Gutenberg-Universität Mainz",
+      "buyerCity": "Mainz",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45000000"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-09-07T07:55:00.000Z",
+      "nuts": [
+        "DEB35",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/546508-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-08-05T07:14:08.019Z"
+  "lastRun": "2026-08-06T07:15:49.752Z"
 }

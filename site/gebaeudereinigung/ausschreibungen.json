@@ -1,5 +1,390 @@
 [
   {
+    "id": "537668-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Ausschreibung Gebäudereinigung für die Stadt Quickborn",
+    "buyer": "Stadt Quickborn",
+    "buyerCity": "Quickborn",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-04T07:59:00.000Z",
+    "nuts": [
+      "DEF09",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/537668-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538131-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Reinigungs- und Hygienedienste – Reinigungsleistungen und Küchenhilfsleistungen in der Großküche und im Mitarbeiter-Restaurant",
+    "buyer": "Klinikum Nürnberg",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "90900000",
+      "55500000",
+      "55510000",
+      "55511000",
+      "90910000"
+    ],
+    "cpvMain": "90900000",
+    "valueEur": null,
+    "deadline": "2026-09-02T08:00:00.000Z",
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538131-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538559-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für das Justizgebäude in der Pacellistraße 5 in München",
+    "buyer": "Freistaat Bayern, vertreten durch den Präsidenten des Oberlandesgerichts München",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-10-26T09:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538559-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538713-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigungsarbeiten in Kindertagesstätten, Verwaltungsgebäuden und einer Schule in 2 Losen",
+    "buyer": "Stadt Heidelberg, Hochbauamt - Objektservice",
+    "buyerCity": "Heidelberg",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-08T08:00:00.000Z",
+    "nuts": [
+      "DE125",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538713-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "540201-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – UHR Palmengarten",
+    "buyer": "Stadt Frankfurt am Main, Amt für Bau und Immobilien",
+    "buyerCity": "Frankfurt am Main",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-01T10:00:00.000Z",
+    "nuts": [
+      "DE712",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/540201-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "537921-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudereinigung",
+    "buyer": "Große Kreisstadt Winnenden",
+    "buyerCity": "Winnenden",
+    "country": "DEU",
+    "cpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": 3742244.48,
+    "deadline": null,
+    "nuts": [
+      "DE116",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/537921-2026",
+    "matchedCpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538706-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Staatliche Berufsschule 1 und Technikerschule",
+    "buyer": "Stadt Ingolstadt",
+    "buyerCity": "Ingolstadt",
+    "country": "DEU",
+    "cpv": [
+      "90911000",
+      "90911200"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": 186702.5,
+    "deadline": null,
+    "nuts": [
+      "DE211",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538706-2026",
+    "matchedCpv": [
+      "90911000",
+      "90911200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538910-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäudereinigung (Unterhaltsreinigung) an 4 Standorten der Elbe-Werkstätten GmbH",
+    "buyer": "Elbe-Werkstätten GmbH",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 239385.36,
+    "deadline": null,
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538910-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "539517-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Verlängerung Reinigungsvertrag",
+    "buyer": "Fachhochschule Aachen",
+    "buyerCity": "Aachen",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 450000,
+    "deadline": null,
+    "nuts": [
+      "DEA2D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/539517-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538262-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – 2026-1004807_Flughafen München_Rahmenvertrag Reinigung Küchenabluftanlagen",
+    "buyer": "Flughafen München GmbH",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90911000",
+      "45259000",
+      "50712000",
+      "45331000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE21B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538262-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538350-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäudereinigung in Objekten der Stadt Ladenburg",
+    "buyer": "Stadt Ladenburg",
+    "buyerCity": "Ladenburg",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90000000",
+      "90900000",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538350-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "539489-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Wartung von Straßenbeleuchtungen – Stuttgart Netze - Tunnel Leuchtenrevision",
+    "buyer": "Stuttgart Netze GmbH",
+    "buyerCity": "Stuttgart",
+    "country": "DEU",
+    "cpv": [
+      "50232100",
+      "34993100",
+      "90910000"
+    ],
+    "cpvMain": "50232100",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/539489-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "540000-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – S0326 Gebäude- und S0326_1 Fensterreinigung Manching",
+    "buyer": "Bundeswehr-Dienstleistungszentrum Ingolstadt",
+    "buyerCity": "Ingolstadt",
+    "country": "DEU",
+    "cpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE21J",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/540000-2026",
+    "matchedCpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "540025-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Reinigung Alexander-von-Humboldt-Gymnasium",
+    "buyer": "Stadt Konstanz, Personal- und Organisationsamt-Zentrale Vergabestelle",
+    "buyerCity": "Konstanz",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90910000",
+      "90919300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE138",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/540025-2026",
+    "matchedCpv": [
+      "90911200",
+      "90910000",
+      "90919300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "538500-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Unterhaltsreinigung für das Landesamt für Zuwanderung und Flüchtlinge Landesunterkunft Neumünster",
+    "buyer": "Land Schleswig-Holstein vertreten durch die Gebäudemanagement Schleswig-Holstein AöR",
+    "buyerCity": "Kiel",
+    "country": "DEU",
+    "cpv": [
+      "90911000"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": 1,
+    "deadline": null,
+    "nuts": [
+      "DEF04",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/538500-2026",
+    "matchedCpv": [
+      "90911000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
     "id": "533980-2026",
     "publishedAt": "2026-08-02T22:00:00.000Z",
     "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Gebäudereinigung Verwaltungsobjekte",
@@ -2439,7 +2824,7 @@
       "90911200",
       "90911300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -2670,7 +3055,7 @@
       "90911300",
       "90914000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {

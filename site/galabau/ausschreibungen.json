@@ -1,5 +1,71 @@
 [
   {
+    "id": "539650-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Neubau inklusives Schulzentrum Am Ellernholzteich, Greifswald",
+    "buyer": "Universitäts- und Hansestadt Greifswald, Der Oberbürgermeister",
+    "buyerCity": "Greifswald",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112700",
+      "45112723"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-08-18T08:00:00.000Z",
+    "nuts": [
+      "DE80N",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/539650-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112723"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
+    "id": "540272-2026",
+    "publishedAt": "2026-08-03T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+    "buyer": "Landkreis Göttingen",
+    "buyerCity": "Göttingen",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45233222",
+      "45112710",
+      "45112730",
+      "45233250",
+      "45342000",
+      "45236000",
+      "45112500",
+      "77300000",
+      "77310000",
+      "45000000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE91C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/540272-2026",
+    "matchedCpv": [
+      "45112710",
+      "77300000",
+      "77310000",
+      "45112700",
+      "45112730"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-04T07:12:46.628Z"
+  },
+  {
     "id": "534477-2026",
     "publishedAt": "2026-08-02T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Landschaftsbauarbeiten",
@@ -3365,7 +3431,7 @@
       "77211500",
       "77211400"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
