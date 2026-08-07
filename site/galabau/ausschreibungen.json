@@ -1,5 +1,143 @@
 [
   {
+    "id": "541486-2026",
+    "publishedAt": "2026-08-04T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Quartier am alten Krankenhaus Stadthagen - Außenanlagen Ausstattung Park",
+    "buyer": "Landkreis Schaumburg - Vergabestelle",
+    "buyerCity": "Stadthagen",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45112711"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-09-04T08:00:00.000Z",
+    "nuts": [
+      "DE928",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/541486-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112711"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-05T07:14:08.019Z"
+  },
+  {
+    "id": "541940-2026",
+    "publishedAt": "2026-08-04T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – BLB NRW Münster / div. Liegenschaften des BLB NRW Münster / Dienste an Grün- und Grauflächen / 060-26-00177",
+    "buyer": "Bau- und Liegenschaftsbetrieb NRW Münster",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": 197845.58,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/541940-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-05T07:14:08.019Z"
+  },
+  {
+    "id": "543094-2026",
+    "publishedAt": "2026-08-04T22:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflegeleistungen für 41 Wohnliegenschaften in Freiburg i. Br. und 12 Wohnliegenschaften in Müllheim, Bundesanstalt für Immobilienaufgaben, Sparte Wohnen Regionalbereich Süd - VOEK 474-24",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77342000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": 429683.88,
+    "deadline": null,
+    "nuts": [
+      "DE131",
+      "DE132",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/543094-2026",
+    "matchedCpv": [
+      "77314000",
+      "77342000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-05T07:14:08.019Z"
+  },
+  {
+    "id": "541970-2026",
+    "publishedAt": "2026-08-04T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen in den Bereichen Erholung, Kultur und Sport – Beratungs-, Koordinierungs- und Betriebsmanagementleistungen Ausstellung und Betrieb Gartenschau 2029",
+    "buyer": "Eigenbetrieb Bürgergartenschau 2029",
+    "buyerCity": "Vaihingen an der Enz",
+    "country": "DEU",
+    "cpv": [
+      "92000000",
+      "63513000",
+      "75241000",
+      "79420000",
+      "79421000",
+      "79990000",
+      "92312000",
+      "92330000",
+      "79950000",
+      "79952000",
+      "77300000",
+      "71222000"
+    ],
+    "cpvMain": "92000000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE115",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/541970-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-05T07:14:08.019Z"
+  },
+  {
+    "id": "543390-2026",
+    "publishedAt": "2026-08-04T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – AWF Pflegearbeiten DGF St2111 St2327",
+    "buyer": "Staatliches Bauamt Landshut",
+    "buyerCity": "Landshut",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": 28203,
+    "deadline": null,
+    "nuts": [
+      "DE22C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/543390-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-05T07:14:08.019Z"
+  },
+  {
     "id": "539650-2026",
     "publishedAt": "2026-08-03T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Neubau inklusives Schulzentrum Am Ellernholzteich, Greifswald",
@@ -592,7 +730,7 @@
       "45112720",
       "77314100"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-07-30T07:11:47.329Z"
   },
   {
