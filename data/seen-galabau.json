@@ -1987,7 +1987,12 @@
     "550893-2026": "2026-08-10T05:55:02.873Z",
     "552122-2026": "2026-08-10T05:55:02.873Z",
     "552872-2026": "2026-08-10T05:55:02.873Z",
-    "552527-2026": "2026-08-10T05:55:02.873Z"
+    "552527-2026": "2026-08-10T05:55:02.873Z",
+    "554538-2026": "2026-08-11T05:34:34.169Z",
+    "556759-2026": "2026-08-11T05:34:34.169Z",
+    "554458-2026": "2026-08-11T05:34:34.169Z",
+    "556065-2026": "2026-08-11T05:34:34.169Z",
+    "556143-2026": "2026-08-11T05:34:34.169Z"
   },
   "notices": {
     "519810-2026": {
@@ -2158,7 +2163,7 @@
         "77300000",
         "77340000"
       ],
-      "score": 83
+      "score": 68
     },
     "522309-2026": {
       "id": "522309-2026",
@@ -2561,7 +2566,7 @@
         "77300000",
         "77340000"
       ],
-      "score": 83
+      "score": 68
     },
     "496460-2026": {
       "id": "496460-2026",
@@ -5041,7 +5046,7 @@
       "matchedCpv": [
         "45112712"
       ],
-      "score": 63
+      "score": 48
     },
     "503744-2026": {
       "id": "503744-2026",
@@ -54705,7 +54710,222 @@
         "45112712"
       ],
       "score": 48
+    },
+    "554538-2026": {
+      "id": "554538-2026",
+      "publishedAt": "2026-08-10T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – TS - Grünflächenpflege UB Ost - Los 4 Langerwehe und Los 5 Kanal",
+      "buyer": "Wasserverband Eifel-Rur - Zentrale Vergabestelle -",
+      "buyerCity": "Düren",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-11T21:59:00.000Z",
+      "nuts": [
+        "DEA26",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/554538-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "556759-2026": {
+      "id": "556759-2026",
+      "publishedAt": "2026-08-10T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 5 Bundesliegenschaften in Nordrhein-Westfalen, Bundesanstalt für Immobilienaufgaben, Direktion Dortmund (Vergabenummer VOEK 578-25)",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77314000",
+        "77342000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-09-30T07:00:00.000Z",
+      "nuts": [
+        "DEA2D",
+        "DEA41",
+        "DEA43",
+        "DEA22",
+        "DEA15",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/556759-2026",
+      "matchedCpv": [
+        "77310000",
+        "77314000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "554458-2026": {
+      "id": "554458-2026",
+      "publishedAt": "2026-08-10T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Stahlbauarbeiten 70-00482-2180-306 - PR1224154-2180-B",
+      "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45112710",
+        "09331200"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE131",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/554458-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
+    },
+    "556065-2026": {
+      "id": "556065-2026",
+      "publishedAt": "2026-08-10T22:00:00.000Z",
+      "title": "Deutschland – Bau von Feuerwachen – HAB_TrÜbPl, Neubau einer Feuerwache",
+      "buyer": "Staatliches Bauamt Schweinfurt",
+      "buyerCity": "Schweinfurt",
+      "country": "DEU",
+      "cpv": [
+        "45216121",
+        "45261213",
+        "45261410",
+        "45441000",
+        "45421100",
+        "45212190",
+        "45443000",
+        "45262670",
+        "45421148",
+        "45421131",
+        "45410000",
+        "45324000",
+        "45262320",
+        "45112700",
+        "45233222",
+        "45233200",
+        "45262100",
+        "45420000",
+        "45432130",
+        "45442100",
+        "45442110",
+        "45421141",
+        "45421152",
+        "45421000",
+        "45311000",
+        "45312100",
+        "45314000",
+        "45316000",
+        "45314320",
+        "31127000",
+        "45000000",
+        "45232221",
+        "45332400",
+        "45332000",
+        "45332300",
+        "45332200",
+        "45331100",
+        "45331210",
+        "45331221",
+        "45421151",
+        "45251143",
+        "45200000",
+        "45112710",
+        "45111291",
+        "45231000",
+        "45112000"
+      ],
+      "cpvMain": "45216121",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE265",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/556065-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "556143-2026": {
+      "id": "556143-2026",
+      "publishedAt": "2026-08-10T22:00:00.000Z",
+      "title": "Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – WFL_Rhön-Kas, Neubau FeuerwacheTrÜbPl FW",
+      "buyer": "Staatliches Bauamt Schweinfurt",
+      "buyerCity": "Schweinfurt",
+      "country": "DEU",
+      "cpv": [
+        "45200000",
+        "45216121",
+        "45262100",
+        "45261213",
+        "45261410",
+        "45441000",
+        "45421100",
+        "45212190",
+        "45443000",
+        "45262670",
+        "45421148",
+        "45421131",
+        "45410000",
+        "45324000",
+        "45262320",
+        "45420000",
+        "45432130",
+        "45442100",
+        "45442110",
+        "45421141",
+        "45421152",
+        "45421000",
+        "45311000",
+        "45312100",
+        "45314000",
+        "45316000",
+        "45314320",
+        "31127000",
+        "45000000",
+        "45332400",
+        "45332000",
+        "45332300",
+        "45332200",
+        "45331100",
+        "45331210",
+        "45331221",
+        "45421151",
+        "45251143",
+        "45112700",
+        "45233222",
+        "45233200",
+        "45112710"
+      ],
+      "cpvMain": "45200000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE265",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/556143-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-08-10T05:55:02.873Z"
+  "lastRun": "2026-08-11T05:34:34.169Z"
 }
