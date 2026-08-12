@@ -1,5 +1,260 @@
 [
   {
+    "id": "551467-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – Erschließung des Wohnbaugebietes Lauerhofer Feld und Ausbau Schlutuper Straße gemäß B-Plan 07.32.00 - Teilobjekt Freianlagen und Spielplatz",
+    "buyer": "Hansestadt Lübeck, Bereich 5.061.2 - Fachbereichsdienste / Submission",
+    "buyerCity": "Lübeck",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45112710",
+      "45112500",
+      "77310000",
+      "45236210",
+      "37535200",
+      "43325000",
+      "37410000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-09-08T08:00:00.000Z",
+    "nuts": [
+      "DEF03",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/551467-2026",
+    "matchedCpv": [
+      "45112710",
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "552005-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege in Grünanlagen BV 1 (Teil 2) für die Jahre 2027-2031",
+    "buyer": "Stadt Mülheim an der Ruhr",
+    "buyerCity": "Mülheim an der Ruhr",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77300000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-15T07:00:00.000Z",
+    "nuts": [
+      "DEA16",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/552005-2026",
+    "matchedCpv": [
+      "77310000",
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "553112-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Außenanlagen Südpausenhof (GaLa-Bau)",
+    "buyer": "Zweckverband Schulzentrum",
+    "buyerCity": "Hassfurt",
+    "country": "DEU",
+    "cpv": [
+      "45112710"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-09-08T09:00:00.000Z",
+    "nuts": [
+      "DE267",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/553112-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "551351-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – ehem. Kraftwerk-Mitte in Dresden; KWM 26 Energiemuseum; VE 500 Außenanlagen",
+    "buyer": "SachsenEnergie AG",
+    "buyerCity": "Dresden",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45232452",
+      "45112000",
+      "45233222",
+      "77310000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 274622.88,
+    "deadline": null,
+    "nuts": [
+      "DED21",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/551351-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "550893-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Dachdeckarbeiten – Kläranlage Aurich-Haxtum, Bau Faulung II - Dachdeckungsarbeiten",
+    "buyer": "Stadt Aurich",
+    "buyerCity": "Aurich",
+    "country": "DEU",
+    "cpv": [
+      "45261210",
+      "45261200",
+      "45260000",
+      "45000000",
+      "45262100",
+      "45261213",
+      "45112713",
+      "45261300",
+      "45421132"
+    ],
+    "cpvMain": "45261210",
+    "valueEur": null,
+    "deadline": "2026-09-10T08:59:00.000Z",
+    "nuts": [
+      "DE947",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/550893-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "552122-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Schulgebäude – Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten",
+    "buyer": "Verbandsgemeindeverwaltung Wonnegau",
+    "buyerCity": "Osthofen",
+    "country": "DEU",
+    "cpv": [
+      "45214200",
+      "45112712",
+      "45232451"
+    ],
+    "cpvMain": "45214200",
+    "valueEur": null,
+    "deadline": "2026-09-08T07:00:00.000Z",
+    "nuts": [
+      "DEB3B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/552122-2026",
+    "matchedCpv": [
+      "45112712"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "552872-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Dachdeckarbeiten – LV 021-2 Dachabdichtungsarbeiten BA 2",
+    "buyer": "Stadt Neusäß",
+    "buyerCity": "Neusäß",
+    "country": "DEU",
+    "cpv": [
+      "45261210",
+      "45261410",
+      "45112713"
+    ],
+    "cpvMain": "45261210",
+    "valueEur": 334689.5,
+    "deadline": null,
+    "nuts": [
+      "DE276",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/552872-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
+    "id": "552527-2026",
+    "publishedAt": "2026-08-09T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – 118 KliPrien BA3_RoMed Klinik Prien am Chiemsee - Erneuerung Funktionsbau - Vorinformation Bauleistung",
+    "buyer": "Kliniken der Stadt und des Landkreises Rosenheim GmbH",
+    "buyerCity": "Rosenheim",
+    "country": "DEU",
+    "cpv": [
+      "45215100",
+      "45321000",
+      "45410000",
+      "45442100",
+      "45112713",
+      "45421110",
+      "45261410",
+      "45421153",
+      "45324000",
+      "45341000",
+      "45421131",
+      "45223210",
+      "45262670",
+      "45262320",
+      "45431000",
+      "45432100",
+      "45422100",
+      "45421000",
+      "34928470",
+      "44521120",
+      "90911200",
+      "45262100",
+      "45331000",
+      "45331210",
+      "45232460",
+      "45331231",
+      "45320000",
+      "45333000",
+      "45311200",
+      "42417000",
+      "45215140",
+      "24111500",
+      "48921000",
+      "45112712",
+      "45247110",
+      "45421151"
+    ],
+    "cpvMain": "45215100",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE21K",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/552527-2026",
+    "matchedCpv": [
+      "45112713",
+      "45112712"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-08-10T05:55:02.873Z"
+  },
+  {
     "id": "547508-2026",
     "publishedAt": "2026-08-06T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Gemeinde Ostseebad Boltenhagen: Neubau eines Feuerwehrhauses - Los 21 Freianlagen",
@@ -1458,7 +1713,7 @@
       "45112700",
       "45112712"
     ],
-    "score": 60,
+    "score": 55,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
@@ -1935,7 +2190,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-07-28T07:12:43.828Z"
   },
   {
