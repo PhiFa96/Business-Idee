@@ -1998,7 +1998,17 @@
     "557618-2026": "2026-08-12T05:54:55.229Z",
     "558426-2026": "2026-08-12T05:54:55.229Z",
     "558018-2026": "2026-08-12T05:54:55.229Z",
-    "559869-2026": "2026-08-12T05:54:55.229Z"
+    "559869-2026": "2026-08-12T05:54:55.229Z",
+    "560554-2026": "2026-08-13T05:56:12.600Z",
+    "560612-2026": "2026-08-13T05:56:12.600Z",
+    "561461-2026": "2026-08-13T05:56:12.600Z",
+    "561803-2026": "2026-08-13T05:56:12.600Z",
+    "561907-2026": "2026-08-13T05:56:12.600Z",
+    "562927-2026": "2026-08-13T05:56:12.600Z",
+    "563329-2026": "2026-08-13T05:56:12.600Z",
+    "561313-2026": "2026-08-13T05:56:12.600Z",
+    "562922-2026": "2026-08-13T05:56:12.600Z",
+    "561619-2026": "2026-08-13T05:56:12.600Z"
   },
   "notices": {
     "519810-2026": {
@@ -55079,7 +55089,299 @@
         "45112713"
       ],
       "score": 63
+    },
+    "560554-2026": {
+      "id": "560554-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege 2027 ff.",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77340000",
+        "77314100",
+        "77311000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-09-15T11:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/560554-2026",
+      "matchedCpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77340000",
+        "77311000",
+        "77314100"
+      ],
+      "score": 83
+    },
+    "560612-2026": {
+      "id": "560612-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Pflanz- und Ansaatarbeiten sowie Pflegearbeiten",
+      "buyer": "Hamm.Invest GmbH",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45112711",
+        "77310000",
+        "77315000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-09-14T04:00:00.000Z",
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/560612-2026",
+      "matchedCpv": [
+        "45112710",
+        "77310000",
+        "45112711",
+        "77315000"
+      ],
+      "score": 83
+    },
+    "561461-2026": {
+      "id": "561461-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Neubau Kita mit Arztpraxis in Ubstadt-Weiher, Ortsteil Zeutern",
+      "buyer": "Gemeinde Ubstadt-Weiher",
+      "buyerCity": "Ubstadt-Weiher",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45112723",
+        "45214100",
+        "45112710",
+        "71421000",
+        "45350000"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-09-21T11:59:00.000Z",
+      "nuts": [
+        "DE123",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/561461-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112723"
+      ],
+      "score": 83
+    },
+    "561803-2026": {
+      "id": "561803-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Landschaftsbau 73-00948-3510-510 - PR1275475-3510-B",
+      "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-09-15T08:00:00.000Z",
+      "nuts": [
+        "DEA2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/561803-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "561907-2026": {
+      "id": "561907-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Landschaftsbauarbeiten Stadionpark (Los 4: Sportinsel)",
+      "buyer": "Stadt Hürth",
+      "buyerCity": "Hürth",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45111000",
+        "45112500",
+        "45112710",
+        "45112711",
+        "45112720",
+        "45112723",
+        "45212200",
+        "45212210",
+        "45221250",
+        "45231300",
+        "45232120",
+        "45232130",
+        "45232150",
+        "45233222",
+        "45262300",
+        "45262670",
+        "45310000",
+        "45332300"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-09-14T08:00:00.000Z",
+      "nuts": [
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/561907-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112720",
+        "45112723"
+      ],
+      "score": 83
+    },
+    "562927-2026": {
+      "id": "562927-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Landschaftsbauarbeiten, Auftragsänderung Nr. 2",
+      "buyer": "Landeshauptstadt München vertreten durch MRG Münchner Raumentwicklungsgesellschaft mbH",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112713",
+        "45211100",
+        "45262700",
+        "45000000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 200765.65,
+      "deadline": null,
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/562927-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112713"
+      ],
+      "score": 80
+    },
+    "563329-2026": {
+      "id": "563329-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Münster / Hochschule Münster - Ersatzneubau IG 1 / 5.01 XAA Außenanlagen / 060-26-00167",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Münster",
+      "buyerCity": "Münster",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "31527200",
+        "34928400",
+        "45112710",
+        "45232400",
+        "45233222",
+        "45262620",
+        "45342000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 1107039.2,
+      "deadline": null,
+      "nuts": [
+        "DEA33",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/563329-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "561313-2026": {
+      "id": "561313-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Metallbauarbeiten",
+      "buyer": "Landkreis Schwandorf",
+      "buyerCity": "Schwandorf",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45443000",
+        "44221220",
+        "45112713"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": null,
+      "deadline": "2026-11-12T08:00:00.000Z",
+      "nuts": [
+        "DE239",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/561313-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "562922-2026": {
+      "id": "562922-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Umbau, Erweiterung und Sanierung der Freizeitbegegnungsstätte (FZB) in Schneverdingen",
+      "buyer": "Stadt Schneverdingen",
+      "buyerCity": "Schneverdingen",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 103179.1,
+      "deadline": null,
+      "nuts": [
+        "DE938",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/562922-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 60
+    },
+    "561619-2026": {
+      "id": "561619-2026",
+      "publishedAt": "2026-08-12T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Wilhelm Leuschner Galabau",
+      "buyer": "Immobilien Bremen - Eigenbetrieb der Stadtgemeinde Bremen",
+      "buyerCity": "Bremen",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE501",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/561619-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 48
     }
   },
-  "lastRun": "2026-08-12T05:54:55.229Z"
+  "lastRun": "2026-08-13T05:56:12.600Z"
 }
