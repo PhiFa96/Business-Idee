@@ -4876,7 +4876,19 @@
     "560773-2026": "2026-08-13T05:56:12.600Z",
     "561863-2026": "2026-08-13T05:56:12.600Z",
     "560405-2026": "2026-08-13T05:56:12.600Z",
-    "560738-2026": "2026-08-13T05:56:12.600Z"
+    "560738-2026": "2026-08-13T05:56:12.600Z",
+    "564026-2026": "2026-08-14T05:55:52.048Z",
+    "564035-2026": "2026-08-14T05:55:52.048Z",
+    "564095-2026": "2026-08-14T05:55:52.048Z",
+    "564337-2026": "2026-08-14T05:55:52.048Z",
+    "564550-2026": "2026-08-14T05:55:52.048Z",
+    "564867-2026": "2026-08-14T05:55:52.048Z",
+    "565728-2026": "2026-08-14T05:55:52.048Z",
+    "563481-2026": "2026-08-14T05:55:52.048Z",
+    "564367-2026": "2026-08-14T05:55:52.048Z",
+    "565668-2026": "2026-08-14T05:55:52.048Z",
+    "565831-2026": "2026-08-14T05:55:52.048Z",
+    "564611-2026": "2026-08-14T05:55:52.048Z"
   },
   "notices": {
     "447978-2026": {
@@ -7406,7 +7418,7 @@
         "90911300",
         "90919300"
       ],
-      "score": 68
+      "score": 63
     },
     "494560-2026": {
       "id": "494560-2026",
@@ -7708,7 +7720,7 @@
         "90911300",
         "90919300"
       ],
-      "score": 68
+      "score": 63
     },
     "500694-2026": {
       "id": "500694-2026",
@@ -127162,7 +127174,305 @@
         "90911000"
       ],
       "score": 60
+    },
+    "564026-2026": {
+      "id": "564026-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Gebäude- und Glasreinigung der Justizbehörden Amberg",
+      "buyer": "Freistaat Bayern - vertreten durch den Präsidenten des Landgerichts Amberg",
+      "buyerCity": "Amberg",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-09-17T10:00:00.000Z",
+      "nuts": [
+        "DE231",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564026-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 83
+    },
+    "564035-2026": {
+      "id": "564035-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung berlinovo Portfolio",
+      "buyer": "Berlinovo Immobilien Gesellschaft mbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90910000",
+        "90911000",
+        "90911100"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-08-26T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564035-2026",
+      "matchedCpv": [
+        "90911200",
+        "90910000",
+        "90911000",
+        "90911100"
+      ],
+      "score": 83
+    },
+    "564095-2026": {
+      "id": "564095-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Abschluss Rahmenvertrag Unterhaltsreinigung/Glasreinigung in Bundeswehrliegenschaften am Standort Sondershausen",
+      "buyer": "Bundeswehr-Dienstleistungszentrum Weißenfels",
+      "buyerCity": "Weißenfels",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-09-17T11:00:00.000Z",
+      "nuts": [
+        "DEG0A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564095-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 83
+    },
+    "564337-2026": {
+      "id": "564337-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhalts- und Grundreinigungsarbeiten für die Käthe-Kollwitz-Schule in Bruchsal",
+      "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Zentrale Vergabestelle",
+      "buyerCity": "Karlsruhe",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-09-29T08:00:00.000Z",
+      "nuts": [
+        "DE123",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564337-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 83
+    },
+    "564550-2026": {
+      "id": "564550-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Sonstige Baufertigstellungsarbeiten – LV 033-2 Baureinigungsarbeiten BA 2",
+      "buyer": "Stadt Neusäß",
+      "buyerCity": "Neusäß",
+      "country": "DEU",
+      "cpv": [
+        "45450000",
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "cpvMain": "45450000",
+      "valueEur": null,
+      "deadline": "2026-09-16T08:35:00.000Z",
+      "nuts": [
+        "DE276",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564550-2026",
+      "matchedCpv": [
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "score": 83
+    },
+    "564867-2026": {
+      "id": "564867-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Fensterreinigung – Glas- und Fassadenreinigung Filiale Saarbrücken",
+      "buyer": "Deutsche Bundesbank, Zentralbereich Beschaffungen",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "90911300"
+      ],
+      "cpvMain": "90911300",
+      "valueEur": null,
+      "deadline": "2026-09-15T09:00:00.000Z",
+      "nuts": [
+        "DEC01",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564867-2026",
+      "matchedCpv": [
+        "90911300"
+      ],
+      "score": 83
+    },
+    "565728-2026": {
+      "id": "565728-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – UHR Kundenzentren Marzahn & Köpenick",
+      "buyer": "Berliner Verkehrsbetriebe, Bereich Einkauf/ Materialwirtschaft",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "90911000"
+      ],
+      "cpvMain": "90911000",
+      "valueEur": null,
+      "deadline": "2026-09-14T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/565728-2026",
+      "matchedCpv": [
+        "90911000"
+      ],
+      "score": 83
+    },
+    "563481-2026": {
+      "id": "563481-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Reinigungsdienste – Reinigungsleistung Kita Gartenstraße und Kita Traunwalchen",
+      "buyer": "Stadt Traunreut",
+      "buyerCity": "Traunreut",
+      "country": "DEU",
+      "cpv": [
+        "90910000",
+        "90911100",
+        "90911200"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": 101828.57,
+      "deadline": null,
+      "nuts": [
+        "DE21M",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/563481-2026",
+      "matchedCpv": [
+        "90910000",
+        "90911100",
+        "90911200"
+      ],
+      "score": 80
+    },
+    "564367-2026": {
+      "id": "564367-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung der HSBI am Standort Lampingstraße 3 Glasreinigung an den Standorten Lampingstraße 3 und am Standort Minden Artilleriestr. 9",
+      "buyer": "Hochschule Bielefeld",
+      "buyerCity": "Bielefeld",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": 281540,
+      "deadline": null,
+      "nuts": [
+        "DEA41",
+        "DEA46",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564367-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 80
+    },
+    "565668-2026": {
+      "id": "565668-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Reinigungsdienste – Magistrat der Stadt Hünfeld, Straßen- und Flächenreinigung",
+      "buyer": "Interkommunale Vergabestelle des Landkreises Fulda im Auftrag der Stadt Hünfeld",
+      "buyerCity": "Fulda",
+      "country": "DEU",
+      "cpv": [
+        "90910000"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE732",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/565668-2026",
+      "matchedCpv": [
+        "90910000"
+      ],
+      "score": 68
+    },
+    "565831-2026": {
+      "id": "565831-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Durchführung der tägl. Unterhaltsreinigung und einer jährl. WC-Grundreinigung (LOS 1), sowie einer jährl. Glasreinigung (LOS 2) an div. Verwaltungsobjekten in FB von 01/2027 - 12/30 + 4x 12 Monate",
+      "buyer": "Wetteraukreis",
+      "buyerCity": "Friedberg",
+      "country": "DEU",
+      "cpv": [
+        "90911000"
+      ],
+      "cpvMain": "90911000",
+      "valueEur": null,
+      "deadline": "2026-08-20T07:00:00.000Z",
+      "nuts": [
+        "DE71E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/565831-2026",
+      "matchedCpv": [
+        "90911000"
+      ],
+      "score": 68
+    },
+    "564611-2026": {
+      "id": "564611-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Neubau Kinderklinikum (EKiZ) und Wirtschaftshof – Klinikum Nürnberg Süd - Grundreinigung",
+      "buyer": "Klinikum Nürnberg",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564611-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-13T05:56:12.600Z"
+  "lastRun": "2026-08-14T05:55:52.048Z"
 }

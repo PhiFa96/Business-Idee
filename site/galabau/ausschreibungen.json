@@ -1,5 +1,159 @@
 [
   {
+    "id": "559936-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Erzeugnisse von Forstbaumschulen – Lieferung, Pflanzung und Pflanzenschutz von Forstpflanzen - Landesforsten Rheinland-Pfalz - Zentralstelle der Forstverwaltung",
+    "buyer": "Zentralstelle der Forstverwaltung",
+    "buyerCity": "Emmelshausen",
+    "country": "DEU",
+    "cpv": [
+      "03450000",
+      "77310000",
+      "03451000"
+    ],
+    "cpvMain": "03450000",
+    "valueEur": 765707,
+    "deadline": "2026-09-10T07:00:00.000Z",
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/559936-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
+    "id": "557390-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Bankettmahd",
+    "buyer": "Gemeinde Bestensee",
+    "buyerCity": "Bestensee",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-09-18T21:59:00.000Z",
+    "nuts": [
+      "DE406",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/557390-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
+    "id": "557618-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Rahmenvereinbarung über Baumpflegeleistungen",
+    "buyer": "Stadt Gütersloh",
+    "buyerCity": "Gütersloh",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 144000,
+    "deadline": null,
+    "nuts": [
+      "DEA42",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/557618-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
+    "id": "558426-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – 22E0267 (LBB NL Mainz) Universitätsmedizin der Joh. Gutenberg Universität Mainz / Sanierung u. Umnutzung SB 2/4",
+    "buyer": "des Landes Rheinland-Pfalz vertreten durch das Ministerium der Finanzen vertreten durch den Landesbetrieb Liegenschafts- und Baubetreuung Niederlassung Mainz",
+    "buyerCity": "Mainz",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112712"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": 995616,
+    "deadline": null,
+    "nuts": [
+      "DEB35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/558426-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112712"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
+    "id": "558018-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Alanbrookequartier - Freianlagen, 5. BA Exerzierfeld Nord; Garten- und Landschaftsbau",
+    "buyer": "Stadt Paderborn",
+    "buyerCity": "Paderborn",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112711"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-09-14T06:20:00.000Z",
+    "nuts": [
+      "DEA47",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/558018-2026",
+    "matchedCpv": [
+      "45112700",
+      "45112711"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
+    "id": "559869-2026",
+    "publishedAt": "2026-08-11T22:00:00.000Z",
+    "title": "Deutschland – Metallbauarbeiten – Metallbauarbeiten",
+    "buyer": "Landkreis Schwandorf",
+    "buyerCity": "Schwandorf",
+    "country": "DEU",
+    "cpv": [
+      "45262670",
+      "45443000",
+      "44221220",
+      "45112713"
+    ],
+    "cpvMain": "45262670",
+    "valueEur": null,
+    "deadline": "2026-11-12T08:00:00.000Z",
+    "nuts": [
+      "DE239",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/559869-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-12T05:54:55.229Z"
+  },
+  {
     "id": "554538-2026",
     "publishedAt": "2026-08-10T22:00:00.000Z",
     "title": "Deutschland – Dienstleistungen im Gartenbau – TS - Grünflächenpflege UB Ost - Los 4 Langerwehe und Los 5 Kanal",

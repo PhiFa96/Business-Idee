@@ -2008,7 +2008,12 @@
     "563329-2026": "2026-08-13T05:56:12.600Z",
     "561313-2026": "2026-08-13T05:56:12.600Z",
     "562922-2026": "2026-08-13T05:56:12.600Z",
-    "561619-2026": "2026-08-13T05:56:12.600Z"
+    "561619-2026": "2026-08-13T05:56:12.600Z",
+    "564506-2026": "2026-08-14T05:55:52.048Z",
+    "565687-2026": "2026-08-14T05:55:52.048Z",
+    "564100-2026": "2026-08-14T05:55:52.048Z",
+    "564224-2026": "2026-08-14T05:55:52.048Z",
+    "564786-2026": "2026-08-14T05:55:52.048Z"
   },
   "notices": {
     "519810-2026": {
@@ -55381,7 +55386,129 @@
         "45112712"
       ],
       "score": 48
+    },
+    "564506-2026": {
+      "id": "564506-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Los Beach",
+      "buyer": "Mannheim Benjamin-Franklin-Village, BA 14 - Beach",
+      "buyerCity": "Mannheim",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-09-14T08:00:00.000Z",
+      "nuts": [
+        "DE126",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564506-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "565687-2026": {
+      "id": "565687-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – GS Rosa Luxemburg, Landschaftsbauarbeiten",
+      "buyer": "Stadt Halle (Saale), Fachbereich Recht, Team Vergabe Bauleistungen/Bauplanungen",
+      "buyerCity": "Halle (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-09-15T08:00:00.000Z",
+      "nuts": [
+        "DEE02",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/565687-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "564100-2026": {
+      "id": "564100-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – AWF Pflegearbeiten Lkr LA Staatsstrassen",
+      "buyer": "Staatliches Bauamt Landshut",
+      "buyerCity": "Landshut",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 360413.96,
+      "deadline": null,
+      "nuts": [
+        "DE221",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564100-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 80
+    },
+    "564224-2026": {
+      "id": "564224-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – Umbau und Erweiterung des Westpfalz-Klinikums am Standort Kirchheimbolanden - Los 40 - Tief-, Verkehrs- und Landschaftsbauarbeiten",
+      "buyer": "Westpfalz-Klinikum GmbH",
+      "buyerCity": "Kaiserslautern",
+      "country": "DEU",
+      "cpv": [
+        "45215100",
+        "45233120",
+        "45112710"
+      ],
+      "cpvMain": "45215100",
+      "valueEur": 579570.77,
+      "deadline": null,
+      "nuts": [
+        "DEB3D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564224-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "564786-2026": {
+      "id": "564786-2026",
+      "publishedAt": "2026-08-13T22:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten und Spezialbauarbeiten – Spengler, Abdichtung, Dachbegrünung",
+      "buyer": "Stadt Immenstadt i. Allgäu",
+      "buyerCity": "Immenstadt i. Allgäu",
+      "country": "DEU",
+      "cpv": [
+        "45260000",
+        "45261410",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45260000",
+      "valueEur": 293554.36,
+      "deadline": null,
+      "nuts": [
+        "DE27E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/564786-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-13T05:56:12.600Z"
+  "lastRun": "2026-08-14T05:55:52.048Z"
 }
