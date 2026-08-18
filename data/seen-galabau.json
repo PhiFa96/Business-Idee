@@ -2025,7 +2025,10 @@
     "566318-2026": "2026-08-17T05:08:30.779Z",
     "568151-2026": "2026-08-17T05:08:30.779Z",
     "567960-2026": "2026-08-17T05:08:30.779Z",
-    "568299-2026": "2026-08-17T05:08:30.779Z"
+    "568299-2026": "2026-08-17T05:08:30.779Z",
+    "572011-2026": "2026-08-18T05:02:42.177Z",
+    "569702-2026": "2026-08-18T05:02:42.177Z",
+    "571308-2026": "2026-08-18T05:02:42.177Z"
   },
   "notices": {
     "519810-2026": {
@@ -2049,7 +2052,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 95
+      "score": 80
     },
     "520313-2026": {
       "id": "520313-2026",
@@ -2072,7 +2075,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 95
+      "score": 80
     },
     "520890-2026": {
       "id": "520890-2026",
@@ -2095,7 +2098,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 95
+      "score": 80
     },
     "496308-2026": {
       "id": "496308-2026",
@@ -2538,7 +2541,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "501401-2026": {
       "id": "501401-2026",
@@ -6063,7 +6066,7 @@
       "matchedCpv": [
         "45112711"
       ],
-      "score": 63
+      "score": 48
     },
     "526052-2026": {
       "id": "526052-2026",
@@ -55812,7 +55815,80 @@
         "45112712"
       ],
       "score": 48
+    },
+    "572011-2026": {
+      "id": "572011-2026",
+      "publishedAt": "2026-08-17T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Baumkontrolle Naturschutzgrundstücke im Hohenlohekreis",
+      "buyer": "Vermögen und Bau Baden-Württemberg, Amt Heilbronn",
+      "buyerCity": "Heilbronn",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 150720,
+      "deadline": null,
+      "nuts": [
+        "DE117",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/572011-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 80
+    },
+    "569702-2026": {
+      "id": "569702-2026",
+      "publishedAt": "2026-08-17T22:00:00.000Z",
+      "title": "Deutschland – Bau von weiterführenden Schulen – Dachabdichtungsarbeiten",
+      "buyer": "Vergabestelle Landeshauptstadt Stuttgart",
+      "buyerCity": "Stuttgart",
+      "country": "DEU",
+      "cpv": [
+        "45214220",
+        "45261410",
+        "45261213",
+        "45112713"
+      ],
+      "cpvMain": "45214220",
+      "valueEur": null,
+      "deadline": "2026-09-22T08:00:00.000Z",
+      "nuts": [
+        "DE111",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/569702-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "571308-2026": {
+      "id": "571308-2026",
+      "publishedAt": "2026-08-17T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Erich-Kästner- Schule Lich - Neubau Erweiterung - Dachabdichtungsarbeiten",
+      "buyer": "Landkreis Gießen - Der Kreisausschuss -",
+      "buyerCity": "Gießen",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE721",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/571308-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 48
     }
   },
-  "lastRun": "2026-08-17T05:08:30.779Z"
+  "lastRun": "2026-08-18T05:02:42.177Z"
 }
