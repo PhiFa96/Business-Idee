@@ -2028,7 +2028,15 @@
     "568299-2026": "2026-08-17T05:08:30.779Z",
     "572011-2026": "2026-08-18T05:02:42.177Z",
     "569702-2026": "2026-08-18T05:02:42.177Z",
-    "571308-2026": "2026-08-18T05:02:42.177Z"
+    "571308-2026": "2026-08-18T05:02:42.177Z",
+    "574068-2026": "2026-08-19T05:02:51.985Z",
+    "572584-2026": "2026-08-19T05:02:51.985Z",
+    "572602-2026": "2026-08-19T05:02:51.985Z",
+    "572498-2026": "2026-08-19T05:02:51.985Z",
+    "574316-2026": "2026-08-19T05:02:51.985Z",
+    "575367-2026": "2026-08-19T05:02:51.985Z",
+    "574040-2026": "2026-08-19T05:02:51.985Z",
+    "573109-2026": "2026-08-19T05:02:51.985Z"
   },
   "notices": {
     "519810-2026": {
@@ -2254,7 +2262,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "516883-2026": {
       "id": "516883-2026",
@@ -2391,7 +2399,7 @@
         "45112700",
         "45112720"
       ],
-      "score": 68
+      "score": 63
     },
     "509311-2026": {
       "id": "509311-2026",
@@ -5057,7 +5065,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "503124-2026": {
       "id": "503124-2026",
@@ -53732,7 +53740,7 @@
       "matchedCpv": [
         "45112712"
       ],
-      "score": 48
+      "score": 43
     },
     "532353-2026": {
       "id": "532353-2026",
@@ -53996,7 +54004,7 @@
         "45112700",
         "45112723"
       ],
-      "score": 68
+      "score": 63
     },
     "540272-2026": {
       "id": "540272-2026",
@@ -55888,7 +55896,221 @@
         "45112713"
       ],
       "score": 48
+    },
+    "574068-2026": {
+      "id": "574068-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltungspflege für Außenanlagen, Mulden und Regenbecken gemäß DIN 18919",
+      "buyer": "Berliner Wasserbetriebe",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-24T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/574068-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "572584-2026": {
+      "id": "572584-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvereinbarung zur Pflege der Außenanlagen im Stadtgebiet Hamm",
+      "buyer": "Stadt Hamm, Bauverwaltungsamt, Zentrales Beschaffungsmanagement",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77312000",
+        "77313000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 437650.71,
+      "deadline": null,
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/572584-2026",
+      "matchedCpv": [
+        "77310000",
+        "77312000",
+        "77313000"
+      ],
+      "score": 80
+    },
+    "572602-2026": {
+      "id": "572602-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Straßenpflaster- und Asphaltarbeiten – Vorinformation 10627 E9 0001 - Hochschule für Bildende Künste (HBK) Braunschweig - Ersatzneubau Ateliergebäude",
+      "buyer": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
+      "buyerCity": "Braunschweig",
+      "country": "DEU",
+      "cpv": [
+        "45233222",
+        "45223220",
+        "45261210",
+        "45262670",
+        "45262320",
+        "45422000",
+        "45212190",
+        "45311200",
+        "45231300",
+        "45221250",
+        "45112710"
+      ],
+      "cpvMain": "45233222",
+      "valueEur": 18000000,
+      "deadline": null,
+      "nuts": [
+        "DE911",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/572602-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 70
+    },
+    "572498-2026": {
+      "id": "572498-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 2026-1004869_Flughafen München_Erw. Winterdienstgebäude_Außenanlagen",
+      "buyer": "Flughafen München GmbH",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112000",
+        "45233200",
+        "45233222",
+        "45232452"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE21B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/572498-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "574316-2026": {
+      "id": "574316-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – KSP und grüne Infrastruktur - Kronenpflege und Massariakontrolle 2026-2028",
+      "buyer": "Grün und Gruga",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/574316-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 68
+    },
+    "575367-2026": {
+      "id": "575367-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhalts- Glas- und Außenbereichsreinigung für das Saarländische Landesarchiv",
+      "buyer": "Zentrale Vertrags- und Vergabestelle im Geschäftsbereich der Staatskanzlei des Saarlandes",
+      "buyerCity": "Saarbrücken",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300",
+        "90919200",
+        "77340000",
+        "77300000",
+        "90610000",
+        "90620000",
+        "90630000",
+        "90611000"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEC01",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/575367-2026",
+      "matchedCpv": [
+        "77340000",
+        "77300000"
+      ],
+      "score": 68
+    },
+    "574040-2026": {
+      "id": "574040-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Neue Störschleife - Los 1: Wasserbau, Garten- und Landschaftsbau",
+      "buyer": "Stadt Itzehoe",
+      "buyerCity": "Itzehoe",
+      "country": "DEU",
+      "cpv": [
+        "45112711",
+        "45000000"
+      ],
+      "cpvMain": "45112711",
+      "valueEur": null,
+      "deadline": "2026-08-31T08:00:00.000Z",
+      "nuts": [
+        "DEF0E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/574040-2026",
+      "matchedCpv": [
+        "45112711"
+      ],
+      "score": 63
+    },
+    "573109-2026": {
+      "id": "573109-2026",
+      "publishedAt": "2026-08-18T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – S21, PFA 1.3a, PFA 1.4 VE Projektabschluss",
+      "buyer": "DB Projekt Stuttgart-Ulm GmbH (Bukr 5S)",
+      "buyerCity": "Stuttgart",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE113",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/573109-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-18T05:02:42.177Z"
+  "lastRun": "2026-08-19T05:02:51.985Z"
 }
