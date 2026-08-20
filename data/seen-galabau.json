@@ -2036,7 +2036,10 @@
     "574316-2026": "2026-08-19T05:02:51.985Z",
     "575367-2026": "2026-08-19T05:02:51.985Z",
     "574040-2026": "2026-08-19T05:02:51.985Z",
-    "573109-2026": "2026-08-19T05:02:51.985Z"
+    "573109-2026": "2026-08-19T05:02:51.985Z",
+    "577242-2026": "2026-08-20T05:04:23.593Z",
+    "577200-2026": "2026-08-20T05:04:23.593Z",
+    "576261-2026": "2026-08-20T05:04:23.593Z"
   },
   "notices": {
     "519810-2026": {
@@ -56110,7 +56113,81 @@
         "45112710"
       ],
       "score": 60
+    },
+    "577242-2026": {
+      "id": "577242-2026",
+      "publishedAt": "2026-08-19T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Garten- und Landschaftsbauarbeiten 1.BA IQREK",
+      "buyer": "Rhein-Erft-Kreis",
+      "buyerCity": "Bergheim",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45236230",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-09-23T08:00:00.000Z",
+      "nuts": [
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/577242-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "577200-2026": {
+      "id": "577200-2026",
+      "publishedAt": "2026-08-19T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Baumkontrolle zur Überprüfung der Verkehrssicherheit",
+      "buyer": "Stiftung Naturschutz Schleswig-Holstein",
+      "buyerCity": "Molfsee",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 293115,
+      "deadline": null,
+      "nuts": [
+        "DEF0B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/577200-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 80
+    },
+    "576261-2026": {
+      "id": "576261-2026",
+      "publishedAt": "2026-08-19T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Stadthalle Zeulenroda-VE_307 - Dachabdichtung und Eindeckung",
+      "buyer": "Stadt Zeulenroda-Triebes",
+      "buyerCity": "Zeulenroda-Triebes",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261310"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-08-31T09:00:00.000Z",
+      "nuts": [
+        "DEG0L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/576261-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-08-19T05:02:51.985Z"
+  "lastRun": "2026-08-20T05:04:23.593Z"
 }

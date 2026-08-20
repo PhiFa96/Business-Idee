@@ -1,5 +1,81 @@
 [
   {
+    "id": "572011-2026",
+    "publishedAt": "2026-08-17T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Baumkontrolle Naturschutzgrundstücke im Hohenlohekreis",
+    "buyer": "Vermögen und Bau Baden-Württemberg, Amt Heilbronn",
+    "buyerCity": "Heilbronn",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 150720,
+    "deadline": null,
+    "nuts": [
+      "DE117",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/572011-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-18T05:02:42.177Z"
+  },
+  {
+    "id": "569702-2026",
+    "publishedAt": "2026-08-17T22:00:00.000Z",
+    "title": "Deutschland – Bau von weiterführenden Schulen – Dachabdichtungsarbeiten",
+    "buyer": "Vergabestelle Landeshauptstadt Stuttgart",
+    "buyerCity": "Stuttgart",
+    "country": "DEU",
+    "cpv": [
+      "45214220",
+      "45261410",
+      "45261213",
+      "45112713"
+    ],
+    "cpvMain": "45214220",
+    "valueEur": null,
+    "deadline": "2026-09-22T08:00:00.000Z",
+    "nuts": [
+      "DE111",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/569702-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-18T05:02:42.177Z"
+  },
+  {
+    "id": "571308-2026",
+    "publishedAt": "2026-08-17T22:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Erich-Kästner- Schule Lich - Neubau Erweiterung - Dachabdichtungsarbeiten",
+    "buyer": "Landkreis Gießen - Der Kreisausschuss -",
+    "buyerCity": "Gießen",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE721",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/571308-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-08-18T05:02:42.177Z"
+  },
+  {
     "id": "566786-2026",
     "publishedAt": "2026-08-16T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten",
