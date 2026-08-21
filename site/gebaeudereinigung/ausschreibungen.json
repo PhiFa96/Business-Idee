@@ -1,5 +1,736 @@
 [
   {
+    "id": "573127-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäude- und Glasreinigung für die Stadt Oberasbach",
+    "buyer": "Stadt Oberasbach",
+    "buyerCity": "Oberasbach",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-18T08:00:00.000Z",
+    "nuts": [
+      "DE258",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573127-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "573468-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Baufertigstellung – Neubau eines Gebäudes in Holzbauweise mit 28 Wohneinheiten im Namen der Gemeinde Münstertal - Bauendreinigung",
+    "buyer": "Landkreis Breisgau-Hochschwarzwald",
+    "buyerCity": "Freiburg im Breisgau",
+    "country": "DEU",
+    "cpv": [
+      "45400000",
+      "90910000",
+      "90911000",
+      "90911100",
+      "90911200"
+    ],
+    "cpvMain": "45400000",
+    "valueEur": null,
+    "deadline": "2026-09-18T07:00:00.000Z",
+    "nuts": [
+      "DE132",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573468-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911000",
+      "90911100",
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "573558-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Stadt Burgau: Beschaffung von Gebäude- und Glasreinigungsleistungen",
+    "buyer": "Stadt Burgau",
+    "buyerCity": "Burgau",
+    "country": "DEU",
+    "cpv": [
+      "90910000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-09-17T10:00:00.000Z",
+    "nuts": [
+      "DE278",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573558-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "573790-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung/Grundreinigung und Grundreinigung optional für die Schule für Lernbehinderte und Schule für Körperbehinderte einschl. Sporthallen, Schule für Geistigbehinderte einschl. Container",
+    "buyer": "Stadt Dessau-Roßlau, Zentr. Vergabestelle",
+    "buyerCity": "Dessau-Roßlau",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-17T07:00:00.000Z",
+    "nuts": [
+      "DEE01",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573790-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574005-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung ALE Oberbayern / Mühldorf am Inn",
+    "buyer": "Freistaat Bayern, vertreten durch das Amt für Ländliche Entwicklung Oberbayern",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300",
+      "90919100",
+      "90919200",
+      "90911000",
+      "90919000"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-24T09:00:00.000Z",
+    "nuts": [
+      "DE21G",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574005-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300",
+      "90919100",
+      "90919200",
+      "90911000",
+      "90919000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574314-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Reinigungs- und Hygienedienste – Glasreinigung Stadtgebiet Gelsenkirchen - in 5 Losen",
+    "buyer": "GELSENDIENSTE",
+    "buyerCity": "Gelsenkirchen",
+    "country": "DEU",
+    "cpv": [
+      "90900000",
+      "90911300"
+    ],
+    "cpvMain": "90900000",
+    "valueEur": null,
+    "deadline": "2026-09-17T08:00:00.000Z",
+    "nuts": [
+      "DEA32",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574314-2026",
+    "matchedCpv": [
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574432-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung berlinovo Portfolio",
+    "buyer": "Berlinovo Immobilien Gesellschaft mbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90910000",
+      "90911000",
+      "90911100"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-04T08:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574432-2026",
+    "matchedCpv": [
+      "90911200",
+      "90910000",
+      "90911000",
+      "90911100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574886-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhalts-, Grund- und Glas-/Rahmenreinigung für die Ludwig Guttmann Schule in Karlsbad-Langensteinbach sowie Außenstelle Karlsruhe",
+    "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Zentrale Vergabestelle",
+    "buyerCity": "Karlsruhe",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911000"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-16T08:00:00.000Z",
+    "nuts": [
+      "DE123",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574886-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574953-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – 2026-99 - Unterhalts-, Grund- und Glasreinigung BGW BV Berlin",
+    "buyer": "Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW)",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300",
+      "90919000"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-29T11:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574953-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300",
+      "90919000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575029-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung/Grundreinigung und Grundreinigung optional für die Grundschule Waldstraße einschl. Sporthalle, Sporthalle Sekundarschule an der Biethe, Sekundarschule Roßlau Haus I und Haus II",
+    "buyer": "Stadt Dessau-Roßlau, Zentr. Vergabestelle",
+    "buyerCity": "Dessau-Roßlau",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-09-17T07:00:00.000Z",
+    "nuts": [
+      "DEE01",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575029-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575238-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Gebäudereinigung - Bibliothek der Westsächsischen Hochschule Zwickau (WHZ)",
+    "buyer": "Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement",
+    "buyerCity": "Dresden",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-09-01T07:00:00.000Z",
+    "nuts": [
+      "DED45",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575238-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "572960-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Reinigungsleistungen - Los 2 - Unterhaltsreinigung Industrieflächen",
+    "buyer": "EWN Entsorgungswerk für Nuklearanlagen GmbH",
+    "buyerCity": "Rubenow",
+    "country": "DEU",
+    "cpv": [
+      "90910000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": 1323076.2,
+    "deadline": null,
+    "nuts": [
+      "DE80N",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/572960-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "573696-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren für die Vergabe der Unterhalts-, Grund- und Glasreinigung der Kita Lettenwald, Erika Schmid Weg 3 in 89075 Ulm, nach VgV",
+    "buyer": "Stadt Ulm - Zentrale Vergabestelle Liefer- und Dienstleistungen",
+    "buyerCity": "Ulm",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 230253.16,
+    "deadline": null,
+    "nuts": [
+      "DE144",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573696-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574166-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Unterhalts- und Glasreinigungsleistungen) für mehrere Liegenschaften in Rostock, VOEK 353-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 1184861.16,
+    "deadline": null,
+    "nuts": [
+      "DE803",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574166-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574208-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Unterhalts- und Glasreinigungsleistungen) für Bundespolizei in Ahrensfelde, Bundesanstalt für Immobilienaufgaben, Direktion Potsdam",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 6487070.34,
+    "deadline": null,
+    "nuts": [
+      "DE405",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574208-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574268-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Unterhalts- und Glasreinigungsleistungen) für eine Liegenschaft in Stralsund - VOEK 347-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 279347.88,
+    "deadline": null,
+    "nuts": [
+      "DE80L",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574268-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574666-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe von Gebäudereinigungsleistungen (Unterhalts- und Glasreinigungsleistungen) für das Bildungs- und Wissenschaftszentrum in 18069 Rostock - VOEK 351-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 542316.78,
+    "deadline": null,
+    "nuts": [
+      "DE803",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574666-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575091-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Büroreinigung – Reinigungsleistungen - Los 1 - Unterhaltsreinigung Bürogebäude",
+    "buyer": "EWN Entsorgungswerk für Nuklearanlagen GmbH",
+    "buyerCity": "Rubenow",
+    "country": "DEU",
+    "cpv": [
+      "90919200"
+    ],
+    "cpvMain": "90919200",
+    "valueEur": 2397823.82,
+    "deadline": null,
+    "nuts": [
+      "DE80N",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575091-2026",
+    "matchedCpv": [
+      "90919200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575402-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Offenes Verfahren (EU-weit) zur Vergabe Gebäudereinigungsleistungen (Unterhalts- und Glasreinigungsleistungen) für Liegenschaften in Nadrensee und Ramin, Bundesanstalt für Immobilienaufgaben, Direktion Rostock, VOEK 357-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 996973.02,
+    "deadline": null,
+    "nuts": [
+      "DE80N",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575402-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "572869-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – WEG - Unterhalts-, Glas- und Rahmenreinigung",
+    "buyer": "Wirtschaftsentwicklungsgesellschaft Bochum mbH",
+    "buyerCity": "Bochum",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911000",
+      "90919200",
+      "90910000",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-08-20T09:00:00.000Z",
+    "nuts": [
+      "DEA51",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/572869-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911000",
+      "90919200",
+      "90910000",
+      "90911300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "573961-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Durchführung der tägl. Unterhaltsreinigung und einer jährl. WC-Grundreinigung (LOS 1), sowie einer jährl. Glasreinigung (LOS 2) an div. Verwaltungsobjekten in FB von 01/2027 - 12/30 + 4x 12 Monate",
+    "buyer": "Wetteraukreis",
+    "buyerCity": "Friedberg",
+    "country": "DEU",
+    "cpv": [
+      "90911000"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE71E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/573961-2026",
+    "matchedCpv": [
+      "90911000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574179-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Reinigungsleistungen (Unterhaltsreinigung und Glas-/Rahmenreinigung)",
+    "buyer": "Ostwestfalen-Lippe-IT",
+    "buyerCity": "Lemgo",
+    "country": "DEU",
+    "cpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEA45",
+      "DEA47",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574179-2026",
+    "matchedCpv": [
+      "90911000",
+      "90911200",
+      "90911300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574988-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Unterhalts- und Grundreinigung in Reinraum, Labor sowie Lasermessräumen",
+    "buyer": "Deutsches Elektronen-Synchrotron DESY",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90920000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574988-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575316-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Unterhalts- und Grundreinigung Hauptkläranlage, Bürgerhaus Kinderhaus, Wilhelm-Hittorf-Gymnasium, Grundschule Albachten in 4 Losen",
+    "buyer": "Stadt Münster - Zentrale Rechtsdienstleistungen und Vergabemanagement",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "90000000",
+      "90910000",
+      "90911000",
+      "90911200",
+      "90919000",
+      "90919300"
+    ],
+    "cpvMain": "90000000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575316-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911000",
+      "90911200",
+      "90919000",
+      "90919300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "575367-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhalts- Glas- und Außenbereichsreinigung für das Saarländische Landesarchiv",
+    "buyer": "Zentrale Vertrags- und Vergabestelle im Geschäftsbereich der Staatskanzlei des Saarlandes",
+    "buyerCity": "Saarbrücken",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300",
+      "90919200",
+      "77340000",
+      "77300000",
+      "90610000",
+      "90620000",
+      "90630000",
+      "90611000"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEC01",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/575367-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300",
+      "90919200"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574277-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Abschluss eines Vertrags über die Gebäudereinigung zur Durchführung der Unterhalts- sowie optionalen Grundreinigung auf vier Jahre ab dem 01.09.2026 in verschiedenen städtischen Objekten (2 Lose)",
+    "buyer": "Stadt Aachen - Zentrale Vergabestelle FB60/300",
+    "buyerCity": "Aachen",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 47619.38,
+    "deadline": null,
+    "nuts": [
+      "DEA2D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574277-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
+    "id": "574968-2026",
+    "publishedAt": "2026-08-18T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung für das ADBV Dachau und für die ASt Fürstenfeldbruck",
+    "buyer": "Freistaat Bayern vertreten durch das Bayerische Landesamt für Steuern - Zentrale Vergabestelle -",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DE217",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/574968-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-19T05:02:51.985Z"
+  },
+  {
     "id": "569369-2026",
     "publishedAt": "2026-08-17T22:00:00.000Z",
     "title": "Deutschland – Gebäudereinigung – Ausschreibung Unterhaltsreinigung",
@@ -1356,7 +2087,7 @@
     "matchedCpv": [
       "90911000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-14T05:55:52.048Z"
   },
   {
@@ -2259,7 +2990,7 @@
     "matchedCpv": [
       "90910000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-12T05:54:55.229Z"
   },
   {
@@ -3005,7 +3736,7 @@
       "90910000",
       "90911300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-10T05:55:02.873Z"
   },
   {
@@ -8171,7 +8902,7 @@
     "matchedCpv": [
       "90910000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-07-27T08:01:15.355Z"
   },
   {

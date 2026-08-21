@@ -2039,7 +2039,13 @@
     "573109-2026": "2026-08-19T05:02:51.985Z",
     "577242-2026": "2026-08-20T05:04:23.593Z",
     "577200-2026": "2026-08-20T05:04:23.593Z",
-    "576261-2026": "2026-08-20T05:04:23.593Z"
+    "576261-2026": "2026-08-20T05:04:23.593Z",
+    "578730-2026": "2026-08-21T05:05:00.531Z",
+    "579788-2026": "2026-08-21T05:05:00.531Z",
+    "580069-2026": "2026-08-21T05:05:00.531Z",
+    "581173-2026": "2026-08-21T05:05:00.531Z",
+    "580533-2026": "2026-08-21T05:05:00.531Z",
+    "578396-2026": "2026-08-21T05:05:00.531Z"
   },
   "notices": {
     "519810-2026": {
@@ -2210,7 +2216,7 @@
         "77300000",
         "77340000"
       ],
-      "score": 68
+      "score": 63
     },
     "522309-2026": {
       "id": "522309-2026",
@@ -56187,7 +56193,211 @@
         "45112713"
       ],
       "score": 63
+    },
+    "578730-2026": {
+      "id": "578730-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – VOEK 607-25 Verkehrssicherungsmaßnahmen (Baumkontrolle und Baumpflege) auf Liegenschaften in Baden-Württemberg, Bundesanstalt für Immobilienaufgaben",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "77200000",
+        "77341000"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-09-24T07:00:00.000Z",
+      "nuts": [
+        "DE125",
+        "DE126",
+        "DE128",
+        "DE118",
+        "DE117",
+        "DE11B",
+        "DE127",
+        "DE123",
+        "DE122",
+        "DE111",
+        "DE112",
+        "DE141",
+        "DE131",
+        "DE132",
+        "DE13A",
+        "DE135",
+        "DE136",
+        "DE149",
+        "DE139",
+        "DE138",
+        "DE147",
+        "DE27A",
+        "DE148",
+        "DE146",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/578730-2026",
+      "matchedCpv": [
+        "77211500",
+        "77341000"
+      ],
+      "score": 83
+    },
+    "579788-2026": {
+      "id": "579788-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Umweltüberwachung im Bau – SV-JWA-260819-006 - TW - Ausbauvorhaben Föhringer Ring // Isardüker, Umweltbaubegleitung",
+      "buyer": "SWM Infrastruktur GmbH & Co. KG",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "71313450",
+        "77211500",
+        "71247000"
+      ],
+      "cpvMain": "71313450",
+      "valueEur": null,
+      "deadline": "2026-09-21T11:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/579788-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "580069-2026": {
+      "id": "580069-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Sanierung Schloss Hardenberg, Freianlagen",
+      "buyer": "Stadt Velbert, Der Bürgermeister - Fachbereich 7 Immobilienservice",
+      "buyerCity": "Velbert",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45111213",
+        "45100000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-09-21T08:30:00.000Z",
+      "nuts": [
+        "DEA1C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/580069-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "581173-2026": {
+      "id": "581173-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Generalumbau der zentralen Notaufnahme zum integrierten Notfallzentrum",
+      "buyer": "SRH Zentralklinikum Suhl GmbH",
+      "buyerCity": "Suhl",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45262670",
+        "45113000",
+        "45262100",
+        "45112700",
+        "45331000",
+        "45331200",
+        "45311000",
+        "45314000",
+        "45315300",
+        "45232460",
+        "45100000",
+        "45111000",
+        "45223220",
+        "45441000",
+        "45443000",
+        "45262320",
+        "45324000",
+        "45260000",
+        "45420000",
+        "44221200",
+        "44221300",
+        "45341000",
+        "45430000",
+        "45431000",
+        "45410000",
+        "45442100",
+        "44423400",
+        "44520000",
+        "44522000",
+        "90910000",
+        "45112710",
+        "42416100",
+        "24111500",
+        "48921000"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEG0S",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/581173-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "580533-2026": {
+      "id": "580533-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Neue Störschleife - Los 1: Wasserbau, Garten- und Landschaftsbau",
+      "buyer": "Stadt Itzehoe",
+      "buyerCity": "Itzehoe",
+      "country": "DEU",
+      "cpv": [
+        "45112711",
+        "45000000"
+      ],
+      "cpvMain": "45112711",
+      "valueEur": null,
+      "deadline": "2026-09-07T08:00:00.000Z",
+      "nuts": [
+        "DEF0E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/580533-2026",
+      "matchedCpv": [
+        "45112711"
+      ],
+      "score": 63
+    },
+    "578396-2026": {
+      "id": "578396-2026",
+      "publishedAt": "2026-08-20T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Neubau der Feuer- und Rettungswache, Außenanlagen",
+      "buyer": "Stadt Borken",
+      "buyerCity": "Borken",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 1656102.23,
+      "deadline": null,
+      "nuts": [
+        "DEA34",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/578396-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-20T05:04:23.593Z"
+  "lastRun": "2026-08-21T05:05:00.531Z"
 }
