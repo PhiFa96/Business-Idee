@@ -2045,7 +2045,14 @@
     "580069-2026": "2026-08-21T05:05:00.531Z",
     "581173-2026": "2026-08-21T05:05:00.531Z",
     "580533-2026": "2026-08-21T05:05:00.531Z",
-    "578396-2026": "2026-08-21T05:05:00.531Z"
+    "578396-2026": "2026-08-21T05:05:00.531Z",
+    "581729-2026": "2026-08-24T05:11:43.236Z",
+    "582087-2026": "2026-08-24T05:11:43.236Z",
+    "582725-2026": "2026-08-24T05:11:43.236Z",
+    "582783-2026": "2026-08-24T05:11:43.236Z",
+    "582144-2026": "2026-08-24T05:11:43.236Z",
+    "582649-2026": "2026-08-24T05:11:43.236Z",
+    "582769-2026": "2026-08-24T05:11:43.236Z"
   },
   "notices": {
     "519810-2026": {
@@ -2304,7 +2311,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "517398-2026": {
       "id": "517398-2026",
@@ -2358,7 +2365,7 @@
         "45112720",
         "45112723"
       ],
-      "score": 83
+      "score": 68
     },
     "514193-2026": {
       "id": "514193-2026",
@@ -6166,7 +6173,7 @@
         "77211500",
         "77211400"
       ],
-      "score": 83
+      "score": 68
     },
     "528311-2026": {
       "id": "528311-2026",
@@ -6196,7 +6203,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "529338-2026": {
       "id": "529338-2026",
@@ -6246,7 +6253,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "528666-2026": {
       "id": "528666-2026",
@@ -53677,7 +53684,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "533267-2026": {
       "id": "533267-2026",
@@ -53701,7 +53708,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "533347-2026": {
       "id": "533347-2026",
@@ -53884,7 +53891,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "536347-2026": {
       "id": "536347-2026",
@@ -53911,7 +53918,7 @@
         "77311000",
         "77342000"
       ],
-      "score": 83
+      "score": 68
     },
     "536993-2026": {
       "id": "536993-2026",
@@ -53935,7 +53942,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "533847-2026": {
       "id": "533847-2026",
@@ -55563,7 +55570,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "567275-2026": {
       "id": "567275-2026",
@@ -56095,7 +56102,7 @@
       "matchedCpv": [
         "45112711"
       ],
-      "score": 63
+      "score": 48
     },
     "573109-2026": {
       "id": "573109-2026",
@@ -56192,7 +56199,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "578730-2026": {
       "id": "578730-2026",
@@ -56397,7 +56404,216 @@
         "45112712"
       ],
       "score": 60
+    },
+    "581729-2026": {
+      "id": "581729-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Rahmenvereinbarung über die Anmietung von Hubarbeitsbühnen für das Baureferat HA Gartenbau",
+      "buyer": "Landeshauptstadt München, Direktorium, Vergabestelle 1, SG 3",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-24T21:59:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/581729-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "582087-2026": {
+      "id": "582087-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – Neubau Hospiz Pfarrkirchen, Außenanlagen",
+      "buyer": "Landkreis Rottal-Inn",
+      "buyerCity": "Pfarrkirchen",
+      "country": "DEU",
+      "cpv": [
+        "45200000",
+        "45221250",
+        "45112710"
+      ],
+      "cpvMain": "45200000",
+      "valueEur": null,
+      "deadline": "2026-09-29T09:00:00.000Z",
+      "nuts": [
+        "DE22A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582087-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "582725-2026": {
+      "id": "582725-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Grabenunterhaltungsarbeiten in Frankfurt am Main",
+      "buyer": "Stadtentwässerung Frankfurt am Main",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "45112730",
+        "77310000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-09-22T10:00:00.000Z",
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582725-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "45112730"
+      ],
+      "score": 83
+    },
+    "582783-2026": {
+      "id": "582783-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Generalumbau der zentralen Notaufnahme zum integrierten Notfallzentrum",
+      "buyer": "SRH Zentralklinikum Suhl GmbH",
+      "buyerCity": "Suhl",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45262670",
+        "45113000",
+        "45262100",
+        "45112700",
+        "45331000",
+        "45331200",
+        "45311000",
+        "45314000",
+        "45315300",
+        "45232460",
+        "45100000",
+        "45111000",
+        "45223220",
+        "45441000",
+        "45443000",
+        "45262320",
+        "45324000",
+        "45260000",
+        "45420000",
+        "44221200",
+        "44221300",
+        "45341000",
+        "45430000",
+        "45431000",
+        "45410000",
+        "45442100",
+        "44423400",
+        "44520000",
+        "44522000",
+        "90910000",
+        "45112710",
+        "42416100",
+        "24111500",
+        "48921000"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEG0S",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582783-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "582144-2026": {
+      "id": "582144-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – VE 3.11 Gründach",
+      "buyer": "Bezirksamt Tempelhof-Schöneberg von Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45112713"
+      ],
+      "cpvMain": "45112713",
+      "valueEur": null,
+      "deadline": "2026-09-23T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582144-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "582649-2026": {
+      "id": "582649-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Errichtung von Dachstühlen sowie Dachdeckarbeiten und zugehörige Arbeiten – Abbruch und Neubau Personalwohnheim Thoraxklinik Heidelberg gGmbH",
+      "buyer": "Thoraxklinik am Universitätsklinikum Heidelberg gGmbH",
+      "buyerCity": "Heidelberg",
+      "country": "DEU",
+      "cpv": [
+        "45261000",
+        "45261410",
+        "45421132",
+        "45261310",
+        "45112713",
+        "45261320",
+        "45261211"
+      ],
+      "cpvMain": "45261000",
+      "valueEur": 187861,
+      "deadline": null,
+      "nuts": [
+        "DE125",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582649-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
+    },
+    "582769-2026": {
+      "id": "582769-2026",
+      "publishedAt": "2026-08-23T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Erweiterung Städt. Wirtschaftsschule zur Integration der Staatl. FOS - Dachdeckungsarbeiten",
+      "buyer": "Stadt Schwabach",
+      "buyerCity": "Schwabach",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE255",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/582769-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-08-21T05:05:00.531Z"
+  "lastRun": "2026-08-24T05:11:43.236Z"
 }
