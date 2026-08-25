@@ -2052,7 +2052,11 @@
     "582783-2026": "2026-08-24T05:11:43.236Z",
     "582144-2026": "2026-08-24T05:11:43.236Z",
     "582649-2026": "2026-08-24T05:11:43.236Z",
-    "582769-2026": "2026-08-24T05:11:43.236Z"
+    "582769-2026": "2026-08-24T05:11:43.236Z",
+    "584296-2026": "2026-08-25T05:05:21.502Z",
+    "586632-2026": "2026-08-25T05:05:21.502Z",
+    "586669-2026": "2026-08-25T05:05:21.502Z",
+    "584452-2026": "2026-08-25T05:05:21.502Z"
   },
   "notices": {
     "519810-2026": {
@@ -6043,7 +6047,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "524566-2026": {
       "id": "524566-2026",
@@ -53733,7 +53737,7 @@
         "77310000",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "531021-2026": {
       "id": "531021-2026",
@@ -56613,7 +56617,118 @@
         "45112713"
       ],
       "score": 40
+    },
+    "584296-2026": {
+      "id": "584296-2026",
+      "publishedAt": "2026-08-24T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Generalsanierung Gartenschule Ettlingen, Außenanlagen",
+      "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung",
+      "buyerCity": "Karlsruhe",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112723",
+        "45112500",
+        "45233250",
+        "45262300",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-10-01T08:00:00.000Z",
+      "nuts": [
+        "DE123",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/584296-2026",
+      "matchedCpv": [
+        "45112710",
+        "77310000",
+        "45112700",
+        "45112723"
+      ],
+      "score": 83
+    },
+    "586632-2026": {
+      "id": "586632-2026",
+      "publishedAt": "2026-08-24T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Amphibienleiteinrichtungen 2026 - 2029",
+      "buyer": "Niedersächsische Landesbehörde für Straßenbau und Verkehr - Geschäftsbereich Hannover",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77312000",
+        "77340000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-09-29T08:00:00.000Z",
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/586632-2026",
+      "matchedCpv": [
+        "77310000",
+        "77312000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "586669-2026": {
+      "id": "586669-2026",
+      "publishedAt": "2026-08-24T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Außenanlagenpflege Dresden",
+      "buyer": "Deutsche Gesetzliche Unfallversicherung e.V.",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77340000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DED21",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/586669-2026",
+      "matchedCpv": [
+        "77310000",
+        "77340000"
+      ],
+      "score": 68
+    },
+    "584452-2026": {
+      "id": "584452-2026",
+      "publishedAt": "2026-08-24T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Ex Post: Gemeinde Tappenbeck: Neubau eines Sport- und Gemeinschaftsparks: Multifunktionshalle - Galabauarbeiten",
+      "buyer": "Gemeinde Tappenbeck",
+      "buyerCity": "Tappenbeck",
+      "country": "DEU",
+      "cpv": [
+        "45112712",
+        "45112720",
+        "45112700",
+        "45212221"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 150713.17,
+      "deadline": null,
+      "nuts": [
+        "DE914",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/584452-2026",
+      "matchedCpv": [
+        "45112712",
+        "45112720",
+        "45112700"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-24T05:11:43.236Z"
+  "lastRun": "2026-08-25T05:05:21.502Z"
 }
