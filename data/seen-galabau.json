@@ -2064,7 +2064,13 @@
     "588147-2026": "2026-08-26T05:05:24.140Z",
     "588549-2026": "2026-08-26T05:05:24.140Z",
     "588168-2026": "2026-08-26T05:05:24.140Z",
-    "589641-2026": "2026-08-26T05:05:24.140Z"
+    "589641-2026": "2026-08-26T05:05:24.140Z",
+    "590362-2026": "2026-08-27T15:24:03.764Z",
+    "591005-2026": "2026-08-27T15:24:03.764Z",
+    "591675-2026": "2026-08-27T15:24:03.764Z",
+    "592553-2026": "2026-08-27T15:24:03.764Z",
+    "593239-2026": "2026-08-27T15:24:03.764Z",
+    "592833-2026": "2026-08-27T15:24:03.764Z"
   },
   "notices": {
     "519810-2026": {
@@ -6102,7 +6108,7 @@
       "matchedCpv": [
         "45112711"
       ],
-      "score": 48
+      "score": 43
     },
     "526052-2026": {
       "id": "526052-2026",
@@ -56936,7 +56942,190 @@
         "45112712"
       ],
       "score": 60
+    },
+    "590362-2026": {
+      "id": "590362-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Maxiplaza, Durchgang, nördl. MaxiGarten",
+      "buyer": "Hamm.Invest GmbH",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "45112711",
+        "34928480",
+        "45111000",
+        "45112000",
+        "45232120",
+        "45232450",
+        "45236250",
+        "45247270",
+        "45262400",
+        "45342000",
+        "77310000"
+      ],
+      "cpvMain": "45112711",
+      "valueEur": null,
+      "deadline": "2026-09-25T04:00:00.000Z",
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/590362-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112711"
+      ],
+      "score": 83
+    },
+    "591005-2026": {
+      "id": "591005-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – MÜNCHENSTIFT GmbH: Außenanlagenpflege, Straßenreinigung, Winterdienst und Winterbereitschaftsdienst ab 2026",
+      "buyer": "MÜNCHENSTIFT GmbH",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "90610000",
+        "90620000",
+        "90630000",
+        "77300000",
+        "77310000",
+        "77311000",
+        "77313000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-09-25T08:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/591005-2026",
+      "matchedCpv": [
+        "77314000",
+        "77300000",
+        "77310000",
+        "77311000",
+        "77313000"
+      ],
+      "score": 83
+    },
+    "591675-2026": {
+      "id": "591675-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Sport- und Freizeitanlagen – 5010 Landschaftsbau/Zaunbau Schule",
+      "buyer": "Zweckverband Staatliche weiterführende Schulen im Südosten des Landkreises München (Schulzweckverband Südost)",
+      "buyerCity": "Neubiberg",
+      "country": "DEU",
+      "cpv": [
+        "45112720",
+        "45112000",
+        "45342000",
+        "77310000",
+        "45212221",
+        "45236230",
+        "45340000",
+        "77320000"
+      ],
+      "cpvMain": "45112720",
+      "valueEur": null,
+      "deadline": "2026-10-01T07:30:00.000Z",
+      "nuts": [
+        "DE21H",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/591675-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112720",
+        "77320000"
+      ],
+      "score": 83
+    },
+    "592553-2026": {
+      "id": "592553-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Rohbauarbeiten – Gebäude 38.2, Neubau Orthopädie-OP,Erd-, Verbau-, Infrastruktur- und Rohbau-, Dachabdichtungsarbeiten",
+      "buyer": "Universitätsklinikum des Saarlandes",
+      "buyerCity": "Homburg",
+      "country": "DEU",
+      "cpv": [
+        "45223220",
+        "45112500",
+        "45210000",
+        "45262510",
+        "45112710"
+      ],
+      "cpvMain": "45223220",
+      "valueEur": null,
+      "deadline": "2026-10-07T10:00:00.000Z",
+      "nuts": [
+        "DEC05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/592553-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "593239-2026": {
+      "id": "593239-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Unterhalts- und Entwicklungspflege beim BR München",
+      "buyer": "Bayerischer Rundfunk A.d.ö.R.",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77300000",
+        "77310000",
+        "77340000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-09-25T08:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DE21H",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/593239-2026",
+      "matchedCpv": [
+        "77314000",
+        "77300000",
+        "77310000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "592833-2026": {
+      "id": "592833-2026",
+      "publishedAt": "2026-08-26T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungsarbeiten, Breisacher Hof",
+      "buyer": "Stadt Freiburg i. Br. - Vergabemanagement",
+      "buyerCity": "Freiburg im Breisgau",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261300",
+        "45261320"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 129486.6,
+      "deadline": null,
+      "nuts": [
+        "DE131",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/592833-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-08-26T05:05:24.140Z"
+  "lastRun": "2026-08-27T15:24:03.764Z"
 }
