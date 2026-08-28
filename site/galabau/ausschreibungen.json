@@ -1,5 +1,213 @@
 [
   {
+    "id": "589628-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege der Außenanlagen HV Mainz",
+    "buyer": "Deutsche Bundesbank, Zentralbereich Beschaffungen",
+    "buyerCity": "Frankfurt am Main",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": 302521.008403,
+    "deadline": "2026-09-29T09:00:00.000Z",
+    "nuts": [
+      "DEB35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/589628-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "590238-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Rahmenvereinbarung Baumpflege",
+    "buyer": "Grün Berlin GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 1080000,
+    "deadline": "2026-09-28T10:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/590238-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "588274-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Landesgartenschau Neuss, VE15.2 Herstellung Endzustand",
+    "buyer": "Landesgartenschau Neuss 2026 GmbH",
+    "buyerCity": "Neuss",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "45112700",
+      "45233250",
+      "77314100"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-24T08:00:00.000Z",
+    "nuts": [
+      "DEA1D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/588274-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700",
+      "77314100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "589105-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege von öffentlichen Grünanlagen und Spielplätzen der Stadt Bernau bei Berlin",
+    "buyer": "Stadt Bernau bei Berlin",
+    "buyerCity": "Bernau bei Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-10-01T08:00:00.000Z",
+    "nuts": [
+      "DE405",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/589105-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "588147-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Belags- & Landschaftsbauarbeiten - Neubau Feuerwehr und Bauhof",
+    "buyer": "Gemeinde Gemmingen",
+    "buyerCity": "Gemmingen",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45000000",
+      "45233222"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": 1122205.73,
+    "deadline": null,
+    "nuts": [
+      "DE118",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/588147-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "588549-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – PV-Dach und Holzbauarbeiten Neubau und Mensa",
+    "buyer": "Landeshauptstadt Hannover - Fachbereich Gebäudemanagement",
+    "buyerCity": "Hannover",
+    "country": "DEU",
+    "cpv": [
+      "45112713",
+      "45261000",
+      "45261100",
+      "45261200",
+      "45261210",
+      "45261213"
+    ],
+    "cpvMain": "45112713",
+    "valueEur": null,
+    "deadline": "2026-10-05T08:30:00.000Z",
+    "nuts": [
+      "DE929",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/588549-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "588168-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Dachdeckarbeiten – Dachdeckungsarbeiten",
+    "buyer": "Landeshauptstadt Hannover - Fachbereich Gebäudemanagement",
+    "buyerCity": "Aegidientorplatz 1",
+    "country": "DEU",
+    "cpv": [
+      "45261210",
+      "45261300",
+      "45261214",
+      "45112713",
+      "45214220"
+    ],
+    "cpvMain": "45261210",
+    "valueEur": 1467029.32,
+    "deadline": null,
+    "nuts": [
+      "DE929",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/588168-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
+    "id": "589641-2026",
+    "publishedAt": "2026-08-25T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Auftragsänderung 1: BLB NRW / NL Dortmund / Rhr Universität Bochum Forschungsbau THINK (WE 3534); / Garten- und Landschaftsarbeiten 010-24-00448",
+    "buyer": "Bau- und Liegenschaftsbetrieb NRW Dortmund",
+    "buyerCity": "Dortmund",
+    "country": "DEU",
+    "cpv": [
+      "45112712"
+    ],
+    "cpvMain": "45112712",
+    "valueEur": 773228.4,
+    "deadline": null,
+    "nuts": [
+      "DEA51",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/589641-2026",
+    "matchedCpv": [
+      "45112712"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-26T05:05:24.140Z"
+  },
+  {
     "id": "584296-2026",
     "publishedAt": "2026-08-24T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Generalsanierung Gartenschule Ettlingen, Außenanlagen",
@@ -513,7 +721,7 @@
     "matchedCpv": [
       "45112711"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-21T05:05:00.531Z"
   },
   {
@@ -2298,7 +2506,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-08-07T05:56:26.923Z"
   },
   {
@@ -2542,7 +2750,7 @@
       "45112710",
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-06T07:15:49.752Z"
   },
   {
@@ -2619,7 +2827,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-06T07:15:49.752Z"
   },
   {
