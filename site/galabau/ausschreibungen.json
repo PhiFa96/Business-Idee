@@ -1,5 +1,375 @@
 [
   {
+    "id": "593412-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Landesgartenschau Neuss, VE15.2 Herstellung Endzustand",
+    "buyer": "Landesgartenschau Neuss 2026 GmbH",
+    "buyerCity": "Neuss",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "45112700",
+      "45233250",
+      "77314100"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-24T08:00:00.000Z",
+    "nuts": [
+      "DEA1D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/593412-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700",
+      "77314100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "594228-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltungspflegearbeiten an städtischen Straßenbegleitgrün 2027-2030",
+    "buyer": "Stadt Ahlen, Der Bürgermeister",
+    "buyerCity": "Ahlen",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-09-29T07:00:00.000Z",
+    "nuts": [
+      "DEA38",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/594228-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "594390-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege an KiTa 's der BV 1, BV 2 und BV 3 für die Jahre 2027-2031",
+    "buyer": "Stadt Mülheim an der Ruhr",
+    "buyerCity": "Mülheim an der Ruhr",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77300000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-09-30T07:00:00.000Z",
+    "nuts": [
+      "DEA16",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/594390-2026",
+    "matchedCpv": [
+      "77310000",
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "595514-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege von öffentlichen Grünanlagen und Spielplätzen der Stadt Bernau bei Berlin",
+    "buyer": "Stadt Bernau bei Berlin",
+    "buyerCity": "Bernau bei Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-10-02T08:00:00.000Z",
+    "nuts": [
+      "DE405",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/595514-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "595787-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Technische Unterstützung – Gelände- und Sensorpflege an der Wetterstation Schwerin und der Winterdienst am Radar-Standort Türkheim des Deutschen Wetterdienstes (DWD)",
+    "buyer": "Deutscher Wetterdienst",
+    "buyerCity": "Offenbach am Main",
+    "country": "DEU",
+    "cpv": [
+      "71356300",
+      "77314000",
+      "90620000"
+    ],
+    "cpvMain": "71356300",
+    "valueEur": null,
+    "deadline": "2026-09-27T21:59:00.000Z",
+    "nuts": [
+      "DE713",
+      "DEU",
+      "DE804",
+      "DE114"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/595787-2026",
+    "matchedCpv": [
+      "77314000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "594660-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Baumpflegearbeiten in 2 Losen",
+    "buyer": "Stadt Aachen - Zentrale Vergabestelle FB60/300",
+    "buyerCity": "Aachen",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 263755,
+    "deadline": null,
+    "nuts": [
+      "DEA2D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/594660-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "593705-2026",
+    "publishedAt": "2026-08-27T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Generalsanierung und Erweiterung des Jakob-Brucker-Gymnasiums",
+    "buyer": "Stadt Kaufbeuren",
+    "buyerCity": "Kaufbeuren",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112712"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE272",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/593705-2026",
+    "matchedCpv": [
+      "45112700",
+      "45112712"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-08-28T16:49:15.653Z"
+  },
+  {
+    "id": "590362-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Maxiplaza, Durchgang, nördl. MaxiGarten",
+    "buyer": "Hamm.Invest GmbH",
+    "buyerCity": "Hamm",
+    "country": "DEU",
+    "cpv": [
+      "45112711",
+      "34928480",
+      "45111000",
+      "45112000",
+      "45232120",
+      "45232450",
+      "45236250",
+      "45247270",
+      "45262400",
+      "45342000",
+      "77310000"
+    ],
+    "cpvMain": "45112711",
+    "valueEur": null,
+    "deadline": "2026-09-25T04:00:00.000Z",
+    "nuts": [
+      "DEA54",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/590362-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112711"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
+    "id": "591005-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – MÜNCHENSTIFT GmbH: Außenanlagenpflege, Straßenreinigung, Winterdienst und Winterbereitschaftsdienst ab 2026",
+    "buyer": "MÜNCHENSTIFT GmbH",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "90610000",
+      "90620000",
+      "90630000",
+      "77300000",
+      "77310000",
+      "77311000",
+      "77313000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": null,
+    "deadline": "2026-09-25T08:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/591005-2026",
+    "matchedCpv": [
+      "77314000",
+      "77300000",
+      "77310000",
+      "77311000",
+      "77313000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
+    "id": "591675-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Sport- und Freizeitanlagen – 5010 Landschaftsbau/Zaunbau Schule",
+    "buyer": "Zweckverband Staatliche weiterführende Schulen im Südosten des Landkreises München (Schulzweckverband Südost)",
+    "buyerCity": "Neubiberg",
+    "country": "DEU",
+    "cpv": [
+      "45112720",
+      "45112000",
+      "45342000",
+      "77310000",
+      "45212221",
+      "45236230",
+      "45340000",
+      "77320000"
+    ],
+    "cpvMain": "45112720",
+    "valueEur": null,
+    "deadline": "2026-10-01T07:30:00.000Z",
+    "nuts": [
+      "DE21H",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/591675-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112720",
+      "77320000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
+    "id": "592553-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Rohbauarbeiten – Gebäude 38.2, Neubau Orthopädie-OP,Erd-, Verbau-, Infrastruktur- und Rohbau-, Dachabdichtungsarbeiten",
+    "buyer": "Universitätsklinikum des Saarlandes",
+    "buyerCity": "Homburg",
+    "country": "DEU",
+    "cpv": [
+      "45223220",
+      "45112500",
+      "45210000",
+      "45262510",
+      "45112710"
+    ],
+    "cpvMain": "45223220",
+    "valueEur": null,
+    "deadline": "2026-10-07T10:00:00.000Z",
+    "nuts": [
+      "DEC05",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/592553-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
+    "id": "593239-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Unterhalts- und Entwicklungspflege beim BR München",
+    "buyer": "Bayerischer Rundfunk A.d.ö.R.",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": null,
+    "deadline": "2026-09-25T08:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DE21H",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/593239-2026",
+    "matchedCpv": [
+      "77314000",
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
+    "id": "592833-2026",
+    "publishedAt": "2026-08-26T22:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungsarbeiten, Breisacher Hof",
+    "buyer": "Stadt Freiburg i. Br. - Vergabemanagement",
+    "buyerCity": "Freiburg im Breisgau",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713",
+      "45261300",
+      "45261320"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": 129486.6,
+    "deadline": null,
+    "nuts": [
+      "DE131",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/592833-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-08-27T15:24:03.764Z"
+  },
+  {
     "id": "589628-2026",
     "publishedAt": "2026-08-25T22:00:00.000Z",
     "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege der Außenanlagen HV Mainz",
@@ -822,7 +1192,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-08-20T05:04:23.593Z"
   },
   {
@@ -1020,7 +1390,7 @@
     "matchedCpv": [
       "45112711"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-08-19T05:02:51.985Z"
   },
   {
@@ -1878,7 +2248,7 @@
     "matchedCpv": [
       "77310000"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-08-12T05:54:55.229Z"
   },
   {
@@ -2259,7 +2629,7 @@
       "45112710",
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-10T05:55:02.873Z"
   },
   {
@@ -2309,7 +2679,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-10T05:55:02.873Z"
   },
   {
@@ -2370,7 +2740,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-10T05:55:02.873Z"
   },
   {
@@ -2396,7 +2766,7 @@
     "matchedCpv": [
       "45112712"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-10T05:55:02.873Z"
   },
   {
@@ -2536,7 +2906,7 @@
       "77211500",
       "77300000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-07T05:56:26.923Z"
   },
   {
@@ -2560,7 +2930,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-07T05:56:26.923Z"
   },
   {
@@ -2637,7 +3007,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 65,
+    "score": 50,
     "firstSeenAt": "2026-08-07T05:56:26.923Z"
   },
   {
@@ -2669,7 +3039,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-07T05:56:26.923Z"
   },
   {
