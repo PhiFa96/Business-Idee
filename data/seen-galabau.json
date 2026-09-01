@@ -2087,7 +2087,17 @@
     "597805-2026": "2026-08-31T11:02:38.003Z",
     "596539-2026": "2026-08-31T11:02:38.003Z",
     "596580-2026": "2026-08-31T11:02:38.003Z",
-    "597335-2026": "2026-08-31T11:02:38.003Z"
+    "597335-2026": "2026-08-31T11:02:38.003Z",
+    "600162-2026": "2026-09-01T09:32:22.476Z",
+    "602122-2026": "2026-09-01T09:32:22.476Z",
+    "599754-2026": "2026-09-01T09:32:22.476Z",
+    "601192-2026": "2026-09-01T09:32:22.476Z",
+    "599767-2026": "2026-09-01T09:32:22.476Z",
+    "600582-2026": "2026-09-01T09:32:22.476Z",
+    "600763-2026": "2026-09-01T09:32:22.476Z",
+    "601606-2026": "2026-09-01T09:32:22.476Z",
+    "602112-2026": "2026-09-01T09:32:22.476Z",
+    "599827-2026": "2026-09-01T09:32:22.476Z"
   },
   "notices": {
     "519810-2026": {
@@ -53903,7 +53913,7 @@
         "45112711",
         "45112712"
       ],
-      "score": 83
+      "score": 68
     },
     "535060-2026": {
       "id": "535060-2026",
@@ -53953,7 +53963,7 @@
         "77311000",
         "77342000"
       ],
-      "score": 68
+      "score": 63
     },
     "536993-2026": {
       "id": "536993-2026",
@@ -53977,7 +53987,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "533847-2026": {
       "id": "533847-2026",
@@ -57584,7 +57594,319 @@
         "45112713"
       ],
       "score": 60
+    },
+    "600162-2026": {
+      "id": "600162-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltspflege Elbauenpark Magdeburg in 3 Losen",
+      "buyer": "Natur- und Kulturpark Elbaue GmbH",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77320000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-06T08:30:00.000Z",
+      "nuts": [
+        "DEE03",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/600162-2026",
+      "matchedCpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77320000"
+      ],
+      "score": 83
+    },
+    "602122-2026": {
+      "id": "602122-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – L2v Pflanzarbeiten",
+      "buyer": "Bremer Straßenbahn AG",
+      "buyerCity": "Bremen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-10-01T12:00:00.000Z",
+      "nuts": [
+        "DE501",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/602122-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "599754-2026": {
+      "id": "599754-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Straßenreinigung – Reinigung und Pflege von Grünanlagen und Straßenbegleitgrün",
+      "buyer": "Landeshauptstadt Stuttgart, Haupt- und Personalamt, Abt. Allgemeiner Service, Zentraler Einkauf",
+      "buyerCity": "Stuttgart",
+      "country": "DEU",
+      "cpv": [
+        "90611000",
+        "77310000"
+      ],
+      "cpvMain": "90611000",
+      "valueEur": 252000,
+      "deadline": null,
+      "nuts": [
+        "DE111",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/599754-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 80
+    },
+    "601192-2026": {
+      "id": "601192-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvereinbarung zum Rückschnitt von Gehölzflächen und Hecken im Straßenbegleitgrün",
+      "buyer": "Stadt Hamm, Bauverwaltungsamt, Zentrales Beschaffungsmanagement",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77340000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 160491.16,
+      "deadline": null,
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/601192-2026",
+      "matchedCpv": [
+        "77310000",
+        "77340000"
+      ],
+      "score": 80
+    },
+    "599767-2026": {
+      "id": "599767-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00012/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.3",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEA26",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/599767-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 68
+    },
+    "600582-2026": {
+      "id": "600582-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00010/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.1",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/600582-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 68
+    },
+    "600763-2026": {
+      "id": "600763-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00013/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.4",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEA29",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/600763-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 68
+    },
+    "601606-2026": {
+      "id": "601606-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00014/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.5",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEA28",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/601606-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 68
+    },
+    "602112-2026": {
+      "id": "602112-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00011/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.2",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/602112-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 68
+    },
+    "599827-2026": {
+      "id": "599827-2026",
+      "publishedAt": "2026-08-31T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Grundschule Obernkirchen - Dachabdichtungsarbeiten BA1",
+      "buyer": "Landkreis Schaumburg - Vergabestelle",
+      "buyerCity": "Stadthagen",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261300",
+        "45320000"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-10-01T08:00:00.000Z",
+      "nuts": [
+        "DE928",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/599827-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-08-31T11:02:38.003Z"
+  "lastRun": "2026-09-01T09:32:22.476Z"
 }
