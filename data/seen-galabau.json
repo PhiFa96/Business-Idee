@@ -2104,7 +2104,9 @@
     "603731-2026": "2026-09-02T08:56:50.524Z",
     "604942-2026": "2026-09-02T08:56:50.524Z",
     "605847-2026": "2026-09-02T08:56:50.524Z",
-    "604694-2026": "2026-09-02T08:56:50.524Z"
+    "604694-2026": "2026-09-02T08:56:50.524Z",
+    "608108-2026": "2026-09-03T09:05:17.539Z",
+    "608170-2026": "2026-09-03T09:05:17.539Z"
   },
   "notices": {
     "519810-2026": {
@@ -58101,7 +58103,57 @@
         "45112713"
       ],
       "score": 40
+    },
+    "608108-2026": {
+      "id": "608108-2026",
+      "publishedAt": "2026-09-02T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Landschaftsbau Tiefbauarbeiten",
+      "buyer": "Gemeinde Fridolfing",
+      "buyerCity": "Fridolfing",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-10-08T12:30:00.000Z",
+      "nuts": [
+        "DE21M",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/608108-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "608170-2026": {
+      "id": "608170-2026",
+      "publishedAt": "2026-09-02T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Freianlagen Kurpark Königstein im Taunus",
+      "buyer": "Magistrat der Stadt Königstein im Taunus",
+      "buyerCity": "Königstein im Taunus",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45112711"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 1483800,
+      "deadline": null,
+      "nuts": [
+        "DE718",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/608170-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112711"
+      ],
+      "score": 80
     }
   },
-  "lastRun": "2026-09-02T08:56:50.524Z"
+  "lastRun": "2026-09-03T09:05:17.539Z"
 }
