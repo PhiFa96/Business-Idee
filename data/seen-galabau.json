@@ -2106,7 +2106,13 @@
     "605847-2026": "2026-09-02T08:56:50.524Z",
     "604694-2026": "2026-09-02T08:56:50.524Z",
     "608108-2026": "2026-09-03T09:05:17.539Z",
-    "608170-2026": "2026-09-03T09:05:17.539Z"
+    "608170-2026": "2026-09-03T09:05:17.539Z",
+    "609622-2026": "2026-09-04T08:58:34.885Z",
+    "610710-2026": "2026-09-04T08:58:34.885Z",
+    "610096-2026": "2026-09-04T08:58:34.885Z",
+    "612361-2026": "2026-09-04T08:58:34.885Z",
+    "609384-2026": "2026-09-04T08:58:34.885Z",
+    "611221-2026": "2026-09-04T08:58:34.885Z"
   },
   "notices": {
     "519810-2026": {
@@ -55160,7 +55166,7 @@
         "45112700",
         "45112711"
       ],
-      "score": 63
+      "score": 48
     },
     "559869-2026": {
       "id": "559869-2026",
@@ -55248,7 +55254,7 @@
         "45112711",
         "77315000"
       ],
-      "score": 83
+      "score": 68
     },
     "561461-2026": {
       "id": "561461-2026",
@@ -55345,7 +55351,7 @@
         "45112720",
         "45112723"
       ],
-      "score": 83
+      "score": 68
     },
     "562927-2026": {
       "id": "562927-2026",
@@ -55501,7 +55507,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "565687-2026": {
       "id": "565687-2026",
@@ -55680,7 +55686,7 @@
         "77300000",
         "77320000"
       ],
-      "score": 83
+      "score": 68
     },
     "567765-2026": {
       "id": "567765-2026",
@@ -55821,7 +55827,7 @@
       "matchedCpv": [
         "45112712"
       ],
-      "score": 63
+      "score": 48
     },
     "568151-2026": {
       "id": "568151-2026",
@@ -58153,7 +58159,166 @@
         "45112711"
       ],
       "score": 80
+    },
+    "609622-2026": {
+      "id": "609622-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Barnesporthalle Wunstorf - Freianlagen",
+      "buyer": "Stadt Wunstorf",
+      "buyerCity": "Wunstorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112723"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-10-06T07:00:00.000Z",
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/609622-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112723"
+      ],
+      "score": 83
+    },
+    "610710-2026": {
+      "id": "610710-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltspflege Elbauenpark Magdeburg in 3 Losen",
+      "buyer": "Natur- und Kulturpark Elbaue GmbH",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77320000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-06T08:30:00.000Z",
+      "nuts": [
+        "DEE03",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/610710-2026",
+      "matchedCpv": [
+        "77310000",
+        "77313000",
+        "77211500",
+        "77320000"
+      ],
+      "score": 83
+    },
+    "610096-2026": {
+      "id": "610096-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 43 Neubau städtische Sporthalle Turnstraße - Los 23 Außenanlagen",
+      "buyer": "Stadt Pirmasens - Zentrale Vergabestelle",
+      "buyerCity": "Pirmasens",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112000",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 564559.51,
+      "deadline": null,
+      "nuts": [
+        "DEB37",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/610096-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "612361-2026": {
+      "id": "612361-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Bereich Floristik – Gestaltung von 13 Schauen in der Blumenhalle der Landesgartenschau 2027 Wittenberge",
+      "buyer": "Landesgartenschau 2027 Wittenberge gGmbH",
+      "buyerCity": "Wittenberge",
+      "country": "DEU",
+      "cpv": [
+        "77330000",
+        "03121210",
+        "39293200"
+      ],
+      "cpvMain": "77330000",
+      "valueEur": null,
+      "deadline": "2026-10-28T11:00:00.000Z",
+      "nuts": [
+        "DE40F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/612361-2026",
+      "matchedCpv": [
+        "77330000"
+      ],
+      "score": 63
+    },
+    "609384-2026": {
+      "id": "609384-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Außenanlagenpflege und Winterdienstleistungen",
+      "buyer": "Staatliches Bau- und Liegenschaftsamt Schwerin",
+      "buyerCity": "Schwerin",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "90620000",
+        "90630000",
+        "90612000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 68487.3,
+      "deadline": null,
+      "nuts": [
+        "DE80O",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/609384-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 60
+    },
+    "611221-2026": {
+      "id": "611221-2026",
+      "publishedAt": "2026-09-03T22:00:00.000Z",
+      "title": "Deutschland – Bau von Fußwegen – Bau von Wegen und Wasserläufen im Talraum des Stadtgrabens in 78628 Rottweil",
+      "buyer": "Landesgartenschau Rottweil 2028 gGmbH",
+      "buyerCity": "Rottweil",
+      "country": "DEU",
+      "cpv": [
+        "45233161",
+        "45112711",
+        "45233253",
+        "45236250"
+      ],
+      "cpvMain": "45233161",
+      "valueEur": 777988,
+      "deadline": null,
+      "nuts": [
+        "DE135",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/611221-2026",
+      "matchedCpv": [
+        "45112711"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-09-03T09:05:17.539Z"
+  "lastRun": "2026-09-04T08:58:34.885Z"
 }

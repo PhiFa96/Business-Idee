@@ -1,5 +1,200 @@
 [
   {
+    "id": "603312-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – BE-Objekte (Berlin, Brandenburg), Baum-Ersterfassung, Regelkontrolle Los 1-6, 2026",
+    "buyer": "Bundeseisenbahnvermögen Dienststelle Nord, Außenstelle Berlin",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 400000,
+    "deadline": "2026-10-05T06:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/603312-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "604814-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Baugrundverfestigungsarbeiten – Neubau eines Geh- und Radweges über die B2 im Rahmen des Projektes Brückenschlag am Schellenberg Donauwörth",
+    "buyer": "Landesgartenschau 2028 GmbH",
+    "buyerCity": "Donauwörth",
+    "country": "DEU",
+    "cpv": [
+      "45111230",
+      "45112000",
+      "45112710",
+      "45232451",
+      "45233162"
+    ],
+    "cpvMain": "45111230",
+    "valueEur": null,
+    "deadline": "2026-10-05T08:00:00.000Z",
+    "nuts": [
+      "DE27D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/604814-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "606033-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – ÖPP-Projekt „Postblockareal Nord (PBN), Berlin-Mitte | Neubau für ministerielle Nutzung\" - VOEK 637-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "45200000",
+      "71320000",
+      "70332300",
+      "50712000",
+      "90911200",
+      "90911300",
+      "77310000",
+      "90610000",
+      "90620000"
+    ],
+    "cpvMain": "45200000",
+    "valueEur": null,
+    "deadline": "2026-10-14T07:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/606033-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "603731-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Gestrüppentfernungsarbeiten – Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Vorabmaßnahme Fällungen",
+    "buyer": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45111220",
+      "77211100",
+      "77211400",
+      "77211500"
+    ],
+    "cpvMain": "45111220",
+    "valueEur": 85634,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/603731-2026",
+    "matchedCpv": [
+      "77211500",
+      "77211100",
+      "77211400"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "604942-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – BvA: Energieverwertung Schwaben gKU, Außenanlagen, Neubau einer Klärschlammtrocknung mit Pyrolyse und Verwaltungsgebäude",
+    "buyer": "Kommunale Energieverwertung Schwaben gKU",
+    "buyerCity": "Mindelheim",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112000",
+      "45340000",
+      "45233222",
+      "45262620",
+      "44221300",
+      "42923200",
+      "45247110"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": 487425.69,
+    "deadline": null,
+    "nuts": [
+      "DE27B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/604942-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "605847-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Neue Störschleife - Los 1: Wasserbau, Garten- und Landschaftsbau",
+    "buyer": "Stadt Itzehoe",
+    "buyerCity": "Itzehoe",
+    "country": "DEU",
+    "cpv": [
+      "45112711",
+      "45000000"
+    ],
+    "cpvMain": "45112711",
+    "valueEur": null,
+    "deadline": "2026-09-07T08:00:00.000Z",
+    "nuts": [
+      "DEF0E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/605847-2026",
+    "matchedCpv": [
+      "45112711"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
+    "id": "604694-2026",
+    "publishedAt": "2026-09-01T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – FIB - Neubau 3-grp. Hort, 1-fach Sporthalle und Fachraumerweiterung Grundschule - Landschaftsbauarbeiten Dacheingrünung",
+    "buyer": "Stadt Nürnberg vertreten durch WBG KOMMUNAL GmbH",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112713"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 189.538,
+    "deadline": null,
+    "nuts": [
+      "DE259",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/604694-2026",
+    "matchedCpv": [
+      "45112700",
+      "45112713"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-09-02T08:56:50.524Z"
+  },
+  {
     "id": "600162-2026",
     "publishedAt": "2026-08-31T22:00:00.000Z",
     "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltspflege Elbauenpark Magdeburg in 3 Losen",
@@ -2173,7 +2368,7 @@
       "77300000",
       "77320000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-17T05:08:30.779Z"
   },
   {
@@ -2320,7 +2515,7 @@
     "matchedCpv": [
       "45112712"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-17T05:08:30.779Z"
   },
   {
@@ -2418,7 +2613,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-14T05:55:52.048Z"
   },
   {
@@ -2585,7 +2780,7 @@
       "45112711",
       "77315000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-13T05:56:12.600Z"
   },
   {
@@ -2685,7 +2880,7 @@
       "45112720",
       "45112723"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-08-13T05:56:12.600Z"
   },
   {
@@ -2950,7 +3145,7 @@
       "45112700",
       "45112711"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-08-12T05:54:55.229Z"
   },
   {
