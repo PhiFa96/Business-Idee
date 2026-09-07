@@ -15398,7 +15398,43 @@
     "612090-2026": "2026-09-04T08:58:34.885Z",
     "609913-2026": "2026-09-04T08:58:34.885Z",
     "610761-2026": "2026-09-04T08:58:34.885Z",
-    "611839-2026": "2026-09-04T08:58:34.885Z"
+    "611839-2026": "2026-09-04T08:58:34.885Z",
+    "613293-2026": "2026-09-07T09:34:27.081Z",
+    "613528-2026": "2026-09-07T09:34:27.081Z",
+    "613668-2026": "2026-09-07T09:34:27.081Z",
+    "614731-2026": "2026-09-07T09:34:27.081Z",
+    "614865-2026": "2026-09-07T09:34:27.081Z",
+    "614949-2026": "2026-09-07T09:34:27.081Z",
+    "612991-2026": "2026-09-07T09:34:27.081Z",
+    "613157-2026": "2026-09-07T09:34:27.081Z",
+    "614179-2026": "2026-09-07T09:34:27.081Z",
+    "614424-2026": "2026-09-07T09:34:27.081Z",
+    "615404-2026": "2026-09-07T09:34:27.081Z",
+    "615488-2026": "2026-09-07T09:34:27.081Z",
+    "615912-2026": "2026-09-07T09:34:27.081Z",
+    "612708-2026": "2026-09-07T09:34:27.081Z",
+    "613612-2026": "2026-09-07T09:34:27.081Z",
+    "614427-2026": "2026-09-07T09:34:27.081Z",
+    "615675-2026": "2026-09-07T09:34:27.081Z",
+    "615935-2026": "2026-09-07T09:34:27.081Z",
+    "616124-2026": "2026-09-07T09:34:27.081Z",
+    "616162-2026": "2026-09-07T09:34:27.081Z",
+    "612635-2026": "2026-09-07T09:34:27.081Z",
+    "613080-2026": "2026-09-07T09:34:27.081Z",
+    "613217-2026": "2026-09-07T09:34:27.081Z",
+    "613741-2026": "2026-09-07T09:34:27.081Z",
+    "614854-2026": "2026-09-07T09:34:27.081Z",
+    "614867-2026": "2026-09-07T09:34:27.081Z",
+    "615317-2026": "2026-09-07T09:34:27.081Z",
+    "615863-2026": "2026-09-07T09:34:27.081Z",
+    "613802-2026": "2026-09-07T09:34:27.081Z",
+    "614484-2026": "2026-09-07T09:34:27.081Z",
+    "614767-2026": "2026-09-07T09:34:27.081Z",
+    "613108-2026": "2026-09-07T09:34:27.081Z",
+    "615749-2026": "2026-09-07T09:34:27.081Z",
+    "614398-2026": "2026-09-07T09:34:27.081Z",
+    "614620-2026": "2026-09-07T09:34:27.081Z",
+    "615035-2026": "2026-09-07T09:34:27.081Z"
   },
   "notices": {
     "521697-2026": {
@@ -380088,7 +380124,7 @@
         "45311000",
         "45313000"
       ],
-      "score": 83
+      "score": 68
     },
     "553729-2026": {
       "id": "553729-2026",
@@ -380805,7 +380841,7 @@
       "matchedCpv": [
         "45312100"
       ],
-      "score": 63
+      "score": 48
     },
     "551032-2026": {
       "id": "551032-2026",
@@ -380947,7 +380983,7 @@
       "matchedCpv": [
         "45332200"
       ],
-      "score": 48
+      "score": 43
     },
     "551826-2026": {
       "id": "551826-2026",
@@ -381104,7 +381140,7 @@
       "matchedCpv": [
         "45316110"
       ],
-      "score": 63
+      "score": 48
     },
     "552960-2026": {
       "id": "552960-2026",
@@ -381771,7 +381807,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "555205-2026": {
       "id": "555205-2026",
@@ -381928,7 +381964,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 68
+      "score": 63
     },
     "556929-2026": {
       "id": "556929-2026",
@@ -382714,7 +382750,7 @@
       "matchedCpv": [
         "45310000"
       ],
-      "score": 83
+      "score": 68
     },
     "558027-2026": {
       "id": "558027-2026",
@@ -382839,7 +382875,7 @@
         "45332400",
         "45331200"
       ],
-      "score": 83
+      "score": 68
     },
     "558900-2026": {
       "id": "558900-2026",
@@ -383196,7 +383232,7 @@
         "45316110",
         "45332300"
       ],
-      "score": 75
+      "score": 60
     },
     "558905-2026": {
       "id": "558905-2026",
@@ -383828,7 +383864,7 @@
         "45311200",
         "45316100"
       ],
-      "score": 95
+      "score": 80
     },
     "560265-2026": {
       "id": "560265-2026",
@@ -383900,7 +383936,7 @@
       "matchedCpv": [
         "45330000"
       ],
-      "score": 83
+      "score": 68
     },
     "560904-2026": {
       "id": "560904-2026",
@@ -383958,7 +383994,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "561296-2026": {
       "id": "561296-2026",
@@ -384080,7 +384116,7 @@
         "45315000",
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "562666-2026": {
       "id": "562666-2026",
@@ -384103,7 +384139,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "562766-2026": {
       "id": "562766-2026",
@@ -384126,7 +384162,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 83
+      "score": 68
     },
     "562900-2026": {
       "id": "562900-2026",
@@ -384151,7 +384187,7 @@
       "matchedCpv": [
         "45330000"
       ],
-      "score": 83
+      "score": 68
     },
     "563041-2026": {
       "id": "563041-2026",
@@ -384502,7 +384538,7 @@
         "45312200",
         "45314000"
       ],
-      "score": 63
+      "score": 48
     },
     "562392-2026": {
       "id": "562392-2026",
@@ -384527,7 +384563,7 @@
         "45333100",
         "45333000"
       ],
-      "score": 63
+      "score": 48
     },
     "562502-2026": {
       "id": "562502-2026",
@@ -384550,7 +384586,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "563386-2026": {
       "id": "563386-2026",
@@ -385023,7 +385059,7 @@
         "45317000",
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "563848-2026": {
       "id": "563848-2026",
@@ -385109,7 +385145,7 @@
         "45312100",
         "45312000"
       ],
-      "score": 83
+      "score": 68
     },
     "563959-2026": {
       "id": "563959-2026",
@@ -385139,7 +385175,7 @@
         "45331000",
         "45331100"
       ],
-      "score": 83
+      "score": 68
     },
     "563962-2026": {
       "id": "563962-2026",
@@ -385290,7 +385326,7 @@
         "45317000",
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "564564-2026": {
       "id": "564564-2026",
@@ -385317,7 +385353,7 @@
         "45331200",
         "45331210"
       ],
-      "score": 83
+      "score": 68
     },
     "564729-2026": {
       "id": "564729-2026",
@@ -385348,7 +385384,7 @@
         "45316000",
         "45311100"
       ],
-      "score": 83
+      "score": 68
     },
     "564854-2026": {
       "id": "564854-2026",
@@ -385395,7 +385431,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "565056-2026": {
       "id": "565056-2026",
@@ -385447,7 +385483,7 @@
         "45310000",
         "45316213"
       ],
-      "score": 83
+      "score": 68
     },
     "565663-2026": {
       "id": "565663-2026",
@@ -385498,7 +385534,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "565726-2026": {
       "id": "565726-2026",
@@ -385524,7 +385560,7 @@
         "45331000",
         "45332400"
       ],
-      "score": 83
+      "score": 68
     },
     "565888-2026": {
       "id": "565888-2026",
@@ -385550,7 +385586,7 @@
         "45311000",
         "45315100"
       ],
-      "score": 83
+      "score": 68
     },
     "565945-2026": {
       "id": "565945-2026",
@@ -385596,7 +385632,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "566123-2026": {
       "id": "566123-2026",
@@ -386035,7 +386071,7 @@
         "45316110",
         "45317300"
       ],
-      "score": 75
+      "score": 60
     },
     "564260-2026": {
       "id": "564260-2026",
@@ -386145,7 +386181,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 75
+      "score": 60
     },
     "564004-2026": {
       "id": "564004-2026",
@@ -386253,7 +386289,7 @@
         "45332300",
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "563966-2026": {
       "id": "563966-2026",
@@ -386280,7 +386316,7 @@
       "matchedCpv": [
         "45314320"
       ],
-      "score": 63
+      "score": 48
     },
     "564160-2026": {
       "id": "564160-2026",
@@ -386304,7 +386340,7 @@
       "matchedCpv": [
         "45315700"
       ],
-      "score": 63
+      "score": 48
     },
     "564201-2026": {
       "id": "564201-2026",
@@ -386400,7 +386436,7 @@
         "45315100",
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "565046-2026": {
       "id": "565046-2026",
@@ -386423,7 +386459,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "565111-2026": {
       "id": "565111-2026",
@@ -386448,7 +386484,7 @@
         "45312200",
         "45312100"
       ],
-      "score": 63
+      "score": 48
     },
     "565704-2026": {
       "id": "565704-2026",
@@ -386496,7 +386532,7 @@
       "matchedCpv": [
         "45313100"
       ],
-      "score": 63
+      "score": 48
     },
     "565841-2026": {
       "id": "565841-2026",
@@ -386519,7 +386555,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "566148-2026": {
       "id": "566148-2026",
@@ -386740,7 +386776,7 @@
       "matchedCpv": [
         "45330000"
       ],
-      "score": 95
+      "score": 80
     },
     "566680-2026": {
       "id": "566680-2026",
@@ -386786,7 +386822,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 95
+      "score": 80
     },
     "568382-2026": {
       "id": "568382-2026",
@@ -386840,7 +386876,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "566328-2026": {
       "id": "566328-2026",
@@ -386893,7 +386929,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "566941-2026": {
       "id": "566941-2026",
@@ -386942,7 +386978,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "567424-2026": {
       "id": "567424-2026",
@@ -387032,7 +387068,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "567723-2026": {
       "id": "567723-2026",
@@ -387078,7 +387114,7 @@
       "matchedCpv": [
         "45331000"
       ],
-      "score": 83
+      "score": 68
     },
     "568363-2026": {
       "id": "568363-2026",
@@ -387127,7 +387163,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "568659-2026": {
       "id": "568659-2026",
@@ -387158,7 +387194,7 @@
         "45314000",
         "45315700"
       ],
-      "score": 83
+      "score": 68
     },
     "569085-2026": {
       "id": "569085-2026",
@@ -387182,7 +387218,7 @@
       "matchedCpv": [
         "45331000"
       ],
-      "score": 83
+      "score": 68
     },
     "569221-2026": {
       "id": "569221-2026",
@@ -387205,7 +387241,7 @@
       "matchedCpv": [
         "45330000"
       ],
-      "score": 83
+      "score": 68
     },
     "569237-2026": {
       "id": "569237-2026",
@@ -387252,7 +387288,7 @@
       "matchedCpv": [
         "45331000"
       ],
-      "score": 83
+      "score": 68
     },
     "566199-2026": {
       "id": "566199-2026",
@@ -387446,7 +387482,7 @@
         "45332300",
         "45332400"
       ],
-      "score": 75
+      "score": 60
     },
     "566614-2026": {
       "id": "566614-2026",
@@ -387848,7 +387884,7 @@
       "matchedCpv": [
         "45331200"
       ],
-      "score": 63
+      "score": 48
     },
     "567204-2026": {
       "id": "567204-2026",
@@ -387872,7 +387908,7 @@
       "matchedCpv": [
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "567219-2026": {
       "id": "567219-2026",
@@ -387918,7 +387954,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "567434-2026": {
       "id": "567434-2026",
@@ -387988,7 +388024,7 @@
       "matchedCpv": [
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "568232-2026": {
       "id": "568232-2026",
@@ -388017,7 +388053,7 @@
       "matchedCpv": [
         "45316213"
       ],
-      "score": 63
+      "score": 48
     },
     "568273-2026": {
       "id": "568273-2026",
@@ -388040,7 +388076,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "568637-2026": {
       "id": "568637-2026",
@@ -388063,7 +388099,7 @@
       "matchedCpv": [
         "45313100"
       ],
-      "score": 63
+      "score": 48
     },
     "568694-2026": {
       "id": "568694-2026",
@@ -388086,7 +388122,7 @@
       "matchedCpv": [
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "568696-2026": {
       "id": "568696-2026",
@@ -388111,7 +388147,7 @@
         "45312000",
         "45314000"
       ],
-      "score": 63
+      "score": 48
     },
     "568787-2026": {
       "id": "568787-2026",
@@ -388280,7 +388316,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 95
+      "score": 80
     },
     "571699-2026": {
       "id": "571699-2026",
@@ -388303,7 +388339,7 @@
       "matchedCpv": [
         "45310000"
       ],
-      "score": 95
+      "score": 80
     },
     "572264-2026": {
       "id": "572264-2026",
@@ -388326,7 +388362,7 @@
       "matchedCpv": [
         "45330000"
       ],
-      "score": 95
+      "score": 80
     },
     "570278-2026": {
       "id": "570278-2026",
@@ -388376,7 +388412,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 83
+      "score": 68
     },
     "570835-2026": {
       "id": "570835-2026",
@@ -388684,7 +388720,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 75
+      "score": 60
     },
     "570747-2026": {
       "id": "570747-2026",
@@ -388730,7 +388766,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 75
+      "score": 60
     },
     "571307-2026": {
       "id": "571307-2026",
@@ -388922,7 +388958,7 @@
       "matchedCpv": [
         "45331200"
       ],
-      "score": 63
+      "score": 48
     },
     "569707-2026": {
       "id": "569707-2026",
@@ -388970,7 +389006,7 @@
       "matchedCpv": [
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "570105-2026": {
       "id": "570105-2026",
@@ -388993,7 +389029,7 @@
       "matchedCpv": [
         "45332300"
       ],
-      "score": 63
+      "score": 48
     },
     "570221-2026": {
       "id": "570221-2026",
@@ -389025,7 +389061,7 @@
         "45332400",
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "570532-2026": {
       "id": "570532-2026",
@@ -389048,7 +389084,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "571302-2026": {
       "id": "571302-2026",
@@ -389120,7 +389156,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "571970-2026": {
       "id": "571970-2026",
@@ -389167,7 +389203,7 @@
       "matchedCpv": [
         "45312000"
       ],
-      "score": 63
+      "score": 48
     },
     "569506-2026": {
       "id": "569506-2026",
@@ -389455,7 +389491,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 95
+      "score": 80
     },
     "572586-2026": {
       "id": "572586-2026",
@@ -389819,7 +389855,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "574686-2026": {
       "id": "574686-2026",
@@ -390373,7 +390409,7 @@
         "45332200",
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "573880-2026": {
       "id": "573880-2026",
@@ -390515,7 +390551,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "573592-2026": {
       "id": "573592-2026",
@@ -390908,7 +390944,7 @@
       "matchedCpv": [
         "45331000"
       ],
-      "score": 83
+      "score": 68
     },
     "576841-2026": {
       "id": "576841-2026",
@@ -391438,7 +391474,7 @@
       "matchedCpv": [
         "45315500"
       ],
-      "score": 48
+      "score": 43
     },
     "576921-2026": {
       "id": "576921-2026",
@@ -391532,7 +391568,7 @@
       "matchedCpv": [
         "45315100"
       ],
-      "score": 63
+      "score": 48
     },
     "575536-2026": {
       "id": "575536-2026",
@@ -392083,7 +392119,7 @@
       "matchedCpv": [
         "45331000"
       ],
-      "score": 83
+      "score": 68
     },
     "580081-2026": {
       "id": "580081-2026",
@@ -392989,7 +393025,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "580168-2026": {
       "id": "580168-2026",
@@ -393107,7 +393143,7 @@
       "matchedCpv": [
         "45331100"
       ],
-      "score": 63
+      "score": 48
     },
     "578403-2026": {
       "id": "578403-2026",
@@ -393550,7 +393586,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 95
+      "score": 80
     },
     "584024-2026": {
       "id": "584024-2026",
@@ -394316,7 +394352,7 @@
         "45316110",
         "45332300"
       ],
-      "score": 75
+      "score": 60
     },
     "581518-2026": {
       "id": "581518-2026",
@@ -394479,7 +394515,7 @@
       "matchedCpv": [
         "45332300"
       ],
-      "score": 63
+      "score": 48
     },
     "582339-2026": {
       "id": "582339-2026",
@@ -397327,7 +397363,7 @@
       "matchedCpv": [
         "45311000"
       ],
-      "score": 83
+      "score": 68
     },
     "590606-2026": {
       "id": "590606-2026",
@@ -397456,7 +397492,7 @@
         "45315000",
         "45331100"
       ],
-      "score": 83
+      "score": 68
     },
     "591521-2026": {
       "id": "591521-2026",
@@ -398828,7 +398864,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 95
+      "score": 80
     },
     "595886-2026": {
       "id": "595886-2026",
@@ -399220,7 +399256,7 @@
       "matchedCpv": [
         "50710000"
       ],
-      "score": 80
+      "score": 75
     },
     "595051-2026": {
       "id": "595051-2026",
@@ -399410,7 +399446,7 @@
         "45315600",
         "45315700"
       ],
-      "score": 68
+      "score": 63
     },
     "593548-2026": {
       "id": "593548-2026",
@@ -400535,7 +400571,7 @@
       "matchedCpv": [
         "45311200"
       ],
-      "score": 83
+      "score": 68
     },
     "598967-2026": {
       "id": "598967-2026",
@@ -401200,7 +401236,7 @@
       "matchedCpv": [
         "45315100"
       ],
-      "score": 75
+      "score": 60
     },
     "597171-2026": {
       "id": "597171-2026",
@@ -401268,7 +401304,7 @@
         "45315600",
         "45315700"
       ],
-      "score": 68
+      "score": 63
     },
     "596646-2026": {
       "id": "596646-2026",
@@ -401510,7 +401546,7 @@
       "matchedCpv": [
         "45332400"
       ],
-      "score": 63
+      "score": 48
     },
     "598426-2026": {
       "id": "598426-2026",
@@ -402611,7 +402647,7 @@
         "45331000",
         "45332400"
       ],
-      "score": 83
+      "score": 68
     },
     "602569-2026": {
       "id": "602569-2026",
@@ -403718,7 +403754,7 @@
       "matchedCpv": [
         "45317000"
       ],
-      "score": 95
+      "score": 80
     },
     "602758-2026": {
       "id": "602758-2026",
@@ -404423,7 +404459,7 @@
         "45313100",
         "45313000"
       ],
-      "score": 63
+      "score": 48
     },
     "604781-2026": {
       "id": "604781-2026",
@@ -405408,7 +405444,7 @@
       "matchedCpv": [
         "45331210"
       ],
-      "score": 63
+      "score": 48
     },
     "607432-2026": {
       "id": "607432-2026",
@@ -407407,7 +407443,887 @@
         "45314300"
       ],
       "score": 40
+    },
+    "613293-2026": {
+      "id": "613293-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Gebäudeautomation - Biochemie",
+      "buyer": "Johannes Gutenberg-Universität Mainz",
+      "buyerCity": "Mainz",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45311200"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-09-21T07:55:00.000Z",
+      "nuts": [
+        "DEB35",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613293-2026",
+      "matchedCpv": [
+        "45311200"
+      ],
+      "score": 83
+    },
+    "613528-2026": {
+      "id": "613528-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektroinstallationsarbeiten – HEAE MBW -H2- Photovoltaikanlage",
+      "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "buyerCity": "Bad Nauheim",
+      "country": "DEU",
+      "cpv": [
+        "45311200",
+        "09332000"
+      ],
+      "cpvMain": "45311200",
+      "valueEur": null,
+      "deadline": "2026-10-05T07:00:00.000Z",
+      "nuts": [
+        "DE721",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613528-2026",
+      "matchedCpv": [
+        "45311200"
+      ],
+      "score": 83
+    },
+    "613668-2026": {
+      "id": "613668-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektroinstallationsarbeiten – Ausführung von Elektroinstallationsarbeiten anl. des Ausbaus der Johannesschule",
+      "buyer": "Stadt Sundern",
+      "buyerCity": "Sundern",
+      "country": "DEU",
+      "cpv": [
+        "45311200",
+        "45261215",
+        "45311000",
+        "45315100"
+      ],
+      "cpvMain": "45311200",
+      "valueEur": null,
+      "deadline": "2026-10-08T09:30:00.000Z",
+      "nuts": [
+        "DEA57",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613668-2026",
+      "matchedCpv": [
+        "45311200",
+        "45311000",
+        "45315100"
+      ],
+      "score": 83
+    },
+    "614731-2026": {
+      "id": "614731-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Starkstrom",
+      "buyer": "Fraport AG",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45311100"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-10-05T12:00:00.000Z",
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614731-2026",
+      "matchedCpv": [
+        "45311100"
+      ],
+      "score": 83
+    },
+    "614865-2026": {
+      "id": "614865-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Elektroanlagen – ESTW-Stadtallendorf, Gleisfeldbeleuchtung",
+      "buyer": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "buyerCity": "Frankfurt Main",
+      "country": "DEU",
+      "cpv": [
+        "45311000"
+      ],
+      "cpvMain": "45311000",
+      "valueEur": null,
+      "deadline": "2026-10-07T07:00:00.000Z",
+      "nuts": [
+        "DE724",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614865-2026",
+      "matchedCpv": [
+        "45311000"
+      ],
+      "score": 83
+    },
+    "614949-2026": {
+      "id": "614949-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektroinstallationsarbeiten – Energieverwertung Schwaben gKU, Elektro, Neubau einer Klärschlammtrocknung mit Pyrolyse und Verwaltungsgebäude",
+      "buyer": "Kommunale Energieverwertung Schwaben gKU",
+      "buyerCity": "Mindelheim",
+      "country": "DEU",
+      "cpv": [
+        "45311200",
+        "45311100",
+        "45311000",
+        "45317000",
+        "45314300"
+      ],
+      "cpvMain": "45311200",
+      "valueEur": null,
+      "deadline": "2026-10-05T08:00:00.000Z",
+      "nuts": [
+        "DE27B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614949-2026",
+      "matchedCpv": [
+        "45311200",
+        "45311100",
+        "45311000",
+        "45317000",
+        "45314300"
+      ],
+      "score": 83
+    },
+    "612991-2026": {
+      "id": "612991-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Elektroanlagen – Starkstrom",
+      "buyer": "Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45311000"
+      ],
+      "cpvMain": "45311000",
+      "valueEur": 498873.6,
+      "deadline": null,
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/612991-2026",
+      "matchedCpv": [
+        "45311000"
+      ],
+      "score": 80
+    },
+    "613157-2026": {
+      "id": "613157-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von elektrischen Leitungen – Neubau Feuerwehrhaus der Stadt Rietberg - Elektroinstallationsanlagen",
+      "buyer": "Stadt Rietberg",
+      "buyerCity": "Rietberg",
+      "country": "DEU",
+      "cpv": [
+        "45310000"
+      ],
+      "cpvMain": "45310000",
+      "valueEur": 823902.42,
+      "deadline": null,
+      "nuts": [
+        "DEA42",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613157-2026",
+      "matchedCpv": [
+        "45310000"
+      ],
+      "score": 80
+    },
+    "614179-2026": {
+      "id": "614179-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von elektrischen Leitungen – Elektrische Kabel- und Leitungsanlagen in Gebäuden, Elektro- und Fernmeldetechnik",
+      "buyer": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45310000"
+      ],
+      "cpvMain": "45310000",
+      "valueEur": 631620.86,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614179-2026",
+      "matchedCpv": [
+        "45310000"
+      ],
+      "score": 80
+    },
+    "614424-2026": {
+      "id": "614424-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Sonstige Elektroinstallationsarbeiten – KH Merheim - Bettenhaussanierung Haus 20, A-Seite Gebäudeautomation-3 (MSR-3)",
+      "buyer": "Kliniken der Stadt Köln gGmbH",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "45317000",
+        "45231600"
+      ],
+      "cpvMain": "45317000",
+      "valueEur": 630000,
+      "deadline": "2026-09-16T12:00:00.000Z",
+      "nuts": [
+        "DEA23",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614424-2026",
+      "matchedCpv": [
+        "45317000"
+      ],
+      "score": 80
+    },
+    "615404-2026": {
+      "id": "615404-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Heizungs- und sonstige Elektroinstallationen in Gebäuden – Neubau Kindertagesstätte in der Rotbuchenstraße, Neumarkt i.d.OPf. - Sanitär, Heizung und WKSB",
+      "buyer": "Stadt Neumarkt i.d.OPf.",
+      "buyerCity": "Neumarkt i.d.OPf.",
+      "country": "DEU",
+      "cpv": [
+        "45315000"
+      ],
+      "cpvMain": "45315000",
+      "valueEur": 285695,
+      "deadline": null,
+      "nuts": [
+        "DE236",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615404-2026",
+      "matchedCpv": [
+        "45315000"
+      ],
+      "score": 80
+    },
+    "615488-2026": {
+      "id": "615488-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Elektroanlagen – VG - Neubau FwGH Salmtal - Trafostation",
+      "buyer": "Verbandsgemeinde Wittlich-Land",
+      "buyerCity": "Wittlich",
+      "country": "DEU",
+      "cpv": [
+        "45311000"
+      ],
+      "cpvMain": "45311000",
+      "valueEur": 495116.05,
+      "deadline": null,
+      "nuts": [
+        "DEB22",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615488-2026",
+      "matchedCpv": [
+        "45311000"
+      ],
+      "score": 80
+    },
+    "615912-2026": {
+      "id": "615912-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Zentralheizungen – Wilhelma - Neubau Elefantenwelt Wärmeversorgungsanlagen",
+      "buyer": "Vermögen und Bau Baden-Württemberg, Amt Stuttgart",
+      "buyerCity": "Stuttgart",
+      "country": "DEU",
+      "cpv": [
+        "45331100"
+      ],
+      "cpvMain": "45331100",
+      "valueEur": 1950000,
+      "deadline": "2026-10-08T07:00:00.000Z",
+      "nuts": [
+        "DE111",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615912-2026",
+      "matchedCpv": [
+        "45331100"
+      ],
+      "score": 75
+    },
+    "612708-2026": {
+      "id": "612708-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – G 401 Elektroinstallation",
+      "buyer": "Landkreis Wunsiedel i. Fichtelgebirge",
+      "buyerCity": "Wunsiedel i. Fichtelgebirge",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45311200"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE24D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/612708-2026",
+      "matchedCpv": [
+        "45311200"
+      ],
+      "score": 68
+    },
+    "613612-2026": {
+      "id": "613612-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Elektroanlagen – ELT Starkstrom, Neubau Gymnasium Herrsching",
+      "buyer": "Landkreis Starnberg",
+      "buyerCity": "Starnberg",
+      "country": "DEU",
+      "cpv": [
+        "45311000"
+      ],
+      "cpvMain": "45311000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE21L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613612-2026",
+      "matchedCpv": [
+        "45311000"
+      ],
+      "score": 68
+    },
+    "614427-2026": {
+      "id": "614427-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektroinstallationsarbeiten – 2475 Gewerbliche Schule Dillenburg; Sanierung Außenanlage, 2.BA Außenanlage; Elektro Außenanalag",
+      "buyer": "Kreisausschuss des Lahn-Dill-Kreises",
+      "buyerCity": "Wetzlar",
+      "country": "DEU",
+      "cpv": [
+        "45311200"
+      ],
+      "cpvMain": "45311200",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE722",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614427-2026",
+      "matchedCpv": [
+        "45311200"
+      ],
+      "score": 68
+    },
+    "615675-2026": {
+      "id": "615675-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Reparatur und Wartung von elektrischen und mechanischen Einrichtungen in Gebäuden – Wartungs- und Prüfleistungen für hand- und kraftbetätigte Anlagen, mit und ohne Feststellanlagen, VOEK 174-25",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "50710000"
+      ],
+      "cpvMain": "50710000",
+      "valueEur": null,
+      "deadline": "2026-09-14T07:00:00.000Z",
+      "nuts": [
+        "DE803",
+        "DE80O",
+        "DE80M",
+        "DE804",
+        "DE80K",
+        "DE80L",
+        "DE80N",
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615675-2026",
+      "matchedCpv": [
+        "50710000"
+      ],
+      "score": 68
+    },
+    "615935-2026": {
+      "id": "615935-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Heizungs- und sonstige Elektroinstallationen in Gebäuden – Neubau Gymnasium Herrsching - Heizung/Kälte",
+      "buyer": "Landratsamt Starnberg",
+      "buyerCity": "Starnberg",
+      "country": "DEU",
+      "cpv": [
+        "45315000"
+      ],
+      "cpvMain": "45315000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE21L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615935-2026",
+      "matchedCpv": [
+        "45315000"
+      ],
+      "score": 68
+    },
+    "616124-2026": {
+      "id": "616124-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektroinstallationsarbeiten – UHS - Generalsanierung Ludwig-Uhland Schule - ELT",
+      "buyer": "Stadt Nürnberg vertreten durch WBG KOMMUNAL GmbH",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "45311200"
+      ],
+      "cpvMain": "45311200",
+      "valueEur": null,
+      "deadline": "2026-09-15T07:00:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/616124-2026",
+      "matchedCpv": [
+        "45311200"
+      ],
+      "score": 68
+    },
+    "616162-2026": {
+      "id": "616162-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von elektrischen Leitungen – Elektrische Anschlussarbeiten für die didaktischen Schulungswand",
+      "buyer": "Handwerkskammer der Pfalz (KdöR), USt-IDNr: DE244922711",
+      "buyerCity": "Kaiserslautern",
+      "country": "DEU",
+      "cpv": [
+        "45310000"
+      ],
+      "cpvMain": "45310000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEB32",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/616162-2026",
+      "matchedCpv": [
+        "45310000"
+      ],
+      "score": 68
+    },
+    "612635-2026": {
+      "id": "612635-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Schaltanlagen – Neubau Wasserwerk Süd Los.5",
+      "buyer": "HNVG Heilbronner Versorgungs GmbH",
+      "buyerCity": "Heilbronn",
+      "country": "DEU",
+      "cpv": [
+        "45315700",
+        "48921000",
+        "31682210",
+        "45315100",
+        "38424000"
+      ],
+      "cpvMain": "45315700",
+      "valueEur": null,
+      "deadline": "2026-10-05T11:00:00.000Z",
+      "nuts": [
+        "DE117",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/612635-2026",
+      "matchedCpv": [
+        "45315700",
+        "45315100"
+      ],
+      "score": 63
+    },
+    "613080-2026": {
+      "id": "613080-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Straßenbeleuchtungsanlagen – Betrieb von Straßenbeleuchtung",
+      "buyer": "Dortmunder Energie- und Wasserversorgung GmbH",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "45316110"
+      ],
+      "cpvMain": "45316110",
+      "valueEur": null,
+      "deadline": "2026-10-05T10:00:00.000Z",
+      "nuts": [
+        "DEA52",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613080-2026",
+      "matchedCpv": [
+        "45316110"
+      ],
+      "score": 63
+    },
+    "613217-2026": {
+      "id": "613217-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Aufzügen – KAW Northeim - Neubau Betriebshof - Lieferung und Montage einer Aufzugsanlage",
+      "buyer": "Landkreis Northeim",
+      "buyerCity": "Northeim",
+      "country": "DEU",
+      "cpv": [
+        "45313100",
+        "42416100",
+        "42417000"
+      ],
+      "cpvMain": "45313100",
+      "valueEur": null,
+      "deadline": "2026-10-06T07:00:00.000Z",
+      "nuts": [
+        "DE918",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613217-2026",
+      "matchedCpv": [
+        "45313100"
+      ],
+      "score": 63
+    },
+    "613741-2026": {
+      "id": "613741-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Kühlanlagen – MPI für Terrestrische Mikrobiologie- Umbau BT B: Kühlzellen Brutraumzellen",
+      "buyer": "Max-Planck-Gesellschaft Abt.III",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45213210",
+        "45331230"
+      ],
+      "cpvMain": "45213210",
+      "valueEur": null,
+      "deadline": "2026-10-20T09:00:00.000Z",
+      "nuts": [
+        "DE724",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613741-2026",
+      "matchedCpv": [
+        "45331230"
+      ],
+      "score": 63
+    },
+    "614854-2026": {
+      "id": "614854-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Elektrotechnikinstallation – MSR-Technik, GCT, Ink VE4060",
+      "buyer": "GCT lncubator Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45315100"
+      ],
+      "cpvMain": "45315100",
+      "valueEur": null,
+      "deadline": "2026-09-22T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614854-2026",
+      "matchedCpv": [
+        "45315100"
+      ],
+      "score": 63
+    },
+    "614867-2026": {
+      "id": "614867-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Kraftwerke, Bergbau- und Produktionsanlagen und für Gebäude der Öl- und Gasindustrie – Bau und Ausrüstung der Demonstrationsanlage MoorFaserWerk Malchin (Verbundprojekt MOOReturn)",
+      "buyer": "Agrotherm GmbH",
+      "buyerCity": "Malchin",
+      "country": "DEU",
+      "cpv": [
+        "45250000",
+        "71323000",
+        "42990000",
+        "42000000",
+        "45262700",
+        "45312100"
+      ],
+      "cpvMain": "45250000",
+      "valueEur": null,
+      "deadline": "2026-10-13T12:00:00.000Z",
+      "nuts": [
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614867-2026",
+      "matchedCpv": [
+        "45312100"
+      ],
+      "score": 63
+    },
+    "615317-2026": {
+      "id": "615317-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Sanitäreinrichtungen – Projekt Erweiterung eines Bürogebäudes im Industriepark Frankfurt-Höchst Technische Ausrüstung Gebäude – Sanitär- und Heiztechnik",
+      "buyer": "Contargo GmbH & Co. KG",
+      "buyerCity": "Mannheim",
+      "country": "DEU",
+      "cpv": [
+        "45332400",
+        "45232460",
+        "45232141",
+        "42512300"
+      ],
+      "cpvMain": "45332400",
+      "valueEur": null,
+      "deadline": "2026-10-05T10:00:00.000Z",
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615317-2026",
+      "matchedCpv": [
+        "45332400"
+      ],
+      "score": 63
+    },
+    "615863-2026": {
+      "id": "615863-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Aufzügen – Willhelm-Gymnasium (Außenstelle Neubau) - Errichtung Aufzugsanlage_NB",
+      "buyer": "Stadt Braunschweig Fachbereich Bauordnung und Zentrale Vergabestelle",
+      "buyerCity": "Braunschweig",
+      "country": "DEU",
+      "cpv": [
+        "45313100",
+        "42416100"
+      ],
+      "cpvMain": "45313100",
+      "valueEur": null,
+      "deadline": "2026-10-20T05:00:00.000Z",
+      "nuts": [
+        "DE911",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615863-2026",
+      "matchedCpv": [
+        "45313100"
+      ],
+      "score": 63
+    },
+    "613802-2026": {
+      "id": "613802-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Elektroanlagen – Digitales Schließsystem, Zutrittskontrollsystem, EMA - GNUE LSA: Martin-Luther-Universität Halle-Wittenberg und Universitätsklinikum Halle (UKH), Umbau und Sanierung Magdeburger Straße 16, 2. BA (SLB-2026-0189)",
+      "buyer": "Amt für Immobilien- und Baumanagement MD (AIB Magdeburg), Zentraleinheit Vergabe",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "45311000",
+        "44521120",
+        "45312200"
+      ],
+      "cpvMain": "45311000",
+      "valueEur": 84802,
+      "deadline": null,
+      "nuts": [
+        "DEE02",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613802-2026",
+      "matchedCpv": [
+        "45311000",
+        "45312200"
+      ],
+      "score": 60
+    },
+    "614484-2026": {
+      "id": "614484-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Aufzügen – OGGS Gewerbeschulstr. 109 Fördertechnik",
+      "buyer": "Stadt Wuppertal",
+      "buyerCity": "Wuppertal",
+      "country": "DEU",
+      "cpv": [
+        "45313100"
+      ],
+      "cpvMain": "45313100",
+      "valueEur": 165004.81,
+      "deadline": null,
+      "nuts": [
+        "DEA1A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614484-2026",
+      "matchedCpv": [
+        "45313100"
+      ],
+      "score": 60
+    },
+    "614767-2026": {
+      "id": "614767-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Zentralheizungen – Heizanlagen und zentrale Wassererwärmungsanlagen",
+      "buyer": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45331100"
+      ],
+      "cpvMain": "45331100",
+      "valueEur": 406848.76,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614767-2026",
+      "matchedCpv": [
+        "45331100"
+      ],
+      "score": 60
+    },
+    "613108-2026": {
+      "id": "613108-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Schaltanlagen – TGA Gebäudeautomation, MSR - Neubau Gymnasium Herrsching",
+      "buyer": "Landratsamt Starnberg",
+      "buyerCity": "Starnberg",
+      "country": "DEU",
+      "cpv": [
+        "45315700",
+        "48921000"
+      ],
+      "cpvMain": "45315700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE21L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/613108-2026",
+      "matchedCpv": [
+        "45315700"
+      ],
+      "score": 48
+    },
+    "615749-2026": {
+      "id": "615749-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von kältetechnischen Anlagen – Kälteanlagen",
+      "buyer": "Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45331231"
+      ],
+      "cpvMain": "45331231",
+      "valueEur": null,
+      "deadline": "2026-09-14T12:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615749-2026",
+      "matchedCpv": [
+        "45331231"
+      ],
+      "score": 48
+    },
+    "614398-2026": {
+      "id": "614398-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Aufzügen – Personenaufzug/Fördertechnik - Neubau Don-Bosco-Schule Rottenbuch",
+      "buyer": "Regens-Wagner-Stiftung Erlkam, als Rechtsträger von Regens Wagner Rottenbuch, vertreten durch die Direktion der Regens-Wagner-Stiftungen",
+      "buyerCity": "Dillingen",
+      "country": "DEU",
+      "cpv": [
+        "45313100"
+      ],
+      "cpvMain": "45313100",
+      "valueEur": 81262,
+      "deadline": null,
+      "nuts": [
+        "DE21N",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614398-2026",
+      "matchedCpv": [
+        "45313100"
+      ],
+      "score": 40
+    },
+    "614620-2026": {
+      "id": "614620-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Eisenbahnlinien – Neubau S-Bahn ESTW-UZ Berlin-Schöneweide S9 Süd; Los 1, Los 2",
+      "buyer": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+      "buyerCity": "Frankfurt Main",
+      "country": "DEU",
+      "cpv": [
+        "45234100",
+        "34941800",
+        "34944000",
+        "45221250",
+        "45232000",
+        "45236000",
+        "45315300"
+      ],
+      "cpvMain": "45234100",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/614620-2026",
+      "matchedCpv": [
+        "45315300"
+      ],
+      "score": 40
+    },
+    "615035-2026": {
+      "id": "615035-2026",
+      "publishedAt": "2026-09-06T22:00:00.000Z",
+      "title": "Deutschland – Installation von Lüftungsanlagen – Neubau Kindertagesstätte in der Rotbuchenstraße, Neumarkt i.d.OPf. - Lüftung und WKSB",
+      "buyer": "Stadt Neumarkt i.d.OPf.",
+      "buyerCity": "Neumarkt i.d.OPf.",
+      "country": "DEU",
+      "cpv": [
+        "45331210"
+      ],
+      "cpvMain": "45331210",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE236",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/615035-2026",
+      "matchedCpv": [
+        "45331210"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-09-04T08:58:34.885Z"
+  "lastRun": "2026-09-07T09:34:27.081Z"
 }
