@@ -2126,7 +2126,12 @@
     "619286-2026": "2026-09-08T08:58:57.218Z",
     "616337-2026": "2026-09-08T08:58:57.218Z",
     "617171-2026": "2026-09-08T08:58:57.218Z",
-    "618355-2026": "2026-09-08T08:58:57.218Z"
+    "618355-2026": "2026-09-08T08:58:57.218Z",
+    "619580-2026": "2026-09-09T09:05:14.120Z",
+    "621360-2026": "2026-09-09T09:05:14.120Z",
+    "622172-2026": "2026-09-09T09:05:14.120Z",
+    "620917-2026": "2026-09-09T09:05:14.120Z",
+    "619494-2026": "2026-09-09T09:05:14.120Z"
   },
   "notices": {
     "519810-2026": {
@@ -55107,7 +55112,7 @@
         "77300000",
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "557618-2026": {
       "id": "557618-2026",
@@ -58715,7 +58720,139 @@
         "45112712"
       ],
       "score": 40
+    },
+    "619580-2026": {
+      "id": "619580-2026",
+      "publishedAt": "2026-09-08T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – Baumfällungen im Wuppertaler Stadtgebiet, aufgeteilt in zwei Losen, im November und Dezember diesen Jahres",
+      "buyer": "Stadt Wuppertal",
+      "buyerCity": "Wuppertal",
+      "country": "DEU",
+      "cpv": [
+        "77000000",
+        "77300000",
+        "77200000"
+      ],
+      "cpvMain": "77000000",
+      "valueEur": null,
+      "deadline": "2026-10-09T06:15:00.000Z",
+      "nuts": [
+        "DEA1A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/619580-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "621360-2026": {
+      "id": "621360-2026",
+      "publishedAt": "2026-09-08T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Ausbau Dieskaustraße BA 27, TO: Straßen-, Gleis-, und Leitungsbau",
+      "buyer": "Stadt Leipzig",
+      "buyerCity": "Leipzig",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45233120",
+        "45231100",
+        "45231400",
+        "45234126",
+        "45234116",
+        "45234128",
+        "45231000",
+        "45231300",
+        "45112710"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-10-22T21:59:00.000Z",
+      "nuts": [
+        "DED51",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/621360-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "622172-2026": {
+      "id": "622172-2026",
+      "publishedAt": "2026-09-08T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – EBS_Vegetationspflege 2026",
+      "buyer": "Entsorgungsbetriebe Speyer (EBS)",
+      "buyerCity": "Speyer",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-20T07:00:00.000Z",
+      "nuts": [
+        "DEB38",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/622172-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "620917-2026": {
+      "id": "620917-2026",
+      "publishedAt": "2026-09-08T22:00:00.000Z",
+      "title": "Deutschland – Baustelleneinrichtung – Johannes-Keppler-Gymnasium - Landschaftsbauarbeiten - vorbereitende Maßnahmen 1-3",
+      "buyer": "Stadt Garbsen Fachbereich 3 Abteilung 30 Zentrale Vergabestelle",
+      "buyerCity": "Garbsen",
+      "country": "DEU",
+      "cpv": [
+        "45113000",
+        "45111220",
+        "45112700",
+        "45112710",
+        "45112723"
+      ],
+      "cpvMain": "45113000",
+      "valueEur": 271275.59,
+      "deadline": null,
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/620917-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112723"
+      ],
+      "score": 80
+    },
+    "619494-2026": {
+      "id": "619494-2026",
+      "publishedAt": "2026-09-08T22:00:00.000Z",
+      "title": "Deutschland – Pflegearbeiten für Sportplätze – Mähroboter zur Pflege der Sportplätze",
+      "buyer": "Samtgemeinde Fredenbeck",
+      "buyerCity": "Fredenbeck",
+      "country": "DEU",
+      "cpv": [
+        "77320000"
+      ],
+      "cpvMain": "77320000",
+      "valueEur": null,
+      "deadline": "2026-10-08T08:00:00.000Z",
+      "nuts": [
+        "DE939",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/619494-2026",
+      "matchedCpv": [
+        "77320000"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-09-08T08:58:57.218Z"
+  "lastRun": "2026-09-09T09:05:14.120Z"
 }
