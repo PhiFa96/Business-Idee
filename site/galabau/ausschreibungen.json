@@ -1,5 +1,137 @@
 [
   {
+    "id": "618070-2026",
+    "publishedAt": "2026-09-07T22:00:00.000Z",
+    "title": "Deutschland – Hausmeisterdienste – Facility Management EAE Bielefeld Südring",
+    "buyer": "Bezirksregierung Detmold",
+    "buyerCity": "Detmold",
+    "country": "DEU",
+    "cpv": [
+      "98341140",
+      "77300000",
+      "90620000",
+      "90630000"
+    ],
+    "cpvMain": "98341140",
+    "valueEur": null,
+    "deadline": "2026-10-06T10:00:00.000Z",
+    "nuts": [
+      "DEA41",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/618070-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-08T08:58:57.218Z"
+  },
+  {
+    "id": "619286-2026",
+    "publishedAt": "2026-09-07T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Außenanlagen, Neubau Fruwirthstraße 15-19, 70599 Stuttgart-Hohenheim",
+    "buyer": "Studierendenwerk Tübingen-Hohenheim A.d.ö.R.",
+    "buyerCity": "Tübingen",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45112712"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 475197,
+    "deadline": null,
+    "nuts": [
+      "DE111",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/619286-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112712"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-08T08:58:57.218Z"
+  },
+  {
+    "id": "616337-2026",
+    "publishedAt": "2026-09-07T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Grünanlagenpflege 2027-2030 Südost, Ost",
+    "buyer": "Landeshauptstadt Dresden, GB Wirtschaft, Digitales, Personal und Sicherheit, Haupt- und Personalamt",
+    "buyerCity": "Dresden",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77313000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": -1,
+    "deadline": null,
+    "nuts": [
+      "DED21",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/616337-2026",
+    "matchedCpv": [
+      "77300000",
+      "77313000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-08T08:58:57.218Z"
+  },
+  {
+    "id": "617171-2026",
+    "publishedAt": "2026-09-07T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Generalinstandsetzung Landschaftsbau",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45112712"
+    ],
+    "cpvMain": "45112712",
+    "valueEur": 255595.1,
+    "deadline": null,
+    "nuts": [
+      "DE248",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/617171-2026",
+    "matchedCpv": [
+      "45112712"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-08T08:58:57.218Z"
+  },
+  {
+    "id": "618355-2026",
+    "publishedAt": "2026-09-07T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – NBS, PA 2.1, Ausführung trassenferne LBP Maßnahmen",
+    "buyer": "DB Netz AG (Bukr 16)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112712",
+      "71420000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DE113",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/618355-2026",
+    "matchedCpv": [
+      "45112700",
+      "45112712"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-09-08T08:58:57.218Z"
+  },
+  {
     "id": "615785-2026",
     "publishedAt": "2026-09-06T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Generationenbrücke in Reit im Winkl - Nutzungsänderung zu einer 4-Gruppigen Kindertagesstätte und Einbau von 6-9 Wohneinheiten für Senioren mit einem Begegnungsort -- 51000 Außenanlagen",
@@ -3525,7 +3657,7 @@
     "matchedCpv": [
       "77310000"
     ],
-    "score": 80,
+    "score": 75,
     "firstSeenAt": "2026-08-12T05:54:55.229Z"
   },
   {
