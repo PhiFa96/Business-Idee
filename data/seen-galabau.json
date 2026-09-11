@@ -2135,7 +2135,12 @@
     "623114-2026": "2026-09-10T09:04:10.308Z",
     "623725-2026": "2026-09-10T09:04:10.308Z",
     "624531-2026": "2026-09-10T09:04:10.308Z",
-    "623652-2026": "2026-09-10T09:04:10.308Z"
+    "623652-2026": "2026-09-10T09:04:10.308Z",
+    "626109-2026": "2026-09-11T09:01:39.011Z",
+    "626907-2026": "2026-09-11T09:01:39.011Z",
+    "627964-2026": "2026-09-11T09:01:39.011Z",
+    "628327-2026": "2026-09-11T09:01:39.011Z",
+    "627854-2026": "2026-09-11T09:01:39.011Z"
   },
   "notices": {
     "519810-2026": {
@@ -56381,7 +56386,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "581173-2026": {
       "id": "581173-2026",
@@ -58959,7 +58964,135 @@
         "77313000"
       ],
       "score": 60
+    },
+    "626109-2026": {
+      "id": "626109-2026",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "title": "Deutschland – Fällen von Bäumen – Rahmenvertrag Stubbenfräsen im Stadtgebiet von Krefeld",
+      "buyer": "Kommunalbetrieb Krefeld AöR",
+      "buyerCity": "Krefeld",
+      "country": "DEU",
+      "cpv": [
+        "77211400",
+        "77211500"
+      ],
+      "cpvMain": "77211400",
+      "valueEur": null,
+      "deadline": "2026-10-13T09:00:00.000Z",
+      "nuts": [
+        "DEA14",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/626109-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 83
+    },
+    "626907-2026": {
+      "id": "626907-2026",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "title": "Deutschland – Umweltüberwachung im Bau – K54 DB-Brücke Buchholz - Ökologische Baubegleitung",
+      "buyer": "Landkreis Harburg - Zentrale Vergabestelle",
+      "buyerCity": "Winsen/Luhe",
+      "country": "DEU",
+      "cpv": [
+        "71313450",
+        "77211500",
+        "90712000"
+      ],
+      "cpvMain": "71313450",
+      "valueEur": null,
+      "deadline": "2026-10-13T07:30:00.000Z",
+      "nuts": [
+        "DE933",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/626907-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "627964-2026": {
+      "id": "627964-2026",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für zwei Bundesliegenschaften in Nordrhein-Westfalen, Bundesanstalt für Immobilienaufgaben, Direktion Dortmund",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77314000",
+        "77342000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-29T08:00:00.000Z",
+      "nuts": [
+        "DEA2C",
+        "DEA23",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/627964-2026",
+      "matchedCpv": [
+        "77310000",
+        "77314000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "628327-2026": {
+      "id": "628327-2026",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Rahmenvertrag zur Pflege der vegetativen Flächen im Stadtgebiet Bornheim in 2 Losen",
+      "buyer": "Stadt Bornheim",
+      "buyerCity": "Bornheim",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-10-15T10:00:00.000Z",
+      "nuts": [
+        "DEA2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/628327-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "627854-2026": {
+      "id": "627854-2026",
+      "publishedAt": "2026-09-10T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag zur Unterhaltung öffentlicher Grünflächen",
+      "buyer": "Rennbahngemeinde Hoppegarten",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77340000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 955053.48,
+      "deadline": null,
+      "nuts": [
+        "DE409",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/627854-2026",
+      "matchedCpv": [
+        "77310000",
+        "77340000"
+      ],
+      "score": 80
     }
   },
-  "lastRun": "2026-09-10T09:04:10.308Z"
+  "lastRun": "2026-09-11T09:01:39.011Z"
 }
