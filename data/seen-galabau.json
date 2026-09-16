@@ -2154,7 +2154,14 @@
     "634762-2026": "2026-09-15T09:32:40.448Z",
     "634850-2026": "2026-09-15T09:32:40.448Z",
     "635871-2026": "2026-09-15T09:32:40.448Z",
-    "635460-2026": "2026-09-15T09:32:40.448Z"
+    "635460-2026": "2026-09-15T09:32:40.448Z",
+    "636953-2026": "2026-09-16T09:25:42.989Z",
+    "637356-2026": "2026-09-16T09:25:42.989Z",
+    "638030-2026": "2026-09-16T09:25:42.989Z",
+    "636489-2026": "2026-09-16T09:25:42.989Z",
+    "638964-2026": "2026-09-16T09:25:42.989Z",
+    "638976-2026": "2026-09-16T09:25:42.989Z",
+    "636813-2026": "2026-09-16T09:25:42.989Z"
   },
   "notices": {
     "519810-2026": {
@@ -59460,7 +59467,183 @@
         "45112711"
       ],
       "score": 60
+    },
+    "636953-2026": {
+      "id": "636953-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Rohbauarbeiten – Gebäude 38.2, Neubau Orthopädie-OP,Erd-, Verbau-, Infrastruktur- und Rohbau-, Dachabdichtungsarbeiten",
+      "buyer": "Universitätsklinikum des Saarlandes",
+      "buyerCity": "Homburg",
+      "country": "DEU",
+      "cpv": [
+        "45223220",
+        "45112500",
+        "45210000",
+        "45262510",
+        "45112710"
+      ],
+      "cpvMain": "45223220",
+      "valueEur": null,
+      "deadline": "2026-10-07T10:00:00.000Z",
+      "nuts": [
+        "DEC05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/636953-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "637356-2026": {
+      "id": "637356-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – VE 01 Freianlagen/Sportplatzbau, Gymnasium 35 Brunnenviertel, 14478 Potsdam, Drewitzer Str. 40",
+      "buyer": "Kommunaler Immobilien Service Potsdam (KIS) Eigenbetrieb der Landeshauptstadt Potsdam",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45112700",
+        "45212221",
+        "45236119",
+        "45236110",
+        "45000000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-19T07:00:00.000Z",
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/637356-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "638030-2026": {
+      "id": "638030-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Umweltüberwachung im Bau – Ökologische und Baumschutzfachliche Baubegleitung",
+      "buyer": "Bezirksamt Steglitz-Zehlendorf von Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "71313450",
+        "77300000",
+        "77211500"
+      ],
+      "cpvMain": "71313450",
+      "valueEur": null,
+      "deadline": "2026-10-14T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/638030-2026",
+      "matchedCpv": [
+        "77300000",
+        "77211500"
+      ],
+      "score": 83
+    },
+    "636489-2026": {
+      "id": "636489-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – BKE, Erweiterungsbau - Landschaftsbauarbeiten nach DIN 18 320 - Vergabe 2567/2025",
+      "buyer": "Bundesamt für Bauwesen und Raumordnung, in Vertretung für die Bundesrepublik Deutschland",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 806146.91,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/636489-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "638964-2026": {
+      "id": "638964-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Technische Kontrolle – Abschluss einer Rahmenvereinbarung über die Durchführung von Baumkontrollen",
+      "buyer": "BVC Altona",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "71631000",
+        "77211500"
+      ],
+      "cpvMain": "71631000",
+      "valueEur": 1860000,
+      "deadline": null,
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/638964-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 80
+    },
+    "638976-2026": {
+      "id": "638976-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Ladenbeker Furtweg 151-159 - GaLaBau",
+      "buyer": "SBH | Schulbau Hamburg",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 6000000,
+      "deadline": null,
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/638976-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "636813-2026": {
+      "id": "636813-2026",
+      "publishedAt": "2026-09-15T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Freianlagen südlicher Bereich",
+      "buyer": "Klinikverbund Südwest gGmbH im Namen und auf Rechnung für den Eigenbetrieb Gebäudemanagement des Landkreises Böblingen",
+      "buyerCity": "Böblingen",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45233250"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 0.01,
+      "deadline": null,
+      "nuts": [
+        "DE112",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/636813-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-09-15T09:32:40.448Z"
+  "lastRun": "2026-09-16T09:25:42.989Z"
 }
