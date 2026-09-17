@@ -1,5 +1,188 @@
 [
   {
+    "id": "634234-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Umweltüberwachung im Bau – K54 DB-Brücke Buchholz - Ökologische Baubegleitung",
+    "buyer": "Landkreis Harburg - Zentrale Vergabestelle",
+    "buyerCity": "Winsen/Luhe",
+    "country": "DEU",
+    "cpv": [
+      "71313450",
+      "77211500",
+      "90712000"
+    ],
+    "cpvMain": "71313450",
+    "valueEur": null,
+    "deadline": "2026-10-13T07:30:00.000Z",
+    "nuts": [
+      "DE933",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/634234-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "635540-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Rohbauarbeiten – Gebäude 38.2, Neubau Orthopädie-OP,Erd-, Verbau-, Infrastruktur- und Rohbau-, Dachabdichtungsarbeiten",
+    "buyer": "Universitätsklinikum des Saarlandes",
+    "buyerCity": "Homburg",
+    "country": "DEU",
+    "cpv": [
+      "45223220",
+      "45112500",
+      "45210000",
+      "45262510",
+      "45112710"
+    ],
+    "cpvMain": "45223220",
+    "valueEur": null,
+    "deadline": "2026-10-07T10:00:00.000Z",
+    "nuts": [
+      "DEC05",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/635540-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "634658-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Stadt Königs Wusterhausen, Rahmenvereinbarung Baumpflege-/Baumfällmaßnahme in den Ortsteilen Zernsdorf und Kablow",
+    "buyer": "Stadt Königs Wusterhausen, Dezernat Bildung und digitale Verwaltung, Amt Verwaltungsmanagement, Sachgebiet Vergabe- und Vertragsmanagement",
+    "buyerCity": "Königs Wusterhausen",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "77211400"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 576060,
+    "deadline": null,
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/634658-2026",
+    "matchedCpv": [
+      "77211500",
+      "77211400"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "634762-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – Kreishaus Osnabrück / Umfassende Gebäudesanierung und Modernisierung (1. BA) - Außenanlagen (VE 1.501)",
+    "buyer": "Landkreis Osnabrück - Abt. 13.3 Zentrale Vergabestelle",
+    "buyerCity": "Osnabrück",
+    "country": "DEU",
+    "cpv": [
+      "45112713",
+      "45112710"
+    ],
+    "cpvMain": "45112713",
+    "valueEur": 273776.44,
+    "deadline": null,
+    "nuts": [
+      "DE944",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/634762-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112713"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "634850-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Bahnstadt - Pflege der Ausgleichs- und Ersatzmaßnahmen 2026-27 in drei Losen",
+    "buyer": "Stadt Heidelberg, Landschafts- und Forstamt",
+    "buyerCity": "Heidelberg",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE125",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/634850-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "635871-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Grünflächenpflege UK Tübingen",
+    "buyer": "Univeritätsklinikum Tübingen - Abt. D3 Dienstleistungen und Wirtschaftsbedarf",
+    "buyerCity": "Tübingen",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77211500"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/635871-2026",
+    "matchedCpv": [
+      "77300000",
+      "77211500"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
+    "id": "635460-2026",
+    "publishedAt": "2026-09-14T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Quartier am alten Krankenhaus Stadthagen - Außenanlagen Ausstattung Park",
+    "buyer": "Landkreis Schaumburg - Vergabestelle",
+    "buyerCity": "Stadthagen",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45112711"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 46536.46,
+    "deadline": null,
+    "nuts": [
+      "DE928",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/635460-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112711"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-15T09:32:40.448Z"
+  },
+  {
     "id": "630549-2026",
     "publishedAt": "2026-09-13T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Pflanz-, Ansaat- und Pflegearbeiten nach ATV DIN 18320",

@@ -2161,7 +2161,14 @@
     "636489-2026": "2026-09-16T09:25:42.989Z",
     "638964-2026": "2026-09-16T09:25:42.989Z",
     "638976-2026": "2026-09-16T09:25:42.989Z",
-    "636813-2026": "2026-09-16T09:25:42.989Z"
+    "636813-2026": "2026-09-16T09:25:42.989Z",
+    "639784-2026": "2026-09-17T09:35:15.378Z",
+    "641562-2026": "2026-09-17T09:35:15.378Z",
+    "639580-2026": "2026-09-17T09:35:15.378Z",
+    "640543-2026": "2026-09-17T09:35:15.378Z",
+    "641122-2026": "2026-09-17T09:35:15.378Z",
+    "640424-2026": "2026-09-17T09:35:15.378Z",
+    "640762-2026": "2026-09-17T09:35:15.378Z"
   },
   "notices": {
     "519810-2026": {
@@ -59643,7 +59650,185 @@
         "45112710"
       ],
       "score": 60
+    },
+    "639784-2026": {
+      "id": "639784-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – GAZ - Los 34 (Außenanlagen)",
+      "buyer": "Landkreis Vorpommern-Greifswald - Der Landrat",
+      "buyerCity": "Greifswald",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45223300",
+        "71400000",
+        "77300000"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-10-19T07:00:00.000Z",
+      "nuts": [
+        "DE80N",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/639784-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "641562-2026": {
+      "id": "641562-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – A3 Mäh- und Mulcharbeiten 2026 - 2029",
+      "buyer": "Die Autobahn GmbH des Bundes - NL Südbayern",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-10-20T09:00:00.000Z",
+      "nuts": [
+        "DE232",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/641562-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "639580-2026": {
+      "id": "639580-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachdeckungsarbeiten",
+      "buyer": "Amt Oeversee",
+      "buyerCity": "Tarp",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-10-15T13:00:00.000Z",
+      "nuts": [
+        "DEF0C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/639580-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "640543-2026": {
+      "id": "640543-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – Landschaftsbauarbeiten",
+      "buyer": "Staatliches Bauamt München 2",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112713"
+      ],
+      "cpvMain": "45112713",
+      "valueEur": null,
+      "deadline": "2026-10-20T07:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/640543-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "641122-2026": {
+      "id": "641122-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – NGH-G-H06 Dachabdichtungsarbeiten einschl. Dachbegrünung",
+      "buyer": "Stadt Würzburg Fachbereich Schule",
+      "buyerCity": "Würzburg",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45210000",
+        "45214200",
+        "45214220",
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:30:00.000Z",
+      "nuts": [
+        "DE263",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/641122-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "640424-2026": {
+      "id": "640424-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Wiederherstellung des Kurparks Bad Neuenahr-Ahrweiler: Landschaftsbauarbeiten",
+      "buyer": "Ahrtal Marketing GmbH",
+      "buyerCity": "Bad Neuenahr-Ahrweiler",
+      "country": "DEU",
+      "cpv": [
+        "45112712",
+        "45233222",
+        "45240000",
+        "45262650",
+        "45112711"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 500343.92,
+      "deadline": null,
+      "nuts": [
+        "DEB12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/640424-2026",
+      "matchedCpv": [
+        "45112712",
+        "45112711"
+      ],
+      "score": 60
+    },
+    "640762-2026": {
+      "id": "640762-2026",
+      "publishedAt": "2026-09-16T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Gewerbezentrum Alanbrooke Paderborn mit dem Schwerpunkt Kreativwirtschaft",
+      "buyer": "Alanbrooke Block 4 UG (haftungsbeschränkt)",
+      "buyerCity": "Paderborn",
+      "country": "DEU",
+      "cpv": [
+        "45112712",
+        "45233222",
+        "45112000"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 139852.66,
+      "deadline": null,
+      "nuts": [
+        "DEA47",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/640762-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-09-16T09:25:42.989Z"
+  "lastRun": "2026-09-17T09:35:15.378Z"
 }
