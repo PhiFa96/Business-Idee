@@ -2168,7 +2168,10 @@
     "640543-2026": "2026-09-17T09:35:15.378Z",
     "641122-2026": "2026-09-17T09:35:15.378Z",
     "640424-2026": "2026-09-17T09:35:15.378Z",
-    "640762-2026": "2026-09-17T09:35:15.378Z"
+    "640762-2026": "2026-09-17T09:35:15.378Z",
+    "643539-2026": "2026-09-18T09:07:29.532Z",
+    "643017-2026": "2026-09-18T09:07:29.532Z",
+    "646016-2026": "2026-09-18T09:07:29.532Z"
   },
   "notices": {
     "519810-2026": {
@@ -57348,7 +57351,7 @@
       "matchedCpv": [
         "77314000"
       ],
-      "score": 83
+      "score": 68
     },
     "594660-2026": {
       "id": "594660-2026",
@@ -57546,7 +57549,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 75
+      "score": 60
     },
     "597805-2026": {
       "id": "597805-2026",
@@ -59828,7 +59831,94 @@
         "45112712"
       ],
       "score": 60
+    },
+    "643539-2026": {
+      "id": "643539-2026",
+      "publishedAt": "2026-09-17T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) Grünpflege auf den Außenanlagen und die Grauflächenreinigung von drei Bundesliegenschaften (inkl. frei zugänglicher Parkanlage) in Berlin, Sparte Wohnen, Regionalbereich Ost - VOEK 053-26 -",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77342000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-11-02T08:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/643539-2026",
+      "matchedCpv": [
+        "77314000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "643017-2026": {
+      "id": "643017-2026",
+      "publishedAt": "2026-09-17T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen von Sicherheitsdiensten – BLB /Z /NL Düsseldorf/Infrastrukturelle Gebäudedienstleistungen/Lose 2, 3 und 6_100-26-00056",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "79710000",
+        "77314000",
+        "79992000",
+        "90911300"
+      ],
+      "cpvMain": "79710000",
+      "valueEur": 5978007.21,
+      "deadline": null,
+      "nuts": [
+        "DEA11",
+        "DEU",
+        "DEA1C",
+        "DEA1D",
+        "DEA18",
+        "DEA1A",
+        "DEA19"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/643017-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 80
+    },
+    "646016-2026": {
+      "id": "646016-2026",
+      "publishedAt": "2026-09-17T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 2026-0394 Planung, Herstellung, Lieferung und Montage von Spielgeräten für das Projekt \"2. & 3. BA Stadtpark Hochheide\"",
+      "buyer": "DEG Duisburger Einkaufsgesellschaft mbH",
+      "buyerCity": "Duisburg",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112720",
+        "45112723"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/646016-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112720",
+        "45112723"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-09-17T09:35:15.378Z"
+  "lastRun": "2026-09-18T09:07:29.532Z"
 }
