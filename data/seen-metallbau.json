@@ -8462,7 +8462,50 @@
     "647114-2026": "2026-09-21T10:08:23.896Z",
     "648051-2026": "2026-09-21T10:08:23.896Z",
     "648450-2026": "2026-09-21T10:08:23.896Z",
-    "648519-2026": "2026-09-21T10:08:23.896Z"
+    "648519-2026": "2026-09-21T10:08:23.896Z",
+    "653710-2026": "2026-09-23T09:26:15.425Z",
+    "654296-2026": "2026-09-23T09:26:15.425Z",
+    "654516-2026": "2026-09-23T09:26:15.425Z",
+    "654912-2026": "2026-09-23T09:26:15.425Z",
+    "655320-2026": "2026-09-23T09:26:15.425Z",
+    "655602-2026": "2026-09-23T09:26:15.425Z",
+    "655721-2026": "2026-09-23T09:26:15.425Z",
+    "655906-2026": "2026-09-23T09:26:15.425Z",
+    "653956-2026": "2026-09-23T09:26:15.425Z",
+    "655600-2026": "2026-09-23T09:26:15.425Z",
+    "656729-2026": "2026-09-23T09:26:15.425Z",
+    "651155-2026": "2026-09-23T09:26:15.425Z",
+    "651818-2026": "2026-09-23T09:26:15.425Z",
+    "654102-2026": "2026-09-23T09:26:15.425Z",
+    "651269-2026": "2026-09-23T09:26:15.425Z",
+    "655345-2026": "2026-09-23T09:26:15.425Z",
+    "656667-2026": "2026-09-23T09:26:15.425Z",
+    "652244-2026": "2026-09-23T09:26:15.425Z",
+    "653841-2026": "2026-09-23T09:26:15.425Z",
+    "654072-2026": "2026-09-23T09:26:15.425Z",
+    "654299-2026": "2026-09-23T09:26:15.425Z",
+    "654379-2026": "2026-09-23T09:26:15.425Z",
+    "654691-2026": "2026-09-23T09:26:15.425Z",
+    "654835-2026": "2026-09-23T09:26:15.425Z",
+    "655808-2026": "2026-09-23T09:26:15.425Z",
+    "655841-2026": "2026-09-23T09:26:15.425Z",
+    "656611-2026": "2026-09-23T09:26:15.425Z",
+    "656663-2026": "2026-09-23T09:26:15.425Z",
+    "656936-2026": "2026-09-23T09:26:15.425Z",
+    "650976-2026": "2026-09-23T09:26:15.425Z",
+    "652042-2026": "2026-09-23T09:26:15.425Z",
+    "653474-2026": "2026-09-23T09:26:15.425Z",
+    "654635-2026": "2026-09-23T09:26:15.425Z",
+    "655210-2026": "2026-09-23T09:26:15.425Z",
+    "655266-2026": "2026-09-23T09:26:15.425Z",
+    "650863-2026": "2026-09-23T09:26:15.425Z",
+    "651375-2026": "2026-09-23T09:26:15.425Z",
+    "651650-2026": "2026-09-23T09:26:15.425Z",
+    "654752-2026": "2026-09-23T09:26:15.425Z",
+    "650800-2026": "2026-09-23T09:26:15.425Z",
+    "652525-2026": "2026-09-23T09:26:15.425Z",
+    "653767-2026": "2026-09-23T09:26:15.425Z",
+    "656292-2026": "2026-09-23T09:26:15.425Z"
   },
   "notices": {
     "519611-2026": {
@@ -215953,7 +215996,7 @@
         "45223210",
         "45341000"
       ],
-      "score": 83
+      "score": 68
     },
     "588571-2026": {
       "id": "588571-2026",
@@ -217328,7 +217371,7 @@
         "45421131",
         "45421146"
       ],
-      "score": 55
+      "score": 40
     },
     "593769-2026": {
       "id": "593769-2026",
@@ -218251,7 +218294,7 @@
         "45421100",
         "45421000"
       ],
-      "score": 83
+      "score": 68
     },
     "599192-2026": {
       "id": "599192-2026",
@@ -218793,7 +218836,7 @@
         "45340000",
         "45342000"
       ],
-      "score": 80
+      "score": 75
     },
     "601110-2026": {
       "id": "601110-2026",
@@ -219050,7 +219093,7 @@
       "matchedCpv": [
         "45421151"
       ],
-      "score": 63
+      "score": 48
     },
     "600238-2026": {
       "id": "600238-2026",
@@ -219562,7 +219605,7 @@
       "matchedCpv": [
         "45223210"
       ],
-      "score": 68
+      "score": 63
     },
     "604830-2026": {
       "id": "604830-2026",
@@ -219592,7 +219635,7 @@
         "45421160",
         "45421144"
       ],
-      "score": 83
+      "score": 68
     },
     "605410-2026": {
       "id": "605410-2026",
@@ -219808,7 +219851,7 @@
         "45421143",
         "45421144"
       ],
-      "score": 48
+      "score": 43
     },
     "604648-2026": {
       "id": "604648-2026",
@@ -220190,7 +220233,7 @@
         "44221000",
         "45421130"
       ],
-      "score": 83
+      "score": 68
     },
     "607019-2026": {
       "id": "607019-2026",
@@ -220242,7 +220285,7 @@
       "matchedCpv": [
         "45223210"
       ],
-      "score": 83
+      "score": 68
     },
     "607734-2026": {
       "id": "607734-2026",
@@ -220293,7 +220336,7 @@
       "matchedCpv": [
         "45223210"
       ],
-      "score": 83
+      "score": 68
     },
     "609108-2026": {
       "id": "609108-2026",
@@ -221348,7 +221391,7 @@
       "matchedCpv": [
         "45223210"
       ],
-      "score": 83
+      "score": 68
     },
     "613835-2026": {
       "id": "613835-2026",
@@ -222003,7 +222046,7 @@
       "matchedCpv": [
         "45421100"
       ],
-      "score": 68
+      "score": 63
     },
     "617359-2026": {
       "id": "617359-2026",
@@ -224384,7 +224427,7 @@
         "45421132",
         "45421131"
       ],
-      "score": 60
+      "score": 55
     },
     "628589-2026": {
       "id": "628589-2026",
@@ -224998,7 +225041,7 @@
         "45421160",
         "45421144"
       ],
-      "score": 83
+      "score": 68
     },
     "629923-2026": {
       "id": "629923-2026",
@@ -225544,7 +225587,7 @@
         "44221200",
         "44221220"
       ],
-      "score": 48
+      "score": 43
     },
     "631167-2026": {
       "id": "631167-2026",
@@ -226608,7 +226651,7 @@
         "45421111",
         "45421131"
       ],
-      "score": 48
+      "score": 43
     },
     "639268-2026": {
       "id": "639268-2026",
@@ -227036,7 +227079,7 @@
       "matchedCpv": [
         "45421153"
       ],
-      "score": 63
+      "score": 48
     },
     "642554-2026": {
       "id": "642554-2026",
@@ -227303,7 +227346,7 @@
         "45421150",
         "45421140"
       ],
-      "score": 48
+      "score": 43
     },
     "639873-2026": {
       "id": "639873-2026",
@@ -228295,7 +228338,7 @@
         "45421110",
         "45421131"
       ],
-      "score": 48
+      "score": 43
     },
     "646822-2026": {
       "id": "646822-2026",
@@ -228426,7 +228469,7 @@
         "45421100",
         "45421000"
       ],
-      "score": 83
+      "score": 68
     },
     "650160-2026": {
       "id": "650160-2026",
@@ -228877,7 +228920,7 @@
       "matchedCpv": [
         "45343200"
       ],
-      "score": 63
+      "score": 48
     },
     "649161-2026": {
       "id": "649161-2026",
@@ -229274,7 +229317,1122 @@
         "45421148"
       ],
       "score": 48
+    },
+    "653710-2026": {
+      "id": "653710-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauleistungen im Hochbau – Neubau Hort Zusmarshausen, Dichte Gebäudehülle (Holzbau)",
+      "buyer": "Markt Zusmarshausen",
+      "buyerCity": "Zusmarshausen",
+      "country": "DEU",
+      "cpv": [
+        "45210000",
+        "45212190",
+        "45262100",
+        "45421100",
+        "45422000",
+        "45422100"
+      ],
+      "cpvMain": "45210000",
+      "valueEur": 2300000,
+      "deadline": "2026-10-12T10:00:00.000Z",
+      "nuts": [
+        "DE276",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/653710-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 95
+    },
+    "654296-2026": {
+      "id": "654296-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Fassadenarbeiten – Fenster und Pfosten Riegel Fassade",
+      "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+      "buyerCity": "Erlangen",
+      "country": "DEU",
+      "cpv": [
+        "45443000",
+        "45421100",
+        "45212190"
+      ],
+      "cpvMain": "45443000",
+      "valueEur": 973226.89,
+      "deadline": "2026-10-27T08:02:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654296-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 95
+    },
+    "654516-2026": {
+      "id": "654516-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Stahlkonstruktionen – Med. Schule - Schlosserarbeiten Außenbereich",
+      "buyer": "Universitätsklinikum Brandenburg an der Havel GmbH",
+      "buyerCity": "Brandenburg an der Havel",
+      "country": "DEU",
+      "cpv": [
+        "45223210",
+        "45000000"
+      ],
+      "cpvMain": "45223210",
+      "valueEur": null,
+      "deadline": "2026-10-21T08:00:00.000Z",
+      "nuts": [
+        "DE401",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654516-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "654912-2026": {
+      "id": "654912-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Teilneubau GEH II - Stahlbau Technikzentrale Dach",
+      "buyer": "Klinikum Region Hannover GmbH",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45223210",
+        "45262670"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-10-28T09:00:00.000Z",
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654912-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "655320-2026": {
+      "id": "655320-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bau von Kläranlagen – Erweiterung Kläranlage Hohenwart",
+      "buyer": "Markt Hohenwart",
+      "buyerCity": "Hohenwart",
+      "country": "DEU",
+      "cpv": [
+        "45252100",
+        "45252130",
+        "45262410",
+        "45210000"
+      ],
+      "cpvMain": "45252100",
+      "valueEur": null,
+      "deadline": "2026-10-27T13:00:00.000Z",
+      "nuts": [
+        "DE21J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655320-2026",
+      "matchedCpv": [
+        "45262410"
+      ],
+      "score": 83
+    },
+    "655602-2026": {
+      "id": "655602-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schwimmbäder – Generalsanierung Höhenfreibad Wartberg - Edelstahlbreitrutsche",
+      "buyer": "Stadt Pforzheim - Zentrale Vergabestelle",
+      "buyerCity": "Pforzheim",
+      "country": "DEU",
+      "cpv": [
+        "45212212",
+        "45223210",
+        "45262400",
+        "43324100"
+      ],
+      "cpvMain": "45212212",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE129",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655602-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "655721-2026": {
+      "id": "655721-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Straßenbauarbeiten – Kreuzungsfreier Ausbau Frankenschnellweg, Abschnitt West: Bauleistungen, Straßen- & Ingenieurbau",
+      "buyer": "Stadt Nürnberg - Servicebetrieb Öffentlicher Raum",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "45233120",
+        "44141100",
+        "45111100",
+        "45111250",
+        "45112400",
+        "45221111",
+        "45223210",
+        "45223820",
+        "45232450",
+        "45247110",
+        "45262200",
+        "45262310",
+        "45262426",
+        "71311220",
+        "71319000",
+        "77211100"
+      ],
+      "cpvMain": "45233120",
+      "valueEur": null,
+      "deadline": "2026-10-05T07:00:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655721-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "655906-2026": {
+      "id": "655906-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Sportplätze – Sportplatzbauarbeiten DIN 18035 und Ballfangzäune DIN 18320",
+      "buyer": "Stadt Rosenheim",
+      "buyerCity": "Rosenheim",
+      "country": "DEU",
+      "cpv": [
+        "45212221",
+        "45342000"
+      ],
+      "cpvMain": "45212221",
+      "valueEur": null,
+      "deadline": "2026-10-27T08:30:00.000Z",
+      "nuts": [
+        "DE213",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655906-2026",
+      "matchedCpv": [
+        "45342000"
+      ],
+      "score": 83
+    },
+    "653956-2026": {
+      "id": "653956-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Abbrucharbeiten, Baureifmachung und Abräumung – Hallenerweiterung Stadtbahnwerkstatt Döhren - vorbreitende Arbeiten und erweiterte Rohbauarbeiten - Südfassade - 2. Lauf",
+      "buyer": "ÜSTRA Hannoversche Verkehrsbetriebe Aktiengesellschaft",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "45111000",
+        "45111100",
+        "45223210",
+        "45223220",
+        "45262400",
+        "45262410",
+        "45262420"
+      ],
+      "cpvMain": "45111000",
+      "valueEur": 190716.13,
+      "deadline": null,
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/653956-2026",
+      "matchedCpv": [
+        "45223210",
+        "45262410"
+      ],
+      "score": 80
+    },
+    "655600-2026": {
+      "id": "655600-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – Neubau GESAMTKLINIKUM Heidekreis in Bad Fallingbostel - Rohrrahmentüren",
+      "buyer": "Heidekreis-Klinikum gGmbH",
+      "buyerCity": "Walsrode",
+      "country": "DEU",
+      "cpv": [
+        "45215100",
+        "45421100",
+        "45421160",
+        "45000000"
+      ],
+      "cpvMain": "45215100",
+      "valueEur": 1818334.05,
+      "deadline": null,
+      "nuts": [
+        "DE938",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655600-2026",
+      "matchedCpv": [
+        "45421100",
+        "45421160"
+      ],
+      "score": 80
+    },
+    "656729-2026": {
+      "id": "656729-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Straße der Republik 2B, Wiesbaden",
+      "buyer": "SEG Stadtentwicklungsgesellschaft Wiesbaden mbH",
+      "buyerCity": "Wiesbaden",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45212190",
+        "45441000",
+        "45421100"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": 1393912.01,
+      "deadline": null,
+      "nuts": [
+        "DE714",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656729-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 80
+    },
+    "651155-2026": {
+      "id": "651155-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Metallbau_Fenster_Außentüren",
+      "buyer": "Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45421100"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": 547682,
+      "deadline": null,
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/651155-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 80
+    },
+    "651818-2026": {
+      "id": "651818-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Metallbau- und Verglasungsarbeiten / Neubau Kombibad Maintal",
+      "buyer": "Magistrat der Stadt Maintal",
+      "buyerCity": "Maintal",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45441000",
+        "45443000",
+        "45421100"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": 832881.31,
+      "deadline": null,
+      "nuts": [
+        "DE719",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/651818-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 80
+    },
+    "654102-2026": {
+      "id": "654102-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Installation von Einbaumöbeln – Tübingen, UNI, Innovationscampus Cyber Valley 2. BA CyVy 2. BA - 3.027.3 Hörsaalgestühl",
+      "buyer": "Vermögen und Bau Baden-Württemberg, Amt Tübingen",
+      "buyerCity": "Tübingen",
+      "country": "DEU",
+      "cpv": [
+        "45421153"
+      ],
+      "cpvMain": "45421153",
+      "valueEur": 255277.2,
+      "deadline": "2026-10-27T08:00:00.000Z",
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654102-2026",
+      "matchedCpv": [
+        "45421153"
+      ],
+      "score": 75
+    },
+    "651269-2026": {
+      "id": "651269-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Aussentueren",
+      "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+      "buyerCity": "Erlangen",
+      "country": "DEU",
+      "cpv": [
+        "45421131",
+        "45262670"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": 349382.35,
+      "deadline": "2026-10-27T08:00:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/651269-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 75
+    },
+    "655345-2026": {
+      "id": "655345-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schwimmbäder – Erweiterung Stadtbad Plauen",
+      "buyer": "Stadt Plauen, Vergabestelle",
+      "buyerCity": "Plauen",
+      "country": "DEU",
+      "cpv": [
+        "45212212",
+        "45262680",
+        "45223210"
+      ],
+      "cpvMain": "45212212",
+      "valueEur": null,
+      "deadline": "2026-10-02T08:30:00.000Z",
+      "nuts": [
+        "DED44",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655345-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 68
+    },
+    "656667-2026": {
+      "id": "656667-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – bvA: Energieverwertung Schwaben gKU, Fenster, Neubau einer Klärschlammtrockung mit Pyrolyse und Verwaltungsgebäude",
+      "buyer": "Kommunale Energieverwertung Schwaben gKU",
+      "buyerCity": "Mindelheim",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "44221100",
+        "45421132",
+        "45421100"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE27B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656667-2026",
+      "matchedCpv": [
+        "45421100",
+        "44221100",
+        "45421132"
+      ],
+      "score": 68
+    },
+    "652244-2026": {
+      "id": "652244-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Bundesrat - Anbau mit Besucherzentrum - Tischlerarbeiten - Vergabe 870/2026",
+      "buyer": "Bundesamt für Bauwesen und Raumordnung, in Vertretung der Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45422000",
+        "45421131",
+        "45421160"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-09-29T10:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/652244-2026",
+      "matchedCpv": [
+        "45421160",
+        "45421131"
+      ],
+      "score": 68
+    },
+    "653841-2026": {
+      "id": "653841-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Installation von Einbaumöbeln – Generalsanierung Gartenschule Ettlingen, Schreinerarbeiten",
+      "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung",
+      "buyerCity": "Karlsruhe",
+      "country": "DEU",
+      "cpv": [
+        "45421153"
+      ],
+      "cpvMain": "45421153",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE123",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/653841-2026",
+      "matchedCpv": [
+        "45421153"
+      ],
+      "score": 63
+    },
+    "654072-2026": {
+      "id": "654072-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Installation von Einbaumöbeln – Tischler-Einbaumöbel",
+      "buyer": "LRA Erlangen-Höchstadt",
+      "buyerCity": "Erlangen",
+      "country": "DEU",
+      "cpv": [
+        "45421153"
+      ],
+      "cpvMain": "45421153",
+      "valueEur": null,
+      "deadline": "2026-10-29T07:30:00.000Z",
+      "nuts": [
+        "DE257",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654072-2026",
+      "matchedCpv": [
+        "45421153"
+      ],
+      "score": 63
+    },
+    "654299-2026": {
+      "id": "654299-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Neubau Kindertagesstätte in der Rotbuchenstraße, Neumarkt i.d.OPf. - Metallbau Brandschutztüren",
+      "buyer": "Stadt Neumarkt i.d.OPf.",
+      "buyerCity": "Neumarkt i.d.OPf.",
+      "country": "DEU",
+      "cpv": [
+        "45421131",
+        "44221220"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": null,
+      "deadline": "2026-10-21T08:00:00.000Z",
+      "nuts": [
+        "DE236",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654299-2026",
+      "matchedCpv": [
+        "45421131",
+        "44221220"
+      ],
+      "score": 63
+    },
+    "654379-2026": {
+      "id": "654379-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Brandschutzarbeiten – Brandschutzbekleidung",
+      "buyer": "Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45343100",
+        "45343000"
+      ],
+      "cpvMain": "45343100",
+      "valueEur": null,
+      "deadline": "2026-10-26T08:30:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654379-2026",
+      "matchedCpv": [
+        "45343100",
+        "45343000"
+      ],
+      "score": 63
+    },
+    "654691-2026": {
+      "id": "654691-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Fenstern – Holz-Alu-Fenster",
+      "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "buyerCity": "Bad Nauheim",
+      "country": "DEU",
+      "cpv": [
+        "45421132"
+      ],
+      "cpvMain": "45421132",
+      "valueEur": null,
+      "deadline": "2026-10-23T08:00:00.000Z",
+      "nuts": [
+        "DE731",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654691-2026",
+      "matchedCpv": [
+        "45421132"
+      ],
+      "score": 63
+    },
+    "654835-2026": {
+      "id": "654835-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Brandschutz-Installationsarbeiten – 62-2026-590-EA - Tiefgaragenentrauchungs- und Entlüftungsanlage DIN EN 12101, DIN EN 16798",
+      "buyer": "Stadt Regensburg",
+      "buyerCity": "Regensburg",
+      "country": "DEU",
+      "cpv": [
+        "45343000"
+      ],
+      "cpvMain": "45343000",
+      "valueEur": null,
+      "deadline": "2026-10-26T08:00:00.000Z",
+      "nuts": [
+        "DE232",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654835-2026",
+      "matchedCpv": [
+        "45343000"
+      ],
+      "score": 63
+    },
+    "655808-2026": {
+      "id": "655808-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Installation von Feuerlöschanlagen – Neubau Panoramabad Wartberg - Feuerlöschtechnik",
+      "buyer": "Stadt Pforzheim - Zentrale Vergabestelle",
+      "buyerCity": "Pforzheim",
+      "country": "DEU",
+      "cpv": [
+        "45343200",
+        "45343000",
+        "45321000",
+        "45262670",
+        "35111000",
+        "35111320",
+        "45330000",
+        "50413200",
+        "45212212"
+      ],
+      "cpvMain": "45343200",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DE129",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655808-2026",
+      "matchedCpv": [
+        "45343200",
+        "45343000"
+      ],
+      "score": 63
+    },
+    "655841-2026": {
+      "id": "655841-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern – BLB NRW Münster / Justizzentrum Münster - Sanierung Geb. 3 / Fenster- und Fassadenarbeiten / 060-26-00266",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Münster",
+      "buyerCity": "Münster",
+      "country": "DEU",
+      "cpv": [
+        "45421130",
+        "45421132",
+        "45443000"
+      ],
+      "cpvMain": "45421130",
+      "valueEur": null,
+      "deadline": "2026-10-29T08:00:00.000Z",
+      "nuts": [
+        "DEA33",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655841-2026",
+      "matchedCpv": [
+        "45421130",
+        "45421132"
+      ],
+      "score": 63
+    },
+    "656611-2026": {
+      "id": "656611-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern – Neubau Mehrfamilienhäuser Wieslocher Straße, Rohrrahmentüren",
+      "buyer": "Stadt Walldorf",
+      "buyerCity": "Walldorf",
+      "country": "DEU",
+      "cpv": [
+        "45421130",
+        "45262670",
+        "44221200",
+        "45421131",
+        "44221220"
+      ],
+      "cpvMain": "45421130",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE128",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656611-2026",
+      "matchedCpv": [
+        "45421130",
+        "44221200",
+        "45421131",
+        "44221220"
+      ],
+      "score": 63
+    },
+    "656663-2026": {
+      "id": "656663-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – BLB NRW Duisburg / Land- und Amtsgericht Duisburg Erweiterung / Schlosserarbeiten / 020-26-00221",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Duisburg",
+      "buyerCity": "Duisburg",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45262400",
+        "45421131"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": null,
+      "deadline": "2026-10-22T08:00:00.000Z",
+      "nuts": [
+        "DEA12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656663-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 63
+    },
+    "656936-2026": {
+      "id": "656936-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Installation von Feuerlöschanlagen – Löschanlage HDWN (VE32.1) im Zuge der Baumaßnahme \"2603_UKM 1.4 Umbau Zentral OP am Standort Marburg, Universitätsklinikum Gießen und Marburg GmbH, Baldingerstraße, 35043 Marburg\"",
+      "buyer": "Uniklinikum Gießen und Marburg GmbH",
+      "buyerCity": "Gießen",
+      "country": "DEU",
+      "cpv": [
+        "45343200",
+        "45343000",
+        "50413200"
+      ],
+      "cpvMain": "45343200",
+      "valueEur": null,
+      "deadline": "2026-11-02T09:00:00.000Z",
+      "nuts": [
+        "DE724",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656936-2026",
+      "matchedCpv": [
+        "45343200",
+        "45343000"
+      ],
+      "score": 63
+    },
+    "650976-2026": {
+      "id": "650976-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Bau von Feuerwachen – Industrietore",
+      "buyer": "Stadt Freising",
+      "buyerCity": "Freising",
+      "country": "DEU",
+      "cpv": [
+        "45216121",
+        "45421148"
+      ],
+      "cpvMain": "45216121",
+      "valueEur": null,
+      "deadline": "2026-10-08T09:00:00.000Z",
+      "nuts": [
+        "DE21B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/650976-2026",
+      "matchedCpv": [
+        "45421148"
+      ],
+      "score": 63
+    },
+    "652042-2026": {
+      "id": "652042-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Fenstern – 459 MWGS - Neubau Maria-Ward-Grundschule Tüßling/Heiligenstatt - 3267-01 Fenster_Außentüren",
+      "buyer": "Maria-Ward-Grundschule Heiligenstatt e. V.",
+      "buyerCity": "Tüßling",
+      "country": "DEU",
+      "cpv": [
+        "45421132",
+        "45421131"
+      ],
+      "cpvMain": "45421132",
+      "valueEur": null,
+      "deadline": "2026-10-21T08:00:00.000Z",
+      "nuts": [
+        "DE214",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/652042-2026",
+      "matchedCpv": [
+        "45421132",
+        "45421131"
+      ],
+      "score": 63
+    },
+    "653474-2026": {
+      "id": "653474-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Grundschule Leipziger Str. 210, Modernisierung + Erweiterungsbau, Los 3.15 Innentüren Holz",
+      "buyer": "Stadt Leipzig",
+      "buyerCity": "Leipzig",
+      "country": "DEU",
+      "cpv": [
+        "45421131"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": null,
+      "deadline": "2026-10-27T12:00:00.000Z",
+      "nuts": [
+        "DED51",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/653474-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 63
+    },
+    "654635-2026": {
+      "id": "654635-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Trockenbauarbeiten",
+      "buyer": "Landkreis Nienburg/Weser",
+      "buyerCity": "Nienburg",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45324000",
+        "45421141",
+        "45421146"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 477970.15,
+      "deadline": null,
+      "nuts": [
+        "DE927",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654635-2026",
+      "matchedCpv": [
+        "45421141",
+        "45421146"
+      ],
+      "score": 60
+    },
+    "655210-2026": {
+      "id": "655210-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Michaelschule - Brandschutztüren",
+      "buyer": "Stadt Rheine",
+      "buyerCity": "Rheine",
+      "country": "DEU",
+      "cpv": [
+        "45421131"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": 95417.7,
+      "deadline": null,
+      "nuts": [
+        "DEA37",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655210-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 60
+    },
+    "655266-2026": {
+      "id": "655266-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schwimmbäder – Freizeitbad GalaxSea Jena - Energetische Sanierung - Los 11: Abwasser-, Wasser- und Gasanlagen",
+      "buyer": "Jenaer Bäder und Freizeit GmbH",
+      "buyerCity": "Jena",
+      "country": "DEU",
+      "cpv": [
+        "45212212",
+        "45332000",
+        "45332300",
+        "45317100",
+        "42122220",
+        "44162500",
+        "45232100",
+        "41110000",
+        "45232460",
+        "45332200",
+        "65123000",
+        "41120000",
+        "45332400",
+        "44411000",
+        "44411100",
+        "44411300",
+        "44411400",
+        "44411800",
+        "45343000",
+        "45232000"
+      ],
+      "cpvMain": "45212212",
+      "valueEur": 1029105.81,
+      "deadline": null,
+      "nuts": [
+        "DEG03",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/655266-2026",
+      "matchedCpv": [
+        "45343000"
+      ],
+      "score": 60
+    },
+    "650863-2026": {
+      "id": "650863-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von abgehängten Decken – A.0435.120514 - UB JLU GI | OV (EU) Akustik-Unterdecke Metall",
+      "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "buyerCity": "Bad Nauheim",
+      "country": "DEU",
+      "cpv": [
+        "45421146"
+      ],
+      "cpvMain": "45421146",
+      "valueEur": 845813.56,
+      "deadline": null,
+      "nuts": [
+        "DE721",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/650863-2026",
+      "matchedCpv": [
+        "45421146"
+      ],
+      "score": 60
+    },
+    "651375-2026": {
+      "id": "651375-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Beschlagarbeiten – Elektronische Schließzylinder (21940059 / AG KI / Umbau, eAkte u. Datennetz_MF)",
+      "buyer": "Land Schleswig-Holstein endvertreten durch Gebäudemanagement Schleswig-Holstein AöR",
+      "buyerCity": "Lübeck",
+      "country": "DEU",
+      "cpv": [
+        "45421160"
+      ],
+      "cpvMain": "45421160",
+      "valueEur": 47306.86,
+      "deadline": null,
+      "nuts": [
+        "DEF02",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/651375-2026",
+      "matchedCpv": [
+        "45421160"
+      ],
+      "score": 60
+    },
+    "651650-2026": {
+      "id": "651650-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Fenstern – Fensterarbeiten",
+      "buyer": "STADT UND LAND Wohnbauten-Gesellschaft mbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45421132"
+      ],
+      "cpvMain": "45421132",
+      "valueEur": 2683364.4,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/651650-2026",
+      "matchedCpv": [
+        "45421132"
+      ],
+      "score": 60
+    },
+    "654752-2026": {
+      "id": "654752-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Toren – Neubau Brandschutz- und Ausbildungszentrums (BAZ) am Standort Newel",
+      "buyer": "Verbandsgemeindeverwaltung Trier-Land",
+      "buyerCity": "Trier",
+      "country": "DEU",
+      "cpv": [
+        "45421148"
+      ],
+      "cpvMain": "45421148",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEB25",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/654752-2026",
+      "matchedCpv": [
+        "45421148"
+      ],
+      "score": 48
+    },
+    "650800-2026": {
+      "id": "650800-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen",
+      "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung",
+      "buyerCity": "Karlsruhe",
+      "country": "DEU",
+      "cpv": [
+        "45421131",
+        "45262670",
+        "45441000"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE123",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/650800-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 48
+    },
+    "652525-2026": {
+      "id": "652525-2026",
+      "publishedAt": "2026-09-21T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern – Revitalisierung und Sanierung Jeckel-Areal Fenster und Außentüren",
+      "buyer": "Stadt Rottenburg am Neckar",
+      "buyerCity": "Rottenburg am Neckar",
+      "country": "DEU",
+      "cpv": [
+        "45421130"
+      ],
+      "cpvMain": "45421130",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/652525-2026",
+      "matchedCpv": [
+        "45421130"
+      ],
+      "score": 48
+    },
+    "653767-2026": {
+      "id": "653767-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – Neustrukturierung Rathaus Borken, Geb.- C LV 06 WC- Trennwände",
+      "buyer": "Stadt Borken",
+      "buyerCity": "Borken",
+      "country": "DEU",
+      "cpv": [
+        "45421141"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": 9366.14,
+      "deadline": null,
+      "nuts": [
+        "DEA34",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/653767-2026",
+      "matchedCpv": [
+        "45421141"
+      ],
+      "score": 40
+    },
+    "656292-2026": {
+      "id": "656292-2026",
+      "publishedAt": "2026-09-22T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – BvA_Energieverwertung Schwaben gKU, Türen und Tore, Neubau einer Klärschlammtrockung mit Pyrolyse und Verwaltungsgebäude",
+      "buyer": "Kommunale Energieverwertung Schwaben gKU",
+      "buyerCity": "Mindelheim",
+      "country": "DEU",
+      "cpv": [
+        "45421131",
+        "44221300",
+        "44221200",
+        "44221220",
+        "45421148"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": 56455,
+      "deadline": null,
+      "nuts": [
+        "DE27B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/656292-2026",
+      "matchedCpv": [
+        "45421131",
+        "44221300",
+        "44221200",
+        "44221220",
+        "45421148"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-09-21T10:08:23.896Z"
+  "lastRun": "2026-09-23T09:26:15.425Z"
 }
