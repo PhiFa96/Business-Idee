@@ -8505,7 +8505,42 @@
     "650800-2026": "2026-09-23T09:26:15.425Z",
     "652525-2026": "2026-09-23T09:26:15.425Z",
     "653767-2026": "2026-09-23T09:26:15.425Z",
-    "656292-2026": "2026-09-23T09:26:15.425Z"
+    "656292-2026": "2026-09-23T09:26:15.425Z",
+    "657946-2026": "2026-09-24T09:26:38.384Z",
+    "657980-2026": "2026-09-24T09:26:38.384Z",
+    "658197-2026": "2026-09-24T09:26:38.384Z",
+    "658292-2026": "2026-09-24T09:26:38.384Z",
+    "658689-2026": "2026-09-24T09:26:38.384Z",
+    "658704-2026": "2026-09-24T09:26:38.384Z",
+    "659140-2026": "2026-09-24T09:26:38.384Z",
+    "659223-2026": "2026-09-24T09:26:38.384Z",
+    "659748-2026": "2026-09-24T09:26:38.384Z",
+    "659857-2026": "2026-09-24T09:26:38.384Z",
+    "659915-2026": "2026-09-24T09:26:38.384Z",
+    "659923-2026": "2026-09-24T09:26:38.384Z",
+    "660211-2026": "2026-09-24T09:26:38.384Z",
+    "658552-2026": "2026-09-24T09:26:38.384Z",
+    "657127-2026": "2026-09-24T09:26:38.384Z",
+    "657248-2026": "2026-09-24T09:26:38.384Z",
+    "658673-2026": "2026-09-24T09:26:38.384Z",
+    "659132-2026": "2026-09-24T09:26:38.384Z",
+    "659718-2026": "2026-09-24T09:26:38.384Z",
+    "657254-2026": "2026-09-24T09:26:38.384Z",
+    "657290-2026": "2026-09-24T09:26:38.384Z",
+    "657326-2026": "2026-09-24T09:26:38.384Z",
+    "657343-2026": "2026-09-24T09:26:38.384Z",
+    "657843-2026": "2026-09-24T09:26:38.384Z",
+    "658399-2026": "2026-09-24T09:26:38.384Z",
+    "659084-2026": "2026-09-24T09:26:38.384Z",
+    "659815-2026": "2026-09-24T09:26:38.384Z",
+    "657676-2026": "2026-09-24T09:26:38.384Z",
+    "658859-2026": "2026-09-24T09:26:38.384Z",
+    "659221-2026": "2026-09-24T09:26:38.384Z",
+    "659542-2026": "2026-09-24T09:26:38.384Z",
+    "660310-2026": "2026-09-24T09:26:38.384Z",
+    "659482-2026": "2026-09-24T09:26:38.384Z",
+    "659732-2026": "2026-09-24T09:26:38.384Z",
+    "658336-2026": "2026-09-24T09:26:38.384Z"
   },
   "notices": {
     "519611-2026": {
@@ -215970,7 +216005,7 @@
       "matchedCpv": [
         "45421100"
       ],
-      "score": 68
+      "score": 63
     },
     "587866-2026": {
       "id": "587866-2026",
@@ -221287,7 +221322,7 @@
       "matchedCpv": [
         "45223210"
       ],
-      "score": 68
+      "score": 63
     },
     "613558-2026": {
       "id": "613558-2026",
@@ -228774,7 +228809,7 @@
         "44221100",
         "44221200"
       ],
-      "score": 68
+      "score": 63
     },
     "648041-2026": {
       "id": "648041-2026",
@@ -230432,7 +230467,943 @@
         "45421148"
       ],
       "score": 40
+    },
+    "657946-2026": {
+      "id": "657946-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Neubau Rathausergänzungsgebäude und Umbau Bestandsgebäude; Gewerk: Tischlerarbeiten Türen",
+      "buyer": "Stadt Pfullingen",
+      "buyerCity": "Pfullingen",
+      "country": "DEU",
+      "cpv": [
+        "45421100"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DE141",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657946-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 83
+    },
+    "657980-2026": {
+      "id": "657980-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauleistungen im Hochbau – Gesamtschule Busecker Tal - Schreinerarbeiten Innentüren",
+      "buyer": "Landkreis Gießen - Der Kreisausschuss -",
+      "buyerCity": "Gießen",
+      "country": "DEU",
+      "cpv": [
+        "45210000",
+        "44221000",
+        "44221220"
+      ],
+      "cpvMain": "45210000",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DE721",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657980-2026",
+      "matchedCpv": [
+        "44221000",
+        "44221220"
+      ],
+      "score": 83
+    },
+    "658197-2026": {
+      "id": "658197-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bau von Fernstraßen – B050 zw. Bhf. Zolleiche & FH Hahn, 4-str.Ausbau; BW 6109 201, BW 6109 205, Umfahrung",
+      "buyer": "LBM Bad Kreuznach",
+      "buyerCity": "Bad Kreuznach",
+      "country": "DEU",
+      "cpv": [
+        "45233124",
+        "45000000",
+        "45112500",
+        "45221100",
+        "45221111",
+        "45223210",
+        "45233222"
+      ],
+      "cpvMain": "45233124",
+      "valueEur": null,
+      "deadline": "2026-10-15T09:00:00.000Z",
+      "nuts": [
+        "DEB22",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658197-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "658292-2026": {
+      "id": "658292-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – A 58-26 WeA-HN VE313 Fenster, Außentüren, Sonnenschutz",
+      "buyer": "Albtal-Verkehrs-Gesellschaft mbH",
+      "buyerCity": "Karlsruhe",
+      "country": "DEU",
+      "cpv": [
+        "45421100"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-26T10:00:00.000Z",
+      "nuts": [
+        "DE117",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658292-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 83
+    },
+    "658689-2026": {
+      "id": "658689-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – TIS II - Innentüren, Zargen, Holztüren",
+      "buyer": "Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45421100"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-23T10:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658689-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 83
+    },
+    "658704-2026": {
+      "id": "658704-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – BÜ_16 (Innenelemente Holz-Alu)",
+      "buyer": "Amt Büsum-Wesselburen",
+      "buyerCity": "Büsum",
+      "country": "DEU",
+      "cpv": [
+        "45421141",
+        "45421160",
+        "45421152",
+        "45422000"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DEF05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658704-2026",
+      "matchedCpv": [
+        "45421160",
+        "45421141",
+        "45421152"
+      ],
+      "score": 83
+    },
+    "659140-2026": {
+      "id": "659140-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – Innentüren",
+      "buyer": "Lernen plus gGmbH Schloss Schönefeld",
+      "buyerCity": "Leipzig",
+      "country": "DEU",
+      "cpv": [
+        "45421131",
+        "44221220",
+        "45421100"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": null,
+      "deadline": "2026-10-27T07:00:00.000Z",
+      "nuts": [
+        "DED51",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659140-2026",
+      "matchedCpv": [
+        "45421100",
+        "45421131",
+        "44221220"
+      ],
+      "score": 83
+    },
+    "659223-2026": {
+      "id": "659223-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Konstruktiver Holzbau, Stahlbau, Fenster",
+      "buyer": "FHH Bezirksamt Hamburg-Mitte vertreten durch Sprinkenhof GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45421100",
+        "45223210",
+        "45422100"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-05T09:30:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659223-2026",
+      "matchedCpv": [
+        "45421100",
+        "45223210"
+      ],
+      "score": 83
+    },
+    "659748-2026": {
+      "id": "659748-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Stahlkonstruktionen – Altenpflegeheim Neviandtstraße 87, Schlosserarbeiten",
+      "buyer": "Stadt Wuppertal",
+      "buyerCity": "Wuppertal",
+      "country": "DEU",
+      "cpv": [
+        "45223210"
+      ],
+      "cpvMain": "45223210",
+      "valueEur": null,
+      "deadline": "2026-10-23T06:15:00.000Z",
+      "nuts": [
+        "DEA1A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659748-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "659857-2026": {
+      "id": "659857-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Stahlbau- und Schlosserarbeiten BT B Gymnasium - Erweiterung Schulzentrum Steinlach-Wiesaz in Dußlingen",
+      "buyer": "Gemeindeverwaltungsverband Steinlach Wiesaz",
+      "buyerCity": "Gomaringen",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45223210"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": null,
+      "deadline": "2026-11-04T11:00:00.000Z",
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659857-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 83
+    },
+    "659915-2026": {
+      "id": "659915-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – WSB_16 (Innenelemente Holz-Alu)",
+      "buyer": "Amt Büsum-Wesselburen",
+      "buyerCity": "Büsum",
+      "country": "DEU",
+      "cpv": [
+        "45421141",
+        "45421152",
+        "45422000",
+        "45421160"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": null,
+      "deadline": "2026-10-27T10:00:00.000Z",
+      "nuts": [
+        "DEF05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659915-2026",
+      "matchedCpv": [
+        "45421160",
+        "45421141",
+        "45421152"
+      ],
+      "score": 83
+    },
+    "659923-2026": {
+      "id": "659923-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Wohnhäuser – POM / Kommunaler Wohnungsbau mit Tiefgarage in Eching - VE24.I Brandschutztüren",
+      "buyer": "Gemeinde Eching",
+      "buyerCity": "Eching",
+      "country": "DEU",
+      "cpv": [
+        "45211100",
+        "45421100",
+        "44221220",
+        "45340000"
+      ],
+      "cpvMain": "45211100",
+      "valueEur": null,
+      "deadline": "2026-10-28T09:40:00.000Z",
+      "nuts": [
+        "DE21B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659923-2026",
+      "matchedCpv": [
+        "45421100",
+        "45340000",
+        "44221220"
+      ],
+      "score": 83
+    },
+    "660211-2026": {
+      "id": "660211-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Fenster Aussentueren 101",
+      "buyer": "Staatliches Bauamt Würzburg",
+      "buyerCity": "Würzburg",
+      "country": "DEU",
+      "cpv": [
+        "45421100"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE268",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/660211-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 83
+    },
+    "658552-2026": {
+      "id": "658552-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern – Ex-Post: Neubau der Rettungswache Lüdinghausen - Metallbauarbeiten - Fenster und Türen",
+      "buyer": "Kreis Coesfeld",
+      "buyerCity": "Coesfeld",
+      "country": "DEU",
+      "cpv": [
+        "45421130",
+        "45421131",
+        "45421132",
+        "45421100",
+        "45421000"
+      ],
+      "cpvMain": "45421130",
+      "valueEur": 182726,
+      "deadline": null,
+      "nuts": [
+        "DEA35",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658552-2026",
+      "matchedCpv": [
+        "45421100",
+        "45421130",
+        "45421131",
+        "45421132",
+        "45421000"
+      ],
+      "score": 80
+    },
+    "657127-2026": {
+      "id": "657127-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Metallbauarbeiten – Bundesstadt Bonn, Hardtbergbad - Fassade - Metallbauarbeiten (Aussenverglasung und Aussentüren) - 3035",
+      "buyer": "Bundesstadt Bonn - Referat Vergabedienste",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "45262670",
+        "45262700",
+        "45262800",
+        "45421145",
+        "45421160",
+        "45440000",
+        "45443000"
+      ],
+      "cpvMain": "45262670",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA22",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657127-2026",
+      "matchedCpv": [
+        "45421160",
+        "45421145"
+      ],
+      "score": 68
+    },
+    "657248-2026": {
+      "id": "657248-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bautischlerei-Einbauarbeiten – Neubau Rathaus - Tischlerarbeiten (Holzfenster) 2. BA",
+      "buyer": "Gemeinde Moormerland",
+      "buyerCity": "Moormerland",
+      "country": "DEU",
+      "cpv": [
+        "45420000",
+        "45421100"
+      ],
+      "cpvMain": "45420000",
+      "valueEur": null,
+      "deadline": "2026-09-29T10:00:00.000Z",
+      "nuts": [
+        "DE94C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657248-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 68
+    },
+    "658673-2026": {
+      "id": "658673-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Fassadenarbeiten – Neubau Verwaltungsgebäude Landratsamt Rottweil - PR-Fassade und Alutüren EG",
+      "buyer": "Landratsamt Rottweil",
+      "buyerCity": "Rottweil",
+      "country": "DEU",
+      "cpv": [
+        "45443000",
+        "45441000",
+        "45400000",
+        "45421100"
+      ],
+      "cpvMain": "45443000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE135",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658673-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 68
+    },
+    "659132-2026": {
+      "id": "659132-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – BAU - VOB - LV12 Fensterarbeiten Holz - Schule PES",
+      "buyer": "BBS Bau- und Betriebsservice GmbH",
+      "buyerCity": "Mannheim",
+      "country": "DEU",
+      "cpv": [
+        "45421100",
+        "45000000"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE126",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659132-2026",
+      "matchedCpv": [
+        "45421100"
+      ],
+      "score": 68
+    },
+    "659718-2026": {
+      "id": "659718-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Innentüren Icking",
+      "buyer": "Gemeinde Icking",
+      "buyerCity": "Icking",
+      "country": "DEU",
+      "cpv": [
+        "45421100",
+        "45421000",
+        "45420000",
+        "45400000",
+        "45000000"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": null,
+      "deadline": "2026-10-02T07:00:00.000Z",
+      "nuts": [
+        "DE216",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659718-2026",
+      "matchedCpv": [
+        "45421100",
+        "45421000"
+      ],
+      "score": 68
+    },
+    "657254-2026": {
+      "id": "657254-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – Samtgemeinde Lüchow (Wendland) - Neubau Grundschule in Wustrow - Los 19 Glastrennwände",
+      "buyer": "Samtgemeinde Lüchow (Wendland)",
+      "buyerCity": "Lüchow (Wendland)",
+      "country": "DEU",
+      "cpv": [
+        "45421141",
+        "45421130"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": null,
+      "deadline": "2026-10-13T07:00:00.000Z",
+      "nuts": [
+        "DE934",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657254-2026",
+      "matchedCpv": [
+        "45421141",
+        "45421130"
+      ],
+      "score": 63
+    },
+    "657290-2026": {
+      "id": "657290-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Holzarbeiten – Zimmer- und Holzbauarbeiten",
+      "buyer": "Regionalverband Saarbrücken",
+      "buyerCity": "Saarbrücken",
+      "country": "DEU",
+      "cpv": [
+        "45422100",
+        "45261100",
+        "45443000",
+        "45262100",
+        "45343100"
+      ],
+      "cpvMain": "45422100",
+      "valueEur": null,
+      "deadline": "2026-11-09T10:00:00.000Z",
+      "nuts": [
+        "DEC01",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657290-2026",
+      "matchedCpv": [
+        "45343100"
+      ],
+      "score": 63
+    },
+    "657326-2026": {
+      "id": "657326-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Sonnenschutzarbeiten – Innenliegender Sonnenschutz 70-00231-2530-307 - PR1296740-2530-B",
+      "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45212190",
+        "45421145",
+        "44115900"
+      ],
+      "cpvMain": "45212190",
+      "valueEur": null,
+      "deadline": "2026-10-27T10:00:00.000Z",
+      "nuts": [
+        "DEB32",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657326-2026",
+      "matchedCpv": [
+        "45421145"
+      ],
+      "score": 63
+    },
+    "657343-2026": {
+      "id": "657343-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Installation von Sanitäreinrichtungen – Abbruch und Neubau Personalwohnheim Thoraxklinik Heidelberg gGmbH",
+      "buyer": "Thoraxklinik am Universitätsklinikum Heidelberg gGmbH",
+      "buyerCity": "Heidelberg",
+      "country": "DEU",
+      "cpv": [
+        "45332400",
+        "45331210",
+        "45231300",
+        "45343000",
+        "45320000",
+        "45343100",
+        "45232452",
+        "45232460"
+      ],
+      "cpvMain": "45332400",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:59:00.000Z",
+      "nuts": [
+        "DE125",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657343-2026",
+      "matchedCpv": [
+        "45343000",
+        "45343100"
+      ],
+      "score": 63
+    },
+    "657843-2026": {
+      "id": "657843-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – Sanitärtrennwände 3.15",
+      "buyer": "Vergabestelle",
+      "buyerCity": "Teupitz",
+      "country": "DEU",
+      "cpv": [
+        "45421141"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DE406",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657843-2026",
+      "matchedCpv": [
+        "45421141"
+      ],
+      "score": 63
+    },
+    "658399-2026": {
+      "id": "658399-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Installation von Einbauküchen – Lehrküchen I Aufstockung u. Sanierung Walter-Erbe-Schule Tübingen",
+      "buyer": "Universitätsstadt Tübingen - Zentrale Vergabestelle",
+      "buyerCity": "Tübingen",
+      "country": "DEU",
+      "cpv": [
+        "45421151",
+        "39141000",
+        "39141100",
+        "39141400",
+        "39141500",
+        "39160000",
+        "39314000",
+        "39711360",
+        "39711361",
+        "39711362",
+        "39711400",
+        "39711420",
+        "39713100",
+        "42214100",
+        "42959000"
+      ],
+      "cpvMain": "45421151",
+      "valueEur": null,
+      "deadline": "2026-10-26T22:59:00.000Z",
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658399-2026",
+      "matchedCpv": [
+        "45421151"
+      ],
+      "score": 63
+    },
+    "659084-2026": {
+      "id": "659084-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Sonnenschutzarbeiten – Sonnenschutzarbeiten BT B - Erweiterung Schulzentrum Steinlach-Wiesaz in Dußlingen",
+      "buyer": "Gemeindeverwaltungsverband Steinlach Wiesaz",
+      "buyerCity": "Gomaringen",
+      "country": "DEU",
+      "cpv": [
+        "45212190",
+        "45421143"
+      ],
+      "cpvMain": "45212190",
+      "valueEur": null,
+      "deadline": "2026-11-04T11:00:00.000Z",
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659084-2026",
+      "matchedCpv": [
+        "45421143"
+      ],
+      "score": 63
+    },
+    "659815-2026": {
+      "id": "659815-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – ZLD01-21 - GU-PAKET 03a / GU 03a - INNENAUSBAU 1",
+      "buyer": "Kliniken Landkreis Diepholz gGmbH",
+      "buyerCity": "Diepholz",
+      "country": "DEU",
+      "cpv": [
+        "45215100",
+        "45421110",
+        "45421146",
+        "45421141",
+        "45432111",
+        "45431000",
+        "45262320"
+      ],
+      "cpvMain": "45215100",
+      "valueEur": null,
+      "deadline": "2026-11-02T11:00:00.000Z",
+      "nuts": [
+        "DE922",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659815-2026",
+      "matchedCpv": [
+        "45421110",
+        "45421146",
+        "45421141"
+      ],
+      "score": 63
+    },
+    "657676-2026": {
+      "id": "657676-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Stahlkonstruktionen – Erneuerung der Verkehrsstation Duisburg Hauptbahnhof",
+      "buyer": "DB Station&Service AG (Bukr 11)",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45223210"
+      ],
+      "cpvMain": "45223210",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DEA12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657676-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 60
+    },
+    "658859-2026": {
+      "id": "658859-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen – TPB.333.12 Metallbau II - Glasschiebetüren",
+      "buyer": "Deutsches Museum von Meisterwerken der Naturwissenschaft und Technik (AdöR)",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45421131"
+      ],
+      "cpvMain": "45421131",
+      "valueEur": 342638.92,
+      "deadline": null,
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658859-2026",
+      "matchedCpv": [
+        "45421131"
+      ],
+      "score": 60
+    },
+    "659221-2026": {
+      "id": "659221-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Wasser- und Abwasserrohrleitungen – ZFB - Neubau eines Zentrums für Feuerwehrwesen und Bevölkerungsschutz",
+      "buyer": "Kreisverwaltung Dithmarschen - Der Landrat -",
+      "buyerCity": "Heide",
+      "country": "DEU",
+      "cpv": [
+        "45231300",
+        "45232460",
+        "45251143",
+        "45332000",
+        "45332200",
+        "45332300",
+        "45332400",
+        "45343200",
+        "51134000",
+        "35111300",
+        "35111320",
+        "39360000",
+        "39370000",
+        "39715300",
+        "42123400",
+        "42123610",
+        "42130000",
+        "42131000",
+        "42131400",
+        "44163111",
+        "44411100",
+        "44411300",
+        "44411700",
+        "44411800"
+      ],
+      "cpvMain": "45231300",
+      "valueEur": 1052416,
+      "deadline": null,
+      "nuts": [
+        "DEF05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659221-2026",
+      "matchedCpv": [
+        "45343200"
+      ],
+      "score": 60
+    },
+    "659542-2026": {
+      "id": "659542-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Installation von Einbaumöbeln – VE 21 Tischler Möbel",
+      "buyer": "Stadt Heide",
+      "buyerCity": "Heide",
+      "country": "DEU",
+      "cpv": [
+        "45421153",
+        "45420000",
+        "45421150",
+        "45422000",
+        "45422100"
+      ],
+      "cpvMain": "45421153",
+      "valueEur": 2493733,
+      "deadline": null,
+      "nuts": [
+        "DEF05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659542-2026",
+      "matchedCpv": [
+        "45421153",
+        "45421150"
+      ],
+      "score": 60
+    },
+    "660310-2026": {
+      "id": "660310-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Stahlkonstruktionen – Realschule Simbach BA 3, Schlosserarbeiten",
+      "buyer": "Landkreis Rottal-Inn",
+      "buyerCity": "Pfarrkirchen",
+      "country": "DEU",
+      "cpv": [
+        "45223210"
+      ],
+      "cpvMain": "45223210",
+      "valueEur": 27387,
+      "deadline": null,
+      "nuts": [
+        "DE22A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/660310-2026",
+      "matchedCpv": [
+        "45223210"
+      ],
+      "score": 60
+    },
+    "659482-2026": {
+      "id": "659482-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Trennwänden – Mobile Trennwand OG2 NB",
+      "buyer": "Staatliches Bauamt Augsburg",
+      "buyerCity": "Augsburg",
+      "country": "DEU",
+      "cpv": [
+        "45421141"
+      ],
+      "cpvMain": "45421141",
+      "valueEur": null,
+      "deadline": "2026-09-30T08:15:00.000Z",
+      "nuts": [
+        "DE271",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659482-2026",
+      "matchedCpv": [
+        "45421141"
+      ],
+      "score": 48
+    },
+    "659732-2026": {
+      "id": "659732-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauleistungen im Hochbau – DESY Hamburg Neubau ITGZ I - Tischlerarbeiten Feste Einbauten",
+      "buyer": "Deutsches Elektronen-Synchrotron DESY",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45210000",
+        "45421000",
+        "45430000",
+        "45421151",
+        "45421153"
+      ],
+      "cpvMain": "45210000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659732-2026",
+      "matchedCpv": [
+        "45421000",
+        "45421151",
+        "45421153"
+      ],
+      "score": 48
+    },
+    "658336-2026": {
+      "id": "658336-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schulgebäude – Gesamtsanierung und Erweiterung Zentrum für Bildung, Kultur und Soziales Pirna-Sonnenstein; Los 406: Nutzungsspezifische Einrichtungen Küche Mensa",
+      "buyer": "Stadtverwaltung Pirna",
+      "buyerCity": "Pirna",
+      "country": "DEU",
+      "cpv": [
+        "45214200",
+        "45421151"
+      ],
+      "cpvMain": "45214200",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DED2F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658336-2026",
+      "matchedCpv": [
+        "45421151"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-09-23T09:26:15.425Z"
+  "lastRun": "2026-09-24T09:26:38.384Z"
 }

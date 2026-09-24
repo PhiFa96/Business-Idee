@@ -2201,7 +2201,14 @@
     "654879-2026": "2026-09-23T09:26:15.425Z",
     "655689-2026": "2026-09-23T09:26:15.425Z",
     "655994-2026": "2026-09-23T09:26:15.425Z",
-    "656478-2026": "2026-09-23T09:26:15.425Z"
+    "656478-2026": "2026-09-23T09:26:15.425Z",
+    "657137-2026": "2026-09-24T09:26:38.384Z",
+    "657610-2026": "2026-09-24T09:26:38.384Z",
+    "658042-2026": "2026-09-24T09:26:38.384Z",
+    "659189-2026": "2026-09-24T09:26:38.384Z",
+    "659312-2026": "2026-09-24T09:26:38.384Z",
+    "658717-2026": "2026-09-24T09:26:38.384Z",
+    "659714-2026": "2026-09-24T09:26:38.384Z"
   },
   "notices": {
     "519810-2026": {
@@ -56946,7 +56953,7 @@
         "45112700",
         "77314100"
       ],
-      "score": 68
+      "score": 63
     },
     "589105-2026": {
       "id": "589105-2026",
@@ -57283,7 +57290,7 @@
         "45112700",
         "77314100"
       ],
-      "score": 68
+      "score": 63
     },
     "594228-2026": {
       "id": "594228-2026",
@@ -60755,7 +60762,181 @@
         "77340000"
       ],
       "score": 60
+    },
+    "657137-2026": {
+      "id": "657137-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst Schulen Stadt Hoyerswerda - Los 1 - Léon-Foucault-Gymnasium",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-10-26T06:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657137-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "657610-2026": {
+      "id": "657610-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst Schulen Stadt Hoyerswerda - Los 3 - Oberschule Hoyerswerda",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-10-27T06:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/657610-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "658042-2026": {
+      "id": "658042-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen der Stadt Hoyerswerda - Los 2 - Lessing-Gymnasium",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-10-26T08:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658042-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "659189-2026": {
+      "id": "659189-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten",
+      "buyer": "Technische Universität Darmstadt",
+      "buyerCity": "Darmstadt",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-19T06:00:00.000Z",
+      "nuts": [
+        "DE711",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659189-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "659312-2026": {
+      "id": "659312-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Restarbeiten Freianlagen südliche Landschaft",
+      "buyer": "Stadtentwicklungsgesellschaft Recklinghausen mbH",
+      "buyerCity": "Recklinghausen",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DEA36",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659312-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "658717-2026": {
+      "id": "658717-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Pflege Außenanlage München",
+      "buyer": "Berufsgenossenschaft Holz und Metall",
+      "buyerCity": "Mainz",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77312000",
+        "77313000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 62000,
+      "deadline": "2026-11-10T09:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/658717-2026",
+      "matchedCpv": [
+        "77314000",
+        "77312000",
+        "77313000"
+      ],
+      "score": 75
+    },
+    "659714-2026": {
+      "id": "659714-2026",
+      "publishedAt": "2026-09-23T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grün- und Vegetationspflege berlinovo Portfolio",
+      "buyer": "Berlinovo Immobilien Gesellschaft mbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 13492731.3,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/659714-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 70
     }
   },
-  "lastRun": "2026-09-23T09:26:15.425Z"
+  "lastRun": "2026-09-24T09:26:38.384Z"
 }

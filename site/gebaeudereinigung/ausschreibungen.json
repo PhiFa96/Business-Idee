@@ -1,5 +1,246 @@
 [
   {
+    "id": "652783-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Fensterreinigung – Glas- und Fensterreinigung",
+    "buyer": "Deutsche Rentenversicherung Baden-Württemberg Abt. 22 - Finanzen und Vermögen, Referat 2 Beschaffung",
+    "buyerCity": "Karlsruhe",
+    "country": "DEU",
+    "cpv": [
+      "90911300"
+    ],
+    "cpvMain": "90911300",
+    "valueEur": 680000,
+    "deadline": "2026-10-26T09:00:00.000Z",
+    "nuts": [
+      "DE122",
+      "DEU",
+      "DE111"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/652783-2026",
+    "matchedCpv": [
+      "90911300"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "650895-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäudereinigungsleistungen in Liegenschaften der Gemeinde Ostseebad Insel Poel",
+    "buyer": "Gemeinde Ostseebad Insel Poel",
+    "buyerCity": "Insel Poel OT Kirchdorf",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-10-20T08:00:00.000Z",
+    "nuts": [
+      "DE80M",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/650895-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651281-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Ausschreibung der Unterhalts-, Glas- und Rahmenreinigungfür die Berliner Liegenschaften des Deutschen Archäologischen Instituts",
+    "buyer": "Deutsches Archäologisches Institut",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300",
+      "90911100"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-10-26T14:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651281-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300",
+      "90911100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "653363-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Ausschreibung Reinigung: Agrippabad",
+    "buyer": "KölnBäder GmbH",
+    "buyerCity": "Köln",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90911000",
+      "90911200"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-10-20T08:00:00.000Z",
+    "nuts": [
+      "DEA23",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/653363-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911000",
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "653434-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Landesbetrieb Forst Brandenburg, Landesamt für Ländliche Entwicklung, Landwirtschaft und Flurneuordnung, Landesamt für Umwelt, Seeburger Chaussee 2, 14476 Potsdam, Unterhaltsreinigung",
+    "buyer": "Brandenburgischer Landesbetrieb für Liegenschaften und Bauen (BLB) - Zentrale Vergabestelle",
+    "buyerCity": "Zossen",
+    "country": "DEU",
+    "cpv": [
+      "90910000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-10-22T08:00:00.000Z",
+    "nuts": [
+      "DE404",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/653434-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "650531-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Objektreinigungen im Stadtteil Vogelstang",
+    "buyer": "Stadt Mannheim - Fachbereich Bau- und Immobilienmanagement",
+    "buyerCity": "Mannheim",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE126",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/650531-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651348-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Glas- und Rahmenreinigung, Fassadenreinigung, Reinigung der Außenjalousien",
+    "buyer": "Klinikum der Landeshauptstadt Stuttgart gKAöR",
+    "buyerCity": "Stuttgart",
+    "country": "DEU",
+    "cpv": [
+      "90911000"
+    ],
+    "cpvMain": "90911000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE111",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651348-2026",
+    "matchedCpv": [
+      "90911000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651848-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Unterhalts- und Glasreinigung Feuerwehrhauptstützpunkt",
+    "buyer": "Magistrat der Stadt Wetzlar",
+    "buyerCity": "Wetzlar",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90911200",
+      "90911300",
+      "90919000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE722",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651848-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911200",
+      "90911300",
+      "90919000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "653632-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – UHR / GRR AELF Kaufbeuren",
+    "buyer": "Freistaat Bayern, vertreten durch das Amt für Ernährung, Landwirtschaft und Forsten Kaufbeuren",
+    "buyerCity": "Kaufbeuren",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300",
+      "90919100",
+      "90919200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 1,
+    "deadline": null,
+    "nuts": [
+      "DE272",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/653632-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300",
+      "90919100",
+      "90919200"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
     "id": "646584-2026",
     "publishedAt": "2026-09-20T22:00:00.000Z",
     "title": "Deutschland – Gebäudereinigung – Fraunhofer FHR - PR1217791 - Unterhaltsreinigung und Glasreinigung",
@@ -4167,7 +4408,7 @@
       "90911300",
       "90919300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-09T09:05:14.120Z"
   },
   {
@@ -4849,7 +5090,7 @@
       "90911300",
       "90919300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-08T08:58:57.218Z"
   },
   {
@@ -5263,7 +5504,7 @@
       "90911200",
       "90911300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
@@ -6436,7 +6677,7 @@
       "90911000",
       "90919000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-02T08:56:50.524Z"
   },
   {
@@ -6671,7 +6912,7 @@
       "90911300",
       "90919300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-02T08:56:50.524Z"
   },
   {
@@ -9080,7 +9321,7 @@
       "90911000",
       "90919000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-26T05:05:24.140Z"
   },
   {
@@ -9104,7 +9345,7 @@
     "matchedCpv": [
       "90911200"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-26T05:05:24.140Z"
   },
   {
@@ -9182,7 +9423,7 @@
     "matchedCpv": [
       "90911200"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-26T05:05:24.140Z"
   },
   {

@@ -1,5 +1,307 @@
 [
   {
+    "id": "651155-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Metallbauarbeiten – Metallbau_Fenster_Außentüren",
+    "buyer": "Sprinkenhof GmbH",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "45262670",
+      "45421100"
+    ],
+    "cpvMain": "45262670",
+    "valueEur": 547682,
+    "deadline": null,
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651155-2026",
+    "matchedCpv": [
+      "45421100"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651818-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Metallbauarbeiten – Metallbau- und Verglasungsarbeiten / Neubau Kombibad Maintal",
+    "buyer": "Magistrat der Stadt Maintal",
+    "buyerCity": "Maintal",
+    "country": "DEU",
+    "cpv": [
+      "45262670",
+      "45441000",
+      "45443000",
+      "45421100"
+    ],
+    "cpvMain": "45262670",
+    "valueEur": 832881.31,
+    "deadline": null,
+    "nuts": [
+      "DE719",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651818-2026",
+    "matchedCpv": [
+      "45421100"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651269-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Türen – Aussentueren",
+    "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+    "buyerCity": "Erlangen",
+    "country": "DEU",
+    "cpv": [
+      "45421131",
+      "45262670"
+    ],
+    "cpvMain": "45421131",
+    "valueEur": 349382.35,
+    "deadline": "2026-10-27T08:00:00.000Z",
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651269-2026",
+    "matchedCpv": [
+      "45421131"
+    ],
+    "score": 75,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "652244-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – Bundesrat - Anbau mit Besucherzentrum - Tischlerarbeiten - Vergabe 870/2026",
+    "buyer": "Bundesamt für Bauwesen und Raumordnung, in Vertretung der Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45422000",
+      "45421131",
+      "45421160"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-09-29T10:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/652244-2026",
+    "matchedCpv": [
+      "45421160",
+      "45421131"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "650976-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Bau von Feuerwachen – Industrietore",
+    "buyer": "Stadt Freising",
+    "buyerCity": "Freising",
+    "country": "DEU",
+    "cpv": [
+      "45216121",
+      "45421148"
+    ],
+    "cpvMain": "45216121",
+    "valueEur": null,
+    "deadline": "2026-10-08T09:00:00.000Z",
+    "nuts": [
+      "DE21B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/650976-2026",
+    "matchedCpv": [
+      "45421148"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "652042-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Fenstern – 459 MWGS - Neubau Maria-Ward-Grundschule Tüßling/Heiligenstatt - 3267-01 Fenster_Außentüren",
+    "buyer": "Maria-Ward-Grundschule Heiligenstatt e. V.",
+    "buyerCity": "Tüßling",
+    "country": "DEU",
+    "cpv": [
+      "45421132",
+      "45421131"
+    ],
+    "cpvMain": "45421132",
+    "valueEur": null,
+    "deadline": "2026-10-21T08:00:00.000Z",
+    "nuts": [
+      "DE214",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/652042-2026",
+    "matchedCpv": [
+      "45421132",
+      "45421131"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "653474-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Türen – Grundschule Leipziger Str. 210, Modernisierung + Erweiterungsbau, Los 3.15 Innentüren Holz",
+    "buyer": "Stadt Leipzig",
+    "buyerCity": "Leipzig",
+    "country": "DEU",
+    "cpv": [
+      "45421131"
+    ],
+    "cpvMain": "45421131",
+    "valueEur": null,
+    "deadline": "2026-10-27T12:00:00.000Z",
+    "nuts": [
+      "DED51",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/653474-2026",
+    "matchedCpv": [
+      "45421131"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "650863-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von abgehängten Decken – A.0435.120514 - UB JLU GI | OV (EU) Akustik-Unterdecke Metall",
+    "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+    "buyerCity": "Bad Nauheim",
+    "country": "DEU",
+    "cpv": [
+      "45421146"
+    ],
+    "cpvMain": "45421146",
+    "valueEur": 845813.56,
+    "deadline": null,
+    "nuts": [
+      "DE721",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/650863-2026",
+    "matchedCpv": [
+      "45421146"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651375-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Beschlagarbeiten – Elektronische Schließzylinder (21940059 / AG KI / Umbau, eAkte u. Datennetz_MF)",
+    "buyer": "Land Schleswig-Holstein endvertreten durch Gebäudemanagement Schleswig-Holstein AöR",
+    "buyerCity": "Lübeck",
+    "country": "DEU",
+    "cpv": [
+      "45421160"
+    ],
+    "cpvMain": "45421160",
+    "valueEur": 47306.86,
+    "deadline": null,
+    "nuts": [
+      "DEF02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651375-2026",
+    "matchedCpv": [
+      "45421160"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "651650-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Fenstern – Fensterarbeiten",
+    "buyer": "STADT UND LAND Wohnbauten-Gesellschaft mbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45421132"
+    ],
+    "cpvMain": "45421132",
+    "valueEur": 2683364.4,
+    "deadline": null,
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/651650-2026",
+    "matchedCpv": [
+      "45421132"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "650800-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Türen – Generalsanierung Gartenschule Ettlingen, Metallbau- und Verglasungsarbeiten innen",
+    "buyer": "Landratsamt Karlsruhe, Amt für Gebäudemanagement, Bauverwaltung",
+    "buyerCity": "Karlsruhe",
+    "country": "DEU",
+    "cpv": [
+      "45421131",
+      "45262670",
+      "45441000"
+    ],
+    "cpvMain": "45421131",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE123",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/650800-2026",
+    "matchedCpv": [
+      "45421131"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "652525-2026",
+    "publishedAt": "2026-09-21T22:00:00.000Z",
+    "title": "Deutschland – Einbau von Türen und Fenstern – Revitalisierung und Sanierung Jeckel-Areal Fenster und Außentüren",
+    "buyer": "Stadt Rottenburg am Neckar",
+    "buyerCity": "Rottenburg am Neckar",
+    "country": "DEU",
+    "cpv": [
+      "45421130"
+    ],
+    "cpvMain": "45421130",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/652525-2026",
+    "matchedCpv": [
+      "45421130"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
     "id": "646822-2026",
     "publishedAt": "2026-09-20T22:00:00.000Z",
     "title": "Deutschland – Bauleistungen im Hochbau – Schlosserarbeiten",
@@ -449,7 +751,7 @@
       "44221100",
       "44221200"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-21T10:08:23.896Z"
   },
   {
@@ -7706,7 +8008,7 @@
     "matchedCpv": [
       "45223210"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
@@ -13197,7 +13499,7 @@
     "matchedCpv": [
       "45421100"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-26T05:05:24.140Z"
   },
   {
