@@ -5437,7 +5437,19 @@
     "658514-2026": "2026-09-24T09:26:38.384Z",
     "659262-2026": "2026-09-24T09:26:38.384Z",
     "659391-2026": "2026-09-24T09:26:38.384Z",
-    "658928-2026": "2026-09-24T09:26:38.384Z"
+    "658928-2026": "2026-09-24T09:26:38.384Z",
+    "661144-2026": "2026-09-25T09:44:16.134Z",
+    "662699-2026": "2026-09-25T09:44:16.134Z",
+    "662911-2026": "2026-09-25T09:44:16.134Z",
+    "663422-2026": "2026-09-25T09:44:16.134Z",
+    "663770-2026": "2026-09-25T09:44:16.134Z",
+    "660381-2026": "2026-09-25T09:44:16.134Z",
+    "661584-2026": "2026-09-25T09:44:16.134Z",
+    "661861-2026": "2026-09-25T09:44:16.134Z",
+    "663028-2026": "2026-09-25T09:44:16.134Z",
+    "661195-2026": "2026-09-25T09:44:16.134Z",
+    "661664-2026": "2026-09-25T09:44:16.134Z",
+    "662546-2026": "2026-09-25T09:44:16.134Z"
   },
   "notices": {
     "447978-2026": {
@@ -134050,7 +134062,7 @@
         "90911200",
         "90911300"
       ],
-      "score": 68
+      "score": 63
     },
     "604479-2026": {
       "id": "604479-2026",
@@ -134123,7 +134135,7 @@
         "90911200",
         "90919300"
       ],
-      "score": 83
+      "score": 68
     },
     "604957-2026": {
       "id": "604957-2026",
@@ -134658,7 +134670,7 @@
         "90911200",
         "90910000"
       ],
-      "score": 83
+      "score": 68
     },
     "608824-2026": {
       "id": "608824-2026",
@@ -134968,7 +134980,7 @@
         "90911300",
         "90919300"
       ],
-      "score": 83
+      "score": 68
     },
     "610118-2026": {
       "id": "610118-2026",
@@ -135070,7 +135082,7 @@
         "90911200",
         "90919200"
       ],
-      "score": 83
+      "score": 68
     },
     "611192-2026": {
       "id": "611192-2026",
@@ -135246,7 +135258,7 @@
       "matchedCpv": [
         "90911200"
       ],
-      "score": 83
+      "score": 68
     },
     "613740-2026": {
       "id": "613740-2026",
@@ -137853,7 +137865,7 @@
         "90911200",
         "90911000"
       ],
-      "score": 68
+      "score": 63
     },
     "632477-2026": {
       "id": "632477-2026",
@@ -138298,7 +138310,7 @@
         "90911200",
         "90911300"
       ],
-      "score": 68
+      "score": 63
     },
     "635592-2026": {
       "id": "635592-2026",
@@ -141786,7 +141798,313 @@
         "90919300"
       ],
       "score": 60
+    },
+    "661144-2026": {
+      "id": "661144-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Umweltbundesamt - Dahlemer Dreieck Haus 1 - Bau- und Feinreinigung - Vergabe 2505/2026",
+      "buyer": "Bundesamt für Bauwesen und Raumordnung, in Vertretung für die Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911000",
+        "90912000"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-10-27T08:30:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661144-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911000",
+        "90912000"
+      ],
+      "score": 83
+    },
+    "662699-2026": {
+      "id": "662699-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – TEK-Reinigung im Stadtbezirk Innenstadt-Nord und Kinderspielplatzreinigung",
+      "buyer": "Vergabe und Beschaffungszentrum Dortmund",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "77313000",
+        "90910000",
+        "77310000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": "2026-10-26T19:00:00.000Z",
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/662699-2026",
+      "matchedCpv": [
+        "90910000"
+      ],
+      "score": 83
+    },
+    "662911-2026": {
+      "id": "662911-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhalts- und Glasreinigung für die Liegenschaft in Winterberg",
+      "buyer": "Deutsche Rentenversicherung Knappschaft-Bahn-See",
+      "buyerCity": "Bochum",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90911300"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-10-27T10:00:00.000Z",
+      "nuts": [
+        "DEA57",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/662911-2026",
+      "matchedCpv": [
+        "90911200",
+        "90911300"
+      ],
+      "score": 83
+    },
+    "663422-2026": {
+      "id": "663422-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung ELW",
+      "buyer": "Landeshauptstadt Stuttgart, Haupt- und Personalamt, Abt. Allgemeiner Service, Zentraler Einkauf",
+      "buyerCity": "Stuttgart",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-10-28T11:00:00.000Z",
+      "nuts": [
+        "DE111",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663422-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 83
+    },
+    "663770-2026": {
+      "id": "663770-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Reinigungsdienstleistung Maria Stern Schule",
+      "buyer": "Marienverein Würzburg e.V.",
+      "buyerCity": "Würzburg",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DE263",
+        "DEU",
+        "DE26C"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663770-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 83
+    },
+    "660381-2026": {
+      "id": "660381-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Reinigungsdienste – Unterhaltsreinigung - TGO Technologie- und Gründerzentrum Oldenburg GmbH",
+      "buyer": "TGO Technologie- und Gründerzentrum Oldenburg GmbH",
+      "buyerCity": "Oldenburg",
+      "country": "DEU",
+      "cpv": [
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": 482000,
+      "deadline": null,
+      "nuts": [
+        "DE943",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/660381-2026",
+      "matchedCpv": [
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "score": 80
+    },
+    "661584-2026": {
+      "id": "661584-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Reinigungsdienste – Gebäudereinigung - Gemeinde Wenden",
+      "buyer": "Gemeinde Wenden",
+      "buyerCity": "Wenden",
+      "country": "DEU",
+      "cpv": [
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "cpvMain": "90910000",
+      "valueEur": 1520000,
+      "deadline": null,
+      "nuts": [
+        "DEA59",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661584-2026",
+      "matchedCpv": [
+        "90910000",
+        "90911000",
+        "90911200"
+      ],
+      "score": 80
+    },
+    "661861-2026": {
+      "id": "661861-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Fensterreinigung – Gebäudereinigung - Montabaur",
+      "buyer": "Verbandsgemeinde Montabaur",
+      "buyerCity": "Montabaur",
+      "country": "DEU",
+      "cpv": [
+        "90911300",
+        "90911000",
+        "90911200"
+      ],
+      "cpvMain": "90911300",
+      "valueEur": 3360000,
+      "deadline": null,
+      "nuts": [
+        "DEB1B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661861-2026",
+      "matchedCpv": [
+        "90911300",
+        "90911000",
+        "90911200"
+      ],
+      "score": 80
+    },
+    "663028-2026": {
+      "id": "663028-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Fensterreinigung – Gebäudereinigung - Jobcenter Kreis Viersen",
+      "buyer": "Jobcenter Kreis Viersen",
+      "buyerCity": "Viersen",
+      "country": "DEU",
+      "cpv": [
+        "90911300",
+        "90911000",
+        "90911200"
+      ],
+      "cpvMain": "90911300",
+      "valueEur": 716500,
+      "deadline": null,
+      "nuts": [
+        "DEA1E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663028-2026",
+      "matchedCpv": [
+        "90911300",
+        "90911000",
+        "90911200"
+      ],
+      "score": 80
+    },
+    "661195-2026": {
+      "id": "661195-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Reinigungsleistungen für Verwaltungs-, Kultur- und Feuerwehrgebäude der Stadt Bautzen",
+      "buyer": "Stadt Bautzen",
+      "buyerCity": "Bautzen",
+      "country": "DEU",
+      "cpv": [
+        "90911200",
+        "90910000",
+        "90911300",
+        "90919200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": "2026-10-01T07:30:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661195-2026",
+      "matchedCpv": [
+        "90911200",
+        "90910000",
+        "90911300",
+        "90919200"
+      ],
+      "score": 68
+    },
+    "661664-2026": {
+      "id": "661664-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – UHR Viktoria-Luise-Schule",
+      "buyer": "Stadt Frankfurt am Main, Amt für Bau und Immobilien",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661664-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 68
+    },
+    "662546-2026": {
+      "id": "662546-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung sowie Glasreinigung in verschiedenen Objekten der REVG",
+      "buyer": "REVG Rhein-Erft-Verkehrsgesellschaft",
+      "buyerCity": "Kerpen",
+      "country": "DEU",
+      "cpv": [
+        "90911200"
+      ],
+      "cpvMain": "90911200",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/662546-2026",
+      "matchedCpv": [
+        "90911200"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-09-24T09:26:38.384Z"
+  "lastRun": "2026-09-25T09:44:16.134Z"
 }

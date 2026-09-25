@@ -2208,7 +2208,14 @@
     "659189-2026": "2026-09-24T09:26:38.384Z",
     "659312-2026": "2026-09-24T09:26:38.384Z",
     "658717-2026": "2026-09-24T09:26:38.384Z",
-    "659714-2026": "2026-09-24T09:26:38.384Z"
+    "659714-2026": "2026-09-24T09:26:38.384Z",
+    "660865-2026": "2026-09-25T09:44:16.134Z",
+    "662642-2026": "2026-09-25T09:44:16.134Z",
+    "662699-2026": "2026-09-25T09:44:16.134Z",
+    "663177-2026": "2026-09-25T09:44:16.134Z",
+    "663627-2026": "2026-09-25T09:44:16.134Z",
+    "661526-2026": "2026-09-25T09:44:16.134Z",
+    "663546-2026": "2026-09-25T09:44:16.134Z"
   },
   "notices": {
     "519810-2026": {
@@ -57113,7 +57120,7 @@
         "77310000",
         "45112711"
       ],
-      "score": 68
+      "score": 63
     },
     "591005-2026": {
       "id": "591005-2026",
@@ -57147,7 +57154,7 @@
         "77311000",
         "77313000"
       ],
-      "score": 68
+      "score": 63
     },
     "591675-2026": {
       "id": "591675-2026",
@@ -57236,7 +57243,7 @@
         "77310000",
         "77340000"
       ],
-      "score": 68
+      "score": 63
     },
     "592833-2026": {
       "id": "592833-2026",
@@ -58039,7 +58046,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 95
+      "score": 80
     },
     "604814-2026": {
       "id": "604814-2026",
@@ -58066,7 +58073,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "606033-2026": {
       "id": "606033-2026",
@@ -58447,7 +58454,7 @@
         "45112700",
         "45112723"
       ],
-      "score": 95
+      "score": 80
     },
     "613421-2026": {
       "id": "613421-2026",
@@ -60936,7 +60943,179 @@
         "77310000"
       ],
       "score": 70
+    },
+    "660865-2026": {
+      "id": "660865-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Neubau Kita Kuhweid und MGH Weinheim, Landschaftsbauarbeiten",
+      "buyer": "Stadt Weinheim",
+      "buyerCity": "Weinheim",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE128",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/660865-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "662642-2026": {
+      "id": "662642-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Pflanzenpflege von Hydrokulturen und Erdkulturen in Hamburg",
+      "buyer": "Techniker Krankenkasse",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77310000",
+        "77330000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-05T11:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/662642-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77330000"
+      ],
+      "score": 83
+    },
+    "662699-2026": {
+      "id": "662699-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – TEK-Reinigung im Stadtbezirk Innenstadt-Nord und Kinderspielplatzreinigung",
+      "buyer": "Vergabe und Beschaffungszentrum Dortmund",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "77313000",
+        "90910000",
+        "77310000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": "2026-10-26T19:00:00.000Z",
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/662699-2026",
+      "matchedCpv": [
+        "77313000",
+        "77310000"
+      ],
+      "score": 83
+    },
+    "663177-2026": {
+      "id": "663177-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – MV IV-20-4 Kontroll-, Wartungs- und Ertüchtigungsmaßnahmen der Zaunanlagen und Grünpflege 2027-2030",
+      "buyer": "Land Sachsen-Anhalt, vertreten durch Landesamt für Geologie und Bergwesen (LAGB) Sachsen-Anhalt, dieses in Amtshilfe vertreten durch Landesanstalt für Altlastenfreistellung (LAF) des Landes Sachsen-Anhalt",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "77000000",
+        "77314000"
+      ],
+      "cpvMain": "77000000",
+      "valueEur": null,
+      "deadline": "2026-11-03T11:00:00.000Z",
+      "nuts": [
+        "DEE06",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663177-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "663627-2026": {
+      "id": "663627-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Grau- und Grünflächenpflege sowie Baumpflege Rhein-Main-Gebiet",
+      "buyer": "Deutsche Bundesbank, Zentralbereich Beschaffungen",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77314000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 742138.29,
+      "deadline": null,
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663627-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 80
+    },
+    "661526-2026": {
+      "id": "661526-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Baumschnitt – Rahmenvertrag Baumpflege LK Bautzen und Sächs. Schweiz",
+      "buyer": "Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement",
+      "buyerCity": "Dresden",
+      "country": "DEU",
+      "cpv": [
+        "77341000"
+      ],
+      "cpvMain": "77341000",
+      "valueEur": null,
+      "deadline": "2026-10-28T08:00:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/661526-2026",
+      "matchedCpv": [
+        "77341000"
+      ],
+      "score": 63
+    },
+    "663546-2026": {
+      "id": "663546-2026",
+      "publishedAt": "2026-09-24T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – Neubau GESAMTKLINIKUM Heidekreis in Bad Fallingbostel",
+      "buyer": "Heidekreis-Klinikum gGmbH",
+      "buyerCity": "Walsrode",
+      "country": "DEU",
+      "cpv": [
+        "45215100",
+        "45261410",
+        "45261300",
+        "45261320",
+        "45112713"
+      ],
+      "cpvMain": "45215100",
+      "valueEur": 2699721.07,
+      "deadline": null,
+      "nuts": [
+        "DE938",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663546-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-09-24T09:26:38.384Z"
+  "lastRun": "2026-09-25T09:44:16.134Z"
 }

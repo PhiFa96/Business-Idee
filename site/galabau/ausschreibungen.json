@@ -1,5 +1,318 @@
 [
   {
+    "id": "653792-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Rohbauarbeiten – Gebäude 38.2, Neubau Orthopädie-OP,Erd-, Verbau-, Infrastruktur- und Rohbau-, Dachabdichtungsarbeiten",
+    "buyer": "Universitätsklinikum des Saarlandes",
+    "buyerCity": "Homburg",
+    "country": "DEU",
+    "cpv": [
+      "45223220",
+      "45112500",
+      "45210000",
+      "45262510",
+      "45112710"
+    ],
+    "cpvMain": "45223220",
+    "valueEur": null,
+    "deadline": "2026-10-07T10:00:00.000Z",
+    "nuts": [
+      "DEC05",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/653792-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "654538-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Tiefbauarbeiten, außer Tunneln, Schächten und Unterführungen – Neugestaltung Stadtkern der Großen Kreisstadt Leutkirch im Allgäu - Innenstadtsanierung BA 1",
+    "buyer": "Große Kreisstadt Leutkirch im Allgäu",
+    "buyerCity": "Leutkirch im Allgäu",
+    "country": "DEU",
+    "cpv": [
+      "45221250",
+      "45112710",
+      "45233252",
+      "45112000",
+      "45232410"
+    ],
+    "cpvMain": "45221250",
+    "valueEur": null,
+    "deadline": "2026-11-09T13:00:00.000Z",
+    "nuts": [
+      "DE148",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/654538-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "654813-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – ÖPP-Projekt „Postblockareal Nord (PBN), Berlin-Mitte | Neubau für ministerielle Nutzung\" - VOEK 637-25",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "45200000",
+      "71320000",
+      "70332300",
+      "50712000",
+      "90911200",
+      "90911300",
+      "77310000",
+      "90610000",
+      "90620000"
+    ],
+    "cpvMain": "45200000",
+    "valueEur": null,
+    "deadline": "2026-10-16T07:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/654813-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "655692-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Gartenpflege_RIM_München",
+    "buyer": "Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-10-26T11:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU",
+      "DE271",
+      "DE27D",
+      "DE211",
+      "DE273",
+      "DE27E",
+      "DE27A",
+      "DE274",
+      "DE272",
+      "DE21F",
+      "DE21N",
+      "DE21B",
+      "DE232",
+      "DE254",
+      "DE213"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/655692-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "655748-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Außenanlagen",
+    "buyer": "LRA Erlangen-Höchstadt",
+    "buyerCity": "Erlangen",
+    "country": "DEU",
+    "cpv": [
+      "45112710"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-11-03T09:30:00.000Z",
+    "nuts": [
+      "DE257",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/655748-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "655919-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege Außenanlage und Grünflächenpflege Standort Halle der Deutschen Rentenversicherung Mitteldeutschland",
+    "buyer": "Deutsche Rentenversicherung Mitteldeutschland Zentrale Beschaffungsstelle",
+    "buyerCity": "Erfurt",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-10-29T09:00:00.000Z",
+    "nuts": [
+      "DEE02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/655919-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "654011-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – LK Aurich - Außenanlagen - Conerus-Schule (BBS) Norden",
+    "buyer": "Landkreis Aurich - Technisches Gebäudemanagement",
+    "buyerCity": "Aurich (Ostfriesland)",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45112700",
+      "45112710"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": 2263641.11,
+    "deadline": null,
+    "nuts": [
+      "DE947",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/654011-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "654879-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Externe Baumkontrolle B-Straßen SM Biesenthal 2026",
+    "buyer": "Landesbetrieb Straßenwesen Brandenburg Dienststätte Eberswalde",
+    "buyerCity": "Hoppegarten",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE405",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/654879-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "655689-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Generalsanierung Höhenfreibad Wartberg - Dacharbeiten",
+    "buyer": "Stadt Pforzheim - Zentrale Vergabestelle",
+    "buyerCity": "Pforzheim",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45321000",
+      "45261300",
+      "45112713"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": "2026-10-28T09:00:00.000Z",
+    "nuts": [
+      "DE129",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/655689-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "655994-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Schulen oder Forschungsanstalten – Pommernstr. 10 - Neubau Schulzentrum Südwest / 2.BA - B3.2101 Dachabdichtung Pergola",
+    "buyer": "Stadt Nürnberg Hochbauamt",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45214000",
+      "45112713",
+      "45210000",
+      "45214220",
+      "45261410"
+    ],
+    "cpvMain": "45214000",
+    "valueEur": null,
+    "deadline": "2026-10-26T08:00:00.000Z",
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/655994-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
+    "id": "656478-2026",
+    "publishedAt": "2026-09-22T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvereinbarung zur Außen- und Vegetationspflege an diversen Standorten",
+    "buyer": "AOK NordWest - Die Gesundheitskasse.",
+    "buyerCity": "Hagen",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77300000",
+      "77340000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": -1,
+    "deadline": null,
+    "nuts": [
+      "DEA41",
+      "DEU",
+      "DEA45",
+      "DEA43",
+      "DEA44",
+      "DEA46",
+      "DEA47"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/656478-2026",
+    "matchedCpv": [
+      "77310000",
+      "77300000",
+      "77340000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-09-23T09:26:15.425Z"
+  },
+  {
     "id": "651737-2026",
     "publishedAt": "2026-09-21T22:00:00.000Z",
     "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – 6003102088-Grünflächenpflege u. Straßenreinigung für Liegenschaften an den Standorten Nonnweiler, Lebach, Saarlouis, Merzig und Eft-Hellendorf",
@@ -1890,7 +2203,7 @@
       "45112700",
       "45112723"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
@@ -2361,7 +2674,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-09-02T08:56:50.524Z"
   },
   {
@@ -2389,7 +2702,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-02T08:56:50.524Z"
   },
   {
@@ -3348,7 +3661,7 @@
       "77310000",
       "45112711"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-27T15:24:03.764Z"
   },
   {
@@ -3383,7 +3696,7 @@
       "77311000",
       "77313000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-27T15:24:03.764Z"
   },
   {
@@ -3475,7 +3788,7 @@
       "77310000",
       "77340000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-08-27T15:24:03.764Z"
   },
   {
