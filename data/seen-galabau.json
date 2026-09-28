@@ -2215,7 +2215,16 @@
     "663177-2026": "2026-09-25T09:44:16.134Z",
     "663627-2026": "2026-09-25T09:44:16.134Z",
     "661526-2026": "2026-09-25T09:44:16.134Z",
-    "663546-2026": "2026-09-25T09:44:16.134Z"
+    "663546-2026": "2026-09-25T09:44:16.134Z",
+    "665690-2026": "2026-09-28T11:08:44.751Z",
+    "663950-2026": "2026-09-28T11:08:44.751Z",
+    "665367-2026": "2026-09-28T11:08:44.751Z",
+    "665592-2026": "2026-09-28T11:08:44.751Z",
+    "666273-2026": "2026-09-28T11:08:44.751Z",
+    "666451-2026": "2026-09-28T11:08:44.751Z",
+    "666730-2026": "2026-09-28T11:08:44.751Z",
+    "664879-2026": "2026-09-28T11:08:44.751Z",
+    "666937-2026": "2026-09-28T11:08:44.751Z"
   },
   "notices": {
     "519810-2026": {
@@ -57468,7 +57477,7 @@
         "45112710",
         "45112730"
       ],
-      "score": 68
+      "score": 63
     },
     "596854-2026": {
       "id": "596854-2026",
@@ -57593,7 +57602,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 60
+      "score": 55
     },
     "597805-2026": {
       "id": "597805-2026",
@@ -57740,7 +57749,7 @@
         "77211500",
         "77320000"
       ],
-      "score": 83
+      "score": 68
     },
     "602122-2026": {
       "id": "602122-2026",
@@ -58288,7 +58297,7 @@
         "45112700",
         "45112723"
       ],
-      "score": 83
+      "score": 68
     },
     "610710-2026": {
       "id": "610710-2026",
@@ -58317,7 +58326,7 @@
         "77211500",
         "77320000"
       ],
-      "score": 83
+      "score": 68
     },
     "610096-2026": {
       "id": "610096-2026",
@@ -58676,7 +58685,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "618070-2026": {
       "id": "618070-2026",
@@ -58702,7 +58711,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "619286-2026": {
       "id": "619286-2026",
@@ -58935,7 +58944,7 @@
       "matchedCpv": [
         "77320000"
       ],
-      "score": 63
+      "score": 48
     },
     "623114-2026": {
       "id": "623114-2026",
@@ -58964,7 +58973,7 @@
         "77211500",
         "77320000"
       ],
-      "score": 83
+      "score": 68
     },
     "623725-2026": {
       "id": "623725-2026",
@@ -59396,7 +59405,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "634658-2026": {
       "id": "634658-2026",
@@ -59547,7 +59556,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "637356-2026": {
       "id": "637356-2026",
@@ -60065,7 +60074,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "646713-2026": {
       "id": "646713-2026",
@@ -60337,7 +60346,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "654538-2026": {
       "id": "654538-2026",
@@ -61115,7 +61124,221 @@
         "45112713"
       ],
       "score": 60
+    },
+    "665690-2026": {
+      "id": "665690-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Freianlagen",
+      "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+      "buyerCity": "Erlangen",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 1026634.45,
+      "deadline": "2026-10-27T08:06:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/665690-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 95
+    },
+    "663950-2026": {
+      "id": "663950-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege für diverse Förderschulen ab dem 01.01.2027",
+      "buyer": "LVR-Dezernat Gebäude- und Liegenschaftsmanagement, Umwelt, Energie, Bauen für Menschen GmbH",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-13T10:00:00.000Z",
+      "nuts": [],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/663950-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "665367-2026": {
+      "id": "665367-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Restarbeiten Freianlagen südliche Landschaft",
+      "buyer": "Stadtentwicklungsgesellschaft Recklinghausen mbH",
+      "buyerCity": "Recklinghausen",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-26T09:00:00.000Z",
+      "nuts": [
+        "DEA36",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/665367-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "665592-2026": {
+      "id": "665592-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Grauflächenpflege 2027 ff.",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77314000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-10-26T12:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/665592-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "666273-2026": {
+      "id": "666273-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvertrag für Baumpflegerische Maßnahmen an Bäumen für die Landeshauptstadt Potsdam in 7 Losen",
+      "buyer": "Landeshauptstadt Potsdam, Bereich Vergabemanagement",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-02T09:00:00.000Z",
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/666273-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "666451-2026": {
+      "id": "666451-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege Stadt Naumburg (Saale) Stadtgebiet und Ortsteile im Zeitraum 2027-2028",
+      "buyer": "Stadtverwaltung Naumburg (Saale)",
+      "buyerCity": "Naumburg (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77340000",
+        "77312000",
+        "77313000",
+        "77300000",
+        "77311000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-02T22:59:00.000Z",
+      "nuts": [
+        "DEE08",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/666451-2026",
+      "matchedCpv": [
+        "77310000",
+        "77340000",
+        "77312000",
+        "77313000",
+        "77300000",
+        "77311000"
+      ],
+      "score": 83
+    },
+    "666730-2026": {
+      "id": "666730-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Baumpflege SM Celle 2027-2028",
+      "buyer": "Niedersächsische Landesbehörde für Straßenbau und Verkehr - Geschäftsbereich Verden",
+      "buyerCity": "Verden",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-10-27T09:00:00.000Z",
+      "nuts": [
+        "DE93B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/666730-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "664879-2026": {
+      "id": "664879-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege und Unterhaltung von Grünflächen",
+      "buyer": "Stadt Brandenburg an der Havel",
+      "buyerCity": "Brandenburg an der Havel",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE401",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/664879-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 68
+    },
+    "666937-2026": {
+      "id": "666937-2026",
+      "publishedAt": "2026-09-27T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Außenanlagen Südpausenhof (GaLa-Bau)",
+      "buyer": "Zweckverband Schulzentrum",
+      "buyerCity": "Hassfurt",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE267",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/666937-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-09-25T09:44:16.134Z"
+  "lastRun": "2026-09-28T11:08:44.751Z"
 }
