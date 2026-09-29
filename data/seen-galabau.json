@@ -2224,7 +2224,11 @@
     "666451-2026": "2026-09-28T11:08:44.751Z",
     "666730-2026": "2026-09-28T11:08:44.751Z",
     "664879-2026": "2026-09-28T11:08:44.751Z",
-    "666937-2026": "2026-09-28T11:08:44.751Z"
+    "666937-2026": "2026-09-28T11:08:44.751Z",
+    "669383-2026": "2026-09-29T10:50:49.137Z",
+    "669613-2026": "2026-09-29T10:50:49.137Z",
+    "667540-2026": "2026-09-29T10:50:49.137Z",
+    "668670-2026": "2026-09-29T10:50:49.137Z"
   },
   "notices": {
     "519810-2026": {
@@ -58245,7 +58249,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "608170-2026": {
       "id": "608170-2026",
@@ -58837,7 +58841,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "621360-2026": {
       "id": "621360-2026",
@@ -61338,7 +61342,109 @@
         "45112710"
       ],
       "score": 68
+    },
+    "669383-2026": {
+      "id": "669383-2026",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management Dienstleistung in der ZUE Wegberg",
+      "buyer": "Bezirksregierung Köln",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000",
+        "90620000",
+        "90630000",
+        "98341100"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2026-10-29T11:00:00.000Z",
+      "nuts": [
+        "DEA29",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/669383-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "669613-2026": {
+      "id": "669613-2026",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Pflege von Außenanlagen und Grauflächen",
+      "buyer": "GEOMAR Helmholtz-Zentrum für Ozeanforschung Kiel",
+      "buyerCity": "Kiel",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-11T09:00:00.000Z",
+      "nuts": [
+        "DEF02",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/669613-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "667540-2026": {
+      "id": "667540-2026",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Rahmenvereinbarung über die Anmietung von Hubarbeitsbühnen für das Baureferat HA Gartenbau",
+      "buyer": "Landeshauptstadt München, Direktorium, Vergabestelle 1, SG 3",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/667540-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 68
+    },
+    "668670-2026": {
+      "id": "668670-2026",
+      "publishedAt": "2026-09-28T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Sanierung Adolph-Holm Kindergarten - Freianlagen 1. BA",
+      "buyer": "Gemeinde Adendorf",
+      "buyerCity": "Adendorf",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 51295,
+      "deadline": null,
+      "nuts": [
+        "DE935",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/668670-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-09-28T11:08:44.751Z"
+  "lastRun": "2026-09-29T10:50:49.137Z"
 }
