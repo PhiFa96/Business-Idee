@@ -2249,7 +2249,14 @@
     "674578-2026": "2026-10-01T11:06:20.696Z",
     "675527-2026": "2026-10-01T11:06:20.696Z",
     "676829-2026": "2026-10-01T11:06:20.696Z",
-    "677737-2026": "2026-10-01T11:06:20.696Z"
+    "677737-2026": "2026-10-01T11:06:20.696Z",
+    "678810-2026": "2026-10-02T10:39:12.315Z",
+    "679862-2026": "2026-10-02T10:39:12.315Z",
+    "680031-2026": "2026-10-02T10:39:12.315Z",
+    "680122-2026": "2026-10-02T10:39:12.315Z",
+    "680659-2026": "2026-10-02T10:39:12.315Z",
+    "681217-2026": "2026-10-02T10:39:12.315Z",
+    "679342-2026": "2026-10-02T10:39:12.315Z"
   },
   "notices": {
     "519810-2026": {
@@ -61988,7 +61995,187 @@
         "45112713"
       ],
       "score": 60
+    },
+    "678810-2026": {
+      "id": "678810-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Verwaltungsgebäude Landratsamt Rottweil - Freianlagen",
+      "buyer": "Landratsamt Rottweil",
+      "buyerCity": "Rottweil",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112720"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-11-05T11:00:00.000Z",
+      "nuts": [
+        "DE135",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/678810-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112720"
+      ],
+      "score": 83
+    },
+    "679862-2026": {
+      "id": "679862-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management ZUE Gladbeck Verbund",
+      "buyer": "Bezirksregierung Münster",
+      "buyerCity": "Münster",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77310000",
+        "90620000"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2026-11-23T07:00:00.000Z",
+      "nuts": [
+        "DEA36",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/679862-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "680031-2026": {
+      "id": "680031-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Aushub- und Erdbewegungsarbeiten – Außenanlagen / Neubau Kombibad Maintal",
+      "buyer": "Magistrat der Stadt Maintal",
+      "buyerCity": "Maintal",
+      "country": "DEU",
+      "cpv": [
+        "45112000",
+        "45231300",
+        "45223300",
+        "45233260",
+        "44113100",
+        "44113600",
+        "77310000"
+      ],
+      "cpvMain": "45112000",
+      "valueEur": null,
+      "deadline": "2026-11-02T09:59:00.000Z",
+      "nuts": [
+        "DE719",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/680031-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "680122-2026": {
+      "id": "680122-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenunterhaltungspflege 2027/2028 im Stadtgebiet Heidelberg in vier Losen",
+      "buyer": "Stadt Heidelberg - Landschafts- und Forstamt",
+      "buyerCity": "Heidelberg",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-03T10:00:00.000Z",
+      "nuts": [
+        "DE125",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/680122-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "680659-2026": {
+      "id": "680659-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten Neubau Seniorenwohnanlage St. Franziskus",
+      "buyer": "Stadt Pfaffenhofen an der Ilm",
+      "buyerCity": "Pfaffenhofen an der Ilm",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-11-05T09:00:00.000Z",
+      "nuts": [
+        "DE21J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/680659-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "681217-2026": {
+      "id": "681217-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – Rahmenvereinbarung über Baumpflegearbeiten",
+      "buyer": "Ortsgemeinde Lambsheim über Verbandsgemeinde Lambsheim-Heßheim",
+      "buyerCity": "Lambsheim",
+      "country": "DEU",
+      "cpv": [
+        "77000000",
+        "77211500"
+      ],
+      "cpvMain": "77000000",
+      "valueEur": null,
+      "deadline": "2026-11-03T09:30:00.000Z",
+      "nuts": [
+        "DEB3I",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/681217-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "679342-2026": {
+      "id": "679342-2026",
+      "publishedAt": "2026-10-01T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Regelkontrolle und Ersterfassung des Baumbestandes in den Liegenschaften der SSGK M-V und Fortführung der digitalen Baumkataster",
+      "buyer": "Landesamt für innere Verwaltung M-V, Abteilung Beschaffung/Dienstleistungen",
+      "buyerCity": "Schwerin",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": 370982.24,
+      "deadline": null,
+      "nuts": [
+        "DE80O",
+        "DE804",
+        "DE80M",
+        "DE80K",
+        "DE80J",
+        "DE80N",
+        "DE80L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/679342-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 80
     }
   },
-  "lastRun": "2026-10-01T11:06:20.696Z"
+  "lastRun": "2026-10-02T10:39:12.315Z"
 }
