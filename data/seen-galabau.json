@@ -2256,7 +2256,23 @@
     "680122-2026": "2026-10-02T10:39:12.315Z",
     "680659-2026": "2026-10-02T10:39:12.315Z",
     "681217-2026": "2026-10-02T10:39:12.315Z",
-    "679342-2026": "2026-10-02T10:39:12.315Z"
+    "679342-2026": "2026-10-02T10:39:12.315Z",
+    "683784-2026": "2026-10-05T11:44:45.977Z",
+    "681587-2026": "2026-10-05T11:44:45.977Z",
+    "681603-2026": "2026-10-05T11:44:45.977Z",
+    "682614-2026": "2026-10-05T11:44:45.977Z",
+    "683081-2026": "2026-10-05T11:44:45.977Z",
+    "683877-2026": "2026-10-05T11:44:45.977Z",
+    "684231-2026": "2026-10-05T11:44:45.977Z",
+    "684348-2026": "2026-10-05T11:44:45.977Z",
+    "685382-2026": "2026-10-05T11:44:45.977Z",
+    "681851-2026": "2026-10-05T11:44:45.977Z",
+    "682799-2026": "2026-10-05T11:44:45.977Z",
+    "683836-2026": "2026-10-05T11:44:45.977Z",
+    "683799-2026": "2026-10-05T11:44:45.977Z",
+    "682705-2026": "2026-10-05T11:44:45.977Z",
+    "683513-2026": "2026-10-05T11:44:45.977Z",
+    "685337-2026": "2026-10-05T11:44:45.977Z"
   },
   "notices": {
     "519810-2026": {
@@ -58495,7 +58511,7 @@
         "45112700",
         "45112723"
       ],
-      "score": 80
+      "score": 75
     },
     "613421-2026": {
       "id": "613421-2026",
@@ -58692,7 +58708,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "615597-2026": {
       "id": "615597-2026",
@@ -58717,7 +58733,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "618070-2026": {
       "id": "618070-2026",
@@ -59104,7 +59120,7 @@
         "77211500",
         "77211400"
       ],
-      "score": 83
+      "score": 68
     },
     "626907-2026": {
       "id": "626907-2026",
@@ -59129,7 +59145,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "627964-2026": {
       "id": "627964-2026",
@@ -59182,7 +59198,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "627854-2026": {
       "id": "627854-2026",
@@ -59232,7 +59248,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 95
+      "score": 80
     },
     "629482-2026": {
       "id": "629482-2026",
@@ -59282,7 +59298,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "630205-2026": {
       "id": "630205-2026",
@@ -59308,7 +59324,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "631958-2026": {
       "id": "631958-2026",
@@ -59333,7 +59349,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "630681-2026": {
       "id": "630681-2026",
@@ -59410,7 +59426,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "635540-2026": {
       "id": "635540-2026",
@@ -59643,7 +59659,7 @@
         "77300000",
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "636489-2026": {
       "id": "636489-2026",
@@ -60234,7 +60250,7 @@
       "matchedCpv": [
         "45112714"
       ],
-      "score": 75
+      "score": 60
     },
     "647227-2026": {
       "id": "647227-2026",
@@ -61198,7 +61214,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "665367-2026": {
       "id": "665367-2026",
@@ -62175,7 +62191,396 @@
         "77300000"
       ],
       "score": 80
+    },
+    "683784-2026": {
+      "id": "683784-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Sanierung und Erweiterung der Regelschule Bad Köstritz",
+      "buyer": "Landratsamt Greiz",
+      "buyerCity": "Greiz",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 420168.07,
+      "deadline": "2026-11-03T08:45:00.000Z",
+      "nuts": [
+        "DEG0L",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683784-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 95
+    },
+    "681587-2026": {
+      "id": "681587-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management ZUE Gladbeck Verbund",
+      "buyer": "Bezirksregierung Münster",
+      "buyerCity": "Münster",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77310000",
+        "90620000"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2026-11-23T07:00:00.000Z",
+      "nuts": [
+        "DEA36",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/681587-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "681603-2026": {
+      "id": "681603-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – GV ST 26047 Rahmenvertrag zur Baumpflege der Straßenbäume im Stadtgebiet Grevenbroich",
+      "buyer": "Stadtbetriebe Grevenbroich AÖR",
+      "buyerCity": "Grevenbroich",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77341000",
+        "77211500"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-04T08:00:00.000Z",
+      "nuts": [
+        "DEA1D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/681603-2026",
+      "matchedCpv": [
+        "77300000",
+        "77211500",
+        "77341000"
+      ],
+      "score": 83
+    },
+    "682614-2026": {
+      "id": "682614-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – Grünflächenpflege",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77313000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": "2026-11-02T12:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/682614-2026",
+      "matchedCpv": [
+        "77313000"
+      ],
+      "score": 83
+    },
+    "683081-2026": {
+      "id": "683081-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltungspflege Parkteil VI",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-05T11:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683081-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "683877-2026": {
+      "id": "683877-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – TS - Gewässerunterhaltung der Gewässer sonstiger Ordnung",
+      "buyer": "Wasserverband Eifel-Rur - Zentrale Vergabestelle -",
+      "buyerCity": "Düren",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-03T22:59:00.000Z",
+      "nuts": [
+        "DEA26",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683877-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "684231-2026": {
+      "id": "684231-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvertrag für Baumpflegerische Maßnahmen an Bäumen für die Landeshauptstadt Potsdam in 7 Losen",
+      "buyer": "Landeshauptstadt Potsdam, Bereich Vergabemanagement",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-02T09:00:00.000Z",
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/684231-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "684348-2026": {
+      "id": "684348-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Theodor-Fliedner-Stiftung | Neubau Alberichstraße | Freianlagen",
+      "buyer": "Theodor-Fliedner-Stiftung",
+      "buyerCity": "Mannheim",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-11-03T10:00:00.000Z",
+      "nuts": [
+        "DE126",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/684348-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "685382-2026": {
+      "id": "685382-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Fällen von Bäumen – Rahmenvertrag Verkehrssicherung Rev. 01 bis 07, 09, 10 und 12",
+      "buyer": "Staatsbetrieb Sachsenforst - Forstbezirk Baerenfels",
+      "buyerCity": "Altenberg",
+      "country": "DEU",
+      "cpv": [
+        "77211400",
+        "77200000",
+        "77211500"
+      ],
+      "cpvMain": "77211400",
+      "valueEur": null,
+      "deadline": "2026-11-05T07:00:00.000Z",
+      "nuts": [
+        "DED2F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/685382-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 83
+    },
+    "681851-2026": {
+      "id": "681851-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Baum- und Heckenschnitt – Gehölzschnitt AE-Maßnahmen 2026-2028 Los 1 - 3",
+      "buyer": "Die Autobahn GmbH des Bundes - NL Ost",
+      "buyerCity": "Halle (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "77340000"
+      ],
+      "cpvMain": "77340000",
+      "valueEur": 1418049.64,
+      "deadline": null,
+      "nuts": [
+        "DEG01",
+        "DEU",
+        "DEG06"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/681851-2026",
+      "matchedCpv": [
+        "77340000"
+      ],
+      "score": 80
+    },
+    "682799-2026": {
+      "id": "682799-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Neubau OFW Zug / Sanierung alte Schule, 126001-MZ001 Feuerwehr Zug u. 111325-MZ006 Ortszentrum Zug Hauptstr. 127 ST Zug, 09599 Freiberg; Los 33 - Freianlagen",
+      "buyer": "Stadtverwaltung Freiberg – Dezernat für Stadtentwicklung und Bauwesen",
+      "buyerCity": "Freiberg",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 669747,
+      "deadline": null,
+      "nuts": [
+        "DED43",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/682799-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "683836-2026": {
+      "id": "683836-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Technisches Rathaus - Außenanlagen",
+      "buyer": "Landeshauptstadt Erfurt, Stadtverwaltung, Stadtkämmerei-Verdingungsstelle",
+      "buyerCity": "Erfurt",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 433140.71,
+      "deadline": null,
+      "nuts": [
+        "DEG01",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683836-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "683799-2026": {
+      "id": "683799-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Gewässerpflege_Mahd_Gehölzpflege, Abschnitt A4 AS Berbersdorf - A72 AS Hartenstein, 2027 - 2029",
+      "buyer": "Die Autobahn GmbH des Bundes - NL Ost",
+      "buyerCity": "Halle (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77314000",
+        "77340000",
+        "77310000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": 52209,
+      "deadline": "2026-11-05T09:00:00.000Z",
+      "nuts": [
+        "DED41",
+        "DEU",
+        "DED43",
+        "DED45"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683799-2026",
+      "matchedCpv": [
+        "77300000",
+        "77314000",
+        "77340000",
+        "77310000"
+      ],
+      "score": 75
+    },
+    "682705-2026": {
+      "id": "682705-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Bildungszentrum West - Dachbegrünung BT 1 und 2, Landschaftsgärtnerische Arbeiten",
+      "buyer": "Stadt Ludwigsburg",
+      "buyerCity": "Ludwigsburg",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112713"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-11-03T08:30:00.000Z",
+      "nuts": [
+        "DE115",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/682705-2026",
+      "matchedCpv": [
+        "45112700",
+        "45112713"
+      ],
+      "score": 63
+    },
+    "683513-2026": {
+      "id": "683513-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Baumschnitt – Baumschnittarbeiten, Flachschnitt 2027-2028",
+      "buyer": "Stadt Frankfurt am Main, Grünflächenamt",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77341000"
+      ],
+      "cpvMain": "77341000",
+      "valueEur": null,
+      "deadline": "2026-11-05T11:00:00.000Z",
+      "nuts": [],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/683513-2026",
+      "matchedCpv": [
+        "77341000"
+      ],
+      "score": 63
+    },
+    "685337-2026": {
+      "id": "685337-2026",
+      "publishedAt": "2026-10-04T22:00:00.000Z",
+      "title": "Deutschland – Holzgewinnung – Kala- 2.- im Spätsommer 2026",
+      "buyer": "Forstamt Prüm",
+      "buyerCity": "Prüm",
+      "country": "DEU",
+      "cpv": [
+        "77210000",
+        "77311000"
+      ],
+      "cpvMain": "77210000",
+      "valueEur": 28000,
+      "deadline": "2026-10-13T07:00:00.000Z",
+      "nuts": [
+        "DEB23",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/685337-2026",
+      "matchedCpv": [
+        "77311000",
+        "77210000"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-10-02T10:39:12.315Z"
+  "lastRun": "2026-10-05T11:44:45.977Z"
 }

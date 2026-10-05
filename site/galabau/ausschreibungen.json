@@ -1,5 +1,481 @@
 [
   {
+    "id": "678810-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Verwaltungsgebäude Landratsamt Rottweil - Freianlagen",
+    "buyer": "Landratsamt Rottweil",
+    "buyerCity": "Rottweil",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45112720"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-11-05T11:00:00.000Z",
+    "nuts": [
+      "DE135",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/678810-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112720"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "679862-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Hausmeisterdienste – Facility-Management ZUE Gladbeck Verbund",
+    "buyer": "Bezirksregierung Münster",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "98341140",
+      "77310000",
+      "90620000"
+    ],
+    "cpvMain": "98341140",
+    "valueEur": null,
+    "deadline": "2026-11-23T07:00:00.000Z",
+    "nuts": [
+      "DEA36",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/679862-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "680031-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Aushub- und Erdbewegungsarbeiten – Außenanlagen / Neubau Kombibad Maintal",
+    "buyer": "Magistrat der Stadt Maintal",
+    "buyerCity": "Maintal",
+    "country": "DEU",
+    "cpv": [
+      "45112000",
+      "45231300",
+      "45223300",
+      "45233260",
+      "44113100",
+      "44113600",
+      "77310000"
+    ],
+    "cpvMain": "45112000",
+    "valueEur": null,
+    "deadline": "2026-11-02T09:59:00.000Z",
+    "nuts": [
+      "DE719",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/680031-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "680122-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenunterhaltungspflege 2027/2028 im Stadtgebiet Heidelberg in vier Losen",
+    "buyer": "Stadt Heidelberg - Landschafts- und Forstamt",
+    "buyerCity": "Heidelberg",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-11-03T10:00:00.000Z",
+    "nuts": [
+      "DE125",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/680122-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "680659-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten Neubau Seniorenwohnanlage St. Franziskus",
+    "buyer": "Stadt Pfaffenhofen an der Ilm",
+    "buyerCity": "Pfaffenhofen an der Ilm",
+    "country": "DEU",
+    "cpv": [
+      "45112710"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-11-05T09:00:00.000Z",
+    "nuts": [
+      "DE21J",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/680659-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "681217-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – Rahmenvereinbarung über Baumpflegearbeiten",
+    "buyer": "Ortsgemeinde Lambsheim über Verbandsgemeinde Lambsheim-Heßheim",
+    "buyerCity": "Lambsheim",
+    "country": "DEU",
+    "cpv": [
+      "77000000",
+      "77211500"
+    ],
+    "cpvMain": "77000000",
+    "valueEur": null,
+    "deadline": "2026-11-03T09:30:00.000Z",
+    "nuts": [
+      "DEB3I",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/681217-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "679342-2026",
+    "publishedAt": "2026-10-01T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Regelkontrolle und Ersterfassung des Baumbestandes in den Liegenschaften der SSGK M-V und Fortführung der digitalen Baumkataster",
+    "buyer": "Landesamt für innere Verwaltung M-V, Abteilung Beschaffung/Dienstleistungen",
+    "buyerCity": "Schwerin",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": 370982.24,
+    "deadline": null,
+    "nuts": [
+      "DE80O",
+      "DE804",
+      "DE80M",
+      "DE80K",
+      "DE80J",
+      "DE80N",
+      "DE80L",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/679342-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-10-02T10:39:12.315Z"
+  },
+  {
+    "id": "675843-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Planting of Seagrass for Ostwind 3 Offshore project between KP18.1-18.4",
+    "buyer": "50Hertz Offshore GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": 800000,
+    "deadline": "2026-10-26T17:00:00.000Z",
+    "nuts": [
+      "DE80N",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/675843-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "674414-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grün- und Außenanlagenpflege Polizeipräsidium und Liegenschaften der Polizei Frankfurt (2 Lose)",
+    "buyer": "Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-",
+    "buyerCity": "Wiesbaden",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-10-30T11:00:00.000Z",
+    "nuts": [
+      "DE712",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/674414-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "674428-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – NBG Kloster Heiligenzell - CEF Maßnahmen",
+    "buyer": "Gemeinde Friesenheim",
+    "buyerCity": "Friesenheim",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112500",
+      "45112710"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-11-04T09:00:00.000Z",
+    "nuts": [
+      "DE134",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/674428-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "676019-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Neubau Kindertagesstätte Oßweil - Außenanlagen",
+    "buyer": "Stadt Ludwigsburg",
+    "buyerCity": "Ludwigsburg",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112723"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-11-02T09:00:00.000Z",
+    "nuts": [
+      "DE115",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/676019-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112723"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "676194-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Sanierung und Modernisierung Schulzentrum Coesfeld: Außenanlagen 3. BA",
+    "buyer": "Stadt Coesfeld",
+    "buyerCity": "Coesfeld",
+    "country": "DEU",
+    "cpv": [
+      "45112710",
+      "45112700"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-11-06T08:00:00.000Z",
+    "nuts": [
+      "DEA35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/676194-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "675305-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Schwimmbäder – Außenanlagen / Neubau Waldbad Warburg",
+    "buyer": "Stadtwerke Warburg GmbH",
+    "buyerCity": "Warburg",
+    "country": "DEU",
+    "cpv": [
+      "45212212",
+      "44113600",
+      "45112000",
+      "45231300",
+      "45223300",
+      "45233260",
+      "77310000",
+      "44113100"
+    ],
+    "cpvMain": "45212212",
+    "valueEur": 2557634.63,
+    "deadline": null,
+    "nuts": [
+      "DEA44",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/675305-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "676255-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Grün- und Pflasterflächenpflege_Kreis-OH_09/2026-12/2029",
+    "buyer": "Kreis Ostholstein - Grundstücks- und Gebäudeservice",
+    "buyerCity": "Eutin",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": 593988.81,
+    "deadline": null,
+    "nuts": [
+      "DEF08",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/676255-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "674578-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Heckenschnitt – Pflegearbeiten Hauptfriedhof Landau für die Jahre 2027-2030 / Grünflächen-, Grab- und Wegepflege",
+    "buyer": "Stadtverwaltung Landau",
+    "buyerCity": "Landau in der Pfalz",
+    "country": "DEU",
+    "cpv": [
+      "77342000",
+      "98371111"
+    ],
+    "cpvMain": "77342000",
+    "valueEur": 550000,
+    "deadline": "2026-11-04T09:30:00.000Z",
+    "nuts": [
+      "DEB33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/674578-2026",
+    "matchedCpv": [
+      "77342000"
+    ],
+    "score": 75,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "675527-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Pflege von Parkanlagen – Pflege und Unterhaltungsarbeiten auf Friedhöfen",
+    "buyer": "Stadt Remscheid, Fachdienst Recht und Vergabe, Abteilung Zentrale Vergabestelle",
+    "buyerCity": "Remscheid",
+    "country": "DEU",
+    "cpv": [
+      "77313000",
+      "77311000",
+      "77342000"
+    ],
+    "cpvMain": "77313000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEA18",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/675527-2026",
+    "matchedCpv": [
+      "77313000",
+      "77311000",
+      "77342000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "676829-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Bundesstadt Bonn: Kita Wilhelmstr. 34 - Außenanlagen",
+    "buyer": "Bundesstadt Bonn - Referat Vergabedienste",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710",
+      "45221250",
+      "45233260"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEA22",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/676829-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
+    "id": "677737-2026",
+    "publishedAt": "2026-09-30T22:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Stadthalle Zeulenroda-VE_307 - Dachabdichtung und Eindeckung",
+    "buyer": "Stadt Zeulenroda-Triebes",
+    "buyerCity": "Zeulenroda-Triebes",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713",
+      "45261310"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": 567312.82,
+    "deadline": null,
+    "nuts": [
+      "DEG0L",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/677737-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-10-01T11:06:20.696Z"
+  },
+  {
     "id": "671367-2026",
     "publishedAt": "2026-09-29T22:00:00.000Z",
     "title": "Deutschland – Pflege von Parkanlagen – Grünpflegeleistungen für die Stadt Chemnitz / Los 1 bis Los 7",
@@ -402,7 +878,7 @@
     "matchedCpv": [
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-28T11:08:44.751Z"
   },
   {
@@ -1656,7 +2132,7 @@
     "matchedCpv": [
       "45112714"
     ],
-    "score": 75,
+    "score": 60,
     "firstSeenAt": "2026-09-21T10:08:23.896Z"
   },
   {
@@ -2137,7 +2613,7 @@
       "77300000",
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-16T09:25:42.989Z"
   },
   {
@@ -2261,7 +2737,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-15T09:32:40.448Z"
   },
   {
@@ -2444,7 +2920,7 @@
       "45112710",
       "45112700"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-09-14T10:03:16.248Z"
   },
   {
@@ -2496,7 +2972,7 @@
     "matchedCpv": [
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-14T10:03:16.248Z"
   },
   {
@@ -2523,7 +2999,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-14T10:03:16.248Z"
   },
   {
@@ -2549,7 +3025,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-14T10:03:16.248Z"
   },
   {
@@ -2629,7 +3105,7 @@
       "77211500",
       "77211400"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-11T09:01:39.011Z"
   },
   {
@@ -2655,7 +3131,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-11T09:01:39.011Z"
   },
   {
@@ -2710,7 +3186,7 @@
     "matchedCpv": [
       "77300000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-09-11T09:01:39.011Z"
   },
   {
@@ -3147,7 +3623,7 @@
       "45112700",
       "45112723"
     ],
-    "score": 80,
+    "score": 75,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
@@ -3351,7 +3827,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
@@ -3377,7 +3853,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-09-07T09:34:27.081Z"
   },
   {
