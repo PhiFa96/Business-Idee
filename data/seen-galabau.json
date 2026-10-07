@@ -2279,7 +2279,17 @@
     "686373-2026": "2026-10-06T11:25:57.134Z",
     "688547-2026": "2026-10-06T11:25:57.134Z",
     "687481-2026": "2026-10-06T11:25:57.134Z",
-    "686098-2026": "2026-10-06T11:25:57.134Z"
+    "686098-2026": "2026-10-06T11:25:57.134Z",
+    "691363-2026": "2026-10-07T11:16:00.235Z",
+    "691742-2026": "2026-10-07T11:16:00.235Z",
+    "692569-2026": "2026-10-07T11:16:00.235Z",
+    "692785-2026": "2026-10-07T11:16:00.235Z",
+    "690639-2026": "2026-10-07T11:16:00.235Z",
+    "692566-2026": "2026-10-07T11:16:00.235Z",
+    "689910-2026": "2026-10-07T11:16:00.235Z",
+    "689918-2026": "2026-10-07T11:16:00.235Z",
+    "692211-2026": "2026-10-07T11:16:00.235Z",
+    "689897-2026": "2026-10-07T11:16:00.235Z"
   },
   "notices": {
     "519810-2026": {
@@ -59460,7 +59470,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "634658-2026": {
       "id": "634658-2026",
@@ -59611,7 +59621,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "637356-2026": {
       "id": "637356-2026",
@@ -60129,7 +60139,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "646713-2026": {
       "id": "646713-2026",
@@ -60401,7 +60411,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "654538-2026": {
       "id": "654538-2026",
@@ -62775,7 +62785,289 @@
         "45112712"
       ],
       "score": 48
+    },
+    "691363-2026": {
+      "id": "691363-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Gartenpflege_RIM_München",
+      "buyer": "Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-10-26T11:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU",
+        "DE271",
+        "DE27D",
+        "DE211",
+        "DE273",
+        "DE27E",
+        "DE27A",
+        "DE274",
+        "DE272",
+        "DE21F",
+        "DE21N",
+        "DE21B",
+        "DE232",
+        "DE254",
+        "DE213"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/691363-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "691742-2026": {
+      "id": "691742-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltung öffentlicher Grünflächen 2027, 2028, 2029",
+      "buyer": "Stadt Greven",
+      "buyerCity": "Greven",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77314000",
+        "77313000",
+        "77315000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-09T09:00:00.000Z",
+      "nuts": [
+        "DEA37",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/691742-2026",
+      "matchedCpv": [
+        "77310000",
+        "77314000",
+        "77313000",
+        "77315000"
+      ],
+      "score": 83
+    },
+    "692569-2026": {
+      "id": "692569-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – 2026-0372 Durchführung von Bauleistungen für das Projekt \"Stadtpark Hochheide - GaLa-Bauarbeiten\" Los 1 (2. BA) sowie Los 2 (3. BA)",
+      "buyer": "DEG Duisburger Einkaufsgesellschaft mbH",
+      "buyerCity": "Duisburg",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112720"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 2171670.99,
+      "deadline": null,
+      "nuts": [
+        "DEA12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/692569-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112720"
+      ],
+      "score": 80
+    },
+    "692785-2026": {
+      "id": "692785-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – BLB NRW Z/NL Aachen/Technisches Gebäudemanagement TGM 100-26-00015/ Los 7: Tief- und Landschaftsbau, hier: Regionallos 7.6",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Zentrale",
+      "buyerCity": "Düsseldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112711",
+        "45112712",
+        "45112713",
+        "45113000",
+        "45200000",
+        "45221250",
+        "45240000",
+        "45247110"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 322060.7,
+      "deadline": null,
+      "nuts": [
+        "DEA2D",
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/692785-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112712",
+        "45112713"
+      ],
+      "score": 80
+    },
+    "690639-2026": {
+      "id": "690639-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Rahmenvereinbarung GaLaBau 2026-2027_Bezirk OST",
+      "buyer": "Stadt Frankfurt am Main, Grünflächenamt",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45112730",
+        "45112700"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/690639-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112730",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "692566-2026": {
+      "id": "692566-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – Laubbeseitigung 2026-2027",
+      "buyer": "Stadt Frankfurt am Main, Grünflächenamt",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77313000",
+        "77310000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/692566-2026",
+      "matchedCpv": [
+        "77313000",
+        "77310000"
+      ],
+      "score": 68
+    },
+    "689910-2026": {
+      "id": "689910-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – EGS-EGHO_Dachabdichtung",
+      "buyer": "Stadt Ludwigsburg",
+      "buyerCity": "Ludwigsburg",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "09332000",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-11-03T13:00:00.000Z",
+      "nuts": [
+        "DE115",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/689910-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "689918-2026": {
+      "id": "689918-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Neubau Sporthalle (SPH) Dachabdichtungsarbeiten",
+      "buyer": "Stadt Salzgitter",
+      "buyerCity": "Salzgitter",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45223210",
+        "45261000",
+        "45261300",
+        "45262670"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-10-19T09:00:00.000Z",
+      "nuts": [
+        "DE912",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/689918-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "692211-2026": {
+      "id": "692211-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Garten- und Landschaftsbau / Außenanlagen",
+      "buyer": "Stadibau GmbH Gesellschaft für den Staatsbediensteten Wohnungsbau in Bayern mbH",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": null,
+      "deadline": "2026-11-12T11:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/692211-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 63
+    },
+    "689897-2026": {
+      "id": "689897-2026",
+      "publishedAt": "2026-10-06T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Stadt Hemmingen - GS Arnum - Dachabdichtungsarbeiten",
+      "buyer": "Stadt Hemmingen",
+      "buyerCity": "Hemmingen",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 208766.32,
+      "deadline": null,
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/689897-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-10-06T11:25:57.134Z"
+  "lastRun": "2026-10-07T11:16:00.235Z"
 }

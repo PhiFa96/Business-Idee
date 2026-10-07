@@ -1,5 +1,279 @@
 [
   {
+    "id": "683446-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Unterhaltsreinigung 2027-2032",
+    "buyer": "Bezirk Oberfranken - namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911000",
+      "90910000",
+      "90900000"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": 14142327.01,
+    "deadline": "2026-11-03T08:00:00.000Z",
+    "nuts": [
+      "DE242",
+      "DEU",
+      "DE24C",
+      "DE249",
+      "DE243",
+      "DE245",
+      "DE24A"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/683446-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911000",
+      "90910000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "681835-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Erweiterung / Sanierung Juri-Gagarin-Oberschule Fürstenwalde; Los 26 - Fachkabinette",
+    "buyer": "Landkreis Oder-Spree, Der Landrat",
+    "buyerCity": "Beeskow",
+    "country": "DEU",
+    "cpv": [
+      "90910000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-11-06T09:00:00.000Z",
+    "nuts": [
+      "DE40C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/681835-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "681889-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäudereinigungsleistungen für städtische Liegenschaften",
+    "buyer": "Stadt Alsdorf",
+    "buyerCity": "Alsdorf",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-10-21T07:00:00.000Z",
+    "nuts": [
+      "DEA2D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/681889-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "681926-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Gebäudereinigung in Objekten der Stadt Güglingen",
+    "buyer": "Stadt Güglingen",
+    "buyerCity": "Güglingen",
+    "country": "DEU",
+    "cpv": [
+      "90910000",
+      "90911200",
+      "90911300",
+      "90900000",
+      "90919200",
+      "90919300",
+      "90911000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-11-03T09:00:00.000Z",
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/681926-2026",
+    "matchedCpv": [
+      "90910000",
+      "90911200",
+      "90911300",
+      "90919200",
+      "90911000",
+      "90919300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "683546-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäudereinigungsleistungen (Unterhalts- und Grundreinigung) in verschiedenen Gebäuden der Stadt Neustadt am Rübenberge",
+    "buyer": "Stadt Neustadt am Rübenberge",
+    "buyerCity": "Neustadt am Rübenberge",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90919300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-11-03T07:45:00.000Z",
+    "nuts": [
+      "DE929",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/683546-2026",
+    "matchedCpv": [
+      "90911200",
+      "90919300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "683889-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – Gebäude- und Glasreinigung für den Landkreis Neumarkt i.d.OPf.",
+    "buyer": "Landkreis Neumarkt i.d.OPf.",
+    "buyerCity": "Neumarkt i.d.OPf.",
+    "country": "DEU",
+    "cpv": [
+      "90911200",
+      "90911300"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-11-02T09:00:00.000Z",
+    "nuts": [
+      "DE236",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/683889-2026",
+    "matchedCpv": [
+      "90911200",
+      "90911300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "684113-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Gebäudereinigung – 051-26 EU RMC Unterhaltsreinigung (verschiedene Standorte der HS Ko)",
+    "buyer": "Hochschule Koblenz RMC",
+    "buyerCity": "Koblenz",
+    "country": "DEU",
+    "cpv": [
+      "90911200"
+    ],
+    "cpvMain": "90911200",
+    "valueEur": null,
+    "deadline": "2026-11-05T09:00:00.000Z",
+    "nuts": [
+      "DEB11",
+      "DEB12",
+      "DEB1B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/684113-2026",
+    "matchedCpv": [
+      "90911200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "684356-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Reinigungsdienste – Reinigung der Wertstoffcontainerplätze in der Stadt Görlitz",
+    "buyer": "Stadtverwaltung Görlitz",
+    "buyerCity": "Görlitz",
+    "country": "DEU",
+    "cpv": [
+      "90910000"
+    ],
+    "cpvMain": "90910000",
+    "valueEur": null,
+    "deadline": "2026-11-02T09:00:00.000Z",
+    "nuts": [
+      "DED2D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/684356-2026",
+    "matchedCpv": [
+      "90910000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "684733-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Reinigung von Schulen – Unterhaltsreinigung und optionale Grundreinigung von drei Schulsporthallen und einer Schule",
+    "buyer": "Stadtverwaltung Speyer - Zentrale Vergabestelle",
+    "buyerCity": "Speyer",
+    "country": "DEU",
+    "cpv": [
+      "90919300",
+      "90911200",
+      "90910000",
+      "90900000",
+      "90919200"
+    ],
+    "cpvMain": "90919300",
+    "valueEur": null,
+    "deadline": "2026-10-09T08:00:00.000Z",
+    "nuts": [
+      "DEB38",
+      "DEU",
+      "DEB3I"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/684733-2026",
+    "matchedCpv": [
+      "90911200",
+      "90910000",
+      "90919200",
+      "90919300"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
+    "id": "683658-2026",
+    "publishedAt": "2026-10-04T22:00:00.000Z",
+    "title": "Deutschland – Reinigung von Schulen – Unterhalts-, Grund- und Tagesreinigung an 6 Schulstandorten und 2 Schulfilialstandorten 01.2026-06.2029",
+    "buyer": "Bezirksamt Spandau von Berlin",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "90919300"
+    ],
+    "cpvMain": "90919300",
+    "valueEur": null,
+    "deadline": "2026-11-04T09:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/683658-2026",
+    "matchedCpv": [
+      "90919300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-10-05T11:44:45.977Z"
+  },
+  {
     "id": "679108-2026",
     "publishedAt": "2026-10-01T22:00:00.000Z",
     "title": "Deutschland – Wohnungs-, Gebäude- und Fensterreinigung – Unterhaltsreinigung für diverse Liegenschaften in Schleswig-Holstein",
@@ -923,7 +1197,7 @@
     "matchedCpv": [
       "90911200"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-01T11:06:20.696Z"
   },
   {
@@ -7341,7 +7615,7 @@
       "90911200",
       "90910000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-11T09:01:39.011Z"
   },
   {
