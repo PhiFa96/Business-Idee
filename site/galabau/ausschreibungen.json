@@ -1,5 +1,200 @@
 [
   {
+    "id": "686673-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 4 Bundesliegenschaften in Berlin, Bundesanstalt für Immobilienaufgaben, Direktion Berlin und Sparte Wohnen, Regionalbereich Ost - VOEK 013-26 -",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77342000",
+      "90611000",
+      "90610000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": null,
+    "deadline": "2026-11-19T08:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/686673-2026",
+    "matchedCpv": [
+      "77314000",
+      "77342000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "687540-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – VHF Grünfassade",
+    "buyer": "Handwerkskammer Niederbayern-Oberpfalz",
+    "buyerCity": "Regensburg",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45262670",
+      "45112710",
+      "45443000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-11-09T10:00:00.000Z",
+    "nuts": [
+      "DE221",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/687540-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "688477-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Grünflächenpflege im gesamten Stadtgebiet Bad Kissingen einschl. seiner Stadtteile für 2027 - 2028",
+    "buyer": "Stadt Bad Kissingen",
+    "buyerCity": "Bad Kissingen",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000",
+      "45112700",
+      "77000000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-11-05T09:00:00.000Z",
+    "nuts": [
+      "DE265",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/688477-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "686373-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Rasenpflege: Grünflächen, Spielplätze, Freibad Kernstadt Brakel",
+    "buyer": "Stadt Brakel",
+    "buyerCity": "Brakel",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": 23400,
+    "deadline": "2026-11-02T10:00:00.000Z",
+    "nuts": [
+      "DEA44",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/686373-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000"
+    ],
+    "score": 75,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "688547-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Ersatzneubau Hallenbad Heißen - Landschaftsbauarbeiten",
+    "buyer": "Stadt Mülheim an der Ruhr",
+    "buyerCity": "Mülheim an der Ruhr",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112720",
+      "45233253",
+      "77310000",
+      "45232450",
+      "34928200"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-10-16T08:00:00.000Z",
+    "nuts": [
+      "DEA16",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/688547-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700",
+      "45112720"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "687481-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Dachdeckarbeiten und Spezialbauarbeiten – Dachabdichtungs- und Klempnerarbeiten",
+    "buyer": "FHH Bezirksamt Hamburg-Mitte vertreten durch Sprinkenhof GmbH",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "45260000",
+      "45112713",
+      "45261210",
+      "45261213",
+      "45261300",
+      "45261410",
+      "45261420"
+    ],
+    "cpvMain": "45260000",
+    "valueEur": null,
+    "deadline": "2026-11-05T10:30:00.000Z",
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/687481-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
+    "id": "686098-2026",
+    "publishedAt": "2026-10-05T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Handelslehranstalten Lohne: Neubau Aula und Verwaltung - Garten- und Landschaftsbauarbeiten",
+    "buyer": "Landkreis Vechta",
+    "buyerCity": "Vechta",
+    "country": "DEU",
+    "cpv": [
+      "45112712"
+    ],
+    "cpvMain": "45112712",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE94F",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/686098-2026",
+    "matchedCpv": [
+      "45112712"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-10-06T11:25:57.134Z"
+  },
+  {
     "id": "683784-2026",
     "publishedAt": "2026-10-04T22:00:00.000Z",
     "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Sanierung und Erweiterung der Regelschule Bad Köstritz",
@@ -1055,7 +1250,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-09-30T10:38:29.644Z"
   },
   {
@@ -3861,7 +4056,7 @@
     "matchedCpv": [
       "77320000"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-09-09T09:05:14.120Z"
   },
   {
