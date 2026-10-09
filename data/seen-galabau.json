@@ -2296,7 +2296,13 @@
     "695371-2026": "2026-10-08T11:32:28.468Z",
     "695433-2026": "2026-10-08T11:32:28.468Z",
     "693264-2026": "2026-10-08T11:32:28.468Z",
-    "693616-2026": "2026-10-08T11:32:28.468Z"
+    "693616-2026": "2026-10-08T11:32:28.468Z",
+    "698480-2026": "2026-10-09T11:27:37.027Z",
+    "700166-2026": "2026-10-09T11:27:37.027Z",
+    "697667-2026": "2026-10-09T11:27:37.027Z",
+    "697728-2026": "2026-10-09T11:27:37.027Z",
+    "697175-2026": "2026-10-09T11:27:37.027Z",
+    "699014-2026": "2026-10-09T11:27:37.027Z"
   },
   "notices": {
     "519810-2026": {
@@ -59657,7 +59663,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "638030-2026": {
       "id": "638030-2026",
@@ -59803,7 +59809,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "641562-2026": {
       "id": "641562-2026",
@@ -60950,7 +60956,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "659312-2026": {
       "id": "659312-2026",
@@ -63025,7 +63031,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "692211-2026": {
       "id": "692211-2026",
@@ -63260,7 +63266,158 @@
         "45112713"
       ],
       "score": 63
+    },
+    "698480-2026": {
+      "id": "698480-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Pflege der Außenanlagen sowie Winterdienst für Standorte der BGE Peine",
+      "buyer": "Bundesgesellschaft für Endlagerung mbH (BGE)",
+      "buyerCity": "Peine",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "90620000",
+        "90630000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-12T09:00:00.000Z",
+      "nuts": [
+        "DE91A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/698480-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "700166-2026": {
+      "id": "700166-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Kinderklinik - Landschaftsbauarbeiten Außenanlagen",
+      "buyer": "Universitätsklinikum Essen AÖR",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-11-13T09:00:00.000Z",
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/700166-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "697667-2026": {
+      "id": "697667-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Rodung – Rahmenvertrag Gehölzpflegemaßnahmen im FB II.2",
+      "buyer": "RVR Ruhr Grün",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77211300",
+        "77211400",
+        "77211500"
+      ],
+      "cpvMain": "77211300",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/697667-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211300",
+        "77211400"
+      ],
+      "score": 68
+    },
+    "697728-2026": {
+      "id": "697728-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege von öffentlichen Grünanlagen und Spielplätzen der Stadt Bernau bei Berlin",
+      "buyer": "Stadt Bernau bei Berlin",
+      "buyerCity": "Bernau bei Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE405",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/697728-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 68
+    },
+    "697175-2026": {
+      "id": "697175-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Kinderklinik - Landschaftsbauarbeiten Dachbegrünung / Innenhof",
+      "buyer": "Universitätsklinikum Essen AÖR",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112713"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-11-10T09:00:00.000Z",
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/697175-2026",
+      "matchedCpv": [
+        "45112700",
+        "45112713"
+      ],
+      "score": 63
+    },
+    "699014-2026": {
+      "id": "699014-2026",
+      "publishedAt": "2026-10-08T22:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – Zentralisierung Nuklearmedizin in Haus 3 - Los 302 Dachdecker- und Klempnerarbeiten",
+      "buyer": "Universitätsklinikum Leipzig AöR",
+      "buyerCity": "Leipzig",
+      "country": "DEU",
+      "cpv": [
+        "45215100",
+        "45261410",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45215100",
+      "valueEur": null,
+      "deadline": "2026-11-10T12:00:00.000Z",
+      "nuts": [
+        "DED51",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/699014-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-10-08T11:32:28.468Z"
+  "lastRun": "2026-10-09T11:27:37.027Z"
 }
