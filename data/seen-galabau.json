@@ -2321,7 +2321,11 @@
     "705771-2026": "2026-10-13T12:02:35.216Z",
     "706308-2026": "2026-10-13T12:02:35.216Z",
     "707253-2026": "2026-10-13T12:02:35.216Z",
-    "706051-2026": "2026-10-13T12:02:35.216Z"
+    "706051-2026": "2026-10-13T12:02:35.216Z",
+    "707622-2026": "2026-10-14T09:39:32.582Z",
+    "708645-2026": "2026-10-14T09:39:32.582Z",
+    "708581-2026": "2026-10-14T09:39:32.582Z",
+    "709479-2026": "2026-10-14T09:39:32.582Z"
   },
   "notices": {
     "519810-2026": {
@@ -59708,7 +59712,7 @@
         "77300000",
         "77211500"
       ],
-      "score": 68
+      "score": 63
     },
     "636489-2026": {
       "id": "636489-2026",
@@ -63941,7 +63945,125 @@
         "45112712"
       ],
       "score": 63
+    },
+    "707622-2026": {
+      "id": "707622-2026",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "title": "Deutschland – Gebäude- und Betriebsmittelverwaltung – Facility Management - Regionalzentren",
+      "buyer": "50Hertz Transmission GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "79993000",
+        "90910000",
+        "50700000",
+        "98341130",
+        "55500000",
+        "50730000",
+        "50712000",
+        "79710000",
+        "50711000",
+        "90620000",
+        "90611000",
+        "90610000",
+        "98341140",
+        "55520000",
+        "77300000"
+      ],
+      "cpvMain": "79993000",
+      "valueEur": 90000000,
+      "deadline": "2026-11-16T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU",
+        "DE80K",
+        "DE80N",
+        "DE40C",
+        "DED45",
+        "DEE07",
+        "DEG01",
+        "DEE0B",
+        "DE600",
+        "DE409"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/707622-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 85
+    },
+    "708645-2026": {
+      "id": "708645-2026",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Freianlagen Icking",
+      "buyer": "Gemeinde Icking",
+      "buyerCity": "Icking",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45000000",
+        "45112712"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-11-18T07:00:00.000Z",
+      "nuts": [
+        "DE216",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/708645-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112712"
+      ],
+      "score": 83
+    },
+    "708581-2026": {
+      "id": "708581-2026",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Natur und Landschaft / Neugestaltung Willy-Brandt-Park Bauabschnitt 03 - Garten- und Landschaftsbauarbeiten",
+      "buyer": "Stadt Norderstedt - Die Oberbürgermeisterin",
+      "buyerCity": "Norderstedt",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 655635.82,
+      "deadline": null,
+      "nuts": [
+        "DEF0D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/708581-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "709479-2026": {
+      "id": "709479-2026",
+      "publishedAt": "2026-10-13T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten",
+      "buyer": "Technische Universität Darmstadt",
+      "buyerCity": "Darmstadt",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-10-23T06:00:00.000Z",
+      "nuts": [
+        "DE711",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/709479-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
     }
   },
-  "lastRun": "2026-10-13T12:02:35.216Z"
+  "lastRun": "2026-10-14T09:39:32.582Z"
 }
