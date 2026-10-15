@@ -1,5 +1,135 @@
 [
   {
+    "id": "705530-2026",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Verkehrssicherungsmaßnahmen an kommunalen Bäumen",
+    "buyer": "Stadtverwaltung Hohen Neuendorf",
+    "buyerCity": "Hohen Neuendorf",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "77211400",
+      "77300000",
+      "77340000",
+      "77341000"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-11-12T09:00:00.000Z",
+    "nuts": [
+      "DE40A",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/705530-2026",
+    "matchedCpv": [
+      "77211500",
+      "77300000",
+      "77340000",
+      "77211400",
+      "77341000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-13T12:02:35.216Z"
+  },
+  {
+    "id": "705771-2026",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "title": "Deutschland – Pflege von Parkanlagen – Grün- und Freiflächenpflege 2027 ff.",
+    "buyer": "Grün Berlin GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77313000"
+    ],
+    "cpvMain": "77313000",
+    "valueEur": null,
+    "deadline": "2026-11-12T11:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/705771-2026",
+    "matchedCpv": [
+      "77313000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-13T12:02:35.216Z"
+  },
+  {
+    "id": "706308-2026",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "title": "Deutschland – Hausmeisterdienste – Facility-Management ZUE Gladbeck Verbund",
+    "buyer": "Bezirksregierung Münster",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "98341140",
+      "77310000",
+      "90620000"
+    ],
+    "cpvMain": "98341140",
+    "valueEur": null,
+    "deadline": "2026-11-23T07:00:00.000Z",
+    "nuts": [
+      "DEA36",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/706308-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-13T12:02:35.216Z"
+  },
+  {
+    "id": "707253-2026",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten im Gartendenkmal",
+    "buyer": "Bezirksamt Spandau von Berlin",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45112710"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-11-11T09:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/707253-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-10-13T12:02:35.216Z"
+  },
+  {
+    "id": "706051-2026",
+    "publishedAt": "2026-10-12T22:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Freianlagen Learning Hub // UTN",
+    "buyer": "Technische Universität Nürnberg",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45112712"
+    ],
+    "cpvMain": "45112712",
+    "valueEur": null,
+    "deadline": "2026-11-12T22:59:00.000Z",
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/706051-2026",
+    "matchedCpv": [
+      "45112712"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-10-13T12:02:35.216Z"
+  },
+  {
     "id": "701922-2026",
     "publishedAt": "2026-10-11T22:00:00.000Z",
     "title": "Deutschland – Gebäude- und Betriebsmittelverwaltung – Facility Management - Regionalzentren",
@@ -3768,7 +3898,7 @@
     "matchedCpv": [
       "45112714"
     ],
-    "score": 60,
+    "score": 55,
     "firstSeenAt": "2026-09-21T10:08:23.896Z"
   },
   {
