@@ -2338,7 +2338,11 @@
     "714623-2026": "2026-10-15T09:18:15.017Z",
     "714939-2026": "2026-10-15T09:18:15.017Z",
     "711526-2026": "2026-10-15T09:18:15.017Z",
-    "713511-2026": "2026-10-15T09:18:15.017Z"
+    "713511-2026": "2026-10-15T09:18:15.017Z",
+    "715149-2026": "2026-10-16T09:11:51.166Z",
+    "716715-2026": "2026-10-16T09:11:51.166Z",
+    "718475-2026": "2026-10-16T09:11:51.166Z",
+    "715132-2026": "2026-10-16T09:11:51.166Z"
   },
   "notices": {
     "519810-2026": {
@@ -59893,7 +59897,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "640543-2026": {
       "id": "640543-2026",
@@ -60138,7 +60142,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "650154-2026": {
       "id": "650154-2026",
@@ -60161,7 +60165,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "650155-2026": {
       "id": "650155-2026",
@@ -60518,7 +60522,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "655692-2026": {
       "id": "655692-2026",
@@ -60859,7 +60863,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "656478-2026": {
       "id": "656478-2026",
@@ -60917,7 +60921,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "657610-2026": {
       "id": "657610-2026",
@@ -60969,7 +60973,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "659189-2026": {
       "id": "659189-2026",
@@ -61015,7 +61019,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "658717-2026": {
       "id": "658717-2026",
@@ -61303,7 +61307,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "665592-2026": {
       "id": "665592-2026",
@@ -62781,7 +62785,7 @@
         "45112700",
         "45112720"
       ],
-      "score": 68
+      "score": 63
     },
     "687481-2026": {
       "id": "687481-2026",
@@ -63686,7 +63690,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "700661-2026": {
       "id": "700661-2026",
@@ -64399,7 +64403,122 @@
         "45112713"
       ],
       "score": 60
+    },
+    "715149-2026": {
+      "id": "715149-2026",
+      "publishedAt": "2026-10-15T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvereinbarung Mäharbeiten Herbst Winter im Bezirk der SM-Burgwedel 2027-2030",
+      "buyer": "Region Hannover",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 472510.8,
+      "deadline": "2026-11-19T07:45:00.000Z",
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/715149-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "716715-2026": {
+      "id": "716715-2026",
+      "publishedAt": "2026-10-15T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – Räumungsarbeiten an Gewässern Landschaftsbauarbeiten",
+      "buyer": "Magistrat der Stadt Kassel",
+      "buyerCity": "Kassel",
+      "country": "DEU",
+      "cpv": [
+        "77000000",
+        "77340000"
+      ],
+      "cpvMain": "77000000",
+      "valueEur": null,
+      "deadline": "2026-11-16T08:00:00.000Z",
+      "nuts": [
+        "DE731",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/716715-2026",
+      "matchedCpv": [
+        "77340000"
+      ],
+      "score": 83
+    },
+    "718475-2026": {
+      "id": "718475-2026",
+      "publishedAt": "2026-10-15T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege für Außenanlagen und Mulden gemäß DIN 18919 Region Ost",
+      "buyer": "Berliner Wasserbetriebe",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-19T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/718475-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "715132-2026": {
+      "id": "715132-2026",
+      "publishedAt": "2026-10-15T22:00:00.000Z",
+      "title": "Deutschland – Komplett- oder Teilbauleistungen im Hochbau sowie Tiefbauarbeiten – Neubau Gesamtschule mit Sporthalle Krampnitz - Teil-Generalunternehmer-Leistungen (Rohbau und Gebäudehülle)",
+      "buyer": "Entwicklungsträger Potsdam GmbH Treuhänder der Stadt",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "45200000",
+        "45000000",
+        "45112200",
+        "45112700",
+        "45112713",
+        "45210000",
+        "45223220",
+        "45223800",
+        "45223820",
+        "45261000",
+        "45261100",
+        "45261200",
+        "45261210",
+        "45261300",
+        "45261410",
+        "45262311",
+        "45262520",
+        "45320000",
+        "45421100",
+        "45421110",
+        "45421130",
+        "45422000"
+      ],
+      "cpvMain": "45200000",
+      "valueEur": 0.01,
+      "deadline": null,
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/715132-2026",
+      "matchedCpv": [
+        "45112700",
+        "45112713"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-10-15T09:18:15.017Z"
+  "lastRun": "2026-10-16T09:11:51.166Z"
 }
