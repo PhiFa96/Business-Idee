@@ -2356,7 +2356,15 @@
     "719809-2026": "2026-10-19T10:08:46.979Z",
     "720099-2026": "2026-10-19T10:08:46.979Z",
     "720253-2026": "2026-10-19T10:08:46.979Z",
-    "722285-2026": "2026-10-19T10:08:46.979Z"
+    "722285-2026": "2026-10-19T10:08:46.979Z",
+    "725356-2026": "2026-10-20T09:34:18.751Z",
+    "722691-2026": "2026-10-20T09:34:18.751Z",
+    "723245-2026": "2026-10-20T09:34:18.751Z",
+    "724464-2026": "2026-10-20T09:34:18.751Z",
+    "725624-2026": "2026-10-20T09:34:18.751Z",
+    "723573-2026": "2026-10-20T09:34:18.751Z",
+    "725741-2026": "2026-10-20T09:34:18.751Z",
+    "725811-2026": "2026-10-20T09:34:18.751Z"
   },
   "notices": {
     "519810-2026": {
@@ -60426,7 +60434,7 @@
       "matchedCpv": [
         "77341000"
       ],
-      "score": 48
+      "score": 43
     },
     "646734-2026": {
       "id": "646734-2026",
@@ -61502,7 +61510,7 @@
         "77314000",
         "77340000"
       ],
-      "score": 83
+      "score": 68
     },
     "669613-2026": {
       "id": "669613-2026",
@@ -64909,7 +64917,225 @@
         "45112711"
       ],
       "score": 48
+    },
+    "725356-2026": {
+      "id": "725356-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Baustelleneinrichtung – Grundinstandsetzung der Straße inkl. Nebenflächen und Umbau der Haltestellen",
+      "buyer": "Landesbetrieb Straßen, Brücken und Gewässer",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45113000",
+        "03120000",
+        "03452000",
+        "34928471",
+        "44113120",
+        "44113130",
+        "44113600",
+        "44163110",
+        "44423400",
+        "44912400",
+        "45112000",
+        "45112730",
+        "45232453",
+        "45233221",
+        "45233222",
+        "45233290",
+        "45262300",
+        "63712700",
+        "77211500",
+        "77341000",
+        "90523100"
+      ],
+      "cpvMain": "45113000",
+      "valueEur": 2793839.63,
+      "deadline": "2026-11-17T09:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/725356-2026",
+      "matchedCpv": [
+        "77211500",
+        "45112730",
+        "77341000"
+      ],
+      "score": 95
+    },
+    "722691-2026": {
+      "id": "722691-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Straßenbauarbeiten – Schnittstelle Bahnhof Bitterfeld Objekt 1+5: Vorplatz+ZOB",
+      "buyer": "Stadt Bitterfeld-Wolfen",
+      "buyerCity": "Bitterfeld-Wolfen",
+      "country": "DEU",
+      "cpv": [
+        "45233120",
+        "45247110",
+        "34993000",
+        "45231300",
+        "45232451",
+        "45231000",
+        "45112710"
+      ],
+      "cpvMain": "45233120",
+      "valueEur": null,
+      "deadline": "2026-11-24T09:00:00.000Z",
+      "nuts": [
+        "DEE05",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/722691-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "723245-2026": {
+      "id": "723245-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Rahmenvertrag Jahrespflege 2027-2030",
+      "buyer": "Kommunalbetrieb Krefeld AöR",
+      "buyerCity": "Krefeld",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77310000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-17T10:00:00.000Z",
+      "nuts": [
+        "DEA14",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/723245-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000"
+      ],
+      "score": 83
+    },
+    "724464-2026": {
+      "id": "724464-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege für Außenanlagen gemäß DIN 18919 Region Süd",
+      "buyer": "Berliner Wasserbetriebe",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-01T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/724464-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "725624-2026": {
+      "id": "725624-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Garten- und Landschaftsbauarbeiten zur Bewirtschaftung und Instandsetzung an SBH I Schulbau Hamburg und GMH I Gebäudemanagement Hamburg GmbH bewirtschafteten Hamburger Standorten in 5 Losen",
+      "buyer": "SBH | Schulbau Hamburg",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 12992000,
+      "deadline": "2026-11-17T09:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/725624-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 65
+    },
+    "723573-2026": {
+      "id": "723573-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten – Dachdeckungsarbeiten",
+      "buyer": "Landeshauptstadt Hannover - Fachbereich Gebäudemanagement",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "45261210",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45261210",
+      "valueEur": 463494.1,
+      "deadline": null,
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/723573-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
+    },
+    "725741-2026": {
+      "id": "725741-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Baumpflege – U5 Verlängerung Frankfurter Berg - Baumgutachten",
+      "buyer": "Stadtwerke Verkehrsgesellschaft Frankfurt am Main mbH (VGF)",
+      "buyerCity": "Frankfurt am Main",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "71313000",
+        "77231500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 78875.11,
+      "deadline": null,
+      "nuts": [
+        "DE712",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/725741-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 60
+    },
+    "725811-2026": {
+      "id": "725811-2026",
+      "publishedAt": "2026-10-19T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Auftragsänderung 2: BLB NRW / NL Dortmund / Rhr Universität Bochum Forschungsbau THINK (WE 3534); / Garten- und Landschaftsarbeiten 010-24-00448",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Dortmund",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": 773228.4,
+      "deadline": null,
+      "nuts": [
+        "DEA51",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/725811-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-10-19T10:08:46.979Z"
+  "lastRun": "2026-10-20T09:34:18.751Z"
 }
