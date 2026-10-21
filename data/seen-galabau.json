@@ -2364,7 +2364,12 @@
     "725624-2026": "2026-10-20T09:34:18.751Z",
     "723573-2026": "2026-10-20T09:34:18.751Z",
     "725741-2026": "2026-10-20T09:34:18.751Z",
-    "725811-2026": "2026-10-20T09:34:18.751Z"
+    "725811-2026": "2026-10-20T09:34:18.751Z",
+    "729010-2026": "2026-10-21T09:29:57.272Z",
+    "729538-2026": "2026-10-21T09:29:57.272Z",
+    "726628-2026": "2026-10-21T09:29:57.272Z",
+    "727965-2026": "2026-10-21T09:29:57.272Z",
+    "727838-2026": "2026-10-21T09:29:57.272Z"
   },
   "notices": {
     "519810-2026": {
@@ -61648,7 +61653,7 @@
       "matchedCpv": [
         "77311000"
       ],
-      "score": 83
+      "score": 68
     },
     "672323-2026": {
       "id": "672323-2026",
@@ -61870,7 +61875,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "674428-2026": {
       "id": "674428-2026",
@@ -65135,7 +65140,137 @@
         "45112712"
       ],
       "score": 60
+    },
+    "729010-2026": {
+      "id": "729010-2026",
+      "publishedAt": "2026-10-20T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Entwicklungs und Unterhaltungspflege von Grünflächen und Winterdienst mit Schneeberäumung und Eisglättebeseitigung in zwei Losen Tempelhof und Neukölln",
+      "buyer": "STADT UND LAND Wohnbauten-Gesellschaft mbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "90620000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-20T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/729010-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "729538-2026": {
+      "id": "729538-2026",
+      "publishedAt": "2026-10-20T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Sanierung Schloss Hardenberg, Freianlagen BA03.2 - Garten- und Landschaftsbauarbeiten und Ingenieurbauarbeiten",
+      "buyer": "Stadt Velbert, Der Bürgermeister - Fachbereich 7 Immoblienservice",
+      "buyerCity": "Velbert",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45111213",
+        "45100000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-12-02T10:00:00.000Z",
+      "nuts": [
+        "DEA1C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/729538-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "726628-2026": {
+      "id": "726628-2026",
+      "publishedAt": "2026-10-20T22:00:00.000Z",
+      "title": "Deutschland – Erzeugnisse von Forstbaumschulen – Lieferung, Pflanzung und Pflanzenschutz von Forstpflanzen - Landesforsten Rheinland-Pfalz - Zentralstelle der Forstverwaltung",
+      "buyer": "Zentralstelle der Forstverwaltung",
+      "buyerCity": "Emmelshausen",
+      "country": "DEU",
+      "cpv": [
+        "03450000",
+        "77310000",
+        "03451000"
+      ],
+      "cpvMain": "03450000",
+      "valueEur": 765707,
+      "deadline": null,
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/726628-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 80
+    },
+    "727965-2026": {
+      "id": "727965-2026",
+      "publishedAt": "2026-10-20T22:00:00.000Z",
+      "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
+      "buyer": "SBH | Schulbau Hamburg",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45421100",
+        "45112000",
+        "45113000",
+        "45112713",
+        "45223220",
+        "45261210",
+        "45262310",
+        "45262670",
+        "45422100",
+        "45443000"
+      ],
+      "cpvMain": "45421100",
+      "valueEur": 10844000,
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/727965-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 65
+    },
+    "727838-2026": {
+      "id": "727838-2026",
+      "publishedAt": "2026-10-20T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – FCC Neubau - Außenanlagen",
+      "buyer": "GSI Helmholtzzentrum für Schwerionenforschung GmbH",
+      "buyerCity": "Darmstadt",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 36241.54,
+      "deadline": null,
+      "nuts": [
+        "DE711",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/727838-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-10-20T09:34:18.751Z"
+  "lastRun": "2026-10-21T09:29:57.272Z"
 }
