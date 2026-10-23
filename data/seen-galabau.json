@@ -2383,7 +2383,15 @@
     "730397-2026": "2026-10-22T09:33:08.448Z",
     "730578-2026": "2026-10-22T09:33:08.448Z",
     "731832-2026": "2026-10-22T09:33:08.448Z",
-    "733023-2026": "2026-10-22T09:33:08.448Z"
+    "733023-2026": "2026-10-22T09:33:08.448Z",
+    "734234-2026": "2026-10-23T09:29:04.045Z",
+    "736752-2026": "2026-10-23T09:29:04.045Z",
+    "734348-2026": "2026-10-23T09:29:04.045Z",
+    "736242-2026": "2026-10-23T09:29:04.045Z",
+    "734102-2026": "2026-10-23T09:29:04.045Z",
+    "736476-2026": "2026-10-23T09:29:04.045Z",
+    "736012-2026": "2026-10-23T09:29:04.045Z",
+    "735143-2026": "2026-10-23T09:29:04.045Z"
   },
   "notices": {
     "519810-2026": {
@@ -61394,7 +61402,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "666451-2026": {
       "id": "666451-2026",
@@ -61621,7 +61629,7 @@
       "matchedCpv": [
         "77313000"
       ],
-      "score": 83
+      "score": 68
     },
     "672606-2026": {
       "id": "672606-2026",
@@ -61644,7 +61652,7 @@
       "matchedCpv": [
         "77313000"
       ],
-      "score": 83
+      "score": 68
     },
     "673347-2026": {
       "id": "673347-2026",
@@ -61940,7 +61948,7 @@
         "45112710",
         "45112723"
       ],
-      "score": 83
+      "score": 68
     },
     "676194-2026": {
       "id": "676194-2026",
@@ -62470,7 +62478,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "684348-2026": {
       "id": "684348-2026",
@@ -64120,7 +64128,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "712319-2026": {
       "id": "712319-2026",
@@ -64193,7 +64201,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "714079-2026": {
       "id": "714079-2026",
@@ -65621,7 +65629,216 @@
         "77341000"
       ],
       "score": 60
+    },
+    "734234-2026": {
+      "id": "734234-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Gebäude- und Betriebsmittelverwaltung – Vergabe von Facility Management Leistungen",
+      "buyer": "Stadtentwicklungsgesellschaft Ladenburg",
+      "buyerCity": "Ladenburg",
+      "country": "DEU",
+      "cpv": [
+        "79993000",
+        "50000000",
+        "90911200",
+        "79710000",
+        "77310000"
+      ],
+      "cpvMain": "79993000",
+      "valueEur": null,
+      "deadline": "2026-11-23T11:00:00.000Z",
+      "nuts": [
+        "DE128",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/734234-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "736752-2026": {
+      "id": "736752-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Pflege Friedhöfe 2027ff",
+      "buyer": "mags - Mönchengladbacher Abfall-, Grün- und Straßenbetriebe AöR",
+      "buyerCity": "Mönchengladbach",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "45112714",
+        "98371111",
+        "77310000",
+        "77313000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-11-24T08:00:00.000Z",
+      "nuts": [
+        "DEA15",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/736752-2026",
+      "matchedCpv": [
+        "77314000",
+        "77310000",
+        "77313000",
+        "45112714"
+      ],
+      "score": 83
+    },
+    "734348-2026": {
+      "id": "734348-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Landschaftsbauarbeiten DIN 18320 ff. und Wegebauarbeiten DIN 18318 ff.",
+      "buyer": "Stadt Regensburg",
+      "buyerCity": "Regensburg",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45233222"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 505799.7,
+      "deadline": null,
+      "nuts": [
+        "DE232",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/734348-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "736242-2026": {
+      "id": "736242-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Messe Erfurt GmbH - Grün- und Außenanlagenpflege / WInterdienst",
+      "buyer": "Messe Erfurt GmbH",
+      "buyerCity": "Erfurt",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "90620000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 156000,
+      "deadline": null,
+      "nuts": [
+        "DEG01",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/736242-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 80
+    },
+    "734102-2026": {
+      "id": "734102-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für zwei Bundesliegenschaften in Nordrhein-Westfalen, Bundesanstalt für Immobilienaufgaben, Direktion Dortmund",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77314000",
+        "77342000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-10-29T08:00:00.000Z",
+      "nuts": [
+        "DEA2C",
+        "DEA23",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/734102-2026",
+      "matchedCpv": [
+        "77310000",
+        "77314000",
+        "77342000"
+      ],
+      "score": 68
+    },
+    "736476-2026": {
+      "id": "736476-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Garten- und Landschaftsbauarbeiten 1.BA IQREK",
+      "buyer": "Rhein-Erft-Kreis",
+      "buyerCity": "Bergheim",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45236230",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/736476-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "736012-2026": {
+      "id": "736012-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungs- und Klempnerarbeiten mit Dachbegrünung - Neubau Zooterrassen",
+      "buyer": "DEG Duisburger Einkaufsgesellschaft mbH",
+      "buyerCity": "Duisburg",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-11-17T09:00:00.000Z",
+      "nuts": [
+        "DEA12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/736012-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "735143-2026": {
+      "id": "735143-2026",
+      "publishedAt": "2026-10-22T22:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Neue Störschleife - Los 1: Wasserbau, Garten- und Landschaftsbau",
+      "buyer": "Stadt Itzehoe",
+      "buyerCity": "Itzehoe",
+      "country": "DEU",
+      "cpv": [
+        "45112711",
+        "45000000"
+      ],
+      "cpvMain": "45112711",
+      "valueEur": 11907146.25,
+      "deadline": null,
+      "nuts": [
+        "DEF0E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/735143-2026",
+      "matchedCpv": [
+        "45112711"
+      ],
+      "score": 50
     }
   },
-  "lastRun": "2026-10-22T09:33:08.448Z"
+  "lastRun": "2026-10-23T09:29:04.045Z"
 }
