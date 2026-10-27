@@ -2403,7 +2403,14 @@
     "738880-2026": "2026-10-26T10:23:34.477Z",
     "739652-2026": "2026-10-26T10:23:34.477Z",
     "741028-2026": "2026-10-26T10:23:34.477Z",
-    "738427-2026": "2026-10-26T10:23:34.477Z"
+    "738427-2026": "2026-10-26T10:23:34.477Z",
+    "742451-2026": "2026-10-27T09:58:15.561Z",
+    "743040-2026": "2026-10-27T09:58:15.561Z",
+    "744342-2026": "2026-10-27T09:58:15.561Z",
+    "744491-2026": "2026-10-27T09:58:15.561Z",
+    "744664-2026": "2026-10-27T09:58:15.561Z",
+    "744918-2026": "2026-10-27T09:58:15.561Z",
+    "743670-2026": "2026-10-27T09:58:15.561Z"
   },
   "notices": {
     "519810-2026": {
@@ -61325,7 +61332,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 80
+      "score": 75
     },
     "663950-2026": {
       "id": "663950-2026",
@@ -61391,7 +61398,7 @@
       "matchedCpv": [
         "77314000"
       ],
-      "score": 68
+      "score": 63
     },
     "666273-2026": {
       "id": "666273-2026",
@@ -61470,7 +61477,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 68
+      "score": 63
     },
     "664879-2026": {
       "id": "664879-2026",
@@ -61886,7 +61893,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 80
+      "score": 75
     },
     "674414-2026": {
       "id": "674414-2026",
@@ -61985,7 +61992,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "675305-2026": {
       "id": "675305-2026",
@@ -62168,7 +62175,7 @@
         "45112700",
         "45112720"
       ],
-      "score": 83
+      "score": 68
     },
     "679862-2026": {
       "id": "679862-2026",
@@ -62444,7 +62451,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "683877-2026": {
       "id": "683877-2026",
@@ -62685,7 +62692,7 @@
       "matchedCpv": [
         "77341000"
       ],
-      "score": 63
+      "score": 48
     },
     "685337-2026": {
       "id": "685337-2026",
@@ -62875,7 +62882,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "686098-2026": {
       "id": "686098-2026",
@@ -62935,7 +62942,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 68
+      "score": 63
     },
     "691742-2026": {
       "id": "691742-2026",
@@ -63261,7 +63268,7 @@
         "77310000",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "695371-2026": {
       "id": "695371-2026",
@@ -63366,7 +63373,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "698480-2026": {
       "id": "698480-2026",
@@ -64339,7 +64346,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "713657-2026": {
       "id": "713657-2026",
@@ -64787,7 +64794,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 68
+      "score": 63
     },
     "719228-2026": {
       "id": "719228-2026",
@@ -65872,7 +65879,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 95
+      "score": 80
     },
     "737642-2026": {
       "id": "737642-2026",
@@ -66170,7 +66177,191 @@
         "45112713"
       ],
       "score": 60
+    },
+    "742451-2026": {
+      "id": "742451-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Bauüberwachung der Pflege- und Reinigungsarbeiten von GaLaBau-Firmen",
+      "buyer": "WISTA.Plan GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77300000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-11-26T12:30:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/742451-2026",
+      "matchedCpv": [
+        "77314000",
+        "77300000"
+      ],
+      "score": 83
+    },
+    "743040-2026": {
+      "id": "743040-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Grünflächen-Pflegemaßnahmen im Entwicklungsbereich Berlin-Adlershof",
+      "buyer": "WISTA.Plan GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77300000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-11-26T12:30:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/743040-2026",
+      "matchedCpv": [
+        "77314000",
+        "77300000"
+      ],
+      "score": 83
+    },
+    "744342-2026": {
+      "id": "744342-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Pflanzenpflege von Hydrokulturen und Erdkulturen in Hamburg",
+      "buyer": "Techniker Krankenkasse",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77310000",
+        "77330000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-12T11:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/744342-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77330000"
+      ],
+      "score": 83
+    },
+    "744491-2026": {
+      "id": "744491-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – CCCLXXVIII-1-2026-TR-Gartenpflege",
+      "buyer": "Wohnbau Mainz GmbH",
+      "buyerCity": "Mainz",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "nuts": [
+        "DEB35",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/744491-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "744664-2026": {
+      "id": "744664-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Straßenreinigung und Straßenkehrdienste – Pflege des Straßenbegleitgrün in 46325 Borken (Weseke und Burlo)",
+      "buyer": "Stadt Borken",
+      "buyerCity": "Borken",
+      "country": "DEU",
+      "cpv": [
+        "90610000",
+        "77310000",
+        "90620000",
+        "90630000",
+        "90914000"
+      ],
+      "cpvMain": "90610000",
+      "valueEur": null,
+      "deadline": "2026-11-26T10:00:00.000Z",
+      "nuts": [
+        "DEA34",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/744664-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "744918-2026": {
+      "id": "744918-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Spielplätze – Donaupark West - Helikopterspielplatz",
+      "buyer": "Landesgartenschau 2028 GmbH",
+      "buyerCity": "Donauwörth",
+      "country": "DEU",
+      "cpv": [
+        "45112723",
+        "45112720",
+        "45112700",
+        "45236210",
+        "45112710"
+      ],
+      "cpvMain": "45112723",
+      "valueEur": null,
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "nuts": [
+        "DE27D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/744918-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112723",
+        "45112720",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "743670-2026": {
+      "id": "743670-2026",
+      "publishedAt": "2026-10-26T23:00:00.000Z",
+      "title": "Deutschland – Technische Unterstützung – Gelände- und Sensorpflege an der Wetterstation Schwerin und der Winterdienst am Radar-Standort Türkheim des Deutschen Wetterdienstes (DWD)",
+      "buyer": "Deutscher Wetterdienst",
+      "buyerCity": "Offenbach am Main",
+      "country": "DEU",
+      "cpv": [
+        "71356300",
+        "77314000",
+        "90620000"
+      ],
+      "cpvMain": "71356300",
+      "valueEur": 183941.91,
+      "deadline": null,
+      "nuts": [
+        "DE713",
+        "DEU",
+        "DE804",
+        "DE114"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/743670-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 80
     }
   },
-  "lastRun": "2026-10-26T10:23:34.477Z"
+  "lastRun": "2026-10-27T09:58:15.561Z"
 }
