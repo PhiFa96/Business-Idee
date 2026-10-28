@@ -2410,7 +2410,15 @@
     "744491-2026": "2026-10-27T09:58:15.561Z",
     "744664-2026": "2026-10-27T09:58:15.561Z",
     "744918-2026": "2026-10-27T09:58:15.561Z",
-    "743670-2026": "2026-10-27T09:58:15.561Z"
+    "743670-2026": "2026-10-27T09:58:15.561Z",
+    "745281-2026": "2026-10-28T10:44:27.318Z",
+    "746541-2026": "2026-10-28T10:44:27.318Z",
+    "747616-2026": "2026-10-28T10:44:27.318Z",
+    "747258-2026": "2026-10-28T10:44:27.318Z",
+    "748775-2026": "2026-10-28T10:44:27.318Z",
+    "748569-2026": "2026-10-28T10:44:27.318Z",
+    "749048-2026": "2026-10-28T10:44:27.318Z",
+    "745324-2026": "2026-10-28T10:44:27.318Z"
   },
   "notices": {
     "519810-2026": {
@@ -64396,7 +64404,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "714939-2026": {
       "id": "714939-2026",
@@ -66361,7 +66369,214 @@
         "77314000"
       ],
       "score": 80
+    },
+    "745281-2026": {
+      "id": "745281-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Verkehrssicherung in 2 Forstbetrieben (2 Fachlose)",
+      "buyer": "Landesbetrieb Forst Brandenburg - Vergabemanagement Standort Eberswalde",
+      "buyerCity": "Eberswalde",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "77341000"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-12T09:00:00.000Z",
+      "nuts": [
+        "DE405",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/745281-2026",
+      "matchedCpv": [
+        "77211500",
+        "77341000"
+      ],
+      "score": 83
+    },
+    "746541-2026": {
+      "id": "746541-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Hausmeisterdienstleistungen, Kehr- und Winterdienste und Außenanlagenpflege",
+      "buyer": "AOK PLUS - Die Gesundheitskasse für Sachsen und Thüringen",
+      "buyerCity": "Erfurt",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "90612000",
+        "90620000",
+        "77342000",
+        "77310000"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2026-11-27T10:00:00.000Z",
+      "nuts": [
+        "DED21",
+        "DEG01",
+        "DEU",
+        "DED41",
+        "DED51",
+        "DEG03"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/746541-2026",
+      "matchedCpv": [
+        "77310000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "747616-2026": {
+      "id": "747616-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Reingung Grünanlagen und Abfallbehälterleerung Bezirk 5, 2027 - 2028",
+      "buyer": "Umweltbetrieb Bremen",
+      "buyerCity": "Bremen",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "nuts": [
+        "DE501",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/747616-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "747258-2026": {
+      "id": "747258-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Mahdarbeiten",
+      "buyer": "Staatliches Bauamt Schweinfurt",
+      "buyerCity": "Schweinfurt",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 718591,
+      "deadline": null,
+      "nuts": [
+        "DE267",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/747258-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 80
+    },
+    "748775-2026": {
+      "id": "748775-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Fällen von Bäumen – Rahmenvereinbarung zur Baumpflege auf städtischen Liegenschaften der Stadt Hamm",
+      "buyer": "Stadt Hamm, Bauverwaltungsamt, Zentrales Beschaffungsmanagement",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "77211400",
+        "77211500"
+      ],
+      "cpvMain": "77211400",
+      "valueEur": 86313,
+      "deadline": null,
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/748775-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 80
+    },
+    "748569-2026": {
+      "id": "748569-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Kongresshalle Nürnberg _ Dachdeckerarbeiten Retentionsdach ü.3.OG ( Grundsätzliche Nutzbarmachung und Substanzsicherung)",
+      "buyer": "Stadt Nürnberg, Projektbaudienststelle Kulturgroßbauprojekte",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261310",
+        "45340000",
+        "45111100"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 3271443,
+      "deadline": null,
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/748569-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
+    },
+    "749048-2026": {
+      "id": "749048-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Umweltüberwachung im Bau – K54 DB-Brücke Buchholz - Ökologische Baubegleitung",
+      "buyer": "Landkreis Harburg - Zentrale Vergabestelle",
+      "buyerCity": "Winsen/Luhe",
+      "country": "DEU",
+      "cpv": [
+        "71313450",
+        "77211500",
+        "90712000"
+      ],
+      "cpvMain": "71313450",
+      "valueEur": 19649.83,
+      "deadline": null,
+      "nuts": [
+        "DE933",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/749048-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 60
+    },
+    "745324-2026": {
+      "id": "745324-2026",
+      "publishedAt": "2026-10-27T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Erweiterung der Berufsschule München Land mit Neubau einer Sporthalle und Wohnungen - VE306 Dachdeckungs- und Dachabdichtungsarbeiten",
+      "buyer": "Landratsamt München - Zentrale Vergabestelle und Einkauf",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "44112400",
+        "45261213",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 1,
+      "deadline": null,
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/745324-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-10-27T09:58:15.561Z"
+  "lastRun": "2026-10-28T10:44:27.318Z"
 }
