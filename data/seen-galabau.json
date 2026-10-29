@@ -2418,7 +2418,13 @@
     "748775-2026": "2026-10-28T10:44:27.318Z",
     "748569-2026": "2026-10-28T10:44:27.318Z",
     "749048-2026": "2026-10-28T10:44:27.318Z",
-    "745324-2026": "2026-10-28T10:44:27.318Z"
+    "745324-2026": "2026-10-28T10:44:27.318Z",
+    "749768-2026": "2026-10-29T11:01:44.523Z",
+    "752115-2026": "2026-10-29T11:01:44.523Z",
+    "752499-2026": "2026-10-29T11:01:44.523Z",
+    "752597-2026": "2026-10-29T11:01:44.523Z",
+    "750386-2026": "2026-10-29T11:01:44.523Z",
+    "749532-2026": "2026-10-29T11:01:44.523Z"
   },
   "notices": {
     "519810-2026": {
@@ -65790,7 +65796,7 @@
         "77314000",
         "77342000"
       ],
-      "score": 68
+      "score": 63
     },
     "736476-2026": {
       "id": "736476-2026",
@@ -66576,7 +66582,161 @@
         "45112713"
       ],
       "score": 40
+    },
+    "749768-2026": {
+      "id": "749768-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – Grünflächenpflege",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77313000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": "2026-11-09T12:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/749768-2026",
+      "matchedCpv": [
+        "77313000"
+      ],
+      "score": 83
+    },
+    "752115-2026": {
+      "id": "752115-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) Grünpflegeleistungen für eine Bundesliegenschaft in Schleswig-Holstein - VOEK 439-25 -",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77342000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2027-01-14T08:00:00.000Z",
+      "nuts": [
+        "DEF0D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/752115-2026",
+      "matchedCpv": [
+        "77314000",
+        "77342000"
+      ],
+      "score": 83
+    },
+    "752499-2026": {
+      "id": "752499-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – BLB NRW AC | Rahmenvertrag | Baumpflege und Baumkontrolle (005-26-00260)",
+      "buyer": "Bau- und Liegenschaftsbetrieb NRW Aachen",
+      "buyerCity": "Aachen",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "03120000",
+        "03452000",
+        "77211400",
+        "77340000",
+        "77341000"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-30T09:00:00.000Z",
+      "nuts": [
+        "DEA2D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/752499-2026",
+      "matchedCpv": [
+        "77211500",
+        "77340000",
+        "77211400",
+        "77341000"
+      ],
+      "score": 83
+    },
+    "752597-2026": {
+      "id": "752597-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege - Semperoper und Theaterwerkstätten",
+      "buyer": "Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement",
+      "buyerCity": "Dresden",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-04T08:00:00.000Z",
+      "nuts": [
+        "DED21",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/752597-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "750386-2026": {
+      "id": "750386-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – HGU_VITA_Freianlagen",
+      "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "buyerCity": "Bad Nauheim",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE71D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/750386-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
+    },
+    "749532-2026": {
+      "id": "749532-2026",
+      "publishedAt": "2026-10-28T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schwimmbäder – Dachabdichtungsarbeiten / Sanierung Freibad Remscheid Eschbachtal",
+      "buyer": "Stadt Remscheid, Fachdienst Sport und Freizeit",
+      "buyerCity": "Remscheid",
+      "country": "DEU",
+      "cpv": [
+        "45212212",
+        "45261420",
+        "45261410",
+        "45261900",
+        "45112713",
+        "45261215",
+        "45261300"
+      ],
+      "cpvMain": "45212212",
+      "valueEur": null,
+      "deadline": "2026-11-27T09:00:00.000Z",
+      "nuts": [
+        "DEA18",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/749532-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-10-28T10:44:27.318Z"
+  "lastRun": "2026-10-29T11:01:44.523Z"
 }
