@@ -2424,7 +2424,14 @@
     "752499-2026": "2026-10-29T11:01:44.523Z",
     "752597-2026": "2026-10-29T11:01:44.523Z",
     "750386-2026": "2026-10-29T11:01:44.523Z",
-    "749532-2026": "2026-10-29T11:01:44.523Z"
+    "749532-2026": "2026-10-29T11:01:44.523Z",
+    "753140-2026": "2026-10-30T10:58:47.268Z",
+    "753631-2026": "2026-10-30T10:58:47.268Z",
+    "754117-2026": "2026-10-30T10:58:47.268Z",
+    "754437-2026": "2026-10-30T10:58:47.268Z",
+    "753373-2026": "2026-10-30T10:58:47.268Z",
+    "754387-2026": "2026-10-30T10:58:47.268Z",
+    "753853-2026": "2026-10-30T10:58:47.268Z"
   },
   "notices": {
     "519810-2026": {
@@ -62784,7 +62791,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "688477-2026": {
       "id": "688477-2026",
@@ -62985,7 +62992,7 @@
         "77313000",
         "77315000"
       ],
-      "score": 83
+      "score": 68
     },
     "692569-2026": {
       "id": "692569-2026",
@@ -63309,7 +63316,7 @@
         "77340000",
         "77314100"
       ],
-      "score": 83
+      "score": 68
     },
     "695433-2026": {
       "id": "695433-2026",
@@ -65941,7 +65948,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "738424-2026": {
       "id": "738424-2026",
@@ -65988,7 +65995,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "739417-2026": {
       "id": "739417-2026",
@@ -66736,7 +66743,187 @@
         "45112713"
       ],
       "score": 63
+    },
+    "753140-2026": {
+      "id": "753140-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Pflege Außenanlage München",
+      "buyer": "Berufsgenossenschaft Holz und Metall",
+      "buyerCity": "Mainz",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77312000",
+        "77313000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 62000,
+      "deadline": "2026-11-10T09:00:00.000Z",
+      "nuts": [
+        "DE212",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/753140-2026",
+      "matchedCpv": [
+        "77314000",
+        "77312000",
+        "77313000"
+      ],
+      "score": 75
+    },
+    "753631-2026": {
+      "id": "753631-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvereinbarung für Baumpflegearbeiten",
+      "buyer": "Stadt Halle (Saale), Fachbereich Recht, Abt. Vergabe, Team Lieferungen/Dienstleistungen",
+      "buyerCity": "Halle (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEE02",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/753631-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 68
+    },
+    "754117-2026": {
+      "id": "754117-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Dienstleistungsvertrag Winterdienst Nebencampus, Grau-und Grünflächenpflege, Hausmeisterdienste und Sonderleistungen",
+      "buyer": "Otto-von-Guericke-Universität Magdeburg, Abt. Beschaffung, Zahlstelle (K13)",
+      "buyerCity": "Magdeburg",
+      "country": "DEU",
+      "cpv": [
+        "90000000",
+        "90620000",
+        "77000000",
+        "77310000",
+        "98000000",
+        "98341140"
+      ],
+      "cpvMain": "90000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEE03",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/754117-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 68
+    },
+    "754437-2026": {
+      "id": "754437-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Müssenredder 59 - Dachabdichtung und Begrünung",
+      "buyer": "SBH | Schulbau Hamburg",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45260000",
+        "45261300"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 19850000,
+      "deadline": "2026-12-01T09:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/754437-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 65
+    },
+    "753373-2026": {
+      "id": "753373-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – Neubau Mehrfamilienhäuser Wieslocher Straße, Gründach",
+      "buyer": "Stadt Walldorf",
+      "buyerCity": "Walldorf",
+      "country": "DEU",
+      "cpv": [
+        "45112713"
+      ],
+      "cpvMain": "45112713",
+      "valueEur": null,
+      "deadline": "2026-12-01T10:00:00.000Z",
+      "nuts": [
+        "DE128",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/753373-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "754387-2026": {
+      "id": "754387-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten – Neubau von vier Gebäuden für studentisches Wohnen, Rote Kaserne West WA8, Georg-Hermann-Alle 105 14469 Potsdam - Dachdeckerarbeiten",
+      "buyer": "ProPotsdam GmbH",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "45261210",
+        "45112713",
+        "45261300",
+        "45261410",
+        "45261420",
+        "45261900"
+      ],
+      "cpvMain": "45261210",
+      "valueEur": null,
+      "deadline": "2026-12-03T09:00:00.000Z",
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/754387-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "753853-2026": {
+      "id": "753853-2026",
+      "publishedAt": "2026-10-29T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Schulgebäude – Neubau einer fünfzügigen Grundschule mit Zweifeldsporthalle in 67574 Osthofen - Garten- und Landschaftsbauarbeiten",
+      "buyer": "Verbandsgemeindeverwaltung Wonnegau",
+      "buyerCity": "Osthofen",
+      "country": "DEU",
+      "cpv": [
+        "45214200",
+        "45112712",
+        "45232451"
+      ],
+      "cpvMain": "45214200",
+      "valueEur": 2100703.06,
+      "deadline": null,
+      "nuts": [
+        "DEB3B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/753853-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-10-29T11:01:44.523Z"
+  "lastRun": "2026-10-30T10:58:47.268Z"
 }
