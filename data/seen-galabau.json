@@ -2445,7 +2445,10 @@
     "757448-2026": "2026-11-02T12:46:08.276Z",
     "760121-2026": "2026-11-02T12:46:08.276Z",
     "760350-2026": "2026-11-02T12:46:08.276Z",
-    "757908-2026": "2026-11-02T12:46:08.276Z"
+    "757908-2026": "2026-11-02T12:46:08.276Z",
+    "763316-2026": "2026-11-03T12:12:07.917Z",
+    "763516-2026": "2026-11-03T12:12:07.917Z",
+    "763228-2026": "2026-11-03T12:12:07.917Z"
   },
   "notices": {
     "519810-2026": {
@@ -62388,7 +62391,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 80
+      "score": 75
     },
     "681587-2026": {
       "id": "681587-2026",
@@ -62555,7 +62558,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "685382-2026": {
       "id": "685382-2026",
@@ -62707,7 +62710,7 @@
         "45112700",
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "683513-2026": {
       "id": "683513-2026",
@@ -63458,7 +63461,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "697667-2026": {
       "id": "697667-2026",
@@ -63712,7 +63715,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "702858-2026": {
       "id": "702858-2026",
@@ -64064,7 +64067,7 @@
       "matchedCpv": [
         "45112712"
       ],
-      "score": 63
+      "score": 48
     },
     "707622-2026": {
       "id": "707622-2026",
@@ -65391,7 +65394,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "732322-2026": {
       "id": "732322-2026",
@@ -67298,7 +67301,101 @@
         "45112700"
       ],
       "score": 60
+    },
+    "763316-2026": {
+      "id": "763316-2026",
+      "publishedAt": "2026-11-02T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – GMH Freianlagen",
+      "buyer": "RVK | Regionalverkehr Köln GmbH",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-01T11:00:00.000Z",
+      "nuts": [
+        "DEA2B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/763316-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "763516-2026": {
+      "id": "763516-2026",
+      "publishedAt": "2026-11-02T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Landschaftsbauarbeiten Stadionpark (Los 4: Sportinsel)",
+      "buyer": "Stadt Hürth",
+      "buyerCity": "Hürth",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45111000",
+        "45112500",
+        "45112710",
+        "45112711",
+        "45112720",
+        "45112723",
+        "45212200",
+        "45212210",
+        "45221250",
+        "45231300",
+        "45232120",
+        "45232130",
+        "45232150",
+        "45233222",
+        "45262300",
+        "45262670",
+        "45310000",
+        "45332300"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA27",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/763516-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112711",
+        "45112720",
+        "45112723"
+      ],
+      "score": 68
+    },
+    "763228-2026": {
+      "id": "763228-2026",
+      "publishedAt": "2026-11-02T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – NKJP_363_Dachbeläge_Flachdach",
+      "buyer": "Bezirk Oberfranken, -namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+      "buyerCity": "Bayreuth",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-12-07T12:00:00.000Z",
+      "nuts": [
+        "DE242",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/763228-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-11-02T12:46:08.276Z"
+  "lastRun": "2026-11-03T12:12:07.917Z"
 }
