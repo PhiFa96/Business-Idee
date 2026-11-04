@@ -2448,7 +2448,14 @@
     "757908-2026": "2026-11-02T12:46:08.276Z",
     "763316-2026": "2026-11-03T12:12:07.917Z",
     "763516-2026": "2026-11-03T12:12:07.917Z",
-    "763228-2026": "2026-11-03T12:12:07.917Z"
+    "763228-2026": "2026-11-03T12:12:07.917Z",
+    "767451-2026": "2026-11-04T12:24:07.370Z",
+    "767519-2026": "2026-11-04T12:24:07.370Z",
+    "765684-2026": "2026-11-04T12:24:07.370Z",
+    "766232-2026": "2026-11-04T12:24:07.370Z",
+    "767364-2026": "2026-11-04T12:24:07.370Z",
+    "764353-2026": "2026-11-04T12:24:07.370Z",
+    "766662-2026": "2026-11-04T12:24:07.370Z"
   },
   "notices": {
     "519810-2026": {
@@ -63149,7 +63156,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "689918-2026": {
       "id": "689918-2026",
@@ -67395,7 +67402,181 @@
         "45112713"
       ],
       "score": 63
+    },
+    "767451-2026": {
+      "id": "767451-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflegeleistungen von Grün- und Freiflächen der Vier-Tore-Stadt Neubrandenburg – Stadtgebiet Ost I",
+      "buyer": "Vier-Tore-Stadt Neubrandenburg",
+      "buyerCity": "Neubrandenburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 591541.81,
+      "deadline": "2026-12-10T08:00:00.000Z",
+      "nuts": [
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/767451-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "767519-2026": {
+      "id": "767519-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflegeleistungen von Grün- und Freiflächen der Vier-Tore-Stadt Neubrandenburg – Stadtgebiet Ost II (6 Lose)",
+      "buyer": "Vier-Tore-Stadt Neubrandenburg",
+      "buyerCity": "Neubrandenburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 428565,
+      "deadline": "2026-12-10T08:00:00.000Z",
+      "nuts": [
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/767519-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "765684-2026": {
+      "id": "765684-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management - ZUE Lohmar",
+      "buyer": "Bezirksregierung Köln",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000",
+        "90620000",
+        "90630000",
+        "98341100"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2026-12-07T11:00:00.000Z",
+      "nuts": [
+        "DEA2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/765684-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "766232-2026": {
+      "id": "766232-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – ST 26041 Pflege der Außenanlagen des Rhein-Kreises-Neuss (16 Objekte in unterschiedlichen Städten und Gemeinden, Dienstleistung im Bereich Außenanlagen für ca. 3 Jahre) in 2 Losen",
+      "buyer": "Rhein-Kreis Neuss - Die Landrätin - Zentrales Vergabemanagement",
+      "buyerCity": "Grevenbroich",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-12-04T08:00:00.000Z",
+      "nuts": [
+        "DEA1D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/766232-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "767364-2026": {
+      "id": "767364-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag Grünflächenpflege 2027",
+      "buyer": "Magistrat der Stadt Kassel",
+      "buyerCity": "Kassel",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-14T08:00:00.000Z",
+      "nuts": [
+        "DE731",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/767364-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "764353-2026": {
+      "id": "764353-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvertrag Baumpflege- und Gärtnerleistungen im Berliner Stadtgebiet.",
+      "buyer": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 5005499.19,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/764353-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 80
+    },
+    "766662-2026": {
+      "id": "766662-2026",
+      "publishedAt": "2026-11-03T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – KiTA Beindersheim - Los 10 - Garten- u. Landschaftsbauarbeiten",
+      "buyer": "Verbandsgemeindeverwaltung Lambsheim-Heßheim Verwaltungsstelle Heßheim",
+      "buyerCity": "Heßheim",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45112700",
+        "45112712"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 665120.42,
+      "deadline": null,
+      "nuts": [
+        "DEB3I",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/766662-2026",
+      "matchedCpv": [
+        "45112700",
+        "45112712"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-11-03T12:12:07.917Z"
+  "lastRun": "2026-11-04T12:24:07.370Z"
 }

@@ -1,5 +1,380 @@
 [
   {
+    "id": "760174-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Landschaftsbauarbeiten",
+    "buyer": "Handwerkskammer Rheinhessen",
+    "buyerCity": "Mainz",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 2000000,
+    "deadline": "2026-11-27T11:00:00.000Z",
+    "nuts": [
+      "DEB35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/760174-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "757767-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Pflege von Parkanlagen – Parkpflege Los 3",
+    "buyer": "Grün Berlin GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "77313000"
+    ],
+    "cpvMain": "77313000",
+    "valueEur": null,
+    "deadline": "2026-11-30T11:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/757767-2026",
+    "matchedCpv": [
+      "77313000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "758105-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Pflege und Unterhaltung exponierter Halden",
+    "buyer": "RVR Ruhr Grün",
+    "buyerCity": "Essen",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-12-01T10:00:00.000Z",
+    "nuts": [
+      "DEA13",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/758105-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "758447-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Biotop",
+    "buyer": "SVHI Stadtverkehr Hildesheim GmbH",
+    "buyerCity": "Hildesheim",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45112710"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-12-02T09:00:00.000Z",
+    "nuts": [
+      "DE925",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/758447-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "758453-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Garten- und Baumpflegearbeiten für das Landesfunkhaus Niedersachsen",
+    "buyer": "Norddeutscher Rundfunk",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77340000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-12-01T09:00:00.000Z",
+    "nuts": [
+      "DE929",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/758453-2026",
+    "matchedCpv": [
+      "77300000",
+      "77340000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "758543-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege im Stadtgebiet 2027, Lose 1 bis 3",
+    "buyer": "Stadtverwaltung Kaiserslautern - Stabstelle IV.1 Zentrale Vergabestelle",
+    "buyerCity": "Kaiserslautern",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-12-01T09:00:00.000Z",
+    "nuts": [
+      "DEB32",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/758543-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "758456-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflegeleistungen für zwei Bundesliegenschaften in Lübeck, Bundesanstalt für Immobilienaufgaben, Direktion Rostock - VOEK 484-25 -",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77342000",
+      "77310000",
+      "77300000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": 2853915.66,
+    "deadline": null,
+    "nuts": [
+      "DEF03",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/758456-2026",
+    "matchedCpv": [
+      "77314000",
+      "77310000",
+      "77300000",
+      "77342000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "759116-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Parkanlagen – Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Maxiplaza, Durchgang, nördl. MaxiGarten",
+    "buyer": "Hamm.Invest GmbH",
+    "buyerCity": "Hamm",
+    "country": "DEU",
+    "cpv": [
+      "45112711",
+      "34928480",
+      "45111000",
+      "45112000",
+      "45232120",
+      "45232450",
+      "45236250",
+      "45247270",
+      "45262400",
+      "45342000",
+      "77310000"
+    ],
+    "cpvMain": "45112711",
+    "valueEur": 2057966.46,
+    "deadline": null,
+    "nuts": [
+      "DEA54",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/759116-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112711"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "760181-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Grünpflegeleistungen für zwei Bundesliegenschaften in Berlin, Bundesanstalt für Immobilienaufgaben, Direktion Berlin (Vergabenummer VOEK 012-23)",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77342000",
+      "77310000",
+      "77300000",
+      "92531000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": 478302.46,
+    "deadline": null,
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/760181-2026",
+    "matchedCpv": [
+      "77314000",
+      "77310000",
+      "77300000",
+      "77342000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "756783-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Rahmenvertrag für Baumpflegerische Maßnahmen an Bäumen für die Landeshauptstadt Potsdam in 7 Losen",
+    "buyer": "Landeshauptstadt Potsdam, Bereich Vergabemanagement",
+    "buyerCity": "Potsdam",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-11-02T09:00:00.000Z",
+    "nuts": [
+      "DE404",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/756783-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "757448-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Baumschnitt – Baumpflege 2027",
+    "buyer": "Bauverwaltungsamt",
+    "buyerCity": "Konstanz",
+    "country": "DEU",
+    "cpv": [
+      "77341000"
+    ],
+    "cpvMain": "77341000",
+    "valueEur": null,
+    "deadline": "2026-12-02T09:00:00.000Z",
+    "nuts": [
+      "DE138",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/757448-2026",
+    "matchedCpv": [
+      "77341000"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "760121-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungs- und Dachbegrünungsarbeiten, 2. BA",
+    "buyer": "Landeshauptstadt München, Baureferat",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713",
+      "45261300"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": "2026-11-17T11:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/760121-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "760350-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – NKJP_363_Dachbeläge_Flachdach",
+    "buyer": "Bezirk Oberfranken, -namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": "2026-12-07T12:00:00.000Z",
+    "nuts": [
+      "DE242",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/760350-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
+    "id": "757908-2026",
+    "publishedAt": "2026-11-01T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – HWSB Elbdeich rechts MD-Cracau km 40,4-42,1 Ausgleichs- und Ersatzmaßnahmen",
+    "buyer": "Landesbetrieb für Hochwasserschutz und Wasserwirtschaft Sachsen-Anhalt",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "77310000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 58221.96,
+    "deadline": null,
+    "nuts": [
+      "DEE03",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/757908-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-02T12:46:08.276Z"
+  },
+  {
     "id": "753140-2026",
     "publishedAt": "2026-10-29T23:00:00.000Z",
     "title": "Deutschland – Grundstückspflege – Pflege Außenanlage München",
@@ -4065,7 +4440,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-10-07T11:16:00.235Z"
   },
   {
