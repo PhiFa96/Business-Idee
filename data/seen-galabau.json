@@ -2455,7 +2455,21 @@
     "766232-2026": "2026-11-04T12:24:07.370Z",
     "767364-2026": "2026-11-04T12:24:07.370Z",
     "764353-2026": "2026-11-04T12:24:07.370Z",
-    "766662-2026": "2026-11-04T12:24:07.370Z"
+    "766662-2026": "2026-11-04T12:24:07.370Z",
+    "769386-2026": "2026-11-05T12:39:11.599Z",
+    "771121-2026": "2026-11-05T12:39:11.599Z",
+    "767917-2026": "2026-11-05T12:39:11.599Z",
+    "768379-2026": "2026-11-05T12:39:11.599Z",
+    "769654-2026": "2026-11-05T12:39:11.599Z",
+    "770589-2026": "2026-11-05T12:39:11.599Z",
+    "770617-2026": "2026-11-05T12:39:11.599Z",
+    "771295-2026": "2026-11-05T12:39:11.599Z",
+    "771305-2026": "2026-11-05T12:39:11.599Z",
+    "768117-2026": "2026-11-05T12:39:11.599Z",
+    "769825-2026": "2026-11-05T12:39:11.599Z",
+    "769928-2026": "2026-11-05T12:39:11.599Z",
+    "769931-2026": "2026-11-05T12:39:11.599Z",
+    "770724-2026": "2026-11-05T12:39:11.599Z"
   },
   "notices": {
     "519810-2026": {
@@ -63285,7 +63299,7 @@
         "45112710",
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "694978-2026": {
       "id": "694978-2026",
@@ -67576,7 +67590,359 @@
         "45112712"
       ],
       "score": 60
+    },
+    "769386-2026": {
+      "id": "769386-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflegeleistungen von Grün- und Freiflächen der Vier-Tore-Stadt Neubrandenburg – Stadtgebiet Nord II (4 Lose)",
+      "buyer": "Vier-Tore-Stadt Neubrandenburg",
+      "buyerCity": "Neubrandenburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 466123.47,
+      "deadline": "2026-12-15T08:00:00.000Z",
+      "nuts": [
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/769386-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "771121-2026": {
+      "id": "771121-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflegeleistungen von Grün- und Freiflächen der Vier-Tore-Stadt Neubrandenburg – Stadtgebiet Nord I (5 Lose)",
+      "buyer": "Vier-Tore-Stadt Neubrandenburg",
+      "buyerCity": "Neubrandenburg",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 473786.56,
+      "deadline": "2026-12-15T08:00:00.000Z",
+      "nuts": [
+        "DE80J",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/771121-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "767917-2026": {
+      "id": "767917-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen der Stadt Hoyerswerda - Los 4.2 - Grundschule \"An der Elster\"",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-12-07T08:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/767917-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "768379-2026": {
+      "id": "768379-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen der Stadt Hoyerswerda - Los 4.3 - Grundschule \"Lindenschule\"",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-12-08T06:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/768379-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "769654-2026": {
+      "id": "769654-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Grünflächenpflege Los 5 im Stadtgebiet Ludwigshafen 2027 - Landschaftsgärtnerische Arbeiten",
+      "buyer": "Stadt Ludwigshafen, WBL Grünflächen und Friedhöfe",
+      "buyerCity": "Ludwigshafen",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-12-10T09:00:00.000Z",
+      "nuts": [
+        "DEB24",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/769654-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "770589-2026": {
+      "id": "770589-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen Stadt Hoyerswerda - Los 4.1-Grundschule \"Am Park\"",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-12-07T06:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/770589-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "770617-2026": {
+      "id": "770617-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen der Stadt Hoyerswerda - Los 4.4 - Handrij Zejler\" Grundschule",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": "2026-12-08T08:45:00.000Z",
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/770617-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "771295-2026": {
+      "id": "771295-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Abteilung Friedhöfe - Kronenpflege und Massariakontrolle an Platanen 2027-2029",
+      "buyer": "Grün und Gruga",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-12-03T09:00:00.000Z",
+      "nuts": [
+        "DEA13",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/771295-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "771305-2026": {
+      "id": "771305-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Externe Baumkontrolle B- und L-Straßen SM Eberswalde 2027",
+      "buyer": "Landesbetrieb Straßenwesen Brandenburg Dienststätte Eberswalde",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-12-08T09:00:00.000Z",
+      "nuts": [
+        "DE405",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/771305-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "768117-2026": {
+      "id": "768117-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Verkehrssicherungsmaßnahmen an kommunalen Bäumen",
+      "buyer": "Stadtverwaltung Hohen Neuendorf",
+      "buyerCity": "Hohen Neuendorf",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "77211400",
+        "77300000",
+        "77340000",
+        "77341000"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-12T09:00:00.000Z",
+      "nuts": [
+        "DE40A",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/768117-2026",
+      "matchedCpv": [
+        "77211500",
+        "77300000",
+        "77340000",
+        "77211400",
+        "77341000"
+      ],
+      "score": 68
+    },
+    "769825-2026": {
+      "id": "769825-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst Schulen Stadt Hoyerswerda - Los 1 - Léon-Foucault-Gymnasium",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/769825-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 68
+    },
+    "769928-2026": {
+      "id": "769928-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst in Schulen der Stadt Hoyerswerda - Los 2 - Lessing-Gymnasium",
+      "buyer": "Stadt Hoyerswerda",
+      "buyerCity": "Hoyerswerda",
+      "country": "DEU",
+      "cpv": [
+        "90919300",
+        "90610000",
+        "90620000",
+        "77310000"
+      ],
+      "cpvMain": "90919300",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DED2C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/769928-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 68
+    },
+    "769931-2026": {
+      "id": "769931-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – NBG Kloster Heiligenzell - CEF Maßnahmen",
+      "buyer": "Gemeinde Friesenheim",
+      "buyerCity": "Friesenheim",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112500",
+        "45112710"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE134",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/769931-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 68
+    },
+    "770724-2026": {
+      "id": "770724-2026",
+      "publishedAt": "2026-11-04T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – VE26 Gala Bau - St. Gabriel Füssen",
+      "buyer": "Stadt Füssen",
+      "buyerCity": "Füssen",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45112712"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": "2026-12-07T06:00:00.000Z",
+      "nuts": [
+        "DE27B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/770724-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-11-04T12:24:07.370Z"
+  "lastRun": "2026-11-05T12:39:11.599Z"
 }
