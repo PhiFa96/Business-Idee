@@ -1,5 +1,3291 @@
 [
   {
+    "id": "771754-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Starkstromanlage",
+    "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+    "buyerCity": "Erlangen",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "98341130"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": 1651879.56,
+    "deadline": "2026-12-08T08:00:00.000Z",
+    "nuts": [
+      "DE252",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771754-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772260-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Rohrleitungen – Standardleistungsverzeichnis über Standardleistungen zur Erstellung der Hausanschlüsse der Neubrandenburger Stadtwerke GmbH 2027 – 2029 mit Verlängerungsoption",
+    "buyer": "Neubrandenburger Stadtwerke GmbH",
+    "buyerCity": "Neubrandenburg",
+    "country": "DEU",
+    "cpv": [
+      "45231100",
+      "45311100"
+    ],
+    "cpvMain": "45231100",
+    "valueEur": 3170376,
+    "deadline": "2026-12-10T09:00:00.000Z",
+    "nuts": [
+      "DE80J",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772260-2026",
+    "matchedCpv": [
+      "45311100"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774524-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Sanierung Bürgerhaus und Integration Rathaus Bayerisch Gmain - Elektroinstallationsarbeiten",
+    "buyer": "Gemeinde Bayerisch Gmain",
+    "buyerCity": "Bayerisch Gmain",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 610000,
+    "deadline": "2026-12-07T10:00:00.000Z",
+    "nuts": [
+      "DE215",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774524-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771468-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – NKJP_430_Raumlufttechnische Anlagen",
+    "buyer": "Bezirk Oberfranken, namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45331100",
+      "45331200"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2027-01-13T10:00:00.000Z",
+    "nuts": [
+      "DE242",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771468-2026",
+    "matchedCpv": [
+      "45331000",
+      "45331100",
+      "45331200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771657-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Gebäude im Gesundheitswesen – Neubau \"Zentrum für seelische Gesundheit (ZfsG)\" am Klinikum Nürnberg, Campus Nord",
+    "buyer": "Klinikum Nürnberg",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45215100",
+      "45315000",
+      "45331000",
+      "45331231"
+    ],
+    "cpvMain": "45215100",
+    "valueEur": null,
+    "deadline": "2026-12-07T09:00:00.000Z",
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771657-2026",
+    "matchedCpv": [
+      "45315000",
+      "45331000",
+      "45331231"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771719-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Kindergärten – Neubau Kita am Reiterplatz_Hockenheim - Heizungsinstallation",
+    "buyer": "Postillion e.V.",
+    "buyerCity": "Wilhelmsfeld",
+    "country": "DEU",
+    "cpv": [
+      "45214100",
+      "45331000"
+    ],
+    "cpvMain": "45214100",
+    "valueEur": null,
+    "deadline": "2026-12-11T10:00:00.000Z",
+    "nuts": [
+      "DE128",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771719-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772068-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Kindergärten – Neubau Kita am Reiterplatz_ Hockenheim - Lüftungsinstallation",
+    "buyer": "Postillion e.V.",
+    "buyerCity": "Wilhelmsfeld",
+    "country": "DEU",
+    "cpv": [
+      "45214100",
+      "45331000"
+    ],
+    "cpvMain": "45214100",
+    "valueEur": null,
+    "deadline": "2026-12-11T10:00:00.000Z",
+    "nuts": [
+      "DE128",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772068-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772142-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – BLB NRW BB/ DU / BB1 / von-Seydlitz-Kaserne Kalkar / Neubau Wirtschafts- und Betreuungsgebäude / Küchentechnische Anlagen / 080-26-00730",
+    "buyer": "Bau- und Liegenschaftbetrieb NRW Bundesbau",
+    "buyerCity": "Düsseldorf",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45310000",
+      "45330000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-12-10T08:00:00.000Z",
+    "nuts": [
+      "DEA1B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772142-2026",
+    "matchedCpv": [
+      "45310000",
+      "45330000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772229-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Projekt Neubau ICE-Werk Dortmund-Hafen - VP 04 Los 2 - TGA in K4 und TGA in den Außenanlagen",
+    "buyer": "DB Fernverkehr AG (Bukr 13)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "45331000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-11-25T11:00:00.000Z",
+    "nuts": [
+      "DEA52",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772229-2026",
+    "matchedCpv": [
+      "45311000",
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772499-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Kindergärten – Neubau Kita am Reiterplatz_ Hockenheim - Elektroinstallationen",
+    "buyer": "Postillion e.V.",
+    "buyerCity": "Wilhelmsfeld",
+    "country": "DEU",
+    "cpv": [
+      "45214100",
+      "45311200"
+    ],
+    "cpvMain": "45214100",
+    "valueEur": null,
+    "deadline": "2026-12-11T10:00:00.000Z",
+    "nuts": [
+      "DE128",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772499-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772634-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Brandmeldeanlagen – KS Kinzigtal Strecke 3600; TK 2027",
+    "buyer": "DB InfraGO AG – Geschäftsbereich Fahrweg (Bukr 16)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45312100",
+      "45234100",
+      "45311000",
+      "45311200",
+      "45312200",
+      "45314300",
+      "45314310",
+      "45317000",
+      "71300000",
+      "34946120"
+    ],
+    "cpvMain": "45312100",
+    "valueEur": null,
+    "deadline": "2026-12-10T09:00:00.000Z",
+    "nuts": [
+      "DE719",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772634-2026",
+    "matchedCpv": [
+      "45311000",
+      "45311200",
+      "45317000",
+      "45312100",
+      "45312200",
+      "45314300",
+      "45314310"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772701-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Rüb Bln IV - Gebäudetechnik - Los 1: VP51 RLT-Zentralen, Los 2: VP52 Kanalbau RÜB",
+    "buyer": "Berliner Wasserbetriebe",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-11-30T09:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772701-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773190-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von elektrischen Leitungen – Elektrische Anlagen, Kommunikations- und Sicherheitstechnische Anlagen",
+    "buyer": "Staatliches Bau- und Liegenschaftsamt Rostock, die Bundesrepublik Deutschland vertretend",
+    "buyerCity": "Rostock",
+    "country": "DEU",
+    "cpv": [
+      "45310000",
+      "45312000",
+      "45314000",
+      "45311000"
+    ],
+    "cpvMain": "45310000",
+    "valueEur": null,
+    "deadline": "2026-12-10T22:59:00.000Z",
+    "nuts": [
+      "DE803",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773190-2026",
+    "matchedCpv": [
+      "45310000",
+      "45311000",
+      "45312000",
+      "45314000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773461-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Teilneubau Heinrich-Grupe-Schule 37124 Rosdorf - Elektroarbeiten Elektrotechnik PV-Anlage Kabel Leitungen Beleuchtung Signalanlage Alarmanlage Netzwerk",
+    "buyer": "Gemeinde Rosdorf",
+    "buyerCity": "Rosdorf",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "45311100",
+      "45311200",
+      "45312000",
+      "45315100",
+      "45316000",
+      "45314320",
+      "09331200"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-12-08T10:30:00.000Z",
+    "nuts": [
+      "DE91C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773461-2026",
+    "matchedCpv": [
+      "45311000",
+      "45311100",
+      "45311200",
+      "45316000",
+      "45312000",
+      "45315100",
+      "45314320"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773616-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installateurarbeiten – Neubau Gesamtschule Nord+ in Kassel - KG 410 Abwasser-, Wasser- und Gasanlagen",
+    "buyer": "Stadt Kassel Immobilien GmbH & Co. KG",
+    "buyerCity": "Kassel",
+    "country": "DEU",
+    "cpv": [
+      "45330000"
+    ],
+    "cpvMain": "45330000",
+    "valueEur": null,
+    "deadline": "2026-12-02T11:00:00.000Z",
+    "nuts": [
+      "DE731",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773616-2026",
+    "matchedCpv": [
+      "45330000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774148-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Stadt Grevesmühlen - Schulcampus 2. BA - Neubau Grundschule",
+    "buyer": "Stadt Grevesmühlen",
+    "buyerCity": "Grevesmühlen",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:45:00.000Z",
+    "nuts": [
+      "DE80M",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774148-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774330-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Neubau Gesamtschule Nord+ in Kassel - KG 420 Wärmeversorgungsanlagen",
+    "buyer": "Stadt Kassel Immobilien GmbH & Co. KG",
+    "buyerCity": "Kassel",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-11-25T11:00:00.000Z",
+    "nuts": [
+      "DE731",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774330-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774361-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – NKJP_420_Wärmeversorgungsanlagen",
+    "buyer": "Bezirk Oberfranken, namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45331100"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2027-01-13T13:00:00.000Z",
+    "nuts": [
+      "DE242",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774361-2026",
+    "matchedCpv": [
+      "45331000",
+      "45331100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774990-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – 0057 - Klinikum Memmingen, Neubau Klinikum - Zutrittskontrollanlage",
+    "buyer": "Klinikum Memmingen AöR",
+    "buyerCity": "Memmingen",
+    "country": "DEU",
+    "cpv": [
+      "45311000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-12-14T09:00:00.000Z",
+    "nuts": [
+      "DE274",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774990-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "775034-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Stromversorgungsanlagen – Photovoltaikanlage",
+    "buyer": "Landratsamt Eichstätt",
+    "buyerCity": "Eichstätt",
+    "country": "DEU",
+    "cpv": [
+      "45315300",
+      "45311000"
+    ],
+    "cpvMain": "45315300",
+    "valueEur": null,
+    "deadline": "2026-12-08T07:00:00.000Z",
+    "nuts": [
+      "DE219",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/775034-2026",
+    "matchedCpv": [
+      "45311000",
+      "45315300"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771392-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Heizungs- und sonstige Elektroinstallationen in Gebäuden – Umbau/ Erweiterung Kläranlage Probsteierhagen Los 5",
+    "buyer": "Zweckverband Ostholstein",
+    "buyerCity": "Sierksdorf",
+    "country": "DEU",
+    "cpv": [
+      "45315000"
+    ],
+    "cpvMain": "45315000",
+    "valueEur": 1199784.14,
+    "deadline": null,
+    "nuts": [
+      "DEF0A",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771392-2026",
+    "matchedCpv": [
+      "45315000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771600-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installateurarbeiten – Sanitäranlagen - Erweiterung und Aufstockung Anne-Frank-Berufskolleg Münster - Bauwerke Münster GmbH",
+    "buyer": "Bauwerke Münster GmbH",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "45330000"
+    ],
+    "cpvMain": "45330000",
+    "valueEur": 322469.14,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771600-2026",
+    "matchedCpv": [
+      "45330000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772219-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – VWR43_Erweiterung Jugendmaßregelvollzug",
+    "buyer": "Pfalzklinikum für Psychiatrie und Neurologie AdöR - Bau- und Flächenmanagement",
+    "buyerCity": "Klingenmünster",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45310000",
+      "45315100",
+      "45311200",
+      "45315300",
+      "45312100",
+      "45312000",
+      "32552000",
+      "45312200"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": 1228814.68,
+    "deadline": null,
+    "nuts": [
+      "DEB3H",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772219-2026",
+    "matchedCpv": [
+      "45310000",
+      "45311200",
+      "45315100",
+      "45315300",
+      "45312100",
+      "45312000",
+      "45312200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772757-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – 26E20115 - Polizeiinspektion Cuxhaven (BHZ II), Z-BU Sanierung Bestandsgebäude, Neuerrichtung von Heizungsverteilnetz und Heizflächen_Vergebener Auftrag",
+    "buyer": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
+    "buyerCity": "Cuxhaven",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 376980.95,
+    "deadline": null,
+    "nuts": [
+      "DE932",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772757-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772900-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Elektroinstallationsarbeiten",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 1067628.9,
+    "deadline": null,
+    "nuts": [
+      "DE241",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772900-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773191-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauleistungen im Hochbau – Sanierung Rathaus Arnsberg, Rathausplatz 1, 59759 Arnsberg - Heizungs- / Kälteinstallationsarbeiten",
+    "buyer": "Stadt Arnsberg",
+    "buyerCity": "Arnsberg",
+    "country": "DEU",
+    "cpv": [
+      "45210000",
+      "45331000"
+    ],
+    "cpvMain": "45210000",
+    "valueEur": 1844120.73,
+    "deadline": null,
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773191-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773416-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Elektroinstallationsarbeiten",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 1374879.72,
+    "deadline": null,
+    "nuts": [
+      "DE241",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773416-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773559-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Umbau Energieversorgung",
+    "buyer": "Kreisausschuss des Landkreises Darmstadt-Dieburg für -FB 221 Technisches und strategisches Gebäudemanagement-",
+    "buyerCity": "Darmstadt",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 1040345.55,
+    "deadline": null,
+    "nuts": [
+      "DE716",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773559-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773606-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Elektroinstallationsarbeiten",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 1063195.32,
+    "deadline": null,
+    "nuts": [
+      "DE241",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773606-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774145-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Reparatur und Wartung von elektrischen und mechanischen Einrichtungen in Gebäuden – Wartung von Rauch- und Wärmeabzugsanlagen in allgemeinbildenden und beruflichen Schulen Hamburgs sowie an diversen Immobilien von GMH – Hochschulbau | Sport- und Sonderimmobilien - Dauerschuldverhältnis",
+    "buyer": "SBH | Schulbau Hamburg",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "50710000"
+    ],
+    "cpvMain": "50710000",
+    "valueEur": 204899.76,
+    "deadline": null,
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774145-2026",
+    "matchedCpv": [
+      "50710000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774337-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Sanierung Dreifeldsporthalle Kreisgymnasium St. Ursula in Haselünne: Lufttechnische Anlagen und Klimaanlagen",
+    "buyer": "Landkreis Emsland",
+    "buyerCity": "Meppen",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45331200",
+      "45331210",
+      "45331220"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 333830.06,
+    "deadline": null,
+    "nuts": [
+      "DE949",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774337-2026",
+    "matchedCpv": [
+      "45331000",
+      "45331200",
+      "45331210",
+      "45331220"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "775119-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauleistungen im Hochbau – Sanierung Rathaus Arnsberg, Rathausplatz 1, 59759 Arnsberg - Elektroarbeiten",
+    "buyer": "Stadt Arnsberg",
+    "buyerCity": "Arnsberg",
+    "country": "DEU",
+    "cpv": [
+      "45210000",
+      "45311000"
+    ],
+    "cpvMain": "45210000",
+    "valueEur": 3313292.55,
+    "deadline": null,
+    "nuts": [
+      "DEA57",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/775119-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773998-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von elektrischen Leitungen – ELT Anlagen 73-00390-3390-13a - PR1047703-3390-B",
+    "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45310000"
+    ],
+    "cpvMain": "45310000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEF03",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773998-2026",
+    "matchedCpv": [
+      "45310000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771443-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – Gewerbliche Schule Dillenburg, Umbau und Erweiterung, 2.BA Sanierung A-Trakt",
+    "buyer": "Kreisausschuss des Lahn-Dill-Kreises, 12.4 Zentrale Vergabe- und Submissionsstelle",
+    "buyerCity": "Wetzlar",
+    "country": "DEU",
+    "cpv": [
+      "45331100"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": null,
+    "deadline": "2026-12-08T07:30:00.000Z",
+    "nuts": [
+      "DE722",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771443-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771453-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Brandmeldeanlagen – Brandmeldeanlage",
+    "buyer": "Fraport AG",
+    "buyerCity": "Frankfurt am Main",
+    "country": "DEU",
+    "cpv": [
+      "45312100",
+      "45000000"
+    ],
+    "cpvMain": "45312100",
+    "valueEur": null,
+    "deadline": "2026-12-07T13:00:00.000Z",
+    "nuts": [
+      "DE712",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771453-2026",
+    "matchedCpv": [
+      "45312100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772533-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – GFK FZ 20 H u. I - Heizungsinstallationen 2026",
+    "buyer": "Bundesrepublik Deutschland, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+    "buyerCity": "Bad Nauheim",
+    "country": "DEU",
+    "cpv": [
+      "45331100"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": null,
+    "deadline": "2026-12-07T09:30:00.000Z",
+    "nuts": [
+      "DE735",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772533-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772760-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungs- und Klimaanlagen – 2475 Gewerbliche Schulen Dillenburg, Umbau und Erweiterung, 2.BA Sanierung A-Trakt, Lüftung",
+    "buyer": "Kreisausschuss des Lahn-Dill-Kreises, 12.4 Zentrale Vergabe- und Submissionsstelle",
+    "buyerCity": "Wetzlar",
+    "country": "DEU",
+    "cpv": [
+      "45331200"
+    ],
+    "cpvMain": "45331200",
+    "valueEur": null,
+    "deadline": "2026-12-08T08:30:00.000Z",
+    "nuts": [
+      "DE722",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772760-2026",
+    "matchedCpv": [
+      "45331200"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772773-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – NKJP_410_Sanitärinstallationsanlagen",
+    "buyer": "Bezirk Oberfranken, namens und im Auftrag der Gesundheitseinrichtungen des Bezirks Oberfranken (GeBO)",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "45332400",
+      "45332200",
+      "45332300"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2027-01-13T09:00:00.000Z",
+    "nuts": [
+      "DE242",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772773-2026",
+    "matchedCpv": [
+      "45332400",
+      "45332200",
+      "45332300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772825-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Aufzügen – Bezirkssportanlage Schmitzers Wiese_Sportplatzumkleide_Aufzug",
+    "buyer": "Stadt Koblenz",
+    "buyerCity": "Koblenz",
+    "country": "DEU",
+    "cpv": [
+      "45313100"
+    ],
+    "cpvMain": "45313100",
+    "valueEur": null,
+    "deadline": "2026-12-08T08:30:00.000Z",
+    "nuts": [
+      "DEB11",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772825-2026",
+    "matchedCpv": [
+      "45313100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773175-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – SV-MSI-261007-001 - Werkswohnungsbau Westend-/Zschokkestraße WA1, Sanitär incl. Feuerlöschanlagen",
+    "buyer": "Stadtwerke München GmbH",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-11-17T13:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773175-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773917-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Schaltanlagen – Neubau Gesamtschule Nord+ in Kassel - KG 480 Gebäude- und Anlagenautomation",
+    "buyer": "Stadt Kassel Immobilien GmbH & Co. KG",
+    "buyerCity": "Kassel",
+    "country": "DEU",
+    "cpv": [
+      "45315700"
+    ],
+    "cpvMain": "45315700",
+    "valueEur": null,
+    "deadline": "2026-11-27T11:00:00.000Z",
+    "nuts": [
+      "DE731",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773917-2026",
+    "matchedCpv": [
+      "45315700"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773971-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Stromversorgungsanlagen – Ersatzstromversorgungsanlagen",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45315300"
+    ],
+    "cpvMain": "45315300",
+    "valueEur": null,
+    "deadline": "2026-12-01T07:30:00.000Z",
+    "nuts": [
+      "DE241",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773971-2026",
+    "matchedCpv": [
+      "45315300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774174-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von kältetechnischen Anlagen – Neubau Gesamtschule Nord+ in Kassel - KG 420 Kälteanlagen",
+    "buyer": "Stadt Kassel Immobilien GmbH & Co. KG",
+    "buyerCity": "Kassel",
+    "country": "DEU",
+    "cpv": [
+      "45331231"
+    ],
+    "cpvMain": "45331231",
+    "valueEur": null,
+    "deadline": "2026-11-25T11:00:00.000Z",
+    "nuts": [
+      "DE731",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774174-2026",
+    "matchedCpv": [
+      "45331231"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774205-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bau von Krankenhauseinrichtungen – ZLD01-21 - GU-Paket 04b / GU 04b – Raumlufttechnische Anlagen / Gebäudeautomation",
+    "buyer": "Kliniken Landkreis Diepholz gGmbH",
+    "buyerCity": "Diepholz",
+    "country": "DEU",
+    "cpv": [
+      "45215140",
+      "45331210",
+      "42520000",
+      "45331200",
+      "45343100",
+      "45315700",
+      "45315100",
+      "48921000",
+      "31682210"
+    ],
+    "cpvMain": "45215140",
+    "valueEur": null,
+    "deadline": "2026-12-15T11:00:00.000Z",
+    "nuts": [
+      "DE922",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774205-2026",
+    "matchedCpv": [
+      "45331210",
+      "45331200",
+      "45315700",
+      "45315100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774540-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von lufttechnischen Anlagen in Außenanlagen – Lüftung IQREK",
+    "buyer": "Rhein-Erft-Kreis",
+    "buyerCity": "Bergheim",
+    "country": "DEU",
+    "cpv": [
+      "45331211",
+      "42512300",
+      "42500000"
+    ],
+    "cpvMain": "45331211",
+    "valueEur": null,
+    "deadline": "2026-11-26T09:00:00.000Z",
+    "nuts": [
+      "DEA27",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774540-2026",
+    "matchedCpv": [
+      "45331211"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774678-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – 2475 Gewerbliche Schulen Dillenburg, Umbau und Erweiterung, 2.BA Sanierung A-Trakt, Sanitär",
+    "buyer": "Kreisausschuss des Lahn-Dill-Kreises, 12.4 Zentrale Vergabe- und Submissionsstelle",
+    "buyerCity": "Wetzlar",
+    "country": "DEU",
+    "cpv": [
+      "45332400",
+      "45332200",
+      "45332300"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:30:00.000Z",
+    "nuts": [
+      "DE722",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774678-2026",
+    "matchedCpv": [
+      "45332400",
+      "45332200",
+      "45332300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774682-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – Stadt Grevesmühlen - Schulcampus 2. BA - Neubau Grundschule",
+    "buyer": "Stadt Grevesmühlen",
+    "buyerCity": "Grevesmühlen",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:35:00.000Z",
+    "nuts": [
+      "DE80M",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774682-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774720-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Kindergärten – Neubau Kita am Reiterplatz_Hockenheim - Sanitärinstallationen",
+    "buyer": "Postillion e.V.",
+    "buyerCity": "Wilhelmsfeld",
+    "country": "DEU",
+    "cpv": [
+      "45214100",
+      "45332400"
+    ],
+    "cpvMain": "45214100",
+    "valueEur": null,
+    "deadline": "2026-12-11T10:00:00.000Z",
+    "nuts": [
+      "DE128",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774720-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774829-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungs- und Klimaanlagen – Stadt Grevesmühlen - Schulcampus 2. BA - Neubau Grundschule",
+    "buyer": "Stadt Grevesmühlen",
+    "buyerCity": "Grevesmühlen",
+    "country": "DEU",
+    "cpv": [
+      "45331200"
+    ],
+    "cpvMain": "45331200",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:55:00.000Z",
+    "nuts": [
+      "DE80M",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774829-2026",
+    "matchedCpv": [
+      "45331200"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "771417-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Verkehrsampeln – Modernisierung von 5 LSA hinsichtlich C-ITS",
+    "buyer": "Stadt Bielefeld - Amt für Zentrale Leistungen",
+    "buyerCity": "Bielefeld",
+    "country": "DEU",
+    "cpv": [
+      "45316212"
+    ],
+    "cpvMain": "45316212",
+    "valueEur": 413471.38,
+    "deadline": null,
+    "nuts": [
+      "DEA41",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771417-2026",
+    "matchedCpv": [
+      "45316212"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772055-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungsanlagen – 26E20119 - Polizeiinspektion Cuxhaven (BHZ II), Z-BU Sanierung Bestandsgebäude, Errichtung von 2 Lüftungsanlagen_Vergebener Auftrag",
+    "buyer": "Land Niedersachsen vertreten durch das Staatliche Baumanagement Niedersachsen",
+    "buyerCity": "Cuxhaven",
+    "country": "DEU",
+    "cpv": [
+      "45331210"
+    ],
+    "cpvMain": "45331210",
+    "valueEur": 498903.43,
+    "deadline": null,
+    "nuts": [
+      "DE932",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772055-2026",
+    "matchedCpv": [
+      "45331210"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772471-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauleistungen im Hochbau – Sanierung Rathaus Arnsberg, Rathausplatz 1, 59759 Arnsberg - Lüftungsinstallationsarbeiten",
+    "buyer": "Stadt Arnsberg",
+    "buyerCity": "Arnsberg",
+    "country": "DEU",
+    "cpv": [
+      "45210000",
+      "45331210"
+    ],
+    "cpvMain": "45210000",
+    "valueEur": 1481375.89,
+    "deadline": null,
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772471-2026",
+    "matchedCpv": [
+      "45331210"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772526-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Generalsanierung Dreifachsporthalle Weißenburg i.Bay.",
+    "buyer": "Landkreis Weißenburg-Gunzenhausen",
+    "buyerCity": "Weißenburg",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "45212225",
+      "45311100",
+      "45311200",
+      "45317000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": 0.01,
+    "deadline": null,
+    "nuts": [
+      "DE25C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772526-2026",
+    "matchedCpv": [
+      "45311000",
+      "45311100",
+      "45311200",
+      "45317000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "773564-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungsanlagen – Lüftungstechnik - Erweiterung und Aufstockung Anne-Frank-Berufskolleg Münster - Bauwerke Münster GmbH",
+    "buyer": "Bauwerke Münster GmbH",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "45331210"
+    ],
+    "cpvMain": "45331210",
+    "valueEur": 1072554.69,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/773564-2026",
+    "matchedCpv": [
+      "45331210"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774948-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Sonstige Elektroinstallationsarbeiten – KWM / St. Marien-Krankenhaus Ahaus, Umbau und Erweiterung: Elektro- und Fernmeldetechnik 3.BA",
+    "buyer": "Klinikum Westmünsterland GmbH",
+    "buyerCity": "Ahaus",
+    "country": "DEU",
+    "cpv": [
+      "45317000"
+    ],
+    "cpvMain": "45317000",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DEA34",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774948-2026",
+    "matchedCpv": [
+      "45317000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "775067-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – Heizungsanlagen - Erweiterung und Aufstockung Anne-Frank-Berufskolleg Münster - Bauwerke Münster GmbH",
+    "buyer": "Bauwerke Münster GmbH",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "45331100"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": 336387.3,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/775067-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772623-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Reparatur und Wartung von Zentralheizungen – Rahmenvertrag Hydraulischer Abgleich",
+    "buyer": "STADT UND LAND Wohnbauten-Gesellschaft mbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "50720000",
+      "45331100"
+    ],
+    "cpvMain": "50720000",
+    "valueEur": null,
+    "deadline": "2026-11-16T09:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772623-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772925-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Schaltanlagen – UW Teningen Felderweiterung MS + E-Spulenerweiterung. +HS-Erneuerung",
+    "buyer": "EnBW Energie Baden-Württemberg AG",
+    "buyerCity": "Karlsruhe",
+    "country": "DEU",
+    "cpv": [
+      "45315700"
+    ],
+    "cpvMain": "45315700",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE122",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772925-2026",
+    "matchedCpv": [
+      "45315700"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774247-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Wasser- und Abwasserrohrleitungen – Erschließung Industriegebiet - Straßen- und Tiefbauleistungen",
+    "buyer": "Stadt Wertheim",
+    "buyerCity": "Wertheim",
+    "country": "DEU",
+    "cpv": [
+      "45231300",
+      "45232400",
+      "45233120",
+      "45316110",
+      "45232150",
+      "45233222",
+      "45232000",
+      "45247110",
+      "45232410",
+      "45112000",
+      "45232450",
+      "45231113",
+      "45221250",
+      "45232453"
+    ],
+    "cpvMain": "45231300",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE11B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774247-2026",
+    "matchedCpv": [
+      "45316110"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "774863-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – Heizungsinstallation nach DIN 18380",
+    "buyer": "Landratsamt Lörrach, - Vergabestelle -",
+    "buyerCity": "Lörrach",
+    "country": "DEU",
+    "cpv": [
+      "45331100"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE139",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/774863-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "772940-2026",
+    "publishedAt": "2026-11-05T23:00:00.000Z",
+    "title": "Deutschland – Blitzschutzarbeiten – Elektrische Kabel- und Leitungsanlagen in Gebäuden_Blitzschutzanlage",
+    "buyer": "Land Berlin – Sondervermögen Immobilien des Landes Berlin (SILB) c/o BIM Berliner Immobilienmanagement GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45312310"
+    ],
+    "cpvMain": "45312310",
+    "valueEur": 61557.5,
+    "deadline": null,
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/772940-2026",
+    "matchedCpv": [
+      "45312310"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-06T12:21:37.296Z"
+  },
+  {
+    "id": "770299-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Ahlbachgruppe - Neubau der Kläranlage - EMSR-Technik",
+    "buyer": "BayernGrund GmbH",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45311000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": 2089804,
+    "deadline": "2026-12-07T07:00:00.000Z",
+    "nuts": [
+      "DE26C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770299-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767547-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – SV-MBR-261002-003 - PRS: Neukonzeption Sauna Prinzregentenstadion, Elektrotechnik",
+    "buyer": "Stadtwerke München GmbH",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "45311200",
+      "45311100"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-11-16T13:00:00.000Z",
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767547-2026",
+    "matchedCpv": [
+      "45311000",
+      "45311200",
+      "45311100"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767987-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – CCLXXXIV-5-2024-BM-Große Langgasse und Steingasse_Elektro",
+    "buyer": "Wohnbau Mainz GmbH",
+    "buyerCity": "Mainz",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45311200"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-12-08T07:00:00.000Z",
+    "nuts": [
+      "DEB35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767987-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768151-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Sanierung A-Bau Berufliches Schulzentrum Kulmbach",
+    "buyer": "Landkreis Kulmbach",
+    "buyerCity": "Kulmbach",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-12-09T09:45:00.000Z",
+    "nuts": [
+      "DE24B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768151-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768279-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von elektrischen Leitungen – Gebäudeautomation, Besucherzentrum Historische Mühle",
+    "buyer": "Stiftung Preußische Schlösser und Gärten Berlin-Brandenburg",
+    "buyerCity": "Potsdam",
+    "country": "DEU",
+    "cpv": [
+      "45310000",
+      "48921000"
+    ],
+    "cpvMain": "45310000",
+    "valueEur": null,
+    "deadline": "2026-12-10T07:30:00.000Z",
+    "nuts": [
+      "DE404",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768279-2026",
+    "matchedCpv": [
+      "45310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768448-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Elektro | Erweiterung der Grund- und Mittelschule und Neugestaltung der Nachmittagsbetreuung",
+    "buyer": "Markt Dietmannsried",
+    "buyerCity": "Dietmannsried",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:00:00.000Z",
+    "nuts": [
+      "DE27E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768448-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768752-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Gebäudeautomation - RappSoDie",
+    "buyer": "Stadt Bad Rappenau",
+    "buyerCity": "Bad Rappenau",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": null,
+    "deadline": "2026-11-19T09:00:00.000Z",
+    "nuts": [
+      "DE118",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768752-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768809-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – HEGY - Erweiterungsbau Helfenstein-Gymnasium: 4.053 - Starkstromanlagen",
+    "buyer": "Stadt Geislingen an der Steige",
+    "buyerCity": "Geislingen an der Steige",
+    "country": "DEU",
+    "cpv": [
+      "45311000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-12-07T10:00:00.000Z",
+    "nuts": [
+      "DE114",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768809-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769555-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Neubau Feuerwehrgerätehaus mit Übungsturm Neustetten",
+    "buyer": "Gemeinde Neustetten",
+    "buyerCity": "Neustetten",
+    "country": "DEU",
+    "cpv": [
+      "45311200"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": null,
+    "deadline": "2026-12-04T09:30:00.000Z",
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769555-2026",
+    "matchedCpv": [
+      "45311200"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769799-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Neubau Feuerwehrgerätehaus mit Übungsturm Neustetten",
+    "buyer": "Gemeinde Neustetten",
+    "buyerCity": "Neustetten",
+    "country": "DEU",
+    "cpv": [
+      "45331000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-12-04T09:30:00.000Z",
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769799-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769939-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Rohrleitungen – Druckrohrleitungsarbeiten außerhalb von Gebäuden, Trinkwasserleitungen, Elektroleitungen/Leerrohre, Pumpstationen - IGA 2027 Zukunftsinsel mit Nordsternpark, Grothusstraße 201, 45883 Gelsenkirchen",
+    "buyer": "Stadt Gelsenkirchen",
+    "buyerCity": "Gelsenkirchen",
+    "country": "DEU",
+    "cpv": [
+      "45231100",
+      "45231110",
+      "45232150",
+      "45310000"
+    ],
+    "cpvMain": "45231100",
+    "valueEur": null,
+    "deadline": "2026-11-23T09:00:00.000Z",
+    "nuts": [
+      "DEA32",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769939-2026",
+    "matchedCpv": [
+      "45310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770577-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Konzerthaus, Brandschutzmaßnahmen und Innenausbau Theater",
+    "buyer": "Stadt Karlsruhe Amt für Hochbau und Gebäudewirtschaft",
+    "buyerCity": "Karlsruhe",
+    "country": "DEU",
+    "cpv": [
+      "45311200",
+      "45312100"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": null,
+    "deadline": "2026-12-09T09:30:00.000Z",
+    "nuts": [
+      "DE122",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770577-2026",
+    "matchedCpv": [
+      "45311200",
+      "45312100"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770998-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Elektroinstallation",
+    "buyer": "Landkreis Freising",
+    "buyerCity": "Freising",
+    "country": "DEU",
+    "cpv": [
+      "45311000",
+      "45311200"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": null,
+    "deadline": "2026-11-18T09:30:00.000Z",
+    "nuts": [
+      "DE21B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770998-2026",
+    "matchedCpv": [
+      "45311000",
+      "45311200"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767661-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – Elektro- und Dateninstallation – Hauptgebäude Dornheimer Weg 24",
+    "buyer": "e-netz Südhessen AG",
+    "buyerCity": "Darmstadt",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45311000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": 1862548,
+    "deadline": null,
+    "nuts": [
+      "DE711",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767661-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768144-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Neubau eines Fachraumtraktes für die BBS Papenburg: Heizung und Lüftung",
+    "buyer": "Landkreis Emsland",
+    "buyerCity": "Meppen",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45330000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 954324.64,
+    "deadline": null,
+    "nuts": [
+      "DE949",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768144-2026",
+    "matchedCpv": [
+      "45331000",
+      "45330000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768559-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von elektrischen Leitungen – Neubau eines Fachraumtraktes für die BBS Papenburg : Elektroarbeiten",
+    "buyer": "Landkreis Emsland",
+    "buyerCity": "Meppen",
+    "country": "DEU",
+    "cpv": [
+      "45310000",
+      "45300000",
+      "45311000"
+    ],
+    "cpvMain": "45310000",
+    "valueEur": 696577.77,
+    "deadline": null,
+    "nuts": [
+      "DE949",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768559-2026",
+    "matchedCpv": [
+      "45310000",
+      "45311000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768769-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installateurarbeiten und Verlegung von Abwasserleitungen – Neubau eines Fachraumtraktes für die BBS Papenburg: Sanitär",
+    "buyer": "Landkreis Emsland",
+    "buyerCity": "Meppen",
+    "country": "DEU",
+    "cpv": [
+      "45332000",
+      "45330000"
+    ],
+    "cpvMain": "45332000",
+    "valueEur": 190826.84,
+    "deadline": null,
+    "nuts": [
+      "DE949",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768769-2026",
+    "matchedCpv": [
+      "45332000",
+      "45330000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768962-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Heizung MBA - MBG, Neubau Martin-Behaim-Gymnasium",
+    "buyer": "WBG KOMMUNAL GmbH",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45300000",
+      "45330000",
+      "45331110"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 2034688,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768962-2026",
+    "matchedCpv": [
+      "45331000",
+      "45330000",
+      "45331110"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769168-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installateurarbeiten – Sanitär MBA - MBG, Neubau Martin-Behaim-Gymnasium",
+    "buyer": "WBG KOMMUNAL GmbH",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45330000",
+      "45300000",
+      "45332200",
+      "45332300",
+      "45332400"
+    ],
+    "cpvMain": "45330000",
+    "valueEur": 1042177,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769168-2026",
+    "matchedCpv": [
+      "45330000",
+      "45332200",
+      "45332300",
+      "45332400"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769303-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Elektroanlagen – Mittelspannungsanlage",
+    "buyer": "Staatliches Bauamt Traunstein",
+    "buyerCity": "Traunstein",
+    "country": "DEU",
+    "cpv": [
+      "45311000"
+    ],
+    "cpvMain": "45311000",
+    "valueEur": 403016.76,
+    "deadline": null,
+    "nuts": [
+      "DE215",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769303-2026",
+    "matchedCpv": [
+      "45311000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769715-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Maschinentechnische Installationen – Erweiterung der Kläranlage Schuttern - Los 2: Maschinen- und Elektrotechnische Ausrüstung",
+    "buyer": "Gemeinde Friesenheim - Abwasserverband Friesenheim",
+    "buyerCity": "Friesenheim",
+    "country": "DEU",
+    "cpv": [
+      "45350000",
+      "45333000",
+      "45317000",
+      "45333100",
+      "45331211"
+    ],
+    "cpvMain": "45350000",
+    "valueEur": 427697.4,
+    "deadline": null,
+    "nuts": [
+      "DE134",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769715-2026",
+    "matchedCpv": [
+      "45317000",
+      "45333000",
+      "45333100",
+      "45331211"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770082-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Sonstige Elektroinstallationsarbeiten – GS Steinhude - An-/Umbau zur Ganztagsschule - Gebäudeautomation",
+    "buyer": "Stadt Wunstorf",
+    "buyerCity": "Wunstorf",
+    "country": "DEU",
+    "cpv": [
+      "45317000",
+      "45231000",
+      "45311200"
+    ],
+    "cpvMain": "45317000",
+    "valueEur": 368502.71,
+    "deadline": null,
+    "nuts": [
+      "DE929",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770082-2026",
+    "matchedCpv": [
+      "45317000",
+      "45311200"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770845-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Lüftung MBA - MBG, Neubau Martin-Behaim-Gymnasium",
+    "buyer": "WBG KOMMUNAL GmbH",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45000000",
+      "45300000",
+      "45330000",
+      "45331210",
+      "45331231"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 2599138,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770845-2026",
+    "matchedCpv": [
+      "45331000",
+      "45330000",
+      "45331210",
+      "45331231"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771136-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Heizungs- und sonstige Elektroinstallationen in Gebäuden – Gebäude- und Anlagenautomation - Vergabebekanntmachung",
+    "buyer": "Technologierförderung Münster GmbH",
+    "buyerCity": "Münster",
+    "country": "DEU",
+    "cpv": [
+      "45315000",
+      "45317000",
+      "45315700",
+      "45315100"
+    ],
+    "cpvMain": "45315000",
+    "valueEur": 271449.39,
+    "deadline": null,
+    "nuts": [
+      "DEA33",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771136-2026",
+    "matchedCpv": [
+      "45315000",
+      "45317000",
+      "45315700",
+      "45315100"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771144-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – Elektrotechnik - GNUE Hochschule Anhalt, Standort Köthen - Forschungsbau \"Interdisziplinares Forschungszentrum für eine nachhaltige Lebensmittelproduktion\" (InFonaL) (OLB-2026-0274)",
+    "buyer": "Amt für Immobilien- und Baumanagement MD (AIB Magdeburg), Zentraleinheit Vergabe",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "45311200",
+      "45332400"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 2030226.22,
+    "deadline": null,
+    "nuts": [
+      "DEE05",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771144-2026",
+    "matchedCpv": [
+      "45311200",
+      "45332400"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771148-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bau von Wehren – Grundinstandsetzung von Maschinenbau und Elektrotechnik an der Wehranlage Regensburg Los 1: Maschinenbau und Antriebstechnik Los 2: Elektro- und Steuerungstechnik und Programmierung",
+    "buyer": "Fachstelle Maschinenwesen Süd beim WSA Donau MDK",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45247220",
+      "45248000",
+      "42142200",
+      "42122210",
+      "45315700",
+      "45311000",
+      "72243000"
+    ],
+    "cpvMain": "45247220",
+    "valueEur": 7270000,
+    "deadline": null,
+    "nuts": [
+      "DE232",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771148-2026",
+    "matchedCpv": [
+      "45311000",
+      "45315700"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767745-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Neubau Hauptamtl. Feuer- und Rettungswache Lüdenscheid - VE 401 - Sanitärtechnik",
+    "buyer": "Stadt Lüdenscheid",
+    "buyerCity": "Lüdenscheid",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45332400",
+      "45332200"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": "2026-11-09T11:00:00.000Z",
+    "nuts": [
+      "DEA58",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767745-2026",
+    "matchedCpv": [
+      "45331000",
+      "45332400",
+      "45332200"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768139-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – Wärmeversorgungsanlagen - RappSoDie",
+    "buyer": "Stadt Bad Rappenau",
+    "buyerCity": "Bad Rappenau",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45232141"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE118",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768139-2026",
+    "matchedCpv": [
+      "45331000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771253-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – JVA Ebr, TBM4, San. Zellenbau HTW - 1TP",
+    "buyer": "Staatliches Bauamt Bamberg",
+    "buyerCity": "Bamberg",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45223220",
+      "45262100",
+      "45443000",
+      "45261000",
+      "45262670",
+      "45261410",
+      "45231000",
+      "45112700",
+      "45320000",
+      "45343100",
+      "45421000",
+      "45421100",
+      "45431000",
+      "45442100",
+      "45330000",
+      "45332400",
+      "45343200",
+      "45321000",
+      "45331000",
+      "45331200",
+      "45315700",
+      "48921000",
+      "45311000",
+      "45212350",
+      "35121700",
+      "42416100",
+      "35120000",
+      "35121000",
+      "32323500",
+      "42961100",
+      "45312200",
+      "50610000",
+      "45231100",
+      "45232140",
+      "45231300",
+      "45232000",
+      "45262700",
+      "45421147",
+      "45421148",
+      "45432130",
+      "45113000",
+      "45111100",
+      "45210000",
+      "45200000"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE245",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771253-2026",
+    "matchedCpv": [
+      "45330000",
+      "45331000",
+      "45311000",
+      "45332400",
+      "45331200",
+      "45315700",
+      "45312200"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767887-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Aufzügen – Staatliche Grundschule Niedersalza; Los 07 - Aufzugsanlage",
+    "buyer": "Stadtverwaltung Nordhausen",
+    "buyerCity": "Nordhausen",
+    "country": "DEU",
+    "cpv": [
+      "45313100"
+    ],
+    "cpvMain": "45313100",
+    "valueEur": null,
+    "deadline": "2026-12-10T09:00:00.000Z",
+    "nuts": [
+      "DEG07",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767887-2026",
+    "matchedCpv": [
+      "45313100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767933-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Aufzügen – Generalübernehmerleistungen für die Planung und Errichtung eines Kantinenaufzugs (Projekt \"Claudio\"), ECA-2026-092",
+    "buyer": "Bundesdruckerei GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45313100",
+      "42416100"
+    ],
+    "cpvMain": "45313100",
+    "valueEur": null,
+    "deadline": "2026-12-08T09:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767933-2026",
+    "matchedCpv": [
+      "45313100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768384-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Fernmeldeanlagen – Um- und Neubau Rathaus Grefrath - Medientechnik",
+    "buyer": "Gemeinde Grefrath",
+    "buyerCity": "Grefrath",
+    "country": "DEU",
+    "cpv": [
+      "45314000",
+      "32322000"
+    ],
+    "cpvMain": "45314000",
+    "valueEur": null,
+    "deadline": "2026-12-07T08:00:00.000Z",
+    "nuts": [
+      "DEA1E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768384-2026",
+    "matchedCpv": [
+      "45314000"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768580-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – Sanierung A-Bau Berufliches Schulzentrum Kulmbach",
+    "buyer": "Landkreis Kulmbach",
+    "buyerCity": "Kulmbach",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-12-09T10:00:00.000Z",
+    "nuts": [
+      "DE24B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768580-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768836-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektrotechnikinstallation – SEZ_Aufzug",
+    "buyer": "Zoologischer Garten Halle GmbH",
+    "buyerCity": "Halle (Saale)",
+    "country": "DEU",
+    "cpv": [
+      "45315100"
+    ],
+    "cpvMain": "45315100",
+    "valueEur": null,
+    "deadline": "2026-12-07T09:00:00.000Z",
+    "nuts": [
+      "DEE02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768836-2026",
+    "matchedCpv": [
+      "45315100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768895-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungs- und Klimaanlagen – Sanierung A-Bau Berufliches Schulzentrum Kulmbach",
+    "buyer": "Landkreis Kulmbach",
+    "buyerCity": "Kulmbach",
+    "country": "DEU",
+    "cpv": [
+      "45331200"
+    ],
+    "cpvMain": "45331200",
+    "valueEur": null,
+    "deadline": "2026-12-09T10:15:00.000Z",
+    "nuts": [
+      "DE24B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768895-2026",
+    "matchedCpv": [
+      "45331200"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769110-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Gleichrichter – Neubau GUW Wendeschleife - hier: technische Ausrüstung",
+    "buyer": "MV Mannheimer Verkehr GmbH",
+    "buyerCity": "Mannheim",
+    "country": "DEU",
+    "cpv": [
+      "31153000",
+      "31682300",
+      "31158100",
+      "31170000",
+      "31213300",
+      "31214000",
+      "45317300",
+      "51112000",
+      "51112200",
+      "31200000",
+      "31230000",
+      "31210000",
+      "31682000",
+      "31151000",
+      "31162000"
+    ],
+    "cpvMain": "31153000",
+    "valueEur": null,
+    "deadline": "2026-11-26T09:00:00.000Z",
+    "nuts": [
+      "DE126",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769110-2026",
+    "matchedCpv": [
+      "45317300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769524-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bau von Gefängnissen – 26E Heizanl u zentr Wassererwaermungsanl",
+    "buyer": "Staatliches Bauamt Bayreuth",
+    "buyerCity": "Bayreuth",
+    "country": "DEU",
+    "cpv": [
+      "45216113",
+      "45331100"
+    ],
+    "cpvMain": "45216113",
+    "valueEur": null,
+    "deadline": "2027-01-19T08:00:00.000Z",
+    "nuts": [
+      "DE24D",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769524-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769669-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Aufzügen – Aufzugsanlage für die Erweiterung des Ganztagsangebots an der Jim-Knopf-Schule, Wölfersheim",
+    "buyer": "Wetteraukreis",
+    "buyerCity": "Friedberg",
+    "country": "DEU",
+    "cpv": [
+      "45313100"
+    ],
+    "cpvMain": "45313100",
+    "valueEur": null,
+    "deadline": "2026-12-08T08:00:00.000Z",
+    "nuts": [
+      "DE71E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769669-2026",
+    "matchedCpv": [
+      "45313100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770063-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Stromversorgungsanlagen – Stromversorgungsanlagen 70-00002-2780-407a - PR1313999-2780-B",
+    "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45315300"
+    ],
+    "cpvMain": "45315300",
+    "valueEur": null,
+    "deadline": "2026-12-15T09:00:00.000Z",
+    "nuts": [
+      "DE803",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770063-2026",
+    "matchedCpv": [
+      "45315300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770112-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – Neubau Feuerwehrgerätehaus mit Übungsturm Neustetten",
+    "buyer": "Gemeinde Neustetten",
+    "buyerCity": "Neustetten",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-12-04T09:30:00.000Z",
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770112-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770248-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – Energetische Sanierung Besucherbergwerk und Museum Kleinenbremen - Wärmeversorgungsanlagen",
+    "buyer": "Kreis Minden-Lübbecke",
+    "buyerCity": "Minden",
+    "country": "DEU",
+    "cpv": [
+      "45331100"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": null,
+    "deadline": "2026-12-07T07:00:00.000Z",
+    "nuts": [
+      "DEA46",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770248-2026",
+    "matchedCpv": [
+      "45331100"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770337-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Lüftungsanlagen – Neubau Feuerwehrgerätehaus mit Übungsturm Neustetten",
+    "buyer": "Gemeinde Neustetten",
+    "buyerCity": "Neustetten",
+    "country": "DEU",
+    "cpv": [
+      "45331210"
+    ],
+    "cpvMain": "45331210",
+    "valueEur": null,
+    "deadline": "2026-12-04T09:30:00.000Z",
+    "nuts": [
+      "DE142",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770337-2026",
+    "matchedCpv": [
+      "45331210"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770458-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Zentralheizungen – Heizungs- u. Sanitärarbeiten, Erweiterung Ganztagsangebot, Grundschule Limeshain in Himbach",
+    "buyer": "Wetteraukreis",
+    "buyerCity": "Friedberg",
+    "country": "DEU",
+    "cpv": [
+      "45331100",
+      "45332400"
+    ],
+    "cpvMain": "45331100",
+    "valueEur": null,
+    "deadline": "2026-12-01T08:00:00.000Z",
+    "nuts": [
+      "DE71E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770458-2026",
+    "matchedCpv": [
+      "45331100",
+      "45332400"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771127-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Häfen – Skandinavienkai- Travemünde- Ausbau Landstrom - 2 Stufe",
+    "buyer": "Hansestadt Lübeck, Bereich 5.061.2 - Fachbereichsdienste / Submission",
+    "buyerCity": "Lübeck",
+    "country": "DEU",
+    "cpv": [
+      "45241000",
+      "45315500",
+      "45315300",
+      "45232000"
+    ],
+    "cpvMain": "45241000",
+    "valueEur": null,
+    "deadline": "2026-12-03T10:00:00.000Z",
+    "nuts": [
+      "DEF03",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771127-2026",
+    "matchedCpv": [
+      "45315500",
+      "45315300"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767872-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installateurarbeiten – Sanierung Baulich-Technische Infrastruktur: Sanitär",
+    "buyer": "Max-Planck-Gesellschaft Abt.III",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "45330000",
+      "45232410",
+      "45332200"
+    ],
+    "cpvMain": "45330000",
+    "valueEur": 1,
+    "deadline": null,
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767872-2026",
+    "matchedCpv": [
+      "45330000",
+      "45332200"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767930-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – Stadt Grevesmühlen - Schulcampus 2. BA - Neubau Grundschule",
+    "buyer": "Stadt Grevesmühlen",
+    "buyerCity": "Grevesmühlen",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": 347082.47,
+    "deadline": null,
+    "nuts": [
+      "DE80M",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767930-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768440-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Reparatur und Wartung von elektrischen und mechanischen Einrichtungen in Gebäuden – Wartung, Service und Requalifizierung der GMP-Raumluft-, Kälte- und MSR-Anlagen der Apotheke - Klinikum Herford",
+    "buyer": "Kreiskliniken Herford-Bünde AöR",
+    "buyerCity": "Herford",
+    "country": "DEU",
+    "cpv": [
+      "50710000",
+      "50730000",
+      "71630000"
+    ],
+    "cpvMain": "50710000",
+    "valueEur": 1000,
+    "deadline": null,
+    "nuts": [
+      "DEA43",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768440-2026",
+    "matchedCpv": [
+      "50710000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769231-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Brandmeldeanlagen – GNUE Erweiterung JVA Halle, Teilmaßnahme 3, Neubau Mehrzweckgebäude/Raumschießanlage - Installation Brandmeldeanlage(BMA) und Einbruchmeldeanlage(EMA)",
+    "buyer": "Landesbetrieb Bau- und Liegenschaftsmanagement Sachsen-Anhalt (BLSA)",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "45312100",
+      "45312200"
+    ],
+    "cpvMain": "45312100",
+    "valueEur": 195114.67,
+    "deadline": null,
+    "nuts": [
+      "DEE02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769231-2026",
+    "matchedCpv": [
+      "45312100",
+      "45312200"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769396-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Feuerlöschanlagen – Komplettsanierung Pestalozzischule Zeitz Los 47 - Feuerlöschanlage",
+    "buyer": "Burgenlandkreis",
+    "buyerCity": "Naumburg (Saale)",
+    "country": "DEU",
+    "cpv": [
+      "45343200",
+      "45330000"
+    ],
+    "cpvMain": "45343200",
+    "valueEur": 117977.14,
+    "deadline": null,
+    "nuts": [
+      "DEE08",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769396-2026",
+    "matchedCpv": [
+      "45330000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769438-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Brandmeldeanlagen – Brandmeldeanlage 1. + 2. BA - GNUE MLU Halle-Wittenberg, Sanierung Fakultät Pharmazie, 2.BA (SHL 566-21)",
+    "buyer": "Landesbetrieb Bau- und Liegenschaftsmanagement Sachsen-Anhalt (BLSA), Zentrale Vergabestelle (ZVS)",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "45312100"
+    ],
+    "cpvMain": "45312100",
+    "valueEur": 276614.54,
+    "deadline": null,
+    "nuts": [
+      "DEE02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769438-2026",
+    "matchedCpv": [
+      "45312100"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770064-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Elektroinstallationsarbeiten – ZAS-MHKW [TGE01] Vergabe der Bauleistungen der Beleuchtung, Sicherheitsbeleuchtung und Sekundärinstallationen",
+    "buyer": "Zweckverband Abfallverwertung Südhessen (ZAS)",
+    "buyerCity": "Darmstadt",
+    "country": "DEU",
+    "cpv": [
+      "45311200",
+      "45314300",
+      "45314310",
+      "45315100",
+      "45316000",
+      "45317300",
+      "45312000",
+      "45317000"
+    ],
+    "cpvMain": "45311200",
+    "valueEur": 1,
+    "deadline": null,
+    "nuts": [
+      "DE711",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770064-2026",
+    "matchedCpv": [
+      "45311200",
+      "45316000",
+      "45317000",
+      "45314300",
+      "45314310",
+      "45315100",
+      "45317300",
+      "45312000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770794-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Heizungs-, Lüftungs- und Klimaanlagen – UHS - Generalsanierung Ludwig-Uhland Schule - Winterbaubeheizung 2026/2027",
+    "buyer": "Stadt Nürnberg vertreten durch WBG KOMMUNAL GmbH",
+    "buyerCity": "Nürnberg",
+    "country": "DEU",
+    "cpv": [
+      "45331000",
+      "45113000",
+      "45315000"
+    ],
+    "cpvMain": "45331000",
+    "valueEur": 51730,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770794-2026",
+    "matchedCpv": [
+      "45331000",
+      "45315000"
+    ],
+    "score": 60,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768475-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Blitzschutzarbeiten – Oberer Brühl Kindertagesstätte - Erdungsanlage",
+    "buyer": "Stadt Villingen-Schwenningen, RefBM - Zentrale Vergabestelle",
+    "buyerCity": "Villingen-Schwenningen",
+    "country": "DEU",
+    "cpv": [
+      "45312310"
+    ],
+    "cpvMain": "45312310",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE136",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768475-2026",
+    "matchedCpv": [
+      "45312310"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768548-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Einbauküchen – Küchentechnische Anlagen - RappSoDie",
+    "buyer": "Stadt Bad Rappenau",
+    "buyerCity": "Bad Rappenau",
+    "country": "DEU",
+    "cpv": [
+      "45421151",
+      "45331231",
+      "39314000"
+    ],
+    "cpvMain": "45421151",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE118",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768548-2026",
+    "matchedCpv": [
+      "45331231"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "768880-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Sanitäreinrichtungen – VG - Neubau FwGH Salmtal - Sanitäranlage",
+    "buyer": "Verbandsgemeinde Wittlich-Land",
+    "buyerCity": "Wittlich",
+    "country": "DEU",
+    "cpv": [
+      "45332400"
+    ],
+    "cpvMain": "45332400",
+    "valueEur": null,
+    "deadline": "2026-11-11T09:00:00.000Z",
+    "nuts": [
+      "DEB22",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/768880-2026",
+    "matchedCpv": [
+      "45332400"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771045-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Kabelinfrastruktur – S21;PFA 1.7- S-Bahn Stuttgart TUNA/DKS;VP2 GU-Kabelverlegung",
+    "buyer": "DB Projekt Stuttgart-Ulm GmbH (Bukr 5S)",
+    "buyerCity": "Stuttgart",
+    "country": "DEU",
+    "cpv": [
+      "45314300"
+    ],
+    "cpvMain": "45314300",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE111",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771045-2026",
+    "matchedCpv": [
+      "45314300"
+    ],
+    "score": 48,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "767767-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Brandmeldeanlagen – Neubau Brandschutz- und Ausbildungszentrums (BAZ) am Standort Newel",
+    "buyer": "Verbandsgemeindeverwaltung Trier-Land",
+    "buyerCity": "Trier",
+    "country": "DEU",
+    "cpv": [
+      "45312100",
+      "31625200"
+    ],
+    "cpvMain": "45312100",
+    "valueEur": 56307.62,
+    "deadline": null,
+    "nuts": [
+      "DEB25",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/767767-2026",
+    "matchedCpv": [
+      "45312100"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "769588-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauinstallationsarbeiten – BLB NRW Duisburg / Mönchengladbach / Hochschule Niederrhein, Gebäude Spinnerei / Gebäudeautomation / 020-25-00384",
+    "buyer": "Bau- und Liegenschaftsbetrieb NRW Duisburg",
+    "buyerCity": "Duisburg",
+    "country": "DEU",
+    "cpv": [
+      "45300000",
+      "45315700"
+    ],
+    "cpvMain": "45300000",
+    "valueEur": 145367.81,
+    "deadline": null,
+    "nuts": [
+      "DEA15",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/769588-2026",
+    "matchedCpv": [
+      "45315700"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "770833-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten für Kraftwerke – Projekt RGH (Reuter Gas Heat) - Los1 EPC Light - Errichtung einer gasbefeuerten Kesselanlage",
+    "buyer": "BEW Berliner Energie und Wärme GmbH",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45251100",
+      "09320000",
+      "09323000",
+      "24111600",
+      "42160000",
+      "42515000",
+      "42997000",
+      "44621210",
+      "45251200",
+      "45331110",
+      "71321000",
+      "71322200",
+      "71356400"
+    ],
+    "cpvMain": "45251100",
+    "valueEur": 1,
+    "deadline": null,
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/770833-2026",
+    "matchedCpv": [
+      "45331110"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771008-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Installation von Alarmanlagen und Antennen – Martin-Luther-Universität Halle-Wittenberg, Sanierung Chemie, Bauteil B und D – Brandmeldeanlage (SHL 57-21)",
+    "buyer": "Landesbetrieb Bau- und Liegenschaftsmanagement Sachsen-Anhalt (BLSA), Zentrale Vergabestelle (ZVS)",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "45312000"
+    ],
+    "cpvMain": "45312000",
+    "valueEur": 72019.09,
+    "deadline": null,
+    "nuts": [
+      "DEE02",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771008-2026",
+    "matchedCpv": [
+      "45312000"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771140-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Verlegen von Kabeln – ESTW MüOst Pbf, VE01, Bauhauptleistung",
+    "buyer": "DB Netz AG (Bukr 16)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45314310",
+      "45112500"
+    ],
+    "cpvMain": "45314310",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771140-2026",
+    "matchedCpv": [
+      "45314310"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771262-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Verlegen von Kabeln – ESTW MüOst Pbf, VE01, Bauhauptleistung",
+    "buyer": "DB Netz AG (Bukr 16)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45314310",
+      "45112500"
+    ],
+    "cpvMain": "45314310",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771262-2026",
+    "matchedCpv": [
+      "45314310"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
+    "id": "771332-2026",
+    "publishedAt": "2026-11-04T23:00:00.000Z",
+    "title": "Deutschland – Verlegen von Kabeln – ESTW MüOst Pbf, VE01, Bauhauptleistung",
+    "buyer": "DB Netz AG (Bukr 16)",
+    "buyerCity": "Frankfurt Main",
+    "country": "DEU",
+    "cpv": [
+      "45314310",
+      "45112500"
+    ],
+    "cpvMain": "45314310",
+    "valueEur": 0,
+    "deadline": null,
+    "nuts": [
+      "DE212",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/771332-2026",
+    "matchedCpv": [
+      "45314310"
+    ],
+    "score": 40,
+    "firstSeenAt": "2026-11-05T12:39:11.599Z"
+  },
+  {
     "id": "766416-2026",
     "publishedAt": "2026-11-03T23:00:00.000Z",
     "title": "Deutschland – Elektroinstallationsarbeiten – Gebäudeautomation nach DIN 18386",
@@ -1734,7 +5020,7 @@
       "45311000",
       "45314000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-11-03T12:12:07.917Z"
   },
   {
@@ -3687,7 +6973,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 75,
+    "score": 60,
     "firstSeenAt": "2026-11-02T12:46:08.276Z"
   },
   {
@@ -3859,7 +7145,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-11-02T12:46:08.276Z"
   },
   {
@@ -3907,7 +7193,7 @@
     "matchedCpv": [
       "45315300"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-11-02T12:46:08.276Z"
   },
   {
@@ -4973,7 +8259,7 @@
       "45332400",
       "45331200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-30T10:58:47.268Z"
   },
   {
@@ -5550,7 +8836,7 @@
     "matchedCpv": [
       "45331231"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-10-30T10:58:47.268Z"
   },
   {
@@ -6083,7 +9369,7 @@
     "matchedCpv": [
       "45330000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-29T11:01:44.523Z"
   },
   {
@@ -7602,7 +10888,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-28T10:44:27.318Z"
   },
   {
@@ -9239,7 +12525,7 @@
       "45312100",
       "45312000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-27T09:58:15.561Z"
   },
   {
@@ -9537,7 +12823,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-27T09:58:15.561Z"
   },
   {
@@ -10100,7 +13386,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 80,
+    "score": 75,
     "firstSeenAt": "2026-10-26T10:23:34.477Z"
   },
   {
@@ -11155,7 +14441,7 @@
     "matchedCpv": [
       "45313100"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-26T10:23:34.477Z"
   },
   {
@@ -11749,7 +15035,7 @@
     "matchedCpv": [
       "45330000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-23T09:29:04.045Z"
   },
   {
@@ -11854,7 +15140,7 @@
       "45311100",
       "45311200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-23T09:29:04.045Z"
   },
   {
@@ -13879,7 +17165,7 @@
     "matchedCpv": [
       "45315700"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-22T09:33:08.448Z"
   },
   {
@@ -14477,7 +17763,7 @@
     "matchedCpv": [
       "45311200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-21T09:29:57.272Z"
   },
   {
@@ -14640,7 +17926,7 @@
       "45311000",
       "45315100"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-21T09:29:57.272Z"
   },
   {
@@ -15314,7 +18600,7 @@
     "matchedCpv": [
       "45310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -15338,7 +18624,7 @@
     "matchedCpv": [
       "45310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -15397,7 +18683,7 @@
       "45311200",
       "45312100"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -15610,7 +18896,7 @@
     "matchedCpv": [
       "50710000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -16144,7 +19430,7 @@
     "matchedCpv": [
       "45331210"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -16169,7 +19455,7 @@
     "matchedCpv": [
       "45331210"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-20T09:34:18.751Z"
   },
   {
@@ -16752,7 +20038,7 @@
       "45310000",
       "45311000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -16988,7 +20274,7 @@
     "matchedCpv": [
       "45311200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17068,7 +20354,7 @@
       "45310000",
       "45312000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17148,7 +20434,7 @@
       "45316000",
       "45317000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17776,7 +21062,7 @@
     "matchedCpv": [
       "45331210"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17855,7 +21141,7 @@
       "45312100",
       "45312200"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17880,7 +21166,7 @@
     "matchedCpv": [
       "45317200"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -17954,7 +21240,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -18030,7 +21316,7 @@
       "45331200",
       "45331230"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -18201,7 +21487,7 @@
     "matchedCpv": [
       "45331100"
     ],
-    "score": 55,
+    "score": 40,
     "firstSeenAt": "2026-10-19T10:08:46.979Z"
   },
   {
@@ -18353,7 +21639,7 @@
       "45311000",
       "45315700"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18379,7 +21665,7 @@
       "45311000",
       "45311200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18406,7 +21692,7 @@
       "45311200",
       "45317000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18563,7 +21849,7 @@
       "45331000",
       "45331100"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18776,7 +22062,7 @@
       "45310000",
       "45311000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18848,7 +22134,7 @@
     "matchedCpv": [
       "45331200"
     ],
-    "score": 75,
+    "score": 60,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -18875,7 +22161,7 @@
       "45331200",
       "45331230"
     ],
-    "score": 75,
+    "score": 60,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19111,7 +22397,7 @@
     "matchedCpv": [
       "45315700"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19186,7 +22472,7 @@
     "matchedCpv": [
       "45314300"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19236,7 +22522,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19338,7 +22624,7 @@
     "matchedCpv": [
       "45333000"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19362,7 +22648,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-16T09:11:51.166Z"
   },
   {
@@ -19705,7 +22991,7 @@
     "matchedCpv": [
       "45330000"
     ],
-    "score": 95,
+    "score": 80,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -19729,7 +23015,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 80,
+    "score": 75,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -19914,7 +23200,7 @@
       "45311200",
       "45311100"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -19965,7 +23251,7 @@
     "matchedCpv": [
       "45311200"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -20337,7 +23623,7 @@
     "matchedCpv": [
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -20466,7 +23752,7 @@
       "45314310",
       "45332400"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -20490,7 +23776,7 @@
     "matchedCpv": [
       "45331100"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -20514,7 +23800,7 @@
     "matchedCpv": [
       "45331210"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-15T09:18:15.017Z"
   },
   {
@@ -21251,7 +24537,7 @@
     "matchedCpv": [
       "45331000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-14T09:39:32.582Z"
   },
   {
@@ -21521,7 +24807,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 75,
+    "score": 60,
     "firstSeenAt": "2026-10-14T09:39:32.582Z"
   },
   {
@@ -22001,7 +25287,7 @@
     "matchedCpv": [
       "45315700"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-14T09:39:32.582Z"
   },
   {
@@ -22049,7 +25335,7 @@
     "matchedCpv": [
       "45315700"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-14T09:39:32.582Z"
   },
   {
@@ -23954,7 +27240,7 @@
       "45312200",
       "45312000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24065,7 +27351,7 @@
       "45317000",
       "45317300"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24187,7 +27473,7 @@
     "matchedCpv": [
       "45311000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24238,7 +27524,7 @@
       "45311000",
       "45316100"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24265,7 +27551,7 @@
       "45315000",
       "45331000"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24348,7 +27634,7 @@
       "45312100",
       "45312000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -24584,7 +27870,7 @@
       "45312100",
       "45315600"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -25059,7 +28345,7 @@
     "matchedCpv": [
       "45313100"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -25206,7 +28492,7 @@
     "matchedCpv": [
       "45312310"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
@@ -25230,7 +28516,7 @@
     "matchedCpv": [
       "45313000"
     ],
-    "score": 63,
+    "score": 48,
     "firstSeenAt": "2026-10-12T12:18:59.490Z"
   },
   {
