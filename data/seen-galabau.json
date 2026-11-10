@@ -2490,7 +2490,22 @@
     "775229-2026": "2026-11-09T13:13:35.556Z",
     "778170-2026": "2026-11-09T13:13:35.556Z",
     "776485-2026": "2026-11-09T13:13:35.556Z",
-    "778564-2026": "2026-11-09T13:13:35.556Z"
+    "778564-2026": "2026-11-09T13:13:35.556Z",
+    "780755-2026": "2026-11-10T12:53:52.450Z",
+    "779497-2026": "2026-11-10T12:53:52.450Z",
+    "780694-2026": "2026-11-10T12:53:52.450Z",
+    "781218-2026": "2026-11-10T12:53:52.450Z",
+    "781630-2026": "2026-11-10T12:53:52.450Z",
+    "781969-2026": "2026-11-10T12:53:52.450Z",
+    "782163-2026": "2026-11-10T12:53:52.450Z",
+    "782796-2026": "2026-11-10T12:53:52.450Z",
+    "780217-2026": "2026-11-10T12:53:52.450Z",
+    "780325-2026": "2026-11-10T12:53:52.450Z",
+    "781872-2026": "2026-11-10T12:53:52.450Z",
+    "781760-2026": "2026-11-10T12:53:52.450Z",
+    "779801-2026": "2026-11-10T12:53:52.450Z",
+    "780772-2026": "2026-11-10T12:53:52.450Z",
+    "782362-2026": "2026-11-10T12:53:52.450Z"
   },
   "notices": {
     "519810-2026": {
@@ -63706,7 +63721,7 @@
         "77310000",
         "45112700"
       ],
-      "score": 68
+      "score": 63
     },
     "702125-2026": {
       "id": "702125-2026",
@@ -63735,7 +63750,7 @@
         "45112700",
         "45112723"
       ],
-      "score": 68
+      "score": 63
     },
     "702765-2026": {
       "id": "702765-2026",
@@ -63812,7 +63827,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 68
+      "score": 63
     },
     "703742-2026": {
       "id": "703742-2026",
@@ -64801,7 +64816,7 @@
         "77310000",
         "45112730"
       ],
-      "score": 83
+      "score": 68
     },
     "722404-2026": {
       "id": "722404-2026",
@@ -65284,7 +65299,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "729538-2026": {
       "id": "729538-2026",
@@ -66828,7 +66843,7 @@
         "77312000",
         "77313000"
       ],
-      "score": 60
+      "score": 55
     },
     "753631-2026": {
       "id": "753631-2026",
@@ -68484,7 +68499,395 @@
         "77342000"
       ],
       "score": 63
+    },
+    "780755-2026": {
+      "id": "780755-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Außenanlagen",
+      "buyer": "Hüttenhospital gGmbH",
+      "buyerCity": "Dortmund",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 506270,
+      "deadline": "2026-12-07T10:00:00.000Z",
+      "nuts": [
+        "DEA52",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/780755-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 95
+    },
+    "779497-2026": {
+      "id": "779497-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Klimaresilenter und städtebaulicher Umbau der Bahnhofstraße - Vegetationsarbeiten",
+      "buyer": "SBO Servicebetriebe Oberhausen - Eigenbetrieb der Stadt Oberhausen",
+      "buyerCity": "Oberhausen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-10T08:00:00.000Z",
+      "nuts": [
+        "DEA17",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/779497-2026",
+      "matchedCpv": [
+        "45112710",
+        "77310000",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "780694-2026": {
+      "id": "780694-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Rahmenvertrag für Baumpflegerische Maßnahmen an Bäumen für die Landeshauptstadt Potsdam in 7 Losen",
+      "buyer": "Landeshauptstadt Potsdam, Bereich Vergabemanagement",
+      "buyerCity": "Potsdam",
+      "country": "DEU",
+      "cpv": [
+        "77211500"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": null,
+      "deadline": "2026-11-26T07:00:00.000Z",
+      "nuts": [
+        "DE404",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/780694-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 83
+    },
+    "781218-2026": {
+      "id": "781218-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag Baumbewässerung",
+      "buyer": "Landeshauptstadt Hannover - Fachbereich Umwelt und Stadtgrün",
+      "buyerCity": "Hannover",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-11T09:30:00.000Z",
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/781218-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "781630-2026": {
+      "id": "781630-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Unterhaltungspflege für Außenanlagen und Mulden gemäß DIN 18919 Region Ost",
+      "buyer": "Berliner Wasserbetriebe",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-11-26T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/781630-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "781969-2026": {
+      "id": "781969-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) Grünpflegeleistungen in 6 Losen für vierzehn Bundesliegenschaften in Bremen und Niedersachsen",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-12-18T08:00:00.000Z",
+      "nuts": [
+        "DE942",
+        "DE945",
+        "DE94B",
+        "DE949",
+        "DE943",
+        "DE501",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/781969-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "782163-2026": {
+      "id": "782163-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Außenanlagen 70-00001-2880-79 - PR1326029-2880-B",
+      "buyer": "Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e.V. - Einkauf B12 - Vergabestelle Bau",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112000",
+        "45232453",
+        "45233222",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-17T09:00:00.000Z",
+      "nuts": [
+        "DEB32",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/782163-2026",
+      "matchedCpv": [
+        "77310000",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "782796-2026": {
+      "id": "782796-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "buyer": "Landkreis Göttingen",
+      "buyerCity": "Göttingen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45000000",
+        "45112500",
+        "45112710",
+        "45112730",
+        "45233222",
+        "45233250",
+        "45236000",
+        "45342000",
+        "77300000",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-14T10:00:00.000Z",
+      "nuts": [
+        "DE91C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/782796-2026",
+      "matchedCpv": [
+        "45112710",
+        "77300000",
+        "77310000",
+        "45112700",
+        "45112730"
+      ],
+      "score": 83
+    },
+    "780217-2026": {
+      "id": "780217-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Herstellung der Freianlagen für den Neubau eines Feuerwehrgerätehauses in Schwaan",
+      "buyer": "Stadt Schwaan Pferdemarkt 2 18258 Schwaan",
+      "buyerCity": "Schwaan",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45100000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 1952847.49,
+      "deadline": null,
+      "nuts": [
+        "DE80K",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/780217-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "780325-2026": {
+      "id": "780325-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Fundamentierungsarbeiten – Neubau Feuerwehrgerätehaus FFw Schwaan",
+      "buyer": "Zentrale Vergabestelle Stadt und Amt Schwaan",
+      "buyerCity": "Schwaan",
+      "country": "DEU",
+      "cpv": [
+        "45262210",
+        "45262426",
+        "45112700",
+        "45100000",
+        "45112710"
+      ],
+      "cpvMain": "45262210",
+      "valueEur": 195813.45,
+      "deadline": null,
+      "nuts": [
+        "DE80K",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/780325-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "781872-2026": {
+      "id": "781872-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Neustrukturierung, Sanierung und Erweiterung der Gesamtschule Gießen Ost, Alter Steinbacher Weg 28, 35394 Gießen – 2. Bauabschnitt - Dachabdichtungsarbeiten inkl. Dachbegrünung und Klempnerarbeiten",
+      "buyer": "Magistrat der Universitätsstadt Gießen - Hochbauamt -",
+      "buyerCity": "Gießen",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713",
+        "45261300"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 749000,
+      "deadline": "2026-12-10T09:00:00.000Z",
+      "nuts": [
+        "DE721",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/781872-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 75
+    },
+    "781760-2026": {
+      "id": "781760-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Garten- und Landschaftsbauarbeiten im Gartendenkmal",
+      "buyer": "Bezirksamt Spandau von Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2026-11-20T09:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/781760-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
+    },
+    "779801-2026": {
+      "id": "779801-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Dachbegrünungen – VE 3.11 Gründach",
+      "buyer": "Bezirksamt Tempelhof-Schöneberg von Berlin",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "45112713"
+      ],
+      "cpvMain": "45112713",
+      "valueEur": 81746.93,
+      "deadline": null,
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/779801-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
+    },
+    "780772-2026": {
+      "id": "780772-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Freianlagen - Erweiterung Grundschule Bungerhof",
+      "buyer": "Stadt Delmenhorst",
+      "buyerCity": "Delmenhorst",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45112400",
+        "45112710",
+        "45112720"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 0.01,
+      "deadline": null,
+      "nuts": [
+        "DE941",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/780772-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112720"
+      ],
+      "score": 60
+    },
+    "782362-2026": {
+      "id": "782362-2026",
+      "publishedAt": "2026-11-09T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Neubau Wohnheim und Förderstätte",
+      "buyer": "Rummelsberger Diakonie e.V.",
+      "buyerCity": "Schwarzenbruck",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 434081.08,
+      "deadline": null,
+      "nuts": [
+        "DE254",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/782362-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-11-09T13:13:35.556Z"
+  "lastRun": "2026-11-10T12:53:52.450Z"
 }
