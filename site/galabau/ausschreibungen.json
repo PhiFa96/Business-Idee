@@ -1,5 +1,248 @@
 [
   {
+    "id": "777208-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Abwasser- und Abfallbeseitigungs-, Reinigungs- und Umweltschutzdienste – Dienstleistungsvertrag Winterdienst Nebencampus, Grau-und Grünflächenpflege, Hausmeisterdienste und Sonderleistungen - Zeitraum 01.01.2027 - 31.10.2028",
+    "buyer": "Otto-von-Guericke-Universität Magdeburg, Abt. Beschaffung, Zahlstelle (K13)",
+    "buyerCity": "Magdeburg",
+    "country": "DEU",
+    "cpv": [
+      "90000000",
+      "90620000",
+      "77000000",
+      "77314000",
+      "98341140"
+    ],
+    "cpvMain": "90000000",
+    "valueEur": 804000,
+    "deadline": "2026-12-07T22:59:00.000Z",
+    "nuts": [
+      "DEE03",
+      "DEU",
+      "DEE07"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/777208-2026",
+    "matchedCpv": [
+      "77314000"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "777844-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – RV Baumpflege 2027-2029",
+    "buyer": "Kommunalbetrieb Krefeld AöR",
+    "buyerCity": "Krefeld",
+    "country": "DEU",
+    "cpv": [
+      "77211500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-12-08T10:00:00.000Z",
+    "nuts": [
+      "DEA14",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/777844-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "777906-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – 500.05 Freianlagen Haltoner Str.",
+    "buyer": "Senatsverwaltung für Stadtentwicklung, Bauen und Wohnen, V M 1 - Vergabestelle für den Öffentlichen Hochbau",
+    "buyerCity": "Berlin",
+    "country": "DEU",
+    "cpv": [
+      "45112710"
+    ],
+    "cpvMain": "45112710",
+    "valueEur": null,
+    "deadline": "2026-12-10T10:00:00.000Z",
+    "nuts": [
+      "DE300",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/777906-2026",
+    "matchedCpv": [
+      "45112710"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "778876-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 9 Bundesliegenschaften in Hessen (VOEK 396-25)",
+    "buyer": "Bundesanstalt für Immobilienaufgaben",
+    "buyerCity": "Bonn",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "90610000",
+      "90611000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": null,
+    "deadline": "2026-12-14T08:00:00.000Z",
+    "nuts": [
+      "DE71A",
+      "DE712",
+      "DE731",
+      "DE737",
+      "DE734",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/778876-2026",
+    "matchedCpv": [
+      "77314000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "778748-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Grundstückspflege – Unterhalts- und Entwicklungspflege beim BR München",
+    "buyer": "Bayerischer Rundfunk A.d.ö.R.",
+    "buyerCity": "München",
+    "country": "DEU",
+    "cpv": [
+      "77314000",
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "cpvMain": "77314000",
+    "valueEur": 516380.08,
+    "deadline": null,
+    "nuts": [
+      "DE212",
+      "DE21H",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/778748-2026",
+    "matchedCpv": [
+      "77314000",
+      "77300000",
+      "77310000",
+      "77340000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "775229-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Reinigung von Schulen – Außenreinigung und Pflege der Außenanlagen inkl. Winterdienst Schulen Stadt Hoyerswerda - Los 3 - Oberschule Hoyerswerda",
+    "buyer": "Stadt Hoyerswerda",
+    "buyerCity": "Hoyerswerda",
+    "country": "DEU",
+    "cpv": [
+      "90919300",
+      "90610000",
+      "90620000",
+      "77310000"
+    ],
+    "cpvMain": "90919300",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DED2C",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/775229-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "778170-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – L2v Pflanzarbeiten",
+    "buyer": "Bremer Straßenbahn AG",
+    "buyerCity": "Bremen",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "77310000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE501",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/778170-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "776485-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Dachdeckarbeiten und Spezialbauarbeiten – Neubau Rettungswache inkl. SZ - Dachabdichtungsarbeiten",
+    "buyer": "BG Kliniken Ludwigshafen und Tübingen gGmbH",
+    "buyerCity": "Ludwigshafen",
+    "country": "DEU",
+    "cpv": [
+      "45260000",
+      "45261200",
+      "45261410",
+      "45261420",
+      "45112713"
+    ],
+    "cpvMain": "45260000",
+    "valueEur": null,
+    "deadline": "2026-12-07T11:00:00.000Z",
+    "nuts": [
+      "DEB34",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/776485-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
+    "id": "778564-2026",
+    "publishedAt": "2026-11-08T23:00:00.000Z",
+    "title": "Deutschland – Heckenschnitt – Rahmenvertrag Grünpflege im Schienennetzbereich der Mainzer Verkehrsgesellschaft mbH- 30028474",
+    "buyer": "Mainzer Netze GmbH",
+    "buyerCity": "Mainz",
+    "country": "DEU",
+    "cpv": [
+      "77342000"
+    ],
+    "cpvMain": "77342000",
+    "valueEur": null,
+    "deadline": "2026-12-08T12:30:00.000Z",
+    "nuts": [
+      "DEB35",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/778564-2026",
+    "matchedCpv": [
+      "77342000"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-09T13:13:35.556Z"
+  },
+  {
     "id": "772371-2026",
     "publishedAt": "2026-11-05T23:00:00.000Z",
     "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflegeleistungen von Grün- und Freiflächen der Vier-Tore-Stadt Neubrandenburg – Stadtgebiet West (4 Lose)",
@@ -4402,7 +4645,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-13T12:02:35.216Z"
   },
   {
