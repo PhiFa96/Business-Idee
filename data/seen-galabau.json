@@ -2518,7 +2518,14 @@
     "786044-2026": "2026-11-11T12:02:25.164Z",
     "783464-2026": "2026-11-11T12:02:25.164Z",
     "785430-2026": "2026-11-11T12:02:25.164Z",
-    "786162-2026": "2026-11-11T12:02:25.164Z"
+    "786162-2026": "2026-11-11T12:02:25.164Z",
+    "786750-2026": "2026-11-12T13:05:08.552Z",
+    "788111-2026": "2026-11-12T13:05:08.552Z",
+    "788437-2026": "2026-11-12T13:05:08.552Z",
+    "789090-2026": "2026-11-12T13:05:08.552Z",
+    "787205-2026": "2026-11-12T13:05:08.552Z",
+    "787983-2026": "2026-11-12T13:05:08.552Z",
+    "789304-2026": "2026-11-12T13:05:08.552Z"
   },
   "notices": {
     "519810-2026": {
@@ -66361,7 +66368,7 @@
         "77310000",
         "77330000"
       ],
-      "score": 68
+      "score": 63
     },
     "744491-2026": {
       "id": "744491-2026",
@@ -66493,7 +66500,7 @@
         "77211500",
         "77341000"
       ],
-      "score": 68
+      "score": 63
     },
     "746541-2026": {
       "id": "746541-2026",
@@ -67888,7 +67895,7 @@
         "77211400",
         "77341000"
       ],
-      "score": 68
+      "score": 63
     },
     "769825-2026": {
       "id": "769825-2026",
@@ -69226,7 +69233,203 @@
         "45112712"
       ],
       "score": 40
+    },
+    "786750-2026": {
+      "id": "786750-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Reinigung und Sanierung des städtischen und ländlichen Raumes, und zugehörige Dienstleistungen – Grün- und Außenanlagenpflege für 3 Liegenschaften in WI - aufgeteilt in 2 Lose",
+      "buyer": "Land Hessen, vertreten durch das Hessische Competence Center -Beschaffungen-",
+      "buyerCity": "Wiesbaden",
+      "country": "DEU",
+      "cpv": [
+        "90600000",
+        "77310000",
+        "90610000",
+        "90620000"
+      ],
+      "cpvMain": "90600000",
+      "valueEur": null,
+      "deadline": "2026-12-15T11:00:00.000Z",
+      "nuts": [
+        "DEU",
+        "DE714"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/786750-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "788111-2026": {
+      "id": "788111-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Grün- und Grauflächenpflege Erkrath Los 1-4",
+      "buyer": "Stadt Erkrath, Fachbereich 30 - Zentrale Vergabestelle",
+      "buyerCity": "Erkrath",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77310000",
+        "77340000",
+        "90600000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-12-11T06:00:00.000Z",
+      "nuts": [
+        "DEA1C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/788111-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "788437-2026": {
+      "id": "788437-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege und Unterhaltung der Asselner Alm, Dortmund",
+      "buyer": "Regionalverband Ruhr",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77300000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-11T10:00:00.000Z",
+      "nuts": [
+        "DEA52",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/788437-2026",
+      "matchedCpv": [
+        "77310000",
+        "77300000"
+      ],
+      "score": 83
+    },
+    "789090-2026": {
+      "id": "789090-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management-Dienstleistung für die ZUE Düren",
+      "buyer": "Bezirksregierung Köln",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000",
+        "90620000",
+        "90630000",
+        "98341100"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": "2027-01-20T11:00:00.000Z",
+      "nuts": [
+        "DEA26",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/789090-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000"
+      ],
+      "score": 83
+    },
+    "787205-2026": {
+      "id": "787205-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – HGU_VITA_Freianlagen",
+      "buyer": "Land Hessen, vertreten durch den Landesbetrieb Bau und Immobilien Hessen, Zentrale Vergabe",
+      "buyerCity": "Bad Nauheim",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 402210.24,
+      "deadline": null,
+      "nuts": [
+        "DE71D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/787205-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "787983-2026": {
+      "id": "787983-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau Barnesporthalle Wunstorf - Freianlagen",
+      "buyer": "Stadt Wunstorf",
+      "buyerCity": "Wunstorf",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112723"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": 741428.85,
+      "deadline": null,
+      "nuts": [
+        "DE929",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/787983-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112723"
+      ],
+      "score": 80
+    },
+    "789304-2026": {
+      "id": "789304-2026",
+      "publishedAt": "2026-11-11T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Offenes Verfahren (EU-weit) zur Vergabe von Grünpflege- und Grauflächenreinigungsleistungen für 13 Wohnliegenschaften in Stuttgart und Umgebung, Bundesanstalt für Immobilienaufgaben, Sparte Wohnen Regionalbereich Süd, VOEK 100-26",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "77310000",
+        "77342000",
+        "77300000",
+        "90611000",
+        "90610000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": 143897.71,
+      "deadline": null,
+      "nuts": [
+        "DE112",
+        "DE111",
+        "DE11D",
+        "DE113",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/789304-2026",
+      "matchedCpv": [
+        "77314000",
+        "77310000",
+        "77300000",
+        "77342000"
+      ],
+      "score": 80
     }
   },
-  "lastRun": "2026-11-11T12:02:25.164Z"
+  "lastRun": "2026-11-12T13:05:08.552Z"
 }
