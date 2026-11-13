@@ -2525,7 +2525,15 @@
     "789090-2026": "2026-11-12T13:05:08.552Z",
     "787205-2026": "2026-11-12T13:05:08.552Z",
     "787983-2026": "2026-11-12T13:05:08.552Z",
-    "789304-2026": "2026-11-12T13:05:08.552Z"
+    "789304-2026": "2026-11-12T13:05:08.552Z",
+    "790342-2026": "2026-11-13T12:29:45.244Z",
+    "791089-2026": "2026-11-13T12:29:45.244Z",
+    "792119-2026": "2026-11-13T12:29:45.244Z",
+    "790582-2026": "2026-11-13T12:29:45.244Z",
+    "791603-2026": "2026-11-13T12:29:45.244Z",
+    "790660-2026": "2026-11-13T12:29:45.244Z",
+    "792515-2026": "2026-11-13T12:29:45.244Z",
+    "791317-2026": "2026-11-13T12:29:45.244Z"
   },
   "notices": {
     "519810-2026": {
@@ -65448,7 +65456,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "732242-2026": {
       "id": "732242-2026",
@@ -65540,7 +65548,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "731381-2026": {
       "id": "731381-2026",
@@ -65635,7 +65643,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "732583-2026": {
       "id": "732583-2026",
@@ -65789,7 +65797,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "736752-2026": {
       "id": "736752-2026",
@@ -66122,7 +66130,7 @@
         "45112710",
         "45112723"
       ],
-      "score": 83
+      "score": 68
     },
     "739426-2026": {
       "id": "739426-2026",
@@ -68138,7 +68146,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "774468-2026": {
       "id": "774468-2026",
@@ -68234,7 +68242,7 @@
       "matchedCpv": [
         "77313000"
       ],
-      "score": 68
+      "score": 63
     },
     "773587-2026": {
       "id": "773587-2026",
@@ -69429,7 +69437,220 @@
         "77342000"
       ],
       "score": 80
+    },
+    "790342-2026": {
+      "id": "790342-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Aushub- und Erdbewegungsarbeiten – Generalsanierung Wirtschaftsschule Nördlingen - Außenanlagen",
+      "buyer": "Landratsamt Donau-Ries",
+      "buyerCity": "Donauwörth",
+      "country": "DEU",
+      "cpv": [
+        "45112000",
+        "44113100",
+        "44113140",
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45112000",
+      "valueEur": 374038,
+      "deadline": "2026-12-21T09:00:00.000Z",
+      "nuts": [
+        "DE27D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/790342-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 95
+    },
+    "791089-2026": {
+      "id": "791089-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – GP RIM Berlin",
+      "buyer": "Bundesagentur für Arbeit (BA), vertreten durch den Vorstand, hier vertreten durch die Leitung des Geschäftsbereiches Einkauf im BA-Service-Haus",
+      "buyerCity": "Nürnberg",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": "2026-12-14T11:00:00.000Z",
+      "nuts": [
+        "DE254",
+        "DEU",
+        "DE300"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/791089-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 83
+    },
+    "792119-2026": {
+      "id": "792119-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Kommunale Dienstleistungen – Kommunale Dienstleistungen für die Stadt Bad Schmiedeberg, Los 1-9",
+      "buyer": "Stadt Bad Schmiedeberg",
+      "buyerCity": "Bad Schmiedeberg",
+      "country": "DEU",
+      "cpv": [
+        "75200000",
+        "77310000",
+        "90611000",
+        "90620000",
+        "90630000"
+      ],
+      "cpvMain": "75200000",
+      "valueEur": null,
+      "deadline": "2026-12-15T09:00:00.000Z",
+      "nuts": [
+        "DEE0E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/792119-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "790582-2026": {
+      "id": "790582-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen in Landwirtschaft, Forstwirtschft, Gartenbau, Aquakultur und Bienenzucht – Rahmenvertrag Baumpflege VKS in Grünanlagen und Kinderspielplätzen 2026-2028",
+      "buyer": "Landeshauptstadt Wiesbaden - Der Magistrat",
+      "buyerCity": "Wiesbaden",
+      "country": "DEU",
+      "cpv": [
+        "77000000",
+        "77211500",
+        "77310000",
+        "77341000"
+      ],
+      "cpvMain": "77000000",
+      "valueEur": 594077.27,
+      "deadline": null,
+      "nuts": [
+        "DE714",
+        "DEU",
+        "DE711"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/790582-2026",
+      "matchedCpv": [
+        "77211500",
+        "77310000",
+        "77341000"
+      ],
+      "score": 80
+    },
+    "791603-2026": {
+      "id": "791603-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – Neugestaltung der Rheinallee in Boppard - Los 07 - Garten- und Landschaftsbauarbeiten / Tiefbau FA BA2 (Rheinalle West)",
+      "buyer": "Stadt Boppard",
+      "buyerCity": "Boppard",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45221250",
+        "45112712",
+        "45112710"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 3531899.37,
+      "deadline": null,
+      "nuts": [
+        "DEB1D",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/791603-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112712"
+      ],
+      "score": 80
+    },
+    "790660-2026": {
+      "id": "790660-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Gleisbauarbeiten – Wendeanlage Gliesmarode (Kanal- und Straßenbauarbeiten, Gleisanlagen, Grünanlagen, Versorger)-TH",
+      "buyer": "Stadt Braunschweig Fachbereich Bauordnung und Zentrale Vergabestelle",
+      "buyerCity": "Braunschweig",
+      "country": "DEU",
+      "cpv": [
+        "45234116",
+        "45112710",
+        "45221250",
+        "45233120",
+        "45247110"
+      ],
+      "cpvMain": "45234116",
+      "valueEur": null,
+      "deadline": "2026-11-19T06:00:00.000Z",
+      "nuts": [
+        "DE911",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/790660-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 68
+    },
+    "792515-2026": {
+      "id": "792515-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Fällen von Bäumen – Rahmenvertrag Verkehrssicherung Rev. 01 bis 07, 09, 10 und 12",
+      "buyer": "Staatsbetrieb Sachsenforst - Forstbezirk Baerenfels",
+      "buyerCity": "Altenberg",
+      "country": "DEU",
+      "cpv": [
+        "77211400",
+        "77200000",
+        "77211500"
+      ],
+      "cpvMain": "77211400",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DED2F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/792515-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 68
+    },
+    "791317-2026": {
+      "id": "791317-2026",
+      "publishedAt": "2026-11-12T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungs- und Klempnerarbeiten",
+      "buyer": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
+      "buyerCity": "Bad Vilbel",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45261300",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-11-19T10:00:00.000Z",
+      "nuts": [
+        "DE71E",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/791317-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 48
     }
   },
-  "lastRun": "2026-11-12T13:05:08.552Z"
+  "lastRun": "2026-11-13T12:29:45.244Z"
 }
