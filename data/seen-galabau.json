@@ -2533,7 +2533,15 @@
     "791603-2026": "2026-11-13T12:29:45.244Z",
     "790660-2026": "2026-11-13T12:29:45.244Z",
     "792515-2026": "2026-11-13T12:29:45.244Z",
-    "791317-2026": "2026-11-13T12:29:45.244Z"
+    "791317-2026": "2026-11-13T12:29:45.244Z",
+    "795979-2026": "2026-11-16T13:02:54.985Z",
+    "793034-2026": "2026-11-16T13:02:54.985Z",
+    "793148-2026": "2026-11-16T13:02:54.985Z",
+    "794013-2026": "2026-11-16T13:02:54.985Z",
+    "795099-2026": "2026-11-16T13:02:54.985Z",
+    "795528-2026": "2026-11-16T13:02:54.985Z",
+    "793045-2026": "2026-11-16T13:02:54.985Z",
+    "794350-2026": "2026-11-16T13:02:54.985Z"
   },
   "notices": {
     "519810-2026": {
@@ -64744,7 +64752,7 @@
         "77341000",
         "77342000"
       ],
-      "score": 95
+      "score": 80
     },
     "718951-2026": {
       "id": "718951-2026",
@@ -64792,7 +64800,7 @@
         "77300000",
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "721818-2026": {
       "id": "721818-2026",
@@ -65159,7 +65167,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "723245-2026": {
       "id": "723245-2026",
@@ -65408,7 +65416,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 65
+      "score": 50
     },
     "727838-2026": {
       "id": "727838-2026",
@@ -65502,7 +65510,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 83
+      "score": 68
     },
     "732547-2026": {
       "id": "732547-2026",
@@ -65671,7 +65679,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "730397-2026": {
       "id": "730397-2026",
@@ -65827,7 +65835,7 @@
         "77313000",
         "45112714"
       ],
-      "score": 83
+      "score": 68
     },
     "734348-2026": {
       "id": "734348-2026",
@@ -66024,7 +66032,7 @@
         "77300000",
         "77313000"
       ],
-      "score": 83
+      "score": 68
     },
     "737772-2026": {
       "id": "737772-2026",
@@ -66074,7 +66082,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "739409-2026": {
       "id": "739409-2026",
@@ -66153,7 +66161,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "738150-2026": {
       "id": "738150-2026",
@@ -66324,7 +66332,7 @@
         "77314000",
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "743040-2026": {
       "id": "743040-2026",
@@ -66349,7 +66357,7 @@
         "77314000",
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "744342-2026": {
       "id": "744342-2026",
@@ -66399,7 +66407,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "744664-2026": {
       "id": "744664-2026",
@@ -66426,7 +66434,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "744918-2026": {
       "id": "744918-2026",
@@ -66456,7 +66464,7 @@
         "45112720",
         "45112700"
       ],
-      "score": 83
+      "score": 68
     },
     "743670-2026": {
       "id": "743670-2026",
@@ -66563,7 +66571,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "747258-2026": {
       "id": "747258-2026",
@@ -68599,7 +68607,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 83
+      "score": 68
     },
     "781218-2026": {
       "id": "781218-2026",
@@ -68645,7 +68653,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "781969-2026": {
       "id": "781969-2026",
@@ -69650,7 +69658,229 @@
         "45112713"
       ],
       "score": 48
+    },
+    "795979-2026": {
+      "id": "795979-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – LOS 4 - Rahmenvereinbarung für Planungs- und Sachverständigenleistungen für Bildungsstandorte und kommunale Immobilien - Leistungsbereich Baum- und Artenschutz",
+      "buyer": "Schulbau Hamburg & Gebäudemanagement Hamburg GmbH",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "71313000",
+        "71319000",
+        "90713000",
+        "90721700"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 14090000,
+      "deadline": "2026-12-14T13:00:00.000Z",
+      "nuts": [
+        "DE600",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/795979-2026",
+      "matchedCpv": [
+        "77211500"
+      ],
+      "score": 85
+    },
+    "793034-2026": {
+      "id": "793034-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Kirschgarten 1. BA, Hs.1: 4 FF+4 ÖG RH, Neubau von 4 frei finanzierten und 4 öffentlich geförderten Reihenhäusern in 48157 Münster-Handorf - Außenanlagenarbeiten",
+      "buyer": "Wohn + Stadtbau Wohnungsunternehmen der Stadt Münster GmbH",
+      "buyerCity": "Münster",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45112710",
+        "45112712"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-21T09:15:00.000Z",
+      "nuts": [
+        "DEA33",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/793034-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112712"
+      ],
+      "score": 83
+    },
+    "793148-2026": {
+      "id": "793148-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "buyer": "Landkreis Göttingen",
+      "buyerCity": "Göttingen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45000000",
+        "45112500",
+        "45112710",
+        "45112730",
+        "45233222",
+        "45233250",
+        "45236000",
+        "45342000",
+        "77300000",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-14T10:00:00.000Z",
+      "nuts": [
+        "DE91C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/793148-2026",
+      "matchedCpv": [
+        "45112710",
+        "77300000",
+        "77310000",
+        "45112700",
+        "45112730"
+      ],
+      "score": 83
+    },
+    "794013-2026": {
+      "id": "794013-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag für Baumpflege und -fällung",
+      "buyer": "Rennbahngemeinde Hoppegarten",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77211500"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-15T09:00:00.000Z",
+      "nuts": [
+        "DE409",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/794013-2026",
+      "matchedCpv": [
+        "77310000",
+        "77211500"
+      ],
+      "score": 83
+    },
+    "795099-2026": {
+      "id": "795099-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Grünpflege an den Liegenschaften des Kreises Mettmann",
+      "buyer": "Kreis Mettmann - Der Landrat, Amt 10 -Zentrale Vergabestelle-",
+      "buyerCity": "Mettmann",
+      "country": "DEU",
+      "cpv": [
+        "77314000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2026-12-15T09:00:00.000Z",
+      "nuts": [
+        "DEA1C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/795099-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "795528-2026": {
+      "id": "795528-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsschutz – Ökologischer Ausgleich Reichweiler",
+      "buyer": "gwSaar, Gesellschaft für Wirtschaftsförderung Saar mbH",
+      "buyerCity": "Saar",
+      "country": "DEU",
+      "cpv": [
+        "90721100",
+        "90720000",
+        "90721700",
+        "90722000",
+        "90711400",
+        "45100000",
+        "45112700",
+        "77300000",
+        "90721000"
+      ],
+      "cpvMain": "90721100",
+      "valueEur": 300000,
+      "deadline": null,
+      "nuts": [
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/795528-2026",
+      "matchedCpv": [
+        "77300000",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "793045-2026": {
+      "id": "793045-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Max-Planck-Institut für biologische Kybernetik in Tübingen-Erweiterung Institut (Neubau): Dach",
+      "buyer": "Max-Planck-Gesellschaft Abt.III",
+      "buyerCity": "München",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": null,
+      "deadline": "2026-12-15T09:00:00.000Z",
+      "nuts": [
+        "DE142",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/793045-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
+    },
+    "794350-2026": {
+      "id": "794350-2026",
+      "publishedAt": "2026-11-15T23:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten und Spezialbauarbeiten – Dacharbeiten an der Hauptschule Hackenberg Remscheid",
+      "buyer": "Stadt Remscheid, Fachdienst Recht und Vergabe, Abteilung Zentrale Vergabestelle",
+      "buyerCity": "Remscheid",
+      "country": "DEU",
+      "cpv": [
+        "45260000",
+        "45112713",
+        "45113000",
+        "45261210",
+        "45261300",
+        "45261410"
+      ],
+      "cpvMain": "45260000",
+      "valueEur": null,
+      "deadline": "2026-12-15T08:00:00.000Z",
+      "nuts": [
+        "DEA18",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/794350-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 63
     }
   },
-  "lastRun": "2026-11-13T12:29:45.244Z"
+  "lastRun": "2026-11-16T13:02:54.985Z"
 }
