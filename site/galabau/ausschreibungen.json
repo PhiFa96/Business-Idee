@@ -1,5 +1,197 @@
 [
   {
+    "id": "796722-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – RV Baumpflege 2027",
+    "buyer": "mags - Mönchengladbacher Abfall-, Grün- und Straßenbetriebe AöR",
+    "buyerCity": "Mönchengladbach",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "03452000",
+      "77341000",
+      "45112700"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-12-17T08:00:00.000Z",
+    "nuts": [
+      "DEA15",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/796722-2026",
+    "matchedCpv": [
+      "77211500",
+      "77341000",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "799232-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Pflege Außenanlagen",
+    "buyer": "BG Kliniken Ludwigshafen und Tübingen gGmbH",
+    "buyerCity": "Ludwigshafen",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77310000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-11-30T11:00:00.000Z",
+    "nuts": [
+      "DEB34",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/799232-2026",
+    "matchedCpv": [
+      "77300000",
+      "77310000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "799846-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Außenanlagen",
+    "buyer": "Handwerkskammer Ostwestfalen-Lippe zu Bielefeld",
+    "buyerCity": "Bielefeld",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45111100",
+      "45112500",
+      "45232452",
+      "45232410",
+      "45316100",
+      "45233222",
+      "77310000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": null,
+    "deadline": "2026-12-16T22:59:00.000Z",
+    "nuts": [
+      "DEA41",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/799846-2026",
+    "matchedCpv": [
+      "77310000",
+      "45112700"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "797266-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – 26-0116_S_KP_Baumkontrolle und -pflege",
+    "buyer": "Deutsches Zentrum für Luft-und Raumfahrt e. V. | TI-ZVM",
+    "buyerCity": "Braunschweig",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "77200000"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": 394482.8,
+    "deadline": null,
+    "nuts": [
+      "DEA23",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/797266-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "799980-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Landschaftsgärtnerische Arbeiten – VE139_4_Außenanlagen Therapiegarten",
+    "buyer": "Sana Klinikum Offenbach GmbH",
+    "buyerCity": "Offenbach",
+    "country": "DEU",
+    "cpv": [
+      "45112700",
+      "45233253",
+      "45112330",
+      "45316100",
+      "43325000",
+      "45112710",
+      "73400000"
+    ],
+    "cpvMain": "45112700",
+    "valueEur": 2376541.86,
+    "deadline": null,
+    "nuts": [
+      "DE713",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/799980-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "797732-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Bankett- und Grabenmäharbeiten im Stadtgebiet Gelsenkirchen",
+    "buyer": "GELSENDIENSTE",
+    "buyerCity": "Gelsenkirchen",
+    "country": "DEU",
+    "cpv": [
+      "77310000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-11-24T09:00:00.000Z",
+    "nuts": [
+      "DEA32",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/797732-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
+    "id": "796755-2026",
+    "publishedAt": "2026-11-16T23:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungs- und Klempnerarbeiten mit Dachbegrünung - Neubau Zooterrassen",
+    "buyer": "DEG Duisburger Einkaufsgesellschaft mbH",
+    "buyerCity": "Duisburg",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45112713"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": "2026-12-01T09:00:00.000Z",
+    "nuts": [
+      "DEA12",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/796755-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-17T13:44:39.935Z"
+  },
+  {
     "id": "795979-2026",
     "publishedAt": "2026-11-15T23:00:00.000Z",
     "title": "Deutschland – Baumpflege – LOS 4 - Rahmenvereinbarung für Planungs- und Sachverständigenleistungen für Bildungsstandorte und kommunale Immobilien - Leistungsbereich Baum- und Artenschutz",
@@ -394,7 +586,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-11-13T12:29:45.244Z"
   },
   {
@@ -447,7 +639,7 @@
     "matchedCpv": [
       "45112713"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-11-13T12:29:45.244Z"
   },
   {
@@ -4351,7 +4543,7 @@
     "matchedCpv": [
       "77211500"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-10-22T09:33:08.448Z"
   },
   {
@@ -4447,7 +4639,7 @@
     "matchedCpv": [
       "77320000"
     ],
-    "score": 48,
+    "score": 43,
     "firstSeenAt": "2026-10-22T09:33:08.448Z"
   },
   {

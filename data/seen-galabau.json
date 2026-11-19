@@ -2555,7 +2555,20 @@
     "801460-2026": "2026-11-18T13:19:10.030Z",
     "801090-2026": "2026-11-18T13:19:10.030Z",
     "803144-2026": "2026-11-18T13:19:10.030Z",
-    "802012-2026": "2026-11-18T13:19:10.030Z"
+    "802012-2026": "2026-11-18T13:19:10.030Z",
+    "805277-2026": "2026-11-19T13:43:22.885Z",
+    "805535-2026": "2026-11-19T13:43:22.885Z",
+    "805819-2026": "2026-11-19T13:43:22.885Z",
+    "806193-2026": "2026-11-19T13:43:22.885Z",
+    "806413-2026": "2026-11-19T13:43:22.885Z",
+    "807260-2026": "2026-11-19T13:43:22.885Z",
+    "805576-2026": "2026-11-19T13:43:22.885Z",
+    "806369-2026": "2026-11-19T13:43:22.885Z",
+    "806429-2026": "2026-11-19T13:43:22.885Z",
+    "805334-2026": "2026-11-19T13:43:22.885Z",
+    "805553-2026": "2026-11-19T13:43:22.885Z",
+    "806062-2026": "2026-11-19T13:43:22.885Z",
+    "803897-2026": "2026-11-19T13:43:22.885Z"
   },
   "notices": {
     "519810-2026": {
@@ -65547,7 +65560,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 68
+      "score": 63
     },
     "733475-2026": {
       "id": "733475-2026",
@@ -65639,7 +65652,7 @@
       "matchedCpv": [
         "77320000"
       ],
-      "score": 48
+      "score": 43
     },
     "731759-2026": {
       "id": "731759-2026",
@@ -69620,7 +69633,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 68
+      "score": 63
     },
     "792515-2026": {
       "id": "792515-2026",
@@ -69671,7 +69684,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "795979-2026": {
       "id": "795979-2026",
@@ -70293,7 +70306,343 @@
         "45112700"
       ],
       "score": 50
+    },
+    "805277-2026": {
+      "id": "805277-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Sächsische Gestütsverwaltung, Hauptgestüt Graditz, Gestütsstraße 54 - 56, 04860 Torgau OT Graditz",
+      "buyer": "Staatsbetrieb Sächsisches Immobilien- und Baumanagement, Zentrale, Zentralstelle Vergabe- und Vertragsmanagement",
+      "buyerCity": "Dresden",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77340000",
+        "77313000",
+        "77314000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-21T08:00:00.000Z",
+      "nuts": [
+        "DED53",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805277-2026",
+      "matchedCpv": [
+        "77310000",
+        "77340000",
+        "77313000",
+        "77314000"
+      ],
+      "score": 83
+    },
+    "805535-2026": {
+      "id": "805535-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Coburg - Amt 65 - Rückert-Mittelschule 2. BA Teilsanierung Gebäude A - Freianlagen (NEU)",
+      "buyer": "Stadt Coburg - Hochbauamt",
+      "buyerCity": "Coburg",
+      "country": "DEU",
+      "cpv": [
+        "45112710"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": null,
+      "deadline": "2027-01-25T09:00:00.000Z",
+      "nuts": [
+        "DE243",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805535-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 83
+    },
+    "805819-2026": {
+      "id": "805819-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Neubau der Kindertagesstätte \"Windstärke 12\" Gewerk Außenanlagen Landschaftsbau",
+      "buyer": "Gemeinde Helgoland",
+      "buyerCity": "Helgoland",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45000000",
+        "45112710",
+        "45112712"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-21T10:00:00.000Z",
+      "nuts": [
+        "DEF09",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805819-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700",
+        "45112712"
+      ],
+      "score": 83
+    },
+    "806193-2026": {
+      "id": "806193-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflanzung und Pflege Wechselflor 2027 ff",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-17T11:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/806193-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "806413-2026": {
+      "id": "806413-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Landschaftspflegearbeiten",
+      "buyer": "Ruhrverband, Abteilung Zentrale Dienste, Einkauf",
+      "buyerCity": "Essen",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-21T09:00:00.000Z",
+      "nuts": [
+        "DEA57",
+        "DEU",
+        "DEA58"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/806413-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "807260-2026": {
+      "id": "807260-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege 04/2027 bis 03/2029",
+      "buyer": "Gemeinde Fredersdorf-Vogelsdorf",
+      "buyerCity": "Fredersdorf-Vogelsdorf",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-21T09:00:00.000Z",
+      "nuts": [],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/807260-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "805576-2026": {
+      "id": "805576-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – 1H0029, Neubau 4-gruppige KITA St. Pius, Bad Neuenahr-Ahrweiler, LOS 19 Außenanlagen 2. BA",
+      "buyer": "Aufbau- und Entwicklungsgesellschaft Bad Neuenahr-Ahrweiler mbH",
+      "buyerCity": "Bad Neuenahr-Ahrweiler",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45112710"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": 336494,
+      "deadline": null,
+      "nuts": [
+        "DEB12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805576-2026",
+      "matchedCpv": [
+        "45112710"
+      ],
+      "score": 80
+    },
+    "806369-2026": {
+      "id": "806369-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten für Rohrleitungen – Campus IBA-Terrassen - Außenanlagen und technische Anlagen in AA",
+      "buyer": "Stadt Großräschen",
+      "buyerCity": "Großräschen",
+      "country": "DEU",
+      "cpv": [
+        "45231100",
+        "39113300",
+        "45112700",
+        "45112710",
+        "45231112",
+        "45231113",
+        "45231300",
+        "45232000",
+        "45232140",
+        "45233222"
+      ],
+      "cpvMain": "45231100",
+      "valueEur": 2733969.29,
+      "deadline": null,
+      "nuts": [
+        "DE40B",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/806369-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 80
+    },
+    "806429-2026": {
+      "id": "806429-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Offenes Verfahren (EU-weit) Grünpflegearbeiten in 4 Losen für Bundesliegenschaften in Thüringen – Erfurt, Bad Salzungen, Suhl, Direktion Erfurt - VOEK 527-25",
+      "buyer": "Bundesanstalt für Immobilienaufgaben",
+      "buyerCity": "Bonn",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77314000",
+        "77342000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 1056877.44,
+      "deadline": null,
+      "nuts": [
+        "DEG01",
+        "DEG0R",
+        "DEG0S",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/806429-2026",
+      "matchedCpv": [
+        "77310000",
+        "77314000",
+        "77342000"
+      ],
+      "score": 80
+    },
+    "805334-2026": {
+      "id": "805334-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltungspflegearbeiten an städtischen Straßenbegleitgrün 2027-2030",
+      "buyer": "Stadt Ahlen, Der Bürgermeister",
+      "buyerCity": "Ahlen",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA38",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805334-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 68
+    },
+    "805553-2026": {
+      "id": "805553-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Pflegearbeiten für Ziergärten und Parks – Pflege Rasen- und Wiesenflächen Helmholtz Munich und BfS Bundesamt für Strahlenschutz",
+      "buyer": "Helmholtz Zentrum München Deutsches Forschungszentrum für Gesundheit und Umwelt (GmbH)",
+      "buyerCity": "Neuherberg",
+      "country": "DEU",
+      "cpv": [
+        "77311000"
+      ],
+      "cpvMain": "77311000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE21H",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/805553-2026",
+      "matchedCpv": [
+        "77311000"
+      ],
+      "score": 68
+    },
+    "806062-2026": {
+      "id": "806062-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Bauarbeiten – GAZ - Los 34 (Außenanlagen)",
+      "buyer": "Landkreis Vorpommern-Greifswald - Der Landrat",
+      "buyerCity": "Greifswald",
+      "country": "DEU",
+      "cpv": [
+        "45000000",
+        "45223300",
+        "71400000",
+        "77300000"
+      ],
+      "cpvMain": "45000000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DE80N",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/806062-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 68
+    },
+    "803897-2026": {
+      "id": "803897-2026",
+      "publishedAt": "2026-11-18T23:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten – Kläranlage Aurich-Haxtum, Bau Faulung II - Dachdeckungsarbeiten",
+      "buyer": "Stadt Aurich",
+      "buyerCity": "Aurich",
+      "country": "DEU",
+      "cpv": [
+        "45261210",
+        "45261200",
+        "45260000",
+        "45000000",
+        "45262100",
+        "45261213",
+        "45112713",
+        "45261300",
+        "45421132"
+      ],
+      "cpvMain": "45261210",
+      "valueEur": 177479.36,
+      "deadline": null,
+      "nuts": [
+        "DE947",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/803897-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-11-18T13:19:10.030Z"
+  "lastRun": "2026-11-19T13:43:22.885Z"
 }
