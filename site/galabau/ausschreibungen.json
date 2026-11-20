@@ -1,5 +1,226 @@
 [
   {
+    "id": "801557-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Diverse_Liegenschaften_Friesoythe_Cloppenburg_Gartenpflegearbeiten",
+    "buyer": "Landkreis Cloppenburg",
+    "buyerCity": "Cloppenburg",
+    "country": "DEU",
+    "cpv": [
+      "77300000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": "2026-12-22T09:00:00.000Z",
+    "nuts": [
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/801557-2026",
+    "matchedCpv": [
+      "77300000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "803377-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grün- und Außenanlagenpflege an der Universität Paderborn",
+    "buyer": "Universität Paderborn",
+    "buyerCity": "Paderborn",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77340000"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": null,
+    "deadline": "2026-12-18T11:00:00.000Z",
+    "nuts": [
+      "DEA47",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/803377-2026",
+    "matchedCpv": [
+      "77310000",
+      "77340000"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "800438-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Grünpflege LWL-Freilichtmuseum Detmold",
+    "buyer": "LWL-Museum Hellerlecht",
+    "buyerCity": "Detmold",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77340000"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DEA45",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/800438-2026",
+    "matchedCpv": [
+      "77300000",
+      "77340000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "801460-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Einbau von Türen und Fenstern sowie Zubehör – Eibenkamp 1 - Tragwerk und Gebäudehülle BIM",
+    "buyer": "SBH | Schulbau Hamburg",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "45421100",
+      "45112000",
+      "45113000",
+      "45112713",
+      "45223220",
+      "45261210",
+      "45262310",
+      "45262670",
+      "45422100",
+      "45443000"
+    ],
+    "cpvMain": "45421100",
+    "valueEur": 10844000,
+    "deadline": "2026-12-03T09:00:00.000Z",
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/801460-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 65,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "801090-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Pflegearbeiten für Sportplätze – RV Regenerationsarbeiten auf den Sportplätzen der Stadt Vechta",
+    "buyer": "Stadt Vechta",
+    "buyerCity": "Vechta",
+    "country": "DEU",
+    "cpv": [
+      "77320000"
+    ],
+    "cpvMain": "77320000",
+    "valueEur": null,
+    "deadline": "2027-01-15T22:59:00.000Z",
+    "nuts": [
+      "DE94F",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/801090-2026",
+    "matchedCpv": [
+      "77320000"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "803144-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – Dachabdichtungs- und Klempnerarbeiten",
+    "buyer": "Interkommunales Vergabezentrum der Stadt Bad Vilbel im Auftrag des Magistrats der Stadt Friedberg",
+    "buyerCity": "Bad Vilbel",
+    "country": "DEU",
+    "cpv": [
+      "45261410",
+      "45261300",
+      "45112713"
+    ],
+    "cpvMain": "45261410",
+    "valueEur": null,
+    "deadline": "2026-12-03T10:00:00.000Z",
+    "nuts": [
+      "DE71E",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/803144-2026",
+    "matchedCpv": [
+      "45112713"
+    ],
+    "score": 63,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
+    "id": "802012-2026",
+    "publishedAt": "2026-11-17T23:00:00.000Z",
+    "title": "Deutschland – Bau von Kantinen – BePo, Neubau Versorgungsgebäude mit Infrastrukturmaßnahmen",
+    "buyer": "Staatliches Bauamt Erlangen-Nürnberg, Technische Geschäftsleitung, SG Bau",
+    "buyerCity": "Erlangen",
+    "country": "DEU",
+    "cpv": [
+      "45212422",
+      "45251200",
+      "45232410",
+      "90470000",
+      "45112713",
+      "45112700",
+      "45262100",
+      "45443000",
+      "45223210",
+      "45262670",
+      "45343200",
+      "79713000",
+      "45324000",
+      "45421141",
+      "45421146",
+      "45410000",
+      "45321000",
+      "45262320",
+      "45421000",
+      "45421100",
+      "45421131",
+      "45431100",
+      "45431200",
+      "45442100",
+      "31122000",
+      "45216111",
+      "45431000",
+      "45442110",
+      "09331200",
+      "45232440",
+      "45312100",
+      "45311200",
+      "45310000",
+      "45314000",
+      "48921000",
+      "45317000",
+      "45421151",
+      "39220000",
+      "45331231"
+    ],
+    "cpvMain": "45212422",
+    "valueEur": 19200000,
+    "deadline": null,
+    "nuts": [
+      "DE254",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/802012-2026",
+    "matchedCpv": [
+      "45112713",
+      "45112700"
+    ],
+    "score": 50,
+    "firstSeenAt": "2026-11-18T13:19:10.030Z"
+  },
+  {
     "id": "796722-2026",
     "publishedAt": "2026-11-16T23:00:00.000Z",
     "title": "Deutschland – Baumpflege – RV Baumpflege 2027",
@@ -51,7 +272,7 @@
       "77300000",
       "77310000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-11-17T13:44:39.935Z"
   },
   {
@@ -1507,7 +1728,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-11-10T12:53:52.450Z"
   },
   {
@@ -2820,7 +3041,7 @@
     "matchedCpv": [
       "77313000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-11-02T12:46:08.276Z"
   },
   {
@@ -3414,7 +3635,7 @@
       "77211400",
       "77341000"
     ],
-    "score": 83,
+    "score": 68,
     "firstSeenAt": "2026-10-29T11:01:44.523Z"
   },
   {
