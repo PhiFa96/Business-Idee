@@ -2583,7 +2583,9 @@
     "814034-2026": "2026-11-23T15:09:33.584Z",
     "807556-2026": "2026-11-23T15:09:33.584Z",
     "809234-2026": "2026-11-23T15:09:33.584Z",
-    "809754-2026": "2026-11-23T15:09:33.584Z"
+    "809754-2026": "2026-11-23T15:09:33.584Z",
+    "817237-2026": "2026-11-24T15:07:49.568Z",
+    "817116-2026": "2026-11-24T15:07:49.568Z"
   },
   "notices": {
     "519810-2026": {
@@ -66124,7 +66126,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 68
+      "score": 63
     },
     "739409-2026": {
       "id": "739409-2026",
@@ -66203,7 +66205,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "738150-2026": {
       "id": "738150-2026",
@@ -66842,7 +66844,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "750386-2026": {
       "id": "750386-2026",
@@ -67631,7 +67633,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 83
+      "score": 68
     },
     "767364-2026": {
       "id": "767364-2026",
@@ -70082,7 +70084,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "796755-2026": {
       "id": "796755-2026",
@@ -71060,7 +71062,56 @@
         "45112710"
       ],
       "score": 68
+    },
+    "817237-2026": {
+      "id": "817237-2026",
+      "publishedAt": "2026-11-23T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Grünflächenpflege 04/2027 bis 03/2029",
+      "buyer": "Gemeinde Fredersdorf-Vogelsdorf",
+      "buyerCity": "Fredersdorf-Vogelsdorf",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-21T09:00:00.000Z",
+      "nuts": [],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/817237-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 83
+    },
+    "817116-2026": {
+      "id": "817116-2026",
+      "publishedAt": "2026-11-23T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Grünanlagen – Maxiparkerweiterung, Garten- und Landschaftsbauarbeiten, Pflanz- und Ansaatarbeiten sowie Pflegearbeiten",
+      "buyer": "Hamm.Invest GmbH",
+      "buyerCity": "Hamm",
+      "country": "DEU",
+      "cpv": [
+        "45112710",
+        "45112711",
+        "77310000",
+        "77315000"
+      ],
+      "cpvMain": "45112710",
+      "valueEur": 58746.98,
+      "deadline": null,
+      "nuts": [
+        "DEA54",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/817116-2026",
+      "matchedCpv": [
+        "45112710",
+        "77310000",
+        "45112711",
+        "77315000"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-11-23T15:09:33.584Z"
+  "lastRun": "2026-11-24T15:07:49.568Z"
 }
