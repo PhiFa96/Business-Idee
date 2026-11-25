@@ -1,5 +1,203 @@
 [
   {
+    "id": "812181-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Dienstleistungen im Gartenbau – Unterhaltungspflege-ab2027",
+    "buyer": "Sondervermögen Stadt und Hafen, vertreten durch die HafenCity Hamburg GmbH",
+    "buyerCity": "Hamburg",
+    "country": "DEU",
+    "cpv": [
+      "77300000",
+      "77211500"
+    ],
+    "cpvMain": "77300000",
+    "valueEur": 2900000,
+    "deadline": "2027-01-04T12:00:00.000Z",
+    "nuts": [
+      "DE600",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/812181-2026",
+    "matchedCpv": [
+      "77300000",
+      "77211500"
+    ],
+    "score": 95,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "811589-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Magistrat der Stadt Heringen (Werra) - Rahmenvereinbarung/Jahresvertrag über die fachgerechte Ausführung von Baumpflegeleistungen auf Einzelabruf in Heringen (Werra)",
+    "buyer": "Magistrat der Stadt Heringen (Werra)",
+    "buyerCity": "Heringen (Werra)",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "77211400",
+      "77340000"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-12-22T07:59:00.000Z",
+    "nuts": [
+      "DE733",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/811589-2026",
+    "matchedCpv": [
+      "77211500",
+      "77340000",
+      "77211400"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "812629-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – Erweiterungsbau der Kooperationsschule Friesack - Außenanlagen",
+    "buyer": "Landkreis Havelland - Der Landrat -",
+    "buyerCity": "Rathenow",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "03100000",
+      "45112500",
+      "45112700",
+      "45112710",
+      "45112720",
+      "45112723",
+      "45113000",
+      "45214000",
+      "45214200",
+      "45214230"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": null,
+    "deadline": "2026-12-22T10:00:00.000Z",
+    "nuts": [
+      "DE408",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/812629-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112700",
+      "45112720",
+      "45112723"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "813448-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Baumpflege – Baumkontrollen für die Landeshauptstadt Potsdam",
+    "buyer": "Landeshauptstadt Potsdam, Bereich Vergabemanagement",
+    "buyerCity": "Potsdam",
+    "country": "DEU",
+    "cpv": [
+      "77211500",
+      "77230000",
+      "77000000",
+      "77231500"
+    ],
+    "cpvMain": "77211500",
+    "valueEur": null,
+    "deadline": "2026-12-15T07:00:00.000Z",
+    "nuts": [
+      "DE404",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/813448-2026",
+    "matchedCpv": [
+      "77211500"
+    ],
+    "score": 83,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "813106-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Pflege Mücheln + Roßbach + Lochau 2027 (opt. 2028/2029)",
+    "buyer": "LMBV Lausitzer und Mitteldeutsche Bergbau-Verwaltungsgesellschaft mbH",
+    "buyerCity": "Leipzig",
+    "country": "DEU",
+    "cpv": [
+      "77310000",
+      "77231600"
+    ],
+    "cpvMain": "77310000",
+    "valueEur": 470853,
+    "deadline": null,
+    "nuts": [
+      "DEE0B",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/813106-2026",
+    "matchedCpv": [
+      "77310000"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "813205-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Bauarbeiten – Neubau Kita mit Arztpraxis in Ubstadt-Weiher, Ortsteil Zeutern",
+    "buyer": "Gemeinde Ubstadt-Weiher",
+    "buyerCity": "Ubstadt-Weiher",
+    "country": "DEU",
+    "cpv": [
+      "45000000",
+      "45112723",
+      "45214100",
+      "45112710",
+      "71421000",
+      "45112700"
+    ],
+    "cpvMain": "45000000",
+    "valueEur": 231137,
+    "deadline": null,
+    "nuts": [
+      "DE123",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/813205-2026",
+    "matchedCpv": [
+      "45112710",
+      "45112723",
+      "45112700"
+    ],
+    "score": 80,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
+    "id": "814034-2026",
+    "publishedAt": "2026-11-22T23:00:00.000Z",
+    "title": "Deutschland – Pflege von Parkanlagen – Unterhaltungspflege Grünflächen Parkanlagen FBB",
+    "buyer": "Gemeinde Schönefeld",
+    "buyerCity": "Schönefeld",
+    "country": "DEU",
+    "cpv": [
+      "77313000"
+    ],
+    "cpvMain": "77313000",
+    "valueEur": null,
+    "deadline": null,
+    "nuts": [
+      "DE406",
+      "DEU"
+    ],
+    "url": "https://ted.europa.eu/bg/notice/-/detail/814034-2026",
+    "matchedCpv": [
+      "77313000"
+    ],
+    "score": 68,
+    "firstSeenAt": "2026-11-23T15:09:33.584Z"
+  },
+  {
     "id": "808125-2026",
     "publishedAt": "2026-11-19T23:00:00.000Z",
     "title": "Deutschland – Dienstleistungen im Gartenbau – KSP im Bereich Südost - Rasenmahd 2027-2029",
@@ -186,7 +384,7 @@
     "matchedCpv": [
       "45112710"
     ],
-    "score": 68,
+    "score": 63,
     "firstSeenAt": "2026-11-23T15:09:33.584Z"
   },
   {
