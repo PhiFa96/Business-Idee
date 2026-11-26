@@ -2594,7 +2594,19 @@
     "819815-2026": "2026-11-25T14:48:17.646Z",
     "818392-2026": "2026-11-25T14:48:17.646Z",
     "819444-2026": "2026-11-25T14:48:17.646Z",
-    "819292-2026": "2026-11-25T14:48:17.646Z"
+    "819292-2026": "2026-11-25T14:48:17.646Z",
+    "823466-2026": "2026-11-26T14:12:57.962Z",
+    "820972-2026": "2026-11-26T14:12:57.962Z",
+    "822911-2026": "2026-11-26T14:12:57.962Z",
+    "823497-2026": "2026-11-26T14:12:57.962Z",
+    "823930-2026": "2026-11-26T14:12:57.962Z",
+    "823678-2026": "2026-11-26T14:12:57.962Z",
+    "821172-2026": "2026-11-26T14:12:57.962Z",
+    "821380-2026": "2026-11-26T14:12:57.962Z",
+    "823958-2026": "2026-11-26T14:12:57.962Z",
+    "820545-2026": "2026-11-26T14:12:57.962Z",
+    "820730-2026": "2026-11-26T14:12:57.962Z",
+    "821128-2026": "2026-11-26T14:12:57.962Z"
   },
   "notices": {
     "519810-2026": {
@@ -66624,7 +66636,7 @@
       "matchedCpv": [
         "77300000"
       ],
-      "score": 68
+      "score": 63
     },
     "747258-2026": {
       "id": "747258-2026",
@@ -68660,7 +68672,7 @@
       "matchedCpv": [
         "77211500"
       ],
-      "score": 68
+      "score": 63
     },
     "781218-2026": {
       "id": "781218-2026",
@@ -68706,7 +68718,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 68
+      "score": 63
     },
     "781969-2026": {
       "id": "781969-2026",
@@ -71342,7 +71354,309 @@
         "77211400"
       ],
       "score": 60
+    },
+    "823466-2026": {
+      "id": "823466-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag für Baumkontrolle und Erfassung",
+      "buyer": "Rennbahngemeinde Hoppegarten",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77310000"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": 506250,
+      "deadline": "2027-01-11T08:00:00.000Z",
+      "nuts": [
+        "DE409",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/823466-2026",
+      "matchedCpv": [
+        "77310000"
+      ],
+      "score": 95
+    },
+    "820972-2026": {
+      "id": "820972-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Grünflächenpflege städtische Liegenschaften Wülfrath",
+      "buyer": "Kreis Mettmann - Der Landrat, Amt 10 -Zentrale Vergabestelle-",
+      "buyerCity": "Mettmann",
+      "country": "DEU",
+      "cpv": [
+        "77314000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2027-01-04T09:00:00.000Z",
+      "nuts": [
+        "DEA1C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/820972-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "822911-2026": {
+      "id": "822911-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Tiefbauarbeiten, außer Tunneln, Schächten und Unterführungen – Landkreis Ludwigslust-Parchim - Erweiterungsbau für das Gymnasiales Schulzentrum in 19243 Wittenburg - Los 50 - Außenanlagen",
+      "buyer": "Landkreis Ludwigslust-Parchim - Der Landrat",
+      "buyerCity": "Parchim",
+      "country": "DEU",
+      "cpv": [
+        "45221250",
+        "03120000",
+        "45112700",
+        "45112710"
+      ],
+      "cpvMain": "45221250",
+      "valueEur": null,
+      "deadline": "2027-01-08T08:00:00.000Z",
+      "nuts": [
+        "DE80O",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/822911-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112700"
+      ],
+      "score": 83
+    },
+    "823497-2026": {
+      "id": "823497-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Anpflanzungs- und Pflegearbeiten an Grünflächen – Rahmenvertrag für Baumpflege und -fällung",
+      "buyer": "Rennbahngemeinde Hoppegarten",
+      "buyerCity": "Hoppegarten",
+      "country": "DEU",
+      "cpv": [
+        "77310000",
+        "77211500"
+      ],
+      "cpvMain": "77310000",
+      "valueEur": null,
+      "deadline": "2026-12-15T09:00:00.000Z",
+      "nuts": [
+        "DE409",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/823497-2026",
+      "matchedCpv": [
+        "77310000",
+        "77211500"
+      ],
+      "score": 83
+    },
+    "823930-2026": {
+      "id": "823930-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Grundstückspflege – Außenanlagenpflege und Winterdienst in Ueckermünde und Pasewalk",
+      "buyer": "Staatliches Bau- und Liegenschaftsamt Neubrandenburg",
+      "buyerCity": "Neubrandenburg",
+      "country": "DEU",
+      "cpv": [
+        "77314000",
+        "90620000",
+        "90630000",
+        "90612000"
+      ],
+      "cpvMain": "77314000",
+      "valueEur": null,
+      "deadline": "2027-01-07T22:59:00.000Z",
+      "nuts": [
+        "DE80N",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/823930-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "823678-2026": {
+      "id": "823678-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – A 4, A 14, Los 6 AM Döbeln, Trassennahe flächige Grünpflege",
+      "buyer": "Die Autobahn GmbH des Bundes - NL Ost",
+      "buyerCity": "Halle (Saale)",
+      "country": "DEU",
+      "cpv": [
+        "77300000",
+        "77310000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": 340458.88,
+      "deadline": null,
+      "nuts": [
+        "DED43",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/823678-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000"
+      ],
+      "score": 80
+    },
+    "821172-2026": {
+      "id": "821172-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Pflege von Parkanlagen – Parkpflege Los 3",
+      "buyer": "Grün Berlin GmbH",
+      "buyerCity": "Berlin",
+      "country": "DEU",
+      "cpv": [
+        "77313000"
+      ],
+      "cpvMain": "77313000",
+      "valueEur": null,
+      "deadline": "2026-12-03T13:00:00.000Z",
+      "nuts": [
+        "DE300",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/821172-2026",
+      "matchedCpv": [
+        "77313000"
+      ],
+      "score": 68
+    },
+    "821380-2026": {
+      "id": "821380-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Dienstleistungen im Gartenbau – RV - Pflege von Vegetationsflächen an den kommunalen Schulen in der Landeshauptstadt Dresden",
+      "buyer": "Landeshauptstadt Dresden, GB Bildung, Jugend und Sport, Amt für Schulen",
+      "buyerCity": "Dresden",
+      "country": "DEU",
+      "cpv": [
+        "77300000"
+      ],
+      "cpvMain": "77300000",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DED21",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/821380-2026",
+      "matchedCpv": [
+        "77300000"
+      ],
+      "score": 68
+    },
+    "823958-2026": {
+      "id": "823958-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Hausmeisterdienste – Facility-Management Dienstleistung in der ZUE Wegberg",
+      "buyer": "Bezirksregierung Köln",
+      "buyerCity": "Köln",
+      "country": "DEU",
+      "cpv": [
+        "98341140",
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000",
+        "90620000",
+        "90630000",
+        "98341100"
+      ],
+      "cpvMain": "98341140",
+      "valueEur": null,
+      "deadline": null,
+      "nuts": [
+        "DEA29",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/823958-2026",
+      "matchedCpv": [
+        "77300000",
+        "77310000",
+        "77314000",
+        "77340000"
+      ],
+      "score": 68
+    },
+    "820545-2026": {
+      "id": "820545-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Pflegearbeiten für Sportplätze – RV Regenerationsarbeiten auf den Sportplätzen der Stadt Vechta",
+      "buyer": "Stadt Vechta",
+      "buyerCity": "Vechta",
+      "country": "DEU",
+      "cpv": [
+        "77320000"
+      ],
+      "cpvMain": "77320000",
+      "valueEur": null,
+      "deadline": "2027-01-13T22:59:00.000Z",
+      "nuts": [
+        "DE94F",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/820545-2026",
+      "matchedCpv": [
+        "77320000"
+      ],
+      "score": 63
+    },
+    "820730-2026": {
+      "id": "820730-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Gartenanlagen – Freianlagen Neubau Stützpunktgebäude Balje",
+      "buyer": "Wasserstraßen- und Schifffahrtsamt Elbe-Nordsee",
+      "buyerCity": "Hamburg",
+      "country": "DEU",
+      "cpv": [
+        "45112712"
+      ],
+      "cpvMain": "45112712",
+      "valueEur": null,
+      "deadline": "2027-01-14T09:30:00.000Z",
+      "nuts": [
+        "DE939",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/820730-2026",
+      "matchedCpv": [
+        "45112712"
+      ],
+      "score": 63
+    },
+    "821128-2026": {
+      "id": "821128-2026",
+      "publishedAt": "2026-11-25T23:00:00.000Z",
+      "title": "Deutschland – Dachdeckarbeiten und Spezialbauarbeiten – Kurparkterrassen Bad Neuenahr-Ahrweiler / Büro- und Veranstaltungsgebäude: Dacharbeiten / Dämmung, Abdichtung, Entwässerung, Gründach, Spengler",
+      "buyer": "Ahrtal Marketing GmbH",
+      "buyerCity": "Bad Neuenahr-Ahrweiler",
+      "country": "DEU",
+      "cpv": [
+        "45260000",
+        "45261210",
+        "45261410",
+        "45321000",
+        "45261420",
+        "45112713"
+      ],
+      "cpvMain": "45260000",
+      "valueEur": 446910.23,
+      "deadline": null,
+      "nuts": [
+        "DEB12",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/821128-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 60
     }
   },
-  "lastRun": "2026-11-25T14:48:17.646Z"
+  "lastRun": "2026-11-26T14:12:57.962Z"
 }
