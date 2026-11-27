@@ -2606,7 +2606,12 @@
     "823958-2026": "2026-11-26T14:12:57.962Z",
     "820545-2026": "2026-11-26T14:12:57.962Z",
     "820730-2026": "2026-11-26T14:12:57.962Z",
-    "821128-2026": "2026-11-26T14:12:57.962Z"
+    "821128-2026": "2026-11-26T14:12:57.962Z",
+    "826350-2026": "2026-11-27T14:10:16.388Z",
+    "826999-2026": "2026-11-27T14:10:16.388Z",
+    "825446-2026": "2026-11-27T14:10:16.388Z",
+    "826077-2026": "2026-11-27T14:10:16.388Z",
+    "827014-2026": "2026-11-27T14:10:16.388Z"
   },
   "notices": {
     "519810-2026": {
@@ -66917,7 +66922,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 48
+      "score": 43
     },
     "753140-2026": {
       "id": "753140-2026",
@@ -67122,7 +67127,7 @@
         "45112710",
         "45112700"
       ],
-      "score": 80
+      "score": 75
     },
     "757767-2026": {
       "id": "757767-2026",
@@ -67433,7 +67438,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "757908-2026": {
       "id": "757908-2026",
@@ -67552,7 +67557,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "767451-2026": {
       "id": "767451-2026",
@@ -67631,7 +67636,7 @@
         "77314000",
         "77340000"
       ],
-      "score": 83
+      "score": 68
     },
     "766232-2026": {
       "id": "766232-2026",
@@ -67798,7 +67803,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "768379-2026": {
       "id": "768379-2026",
@@ -67873,7 +67878,7 @@
       "matchedCpv": [
         "77310000"
       ],
-      "score": 83
+      "score": 68
     },
     "770617-2026": {
       "id": "770617-2026",
@@ -68078,7 +68083,7 @@
       "matchedCpv": [
         "45112712"
       ],
-      "score": 63
+      "score": 48
     },
     "772371-2026": {
       "id": "772371-2026",
@@ -68365,7 +68370,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "777208-2026": {
       "id": "777208-2026",
@@ -68576,7 +68581,7 @@
       "matchedCpv": [
         "45112713"
       ],
-      "score": 63
+      "score": 48
     },
     "778564-2026": {
       "id": "778564-2026",
@@ -68622,7 +68627,7 @@
       "matchedCpv": [
         "45112710"
       ],
-      "score": 95
+      "score": 80
     },
     "779497-2026": {
       "id": "779497-2026",
@@ -71656,7 +71661,150 @@
         "45112713"
       ],
       "score": 60
+    },
+    "826350-2026": {
+      "id": "826350-2026",
+      "publishedAt": "2026-11-26T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Arbeiten – Feuerwehrtechnische Zentrale Ebergötzen, Neubau - VE 502 Landschaftsbau und Pflasterarbeiten",
+      "buyer": "Landkreis Göttingen",
+      "buyerCity": "Göttingen",
+      "country": "DEU",
+      "cpv": [
+        "45112700",
+        "45000000",
+        "45112500",
+        "45112710",
+        "45112730",
+        "45233222",
+        "45233250",
+        "45236000",
+        "45342000",
+        "77300000",
+        "77310000"
+      ],
+      "cpvMain": "45112700",
+      "valueEur": null,
+      "deadline": "2026-12-14T10:00:00.000Z",
+      "nuts": [
+        "DE91C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/826350-2026",
+      "matchedCpv": [
+        "45112710",
+        "77300000",
+        "77310000",
+        "45112700",
+        "45112730"
+      ],
+      "score": 83
+    },
+    "826999-2026": {
+      "id": "826999-2026",
+      "publishedAt": "2026-11-26T23:00:00.000Z",
+      "title": "Deutschland – Straßenreinigung – Rahmenvereinbarung Reinigung der Verkehrsflächen Konrad 1+2, 2027 - 2029",
+      "buyer": "Bundesgesellschaft für Endlagerung mbH (BGE)",
+      "buyerCity": "Peine",
+      "country": "DEU",
+      "cpv": [
+        "90611000",
+        "77314000"
+      ],
+      "cpvMain": "90611000",
+      "valueEur": null,
+      "deadline": "2027-01-13T09:00:00.000Z",
+      "nuts": [
+        "DE912",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/826999-2026",
+      "matchedCpv": [
+        "77314000"
+      ],
+      "score": 83
+    },
+    "825446-2026": {
+      "id": "825446-2026",
+      "publishedAt": "2026-11-26T23:00:00.000Z",
+      "title": "Deutschland – Baumpflege – Baumpflege im Stadtgebiet Salzgitters",
+      "buyer": "Stadt Salzgitter",
+      "buyerCity": "Salzgitter",
+      "country": "DEU",
+      "cpv": [
+        "77211500",
+        "77211400"
+      ],
+      "cpvMain": "77211500",
+      "valueEur": 477721.3,
+      "deadline": null,
+      "nuts": [
+        "DE912",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/825446-2026",
+      "matchedCpv": [
+        "77211500",
+        "77211400"
+      ],
+      "score": 80
+    },
+    "826077-2026": {
+      "id": "826077-2026",
+      "publishedAt": "2026-11-26T23:00:00.000Z",
+      "title": "Deutschland – Landschaftsgärtnerische Bauleistungen für Spielplätze – Landschaftsbauarbeiten",
+      "buyer": "Gemeindeverwaltung Haßloch",
+      "buyerCity": "Haßloch",
+      "country": "DEU",
+      "cpv": [
+        "45112723",
+        "45112500",
+        "45232452",
+        "45262522",
+        "45233222",
+        "37535200",
+        "45112710",
+        "45342000",
+        "44112100",
+        "44211000"
+      ],
+      "cpvMain": "45112723",
+      "valueEur": null,
+      "deadline": "2026-12-02T08:15:00.000Z",
+      "nuts": [
+        "DEB3C",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/826077-2026",
+      "matchedCpv": [
+        "45112710",
+        "45112723"
+      ],
+      "score": 68
+    },
+    "827014-2026": {
+      "id": "827014-2026",
+      "publishedAt": "2026-11-26T23:00:00.000Z",
+      "title": "Deutschland – Dachabdichtungs- und -dämmarbeiten – 118 KliPrien BA3 - RoMed Klinik Prien am Chiemsee-Erneuerung Funktionsbau - 118-3340 Dachabdichtung",
+      "buyer": "Kliniken der Stadt und des Lkr. Rosenheim GmbH",
+      "buyerCity": "Rosenheim",
+      "country": "DEU",
+      "cpv": [
+        "45261410",
+        "45112713"
+      ],
+      "cpvMain": "45261410",
+      "valueEur": 0,
+      "deadline": null,
+      "nuts": [
+        "DE21K",
+        "DEU"
+      ],
+      "url": "https://ted.europa.eu/bg/notice/-/detail/827014-2026",
+      "matchedCpv": [
+        "45112713"
+      ],
+      "score": 40
     }
   },
-  "lastRun": "2026-11-26T14:12:57.962Z"
+  "lastRun": "2026-11-27T14:10:16.388Z"
 }
